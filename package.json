@@ -6,8 +6,7 @@
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack --config config/webpack.dev.js",
     "start": "cross-env NODE_ENV=development webpack serve --config config/webpack.dev.js",
-    "prod": "gh-pages -d dist",
-    "preprod": "cross-env NODE_ENV=production webpack --config config/webpack.prod.js"
+    "prod": "cross-env NODE_ENV=production webpack --config config/webpack.prod.js"
   },
   "repository": {
     "type": "git",
