@@ -1,5 +1,5 @@
 import './images/img/exampl.jpg'
-import './images/svg/icon.svg'
+import './images/svg/exampl.svg'
 import './sass/main.scss'
 //=========layout===============
 //static
