@@ -6,19 +6,20 @@ import './sass/main.scss'
 import './js/layout/static/header'
 import './js/layout/static/footer'
 //main
-import './js/layout/main/hero'
-import './js/layout/main/contend'
-import './js/layout/main/aboutTheBrand'
-import './js/layout/main/ourShowRoom'
-import './js/layout/main/registrationFormForFitting'
-import './js/layout/main/inInstgram'
+import './js/layout/home/hero'
+import './js/layout/home/contend'
+import './js/layout/home/aboutTheBrand'
+import './js/layout/home/ourShowRoom'
+import './js/layout/home/registrationFormForFitting'
+import './js/layout/home/starClients'
+import './js/layout/home/inInstgram'
 //catalog
 import './js/layout/сatalog/filter';
 import './js/layout/сatalog/gallery';
 //product
 import './js/layout/product/infoAboutProduct';
 import './js/layout/product/recomendationsCategory';
-import './js/layout/product/producCreatetInfo';
+import './js/layout/product/productCreateInfo';
 //delivery
 import './js/layout/delivery/filter';
 import './js/layout/delivery/deliveryTypes';
@@ -26,7 +27,7 @@ import './js/layout/delivery/formsQuestion';
 import './js/layout/delivery/questionsAndAnswers';
 //reviews
 import './js/layout/reviews/videoSet';
-import './js/layout/reviews/formsReviews';
+import './js/layout/reviews/starsClients';
 import './js/layout/reviews/registrationFormForFitting';
 //showroom
 import './js/layout/showroom/showroom';
@@ -46,3 +47,4 @@ import './js/layout/checkout/ordering';
 import './js/layout/checkout/payment';
 //favorites
 import './js/layout/favorites/favorites';
+import './js/layout/favorites/sabmitEmail';

@@ -19,19 +19,20 @@
 @import './layout/static/header';
 @import './layout/static/footer';
 //main
-@import './layout/main/hero';
-@import './layout/main/contend';
-@import './layout/main/aboutTheBrand';
-@import './layout/main/ourShowRoom';
-@import './layout/main/registrationFormForFitting';
-@import './layout/main/inInstgram';
+@import './layout/home/hero';
+@import './layout/home/contend';
+@import './layout/home/aboutTheBrand';
+@import './layout/home/ourShowRoom';
+@import './layout/home/registrationFormForFitting';
+@import './layout/home/starClients';
+@import './layout/home/inInstgram';
 //catalog
 @import './layout/сatalog/filter';
 @import './layout/сatalog/gallery';
 //product
 @import './layout/product/infoAboutProduct';
 @import './layout/product/recomendationsCategory';
-@import './layout/product/producCreatetInfo';
+@import './layout/product/productCreateInfo';
 //delivery
 @import './layout/delivery/filter';
 @import './layout/delivery/deliveryTypes';
@@ -39,7 +40,7 @@
 @import './layout/delivery/questionsAndAnswers';
 //reviews
 @import './layout/reviews/videoSet';
-@import './layout/reviews/formsReviews';
+@import './layout/reviews/starsClients';
 @import './layout/reviews/registrationFormForFitting';
 //showroom
 @import './layout/showroom/showroom';
