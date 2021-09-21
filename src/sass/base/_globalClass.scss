@@ -1,33 +1,27 @@
-// body {
-//   margin: 0;
-//   background-color: $primary-background-color;
-//   color: $primary-text-color;
-//   font-family: Montserrat, sans-serif;
-//   font-size: 12px;
-//   line-height: 1.67;
-//   letter-spacing: 0.08em;
-// }
+body {
+  margin: 0;
+  background-color: $primary-background-color;
+  color: $primary-text-color;
+  font-family: 'Lato','Futura-Medium','HelveticaNeueCyr','Futura-Book','Futura Md BT', sans-serif;
+  font-size: 15px;
+  line-height: 1.46;
+  
+}
 
 
-// .container {
-//   margin-left: auto;
-//   margin-right: auto;
-//   padding-left: 20px;
-//   padding-right: 20px;
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
 
-//   @media screen and (min-width: $mobile-first) {
-//     min-width: $mobile-first;
-//   }
+  @media screen and (min-width: $mobile-first) {
+    min-width: $mobile-first;
+  }
 
-//   @media screen and (min-width: $tablet-general) {
-//     width: $tablet-general;
-//     padding-left: 40px;
-//     padding-right: 40px;
-//   }
-
-//   @media screen and (min-width: $desktop-up) {
-//     width: $desktop-up;
-//     padding-left: 26px;
-//     padding-right: 26px;
-//   }
-// }
+  @media screen and (min-width: $desktop-up) {
+    width: $desktop-up;
+    padding-left: 26px;
+    padding-right: 26px;
+  }
+}
