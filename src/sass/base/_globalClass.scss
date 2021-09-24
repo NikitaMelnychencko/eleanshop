@@ -7,7 +7,7 @@ body {
   margin: 0;
   background-color: $primary-background-color;
   color: $primary-text-color;
-  font-family: 'Open Sans', sans-serif; 
+  font-family: $primary-font-family, sans-serif; 
   font-size: 15px;
   line-height: 1.46;
   
