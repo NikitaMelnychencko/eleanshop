@@ -3,48 +3,48 @@ import './images/svg/exampl.svg'
 import './sass/main.scss'
 //=========layout===============
 //static
-import './js/layout/static/header'
-import './js/layout/static/footer'
+import './js/layout/static/header.js'
+import './js/layout/static/footer.js'
 //main
-import './js/layout/home/hero'
-import './js/layout/home/contend'
-import './js/layout/home/aboutTheBrand'
-import './js/layout/home/ourShowRoom'
-import './js/layout/home/registrationFormForFitting'
-import './js/layout/home/starClients'
-import './js/layout/home/inInstgram'
+import './js/layout/home/hero.js'
+import './js/layout/home/contend.js'
+import './js/layout/home/aboutTheBrand.js'
+import './js/layout/home/ourShowRoom.js'
+import './js/layout/home/registrationFormForFitting.js'
+import './js/layout/home/starClients.js'
+import './js/layout/home/inInstgram.js'
 //catalog
-import './js/layout/сatalog/filter';
-import './js/layout/сatalog/gallery';
+import './js/layout/сatalog/filter.js';
+import './js/layout/сatalog/gallery.js';
 //product
-import './js/layout/product/infoAboutProduct';
-import './js/layout/product/recomendationsCategory';
-import './js/layout/product/productCreateInfo';
+import './js/layout/product/infoAboutProduct.js';
+import './js/layout/product/recomendationsCategory.js';
+import './js/layout/product/productCreateInfo.js';
 //delivery
-import './js/layout/delivery/filter';
-import './js/layout/delivery/deliveryTypes';
-import './js/layout/delivery/formsQuestion';
-import './js/layout/delivery/questionsAndAnswers';
+import './js/layout/delivery/filter.js';
+import './js/layout/delivery/deliveryTypes.js';
+import './js/layout/delivery/formsQuestion.js';
+import './js/layout/delivery/questionsAndAnswers.js';
 //reviews
-import './js/layout/reviews/videoSet';
-import './js/layout/reviews/starsClients';
-import './js/layout/reviews/registrationFormForFitting';
+import './js/layout/reviews/videoSet.js';
+import './js/layout/reviews/starsClients.js';
+import './js/layout/reviews/registrationFormForFitting.js';
 //showroom
-import './js/layout/showroom/showroom';
+import './js/layout/showroom/showroom.js';
 //contact
-import './js/layout/contact/contact';
+import './js/layout/contact/contact.js';
 //fitting
-import './js/layout/fitting/informationAboutFitting';
-import './js/layout/fitting/sizeTable';
-import './js/layout/fitting/videoSlider';
-import './js/layout/fitting/formFittingInShowroom';
+import './js/layout/fitting/informationAboutFitting.js';
+import './js/layout/fitting/sizeTable.js';
+import './js/layout/fitting/videoSlider.js';
+import './js/layout/fitting/formFittingInShowroom.js';
 //brand
-import './js/layout/brand/infoAboutBrand';
-import './js/layout/brand/ourAdvantages';
-import './js/layout/brand/formFittingInShowroom';
+import './js/layout/brand/infoAboutBrand.js';
+import './js/layout/brand/ourAdvantages.js';
+import './js/layout/brand/formFittingInShowroom.js';
 //checkout
-import './js/layout/checkout/ordering';
-import './js/layout/checkout/payment';
+import './js/layout/checkout/ordering.js';
+import './js/layout/checkout/payment.js';
 //favorites
-import './js/layout/favorites/favorites';
-import './js/layout/favorites/sabmitEmail';
+import './js/layout/favorites/favorites.js';
+import './js/layout/favorites/sabmitEmail.js';
