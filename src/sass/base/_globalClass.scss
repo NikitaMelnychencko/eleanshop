@@ -1,8 +1,13 @@
+//in project used:
+// 'Lato',
+// Futura-Medium = "Red Hat Text" (400/500 )
+// HelveticaNeueCyr = Open Sans (400 )
+// Futura-Book,Futura Md BT = Jost (400)
 body {
   margin: 0;
   background-color: $primary-background-color;
   color: $primary-text-color;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif; 
   font-size: 15px;
   line-height: 1.46;
   
