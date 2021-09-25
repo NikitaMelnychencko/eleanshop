@@ -1,0 +1,10 @@
+.footer{
+     
+        background-color: red; 
+        padding-top: 60px;
+        padding-bottom: 60px;
+
+        @media screen and (min-width:$tablet){
+            display: flex; 
+        }
+    }
