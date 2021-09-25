@@ -1,10 +1,28 @@
 .footer{
-     
-        background-color: red; 
-        padding-top: 60px;
-        padding-bottom: 60px;
+    padding-top: 36px;
+    padding-bottom: 26px;
 
-        @media screen and (min-width:$tablet){
-            display: flex; 
-        }
+    &__list-item{
+        margin-top: 15px;
+        font-style: normal;
+        font-size: 15px;
+        line-height: 1.4;
+        color:$primary-text-color;
     }
+}
+
+.footer__social-list{
+    display: flex;
+    justify-content: start;
+    align-items:center; 
+    border-radius: 50%;
+    
+   
+    // transition: background-color $time-function $cubic-bezier;
+}
+.footer__icon{
+    width: 19px;
+    height: 19px;
+    fill: 2F2F2F;
+    // transition: fill $time-function $cubic-bezier;
+}
