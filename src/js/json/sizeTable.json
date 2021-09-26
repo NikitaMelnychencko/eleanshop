@@ -1,0 +1,42 @@
+[
+  {
+    "id": "1",
+    "name": "Труселя с начосом",
+    "description": "Труселя с начосом, тепло и падать не больно",
+    "image": "https://qna.center/get_img?id=942423",
+    "price": 100,
+    "size": {
+      "40": false,
+      "42": true,
+      "44": true,
+      "46": false,
+      "48": true,
+      "50": true,
+      "52": true,
+      "54": false,
+      "56": true,
+      "58": true,
+      "60": false,
+      "62": true
+    }
+  },
+  {
+    "id": "2",
+    "name": "Тапочки Т34",
+    "description": "Для любителей тежелой техники",
+    "image": "https://newdaynews.ru/pict/arts1/52/61/526167.jpg",
+    "price": 50,
+    "size":{
+      "36": true,
+      "37": true,
+      "38": true,
+      "39": false,
+      "40": true,
+      "41": true,
+      "42": true,
+      "43": false,
+      "44": false,
+      "45": false
+    }
+  }
+]

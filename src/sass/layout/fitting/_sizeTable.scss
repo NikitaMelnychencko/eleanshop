@@ -1,40 +1,178 @@
-.size {
-  width: 400px;
-  background-color: aqua;
-  color: tomato;
-}
-.button-Close {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+.sizeTable__modal-container {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 14px;
-  /* or 117% */
-  letter-spacing: 1.17;
+  width: 100vw;
+  padding: 66 20 50 20;
 
-  width: 120px;
-  height: 25px;
-  background-color: black;
-  color: white;
+  background-color: $primary-background-color;
 
-  border-style: none;
-  cursor: pointer;
+  @media screen and (min-width: $mobile-general) {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
-  &:hover,
-  &:focus {
-    background-color: gray;
+    min-width: 400px;
+    max-width: 660px;
+    padding: 37 120 40 120;
   }
 }
-.button-Close-icon {
+%sizeTable__btn {
+  border-style: none;
+  border-radius: 0;
+  cursor: pointer;
+  transition: background-color $time-cubic;
+  border: 1px solid $secondary-text-color;
+}
+.sizeTable__button-Close {
+  @extend %sizeTable__btn;
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  font-family: $third-font-family;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  font-size: 12px;
+  line-height: 1.17;
+  color: $selection-text-color;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 40px;
   height: 40px;
 
-  fill: blue;
-  &:use {
-    width: 20px;
-    height: 20px;
-    fill: tomato;
+  background: $secondary-text-color;
+
+  &:hover,
+  &:focus {
+    background-color: $selection-text-color;
+    color: $secondary-text-color;
+  }
+  @media screen and (min-width: $mobile-general) {
+    top: auto;
+    bottom: 100%;
+    padding-left: 11px;
+    padding-right: 12px;
+
+    justify-content: space-between;
+    width: 120px;
+    height: 25px;
   }
 }
+@media screen and (max-width: $mobile-general) {
+  .sizeTable__button-close-text {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+}
+
+.sizeTable__button-Close-icon {
+  width: 8px;
+  height: 8px;
+
+  fill: $selection-text-color;
+
+  .sizeTable__button-Close:hover > &,
+  .sizeTable__button-Close:focus > & {
+    fill: $secondary-text-color;
+  }
+}
+.sizeTable__title {
+  margin-bottom: 24px;
+
+  font-family: $selection-font-family;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $secondary-text-color;
+
+  @media screen and (min-width: $tablet-only) {
+    font-size: 21px;
+    line-height: 1.1;
+  }
+}
+.sizeTable__size-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+  grid-auto-rows: 50px;
+  grid-gap: 19px;
+  padding: 0;
+  list-style: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+.sizeTable__size-list-btn {
+  @extend %sizeTable__btn;
+  width: 50px;
+  height: 50px;
+
+  font-family: $selection-font-family;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 1.2;
+
+  background-color: $selection-text-color;
+
+  &:hover,
+  &:focus {
+    background-color: $secondary-text-color;
+    color: $selection-text-color;
+  }
+}
+.sizeTable__disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+  position: relative;
+}
+.sizeTable__disabled::before {
+  position: absolute;
+  bottom: -1;
+  right: 100%;
+
+  height: 69px;
+  width: 1px;
+
+  background: $secondary-text-color;
+
+  opacity: 0.6;
+  transform: rotateZ(45deg);
+  transform-origin: bottom right;
+  content: '';
+}
+
+//--files for placing in common blocks---
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 50;
+  transition: opacity $time-cubic, visibility $time-cubic;
+  overflow-y: scroll;
+}
+.sizeTable__no-scrol {
+  overflow: hidden;
+}
+
+//----delete all after this line---------------------
+/* 
+    Блочная модель 
+    Типографика 
+    Отображение 
+    Прочее 
+*/
