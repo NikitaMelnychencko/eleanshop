@@ -1,6 +1,5 @@
 
 .footer{
-
     background-color: $footer-background-color;
     padding-top: 36px;
     padding-bottom: 26px;
@@ -82,7 +81,10 @@
     justify-content: space-between;
 }
 
-
+.footer__icon-logo{
+    width: 101px;
+    height: 19px;
+}
 
 .footer__form-subscribe{
     margin-top: 28px;
