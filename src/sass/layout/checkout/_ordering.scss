@@ -78,7 +78,6 @@
 }
 .ordering__card--mobile {
   align-items: flex-start;
-  border-bottom: 1px solid $border-color;
 
   @media screen and (min-width: $desktop-up) {
     display: none;
@@ -143,7 +142,6 @@
 
   .ordering__price:after {
     content: '\20BD';
-    color: orange;
   }
 
   @media screen and (min-width: $desktop-up) {
@@ -182,11 +180,106 @@
   display: flex;
 }
 
+.ordering__promocodebox {
+  @media screen and (min-width: $mobile-first) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  @media screen and (min-width: $desktop-up) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid $border-color;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+.ordering__input--promocode {
+  padding: 13px;
+  height: 50px;
+  border: 1px dotted $secondary-border-color;
+  @media screen and (min-width: $mobile-first) {
+    width: 264px;
+    border-right: none;
+  }
+
+  @media screen and (min-width: $desktop-up) {
+    margin-right: 14px;
+    width: 389px;
+    border: 1px dotted $secondary-border-color;
+  }
+
+  &::placeholder {
+    font-family: $primary-font-family;
+    font-size: 12px;
+    line-height: 2.08;
+    font-weight: 500;
+    color: $placeholder-color;
+  }
+}
+
+.ordering__btn--promocode {
+  padding: 13px 29px;
+  height: 50px;
+  border: none;
+
+  background-color: $btn-background-color;
+  font-family: $primary-font-family;
+  font-size: 17px;
+  line-height: 1.35;
+  color: $btn-text-color;
+
+  @media screen and (min-width: $desktop-up) {
+    border-radius: 3px;
+  }
+}
+
+.ordering__discount {
+  font-family: $primary-font-family;
+  font-size: 18px;
+  line-height: 2.08;
+  font-weight: 500;
+  color: $secondary-text-color;
+
+  @media screen and (min-width: $mobile-first) {
+    display: block;
+    margin-top: 23px;
+    margin-bottom: 28px;
+    border-bottom: 1px solid $border-color;
+  }
+  @media screen and (min-width: $desktop-up) {
+    border: none;
+  }
+}
+
 .ordering__totalprice {
   font-family: $primary-font-family;
   font-size: 18px;
-  line-height: 1.27;
+  line-height: 1.11;
   font-weight: 500;
   color: $secondary-text-color;
-  text-transform: uppercase;
+
+  @media screen and (min-width: $desktop-up) {
+    text-transform: uppercase;
+  }
+}
+
+.ordering__total {
+  font-family: $primary-font-family;
+  font-size: 18px;
+  line-height: 1.11;
+  font-weight: 500;
+  color: $secondary-text-color;
+}
+.ordering__totalbox {
+  @media screen and (min-width: $mobile-first) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.ordering .ordering__promocodethumb {
+  display: inline-flex;
 }

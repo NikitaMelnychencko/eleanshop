@@ -1,121 +1,126 @@
-{{!-- <section class="ordering">
-    <div class="container"> --}}
-        <h1 class="ordering__title">Оформление заказа</h1>
-        <div class="ordering__cards">
-            <!--this card is for desktop-->
-            <div class="ordering__card ordering__card--desktop">
 
-                <img class="ordering__image" src="./images/exampl.jpg" alt="article">
+<h1 class="ordering__title">Оформление заказа</h1>
+<div class="ordering__cards">
+    <!--this card is for desktop-->
+    <div class="ordering__card ordering__card--desktop">
 
-                <p class="ordering__article">Classical suit</p>
-                <div class="ordering__selects">
-                    <select class="ordering__select" name="color" id="color">
-                        <option value="">Цвет</option>
-                        <option value="black">черный</option>
-                        <option value="white">белый</option>
-                        <option value="black">красный</option>
-                    </select>
+        <img class="ordering__image" src="./images/exampl.jpg" alt="article">
 
-                    <select class="ordering__select" name="size" id="color">
-                        <option value="">Размер</option>
-                        <option value="40">40</option>
-                        <option value="42">42</option>
-                        <option value="44">44</option>
-                        <option value="46">46</option>
-                        <option value="48">48</option>
-                        <option value="50">50</option>
-                    </select>
+        <p class="ordering__article">Classical suit</p>
+        <div class="ordering__selects">
+            <select class="ordering__select" name="color" id="color">
+                <option value="">Цвет</option>
+                <option value="black">черный</option>
+                <option value="white">белый</option>
+                <option value="black">красный</option>
+            </select>
 
-                    <button class="ordering__btn--minus ordering__btn" type="button">-</button>
-                    <span class="ordering__btn ordering__value">0</span>
-                    <button class="ordering__btn--plus ordering__btn" type="button">+</button>
+            <select class="ordering__select" name="size" id="color">
+                <option value="">Размер</option>
+                <option value="40">40</option>
+                <option value="42">42</option>
+                <option value="44">44</option>
+                <option value="46">46</option>
+                <option value="48">48</option>
+                <option value="50">50</option>
+            </select>
 
-                    <span class="ordering__price">10 000<span class="ordering__currency">
-                        {{!-- {{&#8381}} --}}
-                        </span></span>
+            <button class="ordering__btn--minus ordering__btn" type="button">-</button>
+            <span class="ordering__btn ordering__value">0</span>
+            <button class="ordering__btn--plus ordering__btn" type="button">+</button>
 
-                    <button class="ordering__button--close" type="button">
-                        <svg class="icon ordering__icon--close" aria-label="close" width="16" height="16">
-                            <use class="icon-cross" href="./images/exampl.svg#icon-menu_burger_close"></use>
-                        </svg>
-                    </button>
-                </div>
-            </div>
-            <!---->
-                        <!--this card is for desktop-->
-                        <div class="ordering__card ordering__card--desktop">
-                        
-                            <img class="ordering__image" src="./images/exampl.jpg" alt="article">
-                        
-                            <p class="ordering__article">Classical suit</p>
-                            <div class="ordering__selects">
-                                <select class="ordering__select" name="color" id="color">
-                                    <option value="">Цвет</option>
-                                    <option value="black">черный</option>
-                                    <option value="white">белый</option>
-                                    <option value="black">красный</option>
-                                </select>
-                        
-                                <select class="ordering__select" name="size" id="color">
-                                    <option value="">Размер</option>
-                                    <option value="40">40</option>
-                                    <option value="42">42</option>
-                                    <option value="44">44</option>
-                                    <option value="46">46</option>
-                                    <option value="48">48</option>
-                                    <option value="50">50</option>
-                                </select>
-                        
-                                <button class="ordering__btn--minus ordering__btn" type="button">-</button>
-                                <span class="ordering__btn ordering__value">0</span>
-                                <button class="ordering__btn--plus ordering__btn" type="button">+</button>
-                        
-                                <span class="ordering__price">10 000<span class="ordering__currency">
-                                        {{!-- {{&#8381}} --}}
-                                    </span></span>
-                        
-                                <button class="ordering__button--close" type="button">
-                                    <svg class="icon ordering__icon--close" aria-label="close" width="16" height="16">
-                                        <use class="icon-cross" href="./images/exampl.svg#icon-menu_burger_close"></use>
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                        <!---->
-            <!--this card is for mobile-->
-            <div class="ordering__card ordering__card--mobile">
-                <img class="ordering__image" src="./images/exampl.jpg" alt="article">
-                <div class="ordering__box">
-                    <div class="ordering__innerbox">
-                        <p class="ordering__article">Classical suit with a jacket and trousers</p>
-                        <button type="button" class="ordering__button--close">
-                            <svg class="icon ordering__icon--close" aria-label="close" width="16" height="16">
-                                <use class="icon-cross" href="./images/exampl.svg#icon-menu_burger_close"></use>
-                            </svg>
-                        </button>
-                    </div>
-                    <span class="ordering__price">0<span class="ordering__currency">
-                        {{!-- &#8381 --}}
-                        </span></span>
-                    <div class="ordering__selectbox">
-                        <select class="ordering__select" name="size" id="color">
-                            <option value="">Размер</option>
-                            <option value="40">40</option>
-                            <option value="42">42</option>
-                            <option value="44">44</option>
-                            <option value="46">46</option>
-                            <option value="48">48</option>
-                            <option value="50">50</option>
-                        </select>
+            <span class="ordering__price">10 000<span class="ordering__currency">
+                </span>гр</span>
 
-                        <button class="ordering__btn--minus ordering__btn" type="button">-</button>
-                        <span class="ordering__btn ordering__value">0</span>
-                        <button class="ordering__btn--plus ordering__btn" type="button">+</button>
-                   </div>
-                </div>
-            </div>
-            <!---->
+            <button class="ordering__button--close" type="button">
+                <svg class="icon ordering__icon--close" aria-label="close" width="16" height="16">
+                    <use class="icon-cross" href="./images/exampl.svg#icon-menu_burger_close"></use>
+                </svg>
+            </button>
         </div>
- <p class="ordering__totalprice">Итоговая стоимость:<span></span> </p>           
-    {{!-- </div>
-</section> --}}
+    </div>
+    <!---->
+    <!--this card is for desktop-->
+    <div class="ordering__card ordering__card--desktop">
+    
+        <img class="ordering__image" src="./images/exampl.jpg" alt="article">
+    
+        <p class="ordering__article">Classical suit</p>
+        <div class="ordering__selects">
+            <select class="ordering__select" name="color" id="color">
+                <option value="">Цвет</option>
+                <option value="black">черный</option>
+                <option value="white">белый</option>
+                <option value="black">красный</option>
+            </select>
+    
+            <select class="ordering__select" name="size" id="color">
+                <option value="">Размер</option>
+                <option value="40">40</option>
+                <option value="42">42</option>
+                <option value="44">44</option>
+                <option value="46">46</option>
+                <option value="48">48</option>
+                <option value="50">50</option>
+            </select>
+    
+            <button class="ordering__btn--minus ordering__btn" type="button">-</button>
+            <span class="ordering__btn ordering__value">0</span>
+            <button class="ordering__btn--plus ordering__btn" type="button">+</button>
+    
+            <span class="ordering__price">10 000<span class="ordering__currency">
+            </span>гр</span>
+    
+            <button class="ordering__button--close" type="button">
+                <svg class="icon ordering__icon--close" aria-label="close" width="16" height="16">
+                    <use class="icon-cross" href="./images/exampl.svg#icon-menu_burger_close"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <!---->
+    <!--this card is for mobile-->
+    <div class="ordering__card ordering__card--mobile">
+        <img class="ordering__image" src="./images/exampl.jpg" alt="article">
+        <div class="ordering__box">
+            <div class="ordering__innerbox">
+                <p class="ordering__article">Classical suit with a jacket and trousers</p>
+                <button type="button" class="ordering__button--close">
+                    <svg class="icon ordering__icon--close" aria-label="close" width="16" height="16">
+                        <use class="icon-cross" href="./images/exampl.svg#icon-menu_burger_close"></use>
+                    </svg>
+                </button>
+            </div>
+            <span class="ordering__price">0<span class="ordering__currency">
+                {{!-- &#8381 --}}
+                </span></span>
+            <div class="ordering__selectbox">
+                <select class="ordering__select" name="size" id="color">
+                    <option value="">Размер</option>
+                    <option value="40">40</option>
+                    <option value="42">42</option>
+                    <option value="44">44</option>
+                    <option value="46">46</option>
+                    <option value="48">48</option>
+                    <option value="50">50</option>
+                </select>
+
+                <button class="ordering__btn--minus ordering__btn" type="button">-</button>
+                <span class="ordering__btn ordering__value">0</span>
+                <button class="ordering__btn--plus ordering__btn" type="button">+</button>
+            </div>
+        </div>
+    </div>
+    <!---->
+</div>
+<div class="ordering__promocodebox">
+    <div class="ordering__promocodethumb">
+    <input class="ordering__input--promocode" type="text" placeholder="введите промо код (если имеется)">
+    <button class="ordering__btn--promocode" type="submit">Применить</button>
+    </div>
+    <span class="ordering__discount">Скидка <span class="ordering__discount--value">0</span>%</span>
+    <div class="ordering__totalbox">
+    <p class="ordering__totalprice">Итоговая стоимость: </p>
+    <span class="ordering__total"> 0<span> гр</span></span>
+    </div>
+</div>           
