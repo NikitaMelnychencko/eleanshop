@@ -1,0 +1,58 @@
+.ordering {
+  &__form {
+    padding: 106px 140px 63px 140px;
+    width: 780px;
+    height: 516px;
+  }
+
+  &__image {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 35px;
+    width: 103px;
+    height: 110px;
+  }
+
+  &__title {
+    font-family: $selection-font-family;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 23px;
+    /* identical to box height, or 77% */
+
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: #000000;
+    margin-bottom: 35px;
+  }
+
+  &__context {
+    font-family: $selection-font-family;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 27px;
+    /* or 135% */
+
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: #000000;
+    margin-bottom: 35px;
+  }
+
+  &__btn-continue {
+    display: block;
+    margin: 0 auto;
+    @extend %button;
+
+    color: $button-text-color;
+
+    width: 330px;
+    height: 50px;
+
+    border: 1px solid $button-border-color;
+  }
+}

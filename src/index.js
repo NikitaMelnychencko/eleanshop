@@ -1,18 +1,19 @@
-import './images/img/exampl.jpg'
-import './images/svg/exampl.svg'
-import './sass/main.scss'
+import './images/img/exampl.jpg';
+import './images/svg/exampl.svg';
+import './images/svg/sprite.svg';
+import './sass/main.scss';
 //=========layout===============
 //static
-import './js/layout/static/header.js'
-import './js/layout/static/footer.js'
+import './js/layout/static/header.js';
+import './js/layout/static/footer.js';
 //main
-import './js/layout/home/hero.js'
-import './js/layout/home/contend.js'
-import './js/layout/home/aboutTheBrand.js'
-import './js/layout/home/ourShowRoom.js'
-import './js/layout/home/registrationFormForFitting.js'
-import './js/layout/home/starClients.js'
-import './js/layout/home/inInstgram.js'
+import './js/layout/home/hero.js';
+import './js/layout/home/contend.js';
+import './js/layout/home/aboutTheBrand.js';
+import './js/layout/home/ourShowRoom.js';
+import './js/layout/home/registrationFormForFitting.js';
+import './js/layout/home/starClients.js';
+import './js/layout/home/inInstgram.js';
 //catalog
 import './js/layout/сatalog/filter.js';
 import './js/layout/сatalog/gallery.js';
