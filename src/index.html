@@ -21,13 +21,13 @@
   </header>
   <main></main>
   <div class="container">
-    <footer class="footer ">
+    <footer class="footer">
       <ul class="footer__list">
         <li class="footer__list-item border">
 
-          <a href=" #" class="footer__list-item-click">КОЛЛЕКЦИЯ
+          <a href=" #" class="footer__list-item-plus">КОЛЛЕКЦИЯ
             <svg class="footer__icon-menu">
-              <use href="./images/svg/exampl.svg#icon-switch-plus" class="footer__icon-menu-open">
+              <use href="./images/exampl.svg#icon-switch-plus" class="footer__icon-menu-open">
               </use>
             </svg>
           </a>
@@ -41,16 +41,16 @@
             <li class="dropdown-content">Блузы</li>
           </ul>
         </li>
-        <li class="footer__list-item border"><a href=" #" class="footer__list-item-click">ШОУРУМ
+        <li class="footer__list-item border"><a href=" #" class="footer__list-item-plus">ШОУРУМ
             <svg class="footer__icon-menu">
-              <use href="./images/svg/exampl.svg#icon-switch-plus" class="footer__icon-menu-open">
+              <use href="./images/exampl.svg#icon-switch-plus" class="footer__icon-menu-open">
               </use>
             </svg>
           </a>
         </li>
-        <li class="footer__list-item border"><a href="#" class="footer__list-item-click">ПОКУПАТЕЛЯМ
+        <li class="footer__list-item border"><a href="#" class="footer__list-item-plus">ПОКУПАТЕЛЯМ
             <svg class="footer__icon-menu">
-              <use href="./images/svg/exampl.svg#icon-switch-plus" class="footer__icon-menu-open">
+              <use href="./images/exampl.svg#icon-switch-plus" class="footer__icon-menu-open">
               </use>
             </svg>
           </a>
@@ -62,9 +62,9 @@
             <li class="dropdown-content">Возврат</li>
           </ul>
         </li>
-        <li class="footer__list-item border"><a href="#" class="footer__list-item-click">КОМПАНИЯ
+        <li class="footer__list-item border"><a href="#" class="footer__list-item-plus">КОМПАНИЯ
             <svg class="footer__icon-menu">
-              <use href="./images/svg/exampl.svg#icon-switch-plus" class="footer__icon-menu-open">
+              <use href="./images/exampl.svg#icon-switch-plus" class="footer__icon-menu-open">
               </use>
             </svg>
           </a>
@@ -74,15 +74,20 @@
             <li class="dropdown-content">Блог</li>
           </ul>
         </li>
-        <li class="footer__list-item border"><a href="#" class="footer__list-item-click">ОТЗЫВЫ
+        <li class="footer__list-item border"><a href="#" class="footer__list-item-plus">ОТЗЫВЫ
             <svg class="footer__icon-menu">
-              <use href="./images/svg/exampl.svg#icon-switch-plus" class="footer__icon-menu-open">
+              <use href="./images/exampl.svg#icon-switch-plus" class="footer__icon-menu-open">
               </use>
             </svg>
-          </a></li>
-        <li class="footer__list-item border"><a href="#" class="footer__list-item-click">КОНТАКТЫ
             <svg class="footer__icon-menu">
-              <use href="./images/svg/exampl.svg#icon-switch-plus" class="footer__icon-menu-open">
+              <use href="./images/exampl.svg#icon-switch-minus" class="footer__icon-menu-close">
+              </use>
+            </svg>
+
+          </a></li>
+        <li class="footer__list-item border"><a href="#" class="footer__list-item-plus">КОНТАКТЫ
+            <svg class="footer__icon-menu">
+              <use href="./images/exampl.svg#icon-switch-plus" class="footer__icon-menu-open">
               </use>
             </svg>
           </a>
@@ -93,47 +98,61 @@
               <a href="tel:+380990000000" class="footer_list-contacts-telephon">ТЕЛ.:+38099-000-00-00</a>
             </li>
             <li class="footer_list-contacts">
-              <a href="viber://chat?number=%2B380953542491" class="footer_list-contacts-chat">VIBER: +38099-11-11-11</a>
+              <a href="viber://chat?number=%2B380953542491" class="footer_list-contacts-chat">VIBER:
+                +38099-11-11-11</a>
             </li>
             <li>
-              <a href="mailto:info@eleanboutique.ua" class="footer_list-contacts-email">EMAIL: info@eleanboutique.ua</a>
+              <a href="mailto:info@eleanboutique.ua" class="footer_list-contacts-email">EMAIL:
+                info@eleanboutique.ua</a>
             </li>
             <li class="footer_list-contacts">г. Киев, Контрактовая площадь 8
             </li>
           </ul>
         </li>
       </ul>
-      <h2>ПОДПИСАТЬСЯ НА НОВОСТИ</h2>
-      <form action="footer__form">
-        <label for="subscribe" class="footer__form-subscribe"></label>
-        <input type="text" name="subscribe" id="user__name" class="footer__form-input"
-          placeholder="Введите адрес электронной почты" />
-      </form>
-      <div class="footer_social">
+
+      <h2 class="с border">ПОДПИСАТЬСЯ НА НОВОСТИ</h2>
+      <div class="footer__flex">
+        <form action="footer__form">
+          <label for="subscribe" class="footer__form-subscribe">
+            <div class="footer__form-">
+              <input type="text" name="subscribe" id="user__name" class="footer__form-input"
+                placeholder="Введите адрес электронной почты" />
+
+              <button type="button" class="footer__subscribe-button">
+                <svg class="footer__icon-subscribe">
+                  <use href="./images/exampl.svg#icon-arrow" class="footer__icon-subscribe-button">
+                  </use>
+                </svg>
+              </button>
+            </div>
+          </label>
+        </form>
+
+      </div>
+
+
+      <div class="footer_social border">
         <ul class="footer__social-list">
           <li class="footer__social-list-icon">
             <a href="https://www.instagram.com/" target="_blank" rel="noreferrer noopener" class="footer__icon-link">
               <svg class="footer__icon">
-                <use href="./images/svg/exampl.svg#icon-instagram" class="footer__icon-svg">
+                <use href="./images/exampl.svg#icon-instagram" class="footer__icon-svg">
                 </use>
               </svg>
             </a>
           </li>
           <li class="footer__social-list-icon"><a href="https://www.facebook.com/" target="_blank"
               rel="noreferrer noopener" class="footer__icon-link"><svg class="footer__icon">
-                <use href="./images/svg/exampl.svg#icon-facebook">
+                <use href="./images/exampl.svg#icon-facebook">
                 </use>
               </svg>
             </a>
           </li>
         </ul>
         <ul>
-          <li><a href="">
-              <picture>
-                <source srcset="./images/img/logo-mobile-footer-1x.webp 1x, ./images/img/logo-mobile-footer-2x.webp 2x"
-                  media="(min-width:414px)" type="image/webp">
-                <img src="../src/images/img/logo-mobile-footer-1x.jpeg" alt="" class="img">
-              </picture>
+          <li><a href="#">
+              <img src="./images/logo-mobile-footer-2x.webp" alt="">
             </a>
           </li>
           <li>
@@ -142,9 +161,9 @@
           </li>
         </ul>
       </div>
-
     </footer>
   </div>
+
 </body>
 
 </html>
