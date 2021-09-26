@@ -1,0 +1,68 @@
+.ordering {
+  background-color: $modal-background-color;
+  @media screen and (min-width: $mobile-first) {
+    padding-top: 39px;
+    padding-bottom: 28px;
+  }
+
+  @media screen and (min-width: $desktop-up) {
+    padding-top: 70px;
+    padding-bottom: 40px;
+  }
+}
+
+.ordering__title {
+  border-bottom: 1px solid $border-color;
+
+  font-family: $primary-font-family;
+  font-size: 21px;
+  line-height: 0.95;
+  letter-spacing: 0, 05em;
+  text-align: center;
+  text-transform: uppercase;
+
+  @media screen and (min-width: $mobile-first) {
+    padding-bottom: 21px;
+  }
+
+  @media screen and (min-width: $desktop-up) {
+    padding-bottom: 14px;
+  }
+}
+
+.ordering__img {
+  @media screen and (min-width: $mobile-first) {
+    max-width: 100px;
+  }
+
+  @media screen and (min-width: $desktop-up) {
+    max-width: 80px;
+  }
+}
+.ordering__name {
+  font-family: $primary-font-family;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1, 11;
+}
+
+// .icon-cross {
+//   fill: red;
+// }
+
+@media screen and (min-width: $mobile-first) {
+  .ordering__name {
+    margin-bottom: 6px;
+    margin-left: 16px;
+  }
+}
+
+@media screen and (min-width: $desktop-up) {
+  .ordering__name {
+    margin-left: 14px;
+  }
+
+  .ordering__card--desctop {
+    display: flex;
+  }
+}
