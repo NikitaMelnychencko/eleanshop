@@ -1,62 +1,83 @@
-<div class='delivery-method' role='group'>
-  <label>
-    <input type='radio' name='delivery-method' value='Showroom' checked />
-    Шоурум
-  </label>
-  <label>
-    <input type='radio' name='delivery-method' value='By courier in Kiev' checked />
-    Курьером по Киеву
-  </label>
-  <label>
-    <input type='radio' name='delivery-method' value='By courier in Ukraine' checked />
-    Курьером по Украине
-  </label>
-  <label>
-    <input type='radio' name='delivery-method' value='By courier abroad' checked />
-    Курьером за границу
-  </label>
-</div>
-<div class='basic-information' role='group'>
-  <label>
-    <input type='text' name='name' required minlength='2' />
-  </label>
-  <label>
-    <input
-      type='text'
-      name='tel'
-      required
-      pattern='[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}'
-      title='067-000-00-00'
-    />
-  </label>
-  <label>
-    <input type='text' name='email' required />
-  </label>
-  <label>
-    <textarea name='feedback' placeholder='Введите текст'></textarea>
-  </label>
+<div class='form__method-ordering form__method-ordering--flex'>
+  <div>
+    <div class='delivery' role='group'>
+      <h3 class="delivery__title">ВЫБЕРИТЕ СПОСОБ ДОСТАВКИ</h3>
+      <div class="delivery-method">
+        <label class="delivery-method__item">
+          <input type='radio' name='delivery-method' value='Showroom' checked />
+          <span>Шоурум</span>
+        </label>
+        <label class="delivery-method__item">
+          <input type='radio' name='delivery-method' value='By courier in Kiev' checked />
+          <span>Курьером по Киеву</span>
+        </label>
+        <label class="delivery-method__item">
+          <input type='radio' name='delivery-method' value='By courier in Ukraine' checked />
+          <span>Курьером по Украине</span>
+        </label>
+        <label class="delivery-method__item">
+          <input type='radio' name='delivery-method' value='By courier abroad' checked />
+          <span>Курьером за границу</span>
+        </label>  
+      </div>
+      
 
+    </div>
+    <div class='basic-information' role='group'>
+      <h3 class='basic-information__title'>ОСНОВНАЯ ИНФОРМАЦИЯ</h3>
+      <label class="basic-information__field">
+        <input type='text' name='name' required minlength='2' />
+      </label>
+      <label class="basic-information__field">
+        <input
+          type='text'
+          name='tel'
+          required
+          pattern='[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}'
+          title='067-000-00-00'
+        />
+      </label>
+      <label class="basic-information__field">
+        <input type='text' name='email' required />
+      </label>
+      <label class="basic-information__field">
+        <textarea name='feedback' placeholder='Введите текст'></textarea>
+      </label>
+
+    </div>
+    <div class='payment-method' role='group'>
+      <h3>ВЫБЕРИТЕ СПОСОБ ОПЛАТЫ</h3>
+      <label>
+        <input type='radio' name='payment-method' value='Payment by card' checked />
+        Оплата картой
+      </label>
+      <label>
+        <input type='radio' name='payment-method' value='Cash to the courier' checked />
+        Наличными курьеру
+      </label>
+      <label>
+        <input type='radio' name='payment-method' value='C.O.D' checked />
+        Наложенный платеж
+      </label>
+      <label>
+        <input type='radio' name='payment-method' value='Buy in installments' checked />
+        Купить в рассрочку
+      </label>
+    </div>
+    <div class='total'>
+      <p>ИТОГО:</p>
+      <p></p>
+    </div>
+    <button type='submit'>ОФОРМИТЬ ЗАКАЗ</button>
+  </div>
+
+  <div class='description'>
+    <div class="description-thumb">
+      <div class="description-images">
+        <img class="card-image card-image--no-gap" srcset="./images/buyers.jpg 1x, ./images/buyers@2x.jpg 2x" src="./images/buyers.jpg" alt="покупатели">
+        <img class="card-image card-image--no-gap" srcset="./images/mirror_reflection.jpg 1x, ./images/mirror_reflection@2x.jpg 2x" src="./images/mirror_reflection.jpg" alt="зеркальное отражение покупателей">  
+      </div>
+      <p>Все заказы, размещенные на сайте ELEAN бережно и с любовью упакованы в картонную коробку и перевязанны лентой с логотипом бренда.</p>  
+      <p>Костюмы доставляются в тканевом чехле для комфортного хранения и перевозки. В каждый заказ вкладывается карточка с рекомендациями по уходу за изделиями.</p>     
+  </div>
 </div>
-<div class='payment-method' role='group'>
-  <label>
-    <input type='radio' name='payment-method' value='Payment by card' checked />
-    Оплата картой
-  </label>
-  <label>
-    <input type='radio' name='payment-method' value='Cash to the courier' checked />
-    Наличными курьеру
-  </label>
-  <label>
-    <input type='radio' name='payment-method' value='C.O.D' checked />
-    Наложенный платеж
-  </label>
-  <label>
-    <input type='radio' name='payment-method' value='Buy in installments' checked />
-    Купить в рассрочку
-  </label>
-</div>
-<div class='total'>
-  <p>ИТОГО:</p>
-  <p></p>
-</div>
-<button type='submit'>ОФОРМИТЬ ЗАКАЗ</button>

@@ -1,0 +1,50 @@
+.form__method-ordering--flex{
+  
+  @media screen and(min-width: $desktop-up) {
+    display: flex;
+  }
+}
+.delivery__title{
+  margin-bottom: 34px;
+  font-family: $third-font-family,sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.11;
+  letter-spacing: 0.05em;
+  color: $secondary-text-color;
+}
+.delivery-method{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  @media screen and(min-width: $desktop-up) {
+    width: 690px;
+  }
+  
+}
+.delivery-method__item{
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+  font-size: 17px;
+  line-height: 1.35;
+}
+.delivery-method__item input{
+  height: 28px;
+  width: 28px;
+  margin-right: 10px;
+  border: 1px solid #D0D0D0;
+}
+.delivery-method__item:nth-child(2){
+margin-left: 46px;
+}
+.description{
+  display: none;
+  @media screen and(min-width: $desktop-up) {
+    display: block;
+    
+  }
+}
+.description-images{
+  display: flex;
+}
