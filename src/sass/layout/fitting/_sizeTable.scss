@@ -1,0 +1,40 @@
+.size {
+  width: 400px;
+  background-color: aqua;
+  color: tomato;
+}
+.button-Close {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  /* or 117% */
+  letter-spacing: 1.17;
+
+  width: 120px;
+  height: 25px;
+  background-color: black;
+  color: white;
+
+  border-style: none;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: gray;
+  }
+}
+.button-Close-icon {
+  width: 40px;
+  height: 40px;
+
+  fill: blue;
+  &:use {
+    width: 20px;
+    height: 20px;
+    fill: tomato;
+  }
+}
