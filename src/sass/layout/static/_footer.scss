@@ -1,0 +1,154 @@
+
+.footer{
+
+    background-color: $footer-background-color;
+    padding-top: 36px;
+    padding-bottom: 26px;
+
+    &__list-item{
+        font-size: 15px;
+        font-style: normal;
+        line-height: 1.4;
+        color:$primary-text-color;
+    }
+}
+.footer__list{
+            padding-left: 15px;
+
+}
+
+.footer__social-list{
+    display: flex;
+    justify-content: start;
+    align-items:center; 
+    // border-radius: 50%;
+    // transition: background-color $time-function $cubic-bezier;
+}
+.footer__icon{
+        display: block;
+        width: 20px;
+        height: 20px;
+        margin-right: 15px;
+    // transition: fill $time-function $cubic-bezier;
+}
+
+.footer__icon-svg{
+    display: block;
+    width: 20px;
+    height: 20px;
+    fill: #2F2F2F;
+}
+
+.footer__icon-menu{
+    display: flex;
+     width: 11px;
+    height: 11px;
+}
+
+.footer__list-item{
+        &-plus{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+    }
+}
+
+.border{
+        border-top:  1px  solid #d3d1d1;
+        padding-top: 15px;
+        padding-bottom: 15px;
+
+}
+
+.footer__list-dropdown.js-dropdown{
+    display: none;
+}
+
+.footer__icon-menu-open{
+    position: relative;
+    display: block;
+    width: 11px;
+    height: 11px;
+}
+
+.footer__icon-menu-close{
+    position: absolute;
+    top: 0px;
+}
+
+.footer_social{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+.footer__form-subscribe{
+    margin-top: 28px;
+}
+.footer__form-position{
+    position: relative;
+
+}
+
+.footer__form-input{
+    border: none;
+    border-bottom:  1px  solid #222222;
+    color:$primary-text-color;
+    width: 340px;
+    font-size: 14px;
+    line-height: 1.43;
+    letter-spacing: 0.1em;
+    padding-bottom: 6px;
+    padding-top: 6px;
+
+}
+
+.footer__subscribe-button{
+    position: absolute;
+    border: none;
+    cursor: pointer;
+    top: 10px;
+    left: 300;
+    
+}
+
+.footer__icon-subscribe{
+    text-align: center;
+    width: 22px;
+    height: 6px;
+    
+}
+.footer__icon-subscribe-button{
+    width: 22px;
+    height: 6px;
+
+}
+
+
+// Dropdown PC hover
+
+// .footer__list-dropdown{
+//     display: none;
+//     // position: absolute;
+//     min-width: 160px;
+// }
+// /* Dropdown Content (Hidden by Default) */
+// .dropdown-content {
+//     display: none;
+//     min-width: 160px;
+// }
+
+// /* Links inside the dropdown */
+// .dropdown-content{
+//     padding: 12px 16px;
+//     text-decoration: none;
+//     display: block;
+// }
+// /* Change color of dropdown links on hover */
+// .dropdown-content:hover {background-color: #ddd;}
+// /* Show the dropdown menu on hover */
+// .js-dropdown:hover .footer__list-dropdown {display: block;}
+// /* Change the background color of the dropdown button when the dropdown content is shown */
+// .js-dropdown:hover .test {background-color: $accent-color;}
