@@ -1,0 +1,62 @@
+<div class='delivery-method' role='group'>
+  <label>
+    <input type='radio' name='delivery-method' value='Showroom' checked />
+    Шоурум
+  </label>
+  <label>
+    <input type='radio' name='delivery-method' value='By courier in Kiev' checked />
+    Курьером по Киеву
+  </label>
+  <label>
+    <input type='radio' name='delivery-method' value='By courier in Ukraine' checked />
+    Курьером по Украине
+  </label>
+  <label>
+    <input type='radio' name='delivery-method' value='By courier abroad' checked />
+    Курьером за границу
+  </label>
+</div>
+<div class='basic-information' role='group'>
+  <label>
+    <input type='text' name='name' required minlength='2' />
+  </label>
+  <label>
+    <input
+      type='text'
+      name='tel'
+      required
+      pattern='[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}'
+      title='067-000-00-00'
+    />
+  </label>
+  <label>
+    <input type='text' name='email' required />
+  </label>
+  <label>
+    <textarea name='feedback' placeholder='Введите текст'></textarea>
+  </label>
+
+</div>
+<div class='payment-method' role='group'>
+  <label>
+    <input type='radio' name='payment-method' value='Payment by card' checked />
+    Оплата картой
+  </label>
+  <label>
+    <input type='radio' name='payment-method' value='Cash to the courier' checked />
+    Наличными курьеру
+  </label>
+  <label>
+    <input type='radio' name='payment-method' value='C.O.D' checked />
+    Наложенный платеж
+  </label>
+  <label>
+    <input type='radio' name='payment-method' value='Buy in installments' checked />
+    Купить в рассрочку
+  </label>
+</div>
+<div class='total'>
+  <p>ИТОГО:</p>
+  <p></p>
+</div>
+<button type='submit'>ОФОРМИТЬ ЗАКАЗ</button>
