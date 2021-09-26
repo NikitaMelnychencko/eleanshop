@@ -5,28 +5,26 @@
       <div class="delivery-method">
         <label class="delivery-method__item">
           <input type='radio' name='delivery-method' value='Showroom' checked />
-          <span>Шоурум</span>
+          <span class="delivery-method__text">Шоурум</span>
         </label>
         <label class="delivery-method__item">
           <input type='radio' name='delivery-method' value='By courier in Kiev' checked />
-          <span>Курьером по Киеву</span>
+          <span class="delivery-method__text">Курьером по Киеву</span>
         </label>
         <label class="delivery-method__item">
           <input type='radio' name='delivery-method' value='By courier in Ukraine' checked />
-          <span>Курьером по Украине</span>
+          <span class="delivery-method__text">Курьером по Украине</span>
         </label>
         <label class="delivery-method__item">
           <input type='radio' name='delivery-method' value='By courier abroad' checked />
-          <span>Курьером за границу</span>
+          <span class="delivery-method__text">Курьером за границу</span>
         </label>  
       </div>
-      
-
     </div>
     <div class='basic-information' role='group'>
       <h3 class='basic-information__title'>ОСНОВНАЯ ИНФОРМАЦИЯ</h3>
       <label class="basic-information__field">
-        <input type='text' name='name' required minlength='2' />
+        <input type='text' name='name' required minlength='2' placeholder='ВВЕДИТЕ ФИО'/>
       </label>
       <label class="basic-information__field">
         <input
@@ -35,33 +33,37 @@
           required
           pattern='[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}'
           title='067-000-00-00'
+          placeholder='ВВЕДИТЕ ТЕЛЕФОН'
         />
       </label>
       <label class="basic-information__field">
-        <input type='text' name='email' required />
+        <input type='text' name='email' required placeholder='ВВЕДИТЕ E-MAIL' />
       </label>
       <label class="basic-information__field">
-        <textarea name='feedback' placeholder='Введите текст'></textarea>
+        <textarea name='feedback' placeholder='ДОБАВИТЬ КОММЕНТАРИЙ'></textarea>
       </label>
-
+      <label class="basic-information__field">
+        <input type="checkbox" name='agreement-conditions' value="I agree" />
+        <span class="basic-information__text">Я принимаю договор публичной оферты</span>
+      </label>
     </div>
     <div class='payment-method' role='group'>
-      <h3>ВЫБЕРИТЕ СПОСОБ ОПЛАТЫ</h3>
-      <label>
+      <h3 class="payment-method__title">ВЫБЕРИТЕ СПОСОБ ОПЛАТЫ</h3>
+      <label class='payment-method__item'>
         <input type='radio' name='payment-method' value='Payment by card' checked />
-        Оплата картой
+        <span class='payment-method__text'>Оплата картой</span>
       </label>
-      <label>
+      <label class='payment-method__item'>
         <input type='radio' name='payment-method' value='Cash to the courier' checked />
-        Наличными курьеру
+         <span class='payment-method__text'>Наличными курьеру</span>
       </label>
-      <label>
+      <label class='payment-method__item'>
         <input type='radio' name='payment-method' value='C.O.D' checked />
-        Наложенный платеж
+         <span class='payment-method__text'>Наложенный платеж</span>
       </label>
-      <label>
+      <label class='payment-method__item'>
         <input type='radio' name='payment-method' value='Buy in installments' checked />
-        Купить в рассрочку
+        <span class='payment-method__text'>Купить в рассрочку</span>
       </label>
     </div>
     <div class='total'>
