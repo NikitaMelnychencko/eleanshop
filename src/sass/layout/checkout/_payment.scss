@@ -42,7 +42,8 @@
   font-size: 17px;
   line-height: 1.35;
 }
-.delivery-method__item:last-child{
+.delivery-method__item:last-child,
+.payment-method__item:last-child{
   margin-bottom: 0px;
 }
 .delivery-method__item input,
@@ -99,6 +100,7 @@ margin-left: 46px;
 .payment{
   padding-bottom: 31px;
   border-bottom: 1px solid #E3E4E4;
+  margin-bottom: 24px;
 }
 
 .payment-method__item input{
@@ -106,9 +108,23 @@ margin-left: 46px;
 }
 .delivery-method input[type='radio'],
 .payment-method__item input[type='radio']{
- 
-}
 
+}
+//total
+.total{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  
+}
+.total__text,
+.total__value{
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.11;
+  color: $secondary-text-color;
+}
 //description
 .description{
   display: none;
