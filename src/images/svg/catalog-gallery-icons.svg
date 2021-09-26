@@ -1,0 +1,7 @@
+        <svg aria-hidden="true" style="position: absolute; width: 0; height: 0;" xmlns="http://www.w3.org/2000/svg" overflow="hidden">
+    <defs>
+        <symbol id="icon-gallery-card-heart" viewBox="0 0 38 32">
+<path fill="none" stroke="#dadada" style="stroke: var(--color1, #dadada)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="3.8637" stroke-width="4.2667" d="M19.314 6.295c-1.032-0.913-4.988-4.195-8.49-4.162-3.59 0.035-9.13 2.345-8.663 9.192 0.413 6.048 16.878 18.485 16.878 18.485 0.103 0.075 0.21 0.075 0.321 0 0 0 16.465-12.438 16.879-18.485 0.467-6.847-5.073-9.157-8.664-9.192-4.068-0.039-8.746 4.394-8.746 4.394l-3.176 3.185"></path>
+</symbol>
+    </defs>
+</svg>
