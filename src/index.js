@@ -1,6 +1,8 @@
 import './images/img/exampl.jpg';
 import './images/svg/exampl.svg';
 import './images/svg/sprite.svg';
+import './images/svg/thanks_for_ordering.svg';
+
 import './sass/main.scss';
 //=========layout===============
 //static
@@ -50,4 +52,5 @@ import './js/layout/checkout/payment.js';
 import './js/layout/favorites/favorites.js';
 import './js/layout/favorites/sabmitEmail.js';
 // backfrop
-import './js/components/backfrop.js';
+import './js/components/backdrop.js';
+import './js/test/backdropTest.js';

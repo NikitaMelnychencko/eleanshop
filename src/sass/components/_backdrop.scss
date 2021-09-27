@@ -31,3 +31,73 @@
 
   transition: opacity $time-cubic, transform $time-cubic;
 }
+
+.form__button-сlose {
+  @extend %form__btn;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-family: $third-font-family;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  font-size: 12px;
+  line-height: 1.17;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: $selection-text-color;
+  background: $secondary-text-color;
+
+  width: 40px;
+  height: 40px;
+
+  &:hover,
+  &:focus {
+    background-color: $selection-text-color;
+    color: $secondary-text-color;
+  }
+
+  @media screen and (min-width: $mobile-general) {
+    top: auto;
+    bottom: 100%;
+
+    justify-content: space-between;
+
+    width: 120px;
+    height: 25px;
+    padding-left: 11px;
+    padding-right: 12px;
+  }
+
+  @media screen and (max-width: $mobile-general) {
+    &-text {
+      position: absolute;
+      border: 0;
+
+      white-space: nowrap;
+
+      clip-path: inset(100%);
+      clip: rect(0 0 0 0);
+
+      overflow: hidden;
+
+      width: 1px;
+      height: 1px;
+      margin: -1px;
+      padding: 0;
+    }
+  }
+
+  &-icon {
+    width: 20px;
+    height: 20px;
+    fill: $selection-text-color;
+
+    .form__button-сlose:hover &,
+    .form__button-сlose:focus & {
+      fill: $secondary-text-color;
+    }
+  }
+}

@@ -8,4 +8,13 @@
   text-align: center;
   letter-spacing: 0.1em;
   box-sizing: border-box;
+  cursor: pointer;
+}
+
+%form__btn {
+  border-style: none;
+  border-radius: 0;
+  cursor: pointer;
+  transition: background-color $time-cubic;
+  border: 1px solid $secondary-text-color;
 }

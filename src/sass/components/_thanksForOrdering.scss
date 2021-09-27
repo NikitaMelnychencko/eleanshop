@@ -1,8 +1,10 @@
 .ordering {
   &__form {
-    padding: 106px 140px 63px 140px;
+    margin: 0 auto;
+    padding: 100px 120px 63px 120px;
     width: 780px;
     height: 516px;
+    background-color: $primary-background-color;
   }
 
   &__image {
@@ -18,14 +20,14 @@
     font-style: normal;
     font-weight: normal;
     font-size: 30px;
-    line-height: 23px;
+    line-height: 23 / 30 * 100%;
     /* identical to box height, or 77% */
 
     text-align: center;
     letter-spacing: 0.03em;
 
-    color: #000000;
-    margin-bottom: 35px;
+    color: $secondary-text-color;
+    margin-bottom: 20px;
   }
 
   &__context {
@@ -33,14 +35,13 @@
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
-    line-height: 27px;
-    /* or 135% */
+    line-height: 27 / 20 * 100%;
 
     text-align: center;
     letter-spacing: 0.03em;
 
-    color: #000000;
-    margin-bottom: 35px;
+    color: $secondary-text-color;
+    margin-bottom: 50px;
   }
 
   &__btn-continue {
