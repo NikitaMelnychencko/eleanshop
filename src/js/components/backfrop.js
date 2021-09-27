@@ -1,30 +1,34 @@
-const backdropRef = document.querySelector('[data-modal]');
-const closeModalBtnRef = document.querySelector('[data-modal-close]');
+class Backdrop {
+  constructor() {
+    this.backdropRef = document.querySelector('[data-modal]');
+    this.closeModalBtnRef = document.querySelector('[data-modal-close]');
 
-backdropRef.addEventListener('click', onClickButton);
-closeModalBtnRef.addEventListener('click', onClickButton);
-window.addEventListener('keyup', onKeyPress);
+    backdropRef.addEventListener('click', this.onClickButton);
+    closeModalBtnRef.addEventListener('click', this.onClickButton);
+    window.addEventListener('keyup', this.onKeyPress);
+  }
 
-function closeModalForm() {
-  document.body.classList.toggle('modal-open');
-  backdropRef.classList.toggle('is-hidden');
-  window.removeEventListener('keyup', onKeyPress);
-}
+  closeModalForm() {
+    document.body.classList.toggle('modal-open');
+    backdropRef.classList.toggle('is-hidden');
+    window.removeEventListener('keyup', onKeyPress);
+  }
 
-function onClickButton() {
-  closeModalForm();
-}
+  onClickButton() {
+    this.closeModalForm();
+  }
 
-function onClickOverlay() {
-  closeModalForm();
-}
+  onClickOverlay() {
+    this.closeModalForm();
+  }
 
-function onKeyPress(event) {
-  switch (event.key) {
-    // Закрытие модального окна по нажатию клавиши ESC.
-    case 'Esc':
-    case 'Escape':
-      closeModalForm();
-      break;
+  onKeyPress(event) {
+    switch (event.key) {
+      // Закрытие модального окна по нажатию клавиши ESC.
+      case 'Esc':
+      case 'Escape':
+        this.closeModalForm();
+        break;
+    }
   }
 }
