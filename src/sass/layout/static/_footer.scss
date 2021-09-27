@@ -1,5 +1,36 @@
+/* ====== VISUALLY HIDDEN ======*/
+.mobile{
+    opacity: 1;
 
-.footer{
+    @media screen and (min-width:$desktop-up){
+     position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+    }
+}
+ /* ====== END VISUALLY HIDDEN ======*/
+
+.is-open{
+    pointer-events: auto;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.footer__mobile-logo-text{
+    font-size: 10px;
+    line-height: 1.5;
+    letter-spacing: 0.1em;
+    margin-left: 8px;
+}
+
+.footer__mobile{
     background-color: $footer-background-color;
     padding-top: 36px;
     padding-bottom: 26px;
@@ -11,19 +42,19 @@
         color:$primary-text-color;
     }
 }
-.footer__list{
-            padding-left: 15px;
 
+.footer__mobile-list{
+    padding-left: 15px;
 }
 
-.footer__social-list{
+.footer__mobile-social-list{
     display: flex;
     justify-content: start;
     align-items:center; 
     // border-radius: 50%;
     // transition: background-color $time-function $cubic-bezier;
 }
-.footer__icon{
+.footer__mobile-icon{
         display: block;
         width: 20px;
         height: 20px;
@@ -31,24 +62,44 @@
     // transition: fill $time-function $cubic-bezier;
 }
 
-.footer__icon-svg{
+.footer__mobile-icon-svg{
     display: block;
     width: 20px;
     height: 20px;
     fill: #2F2F2F;
 }
 
-.footer__icon-menu{
+.footer__mobile-icon-position-relative{
+        position: relative;
+}
+
+.footer__mobile-icon-position-absolute{
+        position: absolute;
+        right: 20px;
+
+}
+
+.footer__mobile-icon-menu{
     display: flex;
      width: 11px;
     height: 11px;
 }
+.footer__mobile-submenu{
+        font-weight: 500;
+        font-size: 15px;
+        color: $primary-logo-color;
+        padding-bottom: 5px;
+        padding-left: 10px;
+}
 
-.footer__list-item{
+.footer__mobile-list-item{
         &-plus{
             display: flex;
             align-items: center;
             justify-content: space-between;
+            font-weight: 500;
+            font-size: 15px;
+            color: $primary-logo-color;
     }
 }
 
@@ -56,73 +107,90 @@
         border-top:  1px  solid #d3d1d1;
         padding-top: 15px;
         padding-bottom: 15px;
-
 }
 
 .footer__list-dropdown.js-dropdown{
     display: none;
 }
 
-.footer__icon-menu-open{
+.footer__mobile-icon-menu-open{
     position: relative;
     display: block;
     width: 11px;
     height: 11px;
 }
 
-.footer__icon-menu-close{
+.footer__mobile-icon-menu-close{
     position: absolute;
     top: 0px;
 }
 
-.footer_social{
+.footer__mobile-social{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-left: 15px;
+
 }
 
-.footer__icon-logo{
+.footer__mobile-icon-logo{
     width: 101px;
     height: 19px;
 }
+.footer__mobile-logo-list{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
 
-.footer__form-subscribe{
+.footer__mobile-form-subscribe{
     margin-top: 28px;
 }
-.footer__form-position{
-    position: relative;
 
+.footer__mobile-form-position{
+    position: relative;
+    padding-left: 15px;
+}
+.footer__mobile-title-subscribe{
+    color: $primary-logo-color;
+    padding-left: 15px;
+    font-size: 15px;
+    line-height: 21px;
 }
 
-.footer__form-input{
+.footer__mobile-form-input{
     border: none;
     border-bottom:  1px  solid #222222;
-    color:$primary-text-color;
-    width: 340px;
+    width: 100%;
     font-size: 14px;
     line-height: 1.43;
     letter-spacing: 0.1em;
     padding-bottom: 6px;
     padding-top: 6px;
-
+    padding-right: 25px;
+    color: $primary-logo-color;
 }
 
-.footer__subscribe-button{
+.footer__mobile-subscribe-button{
     position: absolute;
     border: none;
-    cursor: pointer;
+    outline: none; 
+    background-color: transparent; 
     top: 10px;
-    left: 300;
+    cursor: pointer;
     
 }
-
-.footer__icon-subscribe{
+.footer__mobile-list-dropdown.js-dropdown{
+    display: none;
+    margin-top: 15px;
+}
+.footer__mobile-icon-subscribe{
     text-align: center;
     width: 22px;
     height: 6px;
     
 }
-.footer__icon-subscribe-button{
+.footer__mobile-icon-subscribe-button{
     width: 22px;
     height: 6px;
 
@@ -154,3 +222,123 @@
 // .js-dropdown:hover .footer__list-dropdown {display: block;}
 // /* Change the background color of the dropdown button when the dropdown content is shown */
 // .js-dropdown:hover .test {background-color: $accent-color;}
+
+
+//==============desktop=========//
+
+
+ .desktop{
+     opacity: 1;
+     display: flex;
+    justify-content: space-between; 
+    padding-top: 105px;
+
+ 
+
+    @media screen and (max-width:$desktop-up){
+     position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+    }
+}
+
+.footer__desktop-icon-logo{
+    display: block;
+    width: 124px;
+    height: 23px;
+    margin-top: 14px;
+    margin-bottom: 44px;
+
+}
+
+
+.footer__desktop-list{
+    display: flex;
+    justify-content:space-between;
+    margin-bottom: 37px;
+    
+}
+
+.footer__desktop-item{
+    line-height: 2.9;
+    color: $primary-logo-color;
+
+}
+.footer__desktop-list-contacts-info{
+    display: flex;
+    justify-content:space-between;
+    align-items: baseline;
+
+
+}
+
+
+.footer__desktop-item-contacts-info{
+    line-height: 1.5;
+    color: $primary-logo-color;
+    margin-right: 10px;
+}
+
+.test{
+    display: block;
+}
+
+.footer__desktop-social-list{
+    display: flex;
+    justify-content: center;
+
+}
+
+.footer__desktop-icon{
+        display: block;
+        width: 20px;
+        height: 20px;
+        margin-right: 15px;
+    // transition: fill $time-function $cubic-bezier;
+}
+
+.footer__desktop-icon-svg{
+    display: block;
+    width: 20px;
+    height: 20px;
+    fill: #2F2F2F;
+}
+
+.footer__desktop-form{
+display: flex;
+flex-direction: column;
+margin: 0;
+}
+
+.footer__desktop-form-input{
+margin-bottom: 11px;
+}
+
+.footer__desktop-license{
+    display: flex;
+    align-items: center;
+    
+    padding-bottom: 12px;
+}
+
+.footer__desktop-checkbox-container{
+    position: relative;
+}
+
+.footer__desktop-license-checkbox-text{
+    font-size: 13px;
+    line-height: 1.54;
+}
+.footer__desktop-license-input-icon-checkbox{
+    position: absolute;
+    left: 0px;
+    width: 14px;
+    height: 14px;
+}
