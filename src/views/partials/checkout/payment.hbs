@@ -2,9 +2,8 @@
   <div>
     <div class='delivery' role='group'>
       <h3 class="delivery__title">ВЫБЕРИТЕ СПОСОБ ДОСТАВКИ</h3>
-      <div class="delivery-method">
+      <div class="delivery-method ">
         <label class="delivery-method__item">
-          <div class="delivery-method__icon-check"></div>
           <input class="delivery-method__form-radio" type='radio' name='delivery-method' value='Showroom' checked/>
           <span class="delivery-method__text">Шоурум</span>
         </label>
@@ -44,7 +43,7 @@
         <textarea name='feedback' placeholder='ДОБАВИТЬ КОММЕНТАРИЙ'></textarea>
       </label>
       <label class="basic-information__field">
-        <input type="checkbox" name='agreement-conditions' value="I agree" />
+        <input class="basic-information__checkbox" type="checkbox" name='agreement-conditions' value="I agree" />
         <span class="basic-information__text">Я принимаю договор публичной оферты</span>
       </label>
     </div>
@@ -52,26 +51,26 @@
       <h3 class="payment-method__title">ВЫБЕРИТЕ СПОСОБ ОПЛАТЫ</h3>
       <div class='payment-method'>
         <label class='payment-method__item'>
-          <input type='radio' name='payment-method' value='Payment by card' checked />
+          <input class="payment-method__form-radio" type='radio' name='payment-method' value='Payment by card'checked/>
           <span class='payment-method__text'>Оплата картой</span>
         </label>
         <label class='payment-method__item'>
-          <input type='radio' name='payment-method' value='Cash to the courier' checked />
+          <input class="payment-method__form-radio" type='radio' name='payment-method' value='Cash to the courier'  />
           <span class='payment-method__text'>Наличными курьеру</span>
         </label>
         <label class='payment-method__item'>
-          <input type='radio' name='payment-method' value='C.O.D' checked />
+          <input class="payment-method__form-radio" type='radio' name='payment-method' value='C.O.D' />
           <span class='payment-method__text'>Наложенный платеж</span>
         </label>
         <label class='payment-method__item'>
-          <input type='radio' name='payment-method' value='Buy in installments' checked />
+          <input class="payment-method__form-radio" type='radio' name='payment-method' value='Buy in installments' />
           <span class='payment-method__text'>Купить в рассрочку</span>
         </label>  
       </div>
     </div>
     <div class='total'>
       <p class="total__text">ИТОГО:</p>
-      <p class="total__value">1000 <span>&#8372;</span></p>
+      <p class="total__value">0 <span>&#8372;</span></p>
     </div>
     <button class="button__checkout" type='submit'>ОФОРМИТЬ ЗАКАЗ</button>
   </div>

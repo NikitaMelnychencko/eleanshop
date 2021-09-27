@@ -55,5 +55,7 @@
     "webpack-merge": "^5.8.0",
     "webpackbar": "^5.0.0-3"
   },
-  "dependencies": {}
+  "dependencies": {
+    "pretty-checkbox": "^3.0.3"
+  }
 }
