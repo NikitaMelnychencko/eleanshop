@@ -7,9 +7,9 @@
     "price": "100",
     "size": [
       {"42": true},
-       {"48": true},
+      {"48": true},
       {"46": false},
-     {"40": false},
+      {"40": false},
       {"50": true},
       {"44": true},
       {"52": true},
