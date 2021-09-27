@@ -1,6 +1,6 @@
 /* ====== VISUALLY HIDDEN ======*/
 .hiden{
-    position: absolute;
+        position: absolute;
         width: 1px;
         height: 1px;
         margin: -1px;
@@ -12,9 +12,11 @@
         overflow: hidden;
 }
 .mobile{
+    // display: none;
     opacity: 1;
-
     @media screen and (min-width:$desktop-up){
+        opacity: 0;
+        // display: block;
         position: absolute;
         width: 1px;
         height: 1px;
@@ -148,6 +150,7 @@
 }
 
 .footer__mobile-icon-logo{
+    margin-right: 7px;
     width: 101px;
     height: 19px;
 }
@@ -183,6 +186,13 @@
     padding-top: 6px;
     padding-right: 25px;
     color: $primary-logo-color;
+    outline: none;
+
+        &:hover,
+        &:focus,
+        &:active{
+            border-color: #D7B494;
+        }
 }
 
 .footer__mobile-subscribe-button{

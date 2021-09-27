@@ -24,7 +24,7 @@
   <!-- //mobile version// -->
 
   <section class="mobile">
-    <h3 class="hiden">Мобильная версия</h3>
+    <h3 class="hidden"></h3>
     <div class="container ">
       <footer class="footer__mobile">
         <ul class="footer__mobile-list">
@@ -172,7 +172,7 @@
         <use href="./images/exampl.svg#icon-arrow" class="footer__icon-subscribe-button">
         </use>
       </svg> -->
-        <div class="footer__mobile-social border">
+        <div class="footer__mobile-social border" id="footer-mobile-icon">
           <ul class="footer__mobile-social-list">
             <li class="footer__mobile-social-list-icon">
               <a href="https://www.instagram.com/" target="_blank" rel="noreferrer noopener" class="footer__icon-link">
@@ -200,16 +200,16 @@
               </a>
             </li>
             <li>
-              <span class="footer__mobile-logo-text">ЖЕНСКИЙ СМОКИНГ</span>
+              <span class="footer__mobile-logo-text">ЖЕНСКИЙ <br> СМОКИНГ</span>
             </li>
           </ul>
         </div>
       </footer>
     </div>
   </section>
-  <section class="desktop">
-    <h3 class="hiden">Версия для ПК</h3>
-    <div class="container">
+
+  <div class="container">
+    <section class="desktop">
       <div class="footer__desktop-logo">
         <a href=""><svg class="footer__desktop-icon-logo">
             <use href="./images/exampl.svg#icon-logo">
@@ -239,7 +239,6 @@
           <li class="footer__desktop-item"><a href="#" class="footer__desktop-list-link">ПРИМЕРКА</a></li>
           <li class="footer__desktop-item"><a href="#" class="footer__desktop-list-link">КОНТАКТЫ</a></li>
         </ul>
-
         <ul class="footer__desktop-list-contacts-info">
           <li class="footer__desktop-item-contacts-info">
             <span>АДРЕС: <br> г. Киев, Контрактовая площадь 8</span>
@@ -274,15 +273,12 @@
         <label for="name" class="form__user"></label>
         <input type="text" name="footer_user-name" id="name" placeholder="ИМЯ" class="footer__desktop-form-input"
           required />
-
         <label for="email" class="form__user"></label>
         <input type="email" name="footer_user_email" id="email" placeholder="E-MAIL" class="footer__desktop-form-input"
           required />
-
         <div class="footer__desktop-license">
           <label for="checkbox" class="footer__desktop-checkbox-container">
             <input type="checkbox" name="footer_checkbox_license" id="checkbox" class="footer__desktop-checkbox" />
-
             <span class="footer__desktop-license-icon-checkbox">
               <svg class="footer__desktop-license-input-icon-checkbox">
                 <use href="./images/exampl.svg#icon-check-box">
@@ -300,8 +296,10 @@
         <input type="email" name="user-email" id="user_email" placeholder="ПОДПИСАТЬСЯ"
           class="footer__desktop-form-input" required />
       </form>
-    </div>
-  </section>
+    </section>
+  </div>
+
+
 </body>
 
 </html>
