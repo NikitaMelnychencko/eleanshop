@@ -44,20 +44,16 @@
   }
 }
 
-.ordering__article {
+.ordering__label {
   font-family: $primary-font-family;
   color: $secondary-accent-btn-color;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.11;
 
-  @media screen and (min-width: $mobile-first) {
+  @media screen and (min-width: $mobile-first) and (max-width: $tablet-only) {
     display: inline-block;
-    margin-bottom: 15px;
-  }
-
-  @media screen and (min-width: $desktop-up) {
-    margin-left: 14px;
+    margin-bottom: 50px;
   }
 }
 
@@ -65,22 +61,13 @@
   padding-top: 30px;
   padding-bottom: 30px;
   display: flex;
-}
-.ordering__card--desktop {
-  align-items: center;
 
   @media screen and (min-width: $mobile-first) {
-    display: none;
+    align-items: flex-start;
   }
-  @media screen and (min-width: $desktop-up) {
-    display: flex;
-  }
-}
-.ordering__card--mobile {
-  align-items: flex-start;
 
   @media screen and (min-width: $desktop-up) {
-    display: none;
+    align-items: center;
   }
 }
 
@@ -111,6 +98,12 @@
   }
 }
 
+.ordering__select--color {
+  @media screen and (min-width: $mobile-first) and (max-width: $tablet-only) {
+    display: none;
+  }
+}
+
 .ordering__btn {
   display: flex;
   justify-content: center;
@@ -135,14 +128,17 @@
   font-family: $primary-font-family;
   font-size: 18px;
   line-height: 1.27;
-  @media screen and (min-width: $mobile-first) {
+
+  @media screen and (min-width: $mobile-first) and (max-width: $tablet-only) {
+    position: absolute;
+    top: 30;
     display: block;
     margin-bottom: 28px;
   }
 
-  .ordering__price:after {
-    content: '\20BD';
-  }
+  // .ordering__price:after {
+  //   content: '\20BD';
+  // }
 
   @media screen and (min-width: $desktop-up) {
     margin: 0 18px 0 52px;
@@ -150,11 +146,15 @@
 }
 
 .ordering__button--close {
+  width: 40px;
+  height: 40px;
+
   background-color: $modal-background-color;
 
-  @media screen and (min-width: $mobile-first) {
-    width: 40px;
-    height: 40px;
+  @media screen and (min-width: $mobile-first) and (max-width: $tablet-only) {
+    position: absolute;
+    top: 0;
+    right: 0;
     margin-left: auto;
     margin-right: 0;
     border: 1px solid $primary-border-color;
@@ -169,11 +169,17 @@
 
 .ordering__box {
   flex: 1;
-  margin-left: 16px;
-}
-.ordering__innerbox {
-  display: flex;
-  align-items: center;
+  @media screen and (min-width: $mobile-first) and (max-width: $tablet-only) {
+    position: relative;
+
+    margin-left: 16px;
+  }
+
+  @media screen and (min-width: $desktop-up) {
+    display: flex;
+    align-items: center;
+    margin-left: 14px;
+  }
 }
 
 .ordering__selectbox {
