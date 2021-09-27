@@ -33,28 +33,39 @@
   padding-top: 30px;
   padding-bottom: 30px;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .recomendation-category__item {
+  outline: 1px solid red;
+  width: calc((100% - 2 * 10px) / 2);
+
   &:not(:last-child) {
     margin-right: 10px;
   }
 
   @media screen and (min-width: $desktop-up) {
+    width: calc((100% - 3 * 34px) / 4);
     &:not(:last-child) {
       margin-right: 34px;
     }
   }
 }
+.recomendation-category__link {
+  width: 100%;
+}
 
 .recomendation-category__image {
   display: block;
   width: 100%;
-  height: 200px;
 }
 
 .recomendation-category__block-title {
   padding-top: 12px;
+}
+
+.recomendation-category__block-characters {
+  padding-bottom: 24px;
 }
 
 .recomendation-category__block-characters,
@@ -76,6 +87,21 @@
 .recomendation-category__add-likes {
   margin-left: auto;
   background-color: transparent;
+  border: none;
+  padding-bottom: 15px;
+}
+
+.recomendation-category__icon {
+  fill: transparent;
+  stroke: $accent-favorite-btn-color;
+  width: 16px;
+  height: 14px;
+
+  @media screen and (min-width: $desktop-up) {
+    width: 21px;
+    height: 18px;
+    stroke: $secondary-text-color;
+  }
 }
 
 .recomendation-category__price {
