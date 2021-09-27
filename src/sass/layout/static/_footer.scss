@@ -1,18 +1,30 @@
 /* ====== VISUALLY HIDDEN ======*/
+.hiden{
+    position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+}
 .mobile{
     opacity: 1;
 
     @media screen and (min-width:$desktop-up){
-     position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
     }
 }
  /* ====== END VISUALLY HIDDEN ======*/
@@ -69,21 +81,23 @@
     fill: #2F2F2F;
 }
 
-.footer__mobile-icon-position-relative{
-        position: relative;
+.footer__mobile-list-item-plus{
+    position: relative;
 }
 
+.footer__mobile-icon-position-relative,
 .footer__mobile-icon-position-absolute{
         position: absolute;
-        right: 20px;
-
+        right: 0;
 }
 
+
+
 .footer__mobile-icon-menu{
-    display: flex;
      width: 11px;
     height: 11px;
 }
+
 .footer__mobile-submenu{
         font-weight: 500;
         font-size: 15px;
@@ -264,11 +278,26 @@
 .footer__desktop-list{
     display: flex;
     justify-content:space-between;
-    margin-bottom: 37px;
+    margin-bottom: 45px;
     
 }
 
-.footer__desktop-item{
+
+.footer__desktop-list-contacts-email{
+    margin-top: 30px;
+    
+}
+
+.footer__desktop-list-contacts-telephon,
+.footer__desktop-list-contacts-chat,
+.footer__desktop-list-contacts-email{
+    line-height: 25px;
+    color: $secondary-text-color;
+
+}
+
+.footer__desktop-item,
+.footer__desktop-list-link{
     line-height: 2.9;
     color: $secondary-text-color;
 
@@ -289,7 +318,10 @@
 .footer__desktop-item-contacts-info{
     line-height: 1.5;
     color: $secondary-text-color;
-    margin-right: 10px;
+    &:first-child{
+    margin-right: 71px;
+
+}
 }
 
 .footer__desktop-menu{
@@ -308,8 +340,13 @@
         width: 20px;
         height: 20px;
         margin-right: 15px;
-        margin-top: 30px;
+        margin-top: 37px;
     // transition: fill $time-function $cubic-bezier;
+    &:hover,
+    &:focus{
+        fill: $accent-color;
+
+    }
 }
 
 .footer__desktop-icon-svg{
@@ -330,10 +367,15 @@ margin: 0;
     padding-left: 12px;
     padding-top: 8px;
     padding-bottom: 8px;
-
     color: $secondary-text-color;
     border: 1px solid #D7B494;
     box-sizing: border-box;
+    outline: none;
+    &:hover,
+    &:focus,
+    &:active{
+        border-color: #D7B494;
+    }
 
 
 }
@@ -374,7 +416,7 @@ margin: 0;
 
     &:hover,
     &:focus{
-        border-color: #D7B494;
+        border-color: #a19e9a;
     }
 }
 
@@ -398,8 +440,6 @@ margin: 0;
     line-height: 1.54;
 
 }
-
 .footer__license__checkbox-text-doc{
     color: #D7B494;
-
 }
