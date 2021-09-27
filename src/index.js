@@ -49,3 +49,5 @@ import './js/layout/checkout/payment.js';
 //favorites
 import './js/layout/favorites/favorites.js';
 import './js/layout/favorites/sabmitEmail.js';
+// backfrop
+import './js/components/backfrop.js';
