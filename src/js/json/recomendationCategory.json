@@ -2,7 +2,7 @@
   {
     "id": "Card-1",
     "name": "/ Жакет-смокинг с лацканами",
-    "icon": "../../../images/exampl.svg#icon-gallery-card-heart",
+    "icon": "../../../images/icon-product-delivery.svg#icon-heart",
     "description": "Подчеркнет линию талии",
     "image": {
       "srcset": "./images/product-desktop-1.jpg 1x, ./images/product-desktop-1@2x.jpg 2x",
@@ -15,7 +15,7 @@
   {
     "id": "Card-2",
     "name": "/ Классический комплект с смокингом...",
-    "icon": "../../../images/exampl.svg#icon-gallery-card-heart",
+    "icon": "../../../images/icon-product-delivery.svg#icon-heart",
     "description": "Подчеркнет линию талии",
     "image": {
       "srcset": "./images/product-desktop-2.jpg 1x, ./images/product-desktop-2@2x.jpg 2x",
@@ -28,7 +28,7 @@
   {
     "id": "Card-3",
     "name": "/ Белый жакет смокинг",
-    "icon": "../../../images/exampl.svg#icon-gallery-card-heart",
+    "icon": "../../../images/icon-product-delivery.svg#icon-heart",
     "description": "Подчеркнет линию талии",
     "image": {
       "srcset": "./images/product-desktop-3.jpg 1x, ./images/product-desktop-3@2x.jpg 2x",
@@ -41,7 +41,7 @@
   {
     "id": "Card-4",
     "name": "/ Жакет-смокинг бархатный",
-    "icon": "../../../images/exampl.svg#icon-gallery-card-heart",
+    "icon": "../../../images/icon-product-delivery.svg#icon-heart",
     "description": "Мировая классика",
     "image": {
       "srcset": "./images/product-desktop-4.jpg 1x, ./images/product-desktop-4@2x.jpg 2x",
