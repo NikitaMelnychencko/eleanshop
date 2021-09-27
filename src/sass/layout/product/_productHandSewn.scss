@@ -1,33 +1,47 @@
-.handSewn__listInfo {
-  counter-reset: section;
-  padding-left: 34px;
-}
+.hand-sewn {
+  padding-top: 60px;
+  padding-bottom: 382px;
+  outline: 1px solid red;
 
-.handSewn__itemInfo {
-  position: relative;
-
-  &::before {
-    counter-increment: section;
-    content: counter(section);
-    position: absolute;
-    top: 0;
-    left: -34px;
-    width: 20px;
-    height: 20px;
-    border: 1px solid $third-text-color;
-    font-family: $third-font-family;
-    color: $third-text-color;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 1.2;
-    text-align: center;
+  &__list-info {
+    counter-reset: section;
+    padding-left: 34px;
   }
-}
 
-.handSewn__item-title {
-  margin-bottom: 17px;
-  font-family: $selection-font-family;
-  font-size: 21px;
-  line-height: 0.95;
-  letter-spacing: 0.05em;
+  &__item-info {
+    position: relative;
+
+    &::before {
+      counter-increment: section;
+      content: counter(section);
+      position: absolute;
+      top: 0;
+      left: -34px;
+      width: 20px;
+      height: 20px;
+      border: 1px solid $third-text-color;
+      font-family: $third-font-family;
+      color: $third-text-color;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 1.2;
+      text-align: center;
+    }
+  }
+
+  &__item-title {
+    margin-bottom: 17px;
+    font-family: $selection-font-family;
+    font-size: 21px;
+    line-height: 0.95;
+    letter-spacing: 0.05em;
+  }
+
+  &__item-text {
+    padding-bottom: 28px;
+  }
+
+  &__item-info {
+    margin-bottom: 26px;
+  }
 }
