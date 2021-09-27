@@ -2,7 +2,7 @@
   {
     "id": "Card-1",
     "name": "/ Жакет-смокинг с лацканами",
-    "icon": "../../../images/catalog-gallery-icons.svg#icon-gallery-card-heart",
+    "icon": "./images/sprite.svg#icon-gallery-card-heart",
     "description": "Подчеркнет линию талии",
     "image": {
       "srcset": "./images/card-1 1x, ./images/card-1@2x.jpg 2x",
@@ -14,7 +14,7 @@
   {
     "id": "Card-2",
     "name": "/ Классический комплект с смокингом...",
-    "icon": "../../../images/catalog-gallery-icons.svg#icon-gallery-card-heart",
+    "icon": "./images/sprite.svg#icon-gallery-card-heart",
     "description": "Подчеркнет линию талии",
     "image": {
       "srcset": "./images/card-2 1x, ./images/card-2@2x.jpg 2x",
@@ -26,7 +26,7 @@
   {
     "id": "Card-3",
     "name": "/ Белый жакет смокинг",
-    "icon": "../../../images/catalog-gallery-icons.svg#icon-gallery-card-heart",
+    "icon": "./images/sprite.svg#icon-gallery-card-heart",
     "description": "Подчеркнет линию талии",
     "image": {
       "srcset": "./images/card-3 1x, ./images/card-3@2x.jpg 2x",
@@ -38,7 +38,7 @@
   {
     "id": "Card-4",
     "name": "/ Жакет-смокинг бархатный",
-    "icon": "../../../images/catalog-gallery-icons.svg#icon-gallery-card-heart",
+    "icon": "./images/sprite.svg#icon-gallery-card-heart",
     "description": "Мировая классика",
     "image": {
       "srcset": "./images/card-4 1x, ./images/card-4@2x.jpg 2x",
@@ -50,7 +50,7 @@
   {
     "id": "Card-5",
     "name": "/ Жакет-смокинг прямой",
-    "icon": "../../../images/catalog-gallery-icons.svg#icon-gallery-card-heart",
+    "icon": "./images/sprite.svg#icon-gallery-card-heart",
     "description": "Подчеркнет линию талии",
     "image": {
       "srcset": "./images/card-5 1x, ./images/card-5@2x.jpg 2x",
@@ -62,7 +62,7 @@
   {
     "id": "Card-6",
     "name": "/ Белый смокинг с брюками-клёш",
-    "icon": "../../../images/catalog-gallery-icons.svg#icon-gallery-card-heart",
+    "icon": "./images/sprite.svg#icon-gallery-card-heart",
     "description": "Подчеркнет линию талии",
     "image": {
       "srcset": "./images/card-6 1x, ./images/card-6@2x.jpg 2x",
@@ -74,7 +74,7 @@
   {
     "id": "Card-7",
     "name": "/ Жакет - смокинг приталенный синий",
-    "icon": "../../../images/catalog-gallery-icons.svg#icon-gallery-card-heart",
+    "icon": "./images/sprite.svg#icon-gallery-card-heart",
     "description": "Мировая классика",
     "image": {
       "srcset": "./images/card-7 1x, ./images/card-7@2x.jpg 2x",
@@ -86,7 +86,7 @@
   {
     "id": "Card-8",
     "name": "/ Платье-смокинг длинное",
-    "icon": "../../../images/catalog-gallery-icons.svg#icon-gallery-card-heart",
+    "icon": "./images/sprite.svg#icon-gallery-card-heart",
     "description": "Подчеркнет линию талии",
     "image": {
       "srcset": "./images/card-8 1x, ./images/card-8@2x.jpg 2x",
@@ -98,7 +98,7 @@
   {
     "id": "Card-9",
     "name": "/ Белый смокинг и брюки с лампасами",
-    "icon": "../../../images/catalog-gallery-icons.svg#icon-gallery-card-heart",
+    "icon": "./images/sprite.svg#icon-gallery-card-heart",
     "description": "Мировая классика",
     "image": {
       "srcset": "./images/card-9 1x, ./images/card-9@2x.jpg 2x",
@@ -110,7 +110,7 @@
   {
     "id": "Card-10",
     "name": "/ Классический комплект с бабочкой",
-    "icon": "../../../images/catalog-gallery-icons.svg#icon-gallery-card-heart",
+    "icon": "./images/sprite.svg#icon-gallery-card-heart",
     "description": "Подчеркнет линию талии",
     "image": {
       "srcset": "./images/card-10 1x, ./images/card-10@2x.jpg 2x",
@@ -122,7 +122,7 @@
   {
     "id": "Card-11",
     "name": "/ Жакет-смокинг",
-    "icon": "../../../images/catalog-gallery-icons.svg#icon-gallery-card-heart",
+    "icon": "./images/sprite.svg#icon-gallery-card-heart",
     "description": "Подчеркнет линию талии",
     "image": {
       "srcset": "./images/card-11 1x, ./images/card-11@2x.jpg 2x",
@@ -134,7 +134,7 @@
   {
     "id": "Card-12",
     "name": "/ Платье-смокинг молочное",
-    "icon": "../../../images/catalog-gallery-icons.svg#icon-gallery-card-heart",
+    "icon": "./images/sprite.svg#icon-gallery-card-heart",
     "description": "Мировая классика",
     "image": {
       "srcset": "./images/card-12 1x, ./images/card-12@2x.jpg 2x",
@@ -146,7 +146,7 @@
   {
     "id": "Card-13",
     "name": "/ Топ с кружевом черный",
-    "icon": "../../../images/catalog-gallery-icons.svg#icon-gallery-card-heart",
+    "icon": "./images/sprite.svg#icon-gallery-card-heart",
     "description": "Подчеркнет линию талии",
     "image": {
       "srcset": "./images/card-13 1x, ./images/card-13@2x.jpg 2x",
@@ -158,7 +158,7 @@
   {
     "id": "Card-14",
     "name": "/ Юбка - карандаш",
-    "icon": "../../../images/catalog-gallery-icons.svg#icon-gallery-card-heart",
+    "icon": "./images/sprite.svg#icon-gallery-card-heart",
     "description": "Мировая классика",
     "image": {
       "srcset": "./images/card-14 1x, ./images/card-14@2x.jpg 2x",
@@ -170,7 +170,7 @@
   {
     "id": "Card-15",
     "name": "/ Блуза с баской",
-    "icon": "../../../images/catalog-gallery-icons.svg#icon-gallery-card-heart",
+    "icon": "./images/sprite.svg#icon-gallery-card-heart",
     "description": "Подчеркнет линию талии",
     "image": {
       "srcset": "./images/card-15 1x, ./images/card-15@2x.jpg 2x",
@@ -182,7 +182,7 @@
   {
     "id": "Card-16",
     "name": "/ Брюки клёш",
-    "icon": "../../../images/catalog-gallery-icons.svg#icon-gallery-card-heart",
+    "icon": "./images/sprite.svg#icon-gallery-card-heart",
     "description": "Подчеркнет линию талии",
     "image": {
       "srcset": "./images/card-16 1x, ./images/card-16@2x.jpg 2x",
@@ -195,7 +195,7 @@
     "id": "Card-17",
     "name": "/ Брюки зауженные",
     "description": "Мировая классика",
-    "icon": "../../../images/catalog-gallery-icons.svg#icon-gallery-card-heart",
+    "icon": "./images/sprite.svg#icon-gallery-card-heart",
     "image": {
       "srcset": "./images/card-17 1x, ./images/card-17@2x.jpg 2x",
       "src": "./images/card-17",
@@ -206,7 +206,7 @@
   {
     "id": "Card-18",
     "name": "/ Красный приталенный смокинг",
-    "icon": "../../../images/catalog-gallery-icons.svg#icon-gallery-card-heart",
+    "icon": "./images/sprite.svg#icon-gallery-card-heart",
     "description": "Подчеркнет линию талии",
     "image": {
       "srcset": "./images/card-18 1x, ./images/card-18@2x.jpg 2x",
@@ -218,7 +218,7 @@
   {
     "id": "Card-19",
     "name": "/ Костюм бархатный",
-    "icon": "../../../images/catalog-gallery-icons.svg#icon-gallery-card-heart",
+    "icon": "./images/sprite.svg#icon-gallery-card-heart",
     "description": "Мировая классика",
     "image": {
       "srcset": "./images/card-19 1x, ./images/card-19@2x.jpg 2x",

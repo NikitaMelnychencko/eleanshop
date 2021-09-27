@@ -37,7 +37,7 @@
   margin-bottom: 50px;
   width: 374px;
   height: auto;
-  background-color: #fff;
+  background-color: var($modal-background-color);
 }
 .catalog-list {
   position: static;
@@ -48,27 +48,13 @@
   display: inline-flex;
   margin-bottom: 39px;
 
-  &:nth-child(1) {
-    margin-right: 20px;
-  }
-  &:nth-child(3) {
-    margin-right: 20px;
-  }
-  &:nth-child(6) {
-    margin-right: 20px;
-  }
-  &:nth-child(8) {
-    margin-right: 20px;
-  }
-  &:nth-child(11) {
-    margin-right: 20px;
-  }
-  &:nth-child(13) {
-    margin-right: 20px;
-  }
-  &:nth-child(16) {
-    margin-right: 20px;
-  }
+  &:nth-child(1),
+  &:nth-child(3),
+  &:nth-child(6),
+  &:nth-child(8),
+  &:nth-child(11),
+  &:nth-child(13),
+  &:nth-child(16),
   &:nth-child(18) {
     margin-right: 20px;
   }
@@ -84,20 +70,20 @@
   min-height: 80px;
 }
 .card-name {
-  font-family: FuturaMediumC;
+  font-family: var ($third-font-family);
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
   line-height: 1.2;
-  color: #222222;
+  color: var ($third-logo-color);
 }
 .card-price {
-  font-family: FuturaMediumC;
+  font-family: var ($third-font-family);
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
   line-height: 1.4;
-  color: #222222;
+  color: var($third-logo-color);
 }
 .card-image {
   position: relative;
@@ -107,17 +93,16 @@
   position: absolute;
   width: 16px;
   height: 13px;
-  fill: #111518;
   right: 1px;
   bottom: 50px;
 }
 .card-descr {
-  font-family: FuturaMediumC;
+  font-family: var ($third-font-family);
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.75;
-  color: #afafaf;
+  color: var(--);
 }
 .catalog-icon-raws-round {
   position: absolute;
