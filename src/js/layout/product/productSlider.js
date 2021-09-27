@@ -28,20 +28,19 @@ import '../../../images/img/products/desktop/tuxedo-and-vest-mini-desktop-4@2x.j
 window.jQuery = window.$ = require("jquery");
 require('./slick.min.js')
 
-$(document).ready(function(){
+
+$(document).ready(function () {
   $('.product-slider-smaller').slick({
     arrows:false,
-    // dots: true,
     speed: 1000,
     vertical: true,
     verticalSwiping: true,
     slidesToShow: 4,
     slidesToScroll: 1,
     asNavFor: ".product-slider",
-    // centerMode: true,
+    centerMode: true,
     focusOnSelect: true,
-
-    
+    centerPadding: '0px'
   });
   $('.product-slider').slick({
 		arrows:false,
@@ -49,37 +48,10 @@ $(document).ready(function(){
     fade: true,
     speed: 500,
     slidesToShow: 1,
-    // slidesToScroll: 1,
     asNavFor: ".product-slider-smaller",
  
-    
-		// autoplaySpeed:800,
-		// responsive:[
-		// 	{
-		// 		breakpoint: 768,
-		// 		settings: {
-		// 			slidesToShow:2
-		// 		}
-		// 	},
-		// 	{
-		// 		breakpoint: 550,
-		// 		settings: {
-		// 			slidesToShow:1
-		// 		}
-		// 	}
-		// ]
   })
 });
 
-
-
-// console.log(productSlider) 
-// import payment_payment from '../../../views/partials/checkout/payment.hbs'
-// import payment_checkout from '../../../views/layouts/checkout.hbs'
-// import refs from '../../refs/refs.js'
-// import '../../../images/img/checkout/payment/buyers.jpg'
-// import '../../../images/img/checkout/payment/buyers@2x.jpg'
-// import '../../../images/img/checkout/payment/mirror_reflection.jpg'
-// import '../../../images/img/checkout/payment/mirror_reflection@2x.jpg'
 const slider = productSlider()
 document.body.insertAdjacentHTML('beforeend', slider )
