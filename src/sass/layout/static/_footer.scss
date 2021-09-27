@@ -230,7 +230,6 @@
  .desktop{
      opacity: 1;
      display: flex;
-    justify-content: space-between; 
     padding-top: 105px;
 
  
@@ -247,6 +246,9 @@
     clip: rect(0 0 0 0);
     overflow: hidden;
     }
+}
+.footer__desktop-logo{
+    margin-right: 47px;
 }
 
 .footer__desktop-icon-logo{
@@ -268,31 +270,36 @@
 
 .footer__desktop-item{
     line-height: 2.9;
-    color: $primary-logo-color;
+    color: $secondary-text-color;
 
 }
 .footer__desktop-list-contacts-info{
     display: flex;
-    justify-content:space-between;
     align-items: baseline;
 
 
 }
+.footer__desktop-list-contacts{
+    font-size: 15px;
+    line-height: 1.7;
+    color: $secondary-text-color;
 
+}
 
 .footer__desktop-item-contacts-info{
     line-height: 1.5;
-    color: $primary-logo-color;
+    color: $secondary-text-color;
     margin-right: 10px;
 }
 
-.test{
+.footer__desktop-menu{
     display: block;
+    margin-right: 83px;
+
 }
 
 .footer__desktop-social-list{
     display: flex;
-    justify-content: center;
 
 }
 
@@ -301,6 +308,7 @@
         width: 20px;
         height: 20px;
         margin-right: 15px;
+        margin-top: 30px;
     // transition: fill $time-function $cubic-bezier;
 }
 
@@ -318,27 +326,80 @@ margin: 0;
 }
 
 .footer__desktop-form-input{
-margin-bottom: 11px;
+    margin-bottom: 11px;
+    padding-left: 12px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+
+    color: $secondary-text-color;
+    border: 1px solid #D7B494;
+    box-sizing: border-box;
+
+
 }
 
 .footer__desktop-license{
     display: flex;
     align-items: center;
-    
     padding-bottom: 12px;
 }
 
 .footer__desktop-checkbox-container{
     position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.footer__desktop-checkbox{
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.footer__desktop-license-icon-checkbox{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 14px;
+    height: 14px;
+    margin-right: 11px;
+    border-radius: 2px;
+
+    &:hover,
+    &:focus{
+        border-color: #D7B494;
+    }
+}
+
+.footer__desktop-checkbox:checked >.footer__desktop-license-input-icon-checkbox{
+    background-color: #D7B494;
+    border-color: #D7B494;
+    background-origin: border-box;
+}
+
+.footer__desktop-license-input-icon-checkbox{
+    display: block;
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    cursor: pointer;
+    
 }
 
 .footer__desktop-license-checkbox-text{
     font-size: 13px;
     line-height: 1.54;
+
 }
-.footer__desktop-license-input-icon-checkbox{
-    position: absolute;
-    left: 0px;
-    width: 14px;
-    height: 14px;
+
+.footer__license__checkbox-text-doc{
+    color: #D7B494;
+
 }

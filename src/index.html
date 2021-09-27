@@ -206,15 +206,14 @@
 
   <div class="container">
     <section class="desktop">
-      <div>
+      <div class="footer__desktop-logo">
         <a href=""><svg class="footer__desktop-icon-logo">
             <use href="./images/exampl.svg#icon-logo">
             </use>
           </svg>
         </a>
         <ul class="footer__desktop-item-contacts">
-          <li class="footer__mobile-list-item contacts">
-          </li>
+
           <li class="footer__desktop-list-contacts">
             <a href="tel:+380990000000" class="footer__desktop-list-contacts-telephon">ТЕЛ.:+38099-000-00-00</a>
           </li>
@@ -222,20 +221,19 @@
             <a href="viber://chat?number=%2B380953542491" class="footer__desktop-list-contacts-chat">VIBER:
               +38099-11-11-11</a>
           </li>
-          <li>
+          <li class="footer__desktop-list-contacts">
             <a href="mailto:info@eleanboutique.ua" class="footer__desktop-list-contacts-email">EMAIL:
               info@eleanboutique.ua</a>
           </li>
           </li>
         </ul>
       </div>
-      <div class="test">
+      <div class="footer__desktop-menu">
         <div>
           <ul class="footer__desktop-list">
             <li class="footer__desktop-item">ДОСТАВКА</li>
             <li class="footer__desktop-item">ОПЛАТА</li>
             <li class="footer__desktop-item">ВОЗВРАТ</li>
-            <li class="footer__desktop-item">РАЗМЕРНАЯ ТАБЛИЦА</li>
             <li class="footer__desktop-item">ПРИМЕРКА</li>
             <li class="footer__desktop-item">КОНТАКТЫ</li>
           </ul>
@@ -269,13 +267,14 @@
       </div>
       <form name="signup_form" method="GET" autocomplete="off" class="footer__desktop-form">
         <label for="user_name" class="form__user"></label>
-        <input type="text" name="user-name" id="user_name" class="footer__desktop-form-input" required />
+        <input type="text" name="user-name" id="footer_user_name" placeholder="ИМЯ" class="footer__desktop-form-input"
+          required />
         <label for="user_phone" class="form__user"></label>
-        <input type="tel" name="phone" id="user_phone" placeholder="Телефон" class="footer__desktop-form-input"
+        <input type="email" name="email" id="footer_user_email" placeholder="E-MAIL" class="footer__desktop-form-input"
           required />
         <div class="footer__desktop-license">
-          <label for="footer__desktop-checkbox-license" class="footer__desktop-checkbox-container">
-            <input type="checkbox" name="user-license" id="checkbox_license" class="footer__desktop-checkbox" />
+          <label for="checkbox" class="footer__desktop-checkbox-container">
+            <input type="checkbox" name="user-license" id="footer_checkbox_license" class="footer__desktop-checkbox" />
             <span class="footer__desktop-license-icon-checkbox">
               <svg class="footer__desktop-license-input-icon-checkbox">
                 <use href="./images/exampl.svg#icon-check-box">
@@ -283,12 +282,15 @@
               </svg>
             </span>
           </label>
-          <p class="footer__desktop-license-checkbox-text">Я согласен <a href="">
-              <span class="license__checkbox-text-doc">с политикой конфиденциальности</span></a>
+          <p class="footer__desktop-license-checkbox-text">
+            <a href=""><span class="footer__license__checkbox-text-doc">Я
+                согласен</span></a>
+            с политикой конфиденциальности
           </p>
         </div>
-        <label for="user_email" class="form__user" placeholder="Почта"></label>
-        <input type="email" name="user-email" id="user_email" class="footer__desktop-form-input" required />
+        <label for="user_email" class="form__user"></label>
+        <input type="email" name="user-email" id="user_email" placeholder="ПОДПИСАТЬСЯ"
+          class="footer__desktop-form-input" required />
   </div>
 
 
