@@ -1,5 +1,6 @@
 .recomendation-category {
   padding-top: 36px;
+  outline: 1px solid red;
 
   &__block-title {
     margin-top: 12px;
@@ -17,17 +18,16 @@
     letter-spacing: 0.05em;
     text-transform: uppercase;
     margin-bottom: 24px;
+    margin-top: 0;
 
     @media screen and (min-width: $desktop-up) {
       line-height: 0.95;
       margin-bottom: 22px;
-      margin-top: 70px;
     }
   }
 
   &__list {
     padding-top: 30px;
-    padding-bottom: 30px;
     overflow: hidden;
 
     & .slider {
@@ -165,6 +165,7 @@
   }
 
   @media screen and (min-width: $desktop-up) {
-    padding-top: 70px;
+    padding-top: 34px;
+    padding-bottom: 28px;
   }
 }
