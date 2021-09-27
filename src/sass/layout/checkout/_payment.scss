@@ -50,13 +50,13 @@
 .payment-method__item:last-child{
   margin-bottom: 0px;
 }
-.delivery-method__item input,
-.payment-method__item input{
-  height: 28px;
-  width: 28px;
-  margin-right: 10px;
-  border: 1px solid #D0D0D0;
-}
+// .delivery-method__item input,
+// .payment-method__item input{
+//   height: 28px;
+//   width: 28px;
+//   margin-right: 10px;
+//   border: 1px solid #D0D0D0;
+// }
 .delivery-method__item:nth-child(2){
   @media screen and(min-width: $mobile-general) {
     margin-left: 46px;
@@ -115,8 +115,31 @@
 }
 .delivery-method input[type='radio'],
 .payment-method__item input[type='radio']{
-
+  // position: absolute;
+  // width: 1px;
+  // height: 1px;
+  // margin: -1px;
+  // border: 0;
+  // padding: 0;
+  // white-space: nowrap;
+  // clip-path: inset(100%);
+  // clip: rect(0 0 0 0);
+  // overflow: hidden;
 }
+.delivery-method__icon-check{
+  height: 28px;
+  width: 28px;
+  margin-right: 10px;
+  border: 1px solid #D0D0D0;
+  border-radius: 50%;
+.delivery-method__form-radio:checked + &{
+  background-color: brown;
+}
+}
+.delivery-method__form-radio:checked + body {
+  background-color: brown;
+}
+
 //total
 .total{
   display: flex;
