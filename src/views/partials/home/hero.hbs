@@ -1,12 +1,15 @@
 <section class='page-hero'>
   <div class='container'>
-    <div class='wrapper'>
-      <div class='slider'>
+    <div class='hero-wrapper'>
+      <div class='hero-slider'>
         {{#each this}}
           <div class='slider__item filter'>
-            <img src='{{image}}' alt='{{name}}' id='{{id}}' />
+            <img data-lazy='{{image}}' alt='{{name}}' id='{{id}}' />
+            <h1>{{text}}</h1>
           </div>
         {{/each}}
+      </div>
     </div>
+    <p class='hero-text'>ЯРКИЕ КОМПЛЕКТЫ НА ВЕЧЕРНИЕ МЕРОПРИЯТИЯ</p>
   </div>
 </section>
