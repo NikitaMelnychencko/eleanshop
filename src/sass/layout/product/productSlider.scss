@@ -60,8 +60,8 @@
 }
 
 // !--------------------------------------------- ОСНОВНОЙ СЛАЙДЕР//
-.product-slider__wrapper {
-}
+// .product-slider__wrapper {
+// }
 .product-slider .slick-list {
   overflow: hidden;
 }
@@ -107,3 +107,99 @@
 .product-slider .slick-dots li.slick-active button {
   width: 26px;
 }
+
+// .product-slider .slider__item img {
+//   max-width: 100%;
+//   margin-left: auto;
+//   margin-right: auto;
+// }
+
+// !--------------------------------------------- О ТОВАРЕ//
+.product__name {
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 1;
+  letter-spacing: 0.05em;
+
+  color: #272727;
+}
+
+// .product__button-like {
+// }
+
+.product__price {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 0.91;
+  color: #333333;
+}
+
+.product__currency {
+  color: #caaf97;
+}
+
+// .size__title {
+// }
+
+// .size__list {
+// }
+
+// .size__item {
+// }
+
+// .options {
+// }
+
+// .options__item {
+// }
+
+// .color {
+// }
+
+// .color__title {
+// }
+
+// .color__list {
+// }
+
+// .color__item {
+// }
+
+// .button-block {
+// }
+
+// .button--buy {
+// }
+
+// .button--fit {
+// }
+
+// .button--installment {
+// }
+
+// .product__info {
+// }
+
+// .product__description {
+// }
+
+// .product__composition {
+// }
+
+// .product__composition--bold {
+// }
+
+// .product__characteristic {
+// }
+
+// .product__params {
+// }
+
+// .product__aditional {
+
+// }
+
+// .button-plus {
+// }
