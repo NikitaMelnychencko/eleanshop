@@ -36,6 +36,21 @@
   }
 }
 
+.ordering__card {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+
+  @media screen and (min-width: $mobile-first) and (max-width: $tablet-only) {
+    align-items: flex-start;
+    border-bottom: 1px solid $border-color;
+  }
+
+  @media screen and (min-width: $desktop-up) {
+    align-items: center;
+  }
+}
+
 .ordering__image {
   @media screen and (min-width: $mobile-first) {
     width: 100px;
@@ -56,21 +71,6 @@
   @media screen and (min-width: $mobile-first) and (max-width: $tablet-only) {
     display: inline-block;
     margin-bottom: 50px;
-  }
-}
-
-.ordering__card {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  display: flex;
-
-  @media screen and (min-width: $mobile-first) and (max-width: $tablet-only) {
-    align-items: flex-start;
-    border-bottom: 1px solid $border-color;
-  }
-
-  @media screen and (min-width: $desktop-up) {
-    align-items: center;
   }
 }
 
