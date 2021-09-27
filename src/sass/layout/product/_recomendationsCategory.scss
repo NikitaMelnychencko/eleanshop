@@ -1,179 +1,170 @@
 .recomendation-category {
   padding-top: 36px;
 
-  @media screen and (min-width: $desktop-up) {
-    padding-top: 70px;
-  }
-}
-
-.recomend-category__block-title {
-  @media screen and (min-width: $desktop-up) {
-    border-bottom: 1px solid $primery-border-color;
-  }
-}
-
-.recomendation-category__title {
-  font-family: $selection-font-family;
-  font-weight: 400;
-  font-size: 21px;
-  line-height: 1.1;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  margin-bottom: 24px;
-  // margin-top: 36px;
-
-  @media screen and (min-width: $desktop-up) {
-    line-height: 0.95;
-    margin-bottom: 22px;
-    margin-top: 70px;
-  }
-}
-
-.recomendation-category__list {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  overflow: hidden;
-
-  & .slider {
-    min-width: 0;
-  }
-
-  @media screen and (min-width: $desktop-up) {
+  &__block-title {
+    margin-top: 12px;
     display: flex;
-  }
-}
-
-.recomendation-category__item {
-  min-width: 0;
-
-  &:not(:last-child) {
-    margin-right: 10px;
-  }
-
-  @media screen and (min-width: $desktop-up) {
-    width: calc((100% - 3 * 34px) / 4);
-    &:not(:last-child) {
-      margin-right: 34px;
+    @media screen and (min-width: $desktop-up) {
+      border-bottom: 1px solid $primery-border-color;
     }
   }
-}
 
-.recomendation-category__link {
-  width: 100%;
-  border-radius: 3px;
-  overflow: hidden;
-  cursor: pointer;
-}
+  &__title {
+    font-family: $selection-font-family;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 1.1;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-bottom: 24px;
 
-.recomendation-category__image {
-  display: block;
-  width: 100%;
-}
-
-.recomendation-category__block-title {
-  padding-top: 12px;
-}
-
-.recomendation-category__block-characters {
-  padding-bottom: 24px;
-}
-
-.recomendation-category__block-characters,
-.recomendation-category__block-title {
-  display: flex;
-}
-
-.recomendation-category__item-title {
-  font-family: $third-font-family;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 1.2;
-
-  @media screen and (min-width: $desktop-up) {
-    line-height: 1.07;
-  }
-}
-
-.recomendation-category__add-likes {
-  margin-left: auto;
-  background-color: transparent;
-  border: none;
-  padding-bottom: 15px;
-  cursor: pointer;
-}
-
-.recomendation-category__icon {
-  fill: transparent;
-  stroke: $accent-favorite-btn-color;
-  width: 16px;
-  height: 14px;
-
-  @media screen and (min-width: $desktop-up) {
-    width: 21px;
-    height: 18px;
-    stroke: $secondary-text-color;
-  }
-}
-
-.recomendation-category__price {
-  display: block;
-  font-family: $third-font-family;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 1.2;
-
-  @media screen and (min-width: $desktop-up) {
-    line-height: 1.4;
-  }
-}
-
-.recomendation-category__characters {
-  display: none;
-
-  @media screen and (min-width: $desktop-up) {
-    display: block;
-    margin-left: auto;
-    font-family: $third-font-family;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.75;
-    text-align: right;
-    color: $fourth-text-color;
-  }
-}
-
-.recomendation-category__list {
-  & .slick-track {
-    display: flex;
-  }
-  & .slick-dots {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 16px;
-    border-bottom: 1px solid $primery-border-color;
-  }
-  & .slick-dots li {
-    list-style: none;
+    @media screen and (min-width: $desktop-up) {
+      line-height: 0.95;
+      margin-bottom: 22px;
+      margin-top: 70px;
+    }
   }
 
-  & .slick-dots button {
-    font-size: 0;
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    padding: 0;
-    background-color: $primaty-slick-dots;
-    border: none;
-    margin-right: 8px;
-    margin-left: 8px;
+  &__list {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    overflow: hidden;
+
+    & .slider {
+      min-width: 0;
+    }
+
+    & .slick-track {
+      display: flex;
+    }
+    & .slick-dots {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-bottom: 16px;
+      border-bottom: 1px solid $primery-border-color;
+    }
+    & .slick-dots li {
+      list-style: none;
+    }
+
+    & .slick-dots button {
+      font-size: 0;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      padding: 0;
+      background-color: $primaty-slick-dots;
+      border: none;
+      margin-right: 8px;
+      margin-left: 8px;
+      cursor: pointer;
+      outline: none;
+    }
+
+    & .slick-dots li.slick-active button {
+      width: 43px;
+      border-radius: 10px;
+    }
+
+    @media screen and (min-width: $desktop-up) {
+      display: flex;
+    }
+  }
+
+  &__item {
+    min-width: 0;
+
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+
+    @media screen and (min-width: $desktop-up) {
+      width: calc((100% - 3 * 34px) / 4);
+      &:not(:last-child) {
+        margin-right: 34px;
+      }
+    }
+  }
+
+  &__link {
+    width: 100%;
+    border-radius: 3px;
+    overflow: hidden;
     cursor: pointer;
-    outline: none;
   }
 
-  & .slick-dots li.slick-active button {
-    width: 43px;
-    border-radius: 10px;
+  &__image {
+    display: block;
+    width: 100%;
+  }
+
+  &__block-characters {
+    display: flex;
+    padding-bottom: 24px;
+  }
+
+  &__item-title {
+    font-family: $third-font-family;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 1.2;
+
+    @media screen and (min-width: $desktop-up) {
+      line-height: 1.07;
+    }
+  }
+
+  &__add-likes {
+    margin-left: auto;
+    background-color: transparent;
+    border: none;
+    padding-bottom: 15px;
+    cursor: pointer;
+  }
+
+  &__icon {
+    fill: transparent;
+    stroke: $accent-favorite-btn-color;
+    width: 16px;
+    height: 14px;
+
+    @media screen and (min-width: $desktop-up) {
+      width: 21px;
+      height: 18px;
+      stroke: $secondary-text-color;
+    }
+  }
+
+  &__price {
+    display: block;
+    font-family: $third-font-family;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 1.2;
+
+    @media screen and (min-width: $desktop-up) {
+      line-height: 1.4;
+    }
+  }
+
+  &__characters {
+    display: none;
+
+    @media screen and (min-width: $desktop-up) {
+      display: block;
+      margin-left: auto;
+      font-family: $third-font-family;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 1.75;
+      text-align: right;
+      color: $fourth-text-color;
+    }
+  }
+
+  @media screen and (min-width: $desktop-up) {
+    padding-top: 70px;
   }
 }

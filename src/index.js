@@ -20,6 +20,7 @@ import './js/layout/сatalog/gallery.js';
 import './js/layout/product/infoAboutProduct.js';
 import './js/layout/product/recomendationsCategory.js';
 import './js/layout/product/productCreateInfo.js';
+import './js/layout/product/test_recomendationsCategory.js';
 //delivery
 import './js/layout/delivery/filter.js';
 import './js/layout/delivery/deliveryTypes.js';
