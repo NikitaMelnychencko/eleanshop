@@ -40,6 +40,7 @@
   background-color: #fff;
 }
 .catalog-list {
+  position: static;
   display: flex;
   flex-wrap: wrap;
 }
@@ -117,4 +118,10 @@
   font-size: 12px;
   line-height: 1.75;
   color: #afafaf;
+}
+.catalog-icon-raws-round {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  bottom: 50%;
 }
