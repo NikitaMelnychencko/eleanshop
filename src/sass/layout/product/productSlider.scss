@@ -1,0 +1,191 @@
+body {
+  background-color: slateblue;
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+/* Слайдер */
+.slick-slider {
+}
+/* Слайдер запущен */
+.product-slider-smaller .slick-slider.slick-initialized {
+}
+
+/* Слайдер с точками */
+.slick-slider.slick-dotted {
+}
+
+/* Лента слайдов */
+.slick-track {
+}
+/* Слайд */
+.slick-slide {
+}
+
+/* Слайд по центру */
+.slick-slide.slick-center {
+}
+/* Клонированный слайд */
+.slick-slide.slick-cloned {
+}
+
+/* Стрелка не активная */
+.slick-arrow.slick-disabled {
+}
+
+// слайдер для продуктов
+.product {
+  // @media screen and (min-width: 414px) {
+  //   width: 414px;
+  //   margin: 0 auto;
+  // }
+
+  // @media screen and (min-width: 1388px) {
+  //   display: flex;
+  // }
+}
+
+// ! МАЛЕНЬКИЙ СЛАЙДЕР
+/* Ограничивающая оболочка */
+.product-slider-smaller .slick-list {
+  display: block;
+  width: 64px;
+  // overflow: hidden;
+}
+
+/* Картинки маленького слайдера*/
+.product-slider-smaller__image {
+  width: 47px;
+  height: 71px;
+  cursor: pointer;
+}
+
+/* Слайд активный (показывается) */
+.product-slider-smaller .slick-slide.slick-active {
+  padding: 10px 8px;
+}
+/* Слайд основной */
+.product-slider-smaller .slick-slide.slick-current {
+  border: 1px solid #dcdcdc;
+  // outline: 5px red solid;
+}
+
+.product-slider-smaller {
+  @media screen and (max-width: 1377px) {
+    display: none;
+  }
+}
+
+.product-slider-smaller .slick-track {
+  display: block;
+  // flex-direction: column;
+}
+
+/* Точки (булиты) */
+.product-slider-smaller .slick-dots {
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+  // position: relative;
+  // outline: 1px purple solid;
+}
+.product-slider-smaller .slick-dots li {
+  // display: flex;
+  // justify-content: center;
+  // list-style: none;
+  // margin: 0 14px;
+}
+/* Активная точка */
+.product-slider-smaller .slick-dots li.slick-active {
+  // margin: 0 14px;
+}
+
+.product-slider-smaller .slick-dots li.slick-active button {
+  // width: 26px;
+}
+/* Элемент точки */
+.product-slider-smaller .slick-dots button {
+  // border-color: transparent;
+  // font-size: 0;
+  // border-radius: 50%;
+  // width: 6px;
+  // height: 6px;
+  // background-color: #fff;
+  // position: absolute;
+  // bottom: 19px;
+}
+
+.product-slider-smaller__item {
+  &:not(:last-child) {
+    margin-bottom: 8px;
+  }
+}
+
+// ! ОСНОВНОЙ СЛАЙДЕР
+
+// .product-slider {
+//   display: flex;
+// }
+
+.product-slider__image {
+  display: block;
+
+  @media screen and (min-width: 1378px) {
+    width: 700px;
+  }
+
+  // height: 900px;
+}
+
+.product-slider .slick-track {
+  display: flex;
+}
+.product-slider .slick-dots {
+}
+
+.product-slider .slick-dots button {
+  border-color: transparent;
+  font-size: 0;
+  border-radius: 50%;
+  width: 6px;
+  height: 6px;
+  background-color: #fff;
+  position: absolute;
+  bottom: 19px;
+
+  @media screen and (min-width: 1378px) {
+    display: none;
+  }
+}
+
+.product-slider .slick-dots li.slick-active {
+  margin: 0 14px;
+}
+
+.product-slider .slick-dots li.slick-active button {
+  width: 26px;
+}
+.product-slider .slick-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  // outline: 1px purple solid;
+}
+.product-slider .slick-dots li {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0 14px;
+}
+
+.product__container {
+  @media screen and (min-width: 1378px) {
+    display: flex;
+  }
+}
+.product__container > .product__wrapper {
+  @media screen and (min-width: 1378px) {
+    margin-right: 88px;
+  }
+}

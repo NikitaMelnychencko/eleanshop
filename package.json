@@ -51,6 +51,7 @@
     "webpack-cli": "^4.8.0",
     "webpack-dev-server": "^4.1.1",
     "webpack-merge": "^5.8.0",
-    "webpackbar": "^5.0.0-3"
+    "webpackbar": "^5.0.0-3",
+    "jquery": "^3.6.0"
   }
 }
