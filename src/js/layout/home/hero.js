@@ -1,20 +1,31 @@
 import '../../../images/img/page-hero/mobile/hero-title-01/hero-title-mobile-01.jpg';
+import '../../../images/img/page-hero/mobile/hero-title-01/hero-title-mobile-01@2x.jpg';
 import '../../../images/img/page-hero/mobile/hero-title-02/hero-title-mobile-02.jpg';
+import '../../../images/img/page-hero/mobile/hero-title-02/hero-title-mobile-02@2x.jpg';
 import '../../../images/img/page-hero/mobile/hero-title-03/hero-title-mobile-03.jpg';
+import '../../../images/img/page-hero/mobile/hero-title-03/hero-title-mobile-03@2x.jpg';
 import '../../../images/img/page-hero/mobile/hero-title-04/hero-title-mobile-04.jpg';
-import '../../../images/img/page-hero/mobile/hero-title-05/hero-title-mobile-05.jpg';
+import '../../../images/img/page-hero/mobile/hero-title-04/hero-title-mobile-04@2x.jpg';
+import '../../../images/img/page-hero/desktop/hero-title-01/hero-title-desktop-01.jpg';
+import '../../../images/img/page-hero/desktop/hero-title-01/hero-title-desktop-01@2x.jpg';
+import '../../../images/img/page-hero/desktop/hero-title-02/hero-title-desktop-02.jpg';
+import '../../../images/img/page-hero/desktop/hero-title-02/hero-title-desktop-02@2x.jpg';
+import '../../../images/img/page-hero/desktop/hero-title-03/hero-title-desktop-03.jpg';
+import '../../../images/img/page-hero/desktop/hero-title-03/hero-title-desktop-03@2x.jpg';
+import '../../../images/img/page-hero/desktop/hero-title-04/hero-title-desktop-04.jpg';
+import '../../../images/img/page-hero/desktop/hero-title-04/hero-title-desktop-04@2x.jpg';
 import '../../../images/svg/hero-svg-original/hero-arrow-left.svg';
 import '../../../images/svg/hero-svg-original/hero-arrow-right.svg';
 import '../../../images/svg/clients-svg-original/clients-arrow-right.svg';
 import '../../../images/svg/clients-svg-original/clients-arrow-right.svg';
+
 import pageHeroSliderData from '../../json/hero.json';
 import pageHeroMarkupTemplate from '../../../views/partials/home/hero.hbs';
 import refs from '../../refs/refs.js';
+const { mainEL } = refs;
 
 window.jQuery = window.$ = require('jquery');
-require('./slick.min.js');
-
-const { bodyEl, mainEL, pageHeroEL } = refs;
+require('../../slider/slick.min.js');
 
 // Create Markup
 const pageHeroSliderMarkup = pageHeroMarkupTemplate(pageHeroSliderData);
@@ -32,14 +43,14 @@ $(document).ready(function () {
     easing: 'ease', // тип анамации
     infinite: true,
     initialSlide: 0, // с какого слайда старт
-    autoplay: false, // авто проигрывание
+    autoplay: true, // авто проигрывание
     autoplaySpeed: 2000, // скрость листания
     pauseOnFocus: true,
     pauseOnHover: true,
     pauseOnDotsHover: true, // пауза при ховере по точкам
     draggable: true, // отключение свайпа на ПК
     swipe: true,
-    touchThreshold: 5, //срабатываниe свайпа
+    touchThreshold: 4, //срабатываниe свайпа
     touchMove: true, //срабатывание тача
     waitForAnimate: true, //анимация переключения
     //centerMode: false, // цент-мод
@@ -55,9 +66,15 @@ $(document).ready(function () {
     //appendDots:$('class-name'), // $('.class-name') переместить точки
     responsive: [
       {
-        breakpoint: 721,
+        breakpoint: 1377,
         settings: {
           arrows: false,
+        },
+      },
+      {
+        breakpoint: 1378,
+        settings: {
+          mobileFirst: true,
         },
       },
     ],
