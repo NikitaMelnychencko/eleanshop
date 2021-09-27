@@ -3,6 +3,7 @@
   
   @media screen and(min-width: $desktop-up) {
     display: flex;
+    justify-content: space-between
   }
 }
 .delivery__title,
@@ -19,6 +20,9 @@
 .delivery,
 .basic-information{
   margin-bottom: 37px;
+  @media screen and(min-width: $desktop-up) {
+    width: 690px;
+  }
 }
 .delivery-method,
 .payment-method{
@@ -54,7 +58,10 @@
   border: 1px solid #D0D0D0;
 }
 .delivery-method__item:nth-child(2){
-margin-left: 46px;
+  @media screen and(min-width: $mobile-general) {
+    margin-left: 46px;
+  }
+
 }
 //basic-information
 .basic-information input,
@@ -130,9 +137,20 @@ margin-left: 46px;
   display: none;
   @media screen and(min-width: $desktop-up) {
     display: block;
-    
+    margin-top: 30px;
+    width: 550px;
   }
 }
 .description-images{
   display: flex;
+  justify-content: flex-end;
+  margin-bottom: 37px;
+}
+.description__text{
+  display: block;
+  padding-right: 36px;
+  line-height: 1.53;  
+}
+.description__text+.description__text{
+  margin-top: 30px;
 }
