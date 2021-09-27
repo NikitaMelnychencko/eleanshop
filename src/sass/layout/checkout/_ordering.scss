@@ -31,7 +31,9 @@
 }
 
 .ordering__cards {
-  border-bottom: 1px solid $border-color;
+  @media screen and (min-width: $desktop-up) {
+    border-bottom: 1px solid $border-color;
+  }
 }
 
 .ordering__image {
@@ -62,8 +64,9 @@
   padding-bottom: 30px;
   display: flex;
 
-  @media screen and (min-width: $mobile-first) {
+  @media screen and (min-width: $mobile-first) and (max-width: $tablet-only) {
     align-items: flex-start;
+    border-bottom: 1px solid $border-color;
   }
 
   @media screen and (min-width: $desktop-up) {
@@ -136,15 +139,15 @@
     margin-bottom: 28px;
   }
 
-  // .ordering__price:after {
-  //   content: '\20BD';
-  // }
-
   @media screen and (min-width: $desktop-up) {
     margin: 0 18px 0 52px;
   }
 }
-
+.ordering__price:after,
+.ordering__total:after {
+  content: '\20B4';
+  margin-left: 5px;
+}
 .ordering__button--close {
   width: 40px;
   height: 40px;
