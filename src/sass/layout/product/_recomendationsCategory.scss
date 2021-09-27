@@ -1,0 +1,107 @@
+.recomendation-category {
+  padding-top: 36px;
+
+  @media screen and (min-width: $desktop-up) {
+    padding-top: 70px;
+  }
+}
+
+.recomend-category__block-title {
+  @media screen and (min-width: $desktop-up) {
+    border-bottom: 1px solid $primery-border-color;
+  }
+}
+
+.recomendation-category__title {
+  font-family: $selection-font-family;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 1.1;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+  margin-top: 36px;
+
+  @media screen and (min-width: $desktop-up) {
+    line-height: 0.95;
+    margin-bottom: 22px;
+    margin-top: 70px;
+  }
+}
+
+.recomendation-category__list {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+}
+
+.recomendation-category__item {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  @media screen and (min-width: $desktop-up) {
+    &:not(:last-child) {
+      margin-right: 34px;
+    }
+  }
+}
+
+.recomendation-category__image {
+  display: block;
+  width: 100%;
+  height: 200px;
+}
+
+.recomendation-category__block-title {
+  padding-top: 12px;
+}
+
+.recomendation-category__block-characters,
+.recomendation-category__block-title {
+  display: flex;
+}
+
+.recomendation-category__item-title {
+  font-family: $third-font-family;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.2;
+
+  @media screen and (min-width: $desktop-up) {
+    line-height: 1.07;
+  }
+}
+
+.recomendation-category__add-likes {
+  margin-left: auto;
+  background-color: transparent;
+}
+
+.recomendation-category__price {
+  display: block;
+  font-family: $third-font-family;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.2;
+
+  @media screen and (min-width: $desktop-up) {
+    line-height: 1.4;
+  }
+}
+
+.recomendation-category__characters {
+  display: none;
+
+  @media screen and (min-width: $desktop-up) {
+    display: block;
+    margin-left: auto;
+    font-family: $third-font-family;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.75;
+    text-align: right;
+    color: $fourth-text-color;
+  }
+}

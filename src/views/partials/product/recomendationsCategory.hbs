@@ -1,0 +1,30 @@
+<section class='recomendation-category'>
+  <h2 class='recomendation-category__title'>
+    ВЫГЛЯДЕТЬ БЛИСТАТЕЛЬНО ПОМОЖЕТ
+  </h2>
+  <ul class='recomendation-category__list'>
+    {{#each this}}
+      <li class='recomendation-category__item'>
+        <picture>
+          <img src='./images/img/' alt='' class='recomendation-category__image' />
+        </picture>
+        <div>
+          <span class='recomendation-category__title'>
+            / Платье-смокинг длинное
+          </span>
+          <button class='recomendation-category__add-likes'>
+            сердечко
+          </button>
+        </div>
+        <div>
+          <span class='recomendation-category__price'>
+            41 400 ₽
+          </span>
+          <span class='recomendation-category__characters'>
+            Подчеркнет линию талии
+          </span>
+        </div>
+      </li>
+    {{/each}}
+  </ul>
+</section>
