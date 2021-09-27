@@ -1,7 +1,8 @@
-.sizeTable__modal-container {
+.size-table-modal-container {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
+  z-index: 100;
 
   width: 100vw;
   padding: 66 20 50 20;
@@ -18,15 +19,15 @@
     padding: 37 120 40 120;
   }
 }
-%sizeTable__btn {
+%size-table-btn {
   border-style: none;
   border-radius: 0;
   cursor: pointer;
   transition: background-color $time-cubic;
   border: 1px solid $secondary-text-color;
 }
-.sizeTable__button-Close {
-  @extend %sizeTable__btn;
+.size-table-button-close {
+  @extend %size-table-btn;
   position: absolute;
   top: 0;
   right: 0;
@@ -63,7 +64,7 @@
   }
 }
 @media screen and (max-width: $mobile-general) {
-  .sizeTable__button-close-text {
+  .size-table-button-close-text {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -77,18 +78,18 @@
   }
 }
 
-.sizeTable__button-Close-icon {
+.size-table-button-close-icon {
   width: 8px;
   height: 8px;
 
   fill: $selection-text-color;
 
-  .sizeTable__button-Close:hover > &,
-  .sizeTable__button-Close:focus > & {
+  .size-table-button-close:hover > &,
+  .size-table-button-close:focus > & {
     fill: $secondary-text-color;
   }
 }
-.sizeTable__title {
+.size-table-title {
   margin-bottom: 24px;
 
   font-family: $selection-font-family;
@@ -103,7 +104,7 @@
     line-height: 1.1;
   }
 }
-.sizeTable__size-list {
+.size-table-size-list {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
   grid-auto-rows: 50px;
@@ -113,8 +114,8 @@
   margin-left: auto;
   margin-right: auto;
 }
-.sizeTable__size-list-btn {
-  @extend %sizeTable__btn;
+.size-table-size-list-btn {
+  @extend %size-table-btn;
   width: 50px;
   height: 50px;
 
@@ -132,12 +133,12 @@
     color: $selection-text-color;
   }
 }
-.sizeTable__disabled {
+.size-table-disabled {
   cursor: not-allowed;
   opacity: 0.6;
   position: relative;
 }
-.sizeTable__disabled::before {
+.size-table-disabled::before {
   position: absolute;
   bottom: -1;
   right: 100%;
@@ -154,19 +155,33 @@
 }
 
 //--files for placing in common blocks---
-.sizeTable__backdrop {
+.size-table-backdrop {
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.6);
-  z-index: 50;
+  //z-index: 1;
   transition: opacity $time-cubic, visibility $time-cubic;
   overflow-y: scroll;
 }
-.sizeTable__no-scrol {
+.size-table-no-scrol {
   overflow: hidden;
+}
+
+//--------следующая карточка----------------------------------------------------
+.size-table-standart {
+  margin-bottom: 17px;
+
+  font-family: $third-font-family;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 1.1;
+
+  letter-spacing: 0.03em;
+
+  color: $primary-text-color;
 }
 
 //----delete all after this line---------------------

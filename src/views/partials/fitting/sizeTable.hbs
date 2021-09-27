@@ -1,17 +1,19 @@
 
-<div class="sizeTable__backdrop">
-    <div class="sizeTable__modal-container">
-            <button class="sizeTable__button-Close" type="button" data-sizeTable-modalClose >
-                <span class="sizeTable__button-close-text">ЗАКРЫТЬ</span>
-                <svg class="sizeTable__button-Close-icon" aria-label="Close modal window">
+<div class="size-table-backdrop">
+    <div class="size-table-modal-container">
+            <button class="size-table-button-close" type="button" data-size-table-modal-close >
+                <span class="size-table-button-close-text">ЗАКРЫТЬ</span>
+                <svg class="size-table-button-close-icon" aria-label="close modal window">
                     <use href="../../../images/exampl.svg#icon-menu_burger_close"></use>
                 </svg>
             </button>
-        <h2 class="sizeTable__title">ВЫБЕРИТЕ РАЗМЕР</h2>
-        <ul class="sizeTable__size-list">
+        <h2 class="size-table-title">ВЫБЕРИТЕ РАЗМЕР</h2>
+        <ul class="size-table-size-list">
             {{#each [] }}
-            <li class="tag-list__item">{{{this}}}</li>
+            <li class="tag-list-item">{{{this}}}</li>
             {{/each}}
         </ul>
     </div>
 </div>
+
+{{!-- <h2 class="size-table-standart">ТАБЛИЦА РАЗМЕРОВ</h2> --}}
