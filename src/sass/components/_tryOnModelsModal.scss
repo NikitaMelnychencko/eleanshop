@@ -1,0 +1,67 @@
+// Try on Modal ("ХОТИТЕ ПРИМЕРИТЬ ДАННУЮ МОДЕЛЬ ПЕРЕД ПОКУПКОЙ? ЛЕГКО!")
+// .visually-hidden {
+//   @extend %hide;
+// }
+
+.try-on {
+  width: 394px;
+
+  margin: 0 auto;
+  outline: 1px solid tomato;
+  padding: 70px 20px;
+
+  @media screen and (min-width: $desktop-up) {
+    width: 1017px;
+    padding: 70px 120px;
+  }
+}
+
+.try-on__title {
+  margin-bottom: 32px;
+
+  text-transform: uppercase;
+  font-family: $third-font-family;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.15;
+
+  text-align: center;
+  letter-spacing: 0.05em;
+
+  @media screen and (min-width: $desktop-up) {
+    font-size: 30px;
+    text-align: left;
+  }
+}
+
+.try-on__text {
+  margin-bottom: 22px;
+
+  font-family: $third-font-family;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+}
+
+.order-steps {
+  @media screen and (min-width: $desktop-up) {
+    // display: flex;
+    // flex-wrap: wrap;
+    // flex-flow: column wrap;
+    // height: 300px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    grid-auto-flow: column;
+    column-gap: 10px;
+  }
+}
+
+.order-steps__item {
+  margin-bottom: 23px;
+
+  font-family: $selection-font-family;
+  font-size: 18px;
+  line-height: 1.06;
+  letter-spacing: 0.03em;
+}

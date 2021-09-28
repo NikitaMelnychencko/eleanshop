@@ -1,0 +1,90 @@
+{{! Order form for Modals }}
+<form class='order-form'>
+  <input
+    type='text'
+    name='client-name'
+    class='order-form__input'
+    id='client-name'
+    pattern='[A-Za-zА-Яа-яЁё]+'
+    placeholder='ВВЕДИТЕ ИМЯ *'
+    required
+  />
+  <input
+    type='tel'
+    name='client-tel'
+    class='order-form__input'
+    id='client-tel'
+    placeholder='ВВЕДИТЕ ТЕЛЕФОН *'
+    pattern='[0-9]{1,10}'
+    required
+    title='max 10 digits, for example: 0961111111'
+  />
+  <input
+    type='email'
+    name='client-email'
+    class='order-form__input'
+    id='client-email'
+    pattern='[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$'
+    placeholder='ВВЕДИТЕ E-MAIL *'
+    required
+    title='example@mail.com'
+  />
+  <textarea
+    name='client-comments'
+    class='order-form__input order-form__comments'
+    id='client-comments'
+    placeholder='ДОБАВИТЬ КОММЕНТАРИЙ'
+    maxlength='300'
+  ></textarea>
+
+  <div class='sizes'>
+    <p class='sizes__text'>
+      ВЫБЕРИТЕ РАЗМЕР
+    </p>
+    <ul class='sizes__list'>
+      <li class='sizes__item'>
+        40
+      </li>
+      <li class='sizes__item'>
+        42
+      </li>
+      <li class='sizes__item'>
+        44
+      </li>
+      <li class='sizes__item'>
+        46
+      </li>
+      <li class='sizes__item'>
+        48
+      </li>
+      <li class='sizes__item'>
+        50
+      </li>
+    </ul>
+  </div>
+
+  <div class='agreement'>
+    <label class='agreement__label'>
+      <input
+        type='checkbox'
+        name='agreement'
+        value='ok'
+        required
+        class='agreement__checkbox %hide'
+      />
+      {{! <svg class='agreement__icon' width='16' height='15'>
+          <use href='#'></use>
+        </svg> }}
+      <span class='agreement__text'>
+        Я согласен с
+        <a class='agreement__link' href='#'>
+          политикой конфиденциальности
+        </a>
+      </span>
+    </label>
+  </div>
+
+  <button type='submit' class='order-form__button btn'>
+    ОФОРМИТЬ ПРИМЕРКУ
+  </button>
+</form>
