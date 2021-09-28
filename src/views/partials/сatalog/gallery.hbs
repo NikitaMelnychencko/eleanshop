@@ -1,7 +1,7 @@
 <!--Catalog-->
 <section class='catalog-container'>
   <ul class='catalog-list js-catalog'>
-    {{#each list}}
+    {{#each this}}
       <li class='catalog-item'>
         <article class='catalog-card card'>
           <img
@@ -23,7 +23,6 @@
         </article>
       </li>
     {{/each}}
-
     <svg class='catalog-icon-raws-round'>
       <use href='./images/sprite.svg#icon-raws-round'></use>
     </svg>
