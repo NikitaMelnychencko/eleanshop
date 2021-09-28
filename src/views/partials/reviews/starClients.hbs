@@ -1,0 +1,29 @@
+<section class='star-clients'>
+  <div class='container'>
+    <div class='star-clients__wrapper'>
+      <div class='star-clients__slider'>
+        <h2 class='star-clients__title'>НАШИ ЗВЕЗДНЫЕ КЛИЕНТЫ И ОТЗЫВЫ</h2>
+        {{#each this}}
+          <div class='slider__item filter'>
+            <picture>
+              <source
+                srcset='
+    {{image-mobile-1x}} 1x,
+    {{image-mobile-2x}} 2x'
+                media='(max-width: 1377px)'
+              />
+              <source
+                srcset='
+  {{image-desktop-1x}} 1x,
+  {{image-desktop-2x}} 2x'
+                media='(min-width: 1378px)'
+              />
+              <img src='#' alt='{{name}}' id='{{id}} loading="lazy"' />
+            </picture>
+            <p class='star-clients__text'>{{name}}</p>
+          </div>
+        {{/each}}
+      </div>
+    </div>
+  </div>
+</section>
