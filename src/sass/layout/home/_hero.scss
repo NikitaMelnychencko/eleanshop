@@ -86,6 +86,8 @@
   font-size: 0;
   width: 30px;
   height: 10px;
+
+  cursor: pointer;
 }
 .hero__slider .slick-arrow.slick-prev {
   left: 80px;
@@ -123,6 +125,8 @@
   background-color: $hero-slider-dots;
   border-radius: 10px;
   border-color: transparent;
+
+  cursor: pointer;
 }
 
 .hero__slider .slick-dots li.slick-active button {
