@@ -1,10 +1,10 @@
 <section class='star-clients'>
   <div class='container'>
+    <h2 class='star-clients__title'>НАШИ ЗВЕЗДНЫЕ КЛИЕНТЫ И ОТЗЫВЫ</h2>
     <div class='star-clients__wrapper'>
       <div class='star-clients__slider'>
-        <h2 class='star-clients__title'>НАШИ ЗВЕЗДНЫЕ КЛИЕНТЫ И ОТЗЫВЫ</h2>
         {{#each this}}
-          <div class='slider__item filter'>
+          <div class='slider__item'>
             <picture>
               <source
                 srcset='
@@ -18,9 +18,9 @@
   {{image-desktop-2x}} 2x'
                 media='(min-width: 1378px)'
               />
-              <img src='#' alt='{{name}}' id='{{id}} loading="lazy"' />
+              <img src='#' alt='{{name}}' id='{{id}}' loading='lazy' />
             </picture>
-            <p class='star-clients__text'>{{name}}</p>
+            <h3 class='star-clients__subtitle'>{{name}}</h3>
           </div>
         {{/each}}
       </div>
