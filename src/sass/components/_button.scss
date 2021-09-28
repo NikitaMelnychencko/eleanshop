@@ -1,0 +1,10 @@
+.delivery-button {
+  display: none;
+  @media screen and (min-width: $desktop-up) {
+    display: block;
+    padding: 16px 13px;
+    background-color: $third-text-color;
+    border: none;
+    color: $selection-text-color;
+  }
+}

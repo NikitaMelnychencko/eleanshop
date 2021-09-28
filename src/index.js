@@ -33,6 +33,7 @@ import './js/layout/product/infoAboutProduct.js';
 import './js/layout/product/recomendationsCategory.js';
 import './js/layout/product/productCreateInfo.js';
 import './js/layout/product/productHandSewn.js';
+import './js/layout/product/test_productHandSewn.js';
 //delivery
 import './js/layout/delivery/filter.js';
 import './js/layout/delivery/deliveryTypes.js';
