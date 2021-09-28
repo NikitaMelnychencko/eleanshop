@@ -33,37 +33,27 @@ mainEL.insertAdjacentHTML('beforeend', pageHeroSliderMarkup);
 
 // Slider options
 $(document).ready(function () {
-  $('.hero-slider').slick({
+  $('.hero__slider').slick({
     arrows: true,
-    dots: true, // точки
-    adaptiveHeight: true, // адаптирование по высоте
-    slidesToShow: 1, // сколько слайдеров активно
-    slidesToScroll: 1, // по сколько пролистывать
-    speed: 1000, // скорость пролистывания
-    easing: 'ease', // тип анамации
+    dots: true, // dots
+    adaptiveHeight: true, // height adaptation
+    slidesToShow: 1, // how many sliders are active
+    slidesToScroll: 1, // how much to scroll
+    speed: 1000, // swiping speed
+    easing: 'ease', // animation type
     infinite: true,
-    initialSlide: 0, // с какого слайда старт
-    autoplay: true, // авто проигрывание
-    autoplaySpeed: 2000, // скрость листания
+    initialSlide: 0, // which slide to start from
+    autoplay: true, // auto play
+    autoplaySpeed: 2000, // paging speed
     pauseOnFocus: true,
     pauseOnHover: true,
-    pauseOnDotsHover: true, // пауза при ховере по точкам
-    draggable: true, // отключение свайпа на ПК
+    pauseOnDotsHover: true, // pause when hovering by dots
+    draggable: true, // disable swipe on PC
     swipe: true,
-    touchThreshold: 4, //срабатываниe свайпа
-    touchMove: true, //срабатывание тача
-    waitForAnimate: true, //анимация переключения
-    //centerMode: false, // цент-мод
-    //variableWidth: false, // выступание с боку пол слайда
-    //rows: 1, // ряди слайдеров (по 2-3 и больше фоток сразу)
-    //slidesPerRow: 1, // колчество слайдов в ряду
-    //vertical: false, // вертикальный слайдер (если true - выключить флекс)
-    //verticalSwiping: false, // вертикальный свайп вручную
-    //fade: false, // заменяет перелистывание телепортом)))
-    // asNavFor: 'клас-слайдера', // обмен класами между слайдерами
-    //mobileFirst: false, // ( true = 721px+ / false = +721px)
-    //appendArrows:$('class-name'), // $('.class-name') переместить стрелки
-    //appendDots:$('class-name'), // $('.class-name') переместить точки
+    touchThreshold: 4, // swipe triggered
+    touchMove: true, // activation of the wheelbarrow
+    waitForAnimate: true, // switching animation
+
     responsive: [
       {
         breakpoint: 1377,
@@ -78,5 +68,16 @@ $(document).ready(function () {
         },
       },
     ],
+    //centerMode: false, // center-mod
+    //variableWidth: false, // side protrusion floor slide
+    //rows: 1, // rows of sliders (2-3 or more photos at once)
+    //slidesPerRow: 1, // number of slides in a row
+    //vertical: false, // vertical slider (if true - turn off flex)
+    //verticalSwiping: false, // vertical swipe manually
+    //fade: false, // replaces flipping with a teleport)))
+    // asNavFor: 'class-slider', // exchange of classes between sliders
+    //mobileFirst: false, // ( true = 721px+ / false = +721px)
+    //appendArrows:$('class-name'), // $('.class-name') move arrows
+    //appendDots:$('class-name'), // $('.class-name') move points
   });
 });
