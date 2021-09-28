@@ -18,7 +18,7 @@
 //     font-size: 26px;
 //   }
 // }
-// @media screen and (min-width:414px) {
+// @media screen and (min-width: 1366px) {
 //   .reviews__header {
 //     width: 866px;
 //     margin: 0 auto;
@@ -102,7 +102,7 @@
   font-weight: 500;
   font-size: 12px;
   line-height: 1.75;
-  color: var($description-color);
+  color: var(--);
 }
 .catalog-icon-raws-round {
   position: absolute;

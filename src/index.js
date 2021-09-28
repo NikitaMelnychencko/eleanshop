@@ -16,6 +16,8 @@ import './js/layout/home/inInstgram.js';
 //catalog
 import './js/layout/сatalog/filter.js';
 import './js/layout/сatalog/gallery.js';
+import galleryTemplate from './views/partials/сatalog/gallery.hbs';
+import catalog from './js/catalog-gallery.json';
 import './images/img/catalog/card-1.jpg';
 import './images/img/catalog/card-1@2x.jpg';
 import './images/img/catalog/card-2.jpg';
