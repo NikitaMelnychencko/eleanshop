@@ -132,7 +132,9 @@
 
 // !--------------------------------------------- О ТОВАРЕ//
 .product__content {
-  padding-top: 10px;
+  @media screen and (min-width: 1378px) {
+    padding-top: 10px;
+  }
 }
 
 .product__name-wrapper {
@@ -148,6 +150,10 @@
   letter-spacing: 0.05em;
 
   color: #272727;
+
+  @media screen and (min-width: 1378px) {
+    color: #222222;
+  }
 }
 
 .button__like {
@@ -165,6 +171,11 @@
   font-size: 22px;
   line-height: 0.91;
   color: #333333;
+
+  @media screen and (min-width: 1378px) {
+    color: #222222;
+    margin-bottom: 24px;
+  }
 }
 
 .product__currency {
@@ -180,11 +191,20 @@
   line-height: 1.4;
 
   color: #3d3d3d;
+
+  @media screen and (min-width: 1378px) {
+    color: #222222;
+    margin-bottom: 15px;
+  }
 }
 
 .size__list {
   display: flex;
   margin-bottom: 21px;
+
+  @media screen and (min-width: 1378px) {
+    margin-bottom: 17px;
+  }
 }
 
 .size__item {
@@ -201,6 +221,10 @@
 .options {
   display: flex;
   margin-bottom: 21px;
+
+  @media screen and (min-width: 1378px) {
+    margin-bottom: 37px;
+  }
 }
 
 .options__item {
@@ -227,6 +251,11 @@
   letter-spacing: 0.02em;
 
   color: #b59475;
+
+  @media screen and (min-width: 1378px) {
+    font-size: 14px;
+    line-height: 1.57;
+  }
 }
 
 .button__size-option:hover {
@@ -250,6 +279,10 @@
   margin-bottom: 30px;
   padding-top: 15px;
   border-top: 1px solid #e6e6e6;
+
+  @media screen and (min-width: 1378px) {
+    margin-bottom: 20px;
+  }
 }
 
 .colorpicker__title {
@@ -296,10 +329,14 @@
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 35px;
+
+  @media screen and (min-width: 1378px) {
+    margin-bottom: 46px;
+  }
 }
 
 .button {
-  width: 374px;
+  width: 280px;
   padding: 17px 0px;
 
   font-family: Jost;
@@ -314,6 +351,10 @@
 
   background: #ffffff;
   color: #242424;
+
+  @media screen and (min-width: 414px) {
+    width: 374px;
+  }
 }
 
 .button:hover {
@@ -336,12 +377,24 @@
 }
 
 .button__fit {
-  width: 136px;
-  margin-right: 8px;
+  // width: 102px;
+  margin-bottom: 8px;
+
+  @media screen and (min-width: 414px) {
+    width: 136px;
+    margin-right: 8px;
+  }
+
+  @media screen and (min-width: 1378px) {
+    margin-right: 9px;
+  }
 }
 
 .button__installment {
-  width: 230px;
+  // width: 170px;
+  @media screen and (min-width: 414px) {
+    width: 230px;
+  }
 }
 
 .product__info {
@@ -356,6 +409,10 @@
 
 .product__description {
   margin-bottom: 30px;
+
+  @media screen and (min-width: 1378px) {
+    margin-bottom: 32px;
+  }
 }
 
 .product__composition {
