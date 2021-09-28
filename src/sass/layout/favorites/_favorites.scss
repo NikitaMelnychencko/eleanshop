@@ -1,0 +1,30 @@
+.favorites {
+  &__title {
+    font-family: FuturaBookC;
+    font-size: 21px;
+    line-height: 20 / 21 * 100%;
+    /* or 95% */
+
+    text-align: center;
+    letter-spacing: 0.05em;
+
+    color: #272727;
+  }
+
+  &__data {
+  }
+
+  &__sand-on-email {
+    &--title {
+    }
+
+    &--button {
+      &:hover,
+      &:focus {
+      }
+    }
+
+    &--text {
+    }
+  }
+}
