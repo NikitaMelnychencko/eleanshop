@@ -125,10 +125,6 @@
         padding-bottom: 15px;
 }
 
-.footer__list-dropdown.js-dropdown{
-    display: none;
-}
-
 .footer__mobile-icon-menu-open{
     position: relative;
     display: block;
@@ -221,7 +217,7 @@
 }
 
 
-// Dropdown PC hover
+// ==== Dropdown PC hover===
 
 // .footer__list-dropdown{
 //     display: none;
@@ -342,15 +338,21 @@
 
 .footer__desktop-social-list{
     display: flex;
+     margin-top: 37px;
 
+}
+.footer__desktop-social-list-icon{
+    display: block;
+        width: 20px;
+        height: 20px;
+         margin-right: 15px;
+        
 }
 
 .footer__desktop-icon{
-        display: block;
         width: 20px;
         height: 20px;
-        margin-right: 15px;
-        margin-top: 37px;
+        
     // transition: fill $time-function $cubic-bezier;
     &:hover,
     &:focus{
