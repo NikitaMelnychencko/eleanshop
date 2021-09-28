@@ -1,6 +1,5 @@
 .recomendation-category {
   padding-top: 36px;
-  outline: 1px solid red;
 
   &__block-title {
     margin-top: 12px;
@@ -112,27 +111,6 @@
 
     @media screen and (min-width: $desktop-up) {
       line-height: 1.07;
-    }
-  }
-
-  &__add-likes {
-    margin-left: auto;
-    background-color: transparent;
-    border: none;
-    padding-bottom: 15px;
-    cursor: pointer;
-  }
-
-  &__icon {
-    fill: transparent;
-    stroke: $accent-favorite-btn-color;
-    width: 16px;
-    height: 14px;
-
-    @media screen and (min-width: $desktop-up) {
-      width: 21px;
-      height: 18px;
-      stroke: $secondary-text-color;
     }
   }
 
