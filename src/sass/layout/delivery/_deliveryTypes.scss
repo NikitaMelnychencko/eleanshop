@@ -1,0 +1,21 @@
+.delivery-foto {
+  opacity: 0;
+  display: none;
+}
+.typeofdelivery {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .delivery-foto {
+    opacity: 1;
+    width: 748px;
+    height: 570px;
+    display: block;
+  }
+  .delivery {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 69px;
+  }
+}

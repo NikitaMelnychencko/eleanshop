@@ -1,0 +1,80 @@
+.input-name {
+  width: 374px;
+  height: 60px;
+  margin-bottom: 30px;
+  border: 1px solid $primary-logo-color;
+  padding: 18px;
+}
+.formquestion {
+  text-align: center;
+}
+.input-coment {
+  width: 374px;
+  height: 60px;
+  border: 1px solid $primary-logo-color;
+  padding-left: 18px;
+  padding-top: 20px;
+}
+.input-button {
+  padding: 18px 40px;
+  background-color: #ffff;
+  outline: none;
+  vertical-align: top;
+  border: 1px solid $primary-logo-color;
+  margin-left: 196px;
+}
+.input-button:hover,
+.input-button:focus {
+  background-color: black;
+  color: white;
+}
+
+.ask-question {
+  margin-bottom: 16px;
+}
+.input-name::placeholder {
+  color: $secondary-logo-color;
+  font-size: 13px;
+  text-align: left;
+  line-height: 1.6;
+}
+.input-coment::placeholder {
+  color: $secondary-logo-color;
+  font-size: 13px;
+  text-align: left;
+  line-height: 1.6;
+}
+@media screen and (min-width: 768px) {
+  .formquestion {
+    padding: 50px 221px;
+    outline: 1px dotted $secondary-logo-color;
+    outline-offset: -20px;
+  }
+  .formquestion-head {
+    text-align: center;
+  }
+  .input-name {
+    width: 298px;
+    height: 60px;
+    margin-bottom: 30px;
+    border: 1px solid $primary-logo-color;
+  }
+  .ask-question {
+    margin-bottom: 30px;
+  }
+
+  .input-coment {
+    width: 717px;
+    height: 130px;
+    border: 1px solid $primary-logo-color;
+  }
+
+  .input-button {
+    padding: 18px 40px;
+    background-color: #ffff;
+    outline: none;
+    vertical-align: top;
+    border: 1px solid $primary-logo-color;
+    margin: 0;
+  }
+}

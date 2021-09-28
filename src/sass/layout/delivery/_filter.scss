@@ -1,0 +1,37 @@
+.description-main {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.6;
+  font-family: $primary-font-family;
+  color: $primary-text-color;
+  margin-bottom: 20px;
+  display: flex;
+}
+.description li:nth-child(3) p {
+  border-bottom: 1px solid $accent-outline-btn-color;
+  border-top: 1px solid $accent-outline-btn-color;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .maindescrption {
+    width: 540px;
+  }
+
+  .typeofdelivery {
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 1.05;
+    text-align: left;
+    font-family: $primary-font-family;
+    color: $primary-logo-color;
+    margin-bottom: 26px;
+    margin-top: 26px;
+  }
+
+  .description li:nth-child(3) p {
+    border-top: none;
+    padding-bottom: 33px;
+  }
+}
