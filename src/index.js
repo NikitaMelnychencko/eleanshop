@@ -7,7 +7,7 @@ import './js/layout/static/header.js'
 import './js/layout/static/footer.js'
 //main
 import './js/layout/home/hero.js'
-import './js/layout/home/contend.js'
+import './js/layout/home/content.js'
 import './js/layout/home/aboutTheBrand.js'
 import './js/layout/home/ourShowRoom.js'
 import './js/layout/home/registrationFormForFitting.js'

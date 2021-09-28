@@ -1,21 +1,19 @@
 <section class="content">
-    {{#each this}}
-    <li class="content__item">
-        <article class="content__card">
-            <a href="{{link}}" class="content__link">
-                <h2 class="content__category">{{name}}</h2>
-                <picture class="content__img">
-                    <source
-                        srcset="{{image}} 1x, {{image_2x}} 2x"
-                        media="(max-width: $mobile-only)">
-                    <source
-                        srcset="{{image-desk}} 1x, {{image-desk_2x}} 2x"
-                        media="(min-width: $desktop-up)">
-                    <img src="{{image}}" alt="{{description}}">
-                </picture>
-            </a>
-        </article>
-    </li>>
-    {{/each}}
+    <ul class="content__list">
+        {{#each this}}
+        <li class="content__item">
+            <article class="content__card">
+                <a href="{{link}}" class="content__link">
+                    <h2 class="content__category">{{name}}</h2>
+                    <picture class="content__img">
+                        <source srcset="{{image}} 1x, {{image_2x}} 2x" media="(max-width: 720px)">
+                        <source srcset="{{image-desk}} 1x, {{image-desk_2x}} 2x" media="(min-width: 1378px)">
+                        <img src="{{image}}" alt="{{description}}">
+                    </picture>
+                </a>
+            </article>
+        </li>
+        {{/each}}
+    </ul>
 </section>
 

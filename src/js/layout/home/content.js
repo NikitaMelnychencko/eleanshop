@@ -47,16 +47,12 @@ import "../../../images/img/home/content/mobile/img_10.jpg"
 import "../../../images/img/home/content/mobile/img_10@2x.jpg"
 
 
-
-
-
-
 // Links
 const refs = {
-    module: document.querySelector(".content"),
-    cards: main(content)
+    main: document.querySelector(main),
+    cards: model(content)
 };
 
 
 // Cards Insert
-refs.module.insertAdjacentHTML("beforeend", refs.cards);
+refs.main.insertAdjacentHTML("beforeend", refs.cards);
