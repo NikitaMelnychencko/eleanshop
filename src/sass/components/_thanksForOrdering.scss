@@ -16,6 +16,7 @@
   }
 
   &__title {
+    display: block;
     font-family: $selection-font-family;
     font-style: normal;
     font-weight: normal;
@@ -55,5 +56,10 @@
     height: 50px;
 
     border: 1px solid $button-border-color;
+
+    &:hover,
+    &:focus {
+      background-color: $button-hover-background-color;
+    }
   }
 }

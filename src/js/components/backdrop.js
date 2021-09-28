@@ -33,7 +33,6 @@ class Backdrop {
 
   onKeyPress(event) {
     switch (event.key) {
-      // Закрытие модального окна по нажатию клавиши ESC.
       case 'Esc':
       case 'Escape':
         this.closeModalForm();
