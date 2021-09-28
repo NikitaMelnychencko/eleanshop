@@ -6,9 +6,9 @@
   &__item {
     background-repeat: no-repeat;
     background-size: contain;
-    // &:nth-child(2n-1) {
-    background-image: url('./images/handSewn-bg-left.png');
-    // }
+    &:nth-child(2n-1) {
+      background-image: url('./images/handSewn-bg-right.png');
+    }
     &:nth-child(2n) {
       background-image: url('./images/handSewn-bg-left.png');
     }
