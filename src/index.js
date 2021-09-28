@@ -35,6 +35,7 @@ import './js/layout/showroom/showroom.js';
 import './js/layout/contact/contact.js';
 //fitting
 import './js/layout/fitting/informationAboutFitting.js';
+import './js/layout/fitting/sizeChose.js';
 import './js/layout/fitting/sizeTable.js';
 import './js/layout/fitting/videoSlider.js';
 import './js/layout/fitting/formFittingInShowroom.js';
