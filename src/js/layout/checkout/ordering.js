@@ -1,25 +1,21 @@
 import ordering_ordering from '../../../views/partials/checkout/ordering.hbs'
 import payment_checkout from '../../../views/layouts/checkout.hbs'
 import refs from '../../refs/refs.js'
-console.log(refs.incrementBtn)
+import promocodes from '../../json/promocode.json'
+
 const ordering = ordering_ordering();
 const createCheckout = payment_checkout({ ordering })
 refs.main.insertAdjacentHTML('beforeend', createCheckout);
 
-// const { incrementBtn, decrementBtn, orderingValueEl } = refs;
-
-// const decrementBtn = document.querySelector('.ordering__btn--minus');
-// const incrementBtn = document.querySelector('.ordering__btn--plus');
-// const orderingValueEl = document.querySelector('.ordering__value');
-// const priceValue = document.querySelector('.ordering__price');
-// const totalPrice = document.querySelector('.ordering__totalprice');
-
+const orderingApplyBtn = document.querySelector('.ordering__btn--promocode');
+const orderingPromocodeInput = document.querySelector('.ordering__input--promocode');
+const ordeingDiscount = document.querySelector('.ordering__discount--value');
+const orderingTotal = document.querySelector('.ordering__total')
 const cards = document.querySelector('.ordering__cards');
 
 cards.addEventListener('click', setQuantityOrRemove);
 
 function setQuantityOrRemove(e) {
-
     if (e.target.classList.contains('ordering__btn--plus')) {
         orderingIncrement(e);
 
@@ -82,4 +78,26 @@ for (let i = 0; i <= arr.length; i += 1){
     }
 }
 }
-console.log(document.querySelectorAll('.ordering__price'))
+
+orderingApplyBtn.addEventListener('click', countTotalPrice)
+
+function countTotalPrice(e) {
+    e.preventDefault();
+    let orderingPricesArray = document.querySelectorAll('.ordering__price')
+    let orderingPrices = [...orderingPricesArray].reduce((totalPrices, orderingPricesArray) => totalPrices + Number(orderingPricesArray.innerHTML), 0);
+    
+    let discount = getDiscount();
+
+    ordeingDiscount.textContent = discount;
+    orderingTotal.textContent = orderingPrices + discount;
+   
+}
+
+
+function getDiscount() {
+    let promocodeValue = orderingPromocodeInput.value;
+    const gettingPromocodeObject = promocodes.find(promocode => promocode.value == promocodeValue);
+     
+    return gettingPromocodeObject.discount
+}
+
