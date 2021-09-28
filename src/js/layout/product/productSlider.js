@@ -24,6 +24,9 @@ import '../../../images/img/products/desktop/tuxedo-and-vest-mini-desktop-2@2x.j
 import '../../../images/img/products/desktop/tuxedo-and-vest-mini-desktop-3@2x.jpg'
 import '../../../images/img/products/desktop/tuxedo-and-vest-mini-desktop-4@2x.jpg'
 
+import '../../../images/svg/products/attension-sign.svg'
+import '../../../images/svg/products/hanger.svg'
+
 
 window.jQuery = window.$ = require("jquery");
 require('./slick.min.js')
