@@ -1,0 +1,48 @@
+.size-table-standart {
+  margin-bottom: 32px;
+
+  font-family: $third-font-family;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.15;
+
+  text-align: center;
+  letter-spacing: 0.05em;
+
+  color: $primary-text-color;
+}
+.size-table-modal-container {
+  //position: relative;
+  //top: 0;
+  //transform: translateY(-50%);
+  z-index: 100;
+
+  width: 100vw;
+  height: 100vw;
+  padding: 66px 20px 60px 20px;
+
+  background-color: $primary-background-color;
+
+  @media screen and (min-width: $mobile-general) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    min-width: 400px;
+    max-width: 660px;
+  }
+  @media screen and (min-width: $mobile-only) {
+    padding: 66px 120px 68px 120px;
+  }
+}
+//----delete all after this line---------------------
+body {
+  background-color: teal;
+}
+/* 
+    Блочная модель 
+    Типографика 
+    Отображение 
+    Прочее 
+*/
