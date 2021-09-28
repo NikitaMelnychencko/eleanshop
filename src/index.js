@@ -1,18 +1,30 @@
-import './images/img/exampl.jpg'
-import './images/svg/exampl.svg'
-import './sass/main.scss'
+import './images/img/exampl.jpg';
+import './images/svg/exampl.svg';
+
+import './images/img/product/handSewn/handSewn-desktop-1.jpg';
+import './images/img/product/handSewn/handSewn-desktop-1@2x.jpg';
+import './images/img/product/handSewn/handSewn-desktop-2.jpg';
+import './images/img/product/handSewn/handSewn-desktop-2@2x.jpg';
+import './images/img/product/handSewn/handSewn-mobile-1.jpg';
+import './images/img/product/handSewn/handSewn-mobile-1@2x.jpg';
+import './images/img/product/handSewn/handSewn-mobile-2.jpg';
+import './images/img/product/handSewn/handSewn-mobile-2@2x.jpg';
+import './images/img/product/handSewn/handSewn-bg-right.png';
+import './images/img/product/handSewn/handSewn-bg-left.png';
+
+import './sass/main.scss';
 //=========layout===============
 //static
-import './js/layout/static/header.js'
-import './js/layout/static/footer.js'
+import './js/layout/static/header.js';
+import './js/layout/static/footer.js';
 //main
-import './js/layout/home/hero.js'
-import './js/layout/home/contend.js'
-import './js/layout/home/aboutTheBrand.js'
-import './js/layout/home/ourShowRoom.js'
-import './js/layout/home/registrationFormForFitting.js'
-import './js/layout/home/starClients.js'
-import './js/layout/home/inInstgram.js'
+import './js/layout/home/hero.js';
+import './js/layout/home/contend.js';
+import './js/layout/home/aboutTheBrand.js';
+import './js/layout/home/ourShowRoom.js';
+import './js/layout/home/registrationFormForFitting.js';
+import './js/layout/home/starClients.js';
+import './js/layout/home/inInstgram.js';
 //catalog
 import './js/layout/сatalog/filter.js';
 import './js/layout/сatalog/gallery.js';
@@ -20,7 +32,7 @@ import './js/layout/сatalog/gallery.js';
 import './js/layout/product/infoAboutProduct.js';
 import './js/layout/product/recomendationsCategory.js';
 import './js/layout/product/productCreateInfo.js';
-import './js/layout/product/productHandSewn.js'
+import './js/layout/product/productHandSewn.js';
 //delivery
 import './js/layout/delivery/filter.js';
 import './js/layout/delivery/deliveryTypes.js';

@@ -3,6 +3,21 @@
   padding-bottom: 382px;
   outline: 1px solid red;
 
+  &__item {
+    background-repeat: no-repeat;
+    background-size: contain;
+    // &:nth-child(2n-1) {
+    background-image: url('./images/handSewn-bg-left.png');
+    // }
+    &:nth-child(2n) {
+      background-image: url('./images/handSewn-bg-left.png');
+    }
+
+    &_biggest {
+      padding-bottom: 224px;
+    }
+  }
+
   &__list-info {
     counter-reset: section;
     padding-left: 34px;
@@ -43,5 +58,10 @@
 
   &__item-info {
     margin-bottom: 26px;
+  }
+
+  &__image {
+    width: 352px;
+    height: 292px;
   }
 }
