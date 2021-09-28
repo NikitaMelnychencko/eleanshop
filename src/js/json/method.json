@@ -1,0 +1,90 @@
+{
+  "delivery": [
+    {
+      "id":"XWaQXcbk0",
+      "text":"Шоурум",
+      "value":"Showroom",
+      "checked":"checked"
+    },
+    {
+      "id":"XWaREcvb0",
+      "text":"Курьером по Киеву",
+      "value":"By courier in Kiev"
+    },
+    {
+      "id":"XWaNHbnm0",
+      "text":"Курьером по Украине",
+      "value":"By courier in Ukraine"
+    },
+    {
+      "id":"XWaTYmkl0",
+      "text":"Курьером за границу",
+      "value":"By courier abroad"
+    }
+  ],
+  "payment":[
+    {
+      "id":"XWaQXcb11",
+      "text":"Оплата картой",
+      "value":"Payment by card",
+      "checked":"checked"
+    },
+    {
+      "id":"XWaREcv22",
+      "text":"Наличными курьеру",
+      "value":"Cash to the courier"
+    },
+    {
+      "id":"XWaNHbn33",
+      "text":"Наложенный платеж",
+      "value":"C.O.D"
+    },
+    {
+      "id":"XWaTYmk44",
+      "text":"Купить в рассрочку",
+      "value":"Buy in installments"
+    }
+  ],
+  "day-data":[
+    {
+      "day":"Сегодня",
+      "data":"29 марта"
+    },
+    {
+      "day":"Завтра",
+      "data":"30 марта"
+    },
+    {
+      "day":"Четверг",
+      "data":"31 марта"
+    },
+    {
+      "day":"Пятнцица",
+      "data":"1 апреля"
+    },
+    {
+      "day":"Суббота",
+      "data":"2 апреля"
+    },
+    {
+      "day":"Воскресенье",
+      "data":"3 апреля"
+    },
+    {
+      "day":"Понедельник",
+      "data":"4 апреля"
+    }
+  ],
+  "time":[
+    {
+      "time":"С 12 до 15 часов"
+    },
+    {
+      "time":"С 15 до 18 часов"
+    },
+    {
+      "time":"С 18 до 21 часов"
+    }
+  ]
+
+}
