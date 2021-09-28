@@ -1,0 +1,147 @@
+.brand-title {
+  // font-family: FuturaMediumC;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 20px;
+  /* or 111% */
+  letter-spacing: 0.05em;
+  color: #000000;
+  // border: 1px solid #000000;
+  box-sizing: border-box;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-transform: uppercase;
+  margin-bottom: 21px;
+}
+
+
+.brand-video {
+
+  background-color: #000000;
+  max-width: 374px;
+  height: 665px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 47px;
+}
+
+
+
+.brand-title-elean {
+
+  // position: absolute;
+
+  
+  // font-family: FuturaMediumC;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 20px;
+  /* or 111% */
+  
+  letter-spacing: 0.05em;
+  color: #000000;
+  // border: 1px solid #000000;
+  box-sizing: border-box;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+
+.brand-box__text {
+
+  // font-family: HelveticaNeueCyr;
+font-style: normal;
+font-weight: normal;
+font-size: 15px;
+line-height: 24px;
+/* or 160% */
+
+letter-spacing: 0.05em;
+
+color: #171717;
+margin-bottom: 40px;
+}
+
+.brand-img {
+
+  margin-bottom: 27px;
+}
+
+
+.brand-box__title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 20px;
+  /* or 111% */
+  letter-spacing: 0.05em;
+  color: #000000;
+  text-transform: uppercase;
+  margin-bottom: 21px;
+}
+
+
+.brand-box__about {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 23px;
+  /* or 153% */
+  letter-spacing: 0.05em;
+  color: #171717;
+  margin-bottom: 41px;
+}
+
+.brand_section-container {
+  padding-top: 39px;
+}
+
+.brand-section-our-advantages {
+background-color: #252831;
+
+padding-top: 47px;
+padding-bottom: 50px;
+
+}
+
+.brand-section-our-advantages__title {
+
+  font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 20px;
+/* or 111% */
+
+text-align: center;
+letter-spacing: 0.05em;
+
+color: #FFFFFF;
+text-transform: uppercase;
+margin-bottom: 108px;
+}
+
+.brand-section-our-advantages__text {
+
+
+  font-style: normal;
+font-weight: normal;
+font-size: 15px;
+line-height: 18px;
+/* or 120% */
+
+text-align: center;
+letter-spacing: 0.05em;
+
+color: #C0A78F;
+
+}
+
+.brand-section-our-advantages__text:not(:last-child) {
+    margin-bottom: 114px;
+  }
+  
+
