@@ -1,0 +1,1 @@
+import informationAboutFitting from '../../../views/partials/fitting/informationAboutFitting.hbs';

@@ -1,0 +1,1 @@
+import sizeTable from '../../../views/partials/fitting/sizeTable.hbs';

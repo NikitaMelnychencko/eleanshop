@@ -1,0 +1,1 @@
+import videoSlider from '../../../views/partials/fitting/videoSlider.hbs';
