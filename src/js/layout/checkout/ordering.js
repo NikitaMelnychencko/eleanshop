@@ -1,6 +1,7 @@
 import ordering_ordering from '../../../views/partials/checkout/ordering.hbs'
 import payment_checkout from '../../../views/layouts/checkout.hbs'
 import refs from '../../refs/refs.js'
+import '../../../images/img/imagetest.png'
 import promocodes from '../../json/promocode.json'
 
 const ordering = ordering_ordering();
