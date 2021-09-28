@@ -7,13 +7,21 @@
   width: 100%;
 
   text-align: center;
-  padding-top: 111px;
+  padding-top: 42px;
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 40px;
 
+  @media screen and (min-width: 500px) and (max-width: $tablet-general) {
+    position: relative;
+    padding-top: 38px;
+    padding-left: 40px;
+    padding-right: 40px;
+      }
+
+
   @media screen and (min-width: $desktop-up) {
-    padding-top: 106px;
+    padding-top: 37px;
   padding-left: 221px;
   padding-right: 221px;
   padding-bottom: 79px;
@@ -33,6 +41,21 @@ color: #000000;
 text-transform: uppercase;
 margin-bottom: 15px;
 
+@media screen and (min-width: 500px) and (max-width: $tablet-general) {
+  margin-bottom: 24px;
+  text-align: left;
+
+  font-size: 18px;
+  line-height: 20px;
+  /* or 111% */
+  
+  letter-spacing: 0.05em;
+  
+  color: #000000;
+  
+    }
+
+
 @media screen and (min-width: $desktop-up) {
   font-size: 21px;
   line-height: 20px;
@@ -47,33 +70,55 @@ margin-bottom: 15px;
 }
 
 
-.form-fitting-showroom__title::before {
-  content: '';
-  min-width: 60px;
-  min-height: 60px;
-  margin-right: 10px;
-  background-image: url('./images/bluze.svg');
 
-  // .img {background-image: url(../../../images/svg/exampl.svg%23bluze)};
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  fill: black;
-  // .img {background-image: url(img.svg?fill=)}
 
- 
+.star-form::after {
+content: '*';
+position: absolute;
+top: 20px;
+right: 15px;
+font-weight: 500;
+font-size: 18px;
+line-height: 25px;
+/* or 139% */
+
+
+color: #9D9DAD;
+
+
+
+
 }
+
+
+
+// .form-fitting-showroom__title::before {
+//   content: '';
+//   min-width: 60px;
+//   min-height: 60px;
+//   margin-right: 10px;
+//   background-image: url('./images/bluze.svg');
+//   // .img {background-image: url(../../../images/svg/exampl.svg%23bluze)};
+//   background-size: cover;
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   fill: black;
+//   // .img {background-image: url(img.svg?fill=)}
+// }
 
 
 .form-fitting-showroom__horiz-block {
 
 
-  @media screen and (min-width: $desktop-up) {
+  @media screen and (min-width: 500px) {
 
     display: flex;
+    flex-wrap: wrap;
 
   }
 }
+
+
 
 
 .form-fitting-showroom__input,
@@ -110,6 +155,13 @@ color: #A7A7A7;
 
 .form-fitting-showroom__input {
 
+  @media screen and (min-width: $mobile-general) {
+
+   min-width: 230px;
+
+  }
+
+
   @media screen and (min-width: $desktop-up) {
 
     margin-bottom: 20px;
@@ -119,15 +171,21 @@ color: #A7A7A7;
 
 
 .form-fitting-showroom__input-box {
-  @media screen and (min-width: $desktop-up) {
 
-flex-grow: 1
-    
 
-  }
+
+
+  position: relative;
+  flex-grow: 1;
+
+
 }
 
+
+
 .form-fitting-showroom__send-btn-text {
+  transition: color 200ms cubic-bezier(0.4, 0, 0.2, 1);
+
 
   font-weight: 500;
 font-size: 13px;
@@ -158,7 +216,7 @@ width: 100%;
 .form-fitting-showroom__button {
 
   background: transparent;
-
+  transition: background 200ms cubic-bezier(0.4, 0, 0.2, 1);
   border: 1px solid #000000;
   box-sizing: border-box;
   // transform: matrix(-1, 0, 0, 1, 0, 0);
@@ -169,47 +227,72 @@ margin-left: auto;
 &:hover {
 
   background: black;
+  
 }
-@media screen and (min-width: $desktop-up) {
+@media screen and (min-width: $mobile-general) {
 
   height: 60px;
   width: 180px;
+  flex-grow: 0;
+  margin-left: -1px;
     }
-    @media screen and (min-width: $desktop-up) {
-      flex-grow: 0;
-      margin-left: -1px;
-        }
 }
 
 .form-fitting-showroom__comment {
   resize: none;
   height: 120px;
   width: 100%;
-  @media screen and (min-width: $desktop-up) {
 
-        
+  @media screen and (min-width: 500px) and (max-width: $tablet-general) {
+    height: 130px;
+      }
+  @media screen and (min-width: $desktop-up) {
+  
+   
     height: 100px;
       }
     }
 
     .form-fitting-showroom__comment-box {
 
-      @media screen and (min-width: $desktop-up) {
+      @media screen and (min-width: $mobile-general) {
 
         flex-grow: 1;
             
           }
-
+    
     }
 
     .form-fitting-showroom__input-center {
 
-      @media screen and (min-width: $desktop-up) {
 
-        border-right: none;
+      @media screen and (min-width: $tablet-general) {
         border-left: none;
-            
+
           }
 
-   
+      @media screen and (min-width: $desktop-up) {
+        border-right: none;
+        border-left: none;
+          }
+
+
     }
+
+    .form-fitting-showroom__icon {
+      height: 34px;
+      width: 31px;
+      stroke: #C0A78F;
+      margin-bottom: 23px;
+
+
+      @media screen and (min-width: 500px) and (max-width: $tablet-general) {
+        position: absolute;
+        top: 27px;
+        right: 39px;
+          }
+
+    }
+
+
+    
