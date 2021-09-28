@@ -20,17 +20,30 @@ import '../../../images/img/page-clients/client-05/starClient-05@3x.jpg';
 import '../../../images/img/page-clients/client-05/starClient-05@4x.jpg';
 import '../../../images/svg/clients-svg-original/clients-arrow-right.svg';
 import '../../../images/svg/clients-svg-original/clients-arrow-left.svg';
+import '../../../images/img/homeReviewsChat/chatImage@1x.png';
+import '../../../images/img/homeReviewsChat/chatImage@2x.png';
 
+import starClients_starClientsTempl from '../../../views/partials/home/starClients.hbs';
+import starClients_cardChatReviewsTempl from '../../../views/components/cardChatReviews.hbs';
+import starClients_reviewsChat from '../../json/homeRewiesChat/homeReviewsChat.json';
+import starClients_reviewsChatOthers from '../../json/homeRewiesChat/homeReviewsChatOthers.json';
 import pageStarClientsSliderData from '../../json/starClients.json';
-import pageStarClientsMarkupTemplate from '../../../views/partials/reviews/starClients.hbs';
+import pageStarClientsMarkupTemplate from '../../../views/partials/home/starClients.hbs';
+
 import refs from '../../refs/refs.js';
+
 const { mainEL } = refs;
 
 window.jQuery = window.$ = require('jquery');
 require('../../slider/slick.min.js');
 
-// Create Markup
-const pageStarClientsSliderMarkup = pageStarClientsMarkupTemplate(pageStarClientsSliderData);
+// Create markup and render in html
+const cardChatReviewsMarkup = starClients_cardChatReviewsTempl(starClients_reviewsChat);
+const starClientsSectionMarkup = starClients_starClientsTempl({ cardChatReviewsMarkup });
+const pageStarClientsSliderMarkup = pageStarClientsMarkupTemplate({
+  pageStarClientsSliderData,
+  cardChatReviewsMarkup,
+});
 mainEL.insertAdjacentHTML('beforeend', pageStarClientsSliderMarkup);
 
 // Slider options
@@ -45,7 +58,7 @@ $(document).ready(function () {
     easing: 'ease', // animation type
     infinite: true,
     initialSlide: 1, // which slide to start from
-    autoplay: false, // auto play
+    autoplay: true, // auto play
     autoplaySpeed: 2000, // paging speed
     pauseOnFocus: true,
     pauseOnHover: true,
@@ -64,7 +77,6 @@ $(document).ready(function () {
         settings: {
           arrows: true,
           dots: true,
-          slidesToScroll: 2,
         },
       },
     ],
@@ -81,3 +93,37 @@ $(document).ready(function () {
     //appendDots:$('class-name'), // $('.class-name') move points
   });
 });
+
+// starClients & comments
+
+//refs
+const reviewsChatList = document.querySelector('.reviews-chat__list');
+const showMoreButtonEl = document.querySelector('.js-watch-all-button');
+const showLessButtonEl = document.querySelector('.button-up');
+
+//button show more
+showMoreButtonEl.addEventListener('click', onButtonShowMoreClick);
+
+function onButtonShowMoreClick(event) {
+  renderNewMarkup(starClients_reviewsChatOthers);
+  btnShowLessChangeDisplay('block');
+  showLessButtonEl.addEventListener('click', onButtonShowLess);
+}
+function renderNewMarkup(listData) {
+  const chatReviewsNewListMarkup = starClients_cardChatReviewsTempl(listData);
+  reviewsChatList.insertAdjacentHTML('beforeend', chatReviewsNewListMarkup);
+}
+function deleteMarkup(parentElement) {
+  parentElement.innerHTML = '';
+}
+function btnShowLessChangeDisplay(style) {
+  showLessButtonEl.style.display = style;
+}
+
+//button showLess
+function onButtonShowLess(event) {
+  deleteMarkup(reviewsChatList);
+  renderNewMarkup(starClients_reviewsChat);
+  btnShowLessChangeDisplay('none');
+  event.target.removeEventListener('click', onButtonShowLess);
+}
