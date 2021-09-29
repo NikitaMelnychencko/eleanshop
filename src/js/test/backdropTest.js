@@ -5,15 +5,16 @@ import modalFormMarkupTempl from '../../views/components/thanksForOrdering.hbs';
 let throttle = require('lodash.throttle');
 
 const btnRef = document.querySelector('[data-modal-open]');
-btnRef.addEventListener('click', onBtnClick);
+//btnRef.addEventListener('click', onBtnClick);
 
 function onBtnClick(event) {
   const backdropRef = document.querySelector('[data-modal]');
-
+  const { mainEL } = getRefs;
   if (backdropRef === null) {
     const modalFormMarkup = modalFormMarkupTempl();
     const backdropMarkup = backdropMarkupTempl(modalFormMarkup);
-    getRefs.mainEL.insertAdjacentHTML('beforeend', backdropMarkup);
+
+    mainEL.insertAdjacentHTML('beforeend', backdropMarkup);
 
     window.addEventListener('resize', throttle(onResize, 50));
   }
