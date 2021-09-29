@@ -1,104 +1,98 @@
-ul{
-    list-style: none;
-    margin:0;
-    padding:0;
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
-li{   
-    padding: 16px ;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
+li {
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
 }
-.fitting_first-row{
-font-weight: 600;
-font-size: 15px;
-line-height: 1.2;
-color: #222222;
-margin-bottom: 9px;
-padding: 0;
+.fitting_first-row {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 1.2;
+  color: #222222;
+  margin-bottom: 9px;
+  padding: 0;
 }
-.fitting-row{
-    border: 1px solid #CFD5E2;
+.fitting-row {
+  border: 1px solid #cfd5e2;
 }
-.fitting_size{
-font-size: 15px;
-line-height: 22px;
-letter-spacing: 0.05em;
-color: #C0A78F;
-margin-left: 5px;
-margin-right: auto;
-position: absolute;
-top: -1px
+.fitting_size {
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: 0.05em;
+  color: #c0a78f;
+  margin-left: 5px;
+  margin-right: auto;
+  position: absolute;
+  top: -1px;
 }
 
- 
-  .col1{
-      flex-basis: 5%;
-      position: relative;
-  }
-  .col2 {
-    flex-basis: 5%;
-  }
-  .col3 {
-    flex-basis: 5%;
-  }
-  .col4 {
-    flex-basis: 5%;
-  }
-  .col5 {
-    flex-basis: 5%;
-  }
+.col1 {
+  flex-basis: 5%;
+  position: relative;
+}
+.col2 {
+  flex-basis: 5%;
+}
+.col3 {
+  flex-basis: 5%;
+}
+.col4 {
+  flex-basis: 5%;
+}
+.col5 {
+  flex-basis: 5%;
+}
 
-  .fitting-row:hover,
-  .fitting-row:focus{
-      background-color: rgba(106, 4, 5, 0.1);
-  }
-
+.fitting-row:hover,
+.fitting-row:focus {
+  background-color: rgba(106, 4, 5, 0.1);
+}
 
 /*   DESKTOP */
 
 @media screen and (min-width: 768px) {
-.fitting_product-shipping--container{
+  .fitting_product-shipping--container {
     max-width: 669px;
-	padding-left: 15px;
-	padding-right: 15px;
-	margin-left: 1050px;
-    }
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 1050px;
+  }
 
-    .fitting_heading{
-        text-align: center;
-    }
-    .fitting_section{
-        background-image: url(./images/elean47390.png);
-        background-repeat: no-repeat; 
-    }
+  .fitting_heading {
+    text-align: center;
+  }
+  .fitting_section {
+    background: url('./images/elean47390.png') 0 0 /100% no-repeat;
+  }
 
-    .fitting_size-table{
-        background-color: #F9F9F9;
-        padding: 35px;
-    }
-    .fitting_minor-title{
-        margin-bottom: 35px;
-        margin-top: 0;
-    }
-    .fitting_description-item{
-        padding: 15px;
-    }
-    .fitting_video-slider{
-        background-color:  #F9F9F9;
-        padding: 35px;
-    }
-    .fitting_video,
-    .fitting_first-video{
-        width: 183px;
-        display: block;
-        
-    }
-    .fitting_video-slider-container{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    
+  .fitting_size-table {
+    background-color: #f9f9f9;
+    padding: 35px;
+  }
+  .fitting_minor-title {
+    margin-bottom: 35px;
+    margin-top: 0;
+  }
+  .fitting_description-item {
+    padding: 15px;
+  }
+  .fitting_video-slider {
+    background-color: #f9f9f9;
+    padding: 35px;
+  }
+  .fitting_video,
+  .fitting_first-video {
+    width: 183px;
+    display: block;
+  }
+  .fitting_video-slider-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
-
