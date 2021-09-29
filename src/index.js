@@ -1,5 +1,6 @@
 import './images/img/exampl.jpg';
 import './images/svg/exampl.svg';
+import './images/svg/product-modal-button-close.svg';
 import './sass/main.scss';
 //=========layout===============
 //static
