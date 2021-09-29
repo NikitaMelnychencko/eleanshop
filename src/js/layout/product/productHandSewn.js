@@ -25,6 +25,6 @@ export default class HandSewn {
   }
 
   onButtonClick() {
-    //тут буде виклик бекдропа і frame24
+    // here will be a call to the backdrop and frame24
   }
 }

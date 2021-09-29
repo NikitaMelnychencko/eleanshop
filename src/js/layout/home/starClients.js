@@ -1,27 +1,3 @@
-import '../../../images/img/page-clients/client-01/starClient-01.jpg';
-import '../../../images/img/page-clients/client-01/starClient-01@2x.jpg';
-import '../../../images/img/page-clients/client-01/starClient-01@3x.jpg';
-import '../../../images/img/page-clients/client-01/starClient-01@4x.jpg';
-import '../../../images/img/page-clients/client-02/starClient-02.jpg';
-import '../../../images/img/page-clients/client-02/starClient-02@2x.jpg';
-import '../../../images/img/page-clients/client-02/starClient-02@3x.jpg';
-import '../../../images/img/page-clients/client-02/starClient-02@4x.jpg';
-import '../../../images/img/page-clients/client-03/starClient-03.jpg';
-import '../../../images/img/page-clients/client-03/starClient-03@2x.jpg';
-import '../../../images/img/page-clients/client-03/starClient-03@3x.jpg';
-import '../../../images/img/page-clients/client-03/starClient-03@4x.jpg';
-import '../../../images/img/page-clients/client-04/starClient-04.jpg';
-import '../../../images/img/page-clients/client-04/starClient-04@2x.jpg';
-import '../../../images/img/page-clients/client-04/starClient-04@3x.jpg';
-import '../../../images/img/page-clients/client-04/starClient-04@4x.jpg';
-import '../../../images/img/page-clients/client-05/starClient-05.jpg';
-import '../../../images/img/page-clients/client-05/starClient-05@2x.jpg';
-import '../../../images/img/page-clients/client-05/starClient-05@3x.jpg';
-import '../../../images/img/page-clients/client-05/starClient-05@4x.jpg';
-import '../../../images/svg/clients-svg-original/clients-arrow-right.svg';
-import '../../../images/svg/clients-svg-original/clients-arrow-left.svg';
-import '../../../images/img/homeReviewsChat/chatImage@1x.png';
-import '../../../images/img/homeReviewsChat/chatImage@2x.png';
 
 import starClients_starClientsTempl from '../../../views/partials/home/starClients.hbs';
 import starClients_cardChatReviewsTempl from '../../../views/components/cardChatReviews.hbs';

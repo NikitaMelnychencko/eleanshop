@@ -1,23 +1,3 @@
-import '../../../images/img/page-hero/mobile/hero-title-01/hero-title-mobile-01.jpg';
-import '../../../images/img/page-hero/mobile/hero-title-01/hero-title-mobile-01@2x.jpg';
-import '../../../images/img/page-hero/mobile/hero-title-02/hero-title-mobile-02.jpg';
-import '../../../images/img/page-hero/mobile/hero-title-02/hero-title-mobile-02@2x.jpg';
-import '../../../images/img/page-hero/mobile/hero-title-03/hero-title-mobile-03.jpg';
-import '../../../images/img/page-hero/mobile/hero-title-03/hero-title-mobile-03@2x.jpg';
-import '../../../images/img/page-hero/mobile/hero-title-04/hero-title-mobile-04.jpg';
-import '../../../images/img/page-hero/mobile/hero-title-04/hero-title-mobile-04@2x.jpg';
-import '../../../images/img/page-hero/desktop/hero-title-01/hero-title-desktop-01.jpg';
-import '../../../images/img/page-hero/desktop/hero-title-01/hero-title-desktop-01@2x.jpg';
-import '../../../images/img/page-hero/desktop/hero-title-02/hero-title-desktop-02.jpg';
-import '../../../images/img/page-hero/desktop/hero-title-02/hero-title-desktop-02@2x.jpg';
-import '../../../images/img/page-hero/desktop/hero-title-03/hero-title-desktop-03.jpg';
-import '../../../images/img/page-hero/desktop/hero-title-03/hero-title-desktop-03@2x.jpg';
-import '../../../images/img/page-hero/desktop/hero-title-04/hero-title-desktop-04.jpg';
-import '../../../images/img/page-hero/desktop/hero-title-04/hero-title-desktop-04@2x.jpg';
-import '../../../images/svg/hero-svg-original/hero-arrow-left.svg';
-import '../../../images/svg/hero-svg-original/hero-arrow-right.svg';
-import '../../../images/svg/clients-svg-original/clients-arrow-right.svg';
-import '../../../images/svg/clients-svg-original/clients-arrow-right.svg';
 
 import pageHeroSliderData from '../../json/hero.json';
 import pageHeroMarkupTemplate from '../../../views/partials/home/hero.hbs';

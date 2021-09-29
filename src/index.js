@@ -1,21 +1,7 @@
-import './images/img/exampl.jpg';
-import './images/svg/exampl.svg';
-
-
-import './images/img/product/handSewn/handSewn-desktop-1.jpg';
-import './images/img/product/handSewn/handSewn-desktop-1@2x.jpg';
-import './images/img/product/handSewn/handSewn-desktop-2.jpg';
-import './images/img/product/handSewn/handSewn-desktop-2@2x.jpg';
-import './images/img/product/handSewn/handSewn-mobile-1.jpg';
-import './images/img/product/handSewn/handSewn-mobile-1@2x.jpg';
-import './images/img/product/handSewn/handSewn-mobile-2.jpg';
-import './images/img/product/handSewn/handSewn-mobile-2@2x.jpg';
-import './images/img/product/handSewn/handSewn-bg-right.png';
-import './images/img/product/handSewn/handSewn-bg-left.png';
-import './images/svg/sprite.svg';
-import './images/svg/thanks_for_ordering.svg';
 
 import './sass/main.scss';
+import './js/importImages/importImages.js';
+
 //=========layout===============
 //static
 import './js/layout/static/header.js';
@@ -36,7 +22,7 @@ import './js/layout/product/infoAboutProduct.js';
 import './js/layout/product/recomendationsCategory.js';
 import './js/layout/product/productCreateInfo.js';
 import './js/layout/product/productHandSewn.js';
-import './js/layout/product/test_productHandSewn.js';
+
 //delivery
 import './js/layout/delivery/filter.js';
 import './js/layout/delivery/deliveryTypes.js';
@@ -67,4 +53,8 @@ import './js/layout/favorites/favorites.js';
 import './js/layout/favorites/sabmitEmail.js';
 // backfrop
 import './js/components/backdrop.js';
+
+
+//test
+import './js/test/test_productHandSewn.js';
 import './js/test/backdropTest.js';
