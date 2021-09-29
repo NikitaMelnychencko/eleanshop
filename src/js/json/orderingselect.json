@@ -1,0 +1,26 @@
+{
+    "color": [
+        {"id": "qwERtyu12", "text": "черный", "value": "black"},
+        {"id": "qwERtyu13", "text": "белый", "value": "white"},
+        {"id": "qwERtyu14", "text": "красный", "value": "red"}
+    ],
+     "time":[
+    {
+      "time":"С 12 до 15 часов"
+    },
+    {
+      "time":"С 15 до 18 часов"
+    },
+    {
+      "time":"С 18 до 21 часов"
+    }
+  ],
+    "size": [
+        {"id": "qwERtyu15", "text": "размер 40", "value": "black"},
+        {"id": "qwERtyu16", "text": "размер 42", "value": "black"},
+        {"id": "qwERtyu17", "text": "размер 44", "value": "black"},
+        {"id": "qwERtyu18", "text": "размер 46", "value": "black"},
+        {"id": "qwERtyu19", "text": "размер 48", "value": "black"},
+        {"id": "qwERtyu20", "text": "размер 50", "value": "black"}
+    ]
+}

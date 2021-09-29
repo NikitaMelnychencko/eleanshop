@@ -3,26 +3,28 @@
     <!--the card with the chosen item-->
     <div class='ordering__card'>
 
-        {{!-- <img class='ordering__image' src='./images/imagetest.png' alt='article' /> --}}
+        <img class='ordering__image' src='./images/white-suit.jpg' alt='article' />
         <div class='ordering__box'>
             <p class='ordering__label'>Classical suit</p>
             <div class='ordering__selects'>
                 <select class='ordering__select ordering__select--color' name='color' id='color'>
-                    <option value=''>Цвет</option>
-                    <option value='black'>черный</option>
-                    <option value='white'>белый</option>
-                    <option value='black'>красный</option>
-                </select>
+                    {{#each orderingSelects.time}}
+                    <option value="">{{time}}</option>
+                    {{/each}} 
 
-                <select class='ordering__select' name='size' id='color'>
-                    <option value=''>Размер</option>
-                    <option value='40'>40</option>
-                    <option value='42'>42</option>
-                    <option value='44'>44</option>
-                    <option value='46'>46</option>
-                    <option value='48'>48</option>
-                    <option value='50'>50</option>
-                </select>
+                    {{!-- <option value='black'>черный</option>
+                    <option value='white'>белый</option>
+                    <option value='red'>красный</option> --}}
+                    </select>
+                    
+                    <select class='ordering__select' name='size' id='color'>
+                        <option value='40'>Размер 40</option>
+                        <option value='42'>Размер 42</option>
+                        <option value='44'>Размер 44</option>
+                        <option value='46'>Размер 46</option>
+                        <option value='48'>Размер 48</option>
+                        <option value='50'>Размер 50</option>
+                    </select>
 
                 <button class='ordering__btn--minus ordering__btn' type='button'>-</button>
                 <span class='ordering__btn ordering__value'>1</span>
@@ -43,25 +45,24 @@
     <!--the card with the chosen item-->
     <div class='ordering__card'>
 
-        <img class='ordering__image' src='./images/exampl.jpg' alt='article' />
+        <img class='ordering__image' src='./images/red-suit.jpg' alt='article' />
         <div class='ordering__box'>
             <p class='ordering__label'>Classical suit</p>
             <div class='ordering__selects'>
+                <span class="ordering__circle"></span>
                 <select class='ordering__select ordering__select--color' name='color' id='color'>
-                    <option value=''>Цвет</option>
                     <option value='black'>черный</option>
                     <option value='white'>белый</option>
-                    <option value='black'>красный</option>
+                    <option value='red'>красный</option>
                 </select>
 
                 <select class='ordering__select' name='size' id='color'>
-                    <option value=''>Размер</option>
-                    <option value='40'>40</option>
-                    <option value='42'>42</option>
-                    <option value='44'>44</option>
-                    <option value='46'>46</option>
-                    <option value='48'>48</option>
-                    <option value='50'>50</option>
+                    <option value='40'>Размер 40</option>
+                    <option value='42'>Размер 42</option>
+                    <option value='44'>Размер 44</option>
+                    <option value='46'>Размер 46</option>
+                    <option value='48'>Размер 48</option>
+                    <option value='50'>Размер 50</option>
                 </select>
 
                 <button class='ordering__btn--minus ordering__btn' type='button'>-</button>

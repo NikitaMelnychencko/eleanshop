@@ -1,12 +1,21 @@
 import ordering_ordering from '../../../views/partials/checkout/ordering.hbs'
 import payment_checkout from '../../../views/layouts/checkout.hbs'
 import refs from '../../refs/refs.js'
-// import '../../../images/img/imagetest.png'
+import '../../../images/img/white-suit.jpg'
+import '../../../images/img/red-suit.jpg'
 import promocodes from '../../json/promocode.json'
+import orderingSelects from '../../json/orderingselect.json'
+
+console.log(orderingSelects)
 
 const ordering = ordering_ordering();
 const createCheckout = payment_checkout({ ordering })
 refs.main.insertAdjacentHTML('beforeend', createCheckout);
+
+const selectColor = ordering_ordering(orderingSelects);
+const colorSelectContainer = document.querySelector('.ordering__select');
+console.log(colorSelectContainer)
+colorSelectContainer.insertAdjacentHTML('beforeend', selectColor)
 
 const orderingApplyBtn = document.querySelector('.ordering__btn--promocode');
 const orderingPromocodeInput = document.querySelector('.ordering__input--promocode');
@@ -14,7 +23,9 @@ const orderingDiscount = document.querySelector('.ordering__discount--value');
 const orderingTotal = document.querySelector('.ordering__total')
 const cards = document.querySelector('.ordering__cards');
 
+window.onload = countTotalPrice()
 cards.addEventListener('click', setQuantityOrRemove);
+orderingApplyBtn.addEventListener('click', countTotalPriceWithDiscount);
 
 function setQuantityOrRemove(e) {
     if (e.target.classList.contains('ordering__btn--plus')) {
@@ -29,6 +40,7 @@ function setQuantityOrRemove(e) {
                 let totalPricePerItem = Number(pricePerItem) / (newValue-1) + Number(pricePerItem);
 
                 priceSpan.textContent = totalPricePerItem
+                countTotalPrice()
             }
         }   
     }    
@@ -47,6 +59,7 @@ function setQuantityOrRemove(e) {
                 let totalPricePerItem = Number(pricePerItem) - Math.round(Number(pricePerItem) / (newValue+1));
                 if (checker) {
                     priceSpan.textContent = totalPricePerItem;
+                    countTotalPrice()
                 }
             }
         }         
@@ -80,20 +93,23 @@ for (let i = 0; i <= arr.length; i += 1){
 }
 }
 
-orderingApplyBtn.addEventListener('click', countTotalPrice)
-
 function countTotalPrice(e) {
-    e.preventDefault();
-    let orderingPricesArray = document.querySelectorAll('.ordering__price')
-    let orderingPrices = [...orderingPricesArray].reduce((totalPrices, orderingPricesArray) => totalPrices + Number(orderingPricesArray.innerHTML), 0);
+    let orderingPricesArray = document.querySelectorAll('.ordering__price');
     
-    let discount = getDiscount();
+    let orderingTotalPrice = [...orderingPricesArray].reduce((totalPrices, orderingPricesArray) => totalPrices + Number(orderingPricesArray.innerHTML), 0);
 
-    orderingDiscount.textContent = discount;
-    orderingTotal.textContent = orderingPrices + discount;
-   
+    orderingTotal.textContent = orderingTotalPrice;
+    return orderingTotalPrice
 }
 
+function countTotalPriceWithDiscount(e) {
+    e.preventDefault();
+    const totalPrice = countTotalPrice();
+    let discount = getDiscount();
+    orderingDiscount.textContent = discount;
+    orderingTotal.textContent = totalPrice + discount;
+   
+}
 
 function getDiscount() {
     let promocodeValue = orderingPromocodeInput.value;
@@ -101,3 +117,6 @@ function getDiscount() {
      
     return gettingPromocodeObject.discount
 }
+
+export const totalPrice = countTotalPrice();
+console.log(totalPrice)
