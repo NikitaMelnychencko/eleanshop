@@ -1,3 +1,24 @@
+
+.button-add-likes {
+  margin-left: auto;
+  background-color: transparent;
+  border: none;
+  padding-bottom: 15px;
+  cursor: pointer;
+
+  &__icon {
+    fill: transparent;
+    stroke: $accent-favorite-btn-color;
+    width: 16px;
+    height: 14px;
+
+    @media screen and (min-width: $desktop-up) {
+      width: 21px;
+      height: 18px;
+      stroke: $secondary-text-color;
+    }
+  }
+}
 .delivery-button {
   display: none;
   @media screen and (min-width: $desktop-up) {
@@ -73,6 +94,7 @@
   @media screen and (min-width: $desktop-up) {
     bottom: 0px;
     right: 470px;
+
 
   }
 }
