@@ -215,8 +215,7 @@
     width: 100%;
 }
 
-.footer__mobile-subscribe-button,
-.footer__desktop-subscribe-button{
+.footer__mobile-subscribe-button{
     position: absolute;
     border: none;
     outline: none; 
@@ -225,6 +224,28 @@
     width: 22px;
     height: 22px;
     padding: 0;
+}
+
+.footer__desktop-subscribe-button{
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    outline: none; 
+    background-color: transparent; 
+    cursor: pointer;
+    border: 1px solid #D7B494;
+    box-sizing: border-box;
+    width: 100%;
+    height: 34px;
+    padding: 0;
+}
+
+.footer__input-text{
+    font-size: 12px;
+    line-height: 1.67;
+    letter-spacing: 0.1em;
+    color: $secondary-text-color;
+    padding-left: 12px;
 
 }
 
@@ -234,58 +255,28 @@
     width: 22px;
     height: 6px;
     cursor: pointer;
-    
 }
-
-// ==== Dropdown PC hover===
-
-// .footer__list-dropdown{
-//     display: none;
-//     // position: absolute;
-//     min-width: 160px;
-// }
-// /* Dropdown Content (Hidden by Default) */
-// .dropdown-content {
-//     display: none;
-//     min-width: 160px;
-// }
-
-// /* Links inside the dropdown */
-// .dropdown-content{
-//     padding: 12px 16px;
-//     text-decoration: none;
-//     display: block;
-// }
-// /* Change color of dropdown links on hover */
-// .dropdown-content:hover {background-color: #ddd;}
-// /* Show the dropdown menu on hover */
-// .js-dropdown:hover .footer__list-dropdown {display: block;}
-// /* Change the background color of the dropdown button when the dropdown content is shown */
-// .js-dropdown:hover .test {background-color: $accent-color;}
-
 
 //==============desktop=========//
 
 
- .desktop{
+ .footer__desktop{
      opacity: 1;
      display: flex;
     padding-top: 105px;
 
- 
-
-    @media screen and (max-width:$desktop-up){
-     position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-    }
+        @media screen and (max-width:$desktop-up){
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+        }
 }
 .footer__desktop-logo{
     margin-right: 47px;
@@ -297,9 +288,7 @@
     height: 23px;
     margin-top: 14px;
     margin-bottom: 44px;
-
 }
-
 
 .footer__desktop-list{
     display: flex;
@@ -484,4 +473,8 @@ margin: 0;
 }
 .footer__license__checkbox-text-doc{
     color: #D7B494;
+}
+
+.footer__desktop-icon-subscribe{
+    margin-right: 15px;
 }

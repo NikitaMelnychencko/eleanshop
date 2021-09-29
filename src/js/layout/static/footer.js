@@ -8,14 +8,25 @@ const {
     isOpenIcon,
     removeIconPlus,
     iconMenu,
-    inputStorage,
+    inputStorageMobile,
+    inputStorageDesktop,
     formSubmit,
     checkBoxIcon,
     agreeActive,
-    mobileSubmitBtn } = refs
+    mobileSubmitBtn,
+    desktopSubmitBtn,
+    footerSectionMobile,
+    footerSectionDesktop } = refs
+
+checkBoxIcon.addEventListener('click', onAgreeCheckBox)
+// inputStorageMobile.addEventListener('input', onFormInputMobile)
+// inputStorageDesktop.addEventListener('input', onFormInputDesktop)
+mobileSubmitBtn.addEventListener('submit', onSubmitBtnMobile)
+// footerSectionMobile.addEventListener('click', onClickFooterMobileSection)
+// footerSectionDesktop.addEventListener('click', onClickFooterDesktopSection)
+desktopSubmitBtn.addEventListener('submit', onSubmitBtnDesktop)
 
 // Функция раскрытия списка-меню
-
 plusLink.forEach((evt) => { /* Для каждого Li в списке */
     const sibling = evt.nextElementSibling; /* находим ближайший сестринский элемент */
     evt.addEventListener('click', (el, evt) => { /* назначаем лишке обработчик события */
@@ -27,9 +38,6 @@ plusLink.forEach((evt) => { /* Для каждого Li в списке */
         }
     });
 });
-// input-storage
-
-
 /*удаление иконки плюс при раскрытии спика*/
 
 plusLink.forEach((evt) => { /* Для каждого Li списка*/
@@ -42,12 +50,6 @@ plusLink.forEach((evt) => { /* Для каждого Li списка*/
         }
     });
 });
-
-checkBoxIcon.addEventListener('click', onAgreeCheckBox)
-inputStorage.addEventListener('input', onFormInput)
-mobileSubmitBtn.addEventListener('submit', onSubmitBtnMobile)
-desktopSubmitBtn.addEventListener('submit', onSubmitBtnDesktop)
-console.log(desktopSubmitBtn)
 function onAgreeCheckBox(evt) {
     const iconCheck = evt.currentTarget
     if (iconCheck) {
@@ -55,26 +57,74 @@ function onAgreeCheckBox(evt) {
     }
 }
 
-function onFormInput(evt) {
-    const subscribe = evt.currentTarget.value;
-    localStorage.setItem('Subscribe-data', subscribe)
-    console.log(subscribe)
+// function onFormInputMobile(evt) {
+//     const subscribe = evt.target.value;
+//     if (subscribe) {
+//         localStorage.setItem('Subscribe-mob', subscribe)
+//         console.log(subscribe)
+//     }
+// }
 
-}
+// function onFormInputDesktop(evt) {
+//     const subscribe = evt.target.value;
+//     if (subscribe) {
+//         localStorage.setItem('Subscribe-data-desk', subscribe)
+//         console.log(subscribe)
+//     }
+// }
+
+
+
+// function onClickFooterMobileSection(evt) {
+//     const test = evt.target
+//     console.log(test)
+//     if (test === inputStorageMobile) {
+//         console.log("evt.currentTarget === test")
+//         // return onFormInputMobile(evt)
+//     }
+// }
+
+// function onClickFooterDesktopSection(evt) {
+//     const test2 = evt.target
+//     console.log(test2)
+//     if (test2 === inputStorageDesktop) {
+//         console.log("evt.currentTarget === test")
+//         return onFormInputDesktop(evt)
+
+//     }
+// }
+
+// Назначение localStorage на input mobile
+inputStorageMobile.forEach((evt) => {
+    evt.addEventListener('input', (el) => {
+        const subscribe = el.target.value;
+        console.log(subscribe)
+        if (subscribe) {
+            localStorage.setItem('Subscribe-data-mob', subscribe)
+        }
+    });
+});
+
+
+// Назначение localStorage на input desktop
+
+inputStorageDesktop.forEach((evt) => {
+    console.log(evt)
+    evt.addEventListener('input', (el) => {
+        const subscribe = el.target.value;
+        console.log(subscribe)
+        if (subscribe) {
+            localStorage.setItem('Subscribe-data-desk', subscribe)
+        }
+    });
+});
 
 function onSubmitBtnMobile(evt) {
     evt.preventDefault();
-    // localStorage.setItem('Subscribe-data', submitBt)
-    console.log(evt.currentTarget)
-
+    console.log('evt.target')
 }
-
 
 function onSubmitBtnDesktop(evt) {
     evt.preventDefault();
-    // localStorage.setItem('Subscribe-data', submitBt)
     console.log(evt.target)
-
 }
-
-
