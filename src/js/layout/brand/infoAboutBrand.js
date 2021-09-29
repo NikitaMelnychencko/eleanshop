@@ -10,9 +10,9 @@ import '../../../images/img/brand/two-an-des@2x.jpg';
 import '../../../images/img/brand/two-an-mob.jpg';
 import '../../../images/img/brand/two-an-mob@2x.jpg';
 import '../../../images/svg/exampl.svg'
-import 'https://www.youtube.com/iframe_api';
+// import 'https://www.youtube.com/iframe_api';
 
-const player = document.querySelector('player')
+// const player = document.querySelector('player')
 const formBrand = form_brand();
 const brandInfo = brand_info({formBrand});
 
@@ -32,7 +32,7 @@ refs.brand.insertAdjacentHTML('beforeend', brandInfo);
       //   player = new YT.Player('player', {
       //     height: '360',
       //     width: '640',
-      //     videoId: 'M7lc1UVf-VE',
+      //     videoId: 'https://www.youtube.com/watch?v=JHAof88rAuI',
       //     events: {
       //       'onReady': onPlayerReady,
       //       'onStateChange': onPlayerStateChange
@@ -91,10 +91,13 @@ const opts = {
 width: 500,
 height: 500,
 videoId: 'JHAof88rAuI',
-annotations: false,
+// annotations: false,
 }
 
 const yplayer = new YTPlayer(refBrand.player, opts);
+
+yplayer.load('GKSRyLdjsPA')
+yplayer.setVolume(100)
 
 console.log(yplayer);
 
