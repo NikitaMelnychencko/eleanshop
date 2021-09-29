@@ -22,7 +22,7 @@ console.log(testIdInput)
 checkBoxIcon.addEventListener('click', onAgreeCheckBox)
 mobileSubmitBtn.addEventListener('submit', onSubmitBtnMobile)
 desktopSubmitBtn.addEventListener('submit', onSubmitBtnDesktop)
-
+console.log(desktopSubmitBtn)
 // Функция раскрытия списка-меню
 plusLink.forEach((evt) => {
     const sibling = evt.nextElementSibling;
@@ -85,25 +85,20 @@ inputStorageDesktop.forEach((evt) => {
 
 function onSubmitBtnMobile(evt) {
     evt.preventDefault();
-    if (evt.currentTarget) {
-        console.log('Салют')
-    }
+    evt.currentTarget.reset()
+    localStorage.removeItem('user_subscribe')
+
 }
 
 function onSubmitBtnDesktop(evt) {
     evt.preventDefault();
+    evt.currentTarget.reset()
+    localStorage.removeItem('name');
+    localStorage.removeItem('email');
 
 }
-
-
+// тут ловим все ссылки и перебераем все дата атребуты для преренаправления на нужную страницу
 const a = document.querySelectorAll('a')
-// .onclick = function () {
-// window.location.href = 'redirect-url';
-// };
-
-console.log(a)
-
-
 a.forEach((evt) => {
     const idSeorch = evt.dataset
     evt.addEventListener('click', (el) => {
@@ -113,8 +108,5 @@ a.forEach((evt) => {
             window.location.href = ""
             console.log("Работает?")
         }
-
     })
-    console.log(idSeorch)
-
 });
