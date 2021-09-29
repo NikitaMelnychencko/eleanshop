@@ -5,6 +5,12 @@ export default {
     isOpenIcon: document.querySelector('.footer__mobile-icon-menu-open'),
     removeIconPlus: document.querySelectorAll('.footer__mobile-icon-position-relative'),
     iconMenu: document.querySelector('.footer__mobile-icon-menu'),
-    inputStorage: document.querySelectorAll('.js-footer-input')
+    inputStorage: document.querySelector('.footer__mobile-form-input'),
+    formSubmit: document.querySelector('.footer__mobile-icon-submit'),
+    checkBoxIcon: document.querySelector('.footer__desktop-license-icon-checkbox'),
+    agreeActive: document.querySelector('.agree'),
+    mobileSubmitBtn: document.querySelector('.footer__mobile-subscribe-button'),
+    desktopSubmitBtn: document.querySelector('.footer__desktop-subscribe-button')
+
 
 }

@@ -1,8 +1,18 @@
+import { stringify } from 'postcss';
 import refs from '../../refs/refs.js'
 
-const { plusLink, minusLink, openSubMenu, isOpenIcon, removeIconPlus, iconMenu,
-    inputStorage } = refs
-console.log(inputStorage)
+const {
+    plusLink,
+    minusLink,
+    openSubMenu,
+    isOpenIcon,
+    removeIconPlus,
+    iconMenu,
+    inputStorage,
+    formSubmit,
+    checkBoxIcon,
+    agreeActive,
+    mobileSubmitBtn } = refs
 
 // Функция раскрытия списка-меню
 
@@ -28,23 +38,43 @@ plusLink.forEach((evt) => { /* Для каждого Li списка*/
         el.preventDefault()/* что бы при клике не перегружалась страница*/
         const plus = sibl.querySelector('.footer__mobile-icon-menu'); /* добираемся до вложенного списка меню */
         if (plus) { /* проверяем есть ли вложенный список */
-            plus.classList.toggle('is-open'); /* обрабатываем его класс */
+            plus.classList.add('is-open'); /* обрабатываем его класс */
         }
     });
 });
 
+checkBoxIcon.addEventListener('click', onAgreeCheckBox)
+inputStorage.addEventListener('input', onFormInput)
+mobileSubmitBtn.addEventListener('submit', onSubmitBtnMobile)
+desktopSubmitBtn.addEventListener('submit', onSubmitBtnDesktop)
+console.log(desktopSubmitBtn)
+function onAgreeCheckBox(evt) {
+    const iconCheck = evt.currentTarget
+    if (iconCheck) {
+        agreeActive.classList.toggle('js-show-and-remove')
+    }
+}
 
-inputStorage.forEach((evt) => { /* Для каждого Li списка*/
-    evt.addEventListener('input', (evt) => { /* назначаем лишке обработчик события */
-        evt.preventDefault()/* что бы при клике не перегружалась страница*/
-        console.log(evt.target)
-        if (evt) {
-            localStorage.setItem('Input', 'js-footer-input')
-        }
-        // else {
-        //     localStorage.removeItem('Input')
-        // }
-    });
-});
+function onFormInput(evt) {
+    const subscribe = evt.currentTarget.value;
+    localStorage.setItem('Subscribe-data', subscribe)
+    console.log(subscribe)
+
+}
+
+function onSubmitBtnMobile(evt) {
+    evt.preventDefault();
+    // localStorage.setItem('Subscribe-data', submitBt)
+    console.log(evt.currentTarget)
+
+}
+
+
+function onSubmitBtnDesktop(evt) {
+    evt.preventDefault();
+    // localStorage.setItem('Subscribe-data', submitBt)
+    console.log(evt.target)
+
+}
 
 

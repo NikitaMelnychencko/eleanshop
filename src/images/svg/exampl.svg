@@ -29,5 +29,15 @@
 <symbol id="icon-logo" viewBox="0 0 170 32">
 <path d="M113.739 20.381v-0.905h5.647l-5.647-15.462v-4.014h3.181l10.592 27.958 3.654 1.932v0.402h-12.149v-0.402l3.484-1.953-2.768-7.555-5.994-0zM144.929 27.642l3.631 2.269v0.38h-8.149v-0.38l3.587-2.269v-25.286l-3.587-1.954v-0.402h6.636l18.032 24.152v-21.502l-3.631-2.269v-0.38h8.238v0.38l-3.632 2.269v27.642l-1.366 0.56-19.759-26.428-0 23.218zM0 29.89l3.521-1.932v-25.602l-3.521-1.954v-0.402h22.077v7.699h-0.199l-3.72-6.794h-10.075v13.401h6.533l2.591-3.871h0.369v8.754h-0.369l-2.591-3.979h-6.533v14.176h11.552l4.842-6.815 0.192 0.022-1.144 7.699h-23.524l-0-0.402zM113.739 0v4.014l-5.646 15.462h5.646v0.905h-5.993l-2.746 7.555h0.023l4.547 1.953v0.402h-9.581v-0.402l3.868-1.932 9.124-24.719-2.052-2.837v-0.402l2.812 0zM34.156 0h12.061v0.402l-3.978 1.954v27.031h9.95l4.842-6.815 0.192 0.022-1.144 7.699h-21.922v-0.402l3.521-1.932v-25.602l-3.521-1.954v-0.402zM66.629 29.89l3.521-1.932v-25.602l-3.521-1.954v-0.402h22.077v7.699h-0.199l-3.72-6.794h-10.075v13.401h6.532l2.591-3.871h0.369v8.754h-0.369l-2.591-3.979h-6.532v14.176h11.552l4.842-6.815 0.192 0.022-1.144 7.699h-23.524v-0.402z"></path>
 </symbol>
+<symbol id="icon-arrow-pc" viewBox="0 0 92 32">
+<path fill="none" stroke="#d7b494" style="stroke: var(--color1, #d7b494)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="4" d="M76.266 3.133l11.733 11.733-11.733 11.733"></path>
+<path fill="none" stroke="#d7b494" style="stroke: var(--color1, #d7b494)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="4" d="M0 14.867h85.067"></path>
+</symbol>
+<symbol id="icon-border-check" viewBox="0 0 30 32">
+<path fill="none" stroke="#d7b494" style="stroke: var(--color1, #d7b494)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2.1333" d="M1.067 3.087h27.733v27.733h-27.733v-27.733z"></path>
+</symbol>
+<symbol id="icon-agree-checket" viewBox="0 0 240 32">
+<path fill="none" stroke="#d7b494" style="stroke: var(--color1, #d7b494)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="16" d="M240 23.156h-240"></path>
+</symbol>
 </defs>
 </svg>

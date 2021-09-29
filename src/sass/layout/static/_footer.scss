@@ -12,11 +12,11 @@
         overflow: hidden;
 }
 .mobile{
-    // display: none;
+    display: block;
     opacity: 1;
     @media screen and (min-width:$desktop-up){
         opacity: 0;
-        // display: block;
+        display: none;
         position: absolute;
         width: 1px;
         height: 1px;
@@ -85,44 +85,48 @@
 
 .footer__mobile-list-item-plus{
     position: relative;
+    
 }
 
 .footer__mobile-icon-position-relative,
 .footer__mobile-icon-position-absolute{
-        position: absolute;
-        right: 0;
+    position: absolute;
+    right: 0;
 }
 
-
+.footer__mobile-list-dropdown{
+    margin-top: 15px;
+}
 
 .footer__mobile-icon-menu{
-     width: 11px;
+    width: 11px;
     height: 11px;
 }
 
 .footer__mobile-submenu{
-        font-weight: 500;
-        font-size: 15px;
-        color: $primary-logo-color;
-        padding-bottom: 5px;
-        padding-left: 10px;
+    font-weight: 500;
+    font-size: 15px;
+    color: $primary-logo-color;
+    padding-bottom: 10px;
+    padding-left: 10px;
+
 }
 
 .footer__mobile-list-item{
-        &-plus{
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            font-weight: 500;
-            font-size: 15px;
-            color: $primary-logo-color;
+    &-plus{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-weight: 500;
+        font-size: 15px;
+        color: $primary-logo-color;
     }
 }
 
 .border{
-        border-top:  1px  solid #d3d1d1;
-        padding-top: 15px;
-        padding-bottom: 15px;
+    border-top:  1px  solid #d3d1d1;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .footer__mobile-icon-menu-open{
@@ -136,7 +140,12 @@
     position: absolute;
     top: 0px;
 }
-
+.footer__mobile-list-contacts-telephon,
+.footer__mobile-list-contacts-chat,
+.footer__mobile-list-contacts-email{
+    line-height: 1.5;
+    color: $secondary-text-color;
+}
 .footer__mobile-social{
     display: flex;
     align-items: center;
@@ -156,14 +165,16 @@
     justify-content: end;
 }
 
-.footer__mobile-form-subscribe{
-    margin-top: 28px;
+
+/*Стили для input*/
+
+.footer__mobile-form{
+    position: relative;
 }
 
-.footer__mobile-form-position{
-    position: relative;
-    padding-left: 15px;
-}
+
+
+
 .footer__mobile-title-subscribe{
     color: $primary-logo-color;
     padding-left: 15px;
@@ -191,31 +202,40 @@
         }
 }
 
-.footer__mobile-subscribe-button{
+.js-dropdown{
+    display: none;
+}
+
+
+.footer__mobile-form-container,
+.footer__desktop-form-container{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    width: 100%;
+}
+
+.footer__mobile-subscribe-button,
+.footer__desktop-subscribe-button{
     position: absolute;
     border: none;
     outline: none; 
     background-color: transparent; 
-    top: 10px;
+    cursor: pointer;
+    width: 22px;
+    height: 22px;
+    padding: 0;
+
+}
+
+.footer__mobile-icon-subscribe,
+.footer__desktop-icon-subscribe{
+    display: block;
+    width: 22px;
+    height: 6px;
     cursor: pointer;
     
 }
-.footer__mobile-list-dropdown.js-dropdown{
-    display: none;
-    margin-top: 15px;
-}
-.footer__mobile-icon-subscribe{
-    text-align: center;
-    width: 22px;
-    height: 6px;
-    
-}
-.footer__mobile-icon-subscribe-button{
-    width: 22px;
-    height: 6px;
-
-}
-
 
 // ==== Dropdown PC hover===
 
@@ -369,12 +389,12 @@
 }
 
 .footer__desktop-form{
-display: flex;
-flex-direction: column;
+display: block;
 margin: 0;
 }
 
 .footer__desktop-form-input{
+    width: 100%;
     margin-bottom: 11px;
     padding-left: 12px;
     padding-top: 8px;
@@ -388,14 +408,12 @@ margin: 0;
     &:active{
         border-color: #D7B494;
     }
-
-
 }
 
 .footer__desktop-license{
     display: flex;
     align-items: center;
-    padding-bottom: 12px;
+    margin-bottom: 11px;
 }
 
 .footer__desktop-checkbox-container{
@@ -415,6 +433,9 @@ margin: 0;
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
+.agree.js-show-and-remove{
+    opacity: 1;
+}
 
 .footer__desktop-license-icon-checkbox{
     display: flex;
@@ -424,19 +445,28 @@ margin: 0;
     width: 14px;
     height: 14px;
     margin-right: 11px;
-    border-radius: 2px;
+    border: 1px solid #D7B494;
+    box-sizing: border-box;
+    cursor: pointer;
+    
 
-    &:hover,
-    &:focus{
-        border-color: #a19e9a;
-    }
 }
 
-.footer__desktop-checkbox:checked >.footer__desktop-license-input-icon-checkbox{
-    background-color: #D7B494;
+.agree{
+    opacity: 0;
+    position: absolute;
+    left: -6px;
+    width: 15px;
+    height: 2px;
+}
+
+
+.footer__desktop-checkbox:checked+.footer__desktop-license-icon-checkbox{
     border-color: #D7B494;
     background-origin: border-box;
+
 }
+.footer__desktop-checkbox:checked
 
 .footer__desktop-license-input-icon-checkbox{
     display: block;
