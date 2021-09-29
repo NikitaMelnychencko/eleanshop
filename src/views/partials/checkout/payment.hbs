@@ -1,5 +1,4 @@
 <div class='form__method-ordering form__method-ordering--flex'>
-  <div>
     <div class='delivery' role='group'>
       <h3 class="delivery__title">ВЫБЕРИТЕ СПОСОБ ДОСТАВКИ</h3>
       <div class="delivery-method ">
@@ -12,21 +11,33 @@
       </div>
       <div class="showroom-method">
         <div class="showroom-method__item">
-          <input list="day-data" name="fav" id="fav" placeholder="ВЫБЕРИТЕ ДАТУ"/>
-          <datalist id="day-data">
-            {{#each method.day-data}}
-            <option>{{day}},{{data}}</option>
-          {{/each}}   
-          </datalist>  
+          <input class="showroom-method__form"  name="day" id="js-day" placeholder="ВЫБЕРИТЕ ДАТУ"/>
+          <ul class="showroom-list showroom-list--hide js-day">
+          {{#each method.day-data}}
+            <li class="showroom-list__item"><svg
+              class="showroom-list__icon-murkup">
+              <use href="./images/murkup.svg#icon-murkup"></use>
+              </svg><span>{{day}},</span>{{data}}</li>
+          {{/each}}  
+          </ul>
         </div>
         <div class="showroom-method__item">
-          <input list="time" name="fav" id="fav" placeholder="ВЫБЕРИТЕ ВРЕМЯ"/>
-          <datalist id="time">
-            {{#each method.time}}
-            <option>{{time}}</option>
+          <input class="showroom-method__form"  name="time" id="js-time" placeholder="ВЫБЕРИТЕ ВРЕМЯ"/>
+          <ul class="showroom-list showroom-list--hide js-time">
+          {{#each method.time}}
+            <li class="showroom-list__item"><svg
+              class="showroom-list__icon-murkup">
+              <use href="./images/murkup.svg#icon-murkup"></use>
+              </svg>{{time}}</li>
+          {{/each}}  
+          </ul>
+          {{!-- <input list="time" name="fav" id="fav" placeholder="ВЫБЕРИТЕ ВРЕМЯ"/>
+          <datalist  id="time">
+          {{#each method.time}}
+            <option >{{time}}</option>
           {{/each}}   
           </datalist>  
-        </div>
+        </div> --}}
         
       </div>
     </div>
@@ -69,7 +80,7 @@
     </div>
     <div class='total'>
       <p class="total__text">ИТОГО:</p>
-      <p class="total__value">0 <span>&#8372;</span></p>
+      <p class="total__value">0 <span>&#8372;</span> </p>
     </div>
     <button class="button__checkout" type='submit'>ОФОРМИТЬ ЗАКАЗ</button>
   </div>

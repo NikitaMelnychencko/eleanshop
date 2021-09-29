@@ -3,13 +3,13 @@
     {
       "id":"XWaQXcbk0",
       "text":"Шоурум",
-      "value":"Showroom",
-      "checked":"checked"
+      "value":"Showroom"
     },
     {
       "id":"XWaREcvb0",
       "text":"Курьером по Киеву",
-      "value":"By courier in Kiev"
+      "value":"By courier in Kiev",
+      "checked":"checked"
     },
     {
       "id":"XWaNHbnm0",
@@ -49,6 +49,7 @@
     {
       "day":"Сегодня",
       "data":"29 марта"
+
     },
     {
       "day":"Завтра",
