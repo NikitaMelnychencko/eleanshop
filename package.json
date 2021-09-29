@@ -42,6 +42,7 @@
     "imagemin-optipng": "^8.0.0",
     "imagemin-pngquant": "^9.0.2",
     "imagemin-svgo": "^9.0.0",
+    "jquery": "^3.6.0",
     "mini-css-extract-plugin": "^2.2.2",
     "node-sass": "^6.0.1",
     "postcss": "^8.3.6",
@@ -57,5 +58,7 @@
     "webpack-merge": "^5.8.0",
     "webpackbar": "^5.0.0-3"
   },
-  "dependencies": {}
+  "dependencies": {
+    "lodash.throttle": "^4.1.1"
+  }
 }
