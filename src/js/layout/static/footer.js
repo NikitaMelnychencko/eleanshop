@@ -15,15 +15,11 @@ const {
     agreeActive,
     mobileSubmitBtn,
     desktopSubmitBtn,
-    footerSectionMobile,
-    footerSectionDesktop } = refs
+    footerInput } = refs
+saveLocalStorage()
 
 checkBoxIcon.addEventListener('click', onAgreeCheckBox)
-// inputStorageMobile.addEventListener('input', onFormInputMobile)
-// inputStorageDesktop.addEventListener('input', onFormInputDesktop)
 mobileSubmitBtn.addEventListener('submit', onSubmitBtnMobile)
-// footerSectionMobile.addEventListener('click', onClickFooterMobileSection)
-// footerSectionDesktop.addEventListener('click', onClickFooterDesktopSection)
 desktopSubmitBtn.addEventListener('submit', onSubmitBtnDesktop)
 
 // Функция раскрытия списка-меню
@@ -57,47 +53,10 @@ function onAgreeCheckBox(evt) {
     }
 }
 
-// function onFormInputMobile(evt) {
-//     const subscribe = evt.target.value;
-//     if (subscribe) {
-//         localStorage.setItem('Subscribe-mob', subscribe)
-//         console.log(subscribe)
-//     }
-// }
-
-// function onFormInputDesktop(evt) {
-//     const subscribe = evt.target.value;
-//     if (subscribe) {
-//         localStorage.setItem('Subscribe-data-desk', subscribe)
-//         console.log(subscribe)
-//     }
-// }
-
-
-
-// function onClickFooterMobileSection(evt) {
-//     const test = evt.target
-//     console.log(test)
-//     if (test === inputStorageMobile) {
-//         console.log("evt.currentTarget === test")
-//         // return onFormInputMobile(evt)
-//     }
-// }
-
-// function onClickFooterDesktopSection(evt) {
-//     const test2 = evt.target
-//     console.log(test2)
-//     if (test2 === inputStorageDesktop) {
-//         console.log("evt.currentTarget === test")
-//         return onFormInputDesktop(evt)
-
-//     }
-// }
-
 // Назначение localStorage на input mobile
 inputStorageMobile.forEach((evt) => {
     evt.addEventListener('input', (el) => {
-        const subscribe = el.target.value;
+        const subscribe = el.currentTarget.value;
         console.log(subscribe)
         if (subscribe) {
             localStorage.setItem('Subscribe-data-mob', subscribe)
@@ -105,13 +64,12 @@ inputStorageMobile.forEach((evt) => {
     });
 });
 
-
 // Назначение localStorage на input desktop
 
 inputStorageDesktop.forEach((evt) => {
     console.log(evt)
     evt.addEventListener('input', (el) => {
-        const subscribe = el.target.value;
+        const subscribe = el.currentTarget.value;
         console.log(subscribe)
         if (subscribe) {
             localStorage.setItem('Subscribe-data-desk', subscribe)
@@ -121,10 +79,19 @@ inputStorageDesktop.forEach((evt) => {
 
 function onSubmitBtnMobile(evt) {
     evt.preventDefault();
-    console.log('evt.target')
+    console.log(evt.currentTarget)
+    evt.currentTarget.reset();
 }
 
 function onSubmitBtnDesktop(evt) {
     evt.preventDefault();
     console.log(evt.target)
+}
+
+function saveLocalStorage() {
+    const saveInput = localStorage.getItem('Subscribe-data-desk')
+    if (saveInput) {
+        console.log(saveInput)
+        inputStorageDesktop.value = saveInput;
+    }
 }
