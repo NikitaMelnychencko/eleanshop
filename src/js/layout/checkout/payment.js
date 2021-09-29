@@ -11,7 +11,7 @@ import '../../../images/svg/murkup_arow.svg'
 
 const createPayment = payment_payment({ method })
 const createCheckout = payment_checkout({ createPayment })
-refs.main.insertAdjacentHTML('beforeend', createCheckout)
+refs.mainEL.insertAdjacentHTML('beforeend', createCheckout)
 
 //const listDay = document.querySelector('.showroom-list')
 const formDay = document.querySelector('.showroom-method')
