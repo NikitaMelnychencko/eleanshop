@@ -8,13 +8,12 @@ const btnRef = document.querySelector('[data-modal-open]');
 btnRef.addEventListener('click', onBtnClick);
 
 function onBtnClick(event) {
-  const { mainRef } = getRefs();
   const backdropRef = document.querySelector('[data-modal]');
 
   if (backdropRef === null) {
     const modalFormMarkup = modalFormMarkupTempl();
     const backdropMarkup = backdropMarkupTempl(modalFormMarkup);
-    mainRef.insertAdjacentHTML('beforeend', backdropMarkup);
+    getRefs.mainEL.insertAdjacentHTML('beforeend', backdropMarkup);
 
     window.addEventListener('resize', throttle(onResize, 50));
   }
