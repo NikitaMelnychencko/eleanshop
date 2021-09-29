@@ -15,12 +15,14 @@ const {
     agreeActive,
     mobileSubmitBtn,
     desktopSubmitBtn,
-    footerInput } = refs
+    footerInput,
+    formRegistrMobile } = refs
+
 saveLocalStorage()
 
 checkBoxIcon.addEventListener('click', onAgreeCheckBox)
-mobileSubmitBtn.addEventListener('submit', onSubmitBtnMobile)
-desktopSubmitBtn.addEventListener('submit', onSubmitBtnDesktop)
+mobileSubmitBtn.addEventListener('click', onSubmitBtnMobile)
+desktopSubmitBtn.addEventListener('click', onSubmitBtnDesktop)
 
 // Функция раскрытия списка-меню
 plusLink.forEach((evt) => { /* Для каждого Li в списке */
@@ -34,18 +36,20 @@ plusLink.forEach((evt) => { /* Для каждого Li в списке */
         }
     });
 });
+
 /*удаление иконки плюс при раскрытии спика*/
 
-plusLink.forEach((evt) => { /* Для каждого Li списка*/
-    const sibl = evt.firstElementChild; /* находим ближайший сестринский элемент */
-    evt.addEventListener('click', (el, evt) => { /* назначаем лишке обработчик события */
-        el.preventDefault()/* что бы при клике не перегружалась страница*/
-        const plus = sibl.querySelector('.footer__mobile-icon-menu'); /* добираемся до вложенного списка меню */
-        if (plus) { /* проверяем есть ли вложенный список */
-            plus.classList.add('is-open'); /* обрабатываем его класс */
+plusLink.forEach((evt) => {
+    const sibl = evt.firstElementChild;
+    evt.addEventListener('click', (el, evt) => {
+        el.preventDefault()
+        const plus = sibl.querySelector('.footer__mobile-icon-menu');
+        if (plus) {
+            plus.classList.toggle('is-open');
         }
     });
 });
+// Активация деактивация чекбокса
 function onAgreeCheckBox(evt) {
     const iconCheck = evt.currentTarget
     if (iconCheck) {
@@ -54,15 +58,26 @@ function onAgreeCheckBox(evt) {
 }
 
 // Назначение localStorage на input mobile
+
 inputStorageMobile.forEach((evt) => {
     evt.addEventListener('input', (el) => {
         const subscribe = el.currentTarget.value;
         console.log(subscribe)
         if (subscribe) {
-            localStorage.setItem('Subscribe-data-mob', subscribe)
+            localStorage.setItem(evt.target.name, evt.target.value)
         }
     });
 });
+console.log(formSubmit.name)
+formSubmit.forEach((evt) => {
+    evt.addEventListener('input', (el) => {
+        console.log(subscribe)
+        if (subscribe) {
+            localStorage.setItem(evt.target.name, evt.target.value)
+        }
+    });
+})
+
 
 // Назначение localStorage на input desktop
 
@@ -74,18 +89,24 @@ inputStorageDesktop.forEach((evt) => {
         if (subscribe) {
             localStorage.setItem('Subscribe-data-desk', subscribe)
         }
+        if (subscribe) {
+            el.currentTarget.reset()
+        }
     });
 });
 
 function onSubmitBtnMobile(evt) {
     evt.preventDefault();
     console.log(evt.currentTarget)
-    evt.currentTarget.reset();
+    if (evt.currentTarget) {
+        console.log('Салют')
+    }
 }
 
 function onSubmitBtnDesktop(evt) {
     evt.preventDefault();
     console.log(evt.target)
+
 }
 
 function saveLocalStorage() {
