@@ -1,5 +1,5 @@
-export default function getRefs() {
-  return {
-    mainRef: document.querySelector('main'),
-  };
-}
+export default {
+  bodyEl: document.querySelector('body'),
+  mainEL: document.querySelector('main'),
+};
+
