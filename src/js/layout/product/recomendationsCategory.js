@@ -21,11 +21,11 @@ export default class RecomendationsCategory {
     }
   }
 
-  _getRandom(max) {
+  _getRandom = max => {
     return Math.floor(Math.random() * (max + 1));
-  }
+  };
 
-  _getData(data) {
+  _getData = data => {
     const arr = [];
     let num = -1;
     for (let i = 0; i < this.countsCard; i++) {
@@ -38,38 +38,38 @@ export default class RecomendationsCategory {
       }
     }
     return arr.map(el => data[el]);
-  }
+  };
 
-  _createMarkup() {
+  _createMarkup = () => {
     if (this.data) {
       return cardsMarkup({ list: listCards(this.data) });
     }
-  }
+  };
 
-  _addMarkup() {
+  _addMarkup = () => {
     const mark = this._createMarkup();
     if (mark) {
       this.root.insertAdjacentHTML(this.typeInsert, mark);
     }
-  }
+  };
 
-  getListMarkup() {
+  getListMarkup = () => {
     if (this.data) {
       return listCards(this.data);
     }
-  }
+  };
 
-  getMarkup() {
+  getMarkup = () => {
     return this._createMarkup();
-  }
+  };
 
-  setSlider() {
+  setSlider = () => {
     if (window.innerWidth <= 720) {
       this._addSlider();
     }
-  }
+  };
 
-  _addSlider() {
+  _addSlider = () => {
     $('.slider').slick({
       arrows: false,
       dots: this.buttonPagination,
@@ -77,5 +77,5 @@ export default class RecomendationsCategory {
       slidesToShow: 2.5,
       focusOnSelect: true,
     });
-  }
+  };
 }
