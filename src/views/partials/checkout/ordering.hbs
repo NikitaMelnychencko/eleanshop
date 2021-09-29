@@ -8,9 +8,11 @@
             <p class='ordering__label'>Classical suit</p>
             <div class='ordering__selects'>
                 <select class='ordering__select ordering__select--color' name='color' id='color'>
-                    {{#each orderingSelects.time}}
-                    <option value="">{{time}}</option>
-                    {{/each}} 
+                    {{#each orderingSelects.color}}
+                    {{!-- {{#each color}} --}}
+                    <option value="">{{this.text}}</option>
+                    {{/each}}
+                    {{!-- {{/each}} --}}
 
                     {{!-- <option value='black'>черный</option>
                     <option value='white'>белый</option>

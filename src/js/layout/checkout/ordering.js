@@ -6,14 +6,16 @@ import '../../../images/img/red-suit.jpg'
 import promocodes from '../../json/promocode.json'
 import orderingSelects from '../../json/orderingselect.json'
 
-console.log(orderingSelects)
+console.log(orderingSelects.color)
 
 const ordering = ordering_ordering();
 const createCheckout = payment_checkout({ ordering })
 refs.main.insertAdjacentHTML('beforeend', createCheckout);
 
+const b = orderingSelects
+const c = ordering_ordering
 const selectColor = ordering_ordering(orderingSelects);
-const colorSelectContainer = document.querySelector('.ordering__select');
+const colorSelectContainer = document.querySelector('.ordering__select--color');
 console.log(colorSelectContainer)
 colorSelectContainer.insertAdjacentHTML('beforeend', selectColor)
 
