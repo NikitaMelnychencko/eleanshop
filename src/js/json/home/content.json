@@ -15,8 +15,8 @@
     "description": "Девушка в красной рубашке",
     "image": "./images/img-mob_2.jpg",
     "image_2x": "./images/img-mob_2@2x.jpg",
-    "image_desk": "./images/img_2.jpg",
-    "image_desk_2x": "./images/img_2@2x.jpg",
+    "image-desk": "./images/img_2.jpg",
+    "image-desk_2x": "./images/img_2@2x.jpg",
     "link": "..."
   },
   {
@@ -25,8 +25,8 @@
     "description": "Девушка в бежевом костюме",
      "image": "./images/img-mob_3.jpg",
   "image_2x": "./images/img-mob_3@2x.jpg",
-   "image_desk": "./images/img_3.jpg",
-   "image_desk_2x": "./images/img_3@2x.jpg",
+   "image-desk": "./images/img_3.jpg",
+   "image-desk_2x": "./images/img_3@2x.jpg",
     "link": "..."
   },
   {
@@ -35,8 +35,8 @@
     "description": "Девушка в черном смокинге",
      "image": "./images/img-mob_4.jpg",
   "image_2x": "./images/img-mob_4@2x.jpg",
-   "image_desk": "./images/img_4.jpg",
-   "image_desk_2x": "./images/img_4@2x.jpg",
+   "image-desk": "./images/img_4.jpg",
+   "image-desk_2x": "./images/img_4@2x.jpg",
     "link": "..."
   },
   {
@@ -45,8 +45,8 @@
     "description": "Девушка в белих брюках",
      "image": "./images/img-mob_5.jpg",
   "image_2x": "./images/img-mob_5@2x.jpg",
-   "image_desk": "./images/img_5.jpg",
-   "image_desk_2x": "./images/img_5@2x.jpg",
+   "image-desk": "./images/img_5.jpg",
+   "image-desk_2x": "./images/img_5@2x.jpg",
     "link": "..."
   },
   {
@@ -55,8 +55,8 @@
     "description": "Девушка в белом платье",
      "image": "./images/img-mob_6.jpg",
   "image_2x": "./images/img-mob_6@2x.jpg",
-   "image_desk": "./images/img_6.jpg",
-   "image_desk_2x": "./images/img_6@2x.jpg",
+   "image-desk": "./images/img_6.jpg",
+   "image-desk_2x": "./images/img_6@2x.jpg",
     "link": "..."
   },
   {
@@ -65,8 +65,8 @@
     "description": "Девушка в голубой блузке",
      "image": "./images/img-mob_7.jpg",
   "image_2x": "./images/img-mob_7@2x.jpg",
-   "image_desk": "./images/img_7.jpg",
-   "image_desk_2x": "./images/img_7@2x.jpg",
+   "image-desk": "./images/img_7.jpg",
+   "image-desk_2x": "./images/img_7@2x.jpg",
     "link": "..."
   },
   {
@@ -75,8 +75,8 @@
     "description": "Девушка в черной юбке",
      "image": "./images/img-mob_8.jpg",
   "image_2x": "./images/img-mob_8@2x.jpg",
-   "image_desk": "./images/img_8.jpg",
-   "image_desk_2x": "./images/img_8@2x.jpg",
+   "image-desk": "./images/img_8.jpg",
+   "image-desk_2x": "./images/img_8@2x.jpg",
     "link": "..."
   },
   {
@@ -85,8 +85,8 @@
     "description": "Девушка в красном топе",
      "image": "./images/img-mob_9.jpg",
   "image_2x": "./images/img-mob_9@2x.jpg",
-   "image_desk": "./images/img_9.jpg",
-   "image_desk_2x": "./images/img_9@2x.jpg",
+   "image-desk": "./images/img_9.jpg",
+   "image-desk_2x": "./images/img_9@2x.jpg",
     "link": "..."
   },
   {
@@ -95,8 +95,8 @@
     "description": "Девушка в черно-белом костюме",
      "image": "./images/img-mob_10.jpg",
   "image_2x": "./images/img-mob_10@2x.jpg",
-   "image_desk": "./images/img_10.jpg",
-   "image_desk_2x": "./images/img_10@2x.jpg",
+   "image-desk": "./images/img_10.jpg",
+   "image-desk_2x": "./images/img_10@2x.jpg",
     "link": "..."
   }
 ]
