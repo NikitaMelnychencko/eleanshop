@@ -10,29 +10,28 @@ const {
     iconMenu,
     inputStorageMobile,
     inputStorageDesktop,
-    formSubmit,
     checkBoxIcon,
     agreeActive,
     mobileSubmitBtn,
     desktopSubmitBtn,
     footerInput,
-    formRegistrMobile } = refs
+    formRegistrMobile,
+    testIdInput } = refs
 
-saveLocalStorage()
-
+console.log(testIdInput)
 checkBoxIcon.addEventListener('click', onAgreeCheckBox)
-mobileSubmitBtn.addEventListener('click', onSubmitBtnMobile)
-desktopSubmitBtn.addEventListener('click', onSubmitBtnDesktop)
+mobileSubmitBtn.addEventListener('submit', onSubmitBtnMobile)
+desktopSubmitBtn.addEventListener('submit', onSubmitBtnDesktop)
 
 // Функция раскрытия списка-меню
-plusLink.forEach((evt) => { /* Для каждого Li в списке */
-    const sibling = evt.nextElementSibling; /* находим ближайший сестринский элемент */
-    evt.addEventListener('click', (el, evt) => { /* назначаем лишке обработчик события */
-        el.preventDefault()/* что бы при клике не перегружалась страница*/
-        sibling.classList.toggle('js-dropdown'); /* добавляем/убираем класс у сестринского элемента */
-        const arrow = sibling.querySelector('.footer__mobile-list-dropdown'); /* добираемся до вложенного списка меню */
-        if (arrow) { /* проверяем есть ли вложенный списка */
-            arrow.classList.toggle('js-dropdown'); /* обрабатываем его класс */
+plusLink.forEach((evt) => {
+    const sibling = evt.nextElementSibling;
+    evt.addEventListener('click', (el, evt) => {
+        el.preventDefault()
+        sibling.classList.toggle('js-dropdown');
+        const arrow = sibling.querySelector('.footer__mobile-list-dropdown');
+        if (arrow) {
+            arrow.classList.toggle('js-dropdown');
         }
     });
 });
@@ -60,44 +59,32 @@ function onAgreeCheckBox(evt) {
 // Назначение localStorage на input mobile
 
 inputStorageMobile.forEach((evt) => {
+    const idInputMobile = evt.id
     evt.addEventListener('input', (el) => {
         const subscribe = el.currentTarget.value;
         console.log(subscribe)
         if (subscribe) {
-            localStorage.setItem(evt.target.name, evt.target.value)
+            localStorage.setItem(idInputMobile, subscribe)
         }
     });
 });
-console.log(formSubmit.name)
-formSubmit.forEach((evt) => {
-    evt.addEventListener('input', (el) => {
-        console.log(subscribe)
-        if (subscribe) {
-            localStorage.setItem(evt.target.name, evt.target.value)
-        }
-    });
-})
 
 
 // Назначение localStorage на input desktop
 
 inputStorageDesktop.forEach((evt) => {
-    console.log(evt)
+    const idInputDesktop = evt.id
     evt.addEventListener('input', (el) => {
         const subscribe = el.currentTarget.value;
         console.log(subscribe)
         if (subscribe) {
-            localStorage.setItem('Subscribe-data-desk', subscribe)
-        }
-        if (subscribe) {
-            el.currentTarget.reset()
+            localStorage.setItem(idInputDesktop, subscribe)
         }
     });
 });
 
 function onSubmitBtnMobile(evt) {
     evt.preventDefault();
-    console.log(evt.currentTarget)
     if (evt.currentTarget) {
         console.log('Салют')
     }
@@ -105,14 +92,29 @@ function onSubmitBtnMobile(evt) {
 
 function onSubmitBtnDesktop(evt) {
     evt.preventDefault();
-    console.log(evt.target)
 
 }
 
-function saveLocalStorage() {
-    const saveInput = localStorage.getItem('Subscribe-data-desk')
-    if (saveInput) {
-        console.log(saveInput)
-        inputStorageDesktop.value = saveInput;
-    }
-}
+
+const a = document.querySelectorAll('a')
+// .onclick = function () {
+// window.location.href = 'redirect-url';
+// };
+
+console.log(a)
+
+
+a.forEach((evt) => {
+    const idSeorch = evt.dataset
+    evt.addEventListener('click', (el) => {
+        const click = el.currentTarget;
+        console.log(click)
+        if (click === idSeorch) {
+            window.location.href = ""
+            console.log("Работает?")
+        }
+
+    })
+    console.log(idSeorch)
+
+});
