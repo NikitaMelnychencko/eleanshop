@@ -1,0 +1,18 @@
+<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<symbol id="icon-clients-arrow-left" viewBox="0 0 20 32">
+<path fill="none" stroke="#c0a78f" style="stroke: var(--color1, #c0a78f)" stroke-linejoin="round" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="3.6923" d="M16 2.462l-13.538 13.538 13.538 13.538"></path>
+</symbol>
+<symbol id="icon-clients-arrow-right" viewBox="0 0 20 32">
+<path fill="none" stroke="#c0a78f" style="stroke: var(--color1, #c0a78f)" stroke-linejoin="round" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="3.6923" d="M3.692 2.462l13.538 13.538-13.538 13.538"></path>
+</symbol>
+<symbol id="icon-hero-arrow-left" viewBox="0 0 81 32">
+<path fill="none" stroke="#fff" style="stroke: var(--color2, #fff)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2.9091" d="M21.761 4.593l-18.852 10.884 18.852 10.884v-21.769z"></path>
+<path fill="none" stroke="#fff" style="stroke: var(--color2, #fff)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2.9091" d="M20.359 16.165h60.243"></path>
+</symbol>
+<symbol id="icon-hero-arrow-right" viewBox="0 0 81 32">
+<path fill="none" stroke="#fff" style="stroke: var(--color2, #fff)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2.9091" d="M59.27 4.593l18.852 10.884-18.852 10.884v-21.769z"></path>
+<path fill="none" stroke="#fff" style="stroke: var(--color2, #fff)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2.9091" d="M60.669 16.165h-60.243"></path>
+</symbol>
+</defs>
+</svg>
