@@ -1,15 +1,27 @@
 // root
 
+// slider dots
+$star-clients-slider-dots: #d9dbe1;
+$star-clients-slider-dots-placeholder: #ffffff;
+$star-clients-slider-dots-border: #e1e1e1;
+$hero-slider-dots: rgba(255, 255, 255, 0.45);
+
 //text
 $primary-text-color: #171717;
 $secondary-text-color: #000000;
 $third-text-color: #c0a78f;
 $selection-text-color: #ffffff;
 
+$fourth-text-color: #afafaf;
+$fourth-text-color: #a7a7a7;
+
 //title
 $primary-title-text-color: #000000;
 $secondary-title-text-color: #272727;
 $selection-title-text-color: #ffffff;
+
+//title-text-shadow
+$primary-title-text-shadow: 0px 0px 1px #000000;
 
 //accent
 $accent-color: #e1c4a9;
@@ -32,3 +44,15 @@ $selection-text-color: #ffffff;
 
 //catalog
 $description-color: #afafaf;
+
+//border
+$primery-border-color: #e6e6e6;
+$primaty-slick-dots: #ced2db;
+
+//button
+$button-text-color: #b6b6b6;
+$button-border-color: #e7dcdc;
+$button-hover-background-color: #000000;
+
+// backdrop
+$backdrop-color: #e5e5e5;
