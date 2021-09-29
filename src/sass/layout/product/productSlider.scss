@@ -139,10 +139,15 @@
 
 .product__name-wrapper {
   position: relative;
-  margin-bottom: 10px;
+  margin-bottom: 31px;
+
+  @media screen and (min-width: 1378px) {
+    margin-bottom: 24px;
+  }
 }
 
 .product__name {
+  margin-bottom: 10px;
   font-family: Jost;
   font-weight: 500;
   font-size: 21px;
@@ -163,8 +168,6 @@
 }
 
 .product__price {
-  margin-bottom: 31px;
-
   font-family: Lato;
   font-style: normal;
   font-weight: normal;
@@ -377,7 +380,6 @@
 }
 
 .button__fit {
-  // width: 102px;
   margin-bottom: 8px;
 
   @media screen and (min-width: 414px) {
@@ -391,7 +393,6 @@
 }
 
 .button__installment {
-  // width: 170px;
   @media screen and (min-width: 414px) {
     width: 230px;
   }

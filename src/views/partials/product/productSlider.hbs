@@ -1,110 +1,111 @@
-{{!-- {{#each this}} --}}
 <section class="product">
   <div class="container product__container">
-     <div class="product-slider-smaller__wrapper">
-      <ul class="product-slider-smaller">
-        <li class="product-slider-smaller__item">
-          <img class="product-slider-smaller__image" src="./images/tuxedo-and-vest-mini-desktop-1.jpg" alt="">
-        </li>
-        <li class="product-slider-smaller__item">          
-          <img class="product-slider-smaller__image" src="./images/tuxedo-and-vest-mini-desktop-2.jpg" alt="">
-        </li>
-        <li class="product-slider-smaller__item">         
-          <img class="product-slider-smaller__image" src="./images/tuxedo-and-vest-mini-desktop-3.jpg" alt="">
-        </li>
-        <li class="product-slider-smaller__item">          
-          <img class="product-slider-smaller__image" src="./images/tuxedo-and-vest-mini-desktop-4.jpg" alt="">
-        </li>
-        
-      </ul>
-    </div>
-  
-    <div class="product-slider__wrapper">
-      <ul class="product-slider">
-        <li class="product-slider__item">
-          <img class="product-slider__image" src="./images/tuxedo-and-vest-mobile-1.jpg" alt="">
-        </li>
-        <li class="product-slider__item">
-          <img class="product-slider__image" src="./images/tuxedo-and-vest-mobile-2.jpg" alt="">
-        </li>
-        <li class="product-slider__item">
-          <img class="product-slider__image" src="./images/tuxedo-and-vest-mobile-3.jpg" alt="">
-        </li>
-        <li class="product-slider__item">
-          <img class="product-slider__image" src="./images/tuxedo-and-vest-mobile-4.jpg" alt="">
-        </li>
-      </ul>
-    </div> 
-    
-    <div class="product__content">
-      <div class="product__name-wrapper">
-        <h2 class="product__name">Классический комплект со смокингом и желетом</h2>
-        <button class="button__like"></button>
-      </div>
-      <p class="product__price">65 300 <span class="product__currency">&#8381;</span></p>
-      
-      <h3 class="product__size size__title">размер</h3>
-      <ul class="size__list">
-        <li class="size__item">40</li>
-        <li class="size__item">42</li>
-        <li class="size__item">44</li>
-        <li class="size__item">46</li>
-        <li class="size__item">48</li>
-        <li class="size__item">50</li>
-      </ul>
-      <ul class="size__options options">
-        <li class="options__item">
-          <button class="button__size-option">
-            <svg class="options__icon" width="21" height="21">
-              <use href="./images/attension-sign.svg"></use>
-            </svg>
-            нет вашего размера?
-          </button>
-        </li>
-        <li class="options__item">
-          <button class="button__size-option">
-            <svg class="options__icon" width="21" height="21">
-              <use href="./images/hanger.svg"></use>
-            </svg>
-            определите свой размер
-          </button>
-        </li>
-      </ul>
-  
-      <div class="product__color colorpicker">
-        <h3 class="colorpicker__title">цвет</h3>
-        <ul class="colorpicker__list">
-          <li class="colorpicker__item"><button class="button__colorpicker button__colorpicker--black" type="button"></button></li>
-          <li class="colorpicker__item"><button class="button__colorpicker button__colorpicker--red" type="button"></button></li>
-          <li class="colorpicker__item"><button class="button__colorpicker button__colorpicker--grey" type="button"></button></li>
+
+    {{#each this}}
+      <div class="product-slider-smaller__wrapper">
+        <ul class="product-slider-smaller">
+          {{#each image}}
+            <li class="product-slider-smaller__item">
+              <picture>
+                <source srcset="
+                  {{imageDesctopMini}} 1x,
+                  {{imageDesctopMiniHigherResolution}} 2x," 
+                  media="(min-width: 1378px)">
+                <img class="product-slider-smaller__image" 
+                  src="{{imageDesctopMini}}"
+                  alt="{{imageDescriprion}}">
+              </picture>
+            </li>
+          {{/each}}
         </ul>
       </div>
-  
-      <ul class="button-block">
-        <li><button class="button button__buy" type="button">купить</button></li>
-        <li><button class="button button__fit" type="button">примерка</button></li>
-        <li><button class="button button__installment" type="button">купить в расстрочку</button></li>
-      </ul>
-  
-      <div class="product__info">
-        <p class="product__description">Приталенный силуэт и заостренные лацканы подчеркивают линию талии, визуально корректируя фигуру до желанной всем "песочные часы". Классика женского смокинга, которую одобрил бы сам Ив Сен Лоран.</p>
-        <p class="product__composition"><span class="product__composition--bold">Состав:</span> 98% шерсть, 2% эластан, отделка шелком</p>
+    
+      <div class="product-slider__wrapper">
+        <ul class="product-slider">
+          {{#each image}}
+            <li class="product-slider__item">
+              <picture>
+                <source srcset="
+                  {{imageMobile}} 1x,
+                  {{imageMobileHigherResolution}} 2x," 
+                  media="">
+                <img class="product-slider__image" 
+                  src="{{imageMobile}}"
+                  alt="{{imageDescriprion}}">
+              </picture>
+            </li>
+          {{/each}}
+        </ul>
+      </div> 
+      
+      <div class="product__content">
+        <div class="product__name-wrapper">
+          <h2 class="product__name">{{productName}}</h2>
+          <button class="button__like"></button>
+          <p class="product__price">{{productPrice}} <span class="product__currency">&#8381;</span></p>
+        </div>
+
+        <h3 class="product__size size__title">размер</h3>
+        <ul class="size__list">
+          {{#each size}}
+          <li class="size__item">{{this}}</li>
+          {{/each}}
+        </ul>
+
+        <ul class="size__options options">
+          <li class="options__item">
+            <button class="button__size-option">
+              <svg class="options__icon" width="21" height="21">
+                <use href="./images/attension-sign.svg"></use>
+              </svg>
+              нет вашего размера?
+            </button>
+          </li>
+          <li class="options__item">
+            <button class="button__size-option">
+              <svg class="options__icon" width="21" height="21">
+                <use href="./images/hanger.svg"></use>
+              </svg>
+              определите свой размер
+            </button>
+          </li>
+        </ul>
+    
+        <div class="colorpicker">
+          <h3 class="colorpicker__title">цвет</h3>
+          <ul class="colorpicker__list">
+            <li class="colorpicker__item"><button class="button__colorpicker button__colorpicker--black" type="button"></button></li>
+            <li class="colorpicker__item"><button class="button__colorpicker button__colorpicker--red" type="button"></button></li>
+            <li class="colorpicker__item"><button class="button__colorpicker button__colorpicker--grey" type="button"></button></li>
+          </ul>
+        </div>
+    
+        <ul class="button-block">
+          <li><button class="button button__buy" type="button">купить</button></li>
+          <li><button class="button button__fit" type="button">примерка</button></li>
+          <li><button class="button button__installment" type="button">купить в расстрочку</button></li>
+        </ul>
+    
+        <div class="product__info">
+          <p class="product__description">{{productDescription}}</p>
+          <p class="product__composition"><span class="product__composition--bold">Состав:</span> {{productComposition}}</p>
+        </div>
+    
+        <ul class="product__characteristics">
+          <li class="product__characteristic-item">
+            параметры
+            <button class="button__plus" type="button">+</button>
+          </li>
+          <li class="product__characteristic-item">
+            дополнительно
+            <button class="button__plus" type="button">+</button>
+          </li>
+        </ul>
+
+        <div class="params-menu">
+        </div>
       </div>
-  
-      <ul class="product__characteristics">
-        <li class="product__characteristic-item">
-          параметры
-          <button class="button__plus" type="button">+</button>
-        </li>
-        <li class="product__characteristic-item">
-          дополнительно
-          <button class="button__plus" type="button">+</button>
-        </li>
-      </ul>
-    </div>
+    {{/each}}
 
   </div>
-
-
 </section>
-{{!-- {{/each}} --}}

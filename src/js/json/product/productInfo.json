@@ -1,0 +1,46 @@
+[
+  {
+    "image": [
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-1.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-1@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-2.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-2@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-2.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-3.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-3@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-3.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-4.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-4@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-4.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-4@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      }
+    ],
+    "productName": "Классический комплект со смокингом и желетом",
+    "productPrice": "65 300",
+    "size": [
+      "40",
+      "42",
+      "44",
+      "46",
+      "48",
+      "50"
+    ],
+    "productDescription": "Приталенный силуэт и заостренные лацканы подчеркивают линию талии, визуально корректируя фигуру до желанной всем 'песочные часы'. Классика женского смокинга, которую одобрил бы сам Ив Сен Лоран.",
+    "productComposition": " 98% шерсть, 2% эластан, отделка шелком"
+  }
+]

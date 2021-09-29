@@ -1,4 +1,5 @@
-import productSlider from '../../../views/partials/product/productSlider.hbs'
+import products from '../../../js/json/product/productInfo.json'
+import productTemplate from '../../../views/partials/product/productSlider.hbs'
 import '../../../sass/layout/product/productSlider.scss'
 
 
@@ -28,9 +29,9 @@ import '../../../images/svg/products/attension-sign.svg'
 import '../../../images/svg/products/hanger.svg'
 
 
+
 window.jQuery = window.$ = require("jquery");
 require('./slick.min.js')
-
 
 $(document).ready(function () {
   $('.product-slider-smaller').slick({
@@ -56,5 +57,9 @@ $(document).ready(function () {
   })
 });
 
-const slider = productSlider()
-document.body.insertAdjacentHTML('beforeend', slider )
+const createProductMarkup = (products) => {
+  return productTemplate(products)
+}
+
+const productMarkup = createProductMarkup(products)
+document.body.insertAdjacentHTML('beforeend', productMarkup)
