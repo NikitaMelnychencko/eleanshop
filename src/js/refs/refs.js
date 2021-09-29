@@ -14,5 +14,8 @@ export default {
     desktopSubmitBtn: document.querySelector('.footer__desktop-subscribe-button'),
     footerSectionMobile: document.querySelector('.footer__mobile'),
     footerSectionDesktop: document.querySelector('.footer__desktop'),
-
+    bodyEl: document.querySelector('body'),
+    mainEL: document.querySelector('main'),
 }
+
+
