@@ -1,10 +1,24 @@
-// $spritesheet: SVGSpriteMap('../../../../images/svg/exampl.svg#bluze');
 
 
-.form-fitting-showroom {
-  background: #FFFFFF;
-  
-  width: 100%;
+.form-fitting-showroom.in-page{
+
+  background: #ffffff;
+
+  // width: 100%;
+
+  text-align: center;
+  padding-top: 42px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 40px;
+}
+
+
+
+.form-fitting-showroom.in-form{
+  background: #ffffff;
+
+  // width: 100%;
 
   text-align: center;
   padding-top: 42px;
@@ -17,80 +31,88 @@
     padding-top: 38px;
     padding-left: 40px;
     padding-right: 40px;
-      }
-
-
+  }
   @media screen and (min-width: $desktop-up) {
     padding-top: 37px;
-  padding-left: 221px;
-  padding-right: 221px;
-  padding-bottom: 79px;
+    padding-left: 221px;
+    padding-right: 221px;
+    padding-bottom: 79px;
   }
 }
 
-.form-fitting-showroom__title {
+.form-fitting-showroom__title.in-page {
 
-  font-size: 20px;
-line-height: 25px;
-/* or 125% */
+  
+  
 
-text-align: center;
-letter-spacing: 0.05em;
+  text-transform: uppercase;
 
-color: #000000;
-text-transform: uppercase;
-margin-bottom: 15px;
 
-@media screen and (min-width: 500px) and (max-width: $tablet-general) {
   margin-bottom: 24px;
   text-align: left;
 
   font-size: 18px;
   line-height: 20px;
   /* or 111% */
-  
+
   letter-spacing: 0.05em;
-  
+
   color: #000000;
-  
-    }
+
+}
 
 
-@media screen and (min-width: $desktop-up) {
-  font-size: 21px;
-  line-height: 20px;
-  /* or 95% */
-  
+
+.form-fitting-showroom__title.in-form {
+  font-size: 20px;
+  line-height: 25px;
+  /* or 125% */
+
   text-align: center;
   letter-spacing: 0.05em;
-  
+
   color: #000000;
-  margin-bottom: 30px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+
+  @media screen and (min-width: 500px) and (max-width: $tablet-general) {
+    margin-bottom: 24px;
+    text-align: left;
+
+    font-size: 18px;
+    line-height: 20px;
+    /* or 111% */
+
+    letter-spacing: 0.05em;
+
+    color: #000000;
+  }
+
+  @media screen and (min-width: $desktop-up) {
+    font-size: 21px;
+    line-height: 20px;
+    /* or 95% */
+
+    text-align: center;
+    letter-spacing: 0.05em;
+
+    color: #000000;
+    margin-bottom: 30px;
+  }
 }
-}
-
-
-
 
 .star-form::after {
-content: '*';
-position: absolute;
-top: 20px;
-right: 15px;
-font-weight: 500;
-font-size: 18px;
-line-height: 25px;
-/* or 139% */
+  content: '*';
+  position: absolute;
+  top: 20px;
+  right: 15px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  /* or 139% */
 
-
-color: #9D9DAD;
-
-
-
-
+  color: #9d9dad;
 }
-
-
 
 // .form-fitting-showroom__title::before {
 //   content: '';
@@ -107,28 +129,25 @@ color: #9D9DAD;
 // }
 
 
-.form-fitting-showroom__horiz-block {
 
 
-  @media screen and (min-width: 500px) {
-
+.form-fitting-showroom__horiz-block.in-page {
     display: flex;
     flex-wrap: wrap;
-
+}
+.form-fitting-showroom__horiz-block.in-form {
+  @media screen and (min-width: 500px) {
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 
-
-
-
 .form-fitting-showroom__input,
-.form-fitting-showroom__comment
- {
-
+.form-fitting-showroom__comment {
   height: 60px;
-  
+
   border: 1px solid #000000;
-  box-sizing: border-box; 
+  box-sizing: border-box;
   width: 100%;
   margin-bottom: 13px;
   padding: 18px;
@@ -136,163 +155,193 @@ color: #9D9DAD;
   &::placeholder {
     text-transform: uppercase;
     font-weight: 500;
-font-size: 13px;
-line-height: 25px;
-/* or 192% */
+    font-size: 13px;
+    line-height: 25px;
+    /* or 192% */
 
-letter-spacing: 0.06em;
+    letter-spacing: 0.06em;
 
-color: #A7A7A7;
-
+    color: #a7a7a7;
   }
   &:focus {
     // border: 2px solid #000000;
     outline: none;
   }
-
-
 }
 
-.form-fitting-showroom__input {
 
+.form-fitting-showroom__input.in-page {
+ 
+    min-width: 230px;
+}
+
+.form-fitting-showroom__input.in-form {
   @media screen and (min-width: $mobile-general) {
-
-   min-width: 230px;
-
+    min-width: 230px;
   }
 
-
   @media screen and (min-width: $desktop-up) {
-
     margin-bottom: 20px;
-      }
+  }
 }
-
-
 
 .form-fitting-showroom__input-box {
-
-
-
-
   position: relative;
   flex-grow: 1;
-
-
 }
-
-
 
 .form-fitting-showroom__send-btn-text {
   transition: color 200ms cubic-bezier(0.4, 0, 0.2, 1);
 
-
   font-weight: 500;
-font-size: 13px;
-line-height: 25px;
-/* or 192% */
+  font-size: 13px;
+  line-height: 25px;
+  /* or 192% */
 
-display: flex;
-align-items: center;
-text-align: center;
-letter-spacing: 0.1em;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.1em;
 
-color: #000000;
-text-transform: uppercase;
-background-color: transparent;
-border: none;
-display: flex;
-align-items: center;
-justify-content: center;
-height: 100%;
-width: 100%;
-&:focus,
-&:hover {
-
-  color: #FFFFFF;
+  color: #000000;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  &:focus,
+  &:hover {
+    color: #ffffff;
+  }
 }
-}
 
-.form-fitting-showroom__button {
 
+
+.form-fitting-showroom__button.in-page {
   background: transparent;
   transition: background 200ms cubic-bezier(0.4, 0, 0.2, 1);
   border: 1px solid #000000;
   box-sizing: border-box;
   // transform: matrix(-1, 0, 0, 1, 0, 0);
-height: 45px;
-width: 221px;
-margin-left: auto;
-&:focus,
-&:hover {
-
-  background: black;
-  
-}
-@media screen and (min-width: $mobile-general) {
-
-  height: 60px;
-  width: 180px;
-  flex-grow: 0;
-  margin-left: -1px;
-    }
+  height: 45px;
+  width: 221px;
+  margin-left: auto;
+  &:focus,
+  &:hover {
+    background: black;
+  }
+    height: 60px;
+    width: 180px;
+    flex-grow: 0;
+    margin-left: -1px;
 }
 
-.form-fitting-showroom__comment {
+
+
+
+
+.form-fitting-showroom__button.in-form {
+  background: transparent;
+  transition: background 200ms cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  // transform: matrix(-1, 0, 0, 1, 0, 0);
+  height: 45px;
+  width: 221px;
+  margin-left: auto;
+  &:focus,
+  &:hover {
+    background: black;
+  }
+  @media screen and (min-width: $mobile-general) {
+    height: 60px;
+    width: 180px;
+    flex-grow: 0;
+    margin-left: -1px;
+  }
+}
+
+
+
+.form-fitting-showroom__comment.in-page {
+  resize: none;
+  width: 100%;
+    height: 130px;
+}
+
+
+.form-fitting-showroom__comment.in-form {
   resize: none;
   height: 120px;
   width: 100%;
 
   @media screen and (min-width: 500px) and (max-width: $tablet-general) {
     height: 130px;
-      }
+  }
   @media screen and (min-width: $desktop-up) {
-  
-   
     height: 100px;
-      }
-    }
-
-    .form-fitting-showroom__comment-box {
-
-      @media screen and (min-width: $mobile-general) {
-
-        flex-grow: 1;
-            
-          }
-    
-    }
-
-    .form-fitting-showroom__input-center {
+  }
+}
 
 
-      @media screen and (min-width: $tablet-general) {
-        border-left: none;
-
-          }
-
-      @media screen and (min-width: $desktop-up) {
-        border-right: none;
-        border-left: none;
-          }
 
 
-    }
-
-    .form-fitting-showroom__icon {
-      height: 34px;
-      width: 31px;
-      stroke: #C0A78F;
-      margin-bottom: 23px;
+.form-fitting-showroom__comment-box.in-page {
+    flex-grow: 1;
+}
 
 
-      @media screen and (min-width: 500px) and (max-width: $tablet-general) {
-        position: absolute;
-        top: 27px;
-        right: 39px;
-          }
-
-    }
+.form-fitting-showroom__comment-box.in-form {
+  @media screen and (min-width: $mobile-general) {
+    flex-grow: 1;
+  }
+}
 
 
-    
+
+.form-fitting-showroom__input-center.in-page {
+    border-left: none;
+
+}
+
+
+.form-fitting-showroom__input-center.in-form {
+  @media screen and (min-width: $tablet-general) {
+    border-left: none;
+  }
+
+  @media screen and (min-width: $desktop-up) {
+    border-right: none;
+    border-left: none;
+  }
+}
+
+
+.form-fitting-showroom__icon.in-page {
+  height: 34px;
+  width: 31px;
+  stroke: #c0a78f;
+  margin-bottom: 23px;
+    position: absolute;
+    top: 27px;
+    right: 39px;
+}
+
+
+.form-fitting-showroom__icon.in-form {
+  height: 34px;
+  width: 31px;
+  stroke: #c0a78f;
+  margin-bottom: 23px;
+
+  // @media screen and (min-width: $mobile-only) and (max-width: $tablet-only) {
+  //   position: absolute;
+  //   top: 27px;
+  //   right: 39px;
+  // }
+}
+
+
