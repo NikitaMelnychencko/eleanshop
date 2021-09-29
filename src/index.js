@@ -49,3 +49,6 @@ import './js/layout/checkout/payment.js';
 //favorites
 import './js/layout/favorites/favorites.js';
 import './js/layout/favorites/sabmitEmail.js';
+
+//test
+import './js/test/test_productModalAddCArt';

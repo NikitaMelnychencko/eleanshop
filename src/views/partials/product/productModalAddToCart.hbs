@@ -1,13 +1,15 @@
 <div class='product-modal-add-cart'>
   <button class='product-close-modal'></button>
-  <h2 class='product-modal-add-cart__title'>
-    {{this}} ДОБАВЛЕН В КОРЗИНУ ПОКУПОК!
-  </h2>
-  <p class='product-modal-add-cart__title--second'>
-    С ЭТИМ ИЗДЕЛИЕМ ЧАЩЕ ВСЕГО ПОКУПАЮТ:
-  </p>
-  <div class='product-modal-add-cart__block-catalog'></div>
-  <div class='product-modal-add-cart__block-button'>
+  <div class='product-modal-add-cart__block-container'>
+    <h2 class='product-modal-add-cart__title'>
+      {{product}} ДОБАВЛЕН В КОРЗИНУ ПОКУПОК!
+    </h2>
+    <h3 class='product-modal-add-cart__title product-modal-add-cart__title_second'>
+      С ЭТИМ ИЗДЕЛИЕМ ЧАЩЕ ВСЕГО ПОКУПАЮТ:
+    </h3>
+  </div>
+  {{{block}}}
+  <div class='product-modal-add-cart__block-container product-modal-add-cart__block-button'>
     <button type='button'>
       ПРОДОЛЖИТЬ ПОКУПКИ
     </button>
