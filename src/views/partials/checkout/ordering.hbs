@@ -9,24 +9,17 @@
             <div class='ordering__selects'>
                 <select class='ordering__select ordering__select--color' name='color' id='color'>
                     {{#each orderingSelects.color}}
-                    {{!-- {{#each color}} --}}
-                    <option value="">{{this.text}}</option>
+                    <option value="{{value}}">{{text}}</option>
                     {{/each}}
-                    {{!-- {{/each}} --}}
-
-                    {{!-- <option value='black'>черный</option>
-                    <option value='white'>белый</option>
-                    <option value='red'>красный</option> --}}
+ 
                     </select>
                     
-                    <select class='ordering__select' name='size' id='color'>
-                        <option value='40'>Размер 40</option>
-                        <option value='42'>Размер 42</option>
-                        <option value='44'>Размер 44</option>
-                        <option value='46'>Размер 46</option>
-                        <option value='48'>Размер 48</option>
-                        <option value='50'>Размер 50</option>
-                    </select>
+                <select class='ordering__select' name='size' id='color'>
+                    {{#each orderingSelects.size}}
+                    <option value="{{value}}">{{text}}</option>
+                    {{/each}}
+
+                </select>
 
                 <button class='ordering__btn--minus ordering__btn' type='button'>-</button>
                 <span class='ordering__btn ordering__value'>1</span>
@@ -53,18 +46,15 @@
             <div class='ordering__selects'>
                 <span class="ordering__circle"></span>
                 <select class='ordering__select ordering__select--color' name='color' id='color'>
-                    <option value='black'>черный</option>
-                    <option value='white'>белый</option>
-                    <option value='red'>красный</option>
+                    {{#each orderingSelects.color}}
+                    <option value="{{value}}">{{text}}</option>
+                    {{/each}}
                 </select>
 
                 <select class='ordering__select' name='size' id='color'>
-                    <option value='40'>Размер 40</option>
-                    <option value='42'>Размер 42</option>
-                    <option value='44'>Размер 44</option>
-                    <option value='46'>Размер 46</option>
-                    <option value='48'>Размер 48</option>
-                    <option value='50'>Размер 50</option>
+                    {{#each orderingSelects.size}}
+                    <option value="{{value}}">{{text}}</option>
+                    {{/each}}
                 </select>
 
                 <button class='ordering__btn--minus ordering__btn' type='button'>-</button>
