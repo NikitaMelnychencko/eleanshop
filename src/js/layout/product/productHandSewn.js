@@ -1,30 +1,34 @@
 import markup from '../../../views/partials/product/productHandSewn.hbs';
+import productDataHandSewn from '../../json/productHandSewn.json';
 
 export default class HandSewn {
-  constructor({ root = 'main', typeInsert = 'beforeEnd' }) {
+  constructor({ root = 'main', typeInsert = 'beforeEnd', callback }) {
     this.root = document.querySelector(root);
     this.typeInsert = typeInsert;
-    this.addMarkup();
+    this.callback = callback;
+    if (this.root) {
+      this.addMarkup();
+    }
   }
 
-  createMarkup() {
-    this.markup = markup();
-  }
+  createMarkup = () => {
+    this.markup = markup(productDataHandSewn);
+  };
 
-  addMarkup() {
+  addMarkup = () => {
     this.createMarkup();
     if (this.root) {
       this.root.insertAdjacentHTML(this.typeInsert, this.markup);
       this.addButtonListener();
     }
-  }
+  };
 
-  addButtonListener() {
+  addButtonListener = () => {
     this.button = document.querySelector('.js-button-product-delivery');
     this.button.addEventListener('click', this.onButtonClick.bind(this));
-  }
+  };
 
-  onButtonClick() {
-    // here will be a call to the backdrop and frame24
-  }
+  onButtonClick = () => {
+    this.button.addEventListener('clck', this.callback);
+  };
 }

@@ -13,6 +13,9 @@
       padding-left: 42px;
     }
   }
+  &__title {
+    @extend %hide;
+  }
 
   &__item {
     position: relative;
@@ -70,7 +73,7 @@
     @media screen and (min-width: $desktop-up) {
       width: 50%;
       padding-left: 42px;
-      padding-bottom: 80px;
+      padding-bottom: 62px;
       padding-top: 68px;
     }
   }
