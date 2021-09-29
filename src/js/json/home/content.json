@@ -11,7 +11,7 @@
   },
   {
     "id": "pkXzyRp1P",
-    "name": "Новинки",
+    "name": "АКЦИИ",
     "description": "Девушка в красной рубашке",
     "image": "./images/img-mob_2.jpg",
     "image_2x": "./images/img-mob_2@2x.jpg",
@@ -21,7 +21,7 @@
   },
   {
     "id": "QMom9q4Ku",
-    "name": "Новинки",
+    "name": "КОСТЮМЫ  ",
     "description": "Девушка в бежевом костюме",
      "image": "./images/img-mob_3.jpg",
   "image_2x": "./images/img-mob_3@2x.jpg",
@@ -31,7 +31,7 @@
   },
   {
     "id": "k2k0UrjZG",
-    "name": "Новинки",
+    "name": "СМОКИНГИ",
     "description": "Девушка в черном смокинге",
      "image": "./images/img-mob_4.jpg",
   "image_2x": "./images/img-mob_4@2x.jpg",
@@ -41,7 +41,7 @@
   },
   {
     "id": "j2k8U1jZd",
-    "name": "Новинки",
+    "name": "БРЮКИ",
     "description": "Девушка в белих брюках",
      "image": "./images/img-mob_5.jpg",
   "image_2x": "./images/img-mob_5@2x.jpg",
@@ -51,7 +51,7 @@
   },
   {
     "id": "X2aQ7cvkd",
-    "name": "Новинки",
+    "name": "ПЛАТЬЯ",
     "description": "Девушка в белом платье",
      "image": "./images/img-mob_6.jpg",
   "image_2x": "./images/img-mob_6@2x.jpg",
@@ -61,7 +61,7 @@
   },
   {
     "id": "nk3zy1pf8",
-    "name": "Новинки",
+    "name": "БЛУЗЫ",
     "description": "Девушка в голубой блузке",
      "image": "./images/img-mob_7.jpg",
   "image_2x": "./images/img-mob_7@2x.jpg",
@@ -71,7 +71,7 @@
   },
   {
     "id": "b7k2U13fd",
-    "name": "Новинки",
+    "name": "ЮБКИ",
     "description": "Девушка в черной юбке",
      "image": "./images/img-mob_8.jpg",
   "image_2x": "./images/img-mob_8@2x.jpg",
@@ -81,7 +81,7 @@
   },
   {
     "id": "b7k2Ufdfd",
-    "name": "Новинки",
+    "name": "ТОПЫ И ЖИЛЕТЫ",
     "description": "Девушка в красном топе",
      "image": "./images/img-mob_9.jpg",
   "image_2x": "./images/img-mob_9@2x.jpg",
@@ -91,7 +91,7 @@
   },
   {
     "id": "b7teU13fd",
-    "name": "Новинки",
+    "name": "АКСЕССУАРЫ",
     "description": "Девушка в черно-белом костюме",
      "image": "./images/img-mob_10.jpg",
   "image_2x": "./images/img-mob_10@2x.jpg",

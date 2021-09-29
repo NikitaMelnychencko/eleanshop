@@ -2,10 +2,11 @@
 }
 
 .content__list {
+  display: inline-grid;
 }
 
 .content__item {
-  // display: grid;
+  margin-bottom: 47px;
 }
 
 .content__card {
@@ -23,7 +24,14 @@
 
   margin-bottom: 15px;
   margin-right: auto;
+
+  @media screen and (min-width: $desktop-up) {
+    font-size: 18px;
+    line-height: 1.055;
+    letter-spacing: 0.05em;
+  }
 }
 
 .content__img {
+  width: 100%;
 }
