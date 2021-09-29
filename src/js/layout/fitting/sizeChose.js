@@ -24,7 +24,7 @@ import createMarkup from '../../../views/partials/fitting/sizeChose.hbs';
 export default { createSizeTable };
 
 const body = document.querySelector('body');
-
+createSizeTable('2')
 window.addEventListener('keydown', value => {
   const sizeTable = document.querySelector('.size-table-backdrop');
   if (sizeTable) {
