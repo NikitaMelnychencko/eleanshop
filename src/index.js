@@ -1,6 +1,10 @@
 import './images/img/exampl.jpg';
 import './images/svg/exampl.svg';
 import './sass/main.scss';
+
+import './sass/main.scss';
+import './js/importImages/importImages.js';
+
 //=========layout===============
 //static
 import './js/layout/static/header.js';
@@ -20,6 +24,9 @@ import './js/layout/сatalog/gallery.js';
 import './js/layout/product/infoAboutProduct.js';
 import './js/layout/product/recomendationsCategory.js';
 import './js/layout/product/productCreateInfo.js';
+import './js/layout/product/test_recomendationsCategory.js';
+import './js/layout/product/productHandSewn.js';
+
 //delivery
 import './js/layout/delivery/filter.js';
 import './js/layout/delivery/deliveryTypes.js';
@@ -48,6 +55,14 @@ import './js/layout/checkout/payment.js';
 //favorites
 import './js/layout/favorites/favorites.js';
 import './js/layout/favorites/sabmitEmail.js';
+
 // modals
 import './js/layout/product/preorderModal.js';
 import './js/layout/product/tryOnModelsModal.js';
+
+// backfrop
+import './js/components/backdrop.js';
+
+//test
+import './js/test/test_productHandSewn.js';
+import './js/test/backdropTest.js';

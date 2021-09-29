@@ -1,0 +1,27 @@
+{{#each this}}
+  <li class='reviews-chat__list-item'>
+    <article class='reviews-chat__article reviews-article'>
+      <div class='reviews-article__thumb'>
+        <div class='reviews-article__image-thumb'>
+          <img
+            class='reviews-article__image'
+            srcset='{{image.srcset}}'
+            src='{{image.src}}'
+            alt='{{image.description}}'
+          />
+        </div>
+
+        <div class='reviews-article__client-info'>
+          <h3 class='reviews-article__title'>{{client-name}}</h3>
+          <div class='reviews-article__contacts-thumb'>
+            <p class='reviews-article__address reviews-article__contacts-text'>{{city}}</p>
+            <p class='reviews-article__date reviews-article__contacts-text'>{{date}}</p>
+          </div>
+        </div>
+      </div>
+      <p class='reviews-article__text'>{{review-text}} &#8372;</p>
+
+    </article>
+
+  </li>
+{{/each}}
