@@ -28,7 +28,7 @@
   border: 1px solid $primery-border-color;
   color: $button-counter-color;
   background-color: $selection-text-color;
-  font-family: 'Jost';
+  font-family: $selection-font-family;
   font-weight: 400;
   font-size: 20px;
   line-height: 1.15;
@@ -128,14 +128,7 @@
   }
 }
 //home-reviews button
-//home-review button placeholder styles
-%button-line {
-  width: 30px;
-  height: 1px;
-  position: absolute;
-  top: 50%;
-  background-color: $accent-favorite-btn-color;
-}
+
 .reviews-button {
   position: relative;
   width: 100%;
@@ -164,12 +157,12 @@
 
   &::before {
     content: '';
-    @extend %button-line;
+    // @extend %button-line;
     left: -15px;
   }
   &::after {
     content: '';
-    @extend %button-line;
+    // @extend %button-line;
     right: -15px;
   }
 }

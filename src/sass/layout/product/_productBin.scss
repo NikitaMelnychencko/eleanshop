@@ -1,12 +1,13 @@
 .product-bin {
   position: relative;
   width: 384px;
-  height: 722px;
+  height: auto;
+  max-height: calc(100vh - 50px);
   padding: 46px 20px 50px;
   position: absolute;
   top: 0;
   right: 0;
-  z-index: 9999;
+  z-index: 999;
   background-color: $selection-text-color;
   overflow: scroll;
 
@@ -16,14 +17,15 @@
 
   @media screen and (min-width: $desktop-up) {
     width: 640px;
-    height: 760px;
     padding: 46px 46px 50px;
   }
 
   &__block-title {
-    display: flex;
-    align-items: center;
     margin-bottom: 26px;
+    @media screen and (min-width: $desktop-up) {
+      display: flex;
+      align-items: center;
+    }
   }
 
   &__title {

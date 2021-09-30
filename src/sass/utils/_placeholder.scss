@@ -18,3 +18,12 @@
   transition: background-color $time-cubic;
   border: 1px solid $secondary-text-color;
 }
+
+//home-review button placeholder styles
+%button-line {
+  width: 30px;
+  height: 1px;
+  position: absolute;
+  top: 50%;
+  background-color: $accent-favorite-btn-color;
+}

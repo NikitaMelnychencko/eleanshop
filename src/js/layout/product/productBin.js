@@ -2,7 +2,7 @@ import markupBin from '../../../views/partials/product/productBin.hbs';
 import dataBin from '../../json/productBin.json';
 
 export default class ProductBin {
-  constructor({ root = 'header', typeInsert = 'beforeEnd', data = dataBin, callback }) {
+  constructor({ root = 'header', typeInsert = 'beforeEnd', data = dataBin }) {
     const dataLS = localStorage.getItem('productBin');
     if (dataLS) {
       this.data = JSON.parse(dataLS);
@@ -14,11 +14,10 @@ export default class ProductBin {
         for (let i = arr.length - 3; i > 0; i -= 3) {
           arr.splice(i, 0, ' ');
         }
-        el.price = arr.join('') + ' ₽';
+        el.price = arr.join('') + '<span> &#8372;</span>';
         localStorage.setItem('productBin', JSON.stringify(this.data));
       });
     }
-    this.callback = callback;
 
     if (root) {
       this.root = document.querySelector(root);
@@ -92,7 +91,7 @@ export default class ProductBin {
     for (let i = arr.length - 3; i > 0; i -= 3) {
       arr.splice(i, 0, ' ');
     }
-    this.totalPrice.textContent = arr.join('') + ' ₽';
+    this.totalPrice.innerHTML = arr.join('') + '<span> &#8372;</span>';
   };
 
   _onCloseModal = () => {
@@ -102,11 +101,7 @@ export default class ProductBin {
 
   _onClickNext = () => {
     this._onCloseModal();
-    if (this.callback) {
-      this.callback();
-    } else {
-      //функция нажатия на кнопку Оформить заказ
-    }
+    //функция нажатия на кнопку Оформить заказ
   };
 
   _setEvent = () => {

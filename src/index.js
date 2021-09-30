@@ -20,7 +20,7 @@ import './js/layout/сatalog/gallery.js';
 import './js/layout/product/infoAboutProduct.js';
 import './js/layout/product/recomendationsCategory.js';
 import './js/layout/product/productCreateInfo.js';
-import './js/layout/product/test_recomendationsCategory.js';
+import './js/test/test_recomendationsCategory.js';
 import './js/layout/product/productHandSewn.js';
 import './js/layout/product/productBin.js';
 import './js/test/test_productBin.js';
