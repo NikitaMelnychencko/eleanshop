@@ -118,7 +118,7 @@
 
 .star-clients__slider .slick-arrow.slick-prev {
   left: -28px;
-  background: url('../images/svg/clients-svg-original/clients-arrow-left.svg') 0 0 / 20% no-repeat;
+  background: url('../images/clients-arrow-left.svg') 0 0 / 20% no-repeat;
   border: 1px solid $star-clients-slider-dots-border;
   background-color: $star-clients-slider-dots-placeholder;
   background-position: center;
@@ -144,7 +144,7 @@
 
 .star-clients__slider .slick-arrow.slick-next {
   right: -28px;
-  background: url('../images/svg/clients-svg-original/clients-arrow-right.svg') 0 0 / 20% no-repeat;
+  background: url('../images/clients-arrow-right.svg') 0 0 / 20% no-repeat;
   border: 0px;
   background-color: $star-clients-slider-dots-placeholder;
   background-position: center;
@@ -283,8 +283,8 @@
   width: 60px;
   height: 60px;
   position: relative;
-  background-image: url('../images/svg/homeReviewsChat/Foreground.svg'),
-    url('../images/svg/homeReviewsChat/Union.svg');
+  background-image: url('../images/Foreground.svg'),
+    url('../images/Union.svg');
   background-size: 29px 28px, cover;
   background-repeat: no-repeat;
   background-position: center;

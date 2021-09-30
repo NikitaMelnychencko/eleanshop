@@ -1,8 +1,5 @@
-import './images/img/exampl.jpg';
-import './images/svg/exampl.svg';
 import './sass/main.scss';
 
-import './sass/main.scss';
 import './js/importImages/importImages.js';
 
 //=========layout===============
