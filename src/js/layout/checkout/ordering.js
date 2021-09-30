@@ -119,8 +119,6 @@ function getDiscount() {
     return gettingPromocodeObject.discount
 }
 
-
-
 export const totalPrice = countTotalPrice();
 console.log(totalPrice)
 
