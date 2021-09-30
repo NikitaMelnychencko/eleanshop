@@ -1,12 +1,12 @@
 [
 {
-    "video": "https://www.pexels.com/video/a-happy-woman-at-a-hat-store-5699621/",
-    "poster": "../../images/img/Reviews/poster/redV.jpg",
+    "video": "pexels1.mp4",
+    "poster": "https://www.pexels.com/video/two-young-women-looking-at-a-dress-8387354",
     "description": "Образ со смокингом"
 
 },
 {
-"video": "https://www.pexels.com/video/girl-put-on-a-new-dress-and-shows-it-to-her-friend-5585998",
+"video": "https://www.pexels.com/video/two-young-women-looking-at-a-dress-8387354",
 "poster": "../../../src/images/img/Reviews/poster/redV.jpg",
 "description": "Образ с красным смокингом и черным топом"
 },

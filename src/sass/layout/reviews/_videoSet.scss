@@ -18,7 +18,7 @@
   height: 400px;
   width: 100%;
   object-fit: cover;
-  transition: transform var(--animation-duration) var(--timing-function);
+  // transition: transform ($time-cubic);
 }
 
 .video-set__link {
@@ -60,3 +60,77 @@
   text-align: left;
   padding-bottom: 25px;
 }
+
+// // Модалка
+// .videobox {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   width: 100vw;
+//   height: 100vh;
+//   opacity: 0;
+//   pointer-events: none;
+//   transition: opacity ($time-cubic);
+// }
+
+// .videobox.is-open {
+//   opacity: 1;
+//   pointer-events: initial;
+// }
+
+// .videobox__overlay {
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   width: 100vw;
+//   height: 100vh;
+//   background-color: rgba(0, 0, 0, 0.8);
+// }
+// .videobox__content {
+//   transform: scale(0.95);
+//   transition: transform ($time-cubic);
+// }
+
+// .videobox.is-open .videobox__content {
+//   transform: scale(1);
+// }
+
+// .video-set__video {
+//   display: block;
+//   width: auto;
+//   height: auto;
+//   max-height: 100vh;
+//   max-width: 100vw;
+// }
+
+// .videobox__button {
+//   position: absolute;
+//   top: 8px;
+//   right: 8px;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   width: 48px;
+//   height: 48px;
+//   padding: 0;
+//   margin: 0;
+//   border: none;
+//   border-radius: 50%;
+//   background-color: transparent;
+//   color: #fff;
+//   cursor: pointer;
+//   transition: background-color ($time-cubic);
+//   outline: none;
+//   background-image: url('../image/icon-close.svg');
+//   background-position: center;
+//   background-size: 60%;
+//   background-repeat: no-repeat;
+// }
+
+// .videobox__button:hover,
+// .videobox__button:focus {
+//   background-color: rgba(0, 0, 0, 0.5);
+// }
