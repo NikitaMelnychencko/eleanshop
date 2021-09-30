@@ -1,7 +1,8 @@
-import './images/img/exampl.jpg';
-import './images/svg/exampl.svg';
-import './images/svg/product-modal-button-close.svg';
+
+
 import './sass/main.scss';
+import './js/importImages/importImages.js';
+
 //=========layout===============
 //static
 import './js/layout/static/header.js';
@@ -22,6 +23,8 @@ import './js/layout/product/infoAboutProduct.js';
 import './js/layout/product/recomendationsCategory.js';
 import './js/layout/product/productCreateInfo.js';
 import './js/layout/product/productModalAddToCart.js';
+import './js/layout/product/productHandSewn.js';
+
 //delivery
 import './js/layout/delivery/filter.js';
 import './js/layout/delivery/deliveryTypes.js';
@@ -51,5 +54,13 @@ import './js/layout/checkout/payment.js';
 import './js/layout/favorites/favorites.js';
 import './js/layout/favorites/sabmitEmail.js';
 
+// backfrop
+import './js/components/backdrop.js';
+
+
 //test
 import './js/test/test_productModalAddCArt';
+import './js/test/test_productHandSewn.js';
+import './js/test/backdropTest.js';
+import './js/test/test_recomendationsCategory';
+

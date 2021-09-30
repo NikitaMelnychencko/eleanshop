@@ -5,6 +5,7 @@
 @import './utils/hide';
 @import './utils/breakpoints';
 @import './utils/animation';
+@import './utils/placeholder';
 //=============base==============
 @import './base/globalClass';
 @import './base/reset';
@@ -16,6 +17,8 @@
 @import './components/reviewsBord';
 @import './components/showroomGallery';
 @import './components/slider';
+@import './components/backdrop';
+@import './components/thanksForOrdering';
 //=========layout===============
 //static
 @import './layout/static/header';
@@ -36,6 +39,8 @@
 @import './layout/product/recomendationsCategory';
 @import './layout/product/productCreateInfo';
 @import './layout/product/productModalAddToCart';
+@import './layout/product/productHandSewn';
+
 //delivery
 @import './layout/delivery/filter';
 @import './layout/delivery/deliveryTypes';
