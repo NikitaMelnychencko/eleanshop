@@ -2,10 +2,9 @@ import markup from '../../../views/partials/product/productHandSewn.hbs';
 import productDataHandSewn from '../../json/productHandSewn.json';
 
 export default class HandSewn {
-  constructor({ root = 'main', typeInsert = 'beforeEnd', callback }) {
+  constructor({ root = 'main', typeInsert = 'beforeEnd' }) {
     this.root = document.querySelector(root);
     this.typeInsert = typeInsert;
-    this.callback = callback;
     if (this.root) {
       this.addMarkup();
     }
@@ -28,7 +27,11 @@ export default class HandSewn {
     this.button.addEventListener('click', this.onButtonClick.bind(this));
   };
 
+  onNextBtnClick = () => {
+    // тут прописати відкриття модального вікна
+  };
+
   onButtonClick = () => {
-    this.button.addEventListener('clck', this.callback);
+    this.button.addEventListener('clck', this.onNextBtnClick);
   };
 }
