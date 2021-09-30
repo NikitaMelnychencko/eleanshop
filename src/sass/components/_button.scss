@@ -76,6 +76,47 @@
   }
 }
 
+.product-close-modal {
+  position: absolute;
+
+  right: 0;
+  padding: 14px;
+  border: none;
+  background-color: $primary-logo-color;
+  width: 40px;
+  height: 40px;
+  @media screen and (max-width: $mobile-only) {
+    top: 0;
+  }
+
+  &__button-text {
+    display: none;
+    @media screen and (min-width: $desktop-up) {
+      margin-right: 36px;
+      text-transform: uppercase;
+      display: inline;
+      color: $selection-text-color;
+    }
+  }
+
+  &__close-icon {
+    width: 12px;
+    height: 12px;
+  }
+
+  @media screen and (min-width: $desktop-up) {
+    bottom: 100%;
+    padding: 6px 12px;
+    width: auto;
+
+    &_small {
+      bottom: calc(100% - 40px);
+      padding: 14px;
+      width: 40px;
+    }
+  }
+}
+
 .delivery-button {
   display: none;
   @media screen and (min-width: $desktop-up) {
