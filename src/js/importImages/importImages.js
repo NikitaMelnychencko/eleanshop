@@ -1,5 +1,8 @@
 import '../../images/img/exampl.jpg';
 import '../../images/svg/exampl.svg';
+
+//============header======================
+import '../../images/svg/header.svg';
 //=========== hero========================
 
 import '../../images/img/page-hero/mobile/hero-title-01/hero-title-mobile-01.jpg';
@@ -56,6 +59,8 @@ import '../../images/img/homeReviewsChat/chatImage@1x.png';
 import '../../images/img/homeReviewsChat/chatImage@2x.png';
 import '../../images/svg/homeReviewsChat/Foreground.svg';
 import '../../images/svg/homeReviewsChat/Union.svg';
+import '../../images/svg/homeReviewsChat/arrow-up-circle-fill.svg';
+
 //============product===========
 import '../../images/img/product/handSewn/handSewn-desktop-1.jpg';
 import '../../images/img/product/handSewn/handSewn-desktop-1@2x.jpg';
