@@ -128,7 +128,14 @@
   }
 }
 //home-reviews button
-
+//home-review button placeholder styles
+%button-line {
+  width: 30px;
+  height: 1px;
+  position: absolute;
+  top: 50%;
+  background-color: $accent-favorite-btn-color;
+}
 .reviews-button {
   position: relative;
   width: 100%;
@@ -157,12 +164,12 @@
 
   &::before {
     content: '';
-    // @extend %button-line;
+    @extend %button-line;
     left: -15px;
   }
   &::after {
     content: '';
-    // @extend %button-line;
+    @extend %button-line;
     right: -15px;
   }
 }
