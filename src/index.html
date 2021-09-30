@@ -28,7 +28,20 @@
 <!-- В этот список добавляй элементы видео сетки -->
 <ul class="videoset js-videoset" >
 </ul>
+<!--
+  Модальное окно для плеера с рандомным видео
 
+-->
+
+<div class="videobox js-videobox">
+  <div class="videobox__overlay"></div>
+
+  <div class="videobox__content">
+    <video class="video-set__video" src="{{video}}" poster="{{poster}}" controls preload="auto" width="" height=""></video>
+  </div>
+
+  <button type="button" class="videobox__button" data-action="close-videobox"></button>
+</div>
 
 <script src="../src/index.js"></script>
     </main>
