@@ -3,8 +3,9 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const WebpackBar = require('webpackbar');
 const paths = require('./paths');
-const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin");
-const { extendDefaultPlugins } = require("svgo");
+const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin');
+const { extendDefaultPlugins } = require('svgo');
+const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 
 module.exports = {
   entry: [paths.src + '/index.js'],
@@ -26,7 +27,7 @@ module.exports = {
         type: 'asset/inline',
       },
       {
-        test: /\.(jpe?g|png|gif|svg|eot|ttf|woff2?)$/i,
+        test: /\.(jpe?g|gif|svg|eot|ttf|woff2?)$/i,
         type: 'asset/resource',
         generator: {
           filename: 'images/[name][ext]',
@@ -35,6 +36,19 @@ module.exports = {
       {
         test: /\.hbs$/,
         use: 'handlebars-loader',
+      },
+      {
+        test: /\.png$/i,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              limit: false,
+              mimetype: 'image/png',
+              name: '/images/[name].[ext]',
+            },
+          },
+        ],
       },
     ],
   },
@@ -53,6 +67,23 @@ module.exports = {
         },
       ],
     }),
+    new FaviconsWebpackPlugin({
+      logo: './src/favicon.svg',
+      mode: 'webapp',
+      favicons: {
+        developerURL: null, // prevent retrieving from the nearest package.json
+        icons: {
+          android: true,
+          appleIcon: true,
+          appleStartup: false,
+          coast: true,
+          favicons: true,
+          firefox: true,
+          windows: true,
+          yandex: false,
+        },
+      },
+    }),
     new HtmlWebpackPlugin({
       template: paths.src + '/index.html', // шаблон
       filename: 'index.html', // название выходного файла
@@ -62,22 +93,22 @@ module.exports = {
         // Lossless optimization with custom option
         // Feel free to experiment with options for better result for you
         plugins: [
-          ["gifsicle", { interlaced: true }],
-          ["jpegtran", { progressive: true }],
-          ["optipng", { optimizationLevel: 5 }],
+          ['gifsicle', { interlaced: true }],
+          ['jpegtran', { progressive: true }],
+          ['optipng', { optimizationLevel: 5 }],
           // Svgo configuration here https://github.com/svg/svgo#configuration
           [
-            "svgo",
+            'svgo',
             {
               plugins: extendDefaultPlugins([
                 {
-                  name: "removeViewBox",
+                  name: 'removeViewBox',
                   active: false,
                 },
                 {
-                  name: "addAttributesToSVGElement",
+                  name: 'addAttributesToSVGElement',
                   params: {
-                    attributes: [{ xmlns: "http://www.w3.org/2000/svg" }],
+                    attributes: [{ xmlns: 'http://www.w3.org/2000/svg' }],
                   },
                 },
               ]),
@@ -91,5 +122,4 @@ module.exports = {
     modules: [paths.src, 'node_modules'],
     extensions: ['.js', '.json'],
   },
-  
 };

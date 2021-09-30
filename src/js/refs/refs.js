@@ -5,4 +5,7 @@ export default {
   form: document.querySelector('.js-question-form'),
   textarea: document.querySelector('.js-question-form textarea'),
   inputname: document.querySelector('.input-name'),
+
+  bodyEl: document.querySelector('body'),
+  mainEL: document.querySelector('main'),
 };
