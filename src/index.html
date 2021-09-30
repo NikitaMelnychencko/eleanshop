@@ -182,11 +182,11 @@
     </div>
   </header>
   <main></main>
-  <footer>
+  <footer class="footer__container container">
     <div class="mobile">
-      <h3 class="hidden"></h3>
       <div class="container ">
-        <footer class="footer__mobile">
+        <h3 class="hidden"></h3>
+        <div class="footer__mobile">
           <ul class="footer__mobile-list">
             <li class="footer__mobile-list-item border">
               <a href="" class="footer__mobile-list-item-plus open-menu">КОЛЛЕКЦИЯ
@@ -290,10 +290,9 @@
                     </use>
                   </svg>
                 </div>
-
               </a>
             </li>
-            <li class="footer__mobile-list-item border"><a href="#" id="contact"
+            <li class="footer__mobile-list-item border"><a href="#Contacts" id="contact"
                 class="footer__mobile-list-item-plus open-menu">КОНТАКТЫ
                 <div class="footer__mobile-icon-position-relative">
                   <svg class="footer__mobile-icon-menu">
@@ -325,65 +324,62 @@
                 <li class="footer__mobile-list-contacts"> <a href="#" id="map">г. Киев, Контрактовая площадь 8</a>
                 </li>
               </ul>
-
-
             </li>
           </ul>
           <h2 class="footer__mobile-title-subscribe border">ПОДПИСАТЬСЯ НА НОВОСТИ</h2>
-          <form action="footer__mobile-form" method="GET" class="footer__mobile-form">
-            <form action="footer__mobileform" id="footer-form-desktop" method="GET" class="footer__mobile-form">
-              <label for="user_subscribe" class="footer__mobile-form-subscribe">
-              </label>
-              <div class="footer__mobile-form-container">
-                <input type="email" name="email" id="user_subscribe" class="footer__mobile-form-input"
-                  placeholder="Введите адрес электронной почты" />
-                <button type="submit" class="footer__mobile-subscribe-button">
-                  <svg class="footer__mobile-icon-subscribe">
-                    <use href="./images/exampl.svg#icon-arrow-pc">
+          <form action="footer__mobileform" id="footer-form-desktop" method="GET" class="footer__mobile-form">
+            <label for="user_subscribe" class="footer__mobile-form-subscribe">
+            </label>
+            <div class="footer__mobile-form-container">
+              <input type="email" name="email" id="user_subscribe" class="footer__mobile-form-input"
+                placeholder="Введите адрес электронной почты" />
+              <button type="submit" class="footer__mobile-subscribe-button">
+                <svg class="footer__mobile-icon-subscribe">
+                  <use href="./images/exampl.svg#icon-arrow-pc">
+                  </use>
+                </svg>
+              </button>
+            </div>
+          </form>
+          <div class="footer__mobile-social border" id="footer-mobile-icon">
+            <ul class="footer__mobile-social-list">
+              <li class="footer__mobile-social-list-icon">
+                <a href="https://www.instagram.com/" target="_blank" rel="noreferrer noopener"
+                  class="footer__icon-link">
+                  <svg class="footer__mobile-icon">
+                    <use href="./images/exampl.svg#icon-instagram" class="footer__mobile-icon-svg">
                     </use>
                   </svg>
-                </button>
-              </div>
-            </form>
-            <div class="footer__mobile-social border" id="footer-mobile-icon">
-              <ul class="footer__mobile-social-list">
-                <li class="footer__mobile-social-list-icon">
-                  <a href="https://www.instagram.com/" target="_blank" rel="noreferrer noopener"
-                    class="footer__icon-link">
-                    <svg class="footer__mobile-icon">
-                      <use href="./images/exampl.svg#icon-instagram" class="footer__mobile-icon-svg">
-                      </use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="footer__mobile-social-list-icon"><a href="https://www.facebook.com/" target="_blank"
-                    rel="noreferrer noopener" class="footer__mobile-icon-link"><svg class="footer__mobile-icon">
-                      <use href="./images/exampl.svg#icon-facebook">
-                      </use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-              <ul class="footer__mobile-logo-list">
-                <li class=""><a href="#">
-                    <svg class="footer__mobile-icon-logo ">
-                      <use href="./images/exampl.svg#icon-logo">
-                      </use>
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <span class="footer__mobile-logo-text">ЖЕНСКИЙ <br> СМОКИНГ</span>
-                </li>
-              </ul>
-            </div>
-        </footer>
+                </a>
+              </li>
+              <li class="footer__mobile-social-list-icon"><a href="https://www.facebook.com/" target="_blank"
+                  rel="noreferrer noopener" class="footer__mobile-icon-link"><svg class="footer__mobile-icon">
+                    <use href="./images/exampl.svg#icon-facebook">
+                    </use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <ul class="footer__mobile-logo-list">
+              <li class=""><a href="index.html">
+                  <svg class="footer__mobile-icon-logo ">
+                    <use href="./images/exampl.svg#icon-logo">
+                    </use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <span class="footer__mobile-logo-text">ЖЕНСКИЙ <br> СМОКИНГ</span>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
     <div class="container">
       <div class="footer__desktop">
         <div class="footer__desktop-logo">
-          <a href=""><svg class="footer__desktop-icon-logo">
+          <a href="index.html"><svg class="footer__desktop-icon-logo">
               <use href="./images/exampl.svg#icon-logo">
               </use>
             </svg>
@@ -404,10 +400,10 @@
         </div>
         <div class="footer__desktop-menu">
           <ul class="footer__desktop-list">
-            <li class="footer__desktop-item"><a href="#" class="footer__desktop-list-link">ДОСТАВКА</a></li>
-            <li class="footer__desktop-item"><a href="#" class="footer__desktop-list-link">ОПЛАТА</a></li>
-            <li class="footer__desktop-item"><a href="#" class="footer__desktop-list-link">ВОЗВРАТ</a></li>
-            <li class="footer__desktop-item"><a href="#" class="footer__desktop-list-link">ПРИМЕРКА</a></li>
+            <li class="footer__desktop-item"><a href="#Delivery" class="footer__desktop-list-link">ДОСТАВКА</a></li>
+            <li class="footer__desktop-item"><a href="#Delivery" class="footer__desktop-list-link">ОПЛАТА</a></li>
+            <li class="footer__desktop-item"><a href="#Delivery" class="footer__desktop-list-link">ВОЗВРАТ</a></li>
+            <li class="footer__desktop-item"><a href="#Fitting" class="footer__desktop-list-link">ПРИМЕРКА</a></li>
             <li class="footer__desktop-item"><a href="#" class="footer__desktop-list-link">КОНТАКТЫ</a></li>
           </ul>
           <ul class="footer__desktop-list-contacts-info">
