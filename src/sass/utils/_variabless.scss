@@ -1,31 +1,72 @@
 // root
 
+// slider dots
+$star-clients-slider-dots: #d9dbe1;
+$star-clients-slider-dots-placeholder: #ffffff;
+$star-clients-slider-dots-border: #e1e1e1;
+$hero-slider-dots: rgba(255, 255, 255, 0.45);
+
 //text
 $primary-text-color: #171717;
-$secondary-text-color:#000000 ;
-$third-text-color: #C0A78F;
-$selection-text-color: #FFFFFF;
+$secondary-text-color: #000000;
+$third-text-color: #c0a78f;
+$selection-text-color: #ffffff;
+
+$input-text-color: hsl(0, 0%, 72%);
+$btn-text-color: #c7c3c3;
+$fourth-text-color: #afafaf;
+$fourth-text-color: #a7a7a7;
+$fifth-text-color: #b8b5b5;
+$sixth-text-color: #c0c0c0;
+
 
 //title
 $primary-title-text-color: #000000;
 $secondary-title-text-color: #272727;
-$selection-title-text-color: #FFFFFF;
+$selection-title-text-color: #ffffff;
+
+
+//title-text-shadow
+$primary-title-text-shadow: 0px 0px 1px #000000;
 
 //accent
-$accent-color: #E1C4A9;
-$accent-btn-color: #FFFFFF;
+$accent-color: #e1c4a9;
+$accent-btn-color: #ffffff;
 $secondary-accent-btn-color: #242424;
-$accent-favorite-btn-color:#D7BCA3;
+$accent-favorite-btn-color: #d7bca3;
 
 //background
-$primary-background-color: #FFFFFF;
+$primary-background-color: #ffffff;
 $secondary-background-color: #252831;
 $footer-background-color: transparent;
-$modal-background-color:#FFFFFF ;
-$menu-background-color:#E1C4A9;
+$modal-background-color: #ffffff;
+$menu-background-color: #e1c4a9;
+
+$btn-background-color: #efefef;
+
 
 //logo
 $primary-logo-color: #000000;
-$secondary-logo-color: #8D8D8D;
+$secondary-logo-color: #8d8d8d;
 $third-logo-color: #222222;
-$selection-text-color: #FFFFFF;
+$selection-text-color: #ffffff;
+
+//border
+
+$border-color: #e3e4e4;
+$primary-border-color: #676767;
+$secondary-border-color: #dadada;
+
+//input
+$placeholder-color: #a6a6a9;
+$primery-border-color: #e6e6e6;
+$primaty-slick-dots: #ced2db;
+
+//button
+$button-text-color: #b6b6b6;
+$button-border-color: #e7dcdc;
+$button-hover-background-color: #000000;
+
+// backdrop
+$backdrop-color: #e5e5e5;
+
