@@ -2,13 +2,12 @@ import RecomendationsCategory from './recomendationsCategory.js';
 import modalAddToCartMark from '../../../views/partials/product/productModalAddToCart.hbs';
 
 export default class ProductModalAddToCart {
-  constructor({ root, typeInsert = 'beforeEnd', productName, callback }) {
+  constructor({ root, typeInsert = 'beforeEnd', productName }) {
     if (root) {
       this.root = document.querySelector(root);
     }
     this.typeInsert = typeInsert;
     this.productName = productName;
-    this.callback = callback;
     this.objCatalog = new RecomendationsCategory({ countsCard: 3, buttonPagination: false });
     this._addMarkup();
     this.self = document.querySelector('.product-modal-add-cart');
@@ -73,7 +72,7 @@ export default class ProductModalAddToCart {
     // тут прописать открітие след. модалки
   };
 
-  _setCallbackEvent = () => {
+  _setNextBtnEvent = () => {
     this.buttonNext = document.querySelector('.js-next');
     if (this.buttonNext) {
       this.buttonNext.addEventListener('click', this._onClickNext);
@@ -82,7 +81,7 @@ export default class ProductModalAddToCart {
 
   setEvent = () => {
     this._setCloseEvent();
-    this._setCallbackEvent();
+    this._setNextBtnEvent();
   };
 
   show = () => {
