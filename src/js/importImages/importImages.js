@@ -1,5 +1,8 @@
 import '../../images/img/exampl.jpg';
 import '../../images/svg/exampl.svg';
+
+//============header======================
+import '../../images/svg/header.svg'
 //=========== hero========================
 
 import '../../images/img/page-hero/mobile/hero-title-01/hero-title-mobile-01.jpg';
