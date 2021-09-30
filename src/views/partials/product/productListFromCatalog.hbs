@@ -1,0 +1,33 @@
+<ul class='recomendation-category__list slider'>
+  {{#each this}}
+    <li class='recomendation-category__item slider__item'>
+      <a href='./' class='recomendation-category__link' data-id="{{id}}">
+        <picture>
+          <source srcset="{{image.srcset}}" media='(min-width: 1920px)' />
+          <source srcset="{{image.srcset-mobile}}" media='(max-width: 414px)' />
+          <img src="{{image.src}}" alt="{{image.alt}}" class='recomendation-category__image' />
+        </picture>
+      </a>
+      <div class='recomendation-category__card-text'>
+        <div class='recomendation-category__block-title'>
+          <h3 class='recomendation-category__item-title'>
+            {{name}}
+          </h3>
+          <button class='button-add-likes'>
+            <svg class='button-add-likes__icon'>
+              <use href="{{icon}}"></use>
+            </svg>
+          </button>
+        </div>
+        <div class='recomendation-category__block-characters'>
+          <span class='recomendation-category__price'>
+            {{price}}
+          </span>
+          <span class='recomendation-category__characters'>
+            {{description}}
+          </span>
+        </div>
+      </div>
+    </li>
+  {{/each}}
+</ul>

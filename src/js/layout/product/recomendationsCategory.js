@@ -7,12 +7,10 @@ import cards from '../../json/recomendationCategory.json';
 
 export default class RecomendationsCategory {
   constructor({ root, typeInsert, data = cards, countsCard = 4, buttonPagination = true }) {
-    console.log('constructor');
     this.typeInsert = typeInsert;
     this.countsCard = countsCard;
     this.buttonPagination = buttonPagination;
     this.data = this._getData(data);
-    console.log(this.data);
     if (root) {
       this.root = document.querySelector(root);
       this._addMarkup();
@@ -28,14 +26,17 @@ export default class RecomendationsCategory {
     const arr = [];
     let num = -1;
     for (let i = 0; i < this.countsCard; i++) {
-      while (true) {
-        num = this._getRandom(data.length - 1);
-        if (!arr.includes(num)) {
-          arr.push(num);
-          break;
+      if (i === 0) {
+        arr.push(this._getRandom(data.length - 1));
+      } else {
+        num = arr[0];
+        while (arr.includes(num)) {
+          num = this._getRandom(data.length - 1);
         }
+        arr.push(num);
       }
     }
+
     return arr.map(el => data[el]);
   };
 
