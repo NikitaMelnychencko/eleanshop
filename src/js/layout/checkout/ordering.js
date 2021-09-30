@@ -108,7 +108,7 @@ function countTotalPriceWithDiscount(e) {
     const totalPrice = countTotalPrice();
     let discount = getDiscount();
     orderingDiscount.textContent = discount;
-    orderingTotal.textContent = totalPrice + (totalPrice / 100 * discount);
+    orderingTotal.textContent = totalPrice - (totalPrice / 100 * discount);
    
 }
 
