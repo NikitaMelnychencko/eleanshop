@@ -1,5 +1,3 @@
-import refs from '../../refs/refs';
-
 const formFittingInShowroom = {
   box: document.querySelector('.form-fitting-showroom'),
   name: document.querySelector('[name="formFittingName"]'),
