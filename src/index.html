@@ -22,7 +22,94 @@
 
   <body>
     <header></header>
-    <main></main>
+    <main>
+      <div class="product-bin">
+        <h2 class="product-bin__title">КОРЗИНА</h2>
+        <ul class="product-bin__list">
+          <li class="product-bin__item">
+            <div class="product-bin__block-image">
+              <img
+                src="./images/product1.jpg"
+                alt=""
+                srcset="./images/product1.jpg 1x, ./images/product1@2x.jpg 2x"
+                class="product-bin__image"
+              />
+            </div>
+            <div class="product-bin__block-character">
+              <div class="product-bin__block-title">
+                <h3 class="product-bin__product-name">Белый смокинг и брюки с лампасами</h3>
+                <p class="product-bin__product-price">41 400 ₽</p>
+              </div>
+              <p class="product-bin__product-size">Размер 46</p>
+              <p class="product-bin__text">Количество</p>
+              <div class="product-bin__product-form">
+                <div class="product-bin__block-counter">
+                  <button class="button-counter button-counter_active product-bin__button-dec">
+                    <svg class="button-counter__button-icon button-counter__button-icon_desc">
+                      <use href="./images/product-icon-close.svg#icon-desc"></use>
+                    </svg>
+                  </button>
+                  <span class="button-counter button-counter_active product-bin__product-count"
+                    >1</span
+                  >
+                  <button class="button-counter button-counter_active product-bin__button-inc">
+                    <svg class="button-counter__button-icon button-counter__button-icon_inc">
+                      <use href="./images/product-icon-close.svg#icon-inc"></use>
+                    </svg>
+                  </button>
+                </div>
+                <button class="product-bin__button-del">
+                  Удалить
+                  <svg class="product-bin__delete-icon">
+                    <use href="./images/product-icon-close.svg#icon-close-modal"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </li>
+          <li class="product-bin__item">
+            <div class="product-bin__block-image">
+              <img
+                src="./images/product2.jpg"
+                alt=""
+                srcset="./images/product2.jpg 1x, ./images/product2@2x.jpg 2x"
+                class="product-bin__image"
+              />
+            </div>
+            <div class="product-bin__block-character">
+              <div class="product-bin__block-title">
+                <h3 class="product-bin__product-name">Красный приталенный смокинг</h3>
+                <p class="product-bin__product-price">26 900 ₽</p>
+              </div>
+              <p class="product-bin__product-size">Размер 50</p>
+              <p class="product-bin__text">Количество</p>
+              <div class="product-bin__block-counter">
+                <button class="button-counter button-counter_active product-bin__button-dec">
+                  -
+                </button>
+                <span class="button-counter button-counter_active product-bin__product-count"
+                  >2</span
+                >
+                <button class="button-counter button-counter_active product-bin__button-inc">
+                  +
+                </button>
+              </div>
+              <button class="product-bin__button-del">
+                Удалить
+                <svg class="product-bin__delete-icon">
+                  <use href="./images/product-icon-close.svg#icon-close-modal"></use>
+                </svg>
+              </button>
+            </div>
+          </li>
+        </ul>
+        <div class="product-bin__block-total">
+          <span class="product-bin__total-text">ИТОГО: </span>
+          <span class="product-bin__total-price">57 200 ₽</span>
+        </div>
+        <button type="button" class="product-bin__ordered">ОФОРМИТЬ ЗАКАЗ</button>
+      </div>
+    </main>
     <footer></footer>
   </body>
 </html>

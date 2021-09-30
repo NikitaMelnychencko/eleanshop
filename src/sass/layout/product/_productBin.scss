@@ -1,0 +1,120 @@
+.product-bin {
+  outline: 1px solid red;
+  width: 384px;
+  height: 722px;
+  padding: 46px 20px 50px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 9999;
+  background-color: $selection-text-color;
+
+  @media screen and (min-width: $desktop-up) {
+    width: 640px;
+    height: 740px;
+    padding: 46px 46px 50px;
+  }
+
+  &__list {
+    border-bottom: 1px solid $primery-border-color;
+    margin-bottom: 26px;
+    @media screen and (min-width: $desktop-up) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    margin-bottom: 40px;
+  }
+
+  &__block-image {
+    margin-right: 16px;
+    @media screen and (min-width: $desktop-up) {
+      margin-right: 18px;
+    }
+  }
+
+  &__image {
+    min-width: 148px;
+    min-height: 220px;
+  }
+
+  &__block-character {
+    width: 100%;
+    margin-bottom: 20px;
+
+    @media screen and (min-width: $desktop-up) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__block-title {
+    font-family: $third-font-family;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.11;
+    @media screen and (min-width: $desktop-up) {
+      line-height: 1.28;
+
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__product-size {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 1.35;
+    margin-bottom: 20px;
+    @media screen and (min-width: $desktop-up) {
+      margin-bottom: 36px;
+    }
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 1.35;
+    margin-bottom: 16px;
+    @media screen and (min-width: $desktop-up) {
+      margin-bottom: 12px;
+    }
+  }
+
+  &__block-counter {
+    display: flex;
+    margin-bottom: 18px;
+  }
+
+  &__button-del {
+    color: $secondary-text-color;
+    padding: 10px 14px;
+    border: none;
+    background-color: transparent;
+    text-decoration-line: underline;
+
+    @media screen and (min-width: $desktop-up) {
+      border: 1px solid $primery-border-color;
+      background-color: $selection-text-color;
+      text-decoration-line: none;
+
+      &:hover,
+      &:focus {
+        color: $selection-text-color;
+        background-color: $secondary-text-color;
+        border: none;
+      }
+    }
+  }
+
+  &__delete-icon {
+    display: block;
+    @media screen and (min-width: $desktop-up) {
+      display: inline-block;
+      margin-left: 38px;
+    }
+    width: 14px;
+    height: 14px;
+  }
+}
