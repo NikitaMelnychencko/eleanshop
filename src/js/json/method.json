@@ -8,18 +8,18 @@
     {
       "id":"delivery-method",
       "text":"Курьером по Киеву",
-      "value":"By courier in Kiev",
+      "value":"By_courier_in_Kiev",
       "checked":"checked"
     },
     {
       "id":"delivery-method",
       "text":"Курьером по Украине",
-      "value":"By courier in Ukraine"
+      "value":"By_courier_in_Ukraine"
     },
     {
       "id":"delivery-method",
       "text":"Курьером за границу",
-      "value":"By courier abroad"
+      "value":"By_courier_abroad"
     }
   ],
   "payment":[
