@@ -1,17 +1,14 @@
  <section class="catalog-container">
         <div id="filter" class="catalog-category-container">
          <h2 class="catalog-category-header">Категории</h2>
-        <ul calss='category-list'>
-          <li class="category-item">Новинки</li>
-                    <li class="category-item">Юбки</li>
-                              <li class="category-item">Смокинги</li>
-                                        <li class="category-item">Костюмы</li>
-                                                  <li class="category-item">Аксессуары</li>
-                                                            <li class="category-item">Брюки</li>
-                                                            <li class="category-item">Блузы</li>
-                                                            <li class="category-item">Платья</li>
-                                                            <li class="category-item">Топы и жилеты</li>
-        </ul>
+       <ul class='tag-list'>
+  {{#each category}}
+    <li class='category__item'>{{this}}</li>
+  {{/each}}
+   {{#each collection}}
+    <li class='collection__item'>{{this}}</li>
+  {{/each}}
+</ul>
          <h2 class="catalog-category-collection-header">Коллекции</h2>
          <ul calss='catalog-category-collection-list'>
           <li class="catalog-category-collection-item">Осень-зима 20-21</li>
