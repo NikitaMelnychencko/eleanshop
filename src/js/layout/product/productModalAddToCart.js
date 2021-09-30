@@ -2,21 +2,30 @@ import RecomendationsCategory from './recomendationsCategory.js';
 import modalAddToCartMark from '../../../views/partials/product/productModalAddToCart.hbs';
 
 export default class ProductModalAddToCart {
-  constructor({ productName, callback }) {
+  constructor({ root, typeInsert = 'beforeEnd', productName, callback }) {
+    if (root) {
+      this.root = document.querySelector(root);
+    }
+    this.typeInsert = typeInsert;
     this.productName = productName;
     this.callback = callback;
     this.objCatalog = new RecomendationsCategory({ countsCard: 3, buttonPagination: false });
+    this._addMarkup();
+    this.self = document.querySelector('.product-modal-add-cart');
   }
 
   _createMarkup = () => {
-    console.log({
-      productName: this.productName,
-      block: this.objCatalog.getListMarkup(),
-    });
     return modalAddToCartMark({
       product: this.productName,
       block: this.objCatalog.getListMarkup(),
     });
+  };
+
+  _addMarkup = () => {
+    if (this.root) {
+      this.root.insertAdjacentHTML(this.typeInsert, this._createMarkup());
+      this.setEvent();
+    }
   };
 
   getMarkup = () => {
@@ -24,36 +33,59 @@ export default class ProductModalAddToCart {
   };
 
   setSlider = () => {
-    this.objCatalog.setSlider();
+    if (window.innerWidth <= 720) {
+      this._addSlider();
+    }
   };
 
-  onCloseModal = () => {
-    document.querySelector('.product-modal-add-cart').remove();
+  _addSlider = () => {
+    $('.slider').slick({
+      arrows: false,
+      dots: false,
+      slidesToShow: 2.5,
+    });
+  };
+
+  _onCloseModal = () => {
+    this.self.classList.add('hidden');
     if (this.buttonClose) {
       this.buttonClose.forEach(el => {
-        el.removeEventListener('click', this.onCloseModal);
+        el.removeEventListener('click', this._onCloseModal);
       });
     }
     if (this.buttonNext) {
-      this.buttonNext.removeEventListener('click', this.callback);
+      this.buttonNext.removeEventListener('click', this._onClickNext);
     }
   };
 
-  setCloseEvent = () => {
+  _setCloseEvent = () => {
     this.buttonClose = document.querySelectorAll('.js-close-modal');
     if (this.buttonClose) {
       this.buttonClose.forEach(el => {
-        el.addEventListener('click', this.onCloseModal);
+        el.addEventListener('click', this._onCloseModal);
       });
     }
   };
 
-  setCallbackEvent = () => {
-    if (this.callback) {
-      this.buttonNext = document.querySelector('.js-next');
-      if (this.buttonNext) {
-        this.buttonNext.addEventListener('click', this.callback);
-      }
+  _onClickNext = () => {
+    this._onCloseModal();
+    // тут прописать открітие след. модалки
+  };
+
+  _setCallbackEvent = () => {
+    this.buttonNext = document.querySelector('.js-next');
+    if (this.buttonNext) {
+      this.buttonNext.addEventListener('click', this._onClickNext);
     }
+  };
+
+  setEvent = () => {
+    this._setCloseEvent();
+    this._setCallbackEvent();
+  };
+
+  show = () => {
+    this.self.classList.remove('hidden');
+    this.setEvent();
   };
 }

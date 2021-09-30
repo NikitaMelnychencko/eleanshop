@@ -1,6 +1,5 @@
 .product-modal-add-cart {
-  outline: 1px solid red;
-  position: relative;
+  background-color: $modal-background-color;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -11,6 +10,11 @@
   max-height: 682px;
   width: 100vw;
   height: 100vh;
+  z-index: 99999;
+
+  &.hidden {
+    @extend %hide;
+  }
 
   @media screen and (min-width: $desktop-up) {
     padding-top: 66px;

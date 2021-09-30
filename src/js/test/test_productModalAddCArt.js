@@ -1,8 +1,12 @@
 import ProductModalAddToCart from '../layout/product/productModalAddToCart.js';
 
-const obj = new ProductModalAddToCart({ productName: 'ЖАКЕТ-СМОКИНГ С ЛАЦКАНМИ', callback: null }); // передается название товара и колбек для кнопки оформления
+const obj = new ProductModalAddToCart({
+  root: 'main', // селектор тега, куда вставится модалка
+  typeInsert: 'beforeEnd',
+  productName: 'ЖАКЕТ-СМОКИНГ С ЛАЦКАНМИ',
+  callback: null, // функция, выполняется при нажатии на кнопку "перейти к оформлению" передать сюда или в классе изменить функцию   _setCallbackEvent
+}); // передается название товара и колбек для кнопки оформления
+// document.querySelector('main').insertAdjacentHTML('beforeEnd', obj.getMarkup()); //  если в конструктор не передан параметр root
 
-document.querySelector('main').insertAdjacentHTML('beforeEnd', obj.getMarkup());
 obj.setSlider();
-obj.setCloseEvent();
-obj.setCallbackEvent();
+obj.show(); // показати модальне вікно

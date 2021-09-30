@@ -5,7 +5,6 @@ import cardsMarkup from '../../../views/partials/product/recomendationsCategory.
 import listCards from '../../../views/partials/product/productListFromCatalog.hbs';
 import cards from '../../json/recomendationCategory.json';
 
-
 export default class RecomendationsCategory {
   constructor({ root, typeInsert, data = cards, countsCard = 4, buttonPagination = true }) {
     console.log('constructor');
@@ -73,9 +72,7 @@ export default class RecomendationsCategory {
     $('.slider').slick({
       arrows: false,
       dots: this.buttonPagination,
-    })
-  }
+      slidesToShow: 2.5,
+    });
+  };
 }
-
-
-
