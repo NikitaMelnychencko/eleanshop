@@ -3,16 +3,24 @@ import dataBin from '../../json/productBin.json';
 
 export default class ProductBin {
   constructor({ root, typeInsert = 'beforeEnd', data = dataBin, callback }) {
-    this.data = data;
+    const dataLS = localStorage.getItem('productBin');
+    console.log(dataLS);
+    if (dataLS) {
+      this.data = JSON.parse(dataLS);
+    } else {
+      this.data = data;
+      this.data.forEach(el => {
+        el.priceNum = el.price;
+        const arr = String(el.price).split('');
+        for (let i = arr.length - 3; i > 0; i -= 3) {
+          arr.splice(i, 0, ' ');
+        }
+        el.price = arr.join('') + ' ₽';
+        localStorage.setItem('productBin', JSON.stringify(this.data));
+      });
+    }
     this.callback = callback;
-    this.data.forEach(el => {
-      el.priceNum = el.price;
-      const arr = String(el.price).split('');
-      for (let i = arr.length - 3; i > 0; i -= 3) {
-        arr.splice(i, 0, ' ');
-      }
-      el.price = arr.join('') + ' ₽';
-    });
+
     if (root) {
       this.root = document.querySelector(root);
       this.typeInsert = typeInsert;
