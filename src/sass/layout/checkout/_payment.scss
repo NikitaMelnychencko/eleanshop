@@ -1,6 +1,6 @@
 //delivery
 .form__method-ordering--flex{
-  
+  margin-bottom: 60px;
   @media screen and(min-width: $desktop-up) {
     display: flex;
     justify-content: space-between
@@ -17,13 +17,16 @@
   letter-spacing: 0.05em;
   color: $secondary-text-color;
 }
-.delivery,
 .basic-information{
   margin-bottom: 37px;
-  @media screen and(min-width: $desktop-up) {
-    width: 690px;
-  }
+  .information-for-user,
+  &{
+    @media screen and(min-width: $desktop-up) {
+      width: 690px;
+    }
+  } 
 }
+
 .delivery-method,
 .payment-method{
   display: flex;

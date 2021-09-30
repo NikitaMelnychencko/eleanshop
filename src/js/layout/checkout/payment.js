@@ -43,6 +43,7 @@ class modalData{
         this._refs.input.value = ""
       }
     })
+    
   }
   _addEventInput() {
     this._refs.input.addEventListener('click', event => {
@@ -71,3 +72,4 @@ const inputDay = new modalData({
   idList: "day-list",
   
 })
+

@@ -1,38 +1,41 @@
 <div class='form__method-ordering form__method-ordering--flex'>
-    <div class='delivery' role='group'>
+  <div class='information-for-user' >
+    <div class="delivery"  role='group'>
       <h3 class="delivery__title">ВЫБЕРИТЕ СПОСОБ ДОСТАВКИ</h3>
       <div class="delivery-method ">
-        {{#each method.delivery}}
-          <label class="delivery-method__item">
-            <input class="delivery-method__form-radio" type='radio' name='delivery-method' value={{value}} {{checked}}/>
-            <span class="delivery-method__text">{{text}}</span>
-          </label>
-        {{/each}} 
+          {{#each method.delivery}}
+            <label class="delivery-method__item">
+              <input class="delivery-method__form-radio" type='radio' name='delivery-method' value={{value}} {{checked}}/>
+              <span class="delivery-method__text">{{text}}</span>
+            </label>
+          {{/each}}  
       </div>
       <div class="showroom-method">
-        <div class="showroom-method__item">
-          <input class="showroom-method__form"  name="day" id="js-day" placeholder="ВЫБЕРИТЕ ДАТУ"/>
-          <ul class="showroom-list showroom-list--hide js-day" id='day-list'>
-          {{#each method.day-data}}
-            <li class="showroom-list__item" ><svg
-              class="showroom-list__icon-murkup">
-              <use href="./images/murkup.svg#icon-murkup"></use>
-              </svg><span>{{day}},</span>{{data}}</li>
-          {{/each}}  
-          </ul>
+          <div class="showroom-method__item">
+            <input class="showroom-method__form"  name="day" id="js-day" placeholder="ВЫБЕРИТЕ ДАТУ"/>
+            <ul class="showroom-list showroom-list--hide js-day" id='day-list'>
+            {{#each method.day-data}}
+              <li class="showroom-list__item" ><svg
+                class="showroom-list__icon-murkup">
+                <use href="./images/murkup.svg#icon-murkup"></use>
+                </svg><span>{{day}},</span>{{data}}</li>
+            {{/each}}  
+            </ul>
+          </div>
+          <div class="showroom-method__item">
+            <input class="showroom-method__form"  name="time" id="js-time" placeholder="ВЫБЕРИТЕ ВРЕМЯ"/>
+            <ul class="showroom-list showroom-list--hide js-time" id='time-list'>
+            {{#each method.time}}
+              <li class="showroom-list__item" ><svg
+                class="showroom-list__icon-murkup">
+                <use href="./images/murkup.svg#icon-murkup"></use>
+                </svg>{{time}}</li>
+            {{/each}}  
+            </ul>       
         </div>
-        <div class="showroom-method__item">
-          <input class="showroom-method__form"  name="time" id="js-time" placeholder="ВЫБЕРИТЕ ВРЕМЯ"/>
-          <ul class="showroom-list showroom-list--hide js-time" id='time-list'>
-          {{#each method.time}}
-            <li class="showroom-list__item" ><svg
-              class="showroom-list__icon-murkup">
-              <use href="./images/murkup.svg#icon-murkup"></use>
-              </svg>{{time}}</li>
-          {{/each}}  
-          </ul>       
-      </div>
+      </div>       
     </div>
+
     <div class='basic-information' role='group'>
       <h3 class='basic-information__title'>ОСНОВНАЯ ИНФОРМАЦИЯ</h3>
       <label class="basic-information__field">
