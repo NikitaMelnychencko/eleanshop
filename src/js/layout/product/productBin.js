@@ -2,9 +2,8 @@ import markupBin from '../../../views/partials/product/productBin.hbs';
 import dataBin from '../../json/productBin.json';
 
 export default class ProductBin {
-  constructor({ root, typeInsert = 'beforeEnd', data = dataBin, callback }) {
+  constructor({ root = 'header', typeInsert = 'beforeEnd', data = dataBin, callback }) {
     const dataLS = localStorage.getItem('productBin');
-    console.log(dataLS);
     if (dataLS) {
       this.data = JSON.parse(dataLS);
     } else {
@@ -26,6 +25,7 @@ export default class ProductBin {
       this.typeInsert = typeInsert;
       this._addMarkup();
     }
+    this.self = document.querySelector('.product-bin');
   }
 
   _createMarkup = () => {
@@ -96,8 +96,17 @@ export default class ProductBin {
   };
 
   _onCloseModal = () => {
-    document.querySelector('.product-bin').remove();
+    this.self.classList.add('hidden');
     this._deleteEvent();
+  };
+
+  _onClickNext = () => {
+    this._onCloseModal();
+    if (this.callback) {
+      this.callback();
+    } else {
+      //функция нажатия на кнопку Оформить заказ
+    }
   };
 
   _setEvent = () => {
@@ -123,10 +132,7 @@ export default class ProductBin {
     }
 
     if (this.buttonNext) {
-      if (this.callback) {
-        this.buttonNext.addEventListener('click', this.callback);
-      }
-      this.buttonNext.addEventListener('click', this._onCloseModal);
+      this.buttonNext.addEventListener('click', this._onClickNext);
     }
   };
 
@@ -152,11 +158,12 @@ export default class ProductBin {
       });
     }
     if (this.buttonNext) {
-      if (this.callback) {
-        this.buttonNext.removeEventListener('click', this.callback);
-      }
-      this.buttonNext.removeEventListener('click', this._onCloseModal);
+      this.buttonNext.removeEventListener('click', this._onClickNext);
     }
+  };
+
+  show = () => {
+    this.self.classList.remove('hidden');
   };
 
   initialBin = () => {

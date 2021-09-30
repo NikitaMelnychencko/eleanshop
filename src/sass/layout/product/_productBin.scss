@@ -10,6 +10,10 @@
   background-color: $selection-text-color;
   overflow: scroll;
 
+  &.hidden {
+    @extend %hide;
+  }
+
   @media screen and (min-width: $desktop-up) {
     width: 640px;
     height: 760px;
