@@ -1,21 +1,25 @@
+
 <h2 class='ordering__title'>Оформление заказа</h2>
 <div class='ordering__cards'>
     <!--the card with the chosen item-->
+    {{#each orderingInsertion.card}}
     <div class='ordering__card'>
-
-        <img class='ordering__image' src='./images/white-suit.jpg' alt='article' />
+        
+        <img class='ordering__image' src='{{label.img}}' alt='article' />
         <div class='ordering__box'>
-            <p class='ordering__label'>Classical suit</p>
+            
+            <p class='ordering__label'>{{label.name}}</p>
+            
             <div class='ordering__selects'>
                 <select class='ordering__select ordering__select--color' name='color' id='color'>
-                    {{#each orderingSelects.color}}
+                    {{#each color}}
                     <option value="{{value}}">{{text}}</option>
                     {{/each}}
  
                     </select>
                     
                 <select class='ordering__select' name='size' id='color'>
-                    {{#each orderingSelects.size}}
+                    {{#each size}}
                     <option value="{{value}}">{{text}}</option>
                     {{/each}}
 
@@ -35,43 +39,9 @@
             </button>
 
         </div>
+        
     </div>
-    <!---->
-    <!--the card with the chosen item-->
-    <div class='ordering__card'>
-
-        <img class='ordering__image' src='./images/red-suit.jpg' alt='article' />
-        <div class='ordering__box'>
-            <p class='ordering__label'>Classical suit</p>
-            <div class='ordering__selects'>
-                <span class="ordering__circle"></span>
-                <select class='ordering__select ordering__select--color' name='color' id='color'>
-                    {{#each orderingSelects.color}}
-                    <option value="{{value}}">{{text}}</option>
-                    {{/each}}
-                </select>
-
-                <select class='ordering__select' name='size' id='color'>
-                    {{#each orderingSelects.size}}
-                    <option value="{{value}}">{{text}}</option>
-                    {{/each}}
-                </select>
-
-                <button class='ordering__btn--minus ordering__btn' type='button'>-</button>
-                <span class='ordering__btn ordering__value'>1</span>
-                <button class='ordering__btn--plus ordering__btn' type='button'>+</button>
-
-                <span class='ordering__price'>10000</span>
-            </div>
-            <button class='ordering__button--close ordering__close' type='button'>
-                <svg class='ordering__icon--close ordering__close' aria-label='close' width='16' height='16'>
-                    <use class='ordering__icon-cross ordering__close' href='./images/exampl.svg#icon-menu_burger_close'>
-                    </use>
-                </svg>
-            </button>
-
-        </div>
-    </div>
+    {{/each}}
     <!---->
 
 </div>

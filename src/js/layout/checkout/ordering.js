@@ -4,13 +4,18 @@ import refs from '../../refs/refs.js'
 import '../../../images/img/white-suit.jpg'
 import '../../../images/img/red-suit.jpg'
 import promocodes from '../../json/promocode.json'
-import orderingSelects from '../../json/orderingselect.json'
+import orderingInsertion from '../../json/orderinginsertion.json'
 
+localStorage.setItem('orderingData', JSON.stringify(orderingInsertion));
+const savedData = localStorage.getItem('orderingData')
+const parsedData = JSON.parse(savedData)
+console.log(parsedData)
 
-const ordering = ordering_ordering({orderingSelects});
+const ordering = ordering_ordering({parsedData, orderingInsertion});
 
 const createCheckout = payment_checkout({ ordering })
 refs.main.insertAdjacentHTML('beforeend', createCheckout);
+
 
 
 const orderingApplyBtn = document.querySelector('.ordering__btn--promocode');
@@ -103,7 +108,7 @@ function countTotalPriceWithDiscount(e) {
     const totalPrice = countTotalPrice();
     let discount = getDiscount();
     orderingDiscount.textContent = discount;
-    orderingTotal.textContent = totalPrice + discount;
+    orderingTotal.textContent = totalPrice + (totalPrice / 100 * discount);
    
 }
 
@@ -114,5 +119,13 @@ function getDiscount() {
     return gettingPromocodeObject.discount
 }
 
+
+
 export const totalPrice = countTotalPrice();
 console.log(totalPrice)
+
+const testButton = document.querySelector('.testButton')
+testButton.addEventListener('click', settingDataToLocalStorage)
+function settingDataToLocalStorage() {
+    localStorage.setItem('orderingData', JSON.stringify(orderingInsertion));
+}
