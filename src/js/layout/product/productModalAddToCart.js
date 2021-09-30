@@ -12,6 +12,7 @@ export default class ProductModalAddToCart {
     this.objCatalog = new RecomendationsCategory({ countsCard: 3, buttonPagination: false });
     this._addMarkup();
     this.self = document.querySelector('.product-modal-add-cart');
+    this.setSlider();
   }
 
   _createMarkup = () => {

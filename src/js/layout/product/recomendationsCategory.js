@@ -7,12 +7,10 @@ import cards from '../../json/recomendationCategory.json';
 
 export default class RecomendationsCategory {
   constructor({ root, typeInsert, data = cards, countsCard = 4, buttonPagination = true }) {
-    console.log('constructor');
     this.typeInsert = typeInsert;
     this.countsCard = countsCard;
     this.buttonPagination = buttonPagination;
     this.data = this._getData(data);
-    console.log(this.data);
     if (root) {
       this.root = document.querySelector(root);
       this._addMarkup();
