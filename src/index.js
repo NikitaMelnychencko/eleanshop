@@ -1,4 +1,3 @@
-
 import './sass/main.scss';
 import './js/importImages/importImages.js';
 
