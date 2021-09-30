@@ -1,0 +1,5 @@
+[
+    { "value": 55555, "discount": 5 },
+    { "value": 33333, "discount": 3 },
+    { "value": 10101, "discount": 10 }
+]
