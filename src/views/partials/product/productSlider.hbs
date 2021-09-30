@@ -42,7 +42,7 @@
         <div class="product__name-wrapper">
           <h2 class="product__name">{{productName}}</h2>
           <button class="button__like"></button>
-          <p class="product__price">{{productPrice}} <span class="product__currency">&#8381;</span></p>
+          <p class="product__price">{{productPrice}} <span class="product__currency">&#8372;</span></p>
         </div>
 
         <h3 class="product__size size__title">размер</h3>
@@ -56,7 +56,7 @@
           <li class="options__item">
             <button class="button__size-option">
               <svg class="options__icon" width="21" height="21">
-                <use href="./images/attension-sign.svg"></use>
+                <use href="./images/sprite.svg#icon-sign"></use>
               </svg>
               нет вашего размера?
             </button>
@@ -64,7 +64,7 @@
           <li class="options__item">
             <button class="button__size-option">
               <svg class="options__icon" width="21" height="21">
-                <use href="./images/hanger.svg"></use>
+                <use href="./images/sprite.svg#icon-hanger"></use>
               </svg>
               определите свой размер
             </button>
@@ -74,9 +74,29 @@
         <div class="colorpicker">
           <h3 class="colorpicker__title">цвет</h3>
           <ul class="colorpicker__list">
-            <li class="colorpicker__item"><button class="button__colorpicker button__colorpicker--black" type="button"></button></li>
-            <li class="colorpicker__item"><button class="button__colorpicker button__colorpicker--red" type="button"></button></li>
-            <li class="colorpicker__item"><button class="button__colorpicker button__colorpicker--grey" type="button"></button></li>
+            <li class="colorpicker__item">
+              <button class="button__colorpicker button__colorpicker--black" type="button">
+                <svg class="colorpicker__icon" width="46" height="46">
+                  <use href="./images/sprite.svg#icon-colorpicker"></use>
+                </svg>
+                </button>
+              </button>
+            </li>
+            <li class="colorpicker__item">
+              <button class="button__colorpicker button__colorpicker--red" type="button">
+                <svg class="colorpicker__icon" width="46" height="46">
+                  <use href="./images/sprite.svg#icon-colorpicker"></use>
+                </svg>
+                </button>
+              </button>
+            </li>
+            <li class="colorpicker__item">
+              <button class="button__colorpicker button__colorpicker--grey" type="button">
+                <svg class="colorpicker__icon" width="46" height="46">
+                  <use href="./images/sprite.svg#icon-colorpicker"></use>
+                </svg>
+              </button>
+            </li>
           </ul>
         </div>
     

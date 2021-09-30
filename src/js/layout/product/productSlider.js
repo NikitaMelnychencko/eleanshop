@@ -1,33 +1,6 @@
 import products from '../../../js/json/product/productInfo.json'
 import productTemplate from '../../../views/partials/product/productSlider.hbs'
-import '../../../sass/layout/product/productSlider.scss'
-
-
-import '../../../images/img/products/mobile/tuxedo-and-vest-mobile-1.jpg'
-import '../../../images/img/products/mobile/tuxedo-and-vest-mobile-2.jpg'
-import '../../../images/img/products/mobile/tuxedo-and-vest-mobile-3.jpg'
-import '../../../images/img/products/mobile/tuxedo-and-vest-mobile-4.jpg'
-import '../../../images/img/products/mobile/tuxedo-and-vest-mobile-5.jpg'
-
-import '../../../images/img/products/mobile/tuxedo-and-vest-mobile-1@2x.jpg'
-import '../../../images/img/products/mobile/tuxedo-and-vest-mobile-2@2x.jpg'
-import '../../../images/img/products/mobile/tuxedo-and-vest-mobile-3@2x.jpg'
-import '../../../images/img/products/mobile/tuxedo-and-vest-mobile-4@2x.jpg'
-import '../../../images/img/products/mobile/tuxedo-and-vest-mobile-5@2x.jpg'
-
-import '../../../images/img/products/desktop/tuxedo-and-vest-mini-desktop-1.jpg'
-import '../../../images/img/products/desktop/tuxedo-and-vest-mini-desktop-2.jpg'
-import '../../../images/img/products/desktop/tuxedo-and-vest-mini-desktop-3.jpg'
-import '../../../images/img/products/desktop/tuxedo-and-vest-mini-desktop-4.jpg'
-
-import '../../../images/img/products/desktop/tuxedo-and-vest-mini-desktop-1@2x.jpg'
-import '../../../images/img/products/desktop/tuxedo-and-vest-mini-desktop-2@2x.jpg'
-import '../../../images/img/products/desktop/tuxedo-and-vest-mini-desktop-3@2x.jpg'
-import '../../../images/img/products/desktop/tuxedo-and-vest-mini-desktop-4@2x.jpg'
-
-import '../../../images/svg/products/attension-sign.svg'
-import '../../../images/svg/products/hanger.svg'
-
+// import '../../../sass/layout/product/_productSlider.scss'
 
 
 window.jQuery = window.$ = require("jquery");

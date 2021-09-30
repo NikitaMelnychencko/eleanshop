@@ -183,6 +183,7 @@
 
 .product__currency {
   color: #caaf97;
+  // color: $selection-title-text-color;
 }
 
 .size__title {
@@ -232,7 +233,10 @@
 
 .options__item {
   // position: relative;
-  width: 150px;
+  @media screen and (max-width: 1377px) {
+    width: 150px;
+  }
+
   // padding-left: 30px;
 }
 
@@ -250,10 +254,12 @@
   line-height: 1.27;
   text-transform: uppercase;
   text-align: start;
-
+  cursor: pointer;
   letter-spacing: 0.02em;
 
   color: #b59475;
+
+  transition: color $time-cubic;
 
   @media screen and (min-width: 1378px) {
     font-size: 14px;
@@ -266,14 +272,9 @@
 }
 
 .options__icon {
-  background-color: royalblue;
   position: absolute;
   top: 0;
   left: 0;
-}
-
-.button__size-option:hover .options__icon {
-  background-color: #222222;
 }
 
 .colorpicker {
@@ -285,6 +286,8 @@
 
   @media screen and (min-width: 1378px) {
     margin-bottom: 20px;
+    padding-top: unset;
+    border-top: unset;
   }
 }
 
@@ -310,22 +313,36 @@
 }
 
 .button__colorpicker {
+  padding: 0;
   border: none;
   border-radius: 50%;
   width: 46px;
   height: 46px;
+  cursor: pointer;
+
+  transition: border-color $time-cubic;
 }
 
-.button__colorpicker--black {
-  background-color: #242424;
+.button__colorpicker--black .colorpicker__icon {
+  border: 1px solid #e2dfdf;
+  border-radius: 50%;
+  fill: #242424;
 }
 
-.button__colorpicker--red {
-  background-color: #f2404a;
+.button__colorpicker--red .colorpicker__icon {
+  border: 1px solid #e2dfdf;
+  border-radius: 50%;
+  fill: #f2404a;
 }
 
-.button__colorpicker--grey {
-  background-color: #e2dfdf;
+.button__colorpicker--grey .colorpicker__icon {
+  border: 1px solid #e2dfdf;
+  border-radius: 50%;
+  fill: #e2dfdf;
+}
+
+.button__colorpicker:hover .colorpicker__icon {
+  border-color: #b59475;
 }
 
 .button-block {
@@ -348,6 +365,7 @@
   text-align: center;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+  cursor: pointer;
   border: none;
   border-radius: 3px;
   border: 1px solid #e3e3e3;
@@ -355,13 +373,15 @@
   background: #ffffff;
   color: #242424;
 
+  transition: background-color $time-cubic, color $time-cubic;
+
   @media screen and (min-width: 414px) {
     width: 374px;
   }
 }
 
 .button:hover {
-  background: #242424;
+  background-color: #242424;
   color: #ffffff;
 }
 
@@ -370,7 +390,6 @@
 
   background: #242424;
   color: #ffffff;
-  border: transparent;
 }
 
 .button__buy:hover {
@@ -451,4 +470,7 @@
   border: none;
   background-color: transparent;
   padding: 0;
+  cursor: pointer;
+
+  transition: $time-cubic;
 }
