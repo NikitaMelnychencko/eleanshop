@@ -73,3 +73,7 @@ const inputDay = new modalData({
   
 })
 
+
+const deliveryMethod = document.querySelector('.delivery-method')
+
+deliveryMethod.addEventListener('click')

@@ -5,7 +5,7 @@
       <div class="delivery-method ">
           {{#each method.delivery}}
             <label class="delivery-method__item">
-              <input class="delivery-method__form-radio" type='radio' name='delivery-method' value={{value}} {{checked}}/>
+              <input class="delivery-method__form-radio" id={{id}} type='radio' name='delivery-method' value={{value}} {{checked}}/>
               <span class="delivery-method__text">{{text}}</span>
             </label>
           {{/each}}  
