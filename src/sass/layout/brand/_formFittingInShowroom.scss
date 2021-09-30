@@ -1,8 +1,5 @@
-
-
-.form-fitting-showroom.in-page{
-
-  background: #ffffff;
+.form-fitting-showroom.in-page {
+  background: $modal-background-color;
 
   // width: 100%;
 
@@ -13,10 +10,8 @@
   padding-bottom: 40px;
 }
 
-
-
-.form-fitting-showroom.in-form{
-  background: #ffffff;
+.form-fitting-showroom.in-form {
+  background: $modal-background-color;
 
   // width: 100%;
 
@@ -41,62 +36,38 @@
 }
 
 .form-fitting-showroom__title.in-page {
-
-  
-  
-
   text-transform: uppercase;
-
-
   margin-bottom: 24px;
   text-align: left;
-
   font-size: 18px;
-  line-height: 20px;
-  /* or 111% */
-
+  line-height: 1.1;
   letter-spacing: 0.05em;
-
-  color: #000000;
-
+  color: $button-hover-background-color;
 }
-
-
 
 .form-fitting-showroom__title.in-form {
   font-size: 20px;
-  line-height: 25px;
-  /* or 125% */
-
+  line-height: 1.25;
   text-align: center;
   letter-spacing: 0.05em;
-
-  color: #000000;
+  color: $button-hover-background-color;
   text-transform: uppercase;
   margin-bottom: 15px;
-
   @media screen and (min-width: 500px) and (max-width: $tablet-general) {
     margin-bottom: 24px;
     text-align: left;
-
     font-size: 18px;
-    line-height: 20px;
-    /* or 111% */
-
+    line-height: 1.1;
     letter-spacing: 0.05em;
-
-    color: #000000;
+    color: $button-hover-background-color;
   }
 
   @media screen and (min-width: $desktop-up) {
     font-size: 21px;
-    line-height: 20px;
-    /* or 95% */
-
+    line-height: 0.95;
     text-align: center;
     letter-spacing: 0.05em;
-
-    color: #000000;
+    color: $button-hover-background-color;
     margin-bottom: 30px;
   }
 }
@@ -108,32 +79,13 @@
   right: 15px;
   font-weight: 500;
   font-size: 18px;
-  line-height: 25px;
-  /* or 139% */
-
-  color: #9d9dad;
+  line-height: 1.4;
+  color: $sixth-text-color;
 }
 
-// .form-fitting-showroom__title::before {
-//   content: '';
-//   min-width: 60px;
-//   min-height: 60px;
-//   margin-right: 10px;
-//   background-image: url('./images/bluze.svg');
-//   // .img {background-image: url(../../../images/svg/exampl.svg%23bluze)};
-//   background-size: cover;
-//   background-position: center;
-//   background-repeat: no-repeat;
-//   fill: black;
-//   // .img {background-image: url(img.svg?fill=)}
-// }
-
-
-
-
 .form-fitting-showroom__horiz-block.in-page {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 .form-fitting-showroom__horiz-block.in-form {
   @media screen and (min-width: 500px) {
@@ -145,34 +97,26 @@
 .form-fitting-showroom__input,
 .form-fitting-showroom__comment {
   height: 60px;
-
-  border: 1px solid #000000;
+  border: 1px solid $button-hover-background-color;
   box-sizing: border-box;
   width: 100%;
   margin-bottom: 13px;
   padding: 18px;
-
   &::placeholder {
     text-transform: uppercase;
     font-weight: 500;
     font-size: 13px;
-    line-height: 25px;
-    /* or 192% */
-
+    line-height: 1.9;
     letter-spacing: 0.06em;
-
-    color: #a7a7a7;
+    color: $fourth-text-color;
   }
   &:focus {
-    // border: 2px solid #000000;
     outline: none;
   }
 }
 
-
 .form-fitting-showroom__input.in-page {
- 
-    min-width: 230px;
+  min-width: 230px;
 }
 
 .form-fitting-showroom__input.in-form {
@@ -195,15 +139,12 @@
 
   font-weight: 500;
   font-size: 13px;
-  line-height: 25px;
-  /* or 192% */
-
+  line-height: 1.9;
   display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.1em;
-
-  color: #000000;
+  color: $button-hover-background-color;
   text-transform: uppercase;
   background-color: transparent;
   border: none;
@@ -214,64 +155,51 @@
   width: 100%;
   &:focus,
   &:hover {
-    color: #ffffff;
+    color: $accent-btn-color;
   }
 }
-
-
 
 .form-fitting-showroom__button.in-page {
-  background: transparent;
-  transition: background 200ms cubic-bezier(0.4, 0, 0.2, 1);
-  border: 1px solid #000000;
+  transition: background $time-cubic;
+  border: 1px solid $button-hover-background-color;
   box-sizing: border-box;
-  // transform: matrix(-1, 0, 0, 1, 0, 0);
   height: 45px;
   width: 221px;
   margin-left: auto;
   &:focus,
   &:hover {
-    background: black;
+    background: $button-hover-background-color;
   }
-    height: 60px;
-    width: 180px;
-    flex-grow: 0;
-    margin-left: -1px;
+  height: 60px;
+  width: 180px;
+  flex-grow: 0;
+  margin-left: -1px;
 }
-
-
-
-
 
 .form-fitting-showroom__button.in-form {
-  background: transparent;
-  transition: background 200ms cubic-bezier(0.4, 0, 0.2, 1);
-  border: 1px solid #000000;
+  transition: background $time-cubic;
+  border: 1px solid $button-hover-background-color;
   box-sizing: border-box;
-  // transform: matrix(-1, 0, 0, 1, 0, 0);
   height: 45px;
   width: 221px;
   margin-left: auto;
   &:focus,
   &:hover {
-    background: black;
+    background: $button-hover-background-color;
   }
-  @media screen and (min-width: $mobile-general) {
+  @media screen and (min-width: $tablet-general) {
     height: 60px;
     width: 180px;
     flex-grow: 0;
     margin-left: -1px;
   }
 }
-
-
 
 .form-fitting-showroom__comment.in-page {
   resize: none;
   width: 100%;
-    height: 130px;
+  height: 130px;
 }
-
 
 .form-fitting-showroom__comment.in-form {
   resize: none;
@@ -286,13 +214,9 @@
   }
 }
 
-
-
-
 .form-fitting-showroom__comment-box.in-page {
-    flex-grow: 1;
+  flex-grow: 1;
 }
-
 
 .form-fitting-showroom__comment-box.in-form {
   @media screen and (min-width: $mobile-general) {
@@ -300,13 +224,9 @@
   }
 }
 
-
-
 .form-fitting-showroom__input-center.in-page {
-    border-left: none;
-
+  border-left: none;
 }
-
 
 .form-fitting-showroom__input-center.in-form {
   @media screen and (min-width: $tablet-general) {
@@ -319,29 +239,19 @@
   }
 }
 
-
 .form-fitting-showroom__icon.in-page {
   height: 34px;
   width: 31px;
-  stroke: #c0a78f;
+  stroke: $third-accent-color;
   margin-bottom: 23px;
-    position: absolute;
-    top: 27px;
-    right: 39px;
+  position: absolute;
+  top: 27px;
+  right: 39px;
 }
-
 
 .form-fitting-showroom__icon.in-form {
   height: 34px;
   width: 31px;
-  stroke: #c0a78f;
+  stroke: $third-accent-color;
   margin-bottom: 23px;
-
-  // @media screen and (min-width: $mobile-only) and (max-width: $tablet-only) {
-  //   position: absolute;
-  //   top: 27px;
-  //   right: 39px;
-  // }
 }
-
-
