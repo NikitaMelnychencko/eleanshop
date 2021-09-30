@@ -14,7 +14,7 @@ console.log(parsedData)
 const ordering = ordering_ordering({parsedData, orderingInsertion});
 
 const createCheckout = payment_checkout({ ordering })
-refs.main.insertAdjacentHTML('beforeend', createCheckout);
+refs.mainEL.insertAdjacentHTML('beforeend', createCheckout);
 
 
 
@@ -122,8 +122,8 @@ function getDiscount() {
 export const totalPrice = countTotalPrice();
 console.log(totalPrice)
 
-const testButton = document.querySelector('.testButton')
-testButton.addEventListener('click', settingDataToLocalStorage)
-function settingDataToLocalStorage() {
-    localStorage.setItem('orderingData', JSON.stringify(orderingInsertion));
-}
+// const testButton = document.querySelector('.testButton')
+// testButton.addEventListener('click', settingDataToLocalStorage)
+// function settingDataToLocalStorage() {
+//     localStorage.setItem('orderingData', JSON.stringify(orderingInsertion));
+// }
