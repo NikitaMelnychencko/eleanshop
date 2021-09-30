@@ -1,6 +1,7 @@
 import '../../images/img/exampl.jpg';
 import '../../images/svg/exampl.svg';
 //=========== hero========================
+
 import '../../images/img/page-hero/mobile/hero-title-01/hero-title-mobile-01.jpg';
 import '../../images/img/page-hero/mobile/hero-title-01/hero-title-mobile-01@2x.jpg';
 import '../../images/img/page-hero/mobile/hero-title-02/hero-title-mobile-02.jpg';
@@ -19,8 +20,6 @@ import '../../images/img/page-hero/desktop/hero-title-04/hero-title-desktop-04.j
 import '../../images/img/page-hero/desktop/hero-title-04/hero-title-desktop-04@2x.jpg';
 import '../../images/svg/hero-svg-original/hero-arrow-left.svg';
 import '../../images/svg/hero-svg-original/hero-arrow-right.svg';
-import '../../images/svg/clients-svg-original/clients-arrow-right.svg';
-import '../../images/svg/clients-svg-original/clients-arrow-right.svg';
 //============ starClients=========================
 import '../../images/img/page-clients/client-01/starClient-01.jpg';
 import '../../images/img/page-clients/client-01/starClient-01@2x.jpg';
@@ -46,7 +45,8 @@ import '../../images/svg/clients-svg-original/clients-arrow-right.svg';
 import '../../images/svg/clients-svg-original/clients-arrow-left.svg';
 import '../../images/img/homeReviewsChat/chatImage@1x.png';
 import '../../images/img/homeReviewsChat/chatImage@2x.png';
-
+import '../../images/svg/homeReviewsChat/Foreground.svg'
+import '../../images/svg/homeReviewsChat/Union.svg'
 //============product===========
 import '../../images/img/product/handSewn/handSewn-desktop-1.jpg';
 import '../../images/img/product/handSewn/handSewn-desktop-1@2x.jpg';
