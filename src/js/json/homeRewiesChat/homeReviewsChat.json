@@ -1,0 +1,47 @@
+[
+    {
+        "image":{
+            "src": "./images/chatImage@1x.png",
+            "srcset":"./images/chatImage@1x.png 1x, ./images/chatImage@2x.png 2x",
+            "description": "client's photo"
+        },
+        "client-name": "Екатерина",
+        "review-text": "Да, доставка заграницу осуществляется курьерской службой до двери. Доставка заграницу оплачивается при оформлении заказа, фиксированная стоимость 1 200 ",
+        "city": "г.Киев",
+        "date": "26 Марта 2017"
+    },
+    {
+        "image":{
+            "src": "./images/chatImage@1x.png",
+            "srcset":"./images/chatImage@1x.png 1x, ./images/chatImage@2x.png 2x",
+            "description": "client's photo"
+        },
+        "client-name": "Екатерина",
+        "review-text": "Да, доставка заграницу осуществляется курьерской службой до двери. Доставка заграницу оплачивается при оформлении заказа, фиксированная стоимость 1 200 ",
+        "city": "г.Киев",
+        "date": "26 Марта 2017"
+    },
+    {
+        "image":{
+            "src": "",
+            "srcset":"",
+            "description": ""
+        },
+        "client-name": "Екатерина",
+        "review-text": "Да, доставка заграницу осуществляется курьерской службой до двери. Доставка заграницу оплачивается при оформлении заказа, фиксированная стоимость 1 200 ",
+        "city": "г.Киев",
+        "date": "26 Марта 2017"
+    },
+    {
+        "image":{
+            "src": "./images/chatImage@1x.png",
+            "srcset":"./images/chatImage@1x.png 1x, ./images/chatImage@2x.png 2x",
+            "description": "client's photo"
+        },
+        "client-name": "Екатерина",
+        "review-text": "Да, доставка заграницу осуществляется курьерской службой до двери. Доставка заграницу оплачивается при оформлении заказа, фиксированная стоимость 1 200 ",
+        "city": "г.Киев",
+        "date": "26 Марта 2017"
+    }
+
+]
