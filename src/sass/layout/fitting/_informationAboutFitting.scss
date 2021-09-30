@@ -5,7 +5,7 @@
 }
 
 /* fitting shipping */
-.fitting_heading{
+.fitting__heading{
     font-size: 21px;
     font-weight: 400;
     line-height: 1;
@@ -16,7 +16,7 @@
     margin-left: auto;
     margin-right: auto;
 }
-.fitting_minor-title{
+.fitting__minor-title{
   
     font-size: 18px;
     line-height: 1.1;
@@ -25,7 +25,7 @@
     margin-right: auto;
 }
 
-.fitting_product-shipping--description{
+.fitting__product-shipping--description{
     font-size: 15px;
     line-height: 20px;
     letter-spacing: 0.05em;
@@ -34,7 +34,7 @@
     padding-left: 30px;
     position: relative;
 }
-.fitting_product-shipping--description::before{
+.fitting__product-shipping--description::before{
     content: "";
     width: 15px;
     height: 1px;
@@ -45,7 +45,7 @@
   top: 10px;
   left: 0px;
 }
-.fitting_product-shipping--container{
+.fitting__product-shipping--container{
     max-width:374px;
     margin-left: auto;
     margin-right: auto;

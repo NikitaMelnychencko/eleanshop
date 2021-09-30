@@ -63,34 +63,34 @@ li {
     margin-left: 1050px;
   }
 
-  .fitting_heading {
+  .fitting__heading {
     text-align: center;
   }
-/*   .fitting_section {
+   .fitting__section {
     background: url('./images/elean47390.png') 0 0 /100% no-repeat;
-  } */
+  } 
 
-  .fitting_size-table {
+  .fitting__size-table {
     background-color: #f9f9f9;
     padding: 35px;
   }
-  .fitting_minor-title {
+  .fitting__minor-title {
     margin-bottom: 35px;
     margin-top: 0;
   }
-  .fitting_description-item {
+  .fitting__description-item {
     padding: 15px;
   }
-  .fitting_video-slider {
+  .fitting__video-slider {
     background-color: #f9f9f9;
     padding: 35px;
   }
-  .fitting_video,
-  .fitting_first-video {
+  .fitting__video,
+  .fitting__first-video {
     width: 183px;
     display: block;
   }
-  .fitting_video-slider-container {
+  .fitting__video-slider-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
