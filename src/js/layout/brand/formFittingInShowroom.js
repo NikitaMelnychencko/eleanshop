@@ -30,8 +30,6 @@ formFittingInShowroom.form.addEventListener('submit', e => {
     formFittingComment: e.target.formFittingComment.value,
   };
 
-  // console.dir(formFittingData);
-
   localStorage.setItem('formFittingData', JSON.stringify(formFittingData)); //отправляет в localData
 
   localStorage.removeItem('formFittingData-name');
@@ -43,7 +41,6 @@ formFittingInShowroom.form.addEventListener('submit', e => {
   e.target.formFittingTime.value = '';
   e.target.formFittingComment.value = '';
 });
-// console.dir(formFittingInShowroom.form.elements);
 formFittingInShowroom.form.elements.formFittingName.value =
   localStorage.getItem('formFittingData-name');
 formFittingInShowroom.form.elements.formFittingTel.value =
@@ -80,7 +77,7 @@ if (formFittingInShowroom.box.offsetWidth > 499 && formFittingInShowroom.box.off
   allInputFormFitting[0].classList.add('in-page');
   allInputFormFitting[1].classList.add('in-page');
   allInputFormFitting[2].classList.add('in-page');
-  console.log('в странице');
+  // console.log('в странице');
 } else {
   formFittingInShowroom.box.classList.add('in-form');
   formFittingInShowroom.box.querySelector('.form-fitting-showroom__title').classList.add('in-form');
@@ -108,5 +105,5 @@ if (formFittingInShowroom.box.offsetWidth > 499 && formFittingInShowroom.box.off
   allInputFormFitting[0].classList.add('in-form');
   allInputFormFitting[1].classList.add('in-form');
   allInputFormFitting[2].classList.add('in-form');
-  console.log('в форме');
+  // console.log('в форме');
 }

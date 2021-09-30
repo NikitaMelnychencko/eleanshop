@@ -195,6 +195,19 @@
   }
 }
 
+.form-fitting-showroom__comment-box::after {
+  @media screen and (min-width: $desktop-up) {
+    content: 'Поля отмеченные “*” обязательны для заполнения';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.3;
+    color: $seventh-text-color;
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+  }
+}
+
 .form-fitting-showroom__comment.in-page {
   resize: none;
   width: 100%;
@@ -215,10 +228,12 @@
 }
 
 .form-fitting-showroom__comment-box.in-page {
+  position: relative;
   flex-grow: 1;
 }
 
 .form-fitting-showroom__comment-box.in-form {
+  position: relative;
   @media screen and (min-width: $mobile-general) {
     flex-grow: 1;
   }

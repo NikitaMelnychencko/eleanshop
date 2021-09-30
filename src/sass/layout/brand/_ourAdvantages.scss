@@ -3,6 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 40px;
   @media screen and (min-width: $tablet-general) {
     min-block-size: 100%;
     margin-top: 20px;
@@ -28,7 +29,6 @@
   letter-spacing: 0.05em;
   color: $third-accent-color;
   box-sizing: border-box;
-  margin-bottom: 40px;
 }
 
 .brand-section-our-advantages {
