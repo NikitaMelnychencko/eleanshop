@@ -9,7 +9,7 @@ import orderingInsertion from '../../json/orderinginsertion.json'
 localStorage.setItem('orderingData', JSON.stringify(orderingInsertion));
 const savedData = localStorage.getItem('orderingData')
 const parsedData = JSON.parse(savedData)
-console.log(parsedData)
+// console.log(parsedData)
 
 const ordering = ordering_ordering({parsedData, orderingInsertion});
 
@@ -29,6 +29,9 @@ cards.addEventListener('click', setQuantityOrRemove);
 orderingApplyBtn.addEventListener('click', countTotalPriceWithDiscount);
 
 function setQuantityOrRemove(e) {
+//      if(e.target === undefined){
+// return
+// }
     if (e.target.classList.contains('ordering__btn--plus')) {
         orderingIncrement(e);
 
@@ -41,7 +44,7 @@ function setQuantityOrRemove(e) {
                 let totalPricePerItem = Number(pricePerItem) / (newValue-1) + Number(pricePerItem);
 
                 priceSpan.textContent = totalPricePerItem
-                countTotalPrice()
+                renewTotalPriceWithDiscount()
             }
         }   
     }    
@@ -60,13 +63,15 @@ function setQuantityOrRemove(e) {
                 let totalPricePerItem = Number(pricePerItem) - Math.round(Number(pricePerItem) / (newValue+1));
                 if (checker) {
                     priceSpan.textContent = totalPricePerItem;
-                    countTotalPrice()
+                    renewTotalPriceWithDiscount()
+
                 }
             }
         }         
     } 
     else if (e.target.classList.contains('ordering__close')) {
         removeOrderingCard(e);
+    
     }  
 }
 
@@ -90,8 +95,9 @@ function removeOrderingCard(e) {
 for (let i = 0; i <= arr.length; i += 1){
     if (arr[i].contains(e.target)) {
         e.currentTarget.removeChild(arr[i]);
+        renewTotalPriceWithDiscount();
     }
-}
+    }    
 }
 
 function countTotalPrice(e) {
@@ -109,7 +115,21 @@ function countTotalPriceWithDiscount(e) {
     let discount = getDiscount();
     orderingDiscount.textContent = discount;
     orderingTotal.textContent = totalPrice - (totalPrice / 100 * discount);
-   
+}
+
+function renewTotalPriceWithDiscount() {
+    const totalPrice = countTotalPrice();
+    let finalPrice = 0;
+        const discountValue = Number(orderingDiscount.innerText);
+        if (discountValue !== undefined) {
+            finalPrice = totalPrice - (totalPrice / 100 * discountValue);
+            orderingTotal.textContent = finalPrice;
+        } else {
+            finalPrice = totalPrice
+            orderingTotal.textContent = finalPrice;
+        }
+    
+    return finalPrice
 }
 
 function getDiscount() {
@@ -119,11 +139,8 @@ function getDiscount() {
     return gettingPromocodeObject.discount
 }
 
-export const totalPrice = countTotalPrice();
-console.log(totalPrice)
+// в totalPrice лежит функция, которая возвращает итоговую стоимость
+export const totalPrice =  renewTotalPriceWithDiscount.bind();
+// console.log(totalPrice())
 
-// const testButton = document.querySelector('.testButton')
-// testButton.addEventListener('click', settingDataToLocalStorage)
-// function settingDataToLocalStorage() {
-//     localStorage.setItem('orderingData', JSON.stringify(orderingInsertion));
-// }
+

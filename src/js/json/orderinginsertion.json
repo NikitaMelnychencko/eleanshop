@@ -1,6 +1,6 @@
 {"card":[
     {    "label":
-        {"id": "qwERtyu09", "name": "Белый смокинг и брюки с лампасами", "img": "./images/white-suit.jpg"}
+        {"id": "qwERtyu09", "name": "Белый смокинг и брюки с лампасами", "img": "./images/white-suit.jpg", "price": "10000"}
     ,
 
     "color": [
@@ -18,7 +18,7 @@
     ]
 },
 {    "label":
-        {"id": "qwERtyu09", "name": "Красный смокинг и брюки с лампасами", "img": "./images/white-suit.jpg"}
+        {"id": "qwERtyu09", "name": "Красный смокинг и брюки с лампасами", "img": "./images/white-suit.jpg", "price": "10000"}
     ,
 
     "color": [
