@@ -20,6 +20,16 @@ import '../../images/img/page-hero/desktop/hero-title-04/hero-title-desktop-04.j
 import '../../images/img/page-hero/desktop/hero-title-04/hero-title-desktop-04@2x.jpg';
 import '../../images/svg/hero-svg-original/hero-arrow-left.svg';
 import '../../images/svg/hero-svg-original/hero-arrow-right.svg';
+import '../../images/svg/clients-svg-original/clients-arrow-right.svg';
+import '../../images/svg/clients-svg-original/clients-arrow-right.svg';
+//============ homeAboutBrand======================
+import '../../images/img/homeAboutBrand/aboutBrandArrow.png';
+import '../../images/img/homeAboutBrand/aboutBrandDesktop@1x.jpg';
+import '../../images/img/homeAboutBrand/aboutBrandDesktop@2x.jpg';
+import '../../images/img/homeAboutBrand/aboutBrandMob@1x.jpg';
+import '../../images/img/homeAboutBrand/aboutBrandMob@2x.jpg';
+
+
 //============ starClients=========================
 import '../../images/img/page-clients/client-01/starClient-01.jpg';
 import '../../images/img/page-clients/client-01/starClient-01@2x.jpg';
