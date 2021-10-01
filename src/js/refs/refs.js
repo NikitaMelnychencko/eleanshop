@@ -9,4 +9,8 @@ export default {
   bodyEl: document.querySelector('body'),
   mainEL: document.querySelector('main'),
   delheadnav: document.querySelector('.js-nav-product'),
+
+  main: document.querySelector('main'),
+  bodyEl: document.querySelector('body'),
+  mainEL: document.querySelector('main'),
 };
