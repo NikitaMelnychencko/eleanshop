@@ -1,50 +1,188 @@
 <!DOCTYPE html>
+
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ELEANSHOP</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
-      integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
-      crossorigin="anonymous"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Jost&family=Lato:wght@400;700&family=Open+Sans&family=Red+Hat+Text:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
-  </head>
 
-  <body>
-    <header>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ELEANSHOP</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+    crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Jost&family=Lato:wght@400;700&family=Open+Sans&family=Red+Hat+Text:wght@400;500&display=swap"
+    rel="stylesheet" />
+</head>
 
-    </header>
-    <main>
-<h1  class="reviews_title"> Отзывы </h1>
-<!-- В этот список добавляй элементы видео сетки -->
-<ul class="videoset js-videoset" >
-</ul>
-<!--
-  Модальное окно для плеера с рандомным видео
+<body>
+  <header class="header">
+    <div class="container header-container">
+      <!-- //! ШАПКА-ПОЧАТОК -->
+      <div class="head">
+        <!-- Кнопка моб меню-початок -->
+        <button class="button button-open" type="button">
+          <svg class="button__svg-open">
+            <use href="./images/header.svg#header-mobile-burger"></use>
+          </svg>
+        </button>
+        <button class="button button-close" type="button">
+          <svg class="button__svg-close">
+            <use href="./images/header.svg#header-mobile-close"></use>
+          </svg>
+        </button>
+        <!-- Кнопка моб меню-кінець -->
+        <!-- Соцмережі_Декстоп-початок -->
+        <ul class="social-list-desktop">
+          <li class="social-list-desktop__item">
+            <a class="social-list-desktop__link" href="https://www.instagram.com/" target="_blank"
+              rel="noreferrer noopener">
+              <svg class="social-list-desktop__svg" width="18" height="18">
+                <use href="./images/header.svg#header-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-list-desktop__item">
+            <a class="social-list-desktop__link" href="https://uk-ua.facebook.com/" target="_blank"
+              rel="noreferrer noopener">
+              <svg class="social-list-desktop__svg" width="8" height="18">
+                <use href="./images/header.svg#header-facebook1"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <!-- Соцмережі_Декстоп-кінець -->
+        <!-- Логотип-початок -->
+        <a class="header-logo" href="./index.html">
+          <svg class="header-logo__svg-elean">
+            <use href="./images/header.svg#header-logo"></use>
+          </svg>
+          <svg class="header-logo__svg-e" width="20" height="26">
+            <use href="./images/header.svg#header-logo-e"></use>
+          </svg>
+          <p class="header-logo__text">ЖЕНСКИЙ</br>СМОКИНГ</p>
+        </a>
+        <!-- Логотип-кінець -->
+        <!-- Телефон-початок -->
+        <a class="header-phone" href="tel:+380990000000">+38(099)-000-00-00</a>
+        <!-- Телефон-кінець-->
+        <!-- Обране_Корзина-початок -->
+        <ul class="product-list">
+          <li class="product-list__item">
+            <a class="product-list__link" href="#">
+              <svg class="product-list__svg-favorites">
+                <use href="./images/header.svg#header-favorites"></use>
+              </svg>
+              <p class="product-list__text">0</p>
+            </a>
+          </li>
+          <li class="product-list__item">
+            <a class="product-list__link js-bin" href="#">
+              <svg class="product-list__svg-bin">
+                <use href="./images/header.svg#header-bin">
+                </use>
+              </svg>
+              <p class="product-list__text">0</p>
+            </a>
+          </li>
+        </ul>
+        <!-- Обране_Корзина-кінець -->
+      </div>
+      <!--//! ШАПКА-КІНЕЦЬ -->
 
--->
+      <!--//! НАВІГАЦІЯ-ПОЧАТОК -->
+      <nav class="navigation">
+        <ul class="navigation-list">
+          <li class="navigation-list__item">НОВИНКИ</li>
+          <li class="navigation-list__item">КАТЕГОРИИ
+            <ul class="navigation-sublist">
+              <li class="navigation-sublist__subitem">Юбки</li>
+              <li class="navigation-sublist__subitem">Смокинг</li>
+              <li class="navigation-sublist__subitem">Костюмы</li>
+              <li class="navigation-sublist__subitem">Аксессуары</li>
+              <li class="navigation-sublist__subitem">Брюки</li>
+              <li class="navigation-sublist__subitem">Блузы</li>
+              <li class="navigation-sublist__subitem">Платья</li>
+              <li class="navigation-sublist__subitem">Топы и жилеты</li>
+            </ul>
+          </li>
+          <li class="navigation-list__item">НАШИ КОЛЛЕКЦИИ
+            <ul class="navigation-sublist">
+              <li class="navigation-sublist__subitem">Осень-зима 20-21</li>
+              <li class="navigation-sublist__subitem">Смокинг</li>
+              <li class="navigation-sublist__subitem">Костюмы</li>
+              <li class="navigation-sublist__subitem">Аксессуары</li>
+            </ul>
+          </li>
+          <li class="navigation-list__item">ПОКУПАТЕЛЯМ
+            <ul class="navigation-sublist">
+              <li class="navigation-sublist__subitem">Доставка</li>
+              <li class="navigation-sublist__subitem">Акции</li>
+              <li class="navigation-sublist__subitem">Возврат</li>
+              <li class="navigation-sublist__subitem">Размерная таблица</li>
+              <li class="navigation-sublist__subitem">Примерка</li>
+              <li class="navigation-sublist__subitem">Оптовым покупателям</li>
+            </ul>
+          </li>
+          <li class="navigation-list__item">О БРЕНДЕ
+            <ul class="navigation-sublist">
+              <li class="navigation-sublist__subitem">Шоурум</li>
+              <li class="navigation-sublist__subitem">Отзывы</li>
+              <li class="navigation-sublist__subitem">Статьи</li>
+              <li class="navigation-sublist__subitem">Блог</li>
+            </ul>
+          </li>
+          <li class="navigation-list__item">ШОУРУМ</li>
+          <li class="navigation-list__item">КОНТАКТЫ
+            <ul class="navigation-sublist">
+              <li class="navigation-sublist__subitem">Шоурум</li>
+              <li class="navigation-sublist__subitem">Отзывы</li>
+              <li class="navigation-sublist__subitem">Статьи</li>
+              <li class="navigation-sublist__subitem">Блог</li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <!--//! НАВІГАЦІЯ-ПОЧАТОК -->
 
-<!-- <div class="videobox js-videobox">
-  <div class="videobox__overlay"></div>
+      <!--//! СОЦМЕРЕЖІ_МОБІЛЬНА-ПОЧАТОК -->
+      <ul class="social-list-mobile">
+        <li class="social-list-mobile__item">
+          <a class="social-list-mobile__link" href="https://web.whatsapp.com/" target="_blank"
+            rel="noreferrer noopener">
+            <svg class="social-list-mobile__svg" width="16" height="16">
+              <use href="./images/header.svg#header-whatsapp"></use>
+            </svg>WhatsApp</a>
+        </li>
+        <li class="social-list-mobile__item">
+          <a class="social-list-mobile__link" href="https://uk-ua.facebook.com/" target="_blank"
+            rel="noreferrer noopener">
+            <svg class="social-list-mobile__svg" width="16" height="16">
+              <use href="./images/header.svg#header-facebook"></use>
+            </svg>Facebook</a>
+        </li>
+        <li class="social-list-mobile__item">
+          <a class="social-list-mobile__link" href="https://web.telegram.org/k/" target="_blank"
+            rel="noreferrer noopener">
+            <svg class="social-list-mobile__svg" width=" 18" height="16">
+              <use href="./images/header.svg#header-telegram"></use>
+            </svg>Telegram</a>
+        </li>
+        <li class="social-list-mobile__item">
+          <a class="social-list-mobile__link" href="mailto:info@eleanboutique.ua">
+            <svg class="social-list-mobile__svg" width="18" height="16">
+              <use href="./images/header.svg#header-email"></use>
+            </svg>E-mail</a>
+        </li>
+      </ul>
+      <!--//! СОЦМЕРЕЖІ_МОБІЛЬНА-КІНЕЦЬ -->
 
-  <div class="videobox__content">
-    <video class="video-set__video" src="https://www.pexels.com/video/a-happy-woman-at-a-hat-store-5699621" poster="{{poster}}" controls preload="auto"  ></video>
-  </div>
+    </div>
+  </header>
+  <main></main>
+  <footer></footer>
+</body>
 
-  <button type="button" class="videobox__button" data-action="close-videobox"></button>
-</div> -->
-
-<script src="../src/index.js"></script>
-    </main>
-    <footer></footer>
-  </body>
 </html>
