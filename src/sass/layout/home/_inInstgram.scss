@@ -32,12 +32,12 @@
 /* Basic styles */
 
 /* Slider */
-.slick-slider {
+.in-instagram .slick-slider {
   min-width: 0;
 }
 
 /* Bounding shell */
-.slick-list {
+.in-instagram .slick-list {
   overflow: hidden;
 
   @media screen and (min-width: $mobile-first) and (max-width: $mobile-general) {
@@ -46,7 +46,7 @@
 }
 
 /* Slide Ribbon */
-.slick-track {
+.in-instagram .slick-track {
   display: flex;
   align-items: flex-start;
 }
@@ -117,8 +117,8 @@
   width: 290px;
   height: 410px;
 
-    @media screen and (min-width: $desktop-up) {
-  width: 260px;
-  height: 370px;
+  @media screen and (min-width: $desktop-up) {
+    width: 260px;
+    height: 370px;
   }
 }
