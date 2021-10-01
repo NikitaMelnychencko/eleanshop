@@ -1,5 +1,5 @@
-import { refs } from '../../refs/refs.js'
-import set from '../../../../src/js/json/exampl.json';
+import  refs  from '../../refs/refs.js'
+// import set from '../../../../src/js/json/videoSet.json';
 import setHbs from "../../../../src/views/partials/reviews/videoSet.hbs";
 import '../../../sass/layout/reviews/_videoSet.scss'
 import '../../../images/img/Reviews/poster/Black2V.jpg'
@@ -7,28 +7,39 @@ import '../../../images/img/Reviews/poster/23.jpg'
 import '../../../images/img/Reviews/poster/55.jpg'
 import '../../../images/img/Reviews/poster/78.jpg'
 
-window.jQuery = window.$ = require('jquery');
-require('');
+// window.jQuery = window.$ = require('jquery');
+// require('../../slick/slick.min.js');
+
+const { mainEL } = refs;
+// console.log(refs)
 
 
-
-// const { setList, videobox, overlay, videoEl, BtnEl } = refs;
 // 1. Содание разметки сета
-const createSetList = (set) => {
-    return setHbs(set);
-}
-$('.videoset').slick({
-  dots: true,
+// const createSetList = (set) => {
+//     return setHbs(set);
+// }
+
+
+// $('.lolo').slick({
+//   dots: true,
+//   infinite: true,
+//   speed: 300,
+//   slidesToShow: 1,
+//   adaptiveHeight: true
+// });
+
+$('.lolo').slick({
   infinite: true,
-  speed: 300,
-  slidesToShow: 1,
-  adaptiveHeight: true
+  slidesToShow: 3,
+  slidesToScroll: 3,
 });
 
-const setListMarkup = createSetLis(set);
+const setListMarkup = createSetList(set);
 
-refs.setList.insertAdjacentHTML('beforeend',setListMarkup);
+//  mainEL.insertAdjacentHTML('beforeend',setListMarkup);
 
+const setVideoHbs = setHbs(set)
+mainEL.insertAdjacentHTML('beforeend', setVideoHbs);
 
 // // 2. Создание click
 // setList.addEventListener('click', onOpenModal);
