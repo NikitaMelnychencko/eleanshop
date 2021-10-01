@@ -36,5 +36,42 @@ $(document).ready(function () {
     waitForAnimate: true,
     mobileFirst: true,
     variableWidth: true,
+
+    responsive: [
+      {
+        breakpoint: 1377,
+        settings: {
+          autoplay: false,
+          infinite: false,
+          autoplay: false,
+          draggable: false,
+          swipe: false,
+          touchMove: false,
+          dots: false,
+          // mobileFirst: false,
+          // centerMode: true,
+          // centerPadding: '60px',
+        },
+      },
+    ],
+    //centerMode: false, // center-mod
+    //variableWidth: false, // side protrusion floor slide
+    //rows: 1, // rows of sliders (2-3 or more photos at once)
+    //slidesPerRow: 1, // number of slides in a row
+    //vertical: false, // vertical slider (if true - turn off flex)
+    //verticalSwiping: false, // vertical swipe manually
+    //fade: false, // replaces flipping with a teleport)))
+    // asNavFor: 'class-slider', // exchange of classes between sliders
+    //mobileFirst: false, // ( true = 721px+ / false = +721px)
+    //appendArrows:$('class-name'), // $('.class-name') move arrows
+    //appendDots:$('class-name'), // $('.class-name') move points
+    //responsive: [
+    //  {
+    //    breakpoint: 768,
+    //    settings: {
+    //      slidesToShow: 2,
+    //    },
+    //  },
+    //],
   });
 });
