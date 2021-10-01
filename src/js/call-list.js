@@ -3,7 +3,6 @@ function homeRender() { }
 //=====brand========//
 function brandRender() { }
 //=====checkout========//
-
 function checkoutRender() { }
 //=====contact========//
 function contactRender() { }

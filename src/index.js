@@ -1,6 +1,6 @@
 import './sass/main.scss';
 import './js/importImages/importImages.js';
-
+import './js/call-list.js';
 //=========layout===============
 //static
 import './js/layout/static/header.js';
@@ -53,7 +53,6 @@ import './js/layout/favorites/favorites.js';
 import './js/layout/favorites/sabmitEmail.js';
 // backfrop
 import './js/components/backdrop.js';
-
 
 //test
 import './js/test/test_productHandSewn.js';
