@@ -1,8 +1,22 @@
-
+//=====home========//
 function homeRender() { }
+//=====brand========//
 function brandRender() { }
-function homeRender() { }
-function homeRender() { }
-function homeRender() { }
-function homeRender() { }
-function homeRender() { }
+//=====checkout========//
+
+function checkoutRender() { }
+//=====contact========//
+function contactRender() { }
+//=====delivery========//
+function deliveryRender() { }
+//=====favorites========//
+function favoritesRender() { }
+//=====fitting========//
+function fittingRender() { }
+//=====product========//
+function productRender() { }
+//=====reviews========//
+function reviewsRender() { }
+//=====showroom========//
+function showroomRender() { }
+
