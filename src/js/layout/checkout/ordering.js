@@ -24,7 +24,7 @@ const orderingDiscount = document.querySelector('.ordering__discount--value');
 const orderingTotal = document.querySelector('.ordering__total')
 const cards = document.querySelector('.ordering__cards');
 
-window.onload = countTotalPrice()
+window.onload = renewTotalPriceWithDiscount()
 cards.addEventListener('click', setQuantityOrRemove);
 orderingApplyBtn.addEventListener('click', countTotalPriceWithDiscount);
 
@@ -139,7 +139,7 @@ function getDiscount() {
     return gettingPromocodeObject.discount
 }
 
-// в totalPrice лежит функция, которая возвращает итоговую стоимость
+// в totalPrice лежит функция, которая возвращает итоговую стоимость, но нужно проверять, сработает ли правильно
 export const totalPrice =  renewTotalPriceWithDiscount.bind();
 // console.log(totalPrice())
 
