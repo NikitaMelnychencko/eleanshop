@@ -45,7 +45,7 @@ module.exports = {
             options: {
               limit: false,
               mimetype: 'image/png',
-              name: '/images/[name].[ext]',
+              name: 'images/[name].[ext]',
             },
           },
         ],
