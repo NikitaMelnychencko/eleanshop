@@ -19,7 +19,6 @@ import './js/layout/сatalog/gallery.js';
 //product
 import './js/layout/product/infoAboutProduct.js';
 import './js/layout/product/recomendationsCategory.js';
-import './js/layout/product/productCreateInfo.js';
 import './js/layout/product/productSlider.js';
 import './js/layout/product/test_recomendationsCategory.js';
 import './js/layout/product/productHandSewn.js';
