@@ -1,0 +1,30 @@
+.catalog-category-header,
+.catalog-collection-header {
+  font-family: var($third-font-family);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  color: #000000;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.catalog-collection-header {
+  margin-top: 30px;
+}
+.category-item {
+  font-family: var($third-font-family);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.4;
+  color: #222222;
+}
+
+.category-item:hover,
+.category-item:focus,
+.collection-item:hover,
+.collection-item:focus {
+  color: #ae9177;
+}
