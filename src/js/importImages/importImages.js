@@ -32,6 +32,18 @@ import '../../images/img/homeAboutBrand/aboutBrandDesktop@2x.jpg';
 import '../../images/img/homeAboutBrand/aboutBrandMob@1x.jpg';
 import '../../images/img/homeAboutBrand/aboutBrandMob@2x.jpg';
 
+// >>>>>>> a4a4a70554071a4464465d78bf4a9265196b1d95
+//============ page-Brand======================
+import '../../images/img/brand/elena-des.jpg';
+import '../../images/img/brand/elena-des@2x.jpg';
+import '../../images/img/brand/elena-mob.jpg';
+import '../../images/img/brand/elena-mob@2x.jpg';
+import '../../images/img/brand/two-an-des.jpg';
+import '../../images/img/brand/two-an-des@2x.jpg';
+import '../../images/img/brand/two-an-mob.jpg';
+import '../../images/img/brand/two-an-mob@2x.jpg';
+import '../../images/img/brand/brand-video-image.jpg';
+
 //============ starClients=========================
 import '../../images/img/page-clients/client-01/starClient-01.jpg';
 import '../../images/img/page-clients/client-01/starClient-01@2x.jpg';
