@@ -86,3 +86,11 @@ import '../../images/img/product/handSewn/handSewn-bg-right.png';
 import '../../images/img/product/handSewn/handSewn-bg-left.png';
 import '../../images/svg/sprite.svg';
 import '../../images/svg/thanks_for_ordering.svg';
+//===============payment===========================
+
+import '../../images/img/checkout/payment/buyers.jpg'
+import '../../images/img/checkout/payment/buyers@2x.jpg'
+import '../../images/img/checkout/payment/mirror_reflection.jpg'
+import '../../images/img/checkout/payment/mirror_reflection@2x.jpg'
+import '../../images/svg/murkup.svg'
+import '../../images/svg/murkup_arow.svg'
