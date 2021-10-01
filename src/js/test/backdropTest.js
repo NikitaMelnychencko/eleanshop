@@ -5,7 +5,6 @@ import modalFormMarkupTempl from '../../views/components/thanksForOrdering.hbs';
 let throttle = require('lodash.throttle');
 
 const btnRef = document.querySelector('[data-modal-open]');
-//btnRef.addEventListener('click', onBtnClick);
 
 function onBtnClick(event) {
   const backdropRef = document.querySelector('[data-modal]');

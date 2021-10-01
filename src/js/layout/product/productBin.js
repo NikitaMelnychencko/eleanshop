@@ -100,7 +100,7 @@ export default class ProductBin {
 
   _onClickNext = () => {
     this._onCloseModal();
-    //функция нажатия на кнопку Оформить заказ
+    //function of clicking on the Checkout button
   };
 
   _setEvent = () => {
