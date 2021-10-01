@@ -87,6 +87,14 @@ import '../../images/img/product/handSewn/handSewn-bg-left.png';
 import '../../images/svg/sprite.svg';
 import '../../images/svg/thanks_for_ordering.svg';
 
+//==============blockHelp=================
+import '../../images/svg/blockHelp/arrow.svg';
+import '../../images/svg/blockHelp/cross.svg';
+import '../../images/svg/blockHelp/helpChat.svg';
+import '../../images/svg/blockHelp/helpPhone.svg';
+import '../../images/svg/blockHelp/rectangleWhite.svg';
+
+
 
 //============inInstagram===========
 import '../../images/img/page-in-instagram/we-are-in-insta-01.jpg';
@@ -109,3 +117,4 @@ import '../../images/img/checkout/payment/mirror_reflection.jpg'
 import '../../images/img/checkout/payment/mirror_reflection@2x.jpg'
 import '../../images/svg/murkup.svg'
 import '../../images/svg/murkup_arow.svg'
+
