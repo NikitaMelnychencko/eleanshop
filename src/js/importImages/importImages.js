@@ -31,6 +31,7 @@ import '../../images/img/homeAboutBrand/aboutBrandDesktop@2x.jpg';
 import '../../images/img/homeAboutBrand/aboutBrandMob@1x.jpg';
 import '../../images/img/homeAboutBrand/aboutBrandMob@2x.jpg';
 
+// >>>>>>> a4a4a70554071a4464465d78bf4a9265196b1d95
 //============ page-Brand======================
 import '../../images/img/brand/elena-des.jpg';
 import '../../images/img/brand/elena-des@2x.jpg';
@@ -70,6 +71,8 @@ import '../../images/img/homeReviewsChat/chatImage@2x.png';
 import '../../images/svg/homeReviewsChat/Foreground.svg';
 import '../../images/svg/homeReviewsChat/Union.svg';
 import '../../images/svg/homeReviewsChat/arrow-up-circle-fill.svg';
+
+// >>>>>>> a4a4a70554071a4464465d78bf4a9265196b1d95
 //============product===========
 import '../../images/img/product/handSewn/handSewn-desktop-1.jpg';
 import '../../images/img/product/handSewn/handSewn-desktop-1@2x.jpg';
