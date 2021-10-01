@@ -2,21 +2,15 @@ import payment_payment from '../../../views/partials/checkout/payment.hbs'
 import payment_checkout from '../../../views/layouts/checkout.hbs'
 import method from '../../json/method.json'
 import refs from '../../refs/refs.js'
-
-
-
+ require('geteventlisteners')
 const createPayment = payment_payment({ method })
 const createCheckout = payment_checkout({ createPayment })
 refs.mainEL.insertAdjacentHTML('beforeend', createCheckout)
 
-// const infoEL = document.querySelector('.basic-information')
-// const arrInputInfo = infoEL.querySelectorAll('input')
-// const textareaInfo = infoEL.querySelector('textarea')
 
 class localStor{
   constructor() {
     this._refs = this._getRefs()
-    
     this._addEventDelivery()
     this._addEventPayment()
     this._addEventBasicInformation()
@@ -27,11 +21,10 @@ class localStor{
       formDay: document.querySelector('.showroom-method'),
       delivery: document.querySelector('.delivery-method'),
       payment: document.querySelector('.payment'),
-      infoEL: document.querySelector('.basic-information')
+      infoEL: document.querySelector('.basic-information'),
     }
-    refs.arrInputInf = []
     refs.arrInputInf = refs.infoEL.querySelectorAll('input')
-    refs.textareaInfo= refs.infoEL.querySelector('textarea')
+    refs.textareaInfo = refs.infoEL.querySelector('textarea')
     return refs
   }
   _addEventDelivery() {
@@ -49,6 +42,10 @@ class localStor{
         this._addLocalStorage(event.target.name,event.target.value)
       }
     })
+    if (!this._refs.delivery.getEventListeners('click')) {
+     console.log(this._refs.delivery.getEventListeners('click')); 
+    }
+    
   }
   _addEventPayment() {
     this._refs.payment.addEventListener('click', event => {
@@ -62,7 +59,7 @@ class localStor{
   }
   _addEventBasicInformation() {
     console.log(this._refs);
-    this._refs.arrInputInfo.forEach(elem => {
+    this._refs.arrInputInf.forEach(elem => {
       elem.addEventListener('blur', event => {
         this._addLocalStorage(event.target.name,event.target.value)
       })
@@ -76,9 +73,7 @@ class localStor{
     
   }
 }
-const createLocal = new localStor(
-
-)
+const createLocal = new localStor()
 
 class modalData{
   constructor({idInput,idList}) {
@@ -124,5 +119,4 @@ const inputDay = new modalData({
   idList: "day-list",
   
 })
-
 
