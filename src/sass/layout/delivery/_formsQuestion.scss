@@ -70,6 +70,13 @@
 
   .qusetion-title:nth-child(2n) {
     margin-left: 29px;
+    // height: 270px;
+  }
+  .qusetion-title:nth-child(3n) {
+    height: 247px;
+  }
+  .qusetion-title:nth-child(4n) {
+    height: 197px;
   }
 
   .question-block::after {

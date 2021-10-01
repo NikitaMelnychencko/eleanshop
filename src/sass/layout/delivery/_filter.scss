@@ -13,10 +13,14 @@
   padding-top: 20px;
   padding-bottom: 20px;
 }
+.maindescrption {
+  margin: 0;
+}
 
 @media screen and (min-width: 768px) {
   .maindescrption {
     width: 540px;
+    margin-left: 47px;
   }
 
   .typeofdelivery {
@@ -35,11 +39,9 @@
     padding-bottom: 33px;
   }
 
-
   .message__icon {
     height: 46px;
     stroke: #c0a78f;
     margin-bottom: 23px;
   }
-//  main
-// }
+}
