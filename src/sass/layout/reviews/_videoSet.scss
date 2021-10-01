@@ -46,9 +46,9 @@
   padding-bottom: 25px;
 }
 .video__description {
-  font-family: HelveticaNeueCyr;
+  font-family: $primary-font-family;
   font-size: 15px;
-
+  color: $secondary-text-color;
   font-weight: 400;
   line-height: 19px;
   letter-spacing: 0.05em;
