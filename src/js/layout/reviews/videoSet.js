@@ -34,13 +34,13 @@ $('.lolo').slick({
   slidesToScroll: 3,
 });
 
-const setListMarkup = createSetList(set);
+// const setListMarkup = createSetList(set);
 
 //  mainEL.insertAdjacentHTML('beforeend',setListMarkup);
 
-const setVideoHbs = setHbs(set)
+const setVideoHbs = setHbs()
 mainEL.insertAdjacentHTML('beforeend', setVideoHbs);
-
+console.log(setVideoHbs)
 // // 2. Создание click
 // setList.addEventListener('click', onOpenModal);
 //  BtnEl.addEventListener('click', onCloseModal);
