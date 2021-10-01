@@ -33,7 +33,7 @@ export default class HandSewn {
     if (this.object) {
       this.object.forEach(el => {
         if (el.name) {
-          document.querySelector(el.name).remove(this.el.className);
+          document.querySelector(el.name).classList.remove(this.el.className);
         }
       });
     }
