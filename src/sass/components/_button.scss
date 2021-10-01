@@ -1,4 +1,22 @@
 
+%button-pad{
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.1em;
+  padding: 16px 88px 19px 88px;
+}
+
+.button__checkout{
+  @extend %button-pad;
+  display: block;
+  width: 100%;
+  background-color:$button-background-color ;
+  color: $selection-text-color;
+
+}
+
 .button-add-likes {
   margin-left: auto;
   background-color: transparent;
