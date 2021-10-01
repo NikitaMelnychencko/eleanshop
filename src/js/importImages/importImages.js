@@ -39,7 +39,7 @@ import '../../images/img/page-showroom/desktop/02/showroom-desktop-02@2x.jpg';
 import '../../images/img/page-showroom/desktop/03/showroom-desktop-03.jpg';
 import '../../images/img/page-showroom/desktop/03/showroom-desktop-03@2x.jpg';
 import '../../images/img/page-showroom/mobile/01/showroom-mobile-01.jpg';
-import '../../images/img/page-showroom/mobile/01/showroom-mobile-01.jpg';
+import '../../images/img/page-showroom/mobile/01/showroom-mobile-01@2x.jpg';
 import '../../images/img/page-showroom/mobile/02/showroom-mobile-02.jpg';
 import '../../images/img/page-showroom/mobile/02/showroom-mobile-02@2x.jpg';
 import '../../images/img/page-showroom/mobile/03/showroom-mobile-03.jpg';
