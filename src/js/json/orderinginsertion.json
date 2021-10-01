@@ -1,44 +1,52 @@
-{
-  "card": [
-    {
-      "label": {
-        "id": "qwERtyu09",
-        "name": "Белый смокинг и брюки с лампасами",
-        "img": "./images/white-suit.jpg"
-      },
-      "color": [
-        { "id": "qwERtyu12", "text": "черный", "value": "black" },
-        { "id": "qwERtyu13", "text": "белый", "value": "white" },
-        { "id": "qwERtyu14", "text": "красный", "value": "red" }
-      ],
-      "size": [
-        { "id": "qwERtyu15", "text": "размер 40", "value": "black" },
-        { "id": "qwERtyu16", "text": "размер 42", "value": "black" },
-        { "id": "qwERtyu17", "text": "размер 44", "value": "black" },
-        { "id": "qwERtyu18", "text": "размер 46", "value": "black" },
-        { "id": "qwERtyu19", "text": "размер 48", "value": "black" },
-        { "id": "qwERtyu20", "text": "размер 50", "value": "black" }
-      ]
+[
+  {
+    "label": {
+      "id": "qwERtyu09",
+      "name": "Белый смокинг и брюки с лампасами",
+      "img": "./images/product1@.jpg",
+      "img2": "./images/product1@2x.jpg",
+      "price": "10000",
+      "sizeSelected": "46",
+      "сolorSelected": "white",
+      "count": "1"
     },
-    {
-      "label": {
-        "id": "qwERtyu09",
-        "name": "Красный смокинг и брюки с лампасами",
-        "img": "./images/white-suit.jpg"
-      },
-      "color": [
-        { "id": "qwERtyu12", "text": "черный", "value": "black" },
-        { "id": "qwERtyu13", "text": "белый", "value": "white" },
-        { "id": "qwERtyu14", "text": "красный", "value": "red" }
-      ],
-      "size": [
-        { "id": "qwERtyu15", "text": "размер 40", "value": "black" },
-        { "id": "qwERtyu16", "text": "размер 42", "value": "black" },
-        { "id": "qwERtyu17", "text": "размер 44", "value": "black" },
-        { "id": "qwERtyu18", "text": "размер 46", "value": "black" },
-        { "id": "qwERtyu19", "text": "размер 48", "value": "black" },
-        { "id": "qwERtyu20", "text": "размер 50", "value": "black" }
-      ]
-    }
-  ]
-}
+    "color": [
+      { "id": "qwERtyu12", "text": "черный", "value": "black" },
+      { "id": "qwERtyu13", "text": "белый", "value": "white" },
+      { "id": "qwERtyu14", "text": "красный", "value": "red" }
+    ],
+    "size": [
+      { "id": "qwERtyu15", "text": "размер 40", "value": "black" },
+      { "id": "qwERtyu16", "text": "размер 42", "value": "black" },
+      { "id": "qwERtyu17", "text": "размер 44", "value": "black" },
+      { "id": "qwERtyu18", "text": "размер 46", "value": "black" },
+      { "id": "qwERtyu19", "text": "размер 48", "value": "black" },
+      { "id": "qwERtyu20", "text": "размер 50", "value": "black" }
+    ]
+  },
+  {
+    "label": {
+      "id": "qwERtyu21",
+      "name": "Красный смокинг и брюки с лампасами",
+      "img": "./images/product2@.jpg",
+      "img2": "./images/product2@2x.jpg",
+      "price": "10000",
+      "sizeSelected": "46",
+      "сolorSelected": "red",
+      "count": "1"
+    },
+    "color": [
+      { "id": "qwERtyu12", "text": "черный", "value": "black" },
+      { "id": "qwERtyu13", "text": "белый", "value": "white" },
+      { "id": "qwERtyu14", "text": "красный", "value": "red" }
+    ],
+    "size": [
+      { "id": "qwERtyu15", "text": "размер 40", "value": "black" },
+      { "id": "qwERtyu16", "text": "размер 42", "value": "black" },
+      { "id": "qwERtyu17", "text": "размер 44", "value": "black" },
+      { "id": "qwERtyu18", "text": "размер 46", "value": "black" },
+      { "id": "qwERtyu19", "text": "размер 48", "value": "black" },
+      { "id": "qwERtyu20", "text": "размер 50", "value": "black" }
+    ]
+  }
+]

@@ -1,7 +1,7 @@
 <div class='product-bin hidden'>
   <button class='product-close-modal product-close-modal_small js-close-modal'>
     <svg class='product-close-modal__close-icon'>
-      <use href='./images/product-modal-button-close.svg#icon-close-modal'></use>
+      <use href='./images/product-icon-close.svg#icon-close-modal'></use>
     </svg>
   </button>
   <div class='product-bin__block-title'>
@@ -12,21 +12,26 @@
   </div>
   <ul class='product-bin__list'>
     {{#each this}}
-      <li class='product-bin__item' data-id={{id}}>
+      <li class='product-bin__item' data-id={{label.id}}>
         <div class='product-bin__block-image'>
-          <img src="{{img}}" alt='' srcset="{{img}} 1x, {{img2}} 2x" class='product-bin__image' />
+          <img
+            src="{{label.img}}"
+            alt=''
+            srcset="{{label.img}} 1x, {{label.img2}} 2x"
+            class='product-bin__image'
+          />
         </div>
         <div class='product-bin__block-character'>
           <div class='product-bin__block-title'>
             <h3 class='product-bin__product-name'>
-              {{name}}
+              {{label.name}}
             </h3>
             <p class='product-bin__product-price'>
-              {{{price}}}
+              {{{label.priceTxt}}}
             </p>
           </div>
           <p class='product-bin__product-size'>
-            Размер {{size}}
+            Размер {{label.sizeSelected}}
           </p>
           <p class='product-bin__text'>
             Количество
@@ -35,25 +40,25 @@
             <div class='product-bin__block-counter'>
               <button
                 class='button-counter button-counter_active product-bin__button-dec'
-                data-id={{id}}
+                data-id={{label.id}}
               >
                 <svg class='button-counter__button-icon button-counter__button-icon_desc'>
                   <use href='./images/product-icon-close.svg#icon-desc'></use>
                 </svg>
               </button>
               <span class='button-counter button-counter_active product-bin__product-count'>
-                {{count}}
+                {{label.count}}
               </span>
               <button
                 class='button-counter button-counter_active product-bin__button-inc'
-                data-id={{id}}
+                data-id={{label.id}}
               >
                 <svg class='button-counter__button-icon button-counter__button-icon_inc'>
                   <use href='./images/product-icon-close.svg#icon-inc'></use>
                 </svg>
               </button>
             </div>
-            <button class='product-bin__button-del' data-id={{id}}>
+            <button class='product-bin__button-del' data-id={{label.id}}>
               Удалить
               <svg class='product-bin__delete-icon'>
                 <use href='./images/product-icon-close.svg#icon-close-modal'></use>

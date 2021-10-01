@@ -73,10 +73,10 @@ import '../../images/img/product/handSewn/handSewn-bg-right.png';
 import '../../images/img/product/handSewn/handSewn-bg-left.png';
 import '../../images/svg/sprite.svg';
 import '../../images/svg/thanks_for_ordering.svg';
+import '../../images/svg/product/product-icon-close.svg';
 
 import '../../images/svg/product/product-icon-close.svg';
 import '../../images/img/product/productBin/product1.jpg';
 import '../../images/img/product/productBin/product1@2x.jpg';
 import '../../images/img/product/productBin/product2.jpg';
 import '../../images/img/product/productBin/product2@2x.jpg';
-

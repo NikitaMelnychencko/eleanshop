@@ -1,21 +1,20 @@
 import markupBin from '../../../views/partials/product/productBin.hbs';
-import dataBin from '../../json/productBin.json';
+import dataBin from '../../json/orderinginsertion.json';
 
 export default class ProductBin {
   constructor({ root = 'header', typeInsert = 'beforeEnd', data = dataBin }) {
-    const dataLS = localStorage.getItem('productBin');
+    const dataLS = localStorage.getItem('orderingData');
     if (dataLS) {
       this.data = JSON.parse(dataLS);
     } else {
       this.data = data;
       this.data.forEach(el => {
-        el.priceNum = el.price;
-        const arr = String(el.price).split('');
+        const arr = el.label.price.split('');
         for (let i = arr.length - 3; i > 0; i -= 3) {
           arr.splice(i, 0, ' ');
         }
-        el.price = arr.join('') + '<span> &#8372;</span>';
-        localStorage.setItem('productBin', JSON.stringify(this.data));
+        el.label.priceTxt = arr.join('') + '<span> &#8372;</span>';
+        localStorage.setItem('orderingData', JSON.stringify(this.data));
       });
     }
 
@@ -43,7 +42,7 @@ export default class ProductBin {
   };
 
   _updateLS = () => {
-    localStorage.setItem('productBin', JSON.stringify(this.data));
+    localStorage.setItem('orderingData', JSON.stringify(this.data));
   };
 
   _updateMarkup() {
@@ -56,9 +55,9 @@ export default class ProductBin {
 
   _onDec = e => {
     const id = e.currentTarget.dataset.id;
-    const elem = this.data.find(el => el.id === id);
-    if (elem.count > 1) {
-      elem.count = Number(elem.count) - 1;
+    const elem = this.data.find(el => el.label.id === id);
+    if (elem.label.count > 1) {
+      elem.label.count = Number(elem.label.count) - 1;
       this._updateLS();
       this._updateMarkup();
       this._onTotal();
@@ -67,8 +66,8 @@ export default class ProductBin {
 
   _onInc = e => {
     const id = e.currentTarget.dataset.id;
-    const elem = this.data.find(el => el.id === id);
-    elem.count = Number(elem.count) + 1;
+    const elem = this.data.find(el => el.label.id === id);
+    elem.label.count = Number(elem.label.count) + 1;
     this._updateLS();
     this._updateMarkup();
     this._onTotal();
@@ -76,7 +75,7 @@ export default class ProductBin {
 
   _onDel = e => {
     const id = e.currentTarget.dataset.id;
-    const elemId = this.data.findIndex(el => el.id === id);
+    const elemId = this.data.findIndex(el => el.label.id === id);
     this.data.splice(elemId, 1);
     document.querySelector('[data-id = "' + id + '"]').remove();
     this._updateLS();
@@ -85,7 +84,7 @@ export default class ProductBin {
 
   _onTotal = () => {
     const n = this.data.reduce((total, el) => {
-      return (total += Number(el.priceNum) * Number(el.count));
+      return (total += Number(el.label.price) * Number(el.label.count));
     }, 0);
     const arr = String(n).split('');
     for (let i = arr.length - 3; i > 0; i -= 3) {
