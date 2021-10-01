@@ -2,7 +2,8 @@ import payment_payment from '../../../views/partials/checkout/payment.hbs'
 import payment_checkout from '../../../views/layouts/checkout.hbs'
 import method from '../../json/method.json'
 import refs from '../../refs/refs.js'
- require('geteventlisteners')
+
+require('geteventlisteners')
 const createPayment = payment_payment({ method })
 const createCheckout = payment_checkout({ createPayment })
 refs.mainEL.insertAdjacentHTML('beforeend', createCheckout)
@@ -83,8 +84,7 @@ class modalData{
     this._addEventList()
     this._addEventPayment()
     this._addEventBasicInformation()
-  
-
+    this._updateTotalPrice()
   }
   _getRefs(idInput,idList) {
     const refs = {
@@ -94,6 +94,9 @@ class modalData{
       delivery: document.querySelector('.delivery-method'),
       payment: document.querySelector('.payment'),
       infoEL: document.querySelector('.basic-information'),
+      totalPriceEl: document.querySelector('.total__value'),
+      orderingTotalboxEl: document.querySelector('.ordering__total'),
+      orderingForm:document.querySelector('.js-form') 
     }
     refs.arrInputDelivery = refs.delivery.querySelectorAll('input')
     refs.arrInputPayment = refs.payment.querySelectorAll('input')
@@ -105,7 +108,6 @@ class modalData{
     this._refs.input.addEventListener('click', event => {
       this._refs.list.classList.toggle("showroom-list--hide")
       document.body.classList.toggle("extra")
-      
     })
 
   }
@@ -137,6 +139,7 @@ class modalData{
     
   }
   _addEventPayment() {
+    this._updatePayment()
     this._refs.payment.addEventListener('click', event => {
       if (event.target.nodeName !== "INPUT") {
         return
@@ -166,7 +169,11 @@ class modalData{
     this._refs.arrInputDelivery.forEach(el => {
       if (el.value === delivery) {
         el.checked = true
+        if (el.value === "Showroom") {
+          this._refs.formDay.classList.add('showroom-method--hide')
+        }
       }
+      
     })
   }
   _updateValueBasicInformation() {
@@ -175,6 +182,25 @@ class modalData{
     })
     this._refs.textareaInfo.value = this._updateValueInLocal(this._refs.textareaInfo.name)
 
+  }
+  _updatePayment() {
+    const payment = this._updateValueInLocal('payment-method')
+    console.log(payment);
+    this._refs.arrInputPayment.forEach(el => {
+      if (el.value === payment) {
+        el.checked = true
+      }
+    })
+  }
+  _updateTotalPrice() {
+    this._refs.totalPriceEl.textContent = this._refs.orderingTotalboxEl.textContent;
+    this._refs.orderingForm.addEventListener('click', e => {
+      if (e.target.nodeName !== "BUTTON") {
+        return
+      }
+      this._refs.totalPriceEl.textContent = this._refs.orderingTotalboxEl.textContent;
+    })
+    
   }
   _updateValueInLocal(name) {
     return localStorage.getItem(`${name}`)
