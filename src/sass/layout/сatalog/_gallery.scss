@@ -169,7 +169,11 @@
 }
 .catalog-category-filter {
   display: none;
+
   @media screen and (min-width: 1378px) {
-    display: flex;
+    display: block;
+    cursor: pointer;
+    min-width: 180px;
+    align-items: stretch;
   }
 }

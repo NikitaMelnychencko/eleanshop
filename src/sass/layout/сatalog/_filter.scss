@@ -13,13 +13,42 @@
 .catalog-collection-header {
   margin-top: 30px;
 }
-.category-item {
+
+.catalog-collection-header:current {
+  color: #ae9177;
+}
+.category-item,
+.collection-item {
   font-family: var($third-font-family);
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
   line-height: 1.4;
   color: #222222;
+
+  display: none;
+}
+
+.open-item {
+  display: block;
+}
+.category-item,
+.collection-item {
+  animation-duration: 2s;
+  animation-name: slidein;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+}
+@keyframes slidein {
+  from {
+    margin-bottom: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-bottom: 0%;
+    width: 100%;
+  }
 }
 
 .category-item:hover,
