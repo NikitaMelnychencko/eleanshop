@@ -2,8 +2,8 @@ import '../../images/svg/exampl.svg';
 
 //============header======================
 import '../../images/svg/header.svg';
-//=========== hero========================
 
+//=========== hero========================
 import '../../images/img/page-hero/mobile/hero-title-01/hero-title-mobile-01.jpg';
 import '../../images/img/page-hero/mobile/hero-title-01/hero-title-mobile-01@2x.jpg';
 import '../../images/img/page-hero/mobile/hero-title-02/hero-title-mobile-02.jpg';
@@ -24,6 +24,7 @@ import '../../images/svg/hero-svg-original/hero-arrow-left.svg';
 import '../../images/svg/hero-svg-original/hero-arrow-right.svg';
 import '../../images/svg/clients-svg-original/clients-arrow-right.svg';
 import '../../images/svg/clients-svg-original/clients-arrow-right.svg';
+
 //============ homeAboutBrand======================
 import '../../images/img/homeAboutBrand/aboutBrandArrow.png';
 import '../../images/img/homeAboutBrand/aboutBrandDesktop@1x.jpg';
@@ -72,7 +73,6 @@ import '../../images/svg/homeReviewsChat/Foreground.svg';
 import '../../images/svg/homeReviewsChat/Union.svg';
 import '../../images/svg/homeReviewsChat/arrow-up-circle-fill.svg';
 
-// >>>>>>> a4a4a70554071a4464465d78bf4a9265196b1d95
 //============product===========
 import '../../images/img/product/handSewn/handSewn-desktop-1.jpg';
 import '../../images/img/product/handSewn/handSewn-desktop-1@2x.jpg';
@@ -86,6 +86,21 @@ import '../../images/img/product/handSewn/handSewn-bg-right.png';
 import '../../images/img/product/handSewn/handSewn-bg-left.png';
 import '../../images/svg/sprite.svg';
 import '../../images/svg/thanks_for_ordering.svg';
+
+
+//============inInstagram===========
+import '../../images/img/page-in-instagram/we-are-in-insta-01.jpg';
+import '../../images/img/page-in-instagram/we-are-in-insta-01@2x.jpg';
+import '../../images/img/page-in-instagram/we-are-in-insta-02.jpg';
+import '../../images/img/page-in-instagram/we-are-in-insta-02@2x.jpg';
+import '../../images/img/page-in-instagram/we-are-in-insta-03.jpg';
+import '../../images/img/page-in-instagram/we-are-in-insta-03@2x.jpg';
+import '../../images/img/page-in-instagram/we-are-in-insta-04.jpg';
+import '../../images/img/page-in-instagram/we-are-in-insta-04@2x.jpg';
+import '../../images/img/page-in-instagram/we-are-in-insta-05.jpg';
+import '../../images/img/page-in-instagram/we-are-in-insta-05@2x.jpg';
+
+
 //===============payment===========================
 
 import '../../images/img/checkout/payment/buyers.jpg'
