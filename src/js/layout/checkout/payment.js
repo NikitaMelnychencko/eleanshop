@@ -78,8 +78,12 @@ class modalData{
   constructor({idInput,idList}) {
     this._refs = this._getRefs(idInput, idList)
 
+    this._addEventDelivery()
     this._addEventInput()
     this._addEventList()
+    this._addEventPayment()
+    this._addEventBasicInformation()
+  
 
   }
   _getRefs(idInput,idList) {
@@ -91,6 +95,8 @@ class modalData{
       payment: document.querySelector('.payment'),
       infoEL: document.querySelector('.basic-information'),
     }
+    refs.arrInputDelivery = refs.delivery.querySelectorAll('input')
+    refs.arrInputPayment = refs.payment.querySelectorAll('input')
     refs.arrInputInf = refs.infoEL.querySelectorAll('input')
     refs.textareaInfo = refs.infoEL.querySelector('textarea')
     return refs
@@ -111,6 +117,7 @@ class modalData{
      })
   }
   _addEventDelivery() {
+    this._updateValueDelivery()
     if (!this._refs.delivery.getEventListeners('click')) {
       this._refs.delivery.addEventListener('click', event => {
         if (event.target.nodeName !== "INPUT") {
@@ -140,7 +147,7 @@ class modalData{
     })
   }
   _addEventBasicInformation() {
-    console.log(this._refs);
+    this._updateValueBasicInformation()
     this._refs.arrInputInf.forEach(elem => {
       elem.addEventListener('blur', event => {
         this._addLocalStorage(event.target.name,event.target.value)
@@ -153,6 +160,24 @@ class modalData{
   _addLocalStorage(name,value) {
     localStorage.setItem(`${name}`,`${value}`)
     
+  }
+  _updateValueDelivery() {
+    const delivery = this._updateValueInLocal('delivery-method')
+    this._refs.arrInputDelivery.forEach(el => {
+      if (el.value === delivery) {
+        el.checked = true
+      }
+    })
+  }
+  _updateValueBasicInformation() {
+    this._refs.arrInputInf.forEach(elem => {
+      elem.value = this._updateValueInLocal(elem.name)
+    })
+    this._refs.textareaInfo.value = this._updateValueInLocal(this._refs.textareaInfo.name)
+
+  }
+  _updateValueInLocal(name) {
+    return localStorage.getItem(`${name}`)
   }
 
 }
