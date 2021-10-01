@@ -1,10 +1,10 @@
 <section class="content">
     <div class="container">
+        <h2 class="content__title">Контент</h2>
         <ul class="content__list">
             {{#each this}}
             <li class="content__item">
-                <article class="content__card">
-                    <h2 class="content__category">{{name}}</h2>
+                    <h3 class="content__category">{{name}}</h3>
                     <a href="{{link}}" class="content__link">
                         <picture class="content__img">
                             <source srcset="{{image}} 1x, {{image_2x}} 2x" media="(max-width: 720px)">
@@ -12,7 +12,6 @@
                             <img src="{{image}}" alt="{{description}}">
                         </picture>
                     </a>
-                </article>
             </li>
             {{/each}}
         </ul>

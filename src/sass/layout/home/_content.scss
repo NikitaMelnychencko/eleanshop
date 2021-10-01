@@ -4,6 +4,7 @@
 
 .content__list {
   display: inline-grid;
+  // align-items: end;
 
   grid-template-columns: repeat(2, 1fr);
   column-gap: 14px;
@@ -37,11 +38,15 @@
       grid-row-start: span 1.9;
     }
 
-    max-height: auto;
+    // &:nth-child(2),
+    // &:nth-child(3) {
+    //   height: 401px;
+    // }
   }
 }
 
-.content__card {
+.content__title {
+  @extend %hide;
 }
 
 .content__link {
