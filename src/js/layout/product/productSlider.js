@@ -1,8 +1,26 @@
-import products from '../../../js/json/product/productInfo.json'
+import productInfo from '../../../js/json/product/productInfo.json'
+import productParams from '../../../js/json/product/productParams.json'
 import productTemplate from '../../../views/partials/product/productSlider.hbs'
-// import '../../../sass/layout/product/_productSlider.scss'
+import refs from '../../refs/refs.js'
 
 
+
+
+// -------------------------------------------rendering a section
+const createProductMarkup = (data) => {
+  return productTemplate(data)
+}
+
+const productInfoMarkup = createProductMarkup(productInfo)
+const productParamsMarkup = createProductMarkup(productParams)
+refs.mainEL.insertAdjacentHTML('beforeend', productInfoMarkup, productParamsMarkup)
+// -------------------------------------------------------/
+
+
+
+
+
+//----------------------------------------------- -------Sliders/
 window.jQuery = window.$ = require("jquery");
 require('./slick.min.js')
 
@@ -29,10 +47,19 @@ $(document).ready(function () {
  
   })
 });
+// ---------------------------------------------------------/
 
-const createProductMarkup = (products) => {
-  return productTemplate(products)
+
+
+
+
+// ------------------------------------------------characteristic-menu/
+const productCharacteristicBtn = document.querySelector('.button__plus')
+const paramsMenu = document.querySelector('[data-params-menu]')
+
+const onClick = () => {
+  paramsMenu.classList.toggle("is-open");
 }
 
-const productMarkup = createProductMarkup(products)
-document.body.insertAdjacentHTML('beforeend', productMarkup)
+productCharacteristicBtn.addEventListener('click', onClick)
+

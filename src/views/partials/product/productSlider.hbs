@@ -100,10 +100,10 @@
           </ul>
         </div>
     
-        <ul class="button-block">
-          <li><button class="button button__buy" type="button">купить</button></li>
-          <li><button class="button button__fit" type="button">примерка</button></li>
-          <li><button class="button button__installment" type="button">купить в расстрочку</button></li>
+        <ul class="button__list">
+          <li><button class="button__purchase button__purchase--buy" type="button">купить</button></li>
+          <li><button class="button__purchase button__purchase--fit" type="button">примерка</button></li>
+          <li><button class="button__purchase button__purchase--installment" type="button">купить в расстрочку</button></li>
         </ul>
     
         <div class="product__info">
@@ -111,19 +111,44 @@
           <p class="product__composition"><span class="product__composition--bold">Состав:</span> {{productComposition}}</p>
         </div>
     
-        <ul class="product__characteristics">
-          <li class="product__characteristic-item">
-            параметры
-            <button class="button__plus" type="button">+</button>
-          </li>
-          <li class="product__characteristic-item">
-            дополнительно
-            <button class="button__plus" type="button">+</button>
-          </li>
-        </ul>
+        <div class="product__characteristics">
+          <ul class="product__characteristics-list">
+            <li class="product__characteristic-item product__characteristic-item--params">
+              параметры
+              <ul class="params__grid" data-params-menu>
+                {{#each params}}
+                  <li class="params__item">{{this}}</li>
+                {{/each}}
+                  {{!-- <li class="params__item">Вид застежки:</li>
+                  <li class="params__item">Пуговица, обтянутая атласом</li>
+                  <li class="params__item">Длина изделия:</li>
+                  <li class="params__item">По спинке 69 см</li>
+                  <li class="params__item">Крой:</li>
+                  <li class="params__item">Приталенный</li>
+                  <li class="params__item">Рисунок:</li>
+                  <li class="params__item">Без рисунка</li>
+                  <li class="params__item">Тип карманов:</li>
+                  <li class="params__item">Прорезные "листочки"</li>
+                  <li class="params__item">Конструктивные элементы:</li>
+                  <li class="params__item">Рельефные швы</li>
+                  <li class="params__item">Материал подкладки:</li>
+                  <li class="params__item">Вискоза 100%</li>
+                  <li class="params__item">Уход за вещами:</li>
+                  <li class="params__item">Химчистка</li> --}}
+              </ul>
+              <button class="button__plus" type="button">+</button>
+            </li>
+            <li class="product__characteristic-item">
+              дополнительно
+              <ul class="aditional__grid" data-aditional-menu>
+              </ul>
+              <button class="button__plus" type="button">+</button>
+            </li>
+          </ul>
 
-        <div class="params-menu">
         </div>
+       </div>
+
       </div>
     {{/each}}
 

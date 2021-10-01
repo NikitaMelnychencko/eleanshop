@@ -5,9 +5,6 @@
 }
 
 .product__container {
-  @media screen and (min-width: 721px) {
-    width: 414px;
-  }
   @media screen and (min-width: 1378px) {
     display: flex;
     width: 1378px;
@@ -43,9 +40,7 @@
   align-items: center;
   justify-content: center;
 }
-// /* Слайд активный (показывается) */
-// .product-slider-smaller .slick-slide.slick-active {
-// }
+
 /* Слайд основной */
 .product-slider-smaller .slick-slide.slick-current {
   border: 1px solid #dcdcdc;
@@ -54,7 +49,6 @@
 }
 
 .product-slider-smaller__item {
-  // outline: 1px red solid;
   &:not(:last-child) {
     margin-bottom: 8px;
   }
@@ -69,6 +63,12 @@
 // !--------------------------------------------- ОСНОВНОЙ СЛАЙДЕР//
 .product-slider__wrapper {
   margin-bottom: 38px;
+
+  @media screen and (min-width: 721px) and (max-width: 1377px) {
+    min-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
   @media screen and (min-width: 1378px) {
     width: 700px;
@@ -88,7 +88,6 @@
   align-items: center;
   justify-content: center;
   position: relative;
-  // outline: 1px purple solid;
 }
 .product-slider .slick-dots li {
   display: flex;
@@ -122,9 +121,12 @@
 }
 
 .product-slider__image {
-  // max-width: 100%;
-  // margin-left: auto;
-  // margin-right: auto;
+  @media screen and (min-width: 721px) {
+    min-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   @media screen and (min-width: 1378px) {
     min-width: 700px;
   }
@@ -183,7 +185,6 @@
 
 .product__currency {
   color: #caaf97;
-  // color: $selection-title-text-color;
 }
 
 .size__title {
@@ -232,12 +233,11 @@
 }
 
 .options__item {
-  // position: relative;
-  @media screen and (max-width: 1377px) {
-    width: 150px;
+  @media screen and (min-width: 721px) {
+    &:not(:last-child) {
+      margin-right: 12px;
+    }
   }
-
-  // padding-left: 30px;
 }
 
 .button__size-option {
@@ -275,6 +275,11 @@
   position: absolute;
   top: 0;
   left: 0;
+
+  @media screen and (min-width: 721px) {
+    top: 50%;
+    transform: translateY(-50%);
+  }
 }
 
 .colorpicker {
@@ -345,17 +350,21 @@
   border-color: #b59475;
 }
 
-.button-block {
+.button__list {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 35px;
+
+  @media screen and (min-width: 721px) and (max-width: 1377px) {
+    width: 400px;
+  }
 
   @media screen and (min-width: 1378px) {
     margin-bottom: 46px;
   }
 }
 
-.button {
+.button__purchase {
   width: 280px;
   padding: 17px 0px;
 
@@ -378,27 +387,31 @@
   @media screen and (min-width: 414px) {
     width: 374px;
   }
+
+  @media screen and (min-width: 721px) {
+    width: 397px;
+  }
 }
 
-.button:hover {
+.button__purchase:hover {
   background-color: #242424;
   color: #ffffff;
 }
 
-.button__buy {
+.button__purchase--buy {
   margin-bottom: 20px;
 
   background: #242424;
   color: #ffffff;
 }
 
-.button__buy:hover {
+.button__purchase--buy:hover {
   border: 1px solid #e3e3e3;
   background: #ffffff;
   color: #242424;
 }
 
-.button__fit {
+.button__purchase--fit {
   margin-bottom: 8px;
 
   @media screen and (min-width: 414px) {
@@ -406,14 +419,22 @@
     margin-right: 8px;
   }
 
-  @media screen and (min-width: 1378px) {
+  @media screen and (min-width: 721px) {
+    width: 144px;
+  }
+
+  @media screen and (min-width: 721px) {
     margin-right: 9px;
   }
 }
 
-.button__installment {
+.button__purchase--installment {
   @media screen and (min-width: 414px) {
     width: 230px;
+  }
+
+  @media screen and (min-width: 721px) {
+    width: 244px;
   }
 }
 
@@ -454,16 +475,20 @@
   padding: 15px 0px;
   border-top: 1px solid #e6e6e6;
 
-  &:last-child {
-    border-bottom: 1px solid #e6e6e6;
-  }
-
-  font-weight: 500;
+  font-weight: 700;
   font-size: 15px;
   line-height: 1.4;
   text-transform: uppercase;
 
   color: #222222;
+
+  &:last-child {
+    border-bottom: 1px solid #e6e6e6;
+  }
+}
+
+.product__characteristic-item--params {
+  position: relative;
 }
 
 .button__plus {
@@ -473,4 +498,58 @@
   cursor: pointer;
 
   transition: $time-cubic;
+}
+
+// !--------------------------------------------- КОНЕЦ О ТОВАРЕ//
+// !--------------------------------------------- МЕНЮ ХАРАКТЕРИСТИК//
+
+.params__grid {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 10;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  overflow: auto;
+  opacity: 0;
+  transform: scale(0.5);
+  visibility: hidden;
+  pointer-events: none;
+
+  font-family: Jost;
+  background-color: #ffffff;
+
+  transition: opacity $time-cubic, transform $time-cubic;
+}
+
+.params__grid.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: scale(1);
+}
+
+.params__item {
+  position: relative;
+
+  color: #242424;
+  line-height: 2.67;
+
+  &:nth-child(even) {
+    font-weight: 400;
+
+    &:not(:last-child)::before {
+      content: '';
+      position: absolute;
+      display: block;
+      left: 0;
+      bottom: 0;
+
+      width: 41px;
+      height: 1px;
+      background-color: #dadada;
+    }
+  }
 }
