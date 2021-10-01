@@ -2,34 +2,34 @@ import markup from '../../../views/partials/product/productHandSewn.hbs';
 import productDataHandSewn from '../../json/productHandSewn.json';
 
 export default class HandSewn {
-  constructor({ root = 'main', typeInsert = 'beforeEnd', object }) {
+  constructor({ root, typeInsert = 'beforeEnd', object }) {
     this.root = document.querySelector(root);
     this.typeInsert = typeInsert;
     this.backdropRef = document.querySelector('[data-modal]');
     this.object = object;
     if (this.root) {
-      this.addMarkup();
+      this._addMarkup();
     }
   }
 
-  createMarkup = () => {
+  _createMarkup = () => {
     this.markup = markup(productDataHandSewn);
   };
 
-  addMarkup = () => {
+  _addMarkup = () => {
     this.createMarkup();
     if (this.root) {
       this.root.insertAdjacentHTML(this.typeInsert, this.markup);
-      this.addButtonListener();
+      this._addButtonListener();
     }
   };
 
-  addButtonListener = () => {
+  _addButtonListener = () => {
     this.button = document.querySelector('.js-button-product-delivery');
     this.button.addEventListener('click', this.onButtonClick.bind(this));
   };
 
-  onNextBtnClick = () => {
+  _onNextBtnClick = () => {
     if (this.object) {
       this.object.forEach(el => {
         if (el.name) {
@@ -39,7 +39,16 @@ export default class HandSewn {
     }
   };
 
-  onButtonClick = () => {
+  _onButtonClick = () => {
     this.button.addEventListener('clck', this.onNextBtnClick);
+  };
+
+  getMarkup = () => {
+    this.createMarkup();
+    return this.markup;
+  };
+
+  setEvent = () => {
+    this._addButtonListener();
   };
 }

@@ -1,8 +1,8 @@
 import HandSewn from '../layout/product/productHandSewn.js';
 
-const obj = new HandSewn({
-  root: 'main', // element selector to insert the section into
-  typeInsert: 'beforeEnd',
+const objHandSewn = new HandSewn({
+  // root: 'main', // element selector to insert the section into
+  // typeInsert: 'beforeEnd',
   object: [
     {
       name: null, // a modal selector that is called when the button is clicked
@@ -14,3 +14,6 @@ const obj = new HandSewn({
     },
   ],
 });
+
+objHandSewn.getMarkup();
+objHandSewn.setEvent();
