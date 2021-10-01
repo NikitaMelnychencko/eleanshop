@@ -9,47 +9,115 @@ import '../../../images/img/checkout/payment/mirror_reflection@2x.jpg'
 import '../../../images/svg/murkup.svg'
 import '../../../images/svg/murkup_arow.svg'
 
+
 const createPayment = payment_payment({ method })
 const createCheckout = payment_checkout({ createPayment })
 refs.mainEL.insertAdjacentHTML('beforeend', createCheckout)
-const formDay =document.querySelector('.showroom-method')
-const delivery = document.querySelector('.delivery-method')
-const payment = document.querySelector('.payment')
+
 const infoEL = document.querySelector('.basic-information')
 const arrInputInfo = infoEL.querySelectorAll('input')
-const textareaInfo = infoEL.querySelectorAll('textarea')
+const textareaInfo = infoEL.querySelector('textarea')
 
-delivery.addEventListener('click', event => {
-  if (event.target.nodeName !== "INPUT") {
-    return
+class localStor{
+  constructor() {
+    this._refs = this._getRefs()
+    
+    this._addEventDelivery()
+    this._addEventPayment()
+    this._addEventBasicInformation()
+    
   }
-  if (event.target.value=== "Showroom"&&event.target.checked=== true) {
-    formDay.classList.add('showroom-method--hide')
-  } else {
-    formDay.classList.remove('showroom-method--hide')
+  _getRefs() {
+    const refs = {
+      formDay: document.querySelector('.showroom-method'),
+      delivery: document.querySelector('.delivery-method'),
+      payment: document.querySelector('.payment'),
+  
+    }
+    return refs
+  }
+  _addEventDelivery() {
+    this._refs.delivery.addEventListener('click', event => {
+      if (event.target.nodeName !== "INPUT") {
+        return
+      }
+      if (event.target.value=== "Showroom"&&event.target.checked=== true) {
+        this._refs.formDay.classList.add('showroom-method--hide')
+      } else {
+        this._refs.formDay.classList.remove('showroom-method--hide')
+            
+      }
+      if (event.target.checked===true) {
+        this._addLocalStorage(event.target.name,event.target.value)
+      }
+    })
+  }
+  _addEventPayment() {
+    this._refs.payment.addEventListener('click', event => {
+      if (event.target.nodeName !== "INPUT") {
+        return
+      }
+      if (event.target.checked===true) {
+        this._addLocalStorage(event.target.name,event.target.value)
+      }
+    })
+  }
+  _addEventBasicInformation() {
+    arrInputInfo.forEach(elem => {
+      elem.addEventListener('blur', event => {
+        this._addLocalStorage(event.target.name,event.target.value)
+      })
+    })
+    textareaInfo.addEventListener('blur', event => {
+      this._addLocalStorage(event.target.name,event.target.value)
+    })
+  }
+  _addLocalStorage(name,value) {
+    localStorage.setItem(`${name}`,`${value}`)
+    
+  }
+}
+const createLocal = new localStor(
+
+)
+
+// const formDay =document.querySelector('.showroom-method')
+// const delivery = document.querySelector('.delivery-method')
+// const payment = document.querySelector('.payment')
+// const infoEL = document.querySelector('.basic-information')
+// const arrInputInfo = infoEL.querySelectorAll('input')
+// const textareaInfo = infoEL.querySelector('textarea')
+
+// delivery.addEventListener('click', event => {
+//   if (event.target.nodeName !== "INPUT") {
+//     return
+//   }
+//   if (event.target.value=== "Showroom"&&event.target.checked=== true) {
+//     formDay.classList.add('showroom-method--hide')
+//   } else {
+//     formDay.classList.remove('showroom-method--hide')
         
-  }
-  if (event.target.checked===true) {
-    localStorage.setItem(`${event.target.name}`,`${event.target.value}`)
-  }
-})
-payment.addEventListener('click', event => {
-  if (event.target.nodeName !== "INPUT") {
-    return
-  }
-  if (event.target.checked===true) {
-    localStorage.setItem(`${event.target.name}`,`${event.target.value}`)
-  }
-})
-arrInputInfo.forEach(elem => {
-  elem .addEventListener('blur', event => {
-    localStorage.setItem(`${event.target.name}`,`${event.target.value}`)
-  })
-})
-textareaInfo.addEventListener('click', event => {
-  localStorage.setItem(`${event.target.name}`,`${event.target.value}`)
-
-})
+//   }
+//   if (event.target.checked===true) {
+//     localStorage.setItem(`${event.target.name}`,`${event.target.value}`)
+//   }
+// })
+// payment.addEventListener('click', event => {
+//   if (event.target.nodeName !== "INPUT") {
+//     return
+//   }
+//   if (event.target.checked===true) {
+//     localStorage.setItem(`${event.target.name}`,`${event.target.value}`)
+//   }
+// })
+// arrInputInfo.forEach(elem => {
+//   elem.addEventListener('blur', event => {
+//     localStorage.setItem(`${event.target.name}`,`${event.target.value}`)
+//   })
+// })
+// textareaInfo.addEventListener('blur', event => {
+//   localStorage.setItem(`${event.target.name}`,`${event.target.value}`)
+// })
 
 
 class modalData{
@@ -64,7 +132,6 @@ class modalData{
     const refs = {
       input: document.getElementById(`${idInput}`),
       list: document.getElementById(`${idList}`),
-     
     }
     return refs
   }
