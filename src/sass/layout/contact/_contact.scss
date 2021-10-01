@@ -1,3 +1,23 @@
+.contacts-container {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.contacts__contacts {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 39px;
+}
+
+.contacts__title {
+  font-size: 21px;
+  line-height: 0.95;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #000000;
+  margin-bottom: 21px;
+}
+
 .contacts-map {
   border: none;
   width: 100%;
