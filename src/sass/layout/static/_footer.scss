@@ -1,4 +1,5 @@
 
+
 /* ====== VISUALLY HIDDEN ======*/
 .hiden{
         position: absolute;
@@ -270,7 +271,10 @@
      position: absolute;
      opacity: 1;
      display: flex;
-    padding-top: 105px;
+    bottom: 0;
+    z-index: 200;
+
+
 
 
         @media screen and (max-width:$desktop-up){

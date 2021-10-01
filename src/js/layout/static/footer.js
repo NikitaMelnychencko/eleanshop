@@ -17,7 +17,6 @@ const {
     footerInput,
     formRegistrMobile,
     testIdInput } = refs
-
 console.log(testIdInput)
 checkBoxIcon.addEventListener('click', onAgreeCheckBox)
 mobileSubmitBtn.addEventListener('submit', onSubmitBtnMobile)
