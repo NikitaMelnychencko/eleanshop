@@ -1,4 +1,3 @@
-import '../../images/img/exampl.jpg';
 import '../../images/svg/exampl.svg';
 
 //============header======================
@@ -76,6 +75,7 @@ import '../../images/img/product/handSewn/handSewn-bg-left.png';
 import '../../images/svg/sprite.svg';
 import '../../images/svg/thanks_for_ordering.svg';
 
+
 //============inInstagram===========
 import '../../images/img/page-in-instagram/we-are-in-insta-01.jpg';
 import '../../images/img/page-in-instagram/we-are-in-insta-01@2x.jpg';
@@ -88,3 +88,12 @@ import '../../images/img/page-in-instagram/we-are-in-insta-04@2x.jpg';
 import '../../images/img/page-in-instagram/we-are-in-insta-05.jpg';
 import '../../images/img/page-in-instagram/we-are-in-insta-05@2x.jpg';
 
+
+//===============payment===========================
+
+import '../../images/img/checkout/payment/buyers.jpg'
+import '../../images/img/checkout/payment/buyers@2x.jpg'
+import '../../images/img/checkout/payment/mirror_reflection.jpg'
+import '../../images/img/checkout/payment/mirror_reflection@2x.jpg'
+import '../../images/svg/murkup.svg'
+import '../../images/svg/murkup_arow.svg'
