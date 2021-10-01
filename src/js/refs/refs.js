@@ -15,8 +15,8 @@ export default {
   footerSectionMobile: document.querySelector('.footer__mobile'),
   footerSectionDesktop: document.querySelector('.footer__desktop'),
   testIdInput: document.querySelectorAll('#id'),
+  main: document.querySelector('main'),
   bodyEl: document.querySelector('body'),
   mainEL: document.querySelector('main'),
 }
-
 
