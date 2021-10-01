@@ -6,6 +6,7 @@
   color: $primary-text-color;
   margin-bottom: 20px;
   display: flex;
+  justify-content: space-between;
 }
 .description li:nth-child(3) p {
   border-bottom: 1px solid $accent-outline-btn-color;
