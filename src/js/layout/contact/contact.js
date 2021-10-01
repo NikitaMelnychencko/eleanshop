@@ -1,0 +1,12 @@
+import refs from '../../refs/refs';
+import contactsTemplate from '../../../views/layouts/contact.hbs';
+import contact_map from '../../../views/partials/contact/map.hbs';
+import contacts_contact from '../../../views/partials/contact/contact.hbs';
+import form_fitting_in_showroom from '../../../views/partials/brand/formFittingInShowroom.hbs';
+import { contactsData } from '../../../../app';
+const { main } = refs;
+const contactsMap = contact_map();
+const formFittingInShowroom = form_fitting_in_showroom();
+const contactsContact = contacts_contact(contactsData);
+const contactsMarkup = contactsTemplate({ contactsMap, contactsContact, formFittingInShowroom });
+main.insertAdjacentHTML('beforeend', contactsMarkup);
