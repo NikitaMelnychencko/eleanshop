@@ -31,8 +31,7 @@ import '../../images/img/homeAboutBrand/aboutBrandDesktop@2x.jpg';
 import '../../images/img/homeAboutBrand/aboutBrandMob@1x.jpg';
 import '../../images/img/homeAboutBrand/aboutBrandMob@2x.jpg';
 
-<<<<<<< Updated upstream
-=======
+
 //============ page-Brand======================
 import '../../images/img/brand/elena-des.jpg';
 import '../../images/img/brand/elena-des@2x.jpg';
@@ -44,7 +43,6 @@ import '../../images/img/brand/two-an-mob.jpg';
 import '../../images/img/brand/two-an-mob@2x.jpg';
 import '../../images/img/brand/brand-video-image.jpg';
 
->>>>>>> Stashed changes
 //============ starClients=========================
 import '../../images/img/page-clients/client-01/starClient-01.jpg';
 import '../../images/img/page-clients/client-01/starClient-01@2x.jpg';
@@ -72,10 +70,8 @@ import '../../images/img/homeReviewsChat/chatImage@1x.png';
 import '../../images/img/homeReviewsChat/chatImage@2x.png';
 import '../../images/svg/homeReviewsChat/Foreground.svg';
 import '../../images/svg/homeReviewsChat/Union.svg';
-<<<<<<< Updated upstream
 import '../../images/svg/homeReviewsChat/arrow-up-circle-fill.svg';
-=======
->>>>>>> Stashed changes
+
 //============product===========
 import '../../images/img/product/handSewn/handSewn-desktop-1.jpg';
 import '../../images/img/product/handSewn/handSewn-desktop-1@2x.jpg';
