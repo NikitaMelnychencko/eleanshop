@@ -28,22 +28,21 @@ class localStor{
     return refs
   }
   _addEventDelivery() {
-    this._refs.delivery.addEventListener('click', event => {
-      if (event.target.nodeName !== "INPUT") {
-        return
-      }
-      if (event.target.value=== "Showroom"&&event.target.checked=== true) {
-        this._refs.formDay.classList.add('showroom-method--hide')
-      } else {
-        this._refs.formDay.classList.remove('showroom-method--hide')
-            
-      }
-      if (event.target.checked===true) {
-        this._addLocalStorage(event.target.name,event.target.value)
-      }
-    })
     if (!this._refs.delivery.getEventListeners('click')) {
-     console.log(this._refs.delivery.getEventListeners('click')); 
+      this._refs.delivery.addEventListener('click', event => {
+        if (event.target.nodeName !== "INPUT") {
+          return
+        }
+        if (event.target.value=== "Showroom"&&event.target.checked=== true) {
+          this._refs.formDay.classList.add('showroom-method--hide')
+        } else {
+          this._refs.formDay.classList.remove('showroom-method--hide')
+              
+        }
+        if (event.target.checked===true) {
+          this._addLocalStorage(event.target.name,event.target.value)
+        }
+      }) 
     }
     
   }

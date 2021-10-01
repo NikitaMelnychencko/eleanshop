@@ -203,7 +203,7 @@
   color: $form-text-color;
 
   &:hover{
-    background-color: #F8EFE7;
+    background-color: $accent-background-selector-color;
   }
   & span{
     padding-right: 8px;
@@ -251,7 +251,7 @@
   font-weight: 500;
   font-size: 13px;
   line-height: 1.38;
-  color: #B3B3B3;
+  color: $secondary-form-text-color;
 }
 
 //payment-method
@@ -280,7 +280,7 @@
   height: 28px;
   width: 28px;
   margin-right: 10px;
-  border: 1px solid #D0D0D0;
+  border: 1px solid $third-border-color;
   border-radius: 50%;
 
  }
