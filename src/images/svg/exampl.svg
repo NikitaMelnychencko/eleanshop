@@ -168,6 +168,13 @@
 <symbol id="icon-agree-checket" viewBox="0 0 240 32">
 <path fill="none" stroke="#d7b494" style="stroke: var(--color1, #d7b494)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="16" d="M240 23.156h-240"></path>
 </symbol>
+<symbol id="icon-switch-minus" viewBox="0 0 352 32">
+<path d="M0 0h352v32h-352v-32z"></path>
+</symbol>
+<symbol id="icon-switch-plus" viewBox="0 0 32 32">
+<path d="M0 14.545h32v2.909h-32v-2.909z"></path>
+<path d="M14.545 32v-32h2.909v32h-2.909z"></path>
+</symbol>
 </defs>
     </defs>
 </svg>

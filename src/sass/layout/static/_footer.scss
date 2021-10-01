@@ -38,12 +38,20 @@
     opacity: 0;
     visibility: hidden;
 }
+.footer__logo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+line-height: 1.05;
+color: $secondary-text-color;
 
+letter-spacing: 0.1em;
+}
 .footer__mobile-logo-text{
     font-size: 10px;
     line-height: 1.5;
     letter-spacing: 0.1em;
-    margin-left: 8px;
 }
 
 .footer__mobile{
@@ -161,11 +169,7 @@
     width: 101px;
     height: 19px;
 }
-.footer__mobile-logo-list{
-    display: flex;
-    align-items: center;
-    justify-content: end;
-}
+
 
 
 /*Стили для input*/
