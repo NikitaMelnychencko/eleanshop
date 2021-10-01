@@ -81,45 +81,6 @@ const createLocal = new localStor(
 
 )
 
-// const formDay =document.querySelector('.showroom-method')
-// const delivery = document.querySelector('.delivery-method')
-// const payment = document.querySelector('.payment')
-// const infoEL = document.querySelector('.basic-information')
-// const arrInputInfo = infoEL.querySelectorAll('input')
-// const textareaInfo = infoEL.querySelector('textarea')
-
-// delivery.addEventListener('click', event => {
-//   if (event.target.nodeName !== "INPUT") {
-//     return
-//   }
-//   if (event.target.value=== "Showroom"&&event.target.checked=== true) {
-//     formDay.classList.add('showroom-method--hide')
-//   } else {
-//     formDay.classList.remove('showroom-method--hide')
-        
-//   }
-//   if (event.target.checked===true) {
-//     localStorage.setItem(`${event.target.name}`,`${event.target.value}`)
-//   }
-// })
-// payment.addEventListener('click', event => {
-//   if (event.target.nodeName !== "INPUT") {
-//     return
-//   }
-//   if (event.target.checked===true) {
-//     localStorage.setItem(`${event.target.name}`,`${event.target.value}`)
-//   }
-// })
-// arrInputInfo.forEach(elem => {
-//   elem.addEventListener('blur', event => {
-//     localStorage.setItem(`${event.target.name}`,`${event.target.value}`)
-//   })
-// })
-// textareaInfo.addEventListener('blur', event => {
-//   localStorage.setItem(`${event.target.name}`,`${event.target.value}`)
-// })
-
-
 class modalData{
   constructor({idInput,idList}) {
     this._refs = this._getRefs(idInput, idList)
