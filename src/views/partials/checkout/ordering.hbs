@@ -11,6 +11,15 @@
             <p class='ordering__label'>{{label.name}}</p>
             
             <div class='ordering__selects'>
+                {{!-- <div class="showroom-method__item ordering__select--item">
+                    <input class="showroom-method__form " name="color" id="js-color" placeholder="ВЫБЕРИТЕ ЦВЕТ" />
+                    <ul class="showroom-list showroom-list--hide js-day js-color" id='day-list color-list'>
+                        {{#each color}}
+                        <li class="showroom-list__item ordering__list--item">{{text}}</li>
+                        {{/each}}
+                    </ul>
+                </div> --}}
+
                 <select class='ordering__select ordering__select--color' name='color' id='color'>
                     {{#each color}}
                     <option value="{{value}}">{{text}}</option>

@@ -143,4 +143,3 @@ function getDiscount() {
 export const totalPrice =  renewTotalPriceWithDiscount.bind();
 // console.log(totalPrice())
 
-

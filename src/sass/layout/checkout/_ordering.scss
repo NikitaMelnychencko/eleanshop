@@ -1,6 +1,6 @@
 .ordering {
   background-color: $modal-background-color;
-  @media screen and (min-width: $mobile-general) {
+  @media screen and (min-width: $mobile-first) {
     padding-top: 39px;
     padding-bottom: 28px;
   }
@@ -21,7 +21,7 @@
   text-align: center;
   text-transform: uppercase;
 
-  @media screen and (min-width: $mobile-general) {
+  @media screen and (min-width: $mobile-first) {
     padding-bottom: 21px;
   }
 
@@ -41,7 +41,7 @@
   padding-bottom: 30px;
   display: flex;
 
-  @media screen and (min-width: $mobile-general) and (max-width: $tablet-only) {
+  @media screen and (min-width: $mobile-first) and (max-width: $tablet-only) {
     align-items: flex-start;
     border-bottom: 1px solid $border-color;
   }
@@ -52,7 +52,7 @@
 }
 
 .ordering__image {
-  @media screen and (min-width: $mobile-general) {
+  @media screen and (min-width: $mobile-first) {
     width: 100px;
   }
 
@@ -68,9 +68,13 @@
   font-size: 18px;
   line-height: 1.11;
 
-  @media screen and (min-width: $mobile-general) and (max-width: $tablet-only) {
+  @media screen and (min-width: $mobile-first) and (max-width: $tablet-only) {
     display: inline-block;
     margin-bottom: 50px;
+    margin-right: 45px;
+  }
+  @media screen and (min-width: $desktop-up) {
+    margin-right: 10px;
   }
 }
 
@@ -90,7 +94,7 @@
   font-size: 17px;
   line-height: 1.35;
 
-  @media screen and (min-width: $mobile-general) {
+  @media screen and (min-width: $mobile-first) {
     margin-right: 14px;
     width: 126px;
   }
@@ -100,20 +104,15 @@
     width: 135px;
   }
 }
+.ordering__select > option:hover {
+  background-color: #f8efe7;
+}
 
 .ordering__select--color {
-  @media screen and (min-width: $mobile-general) and (max-width: $tablet-only) {
+  @media screen and (min-width: $mobile-first) and (max-width: $tablet-only) {
     display: none;
   }
 }
-
-// .ordering__circle {
-//   display: inline-block;
-//   width: 22px;
-//   height: 22px;
-//   border: 5px solid $secondary-text-color;
-//   border-radius: 50%;
-// }
 
 .ordering__btn {
   display: flex;
@@ -140,7 +139,15 @@
   font-size: 18px;
   line-height: 1.27;
 
-  @media screen and (min-width: $mobile-general) and (max-width: $tablet-only) {
+  @media screen and (min-width: $mobile-first) and (max-width: $mobile-only) {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    display: block;
+    margin-bottom: 28px;
+  }
+
+  @media screen and (min-width: $tablet-general) and (max-width: $tablet-only) {
     position: absolute;
     top: 30px;
     left: 0;
@@ -163,7 +170,7 @@
 
   background-color: $modal-background-color;
 
-  @media screen and (min-width: $mobile-general) and (max-width: $tablet-only) {
+  @media screen and (min-width: $mobile-first) and (max-width: $tablet-only) {
     position: absolute;
     top: 0;
     right: 0;
@@ -181,7 +188,7 @@
 
 .ordering__box {
   flex: 1;
-  @media screen and (min-width: $mobile-general) and (max-width: $tablet-only) {
+  @media screen and (min-width: $mobile-first) and (max-width: $tablet-only) {
     position: relative;
 
     margin-left: 16px;
@@ -199,7 +206,7 @@
 }
 
 .ordering__promocodebox {
-  @media screen and (min-width: $mobile-general) {
+  @media screen and (min-width: $mobile-first) {
     padding-top: 30px;
     padding-bottom: 30px;
   }
@@ -218,7 +225,7 @@
   padding: 13px;
   height: 50px;
   border: 1px dotted $secondary-border-color;
-  @media screen and (min-width: $mobile-general) {
+  @media screen and (min-width: $mobile-first) {
     width: 264px;
     border-right: none;
   }
@@ -261,7 +268,7 @@
   font-weight: 500;
   color: $secondary-text-color;
 
-  @media screen and (min-width: $mobile-general) {
+  @media screen and (min-width: $mobile-first) {
     display: block;
     margin-top: 23px;
     margin-bottom: 28px;
@@ -293,7 +300,7 @@
   color: $secondary-text-color;
 }
 .ordering__totalbox {
-  @media screen and (min-width: $mobile-general) {
+  @media screen and (min-width: $mobile-first) {
     display: flex;
     justify-content: space-between;
   }
