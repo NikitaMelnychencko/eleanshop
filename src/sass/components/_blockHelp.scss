@@ -28,7 +28,7 @@
 .button-scroll {
   width: 36px;
   height: 36px;
-  background-image: url(../images/svg/blockHelp/arrow.svg);
+  background-image: url(./images/arrow.svg);
   background-size: contain;
   background-color: transparent;
   visibility: hidden;
@@ -42,13 +42,13 @@
   }
 }
 .button-phone {
-  background-image: url(../images/svg/blockHelp/helpPhone.svg),
-    url(../images/svg/blockHelp/rectangleWhite.svg);
+  background-image: url(./images/helpPhone.svg),
+    url(./images/rectangleWhite.svg);
   background-size: 26px 26px, 36px 36px;
 }
 .button-chat {
   position: relative;
-  background-image: url(../images/svg/blockHelp/helpChat.svg);
+  background-image: url(./images/helpChat.svg);
 
   background-size: 36px 36px;
 }
@@ -127,7 +127,7 @@
   height: 20px;
   border-style: none;
   background-color: transparent;
-  background-image: url(../images/svg/blockHelp/cross.svg);
+  background-image: url(./images/cross.svg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -208,6 +208,7 @@
   }
 }
 .client-message {
+  overflow: hidden;
   background-color: $primary-background-color;
   border: 2px solid $accent-color;
 
