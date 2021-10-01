@@ -2,21 +2,11 @@ import markup from '../../../views/partials/product/productHandSewn.hbs';
 import productDataHandSewn from '../../json/productHandSewn.json';
 
 export default class HandSewn {
-  constructor({
-    root = 'main',
-    typeInsert = 'beforeEnd',
-    modalNext,
-    classModalNext = 'is-hidden',
-    backdrop,
-    classBackdrop = 'is-hidden',
-  }) {
+  constructor({ root = 'main', typeInsert = 'beforeEnd', object }) {
     this.root = document.querySelector(root);
     this.typeInsert = typeInsert;
     this.backdropRef = document.querySelector('[data-modal]');
-    this.modalNext = modalNext;
-    this.classModalNext = classModalNext;
-    this.backdrop = backdrop;
-    this.classBackdrop = classBackdrop;
+    this.object = object;
     if (this.root) {
       this.addMarkup();
     }
@@ -40,10 +30,13 @@ export default class HandSewn {
   };
 
   onNextBtnClick = () => {
-    const backdropRef = document.querySelector(this.backdrop);
-    const modalRef = document.querySelector(this.modalNext);
-    backdropRef.classList.remove(this.classBackdrop);
-    modalRef.classList.remove(this.classModalNext);
+    if (this.object) {
+      this.object.forEach(el => {
+        if (el.name) {
+          document.querySelector(el.name).remove(this.el.className);
+        }
+      });
+    }
   };
 
   onButtonClick = () => {
