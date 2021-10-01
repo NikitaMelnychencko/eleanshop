@@ -84,7 +84,8 @@ export default class ProductModalAddToCart {
     this._setNextBtnEvent();
   };
 
-  show = () => {
+  show = name => {
+    document.querySelector('.js-productName').textContent = name;
     this.self.classList.remove('hidden');
     this.setEvent();
   };

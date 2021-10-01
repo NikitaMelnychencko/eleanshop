@@ -9,7 +9,7 @@ const objProductModalAddToCart = new ProductModalAddToCart({
 
 objProductModalAddToCart.getMarkup();
 objProductModalAddToCart.setEvent();
-objProductModalAddToCart.show(); // show modal window - call the listener on the button
+objProductModalAddToCart.show('ЖАКЕТ-СМОКИНГ С ЛАЦКАНМИ'); // show modal window - call the listener on the button
 
 // document.querySelector('main').insertAdjacentHTML('beforeEnd', obj.getMarkup()); //  если в конструктор не передан параметр root
 // obj.setSlider();
