@@ -2,21 +2,16 @@ import payment_payment from '../../../views/partials/checkout/payment.hbs'
 import payment_checkout from '../../../views/layouts/checkout.hbs'
 import method from '../../json/method.json'
 import refs from '../../refs/refs.js'
-import '../../../images/img/checkout/payment/buyers.jpg'
-import '../../../images/img/checkout/payment/buyers@2x.jpg'
-import '../../../images/img/checkout/payment/mirror_reflection.jpg'
-import '../../../images/img/checkout/payment/mirror_reflection@2x.jpg'
-import '../../../images/svg/murkup.svg'
-import '../../../images/svg/murkup_arow.svg'
+
 
 
 const createPayment = payment_payment({ method })
 const createCheckout = payment_checkout({ createPayment })
 refs.mainEL.insertAdjacentHTML('beforeend', createCheckout)
 
-const infoEL = document.querySelector('.basic-information')
-const arrInputInfo = infoEL.querySelectorAll('input')
-const textareaInfo = infoEL.querySelector('textarea')
+// const infoEL = document.querySelector('.basic-information')
+// const arrInputInfo = infoEL.querySelectorAll('input')
+// const textareaInfo = infoEL.querySelector('textarea')
 
 class localStor{
   constructor() {
@@ -32,8 +27,11 @@ class localStor{
       formDay: document.querySelector('.showroom-method'),
       delivery: document.querySelector('.delivery-method'),
       payment: document.querySelector('.payment'),
-  
+      infoEL: document.querySelector('.basic-information')
     }
+    refs.arrInputInf = []
+    refs.arrInputInf = refs.infoEL.querySelectorAll('input')
+    refs.textareaInfo= refs.infoEL.querySelector('textarea')
     return refs
   }
   _addEventDelivery() {
@@ -63,12 +61,13 @@ class localStor{
     })
   }
   _addEventBasicInformation() {
-    arrInputInfo.forEach(elem => {
+    console.log(this._refs);
+    this._refs.arrInputInfo.forEach(elem => {
       elem.addEventListener('blur', event => {
         this._addLocalStorage(event.target.name,event.target.value)
       })
     })
-    textareaInfo.addEventListener('blur', event => {
+    this._refs.textareaInfo.addEventListener('blur', event => {
       this._addLocalStorage(event.target.name,event.target.value)
     })
   }

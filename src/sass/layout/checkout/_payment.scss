@@ -69,7 +69,7 @@
     height: 28px;
     width: 28px;
     margin-right: 10px;
-    border: 1px solid #D0D0D0;
+    border: 1px solid $third-border-color;
     border-radius: 100%;
   }
   
@@ -99,7 +99,7 @@
     height: 26px;
     width: 26px;
     margin-right: 10px;
-    border: 1px solid #D0D0D0;
+    border: 1px solid $third-border-color;
     
   }
   .basic-information__checkbox:checked + &::after {
@@ -200,7 +200,7 @@
   font-size: 12px;
   line-height: 3.33;
   letter-spacing: 0.06em;
-  color: #A6A6A9;
+  color: $form-text-color;
 
   &:hover{
     background-color: #F8EFE7;
@@ -214,7 +214,7 @@
   display: none;
   width: 8px;
   height: 6px;
-  fill:#000000;
+  fill:$primary-svg-color;
   .showroom-list__item:hover &{
     position: absolute;
     height: 21px;
@@ -257,7 +257,7 @@
 //payment-method
 .payment{
   padding-bottom: 31px;
-  border-bottom: 1px solid #E3E4E4;
+  border-bottom: 1px solid $border-color;
   margin-bottom: 24px;
 }
 
