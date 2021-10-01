@@ -33,15 +33,16 @@ function onOpenModal(evt) {
     // }
 }
 
-// function replaceAtribute(src ) {
-//   videoEl.src = src;
+function replaceAtribute(src ) {
+  videoEl.src = src;
   
-// }
+}
 
-// function onCloseModal(e) {
-//    e.videobox.classList.remove('is-open')
-//     replaceAtribute(" ", " ")
-// };
+function onCloseModal(e) {
+   e.videobox.classList.remove('is-open')
+    replaceAtribute(" ")
+};
+
 // 4. Закрытие модалки с помощью "ESC"
 window.addEventListener('keydown', onCloseModalEsc);
 
