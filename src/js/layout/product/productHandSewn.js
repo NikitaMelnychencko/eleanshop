@@ -40,7 +40,6 @@ export default class HandSewn {
   };
 
   onNextBtnClick = () => {
-    // тут прописати відкриття модального вікна   is-hidden
     const backdropRef = document.querySelector(this.backdrop);
     const modalRef = document.querySelector(this.modalNext);
     backdropRef.classList.remove(this.classBackdrop);
