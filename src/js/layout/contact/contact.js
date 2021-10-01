@@ -1,13 +1,10 @@
+import refs from '../../refs/refs';
 import contactsTemplate from '../../../views/layouts/contact.hbs';
 import contact_map from '../../../views/partials/contact/map.hbs';
-
-import contactsData from '../../../../app';
-import refs from '../../refs/refs';
+import contacts_contact from '../../../views/partials/contact/contact.hbs';
+import { contactsData } from '../../../../app';
 const { main } = refs;
-
 const contactsMap = contact_map();
-const contactsMarkup = contactsTemplate(contactsData);
-
+const contactsContact = contacts_contact(contactsData);
+const contactsMarkup = contactsTemplate({ contactsMap, contactsContact });
 main.insertAdjacentHTML('beforeend', contactsMarkup);
-
-console.log(contactsMap);
