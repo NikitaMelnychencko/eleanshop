@@ -1,9 +1,4 @@
 
-.absolute{
-position: absolute;
-left: 15%;
-}
-
 /* ====== VISUALLY HIDDEN ======*/
 .hiden{
         position: absolute;
@@ -272,9 +267,11 @@ left: 15%;
 
 
  .footer__desktop{
+     position: absolute;
      opacity: 1;
      display: flex;
     padding-top: 105px;
+
 
         @media screen and (max-width:$desktop-up){
         position: absolute;
