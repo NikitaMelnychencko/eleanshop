@@ -1,10 +1,11 @@
-
-.footer__container.absolute{
-    position: absolute;
-    background-color: transparent;
-   
+body{
+    background-color: aquamarine;
 }
 
+.absolute{
+position: absolute;
+left: 15%;
+}
 
 /* ====== VISUALLY HIDDEN ======*/
 .hiden{
@@ -53,7 +54,7 @@
 }
 
 .footer__mobile{
-    background-color: $footer-background-color;
+    background-color: transparent;
     padding-top: 36px;
     padding-bottom: 26px;
 
