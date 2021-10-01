@@ -1,0 +1,40 @@
+
+<section class="help">
+    <div class="help__button-thumb">
+        <button class="help__button button-scroll"></button>
+        <button class="help__button button-phone help__button--orange"></button>
+        <button class="help__button button-chat help__button--orange">
+            <div class="button-chat__messages-amount-thumb">
+                <p class="button-chat__messages-amount"></p>
+            </div>
+        </button>
+    </div>
+
+    <div class="help__phone-modal help__modal">
+        <button class="help__button-close-modal" type="button"></button>               
+        <form name="client-number" class="client-number__form">
+            <p class="client-number__text">Оставте свой номер телефона и мы Вам перезвоним в ближайшее время и проконсультируем по всем вопросам.</p>
+            <div class="client-number__timer">
+                <p class="client-number__timer-text">Ожидайте звонок через <span class="client-number__timer-number">30</span> секунд </p>
+            </div>
+            <label class="client-number__label" for="tel">
+                <input class="client-number__input " type="tel" id="tel" name="user-phone-number" placeholder="* * * - * * * - * * - * *" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="067-000-00-00"> 
+            </label>
+             
+            <button class="help__form-button client-number__button" type="submit">Отправить</button>          
+        </form>
+    </div>
+    
+    <div class="help__chat-modal help__modal">
+        <button class="help__button-close-modal" type="button"></button>
+        <div class="help__chat-messages-thumb">
+            <p class="help__chat-message adviser-message">Здравствуйте! Чем можем Вам помочь?</p>
+        </div>
+        <form name="client-message" class="client-messadge__form">
+            <label for="" class="client-message__label">
+                 <textarea name="client-message-text" id="" class="client-message__textarea" placeholder="Ваш текст..." required></textarea>
+            </label>            
+            <button type="submit" class="help__form-button client-message__button">Отправить</button>
+        </form>
+    </div>
+</section>

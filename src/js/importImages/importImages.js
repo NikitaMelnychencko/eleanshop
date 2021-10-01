@@ -72,3 +72,9 @@ import '../../images/img/product/handSewn/handSewn-bg-right.png';
 import '../../images/img/product/handSewn/handSewn-bg-left.png';
 import '../../images/svg/sprite.svg';
 import '../../images/svg/thanks_for_ordering.svg';
+//==============blockHelp=================
+import '../../images/svg/blockHelp/arrow.svg';
+import '../../images/svg/blockHelp/cross.svg';
+import '../../images/svg/blockHelp/helpChat.svg';
+import '../../images/svg/blockHelp/helpPhone.svg';
+import '../../images/svg/blockHelp/rectangleWhite.svg';
