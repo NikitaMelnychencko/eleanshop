@@ -18,7 +18,7 @@
   height: 400px;
   width: 100%;
   object-fit: cover;
-  // transition: transform ($time-cubic);
+  // transition: transform $time-cubic;
 }
 
 .video-set__link {
@@ -46,19 +46,18 @@
   padding-bottom: 25px;
 }
 .video__description {
-  font-family: $primary-font-family;
+  // font-family: $primary-font-family;
   font-size: 15px;
-  color: $secondary-text-color;
+  color: black;
   font-weight: 400;
   line-height: 19px;
   letter-spacing: 0.05em;
   text-align: left;
   font-weight: 400;
-  font-size: 15px;
   line-height: 1.27;
   letter-spacing: 0.05em;
   text-align: left;
-  padding-bottom: 25px;
+  padding: 19px;
 }
 
 // // Модалка
