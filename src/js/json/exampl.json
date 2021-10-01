@@ -1,23 +1,23 @@
 [
 {
-    "video": "pexels1.mp4",
-    "poster": "https://www.pexels.com/video/two-young-women-looking-at-a-dress-8387354",
+    "video": "https://www.pexels.com/video/two-young-women-looking-at-a-dress-8387354",
+    "poster": "./images/blackV.jpg",
     "description": "Образ со смокингом"
 
 },
 {
 "video": "https://www.pexels.com/video/two-young-women-looking-at-a-dress-8387354",
-"poster": "../../../src/images/img/Reviews/poster/redV.jpg",
+"poster": "./images/Black2V.jpg",
 "description": "Образ с красным смокингом и черным топом"
 },
 {
 "video": "https://www.pexels.com/video/girl-put-on-a-new-dress-and-shows-it-to-her-friend-5585998",
-"poster": "../../../src/images/img/Reviews/poster/blue.jpg",
+"poster": "./images/blu.jpg",
 "description": "Синий костюм с брюками"
 },
 {
 "video": "https://www.pexels.com/video/girl-put-on-a-new-dress-and-shows-it-to-her-friend-5585998",
-"poster": "../../../src/images/img/Reviews/poster/blackV.jpg",
+"poster": "./images/redV.jpg",
 "description": "Образ с костюмом"
 }
 ]
