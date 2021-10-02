@@ -1,4 +1,32 @@
 
+.footer__mobile-list-item-plus::before,
+.footer__mobile-list-item-plus::after {
+    content: '';
+    width: 11px;
+    height: 1px;
+    background-color: $secondary-text-color;
+    position: absolute;
+    right: 0;
+    top: 50%;
+ 
+    // transition: transform 0.2s ease 0s;
+}
+
+.block-after::after {
+  transform: rotate(-90deg);
+}
+
+.block-after.open-menu::after {
+  transform: rotate(0deg);
+}
+
+
+
+
+
+
+
+
 
 /* ====== VISUALLY HIDDEN ======*/
 .hiden{
@@ -93,24 +121,17 @@ letter-spacing: 0.1em;
     fill: #2F2F2F;
 }
 
+.open-menu{
+    display: inline-block;
+}
 .footer__mobile-list-item-plus{
     position: relative;
     
 }
 
-.footer__mobile-icon-position-relative,
-.footer__mobile-icon-position-absolute{
-    position: absolute;
-    right: 0;
-}
-
 .footer__mobile-list-dropdown{
+    display: none;
     margin-top: 15px;
-}
-
-.footer__mobile-icon-menu{
-    width: 11px;
-    height: 11px;
 }
 
 .footer__mobile-submenu{
@@ -137,18 +158,6 @@ letter-spacing: 0.1em;
     border-top:  1px  solid #d3d1d1;
     padding-top: 15px;
     padding-bottom: 15px;
-}
-
-.footer__mobile-icon-menu-open{
-    position: relative;
-    display: block;
-    width: 11px;
-    height: 11px;
-}
-
-.footer__mobile-icon-menu-close{
-    position: absolute;
-    top: 0px;
 }
 .footer__mobile-list-contacts-telephon,
 .footer__mobile-list-contacts-chat,
@@ -208,8 +217,9 @@ letter-spacing: 0.1em;
         }
 }
 
-.js-dropdown{
-    display: none;
+
+.js-dropdown-none{
+    display: block;
 }
 
 
@@ -277,9 +287,6 @@ letter-spacing: 0.1em;
      display: flex;
     bottom: 0;
     z-index: 200;
-
-
-
 
         @media screen and (max-width:$desktop-up){
         position: absolute;

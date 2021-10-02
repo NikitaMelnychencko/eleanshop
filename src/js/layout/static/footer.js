@@ -2,51 +2,45 @@ import { stringify } from 'postcss';
 import refs from '../../refs/refs.js'
 
 const {
-    plusLink,
-    minusLink,
+    closeOpenPlus,
+    openList,
     openSubMenu,
-    isOpenIcon,
-    removeIconPlus,
-    iconMenu,
     inputStorageMobile,
     inputStorageDesktop,
     checkBoxIcon,
     agreeActive,
     mobileSubmitBtn,
     desktopSubmitBtn,
-    footerInput,
-    formRegistrMobile,
     testIdInput } = refs
-console.log(testIdInput)
 checkBoxIcon.addEventListener('click', onAgreeCheckBox)
 mobileSubmitBtn.addEventListener('submit', onSubmitBtnMobile)
 desktopSubmitBtn.addEventListener('submit', onSubmitBtnDesktop)
-console.log(desktopSubmitBtn)
 // Функция раскрытия списка-меню
-plusLink.forEach((evt) => {
-    const sibling = evt.nextElementSibling;
-    evt.addEventListener('click', (el, evt) => {
+
+closeOpenPlus.forEach((evt) => {
+
+    evt.addEventListener('click', (el) => {
         el.preventDefault()
-        sibling.classList.toggle('js-dropdown');
-        const arrow = sibling.querySelector('.footer__mobile-list-dropdown');
-        if (arrow) {
-            arrow.classList.toggle('js-dropdown');
+        const dropDown = document.querySelector('.open-menu');
+        if (el.target.nextElementSibling) {
+            if (dropDown) {
+                dropDown.classList.toggle('open-menu')
+                dropDown.nextElementSibling.classList.toggle('js-dropdown-none');
+                if (el.target === dropDown) {
+                    return;
+                }
+            }
+            el.target.classList.toggle('open-menu');
+            console.log(el.target)
+            console.log(el.target.nextElementSibling)
+            el.target.nextElementSibling.classList.toggle('js-dropdown-none');
         }
+        // else if (!el.target.nextElementSibling) {
+        //     window.location.href = document.querySelector('a')
+        // }
     });
 });
 
-/*удаление иконки плюс при раскрытии спика*/
-
-plusLink.forEach((evt) => {
-    const sibl = evt.firstElementChild;
-    evt.addEventListener('click', (el, evt) => {
-        el.preventDefault()
-        const plus = sibl.querySelector('.footer__mobile-icon-menu');
-        if (plus) {
-            plus.classList.toggle('is-open');
-        }
-    });
-});
 // Активация деактивация чекбокса
 function onAgreeCheckBox(evt) {
     const iconCheck = evt.currentTarget
@@ -56,7 +50,6 @@ function onAgreeCheckBox(evt) {
 }
 
 // Назначение localStorage на input mobile
-
 inputStorageMobile.forEach((evt) => {
     const idInputMobile = evt.id
     evt.addEventListener('input', (el) => {
@@ -70,7 +63,6 @@ inputStorageMobile.forEach((evt) => {
 
 
 // Назначение localStorage на input desktop
-
 inputStorageDesktop.forEach((evt) => {
     const idInputDesktop = evt.id
     evt.addEventListener('input', (el) => {
@@ -82,6 +74,7 @@ inputStorageDesktop.forEach((evt) => {
     });
 });
 
+//   сброс localStorage на input mobile
 function onSubmitBtnMobile(evt) {
     evt.preventDefault();
     evt.currentTarget.reset()
@@ -89,6 +82,7 @@ function onSubmitBtnMobile(evt) {
 
 }
 
+//   сброс localStorage на input desktop
 function onSubmitBtnDesktop(evt) {
     evt.preventDefault();
     evt.currentTarget.reset()
@@ -97,15 +91,15 @@ function onSubmitBtnDesktop(evt) {
 
 }
 // тут ловим все ссылки и перебераем все дата атребуты для преренаправления на нужную страницу
-const a = document.querySelectorAll('a')
-a.forEach((evt) => {
-    const idSeorch = evt.dataset
-    evt.addEventListener('click', (el) => {
-        const click = el.currentTarget;
-        console.log(click)
-        if (click === idSeorch) {
-            window.location.href = ""
-            console.log("Работает?")
-        }
-    })
-});
+// const a = document.querySelectorAll('a')
+// const test5 = a.forEach((evt) => {
+//     const idSeorch = evt.dataset
+//     evt.addEventListener('click', (el) => {
+//         const click = el.currentTarget;
+//         console.log(click)
+//         if (dSeorch === click) {
+//             window.location.href = click.target
+//             console.log("Работает?")
+//         }
+//     })
+// });
