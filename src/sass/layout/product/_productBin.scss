@@ -1,12 +1,12 @@
 .product-bin {
-  width: 384px;
-  height: auto;
-  max-height: calc(100vh - 50px);
-  padding: 46px 20px 50px;
   position: absolute;
   top: 0;
   right: 0;
   z-index: 999;
+  width: 384px;
+  height: auto;
+  max-height: calc(100vh - 50px);
+  padding: 46px 20px 50px;
   background-color: $selection-text-color;
   overflow: scroll;
 

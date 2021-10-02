@@ -26,7 +26,7 @@ export default class HandSewn {
 
   _addButtonListener = () => {
     this.button = document.querySelector('.js-button-product-delivery');
-    this.button.addEventListener('click', this.onButtonClick.bind(this));
+    this.button.addEventListener('click', this._onButtonClick);
   };
 
   _onNextBtnClick = () => {
@@ -44,7 +44,7 @@ export default class HandSewn {
   };
 
   getMarkup = () => {
-    this.createMarkup();
+    this._createMarkup();
     return this.markup;
   };
 

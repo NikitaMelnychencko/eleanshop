@@ -3,8 +3,8 @@ import dataBin from '../../json/orderinginsertion.json';
 
 export default class ProductBin {
   constructor({ root, typeInsert, data = dataBin }) {
+    this.dataBin = data;
     this._getData();
-
     if (root) {
       this.root = document.querySelector(root);
       this.typeInsert = typeInsert;
@@ -20,7 +20,8 @@ export default class ProductBin {
     if (dataLS) {
       this.data = JSON.parse(dataLS);
     } else {
-      this.data = data;
+      this.data = this.dataBin;
+
       this.data.forEach(el => {
         const arr = el.label.price.split('');
         for (let i = arr.length - 3; i > 0; i -= 3) {
@@ -53,8 +54,8 @@ export default class ProductBin {
 
   _updateMarkup() {
     this.counter.forEach((el, idx) => {
-      if (Number(el.textContent) !== this.data[idx].count) {
-        el.textContent = this.data[idx].count;
+      if (Number(el.textContent) !== this.data[idx].label.count) {
+        el.textContent = this.data[idx].label.count;
       }
     });
   }
@@ -83,6 +84,10 @@ export default class ProductBin {
     const id = e.currentTarget.dataset.id;
     const elemId = this.data.findIndex(el => el.label.id === id);
     this.data.splice(elemId, 1);
+    this.counter.splice(elemId, 1);
+    this.counterBtnDec.splice(elemId, 1);
+    this.counterBtnInc.splice(elemId, 1);
+    this.deleteBtn.splice(elemId, 1);
     document.querySelector('[data-id = "' + id + '"]').remove();
     this._updateLS();
     this._onTotal();
@@ -172,10 +177,10 @@ export default class ProductBin {
   };
 
   initialBin = () => {
-    this.counterBtnDec = document.querySelectorAll('.product-bin__button-dec');
-    this.counterBtnInc = document.querySelectorAll('.product-bin__button-inc');
-    this.counter = document.querySelectorAll('.product-bin__product-count');
-    this.deleteBtn = document.querySelectorAll('.product-bin__button-del');
+    this.counterBtnDec = [...document.querySelectorAll('.product-bin__button-dec')];
+    this.counterBtnInc = [...document.querySelectorAll('.product-bin__button-inc')];
+    this.counter = [...document.querySelectorAll('.product-bin__product-count')];
+    this.deleteBtn = [...document.querySelectorAll('.product-bin__button-del')];
     this.buttonClose = document.querySelectorAll('.js-close-modal');
     this.buttonNext = document.querySelector('.js-next');
     this.totalPrice = document.querySelector('.product-bin__total-price');
