@@ -26,14 +26,17 @@ export default class RecomendationsCategory {
     const arr = [];
     let num = -1;
     for (let i = 0; i < this.countsCard; i++) {
-      while (true) {
-        num = this._getRandom(data.length - 1);
-        if (!arr.includes(num)) {
-          arr.push(num);
-          break;
+      if (i === 0) {
+        arr.push(this._getRandom(data.length - 1));
+      } else {
+        num = arr[0];
+        while (arr.includes(num)) {
+          num = this._getRandom(data.length - 1);
         }
+        arr.push(num);
       }
     }
+
     return arr.map(el => data[el]);
   };
 
@@ -45,6 +48,7 @@ export default class RecomendationsCategory {
 
   _addMarkup = () => {
     const mark = this._createMarkup();
+    console.log(mark);
     if (mark) {
       this.root.insertAdjacentHTML(this.typeInsert, mark);
     }
@@ -70,7 +74,9 @@ export default class RecomendationsCategory {
     $('.slider').slick({
       arrows: false,
       dots: this.buttonPagination,
+      infinite: true,
       slidesToShow: 2.5,
+      focusOnSelect: true,
     });
   };
 }

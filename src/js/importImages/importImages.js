@@ -121,3 +121,4 @@ import '../../images/img/checkout/payment/mirror_reflection.jpg';
 import '../../images/img/checkout/payment/mirror_reflection@2x.jpg';
 import '../../images/svg/murkup.svg';
 import '../../images/svg/murkup_arow.svg';
+import '../../images/svg/product/icon-product-delivery.svg';
