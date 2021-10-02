@@ -1,0 +1,20 @@
+%button {
+  font-family: $selection-font-family;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.2;
+
+  text-align: center;
+  letter-spacing: 0.1em;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+%form__btn {
+  border-style: none;
+  border-radius: 0;
+  cursor: pointer;
+  transition: background-color $time-cubic;
+  border: 1px solid $secondary-text-color;
+}
