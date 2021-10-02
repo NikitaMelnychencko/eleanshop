@@ -8,26 +8,26 @@ export default class RecomendationsCategory {
     this.root = document.querySelector(root);
     this.typeInsert = typeInsert;
     this.data = data;
-    this.addMarkup();
+    this._addMarkup();
     if (window.innerWidth <= 720) {
-      this.addSlider();
+      this._addSlider();
     }
   }
 
-  createMarkup() {
+  _createMarkup() {
     if (this.data) {
       return cardsMarkup(this.data);
     }
   }
 
   addMarkup() {
-    const mark = this.createMarkup();
+    const mark = this._createMarkup();
     if (mark) {
       this.root.insertAdjacentHTML(this.typeInsert, mark);
     }
   }
 
-  addSlider() {
+  _addSlider() {
     $('.slider').slick({
       arrows: false,
       dots: true,

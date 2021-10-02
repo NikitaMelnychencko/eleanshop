@@ -2,7 +2,20 @@ import markupBin from '../../../views/partials/product/productBin.hbs';
 import dataBin from '../../json/orderinginsertion.json';
 
 export default class ProductBin {
-  constructor({ root = 'header', typeInsert = 'beforeEnd', data = dataBin }) {
+  constructor({ root, typeInsert, data = dataBin }) {
+    this._getData();
+
+    if (root) {
+      this.root = document.querySelector(root);
+      this.typeInsert = typeInsert;
+      this._addMarkup(this.root);
+    } else {
+      this.root = document.querySelector('.product-bin__list');
+    }
+    this.self = document.querySelector('.product-bin');
+  }
+
+  _getData = () => {
     const dataLS = localStorage.getItem('orderingData');
     if (dataLS) {
       this.data = JSON.parse(dataLS);
@@ -17,22 +30,15 @@ export default class ProductBin {
         localStorage.setItem('orderingData', JSON.stringify(this.data));
       });
     }
-
-    if (root) {
-      this.root = document.querySelector(root);
-      this.typeInsert = typeInsert;
-      this._addMarkup();
-    }
-    this.self = document.querySelector('.product-bin');
-  }
+  };
 
   _createMarkup = () => {
     return markupBin(this.data);
   };
 
-  _addMarkup = () => {
-    if (this.root) {
-      this.root.insertAdjacentHTML(this.typeInsert, this._createMarkup());
+  _addMarkup = root => {
+    if (root) {
+      root.innerHTML = this._createMarkup();
     }
     this.initialBin();
   };
@@ -157,6 +163,11 @@ export default class ProductBin {
   };
 
   show = () => {
+    this._getData();
+    if (!this.root) {
+      this.root = document.querySelector('.product-bin__list');
+    }
+    this._addMarkup(this.root);
     this.self.classList.remove('hidden');
   };
 
