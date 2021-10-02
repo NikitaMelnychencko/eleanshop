@@ -18,7 +18,7 @@
 
   font-family: $selection-font-family;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 21px;
   line-height: 0.95;
 
   text-align: center;
@@ -45,6 +45,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media screen and (min-width: $desktop-up) {
+    padding-bottom: 70px;
+  }
 }
 
 /* Basic styles */
@@ -67,6 +71,17 @@
 .showroom .slick-track {
   display: flex;
   align-items: flex-start;
+}
+
+.showroom .slick-track .slider__item {
+  @media screen and (min-width: $desktop-up) {
+    &:nth-child(1) {
+      margin-top: 43px;
+    }
+    &:nth-child(2) {
+      margin-top: 21px;
+    }
+  }
 }
 
 .showroom .current-slide {
