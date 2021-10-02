@@ -4,7 +4,9 @@
       <a href='./' class='recomendation-category__link' data-id="{{id}}">
         <picture>
           <source srcset="{{image.srcset}}" media='(min-width: 1920px)' />
-          <source srcset="{{image.srcset-mobile}}" media='(max-width: 414px)' />
+          {{#if image.srcset-mobile}}
+            <source srcset="{{image.srcset-mobile}}" media='(max-width: 414px)' />
+          {{/if}}
           <img src="{{image.src}}" alt="{{image.alt}}" class='recomendation-category__image' />
         </picture>
       </a>
@@ -22,6 +24,9 @@
         <div class='recomendation-category__block-characters'>
           <span class='recomendation-category__price'>
             {{price}}
+            <span>
+              ₴
+            </span>
           </span>
           <span class='recomendation-category__characters'>
             {{description}}
