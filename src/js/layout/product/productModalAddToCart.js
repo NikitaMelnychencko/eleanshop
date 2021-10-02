@@ -3,15 +3,17 @@ import modalAddToCartMark from '../../../views/partials/product/productModalAddT
 
 export default class ProductModalAddToCart {
   constructor({ root, typeInsert = 'beforeEnd', productName }) {
-    if (root) {
-      this.root = document.querySelector(root);
-    }
     this.typeInsert = typeInsert;
     this.productName = productName;
     this.objCatalog = new RecomendationsCategory({ countsCard: 3, buttonPagination: false });
-    this._addMarkup();
-    this.self = document.querySelector('.product-modal-add-cart');
-    this.setSlider();
+
+    if (root) {
+      console.log(root);
+      this.root = document.querySelector(root);
+      this._addMarkup();
+      this.self = document.querySelector('.product-modal-add-cart');
+      this.setSlider();
+    }
   }
 
   _createMarkup = () => {
@@ -41,8 +43,10 @@ export default class ProductModalAddToCart {
   _addSlider = () => {
     $('.slider').slick({
       arrows: false,
-      dots: false,
+      dots: this.buttonPagination,
+      infinite: true,
       slidesToShow: 2.5,
+      focusOnSelect: true,
     });
   };
 
@@ -85,6 +89,9 @@ export default class ProductModalAddToCart {
   };
 
   show = name => {
+    if (!this.self) {
+      this.self = document.querySelector('.product-modal-add-cart');
+    }
     document.querySelector('.js-productName').textContent = name;
     this.self.classList.remove('hidden');
     this.setEvent();
