@@ -352,14 +352,49 @@
 }
 
 .button__plus {
+  position: relative;
+  width: 15px;
+  height: 15px;
   border: none;
   background-color: transparent;
   padding: 0;
   cursor: pointer;
 
-  transition: $time-cubic;
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    background-color: #3d3d3d;
+    transition: transform $time-cubic;
+  }
+
+  /* Vertical line */
+  &:before {
+    top: 0;
+    left: 50%;
+    width: 1px;
+    height: 100%;
+    margin-left: -1px;
+  }
+
+  /* horizontal line */
+  &:after {
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    margin-top: -1px;
+  }
 }
 
+.button__minus {
+  &:before {
+    transform: rotate(90deg);
+  }
+  &:after {
+    transform: rotate(180deg);
+  }
+}
 // !--------------------------------------------- END OF ABOUT PRODUCT//
 // !--------------------------------------------- CHARACTERISTIC MENU//
 
@@ -370,11 +405,10 @@
   padding-top: 15px;
   overflow: auto;
   opacity: 0;
-  transform: scale(0.5);
   visibility: hidden;
   pointer-events: none;
 
-  transition: opacity $time-cubic, transform $time-cubic;
+  transition: opacity 5000ms, transform 5000ms;
 }
 
 .params__grid.is-open {
@@ -382,7 +416,6 @@
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
-  transform: scale(1);
 }
 
 .params__item {
