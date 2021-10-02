@@ -146,5 +146,14 @@
 <symbol id="icon-white-circle" viewBox="0 0 32 32">
 <path fill="#e2dfdf" style="fill: var(--color3, #e2dfdf)" d="M32 16c0 8.837-7.163 16-16 16s-16-7.163-16-16c0-8.837 7.163-16 16-16s16 7.163 16 16z"></path>
 </symbol>
+<symbol id="icon-circle-black" viewBox="0 0 32 32">
+<path fill="#000000" style="fill: var(--color2, #000000)" d="M16 0c-8.837 0-16 7.163-16 16s7.163 16 16 16 16-7.163 16-16-7.163-16-16-16zM16 28c-6.627 0-12-5.373-12-12s5.373-12 12-12c6.627 0 12 5.373 12 12s-5.373 12-12 12z"></path>
+</symbol>
+<symbol id="icon-circle-white" viewBox="0 0 32 32">
+<path fill="#e2dfdf" style="fill: var(--color3, #e2dfdf)" d="M16 0c-8.837 0-16 7.163-16 16s7.163 16 16 16 16-7.163 16-16-7.163-16-16-16zM16 28c-6.627 0-12-5.373-12-12s5.373-12 12-12c6.627 0 12 5.373 12 12s-5.373 12-12 12z"></path>
+</symbol>
+<symbol id="icon-circle-red" viewBox="0 0 32 32">
+<path fill="#f2404a" style="fill: var(--color2, #f2404a)" d="M16 0c-8.837 0-16 7.163-16 16s7.163 16 16 16 16-7.163 16-16-7.163-16-16-16zM16 28c-6.627 0-12-5.373-12-12s5.373-12 12-12c6.627 0 12 5.373 12 12s-5.373 12-12 12z"></path>
+</symbol>
     </defs>
 </svg>

@@ -5,7 +5,9 @@
     {{#each orderingInsertion}}
     <div class='ordering__card'>
         
-        <img class='ordering__image' src='{{label.img}}' alt='article' />
+        <img class='ordering_image'
+        {{!-- srcset='{{label.img}} 1x, {{label.img2}} 2x' --}}
+        src='{{label.img}}' alt='article' />
         <div class='ordering__box'>
             
             <p class='ordering__label'>{{label.name}}</p>

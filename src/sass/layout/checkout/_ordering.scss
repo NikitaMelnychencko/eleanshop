@@ -51,7 +51,7 @@
   }
 }
 
-.ordering__image {
+.ordering_image {
   @media screen and (min-width: $mobile-first) {
     width: 100px;
   }
@@ -72,6 +72,7 @@
     display: inline-block;
     margin-bottom: 50px;
     margin-right: 45px;
+    height: 50px;
   }
   @media screen and (min-width: $desktop-up) {
     margin-right: 10px;
@@ -218,7 +219,7 @@
 
   @media screen and (min-width: $mobile-first) and (max-width: $mobile-only) {
     position: absolute;
-    top: 50px;
+    top: 55px;
     left: 0;
     display: block;
     margin-bottom: 28px;

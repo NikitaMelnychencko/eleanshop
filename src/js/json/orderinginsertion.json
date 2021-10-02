@@ -8,13 +8,13 @@
         "price": "10000",
         "sizeSelected": "46",
         "сolorSelected": "белый",
-        "circleSelected": "icon-white-circle",
+        "circleSelected": "icon-circle-white",
         "count": "1"
       },
       "color": [
-        { "id": "qwERtyu12", "text": "черный", "value": "black", "circle": "icon-black-circle" },
-        { "id": "qwERtyu13", "text": "белый", "value": "white", "circle": "icon-white-circle" },
-        { "id": "qwERtyu14", "text": "красный", "value": "red", "circle": "icon-red-circle" }
+        { "id": "qwERtyu12", "text": "черный", "value": "black", "circle": "icon-circle-black" },
+        { "id": "qwERtyu13", "text": "белый", "value": "white", "circle": "icon-circle-white" },
+        { "id": "qwERtyu14", "text": "красный", "value": "red", "circle": "icon-circle-red" }
       ],
       "size": [
         { "id": "qwERtyu15", "text": "размер 40", "value": "black" },
@@ -28,19 +28,19 @@
         {
       "label": {
         "id": "qwERtyu21",
-        "name": "Красный смокинг и брюки с лампасами",
+        "name": "Красный смокинг",
         "img": "./images/red-suit.jpg",
         "img2": "./images/product2@2x.jpg",
         "price": "10000",
         "sizeSelected": "46",
         "сolorSelected": "красный",
-        "circleSelected": "icon-red-circle",
+        "circleSelected": "icon-circle-red",
         "count": "1"
       },
       "color": [
-        { "id": "qwERtyu12", "text": "черный", "value": "black", "circle": "icon-black-circle" },
-        { "id": "qwERtyu13", "text": "белый", "value": "white", "circle": "icon-white-circle" },
-        { "id": "qwERtyu14", "text": "красный", "value": "red", "circle": "icon-red-circle" }
+        { "id": "qwERtyu12", "text": "черный", "value": "black", "circle": "icon-circle-black" },
+        { "id": "qwERtyu13", "text": "белый", "value": "white", "circle": "icon-circle-white" },
+        { "id": "qwERtyu14", "text": "красный", "value": "red", "circle": "icon-circle-red" }
       ],
       "size": [
         { "id": "qwERtyu15", "text": "размер 40", "value": "black" },
