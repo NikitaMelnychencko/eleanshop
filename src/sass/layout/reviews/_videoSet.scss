@@ -1,37 +1,51 @@
-.videoset {
-  display: grid;
-  width: 2000px;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 2fr));
-  column-gap: 14px;
+// .reviews-section {
+// }
 
-  margin: 0;
-  justify-items: center;
+// .hero .slick-slider {
+//   min-width: 0;
+// }
+
+//* Bounding shell */
+.reviews-section .slick-list {
+  overflow: hidden;
+
+  //   @media screen and (min-width: $mobile-first) and (max-width: $mobile-general) {
+  //     position: relative;
+  //   }
 }
 
+//* Slide Ribbon */
+.reviews-section .slick-track {
+  display: flex;
+  align-items: flex-start;
+}
+
+.videoset {
+  // display: grid;
+  // width: 2000px;
+  // grid-template-columns: repeat(auto-fill, minmax(300px, 2fr));
+  // column-gap: 14px;
+
+  margin: 0;
+  // justify-items: center;
+}
 .video-set__item {
   position: relative;
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
-  grid-row: 1/4;
+  // grid-row: 1/4;
   list-style: none;
-}
-
-.ggg {
-  width: 50px;
-  height: 50px;
-  border: 1px solid red;
 }
 
 .video-set__image {
   height: 400px;
   width: 100%;
   object-fit: cover;
-  // transition: transform $time-cubic;
 }
 
 .video-set__link {
   display: block;
   text-decoration: none;
-
+  transition: transform $time-cubic;
   &:hover {
     transform: scale(1.03);
   }

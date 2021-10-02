@@ -1,7 +1,6 @@
-import  refs  from '../../refs/refs.js'
-// import set from '../../../../src/js/json/videoSet.json';
+import refs from '../../refs/refs.js'
+import set from '../../../../src/js/json/videoSet.json';
 import setHbs from "../../../../src/views/partials/reviews/videoSet.hbs";
-import '../../../sass/layout/reviews/_videoSet.scss'
 import '../../../images/img/Reviews/poster/Black2V.jpg'
 import '../../../images/img/Reviews/poster/23.jpg'
 import '../../../images/img/Reviews/poster/55.jpg'
@@ -12,7 +11,9 @@ import '../../../images/img/Reviews/poster/78.jpg'
 
 const { mainEL } = refs;
 // console.log(refs)
-
+const setVideoHbs = setHbs(set)
+mainEL.insertAdjacentHTML('beforeend', setVideoHbs);
+console.log(setVideoHbs)
 
 // 1. Содание разметки сета
 // const createSetList = (set) => {
@@ -28,19 +29,17 @@ const { mainEL } = refs;
 //   adaptiveHeight: true
 // });
 
-$('.lolo').slick({
+$('.videoset').slick({
   infinite: true,
-  slidesToShow: 3,
-  slidesToScroll: 3,
+  slidesToShow: 1,
+  slidesToScroll: 1,
 });
 
 // const setListMarkup = createSetList(set);
 
 //  mainEL.insertAdjacentHTML('beforeend',setListMarkup);
 
-const setVideoHbs = setHbs()
-mainEL.insertAdjacentHTML('beforeend', setVideoHbs);
-console.log(setVideoHbs)
+
 // // 2. Создание click
 // setList.addEventListener('click', onOpenModal);
 //  BtnEl.addEventListener('click', onCloseModal);
