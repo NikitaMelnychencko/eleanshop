@@ -21,18 +21,21 @@ console.log(setVideoHbs)
 // }
 
 
-// $('.lolo').slick({
-//   dots: true,
-//   infinite: true,
-//   speed: 300,
-//   slidesToShow: 1,
-//   adaptiveHeight: true
-// });
-
 $('.videoset').slick({
   infinite: true,
   slidesToShow: 1,
   slidesToScroll: 1,
+  arrows: false,
+  mobileFirst:true,
+  responsive: [
+    {
+      breakpoint: 1377,
+      settings: {
+        slidesToShow: 4,
+        centerPadding: '40px',
+        infinite: false,
+      }
+    }]
 });
 
 // const setListMarkup = createSetList(set);
