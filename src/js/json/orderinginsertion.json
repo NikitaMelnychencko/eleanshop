@@ -7,13 +7,14 @@
         "img2": "./images/product1@2x.jpg",
         "price": "10000",
         "sizeSelected": "46",
-        "сolorSelected": "white",
+        "сolorSelected": "белый",
+        "circleSelected": "icon-white-circle",
         "count": "1"
       },
       "color": [
-        { "id": "qwERtyu12", "text": "черный", "value": "black" },
-        { "id": "qwERtyu13", "text": "белый", "value": "white" },
-        { "id": "qwERtyu14", "text": "красный", "value": "red" }
+        { "id": "qwERtyu12", "text": "черный", "value": "black", "circle": "icon-black-circle" },
+        { "id": "qwERtyu13", "text": "белый", "value": "white", "circle": "icon-white-circle" },
+        { "id": "qwERtyu14", "text": "красный", "value": "red", "circle": "icon-red-circle" }
       ],
       "size": [
         { "id": "qwERtyu15", "text": "размер 40", "value": "black" },
@@ -32,13 +33,14 @@
         "img2": "./images/product2@2x.jpg",
         "price": "10000",
         "sizeSelected": "46",
-        "сolorSelected": "red",
+        "сolorSelected": "красный",
+        "circleSelected": "icon-red-circle",
         "count": "1"
       },
       "color": [
-        { "id": "qwERtyu12", "text": "черный", "value": "black" },
-        { "id": "qwERtyu13", "text": "белый", "value": "white" },
-        { "id": "qwERtyu14", "text": "красный", "value": "red" }
+        { "id": "qwERtyu12", "text": "черный", "value": "black", "circle": "icon-black-circle" },
+        { "id": "qwERtyu13", "text": "белый", "value": "white", "circle": "icon-white-circle" },
+        { "id": "qwERtyu14", "text": "красный", "value": "red", "circle": "icon-red-circle" }
       ],
       "size": [
         { "id": "qwERtyu15", "text": "размер 40", "value": "black" },

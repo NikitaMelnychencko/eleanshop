@@ -11,28 +11,51 @@
             <p class='ordering__label'>{{label.name}}</p>
             
             <div class='ordering__selects'>
-                {{!-- <div class="showroom-method__item ordering__select--item">
-                    <input class="showroom-method__form " name="color" id="js-color" placeholder="ВЫБЕРИТЕ ЦВЕТ" />
-                    <ul class="showroom-list showroom-list--hide js-day js-color" id='day-list color-list'>
+
+                <div class="ordering__item ordering__select--color">
+                    <div class='ordering__select ordering__select--color ordering-input-js' id="js-day" name="day">
+                        <div class="ordering__colorname">{{label.сolorSelected}}   
+                        <svg class='ordering__circle' aria-label='circle' width='20' height='20'>
+                            <use class='ordering__circle--color' href='./images/exampl.svg#{{label.circleSelected}}'>
+                            </use>
+                        </svg>
+                        </div>
+                        <svg class='ordering__arrow' aria-label='close' width='10' height='10'>
+                        <use class='close' href='./images/exampl.svg#icon-ordering-arrow'>
+                        </use>
+                    </svg></div>
+                    {{!-- <input class="ordering__form" name="day" id="js-day" placeholder="Выберите цвет" /> --}}
+                    <ul class="ordering-list showroom-list--hide js-day ordering-list-js " id='day-list'>
                         {{#each color}}
-                        <li class="showroom-list__item ordering__list--item">{{text}}</li>
+                        <li class="ordering-list__item ordering-item-js">{{text}}
+                            <svg class='ordering__circle' aria-label='circle' width='20' height='20'>
+                                <use class='ordering__circle--color' href='./images/exampl.svg#{{circle}}'>
+                                </use>
+                            </svg>
+                        </li>
                         {{/each}}
                     </ul>
-                </div> --}}
+                </div>
 
-                <select class='ordering__select ordering__select--color' name='color' id='color'>
-                    {{#each color}}
-                    <option value="{{value}}">{{text}}</option>
-                    {{/each}}
- 
-                    </select>
-                    
-                <select class='ordering__select' name='size' id='color'>
-                    {{#each size}}
-                    <option value="{{value}}">{{text}}</option>
-                    {{/each}}
+                <div class="ordering__item">
+                    <div class='ordering__select ordering__select--size ordering-input-js' id="js-day" name="day">
+                        <div class="ordering__colorname">размер {{label.sizeSelected}}
+                        </div>
+                        <svg class='ordering__arrow' aria-label='close' width='10' height='10'>
+                            <use class='close' href='./images/exampl.svg#icon-ordering-arrow'>
+                            </use>
+                        </svg>
+                    </div>
+                    {{!-- <input class="ordering__form" name="day" id="js-day" placeholder="Выберите цвет" /> --}}
+                    <ul class="ordering-list showroom-list--hide js-day ordering-list-js " id='day-list'>
+                        {{#each size}}
+                        <li class="ordering-list__item ordering-item-js">{{text}}
 
-                </select>
+                        </li>
+                        {{/each}}
+                    </ul>
+                </div>
+
 
                 <button class='ordering__btn--minus ordering__btn' type='button'>-</button>
                 <span class='ordering__btn ordering__value'>1</span>

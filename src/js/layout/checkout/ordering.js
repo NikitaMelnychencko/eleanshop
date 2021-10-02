@@ -5,6 +5,7 @@ import '../../../images/img/white-suit.jpg'
 import '../../../images/img/red-suit.jpg'
 import promocodes from '../../json/promocode.json'
 import orderingInsertion from '../../json/orderinginsertion.json'
+import { times } from 'lodash'
 
 localStorage.setItem('orderingData', JSON.stringify(orderingInsertion));
 const savedData = localStorage.getItem('orderingData')
@@ -142,4 +143,26 @@ function getDiscount() {
 // в totalPrice лежит функция, которая возвращает итоговую стоимость, но нужно проверять, сработает ли правильно
 export const totalPrice =  renewTotalPriceWithDiscount.bind();
 // console.log(totalPrice())
+
+
+const inputs = document.querySelectorAll('.ordering-input-js');
+const lists = document.querySelectorAll('.ordering-list-js');
+inputs.forEach(input => input.addEventListener('click', onOrderingColorInputClick))
+
+function onOrderingColorInputClick(e) {
+    const selectedInput = this
+    const list = this.parentElement.lastElementChild
+    list.classList.toggle("showroom-list--hide")
+    document.body.classList.toggle("extra")
+    const items = list.querySelectorAll('.ordering-item-js')
+    items.forEach(item => item.addEventListener('click',onColorClick)) 
+}
+
+function onColorClick() {
+    const colorItemValue = this.innerHTML
+    const colorInput = this.parentElement.parentElement.firstElementChild.firstElementChild;
+    const item = this
+    colorInput.innerHTML = colorItemValue;
+
+}
 
