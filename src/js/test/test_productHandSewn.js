@@ -15,5 +15,6 @@ const objHandSewn = new HandSewn({
   ],
 });
 
-objHandSewn.getMarkup();
+document.querySelector('main').insertAdjacentHTML('beforeEnd', objHandSewn.getMarkup());
+
 objHandSewn.setEvent();

@@ -1,3 +1,6 @@
+const $ = require('jquery');
+require('../../slick/slick.min.js');
+
 import RecomendationsCategory from './recomendationsCategory.js';
 import modalAddToCartMark from '../../../views/partials/product/productModalAddToCart.hbs';
 
@@ -41,7 +44,8 @@ export default class ProductModalAddToCart {
   };
 
   _addSlider = () => {
-    $('.slider').slick({
+    console.log($('.product-modal-add-cart .slider'));
+    $('.product-modal-add-cart .slider').slick({
       arrows: false,
       dots: this.buttonPagination,
       infinite: true,

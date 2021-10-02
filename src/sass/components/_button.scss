@@ -144,6 +144,12 @@
     background-color: $third-text-color;
     border: none;
     color: $selection-text-color;
+
+    &:hover,
+    &:focus {
+      background-color: $selection-text-color;
+      color: $third-text-color;
+    }
   }
 }
 //home-reviews button

@@ -71,7 +71,7 @@ export default class RecomendationsCategory {
   };
 
   _addSlider = () => {
-    $('.slider').slick({
+    $('.recomendation-category .slider').slick({
       arrows: false,
       dots: this.buttonPagination,
       infinite: true,
