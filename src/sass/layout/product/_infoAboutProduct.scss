@@ -208,7 +208,7 @@
   fill: $accent-colorpicker-grey;
 }
 
-.button__colorpicker:hover .colorpicker__icon {
+.button__colorpicker--current .colorpicker__icon {
   border-color: $colorpicker-icon-border-hover;
 }
 
