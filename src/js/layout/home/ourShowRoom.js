@@ -48,6 +48,7 @@ $(document).ready(function () {
           swipe: false,
           touchMove: false,
           dots: false,
+          accessibility: false,
           // mobileFirst: false,
           // centerMode: true,
           // centerPadding: '60px',
