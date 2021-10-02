@@ -1,31 +1,35 @@
 <div class="container">
-<h2 class="favorites__title">ИЗБРАННОЕ</h2>
-<div class="favorites__data">
-    {{#each data}}
-    <img src="" alt="">
-    <div>
-        <p></p>
-        <p></p>
-        <button></button>
-        <button></button>
-    </div>
-    <textarea name="" id="" cols="30" rows="10"></textarea>
-    <div>
-        <button></button>
-        <button></button>
-    </div>
+    <h2 class="favorites__title">ИЗБРАННОЕ</h2>
+    <div class="favorites__data">
+        {{#each this}}
+        <picture>
+            <source srcset='{{image.srcset}}' media='(min-width: 1920px)' />
+            <source srcset='{{image.srcset-mobile}}' media='(max-width: 414px)' />
+            <img class='favorites__image' src='{{image.src}}' alt='{{image.alt}}' />
+        </picture>
+        <div>
+            <p class="favorites__info">{{name}}</p>
+            <p class="favorites__info">{{price}}</p>
+        </div>
+        <textarea class='favorites__description' name="" id="" cols="30" rows="10" placeholder="ДОБАВИТЬ КОММЕНТАРИЙ"></textarea>
+        <div>
+            <button class='favorites__button-buy'>КУПИТЬ</button>
+            <button class='favorites__button-delete'>
+                <span class='favorites__button-delete--text'>Удалить</span>
+                <svg class='favorites__button-delete--icon'>
+                    <use href='#'></use>
+                </svg>
+            </button>
+        </div>
 
-    {{/each}}
-</div>
-<div class="favorites__sand-on-email">
-    <p class="favorites__sand-on-email--title">ДЕЙСТВИЯ НАД ЛИСТОМ ПОЖЕЛАНИЙ</p__sand-on-email>
-    <div>
-        <button class="favorites__sand-on-email--button">ОТПРАВИТЬ НА ПОЧТУ</button>
-        <p class="favorites__sand-on-email--text">Список товаров находящихся в “избронном”, будет отправлен на ваш электронный адрес, и вы в любой момент сможете получить
-        к нему доступ.</p>
+        {{/each}}
     </div>
-</div>
-<div class="component">
-    {{!-- компонента --}}
-</div>
+    <div>
+        <p class="favorites__sand-on-email--title">ДЕЙСТВИЯ НАД ЛИСТОМ ПОЖЕЛАНИЙ</p__sand-on-email>
+        <div class="favorites__sand-on-email">
+            <button class="favorites__sand-on-email--button">ОТПРАВИТЬ НА ПОЧТУ</button>
+            <p class="favorites__sand-on-email--text">Список товаров находящихся в “избронном”, будет отправлен на ваш электронный адрес, и вы в любой момент сможете получить
+            к нему доступ.</p>
+        </div>
+    </div>
 </div>

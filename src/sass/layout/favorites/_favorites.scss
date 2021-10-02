@@ -1,30 +1,130 @@
 .favorites {
   &__title {
-    font-family: FuturaBookC;
+    font-family: $selection-font-family;
     font-size: 21px;
     line-height: 20 / 21 * 100%;
-    /* or 95% */
 
     text-align: center;
     letter-spacing: 0.05em;
 
-    color: #272727;
+    color: $secondary-title-text-color;
+
+    &::after {
+      background: $favorites-after-color;
+    }
   }
 
   &__data {
+    display: flex;
+
+    &::after {
+      background: $favorites-after-color;
+    }
+  }
+
+  &__image {
+    width: 110px;
+    height: 130px;
+  }
+
+  &__info {
+    font-family: $primary-font-family;
+    font-size: 15px;
+    line-height: 20 / 15 * 100%;
+
+    color: $favorites-info-color;
+  }
+
+  &__description {
+    width: 690px;
+    height: 130px;
+
+    background: $primary-background-color;
+    border: 1px solid $favorites-description-color;
+    box-sizing: border-box;
+  }
+
+  &__button-buy {
+    font-family: $third-font-family;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18 / 15 * 100%;
+
+    text-align: center;
+    letter-spacing: 0.1em;
+
+    color: $selection-text-color;
+
+    width: 198px;
+    height: 40px;
+
+    background: $menu-background-color;
+  }
+
+  &__button-delete {
+    width: 198px;
+    height: 40px;
+
+    border: 1px solid $secondary-border-color;
+    box-sizing: border-box;
+
+    &--text {
+      font-family: $selection-font-family;
+      font-size: 17px;
+      line-height: 23 / 17 * 100%;
+
+      color: $btn-text-color;
+    }
+
+    &--icon {
+      width: 13px;
+      height: 13px;
+    }
   }
 
   &__sand-on-email {
+    display: flex;
+    justify-content: flex-start;
+
     &--title {
+      font-family: $third-font-family;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 20 / 18 * 100%;
+
+      letter-spacing: 0.05em;
+
+      color: $secondary-text-color;
     }
 
     &--button {
+      font-family: $third-font-family;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 18 / 15 * 100%;
+
+      text-align: center;
+      letter-spacing: 0.1em;
+
+      color: $selection-text-color;
+      background: $favorites-info-color;
+
+      width: 282px;
+      height: 50px;
+
       &:hover,
       &:focus {
+        color: $favorites-info-color;
+        background: $primary-background-color;
       }
     }
 
     &--text {
+      font-family: $primary-font-family;
+      font-size: 15px;
+      line-height: 23 / 15 * 100%;
+
+      color: $favorites-info-color;
     }
   }
 }
