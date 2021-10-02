@@ -1,5 +1,5 @@
 import RecomendationsCategory from '../layout/product/recomendationsCategory';
-import cards from '../json/recomendationCategory.json';
+import cards from '../json/catalog.json';
 
 const objRecomendationsCategory = new RecomendationsCategory({
   // root: 'main',
