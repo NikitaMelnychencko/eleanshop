@@ -1,0 +1,70 @@
+//==========utils=================
+@import './utils/variabless';
+@import './utils/fonts';
+@import './utils/mixins';
+@import './utils/hide';
+@import './utils/breakpoints';
+@import './utils/animation';
+@import './utils/placeholder';
+//=============base==============
+@import './base/globalClass';
+@import './base/reset';
+//==========components===========
+@import './components/button';
+@import './components/forms';
+@import './components/logo';
+@import './components/modal';
+@import './components/reviewsBord';
+@import './components/showroomGallery';
+@import './components/slider';
+@import './components/backdrop';
+@import './components/thanksForOrdering';
+//=========layout===============
+//static
+@import './layout/static/header';
+@import './layout/static/footer';
+//main
+@import './layout/home/hero';
+@import './layout/home/contend';
+@import './layout/home/aboutTheBrand';
+@import './layout/home/ourShowRoom';
+@import './layout/home/registrationFormForFitting';
+@import './layout/home/starClients';
+@import './layout/home/inInstgram';
+//catalog
+@import './layout/сatalog/filter';
+@import './layout/сatalog/gallery';
+//product
+@import './layout/product/infoAboutProduct';
+@import './layout/product/recomendationsCategory';
+@import './layout/product/productCreateInfo';
+@import './layout/product/productModalAddToCart';
+@import './layout/product/productHandSewn';
+
+//delivery
+@import './layout/delivery/filter';
+@import './layout/delivery/deliveryTypes';
+@import './layout/delivery/formsQuestion';
+@import './layout/delivery/questionsAndAnswers';
+//reviews
+@import './layout/reviews/videoSet';
+@import './layout/reviews/starsClients';
+@import './layout/reviews/registrationFormForFitting';
+//showroom
+@import './layout/showroom/showroom';
+//contact
+@import './layout/contact/contact';
+//fitting
+@import './layout/fitting/informationAboutFitting';
+@import './layout/fitting/sizeTable';
+@import './layout/fitting/videoSlider';
+@import './layout/fitting/formFittingInShowroom';
+//brand
+@import './layout/brand/infoAboutBrand';
+@import './layout/brand/ourAdvantages';
+@import './layout/brand/formFittingInShowroom';
+//checkout
+@import './layout/checkout/ordering';
+@import './layout/checkout/payment';
+//favorites
+@import './layout/favorites/favorites';
