@@ -5,11 +5,11 @@ import RecomendationsCategory from './recomendationsCategory.js';
 import modalAddToCartMark from '../../../views/partials/product/productModalAddToCart.hbs';
 
 export default class ProductModalAddToCart {
-  constructor({ root, typeInsert = 'beforeEnd', productName }) {
+  constructor({ root, typeInsert = 'beforeEnd', productName, objectClose }) {
     this.typeInsert = typeInsert;
     this.productName = productName;
     this.objCatalog = new RecomendationsCategory({ countsCard: 3, buttonPagination: false });
-
+    this.objectClose = objectClose;
     if (root) {
       console.log(root);
       this.root = document.querySelector(root);
@@ -56,6 +56,13 @@ export default class ProductModalAddToCart {
 
   _onCloseModal = () => {
     this.self.classList.add('hidden');
+    if (this.objectClose) {
+      this.objectClose.forEach(el => {
+        if (el.name) {
+          document.querySelector(el.name).classList.add(this.el.className);
+        }
+      });
+    }
     if (this.buttonClose) {
       this.buttonClose.forEach(el => {
         el.removeEventListener('click', this._onCloseModal);

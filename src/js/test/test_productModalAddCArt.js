@@ -5,6 +5,12 @@ const objProductModalAddToCart = new ProductModalAddToCart({
   // //   root: '[data-modal]'; // если вставить в бекдроп
   // typeInsert: 'beforeEnd',
   productName: 'ЖАКЕТ-СМОКИНГ С ЛАЦКАНМИ',
+  objectClose: [
+    {
+      name: '[data-modal]', // a backdrop selector that is called when the button is clicked
+      className: 'is-hidden', // the class that hides the backdrop
+    },
+  ],
 });
 
 document
