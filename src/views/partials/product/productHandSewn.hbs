@@ -1,100 +1,42 @@
 <section class='hand-sewn'>
+  <h2 class="hand-sewn__title">Преимущества нашего пошива и доставки</h2>
   <ul class='hand-sewn__list'>
-    <li class='hand-sewn__item hand-sewn__item_biggest-bottom'>
-      <div class='container'>
-        <div class='hand-sewn__block-text'>
-          <h2 class='hand-sewn__item-title'>
-            СШИТО ВРУЧНУЮ
-          </h2>
-          <p class='hand-sewn__item-text'></p>
-          <ul class='hand-sewn__list-info'>
-            <li class='hand-sewn__item-info hand-sewn__item-info_counters'>
-              Уровень пошива приравнивается к индивидуальному;
-            </li>
-            <li class='hand-sewn__item-info hand-sewn__item-info_counters'>
-              Создаем лекала для костюмов, которые подчеркивают достоинства и скрывают недостатки
-              фигуры;
-            </li>
-            <li class='hand-sewn__item-info hand-sewn__item-info_counters'>
-              Качественное исполнение: ровные отстрочки, красивая обработка – вы можете носить вещи
-              даже изнаночной стороной;
-            </li>
-            <li class='hand-sewn__item-info hand-sewn__item-info_counters'>
-              Используем современное оборудование и качественные материалы для изготовления изделий;
-            </li>
-            <li class='hand-sewn__item-info hand-sewn__item-info_counters'>
-              Наши швеи занимаются пошивом и конструированием одежды более 20 лет. За это время их
-              навыки доведены до идеала, и они продолжают развиваться и совершенствоваться каждый
-              день.
-            </li>
-          </ul>
+    {{#each this}}
+      <li class='hand-sewn__item {{#if odd}}hand-sewn__item_biggest-bottom{{/if}}{{#if even}}hand-sewn__item_biggest-top{{/if}}'>
+        <div class='container'>
+          <div class='hand-sewn__block-text'>
+            <h3 class='hand-sewn__item-title'>
+              {{title}}
+            </h3>
+            <p class='hand-sewn__item-text'>
+              {{text}}
+            </p>
+            <ul class='hand-sewn__list-info'>
+              {{#each listCharacter}}
+                <li class='hand-sewn__item-info hand-sewn__item-info_counters'>
+                  {{text}}
+                </li>
+              {{/each}}
+              {{#if button}}
+              <li class='hand-sewn__item-info'>
+                <button type='button' class='delivery-button js-button-product-delivery'>
+                  ЗАКАЗАТЬ ДОСТАВКУ
+                </button>
+              </li>
+              {{/if}}
+            </ul>
+          </div>
+          <picture>
+            <source srcset="{{imgDesktop}} 1x, {{imgDesktop2}} 2x" media='(min-width: 1920px)' />
+            <source srcset="{{imgMobile}} 1x, {{imgMobile}} 2x" media='(max-width: 1919px)' />
+            <img
+              src="{{imgMobile}}"
+              alt='Упаковка для товара'
+              class='hand-sewn__image {{#if even}}hand-sewn__image_left{{/if}} {{#if even}}hand-right{{/if}}'
+            />
+          </picture>
         </div>
-        <picture>
-          <source
-            srcset='./images/handSewn-desktop-1.jpg 1x, ./images/handSewn-desktop-1@2x.jpg 2x'
-            media='(min-width:1920px)'
-          />
-          <source
-            srcset='./images/handSewn-mobile-1.jpg 1x, ./images/handSewn-mobile-1@2x.jpg 2x'
-            media='(max-width: 1919px)'
-          />
-          <img
-            src='./images/handSewn-mobile-1.jpg'
-            alt='Мастер шьет на машинке'
-            class='hand-sewn__image hand-sewn__image_right'
-          />
-        </picture>
-      </div>
-    </li>
-    <li class='hand-sewn__item hand-sewn__item_biggest-top'>
-      <div class='container'>
-        <div class='hand-sewn__block-text'>
-          <h2 class='hand-sewn__item-title'>
-            ЗАКАЖИТЕ ДОСТАВКУ
-          </h2>
-          <p class='hand-sewn__item-text'>
-            Закажите доставку с выездным стилистом бренда в удобное место по Москве и МО. Вы сможете
-            оценить посадку, качество изделий и не захотите их снимать!
-          </p>
-          <ul class='hand-sewn__list-info'>
-            <li class='hand-sewn__item-info hand-sewn__item-info_counters'>
-              Выберите модели для примерки.
-            </li>
-            <li class='hand-sewn__item-info hand-sewn__item-info_counters'>
-              Оставьте заявку, нажав на кноку ниже.
-            </li>
-            <li class='hand-sewn__item-info hand-sewn__item-info_counters'>
-              Наш стилист подтвердит Вашу заявку и согласует удобное для вас время и место.
-            </li>
-            <li class='hand-sewn__item-info hand-sewn__item-info_counters'>
-              В назначеное время стилист привезет заказаные модели и проведет консультацию.
-            </li>
-            <li class='hand-sewn__item-info hand-sewn__item-info_counters'>
-              Вы можете оплатить понравившиеся модели после примерки.
-            </li>
-            <li class='hand-sewn__item-info'>
-              <button type='button' class='delivery-button js-button-product-delivery'>
-                ЗАКАЗАТЬ ДОСТАВКУ
-              </button>
-            </li>
-          </ul>
-        </div>
-        <picture>
-          <source
-            srcset='./images/handSewn-desktop-2.jpg 1x, ./images/handSewn-desktop-2@2x.jpg 2x'
-            media='(min-width: 1920px)'
-          />
-          <source
-            srcset='./images/handSewn-mobile-2.jpg 1x, ./images/handSewn-mobile-2@2x.jpg 2x'
-            media='(max-width: 1919px)'
-          />
-          <img
-            src='./images/handSewn-mobile-2.jpg'
-            alt='Упаковка для товара'
-            class='hand-sewn__image hand-sewn__image_left'
-          />
-        </picture>
-      </div>
-    </li>
+      </li>
+    {{/each}}
   </ul>
 </section>

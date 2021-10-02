@@ -1,30 +1,54 @@
 import markup from '../../../views/partials/product/productHandSewn.hbs';
+import productDataHandSewn from '../../json/productHandSewn.json';
 
 export default class HandSewn {
-  constructor({ root = 'main', typeInsert = 'beforeEnd' }) {
+  constructor({ root, typeInsert = 'beforeEnd', object }) {
     this.root = document.querySelector(root);
     this.typeInsert = typeInsert;
-    this.addMarkup();
-  }
-
-  createMarkup() {
-    this.markup = markup();
-  }
-
-  addMarkup() {
-    this.createMarkup();
+    this.backdropRef = document.querySelector('[data-modal]');
+    this.object = object;
     if (this.root) {
-      this.root.insertAdjacentHTML(this.typeInsert, this.markup);
-      this.addButtonListener();
+      this._addMarkup();
     }
   }
 
-  addButtonListener() {
+  _createMarkup = () => {
+    this.markup = markup(productDataHandSewn);
+  };
+
+  _addMarkup = () => {
+    this.createMarkup();
+    if (this.root) {
+      this.root.insertAdjacentHTML(this.typeInsert, this.markup);
+      this._addButtonListener();
+    }
+  };
+
+  _addButtonListener = () => {
     this.button = document.querySelector('.js-button-product-delivery');
     this.button.addEventListener('click', this.onButtonClick.bind(this));
-  }
+  };
 
-  onButtonClick() {
-    // here will be a call to the backdrop and frame24
-  }
+  _onNextBtnClick = () => {
+    if (this.object) {
+      this.object.forEach(el => {
+        if (el.name) {
+          document.querySelector(el.name).classList.remove(this.el.className);
+        }
+      });
+    }
+  };
+
+  _onButtonClick = () => {
+    this.button.addEventListener('clck', this.onNextBtnClick);
+  };
+
+  getMarkup = () => {
+    this.createMarkup();
+    return this.markup;
+  };
+
+  setEvent = () => {
+    this._addButtonListener();
+  };
 }
