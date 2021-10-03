@@ -45,6 +45,7 @@ export function showroomSlider() {
             dots: false,
             accessibility: false,
             initialSlide: 0,
+            slidesToShow: 3,
           },
         },
       ],
