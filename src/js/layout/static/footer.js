@@ -1,5 +1,8 @@
 import { stringify } from 'postcss';
-import refs from '../../refs/refs.js'
+import refs from '../../refs/refs.js';
+import { scrollTo } from '../../components/blockHelp/blockHelp';
+
+
 
 const {
     closeOpenPlus,
@@ -20,6 +23,9 @@ desktopSubmitBtn.addEventListener('submit', onSubmitBtnDesktop)
 // Функция раскрытия списка-меню
 closeOpenPlus.forEach((evt) => {
     evt.addEventListener('click', (el) => {
+        if (!el.target.nextElementSibling) {
+            scrollTo(0, 700);
+        }
         el.preventDefault()
         const test = document.querySelector('.dropdown-content')
         const dropDown = document.querySelector('.open-menu');
@@ -45,8 +51,8 @@ closeOpenPlus.forEach((evt) => {
 
 //==== Скрытие меню при переходе на другой блок
 dropDown.forEach((evt) => {
-    console.log(evt)
     evt.addEventListener('click', (el) => {
+        scrollTo(0, 700);
         el.preventDefault()
         const dropDown = document.querySelector('.js-dropdown-none');
         const openMenu = document.querySelector('.open-menu')
@@ -54,12 +60,10 @@ dropDown.forEach((evt) => {
             dropDown.classList.remove('js-dropdown-none')
             openMenu.classList.remove('open-menu')
             window.location.href = el.target
-
         }
     });
 
 });
-
 // Активация деактивация чекбокса
 function onAgreeCheckBox(evt) {
     const iconCheck = evt.currentTarget
@@ -109,16 +113,17 @@ function onSubmitBtnDesktop(evt) {
     localStorage.removeItem('email');
 
 }
-// тут ловим все ссылки и перебераем все дата атребуты для преренаправления на нужную страницу
-// const a = document.querySelectorAll('a')
-// const test5 = a.forEach((evt) => {
-//     const idSeorch = evt.dataset
-//     evt.addEventListener('click', (el) => {
-//         const click = el.currentTarget;
-//         console.log(click)
-//         if (idSeorch === click) {
-//             window.location.href = click.target
-//             console.log("Работает?")
-//         }
-//     })
-// });
+
+export default function updateBin() {
+    let data = localStorage.getItem('orderingData');
+    let count = 0;
+    if (data) {
+        data = JSON.parse(data);
+        count = data.reduce((total, el) => {
+            return (total += Number(el.label.count));
+        }, 0);
+    }
+    document.querySelector('.js-bin .product-list__text').textContent = count;
+}
+
+

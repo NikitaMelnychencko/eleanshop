@@ -2,16 +2,16 @@ import refs from './refs/refs.js';
 import updateBin from './updateBin.js';
 updateBin();
 
-function homeRender() {}
+function homeRender() { }
 //=====brand========//
-function brandRender() {}
+function brandRender() { }
 //=====checkout========//
 import { ModalData, createPayment } from './layout/checkout/payment';
 import { ordering, openOrderingFunction } from './layout/checkout/ordering';
 import payment_checkout from '../views/layouts/checkout.hbs';
 export function checkoutRender() {
   updateBin();
-  refs.mainEL.innerHTML='';
+  refs.mainEL.innerHTML = '';
   const createCheckout = payment_checkout({ createPayment, ordering });
   refs.mainEL.insertAdjacentHTML('beforeend', createCheckout);
   openOrderingFunction();
@@ -26,13 +26,13 @@ export function checkoutRender() {
 }
 // checkoutRender();
 //=====contact========//
-function contactRender() {}
+function contactRender() { }
 //=====delivery========//
-function deliveryRender() {}
+function deliveryRender() { }
 //=====favorites========//
-function favoritesRender() {}
+function favoritesRender() { }
 //=====fitting========//
-function fittingRender() {}
+function fittingRender() { }
 //=====product========//
 import ProductModalAddToCart from './layout/product/productModalAddToCart.js';
 import RecomendationsCategory from './layout/product/recomendationsCategory.js';
@@ -83,6 +83,6 @@ function productRender() {
 
 productRender();
 //=====reviews========//
-function reviewsRender() {}
+function reviewsRender() { }
 //=====showroom========//
-function showroomRender() {}
+function showroomRender() { }
