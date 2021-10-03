@@ -1,0 +1,92 @@
+[
+  {
+    "id": "new",
+    "name": "Новинки",
+    "description": "Девушка в черной жилетке",
+    "image": "./images/img-mob_1.jpg",
+    "image_2x": "./images/img-mob_1@2x.jpg",
+    "image-desk": "./images/img_1.jpg",
+    "image-desk_2x": "./images/img_1@2x.jpg"
+  },
+  {
+    "id": "sale",
+    "name": "АКЦИИ",
+    "description": "Девушка в красной рубашке",
+    "image": "./images/img-mob_2.jpg",
+    "image_2x": "./images/img-mob_2@2x.jpg",
+    "image-desk": "./images/img_2.jpg",
+    "image-desk_2x": "./images/img_2@2x.jpg"
+  },
+  {
+    "id": "suit",
+    "name": "КОСТЮМЫ  ",
+    "description": "Девушка в бежевом костюме",
+     "image": "./images/img-mob_3.jpg",
+  "image_2x": "./images/img-mob_3@2x.jpg",
+   "image-desk": "./images/img_3.jpg",
+   "image-desk_2x": "./images/img_3@2x.jpg"
+  },
+  {
+    "id": "tux",
+    "name": "СМОКИНГИ",
+    "description": "Девушка в черном смокинге",
+     "image": "./images/img-mob_4.jpg",
+  "image_2x": "./images/img-mob_4@2x.jpg",
+   "image-desk": "./images/img_4.jpg",
+   "image-desk_2x": "./images/img_4@2x.jpg"
+  },
+  {
+    "id": "pants",
+    "name": "БРЮКИ",
+    "description": "Девушка в белих брюках",
+     "image": "./images/img-mob_5.jpg",
+  "image_2x": "./images/img-mob_5@2x.jpg",
+   "image-desk": "./images/img_5.jpg",
+   "image-desk_2x": "./images/img_5@2x.jpg"
+  },
+  {
+    "id": "dress",
+    "name": "ПЛАТЬЯ",
+    "description": "Девушка в белом платье",
+     "image": "./images/img-mob_6.jpg",
+  "image_2x": "./images/img-mob_6@2x.jpg",
+   "image-desk": "./images/img_6.jpg",
+   "image-desk_2x": "./images/img_6@2x.jpg"
+  },
+  {
+    "id": "blouses",
+    "name": "БЛУЗЫ",
+    "description": "Девушка в голубой блузке",
+     "image": "./images/img-mob_7.jpg",
+  "image_2x": "./images/img-mob_7@2x.jpg",
+   "image-desk": "./images/img_7.jpg",
+   "image-desk_2x": "./images/img_7@2x.jpg"
+  },
+  {
+    "id": "skirts",
+    "name": "ЮБКИ",
+    "description": "Девушка в черной юбке",
+     "image": "./images/img-mob_8.jpg",
+  "image_2x": "./images/img-mob_8@2x.jpg",
+   "image-desk": "./images/img_8.jpg",
+   "image-desk_2x": "./images/img_8@2x.jpg"
+  },
+  {
+    "id": "vests",
+    "name": "ТОПЫ И ЖИЛЕТЫ",
+    "description": "Девушка в красном топе",
+     "image": "./images/img-mob_9.jpg",
+  "image_2x": "./images/img-mob_9@2x.jpg",
+   "image-desk": "./images/img_9.jpg",
+   "image-desk_2x": "./images/img_9@2x.jpg"
+  },
+  {
+    "id": "accessory",
+    "name": "АКСЕССУАРЫ",
+    "description": "Девушка в черно-белом костюме",
+     "image": "./images/img-mob_10.jpg",
+  "image_2x": "./images/img-mob_10@2x.jpg",
+   "image-desk": "./images/img_10.jpg",
+   "image-desk_2x": "./images/img_10@2x.jpg"
+  }
+]

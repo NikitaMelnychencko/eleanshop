@@ -5,17 +5,19 @@ $star-clients-slider-dots: #d9dbe1;
 $star-clients-slider-dots-placeholder: #ffffff;
 $star-clients-slider-dots-border: #e1e1e1;
 $hero-slider-dots: rgba(255, 255, 255, 0.45);
+$showroom-slider-dots-border: #e1e1e1;
+$showroom-slider-dots: rgba(255, 255, 255, 0.45);
 $in-instagram-slider-dots: #d9dbe1;
 $in-instagram-slider-dots-placeholder: #ffffff;
 $in-instagram-slider-dots-border: #e1e1e1;
 
 //text
 $primary-text-color: #171717;
-$secondary-text-color:#000000 ;
-$third-text-color: #C0A78F;
-$selection-text-color: #FFFFFF;
-$form-text-color: #A6A6A9;
-$secondary-form-text-color:#B3B3B3;
+$secondary-text-color: #000000;
+$third-text-color: #c0a78f;
+$selection-text-color: #ffffff;
+$form-text-color: #a6a6a9;
+$secondary-form-text-color: #b3b3b3;
 $input-text-color: hsl(0, 0%, 72%);
 $btn-text-color: #c7c3c3;
 $fourth-text-color: #afafaf;
@@ -32,14 +34,13 @@ $selection-title-text-color: #ffffff;
 //title-text-shadow
 $primary-title-text-shadow: 0px 0px 1px #000000;
 
-
 //accent
 $accent-color: #e1c4a9;
 $accent-btn-color: #ffffff;
 $secondary-accent-btn-color: #242424;
 $accent-favorite-btn-color: #d7bca3;
 $third-accent-color: #c0a78f;
-$accent-background-selector-color:#F8EFE7;
+$accent-background-selector-color: #f8efe7;
 
 //background
 $primary-background-color: #ffffff;
@@ -67,7 +68,7 @@ $selection-text-color: #ffffff;
 $border-color: #e3e4e4;
 $primary-border-color: #676767;
 $secondary-border-color: #dadada;
-$third-border-color: #D0D0D0;
+$third-border-color: #d0d0d0;
 
 //input
 $placeholder-color: #a6a6a9;
@@ -82,3 +83,6 @@ $button-counter-color: #c6c6c6;
 
 // backdrop
 $backdrop-color: #e5e5e5;
+
+//bars
+$main-bar: #d7b494;
