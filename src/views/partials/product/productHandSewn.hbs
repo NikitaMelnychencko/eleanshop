@@ -27,9 +27,10 @@
             </ul>
           </div>
           <picture>
-            <source srcset="{{imgDesktop}} 1x, {{imgDesktop2}} 2x" media='(min-width: 1920px)' />
-            <source srcset="{{imgMobile}} 1x, {{imgMobile}} 2x" media='(max-width: 1919px)' />
+            <source srcset="{{imgDesktop}} 1x, {{imgDesktop2}} 2x" media='(min-width: 1378px)' />
+            <source srcset="{{imgMobile}} 1x, {{imgMobile2}} 2x" media='(max-width: 1377px)' />
             <img
+              srcset="{{imgMobile}} 1x, {{imgMobile}} 2x"
               src="{{imgMobile}}"
               alt='Упаковка для товара'
               class='hand-sewn__image {{#if even}}hand-sewn__image_left{{/if}} {{#if even}}hand-right{{/if}}'
