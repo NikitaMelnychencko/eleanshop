@@ -1,6 +1,4 @@
-<section class="reviews-section">
-    <div class= "container">
-<div class="videoset">
+
 {{#each this}}
 
 <div class="video-set__item">
@@ -8,10 +6,8 @@
         <video class="video-set__image" src="{{video}}"
             poster="{{poster}}"
             controls
-            preload="auto"
-{{!-- width="400"
-height="300"> --}}>
-<source src="video/duel.webm" >
+            preload="auto">
+        
               </video>
 <div class="video-subtitle">
         <p class ="video__description"> {{description}} </p>
@@ -19,8 +15,4 @@ height="300"> --}}>
     </a>
 </div>
 {{/each}}
-</div>
 
-
-</div>
-</section>

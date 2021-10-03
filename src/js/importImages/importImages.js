@@ -118,3 +118,10 @@ import '../../images/img/checkout/payment/mirror_reflection@2x.jpg'
 import '../../images/svg/murkup.svg'
 import '../../images/svg/murkup_arow.svg'
 
+
+//===============Reviews===========================
+import '../../images/img/Reviews/poster/Black2V.jpg'
+import '../../images/img/Reviews/poster/23.jpg'
+import '../../images/img/Reviews/poster/55.jpg'
+import '../../images/img/Reviews/poster/78.jpg'
+

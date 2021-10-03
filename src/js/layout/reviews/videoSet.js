@@ -1,24 +1,38 @@
 import refs from '../../refs/refs.js'
 import set from '../../../../src/js/json/videoSet.json';
 import setHbs from "../../../../src/views/partials/reviews/videoSet.hbs";
-import '../../../images/img/Reviews/poster/Black2V.jpg'
-import '../../../images/img/Reviews/poster/23.jpg'
-import '../../../images/img/Reviews/poster/55.jpg'
-import '../../../images/img/Reviews/poster/78.jpg'
+ import client from "../../../../src/views/partials/home/starClients.hbs"
+import setReviews from "../../../../src/views/partials/reviews/pageReviews.hbs";
 
-// window.jQuery = window.$ = require('jquery');
-// require('../../slick/slick.min.js');
+// import starClients_starClientsTempl1 from '../../../views/partials/home/starClients.hbs';
+// import starClients_cardChatReviewsTempl1 from '../../../views/components/cardChatReviews.hbs';
+// import starClients_reviewsChat1 from '../../json/homeRewiesChat/homeReviewsChat.json';
+// import starClients_reviewsChatOthers1 from '../../json/homeRewiesChat/homeReviewsChatOthers.json';
+// import pageStarClientsSliderData1 from '../../json/starClients.json';
+// import pageStarClientsMarkupTemplate1 from '../../../views/partials/home/starClients.hbs';
 
-const { mainEL } = refs;
+// const cardChatReviewsMarkup = starClients_cardChatReviewsTempl(starClients_reviewsChat);
+// const starClientsSectionMarkup = starClients_starClientsTempl({ cardChatReviewsMarkup });
+// const clientStar = pageStarClientsMarkupTemplate({
+//   pageStarClientsSliderData,
+//   cardChatReviewsMarkup,
+// });
+// mainEL.insertAdjacentHTML('beforeend', pageStarClientsSliderMarkup);
+
+
+const { mainEL} = refs;
 // console.log(refs)
-const setVideoHbs = setHbs(set)
-mainEL.insertAdjacentHTML('beforeend', setVideoHbs);
-console.log(setVideoHbs)
-
 // 1. Содание разметки сета
-// const createSetList = (set) => {
-//     return setHbs(set);
-// }
+const setVideoHbs = setHbs(set)
+const clientStar = client({pageStarClientsSliderMarkup});
+const pageReviews = setReviews({ clientStar, setVideoHbs });
+  
+mainEL.insertAdjacentHTML('beforeend', pageReviews);
+// console.log(setVideoHbs)
+
+// console.log(clientStar);
+ console.log(pageReviews);
+
 
 
 $('.videoset').slick({
@@ -26,7 +40,8 @@ $('.videoset').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
   arrows: false,
-  mobileFirst:true,
+  mobileFirst: true,
+  dots: true,
   responsive: [
     {
       breakpoint: 1377,
@@ -34,47 +49,8 @@ $('.videoset').slick({
         slidesToShow: 4,
         centerPadding: '40px',
         infinite: false,
+        dots: false,
       }
     }]
 });
 
-// const setListMarkup = createSetList(set);
-
-//  mainEL.insertAdjacentHTML('beforeend',setListMarkup);
-
-
-// // 2. Создание click
-// setList.addEventListener('click', onOpenModal);
-//  BtnEl.addEventListener('click', onCloseModal);
-// overlay.addEventListener('click', onCloseModal);
-
-
-  
-//   //3. работа модального окна
-// function onOpenModal(evt) {
-//     console.log(evt);
-//     // evt.preventDefault();
-//     // if (evt.target.nodeName !== 'VIDEO') {
-//     //     return;
-//     // }
-// }
-
-// function replaceAtribute(src ) {
-//   videoEl.src = src;
-  
-// }
-
-// function onCloseModal(e) {
-//    e.videobox.classList.remove('is-open')
-//     replaceAtribute(" ")
-// };
-
-// // 4. Закрытие модалки с помощью "ESC"
-// window.addEventListener('keydown', onCloseModalEsc);
-
-// function onCloseModalEsc(evt) {
-//   if (evt.code === 'Escape') {
-//     onCloseModal()
-//   };
-  
-// }
