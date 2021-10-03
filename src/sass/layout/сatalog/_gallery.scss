@@ -55,7 +55,7 @@
     &:nth-child(-n + 19) {
       display: none;
     }
-    &:nth-last-child(-n + 5) {
+    &:nth-last-child(-n + 10) {
       display: none;
     }
   }
@@ -99,7 +99,7 @@
   }
 }
 .card-content {
-  position: static;
+  position: relative;
 }
 .card-name {
   width: 140px;
@@ -132,8 +132,20 @@
   position: absolute;
   width: 16px;
   height: 13px;
-  fill: tomato;
-  top: -150%;
+  top: 19px;
+  right: 2px;
+  z-index: 1;
+  fill: none;
+  cursor: pointer;
+  @media screen and (min-width: 1378px) {
+    width: 21px;
+    height: 18px;
+    top: 5px;
+  }
+}
+
+.heart-click {
+  fill: #c4c4c4;
 }
 .card-descr {
   font-family: var($third-font-family);
@@ -144,13 +156,18 @@
   color: #afafaf;
   margin-bottom: 0;
 }
-.icon-round-raws {
-  position: absolute;
-  fill: tomato;
-  width: 300px;
-  height: 200px;
-  // height: 20px;
-  z-index: 7;
+.catalog-icon-raws-round {
+  display: block;
+  margin: 0 auto;
+  width: 20px;
+  height: 20px;
+  z-index: 1;
+  fill: #c7c7c7;
+
+  &:hover,
+  &:focus {
+    fill: #afafaf;
+  }
 }
 
 .catalog-category-name {

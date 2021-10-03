@@ -32,6 +32,7 @@ function openCatalogFilter() {
     e.classList.toggle('open-item');
   });
 }
+
 const categoryName = document.querySelector('.catalog-category-name');
 filterList.addEventListener('click', categoryNameChosing);
 function categoryNameChosing(e) {
