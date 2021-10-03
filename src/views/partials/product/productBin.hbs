@@ -1,0 +1,57 @@
+{{#each this}}
+  <li class='product-bin__item' data-id={{label.id}}>
+    <div class='product-bin__block-image'>
+      <img
+        src="{{label.img}}"
+        alt=''
+        srcset="{{label.img}} 1x, {{label.img2}} 2x"
+        class='product-bin__image'
+      />
+    </div>
+    <div class='product-bin__block-character'>
+      <div class='product-bin__block-title'>
+        <h3 class='product-bin__product-name'>
+          {{label.name}}
+        </h3>
+        <p class='product-bin__product-price'>
+          {{{label.priceTxt}}}
+        </p>
+      </div>
+      <p class='product-bin__product-size'>
+        Размер {{label.sizeSelected}}
+      </p>
+      <p class='product-bin__text'>
+        Количество
+      </p>
+      <div class='product-bin__product-form'>
+        <div class='product-bin__block-counter'>
+          <button
+            class='button-counter button-counter_active product-bin__button-dec'
+            data-id={{label.id}}
+          >
+            <svg class='button-counter__button-icon button-counter__button-icon_desc'>
+              <use href='./images/product-icon-close.svg#icon-desc'></use>
+            </svg>
+          </button>
+          <span class='button-counter button-counter_active product-bin__product-count'>
+            {{label.count}}
+          </span>
+          <button
+            class='button-counter button-counter_active product-bin__button-inc'
+            data-id={{label.id}}
+          >
+            <svg class='button-counter__button-icon button-counter__button-icon_inc'>
+              <use href='./images/product-icon-close.svg#icon-inc'></use>
+            </svg>
+          </button>
+        </div>
+        <button class='product-bin__button-del' data-id={{label.id}}>
+          Удалить
+          <svg class='product-bin__delete-icon'>
+            <use href='./images/product-icon-close.svg#icon-close-modal'></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </li>
+{{/each}}
