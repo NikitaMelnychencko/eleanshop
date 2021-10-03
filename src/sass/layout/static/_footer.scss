@@ -1,4 +1,4 @@
-
+//==== настройка иконок мобильного меню====//
 .footer__mobile-list-item-plus::before,
 .footer__mobile-list-item-plus::after {
     content: '';
@@ -8,8 +8,7 @@
     position: absolute;
     right: 0;
     top: 50%;
- 
-    // transition: transform 0.2s ease 0s;
+    transition: $time-cubic;
 }
 
 .block-after::after {
@@ -19,13 +18,7 @@
 .block-after.open-menu::after {
   transform: rotate(0deg);
 }
-
-
-
-
-
-
-
+//==== Конец настройки иконок мобильного меню====//
 
 
 /* ====== VISUALLY HIDDEN ======*/
@@ -61,21 +54,17 @@
 }
  /* ====== END VISUALLY HIDDEN ======*/
 
-.is-open{
-    pointer-events: auto;
-    opacity: 0;
-    visibility: hidden;
-}
+
 .footer__logo-container{
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 10px;
-line-height: 1.05;
-color: $secondary-text-color;
-
-letter-spacing: 0.1em;
+    line-height: 1.05;
+    color: $secondary-text-color;
+    letter-spacing: 0.1em;
 }
+
 .footer__mobile-logo-text{
     font-size: 10px;
     line-height: 1.5;
@@ -103,15 +92,15 @@ letter-spacing: 0.1em;
     display: flex;
     justify-content: start;
     align-items:center; 
-    // border-radius: 50%;
-    // transition: background-color $time-function $cubic-bezier;
+    border-radius: 50%;
+    transform: $time-cubic;
 }
 .footer__mobile-icon{
-        display: block;
-        width: 20px;
-        height: 20px;
-        margin-right: 15px;
-    // transition: fill $time-function $cubic-bezier;
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+    transition: $time-cubic;
 }
 
 .footer__mobile-icon-svg{
@@ -120,13 +109,12 @@ letter-spacing: 0.1em;
     height: 20px;
     fill: #2F2F2F;
 }
-
 .open-menu{
     display: inline-block;
 }
+
 .footer__mobile-list-item-plus{
     position: relative;
-    
 }
 
 .footer__mobile-list-dropdown{
@@ -140,7 +128,6 @@ letter-spacing: 0.1em;
     color: $primary-logo-color;
     padding-bottom: 10px;
     padding-left: 10px;
-
 }
 
 .footer__mobile-list-item{
@@ -159,12 +146,19 @@ letter-spacing: 0.1em;
     padding-top: 15px;
     padding-bottom: 15px;
 }
+
 .footer__mobile-list-contacts-telephon,
 .footer__mobile-list-contacts-chat,
-.footer__mobile-list-contacts-email{
+.footer__mobile-list-contacts-email,
+.footer__address{
+font-style: normal;
+
     line-height: 1.5;
     color: $secondary-text-color;
+    margin-bottom: 5px;
+    padding-left: 5px;
 }
+
 .footer__mobile-social{
     display: flex;
     align-items: center;
@@ -179,16 +173,10 @@ letter-spacing: 0.1em;
     height: 19px;
 }
 
-
-
 /*Стили для input*/
-
 .footer__mobile-form{
     position: relative;
 }
-
-
-
 
 .footer__mobile-title-subscribe{
     color: $primary-logo-color;
@@ -217,9 +205,9 @@ letter-spacing: 0.1em;
         }
 }
 
-
 .js-dropdown-none{
     display: block;
+
 }
 
 
@@ -230,6 +218,7 @@ letter-spacing: 0.1em;
     align-items: center;
     width: 100%;
 }
+
 
 .footer__mobile-subscribe-button{
     position: absolute;
@@ -257,7 +246,8 @@ letter-spacing: 0.1em;
 
     &:hover,
     &:focus{
-    background-color: #D7B494;
+        background-color: #D7B494;
+        transition: $time-cubic;
     }
 }
 
@@ -276,31 +266,32 @@ letter-spacing: 0.1em;
     width: 22px;
     height: 6px;
     cursor: pointer;
+    
 }
 
 //==============desktop=========//
 
-
  .footer__desktop{
-     position: absolute;
-     opacity: 1;
-     display: flex;
+    position: absolute;
+    opacity: 1;
+    display: flex;
     bottom: 0;
     z-index: 200;
 
         @media screen and (max-width:$desktop-up){
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        margin: -1px;
-        border: 0;
-        padding: 0;
-        white-space: nowrap;
-        clip-path: inset(100%);
-        clip: rect(0 0 0 0);
-        overflow: hidden;
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            margin: -1px;
+            border: 0;
+            padding: 0;
+            white-space: nowrap;
+            clip-path: inset(100%);
+            clip: rect(0 0 0 0);
+            overflow: hidden;
         }
 }
+
 .footer__desktop-logo{
     margin-right: 47px;
 }
@@ -320,7 +311,6 @@ letter-spacing: 0.1em;
     
 }
 
-
 .footer__desktop-list-contacts-email{
     margin-top: 30px;
     
@@ -338,14 +328,15 @@ letter-spacing: 0.1em;
 .footer__desktop-list-link{
     line-height: 2.9;
     color: $secondary-text-color;
-
 }
-.footer__desktop-list-contacts-info{
+
+.footer__desktop-list-contacts-info,
+.footer__address{
+font-style: normal;
     display: flex;
     align-items: baseline;
-
-
 }
+
 .footer__desktop-list-contacts{
     font-size: 15px;
     line-height: 1.7;
@@ -356,16 +347,14 @@ letter-spacing: 0.1em;
 .footer__desktop-item-contacts-info{
     line-height: 1.5;
     color: $secondary-text-color;
-    &:first-child{
-    margin-right: 71px;
-
-}
+        &:first-child{
+            margin-right: 71px;
+        }
 }
 
 .footer__desktop-menu{
     display: block;
     margin-right: 83px;
-
 }
 
 .footer__desktop-social-list{
@@ -375,22 +364,20 @@ letter-spacing: 0.1em;
 }
 .footer__desktop-social-list-icon{
     display: block;
-        width: 20px;
-        height: 20px;
-         margin-right: 15px;
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
         
 }
 
 .footer__desktop-icon{
-        width: 20px;
-        height: 20px;
-        
-    // transition: fill $time-function $cubic-bezier;
-    &:hover,
-    &:focus{
-        fill: $accent-color;
-
-    }
+    width: 20px;
+    height: 20px;
+    transition: fill $time-cubic;
+        &:hover,
+        &:focus{
+            fill: $accent-color;
+        }
 }
 
 .footer__desktop-icon-svg{
@@ -415,11 +402,12 @@ margin: 0;
     border: 1px solid #D7B494;
     box-sizing: border-box;
     outline: none;
-    &:hover,
-    &:focus,
-    &:active{
-        border-color: #D7B494;
-    }
+        &:hover,
+        &:focus,
+        &:active{
+            border-color: #D7B494;
+
+        }
 }
 
 .footer__desktop-license{
@@ -445,6 +433,7 @@ margin: 0;
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
+
 .agree.js-show-and-remove{
     opacity: 1;
 }
@@ -460,8 +449,11 @@ margin: 0;
     border: 1px solid #D7B494;
     box-sizing: border-box;
     cursor: pointer;
-    
 
+        &:hover,
+        &:focus{
+            transform: $time-cubic;
+        }
 }
 
 .agree{
@@ -486,7 +478,6 @@ margin: 0;
     width: 14px;
     height: 14px;
     cursor: pointer;
-    
 }
 
 .footer__desktop-license-checkbox-text{

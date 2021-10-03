@@ -15,27 +15,37 @@ const {
 checkBoxIcon.addEventListener('click', onAgreeCheckBox)
 mobileSubmitBtn.addEventListener('submit', onSubmitBtnMobile)
 desktopSubmitBtn.addEventListener('submit', onSubmitBtnDesktop)
+
 // Функция раскрытия списка-меню
 
-closeOpenPlus.forEach((evt) => {
 
+
+closeOpenPlus.forEach((evt) => {
     evt.addEventListener('click', (el) => {
         el.preventDefault()
         const dropDown = document.querySelector('.open-menu');
-        if (dropDown) {
-            dropDown.classList.toggle('open-menu')
-            dropDown.nextElementSibling.classList.toggle('js-dropdown-none');
-            if (el.target === dropDown) {
-                return;
+        if (el.target.nextElementSibling) {
+            if (dropDown) {
+                dropDown.classList.toggle('open-menu')
+                dropDown.nextElementSibling.classList.toggle('js-dropdown-none');
+                if (el.target === dropDown) {
+                    return;
+                }
             }
+            el.target.classList.toggle('open-menu');
+            console.log(el.target)
+            console.log(el.target.nextElementSibling)
+            el.target.nextElementSibling.classList.toggle('js-dropdown-none');
         }
-        el.target.classList.toggle('open-menu');
-        console.log(el.target)
-        console.log(el.target.nextElementSibling)
-        el.target.nextElementSibling.classList.toggle('js-dropdown-none');
-
+        else if (!el.target.nextElementSibling) {
+            window.location.href = el.target
+        }
     });
+
 });
+
+const test2 = new IntersectionObserver(test)
+test2.observe(elem)
 
 // Активация деактивация чекбокса
 function onAgreeCheckBox(evt) {
