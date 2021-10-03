@@ -20,13 +20,16 @@
   "homepage": "https://github.com/NikitaMelnychencko/eleanshop#readme",
   "devDependencies": {
     "@babel/core": "^7.15.5",
-    "@babel/preset-env": "^7.15.4",
+    "@babel/preset-env": "^7.15.6",
     "@squoosh/lib": "^0.4.0",
+    "animate.css": "^4.1.1",
     "babel-loader": "^8.2.2",
+    "bootstrap": "^5.1.1",
+    "bootstrap-icons": "^1.5.0",
     "clean-webpack-plugin": "^4.0.0",
     "copy-webpack-plugin": "^9.0.1",
     "cross-env": "^7.0.3",
-    "css-loader": "^6.2.0",
+    "css-loader": "^6.3.0",
     "css-minimizer-webpack-plugin": "^3.0.2",
     "favicons": "^6.2.2",
     "favicons-webpack-plugin": "^5.0.2",
@@ -43,23 +46,24 @@
     "imagemin-pngquant": "^9.0.2",
     "imagemin-svgo": "^9.0.0",
     "jquery": "^3.6.0",
-    "mini-css-extract-plugin": "^2.2.2",
+    "mini-css-extract-plugin": "^2.3.0",
     "node-sass": "^6.0.1",
-    "postcss": "^8.3.6",
+    "postcss": "^8.3.8",
     "postcss-loader": "^6.1.1",
     "postcss-preset-env": "^6.7.0",
-    "sass": "^1.39.0",
+    "sass": "^1.42.1",
     "sass-loader": "^12.1.0",
-    "style-loader": "^3.2.1",
+    "style-loader": "^3.3.0",
     "url-loader": "^4.1.1",
-    "webpack": "^5.52.0",
+    "webpack": "^5.55.1",
     "webpack-cli": "^4.8.0",
-    "webpack-dev-server": "^4.1.1",
+    "webpack-dev-server": "^4.3.0",
     "webpack-merge": "^5.8.0",
     "webpackbar": "^5.0.0-3"
   },
   "dependencies": {
-    "lodash.throttle": "^4.1.1"
-  },
-  "keywords": []
+    "geteventlisteners": "^1.1.0",
+    "lodash.throttle": "^4.1.1",
+    "yt-player": "^3.5.0"
+  }
 }
