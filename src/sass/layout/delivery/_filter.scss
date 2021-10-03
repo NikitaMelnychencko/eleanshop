@@ -17,11 +17,28 @@
 .maindescrption {
   margin: 0;
 }
+.description-title:last-child {
+  display: flex;
+  justify-content: space-between;
+}
+.navara {
+  width: 303px;
+}
+.time__icon {
+  margin-top: 10px;
+}
+.description-title:nth-child(2n + 1) {
+  display: flex;
+  justify-content: space-between;
+}
 
 @media screen and (min-width: 768px) {
   .maindescrption {
     width: 540px;
     margin-left: 47px;
+  }
+  .navara {
+    width: 443px;
   }
 
   .typeofdelivery {
