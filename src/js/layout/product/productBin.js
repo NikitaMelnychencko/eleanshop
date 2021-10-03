@@ -1,5 +1,6 @@
 import markupBin from '../../../views/partials/product/productBin.hbs';
 import dataBin from '../../json/orderinginsertion.json';
+import { checkoutRender } from '../../call-list.js';
 
 export default class ProductBin {
   constructor({ root, typeInsert, data = dataBin }) {
@@ -107,12 +108,14 @@ export default class ProductBin {
 
   _onCloseModal = () => {
     this.self.classList.add('hidden');
+    document.body.style.overflow = 'scroll';
     this._deleteEvent();
   };
 
   _onClickNext = () => {
     this._onCloseModal();
     //function of clicking on the Checkout button
+    checkoutRender();
   };
 
   _setEvent = () => {
@@ -175,6 +178,7 @@ export default class ProductBin {
     }
     this._addMarkup(this.root);
     this.self.classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
   };
 
   initialBin = () => {
