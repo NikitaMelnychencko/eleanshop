@@ -9,82 +9,94 @@ const createProductMarkup = (data) => {
 }
 
 const productInfoMarkup = createProductMarkup(productInfo)
-refs.mainEL.insertAdjacentHTML('beforeend', productInfoMarkup)
 
-//! -----------------------------------------------Characteristic-menu
-const productCharacteristicsConteinerEl = document.querySelector('.product__characteristics')
-const paramsMenuEl = document.querySelector('[data-params-menu]')
-const aditionalMenuEl = document.querySelector('[data-aditional-menu]')
-const buttonParamsEl = document.querySelector('.button__plus--params')
-const buttonAditionalEl = document.querySelector('.button__plus--aditional')
+// !--------------------------------------------------------------Colorpicker
 
-const toggleIsOpenClass = (menu) => {
-  menu.classList.toggle("is-open");
-}
-const transformPlusToMinus = (button) => {
-  button.classList.toggle("button__minus")
+function addCurrentClass(button) {
+  button.classList.add('button__colorpicker--current');
 }
 
-const onProductCharacteristicsConteinerClick = (event) => {
-  const isParams = event.target.classList.contains('button__plus--params')
-  const isAditional = event.target.classList.contains('button__plus--aditional')
+function removeCurrentClass() {
+  const currentClass = document.querySelector('.button__colorpicker--current');
 
-   if (isParams) {
-    toggleIsOpenClass(paramsMenuEl)
-    transformPlusToMinus(buttonParamsEl)
-  } else if (isAditional) {
-    toggleIsOpenClass(aditionalMenuEl)
-    transformPlusToMinus(buttonAditionalEl)
+  if (currentClass) {
+    currentClass.classList.remove('button__colorpicker--current');
   }
-
 }
-productCharacteristicsConteinerEl.addEventListener('click', onProductCharacteristicsConteinerClick)
 
-//! -----------------------------------------------Colorpicker
-const colorpickerButtonBlackEl = document.querySelector('.button__colorpicker--black')
-const colorpickerButtonRedEl = document.querySelector('.button__colorpicker--red')
-const colorpickerButtonGreyEl = document.querySelector('.button__colorpicker--grey')
-
-
-let productColor = localStorage.getItem('productColor')
-
-const setProductColor = (color) => {
+function setProductColor(color) {
   localStorage.setItem('productColor', color)
 }
 
-const showCurrentButton = (add, remove1, remove2) =>{
-  add.classList.add('button__colorpicker--current')
-  remove1.classList.remove('button__colorpicker--current')
-  remove2.classList.remove('button__colorpicker--current')
+function fixateCurrentClass(buttonArray, productColor) {
+    for (let index = 0; index < buttonArray.length; index++) {
+    const element = buttonArray[index];
+
+      if (productColor === element.id) {
+        addCurrentClass(element)
+        break
+    }
+  }
 }
 
-switch (productColor) {
-  case 'black':
-    setProductColor('black')
-    colorpickerButtonBlackEl.classList.add('button__colorpicker--current')
-    break;
-  case 'red':
-    setProductColor('red')
-    colorpickerButtonRedEl.classList.add('button__colorpicker--current')
-    break;
-  case 'grey':
-    setProductColor('grey')
-    colorpickerButtonGreyEl.classList.add('button__colorpicker--current')
-    break
+//! -----------------------------------------------Characteristic-menu
+function toggleIsOpenClass(menu){
+  menu.classList.toggle("is-open");
+}
+
+function transformPlusToMinus(button){
+  button.classList.toggle("button__minus")
+}
+
+
+function createListener() {
+  const characteristicListEl = document.querySelector('.product__characteristics')
+  const paramsMenuEl = document.querySelector('[data-params-menu]')
+  const aditionalMenuEl = document.querySelector('[data-aditional-menu]')
+  const buttonParamsEl = document.querySelector('.button__plus--params')
+  const buttonAdditionalEl = document.querySelector('.button__plus--aditional')
+  const colorpickerListEl = document.querySelector('.colorpicker__list')
+  const colorpickerButtonsEl = document.querySelectorAll('.button__colorpicker')
+  let productColor = localStorage.getItem('productColor')
+
+  const onCharacteristicsListClick = (event) => {
+    const isParams = event.target.classList.contains('button__plus--params')
+    const isAditional = event.target.classList.contains('button__plus--aditional')
+
+    if (isParams) {
+      toggleIsOpenClass(paramsMenuEl)
+      transformPlusToMinus(buttonParamsEl)
+    } else if (isAditional) {
+      toggleIsOpenClass(aditionalMenuEl)
+      transformPlusToMinus(buttonAdditionalEl)
+    }
+
   }
 
-colorpickerButtonBlackEl.addEventListener('click', () => {
-  setProductColor('black')
-  showCurrentButton(colorpickerButtonBlackEl, colorpickerButtonRedEl, colorpickerButtonGreyEl)
-})
-colorpickerButtonRedEl.addEventListener('click', () => {
-  setProductColor('red')
-  showCurrentButton(colorpickerButtonRedEl, colorpickerButtonBlackEl, colorpickerButtonGreyEl)
-})
-colorpickerButtonGreyEl.addEventListener('click', () => {
-  setProductColor('grey')
-  showCurrentButton(colorpickerButtonGreyEl, colorpickerButtonBlackEl, colorpickerButtonRedEl)
-})
+  const onColorpickerListClick = (event) => {
+    const colorpickerButton = event.target;
+    const isColorpickerButton = colorpickerButton.classList.contains('button__colorpicker');
+ 
 
-// !------------------------------------------------------------------
+    if (!isColorpickerButton) {
+      return;
+    }
 
+    removeCurrentClass()
+    addCurrentClass(colorpickerButton)
+    setProductColor(colorpickerButton.id)
+  }
+
+  fixateCurrentClass(colorpickerButtonsEl, productColor) 
+
+  characteristicListEl.addEventListener('click', onCharacteristicsListClick)
+  colorpickerListEl.addEventListener('click', onColorpickerListClick)
+}
+
+
+// EXPORT TO MAIN FILE
+export default { productInfoMarkup, createListener }
+
+// потом УБРАТЬ!!
+refs.mainEL.insertAdjacentHTML('beforeend', productInfoMarkup)
+createListener()

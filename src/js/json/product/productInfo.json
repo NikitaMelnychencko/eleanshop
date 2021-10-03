@@ -1,5 +1,6 @@
 [
   {
+    "id": "1",
     "image": [
       {
         "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
@@ -33,12 +34,18 @@
     "productName": "Классический комплект со смокингом и желетом",
     "productPrice": "65 300",
     "size": [
-      "40",
-      "42",
-      "44",
-      "46",
-      "48",
-      "50"
+      {"40": true},
+      {"42": true},
+      {"44": true},
+      {"46": true},
+      {"48": false},
+      {"50": false}
+    ],
+    "color": [
+      {"colorName": "black", "colorHex": "#242424"},
+      {"colorName": "red", "colorHex": "#F2404A"},
+      {"colorName": "grey", "colorHex": "#E2DFDF"},
+      {"colorName": "blue", "colorHex": "#38548A"}
     ],
     "productDescription": "Приталенный силуэт и заостренные лацканы подчеркивают линию талии, визуально корректируя фигуру до желанной всем 'песочные часы'. Классика женского смокинга, которую одобрил бы сам Ив Сен Лоран.",
     "productComposition": " 98% шерсть, 2% эластан, отделка шелком"

@@ -182,34 +182,42 @@
 
 .button__colorpicker {
   padding: 0;
-  border: none;
+  border: 1px solid $colorpicker-icon-border-color;
   border-radius: 50%;
   width: 46px;
   height: 46px;
   cursor: pointer;
 
+  background-color: #ffffff;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 20px, 32px;
+
   transition: border-color $time-cubic;
 }
 
-.colorpicker__icon {
-  border: 1px solid $colorpicker-icon-border-color;
-  border-radius: 50%;
+.button__colorpicker--black {
+  background-image: url('../images/circle-white.svg'), url('../images/circle-black.svg');
 }
 
-.button__colorpicker--black .colorpicker__icon {
-  fill: $accent-colorpicker-black;
+.button__colorpicker--red {
+  background-image: url('../images/circle-white.svg'), url('../images/circle-red.svg');
 }
 
-.button__colorpicker--red .colorpicker__icon {
-  fill: $accent-colorpicker-red;
+.button__colorpicker--grey {
+  background-image: url('../images/circle-white.svg'), url('../images/circle-grey.svg');
 }
 
-.button__colorpicker--grey .colorpicker__icon {
-  fill: $accent-colorpicker-grey;
+.button__colorpicker--blue {
+  background-image: url('../images/circle-white.svg'), url('../images/circle-blue.svg');
 }
 
-.button__colorpicker--current .colorpicker__icon {
-  border-color: $colorpicker-icon-border-hover;
+.button__colorpicker--green {
+  background-image: url('../images/circle-white.svg'), url('../images/circle-green.svg');
+}
+
+.button__colorpicker--current {
+  border: 1px solid $colorpicker-icon-border-hover;
 }
 
 .button__list {

@@ -15,7 +15,7 @@
         <h3 class="product__size size__title">размер</h3>
         <ul class="size__list">
           {{#each size}}
-          <li class="size__item">{{this}}</li>
+          <li class="size__item">{{this.key}}</li>
           {{/each}}
         </ul>
 
@@ -41,29 +41,12 @@
         <div class="colorpicker">
           <h3 class="colorpicker__title">цвет</h3>
           <ul class="colorpicker__list">
+            {{#each color}}
             <li class="colorpicker__item">
-              <button class="button__colorpicker button__colorpicker--black" type="button">
-                <svg class="colorpicker__icon" width="46" height="46">
-                  <use href="./images/sprite.svg#icon-colorpicker"></use>
-                </svg>
-              </button>
+              <button class="button__colorpicker button__colorpicker--{{this.colorName}}" id="{{this.colorHex}}" type="button">
               </button>
             </li>
-            <li class="colorpicker__item">
-              <button class="button__colorpicker button__colorpicker--red" type="button">
-                <svg class="colorpicker__icon" width="46" height="46">
-                  <use href="./images/sprite.svg#icon-colorpicker"></use>
-                </svg>
-              </button>
-              </button>
-            </li>
-            <li class="colorpicker__item">
-              <button class="button__colorpicker button__colorpicker--grey" type="button">
-                <svg class="colorpicker__icon" width="46" height="46">
-                  <use href="./images/sprite.svg#icon-colorpicker"></use>
-                </svg>
-              </button>
-            </li>
+            {{/each}}
           </ul>
         </div>
 

@@ -91,3 +91,9 @@ import '../../images/img/products/desktop/tuxedo-and-vest-mini-desktop-1@2x.jpg'
 import '../../images/img/products/desktop/tuxedo-and-vest-mini-desktop-2@2x.jpg'
 import '../../images/img/products/desktop/tuxedo-and-vest-mini-desktop-3@2x.jpg'
 import '../../images/img/products/desktop/tuxedo-and-vest-mini-desktop-4@2x.jpg'
+import '../../images/svg/products/circle-black.svg';
+import '../../images/svg/products/circle-red.svg';
+import '../../images/svg/products/circle-grey.svg';
+import '../../images/svg/products/circle-green.svg';
+import '../../images/svg/products/circle-blue.svg';
+import '../../images/svg/products/circle-white.svg';
