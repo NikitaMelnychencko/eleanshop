@@ -15,12 +15,22 @@ const {
     agreeActive,
     mobileSubmitBtn,
     desktopSubmitBtn,
-    testIdInput } = refs
+    testIdInput,
+    desktop } = refs
 checkBoxIcon.addEventListener('click', onAgreeCheckBox)
 mobileSubmitBtn.addEventListener('submit', onSubmitBtnMobile)
 desktopSubmitBtn.addEventListener('submit', onSubmitBtnDesktop)
 
-// Функция раскрытия списка-меню
+//===включение плавной прокрутки на  desktop
+desktop.forEach((evt) => {
+    console.log(evt)
+    evt.addEventListener('click', (el) => {
+        scrollTo(0, 700);
+        console.log(el.target)
+    });
+});
+
+// === раскрытия списка-меню === 
 closeOpenPlus.forEach((evt) => {
     evt.addEventListener('click', (el) => {
         if (!el.target.nextElementSibling) {
@@ -64,6 +74,7 @@ dropDown.forEach((evt) => {
     });
 
 });
+
 // Активация деактивация чекбокса
 function onAgreeCheckBox(evt) {
     const iconCheck = evt.currentTarget
@@ -83,7 +94,6 @@ inputStorageMobile.forEach((evt) => {
         }
     });
 });
-
 
 // Назначение localStorage на input desktop
 inputStorageDesktop.forEach((evt) => {
@@ -114,16 +124,5 @@ function onSubmitBtnDesktop(evt) {
 
 }
 
-export default function updateBin() {
-    let data = localStorage.getItem('orderingData');
-    let count = 0;
-    if (data) {
-        data = JSON.parse(data);
-        count = data.reduce((total, el) => {
-            return (total += Number(el.label.count));
-        }, 0);
-    }
-    document.querySelector('.js-bin .product-list__text').textContent = count;
-}
 
 

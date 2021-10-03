@@ -11,6 +11,7 @@ export default {
   desktopSubmitBtn: document.querySelector('.footer__desktop-form'),
   footerSectionDesktop: document.querySelector('.footer__desktop'),
   testIdInput: document.querySelectorAll('#id'),
+  desktop: document.querySelectorAll('.footer__desktop-list'),
   main: document.querySelector('main'),
   bodyEl: document.querySelector('body'),
   mainEL: document.querySelector('main'),
