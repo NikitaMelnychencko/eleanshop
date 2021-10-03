@@ -25,6 +25,50 @@ import '../../images/svg/hero-svg-original/hero-arrow-right.svg';
 import '../../images/svg/clients-svg-original/clients-arrow-right.svg';
 import '../../images/svg/clients-svg-original/clients-arrow-right.svg';
 
+// ================content=========================
+// Mobile
+import "../../images/img/home/content/mobile/img-mob_1.jpg"
+import "../../images/img/home/content/mobile/img-mob_1@2x.jpg"
+import "../../images/img/home/content/mobile/img-mob_2.jpg"
+import "../../images/img/home/content/mobile/img-mob_2@2x.jpg"
+import "../../images/img/home/content/mobile/img-mob_3.jpg"
+import "../../images/img/home/content/mobile/img-mob_3@2x.jpg"
+import "../../images/img/home/content/mobile/img-mob_4.jpg"
+import "../../images/img/home/content/mobile/img-mob_4@2x.jpg"
+import "../../images/img/home/content/mobile/img-mob_5.jpg"
+import "../../images/img/home/content/mobile/img-mob_5@2x.jpg"
+import "../../images/img/home/content/mobile/img-mob_6.jpg"
+import "../../images/img/home/content/mobile/img-mob_6@2x.jpg"
+import "../../images/img/home/content/mobile/img-mob_7.jpg"
+import "../../images/img/home/content/mobile/img-mob_7@2x.jpg"
+import "../../images/img/home/content/mobile/img-mob_8.jpg"
+import "../../images/img/home/content/mobile/img-mob_8@2x.jpg"
+import "../../images/img/home/content/mobile/img-mob_9.jpg"
+import "../../images/img/home/content/mobile/img-mob_9@2x.jpg"
+import "../../images/img/home/content/mobile/img-mob_10.jpg"
+import "../../images/img/home/content/mobile/img-mob_10@2x.jpg"
+// Desktop
+import "../../images/img/home/content/desk/img_1.jpg"
+import "../../images/img/home/content/desk/img_1@2x.jpg"
+import "../../images/img/home/content/desk/img_2.jpg"
+import "../../images/img/home/content/desk/img_2@2x.jpg"
+import "../../images/img/home/content/desk/img_3.jpg"
+import "../../images/img/home/content/desk/img_3@2x.jpg"
+import "../../images/img/home/content/desk/img_4.jpg"
+import "../../images/img/home/content/desk/img_4@2x.jpg"
+import "../../images/img/home/content/desk/img_5.jpg"
+import "../../images/img/home/content/desk/img_5@2x.jpg"
+import "../../images/img/home/content/desk/img_6.jpg"
+import "../../images/img/home/content/desk/img_6@2x.jpg"
+import "../../images/img/home/content/desk/img_7.jpg"
+import "../../images/img/home/content/desk/img_7@2x.jpg"
+import "../../images/img/home/content/desk/img_8.jpg"
+import "../../images/img/home/content/desk/img_8@2x.jpg"
+import "../../images/img/home/content/desk/img_9.jpg"
+import "../../images/img/home/content/desk/img_9@2x.jpg"
+import "../../images/img/home/content/desk/img_10.jpg"
+import "../../images/img/home/content/desk/img_10@2x.jpg"
+
 //============ homeAboutBrand======================
 import '../../images/img/homeAboutBrand/aboutBrandArrow.png';
 import '../../images/img/homeAboutBrand/aboutBrandDesktop@1x.jpg';
@@ -84,8 +128,16 @@ import '../../images/img/product/handSewn/handSewn-mobile-2.jpg';
 import '../../images/img/product/handSewn/handSewn-mobile-2@2x.jpg';
 import '../../images/img/product/handSewn/handSewn-bg-right.png';
 import '../../images/img/product/handSewn/handSewn-bg-left.png';
+import '../../images/img/product/productBin/product1.jpg';
+import '../../images/img/product/productBin/product1@2x.jpg';
+import '../../images/img/product/productBin/product2.jpg';
+import '../../images/img/product/productBin/product2@2x.jpg';
 import '../../images/svg/sprite.svg';
 import '../../images/svg/thanks_for_ordering.svg';
+import '../../images/svg/product/product-icon-close.svg';
+import '../../images/svg/product/icon-product-delivery.svg';
+import '../../images/svg/product/product-modal-button-close.svg';
+
 
 //==============blockHelp=================
 import '../../images/svg/blockHelp/arrow.svg';
@@ -93,8 +145,6 @@ import '../../images/svg/blockHelp/cross.svg';
 import '../../images/svg/blockHelp/helpChat.svg';
 import '../../images/svg/blockHelp/helpPhone.svg';
 import '../../images/svg/blockHelp/rectangleWhite.svg';
-
-
 
 //============inInstagram===========
 import '../../images/img/page-in-instagram/we-are-in-insta-01.jpg';
@@ -108,13 +158,18 @@ import '../../images/img/page-in-instagram/we-are-in-insta-04@2x.jpg';
 import '../../images/img/page-in-instagram/we-are-in-insta-05.jpg';
 import '../../images/img/page-in-instagram/we-are-in-insta-05@2x.jpg';
 
-
 //===============payment===========================
 
+import '../../images/svg/product/product-icon-close.svg';
+import '../../images/img/product/productBin/product1.jpg';
+import '../../images/img/product/productBin/product1@2x.jpg';
+import '../../images/img/product/productBin/product2.jpg';
+import '../../images/img/product/productBin/product2@2x.jpg';
+
+//===============payment===========================
 import '../../images/img/checkout/payment/buyers.jpg'
 import '../../images/img/checkout/payment/buyers@2x.jpg'
 import '../../images/img/checkout/payment/mirror_reflection.jpg'
 import '../../images/img/checkout/payment/mirror_reflection@2x.jpg'
 import '../../images/svg/murkup.svg'
 import '../../images/svg/murkup_arow.svg'
-
