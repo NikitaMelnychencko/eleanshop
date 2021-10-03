@@ -22,22 +22,18 @@ closeOpenPlus.forEach((evt) => {
     evt.addEventListener('click', (el) => {
         el.preventDefault()
         const dropDown = document.querySelector('.open-menu');
-        if (el.target.nextElementSibling) {
-            if (dropDown) {
-                dropDown.classList.toggle('open-menu')
-                dropDown.nextElementSibling.classList.toggle('js-dropdown-none');
-                if (el.target === dropDown) {
-                    return;
-                }
+        if (dropDown) {
+            dropDown.classList.toggle('open-menu')
+            dropDown.nextElementSibling.classList.toggle('js-dropdown-none');
+            if (el.target === dropDown) {
+                return;
             }
-            el.target.classList.toggle('open-menu');
-            console.log(el.target)
-            console.log(el.target.nextElementSibling)
-            el.target.nextElementSibling.classList.toggle('js-dropdown-none');
         }
-        // else if (!el.target.nextElementSibling) {
-        //     window.location.href = document.querySelector('a')
-        // }
+        el.target.classList.toggle('open-menu');
+        console.log(el.target)
+        console.log(el.target.nextElementSibling)
+        el.target.nextElementSibling.classList.toggle('js-dropdown-none');
+
     });
 });
 
