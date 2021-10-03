@@ -180,7 +180,6 @@ class ModalData {
   }
   _updatePayment() {
     const payment = this._updateValueInLocal('payment-method');
-    console.log(payment);
     this._refs.arrInputPayment.forEach(el => {
       if (el.value === payment) {
         el.checked = true;
