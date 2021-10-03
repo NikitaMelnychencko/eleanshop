@@ -1,0 +1,141 @@
+.contacts-container {
+  padding-right: 0;
+  padding-left: 0;
+  @media screen and (min-width: $desktop-up) {
+    display: grid;
+    padding-left: 20px;
+    padding-right: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: minmax(100px, auto);
+    grid-column-gap: 65px;
+    margin-bottom: 100px;
+  }
+}
+
+.contacts__title {
+  font-size: 21px;
+  line-height: 0.95;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: $secondary-text-color;
+  margin-bottom: 21px;
+  padding-top: 39px;
+  margin-bottom: 21px;
+  @media screen and (min-width: $desktop-up) {
+    padding-top: 69px;
+    margin-bottom: 40px;
+  }
+}
+
+.contacts__contacts {
+  padding-left: 40px;
+  padding-right: 40px;
+  @media screen and (min-width: $desktop-up) {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    padding-right: 0;
+    padding-left: 0;
+    height: min-content;
+  }
+}
+
+.contacts__map {
+  height: 700px;
+  margin-bottom: 50px;
+  @media screen and (min-width: $desktop-up) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    height: 710px;
+    margin-bottom: 0;
+  }
+}
+
+.contacts__form {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 20px;
+  @media screen and (min-width: $desktop-up) {
+    padding-right: 0;
+    padding-left: 0;
+    margin-bottom: 0;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    height: min-content;
+  }
+}
+
+.contacts__title-box {
+}
+
+.contacts__link {
+  font-size: 15px;
+  line-height: 1.47;
+  letter-spacing: 0.05em;
+
+  color: $secondary-text-color;
+}
+
+.contacts__item {
+  font-size: 15px;
+  line-height: 1.47;
+  letter-spacing: 0.05em;
+  color: $secondary-text-color;
+  margin-bottom: 21px;
+  display: flex;
+  align-items: center;
+}
+.contacts__icons {
+  width: 24px;
+  height: 24px;
+  margin-right: 17px;
+  fill: $third-text-color;
+}
+
+.contacts__subheading {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.05em;
+  color: $secondary-text-color;
+  margin-bottom: 20px;
+}
+
+.contacts-item-first-ul {
+  margin-bottom: 37px;
+}
+
+.contacts__item:last-child {
+  margin-bottom: 41px;
+  @media screen and (min-width: $desktop-up) {
+    margin-bottom: 0;
+  }
+}
+
+.contacts-map {
+  border: none;
+  width: 100%;
+  height: 100%;
+}
+
+.contacts-list-name {
+  margin-left: 41px;
+}
+
+.contacts__form-border {
+  border: 1px dashed $fifth-text-color;
+  box-sizing: border-box;
+
+  @media screen and (min-width: $desktop-up) {
+    border: none;
+  }
+}
+
+.contacts__tel-title {
+  display: none;
+}
