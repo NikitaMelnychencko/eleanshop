@@ -3,12 +3,16 @@
 
 <div class="video-set__item">
     <a class="video-set__link" href="{{video}}">
+     <div class="video-set-box">
         <video class="video-set__image" src="{{video}}"
             poster="{{poster}}"
-            controls
             preload="auto">
-        
+            
               </video>
+            <svg class="video-set-svg">
+                <use href="./images/exampl.svg#icon-play-video"> </use>
+            </svg>
+            </div>
 <div class="video-subtitle">
         <p class ="video__description"> {{description}} </p>
         </div>

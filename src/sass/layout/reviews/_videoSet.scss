@@ -11,34 +11,24 @@
 }
 
 .videoset {
-  // display: grid;
-  // width: 2000px;
-  // grid-template-columns: repeat(auto-fill, minmax(300px, 2fr));
-  // column-gap: 14px;
   overflow: hidden;
   margin: 0;
-  // justify-items: center;
 }
+
 .video-set__item {
-  // position: relative;
-  // box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
-  // grid-row: 1/4;
+  position: relative;
   list-style: none;
   @media screen and (min-width: $desktop-up) {
     margin: 0px 7px;
-    // max-width: 324px;
-    height: min-content;
   }
 }
 
 .video-set__image {
+  position: relative;
   height: 665px;
   width: 100%;
   object-fit: cover;
   @media screen and (min-width: $desktop-up) {
-    // position: relative;
-    height: 400px;
-    // max-width: 324px;
   }
 }
 
@@ -72,9 +62,13 @@
   }
 }
 .video__description {
-  // font-family: $primary-font-family;
+  position: absolute;
+  z-index: 5;
+  bottom: 0;
+  left: 24px;
+
   font-size: 15px;
-  color: black;
+  color: $selection-title-text-color;
   font-weight: 400;
   line-height: 19px;
   letter-spacing: 0.05em;
@@ -84,6 +78,13 @@
   letter-spacing: 0.05em;
   text-align: left;
   padding: 19px 0;
+
+  @media screen and (min-width: $desktop-up) {
+    color: $primary-title-text-color;
+    z-index: 1;
+    position: relative;
+    left: 0;
+  }
 }
 .video-subtitle {
   flex-grow: 1;
@@ -115,4 +116,26 @@
 .videoset .slick-dots li.slick-active button {
   width: 55px;
   border-radius: 10px;
+}
+
+.video-set-svg {
+  position: absolute;
+  z-index: 2;
+  bottom: 50%;
+  right: 50%;
+  width: 67px;
+  height: 67px;
+  transform: translate(50%, -50%);
+  transition: filter $time-cubic;
+  &:hover {
+    filter: drop-shadow(0px 0px 5px $selection-text-color);
+  }
+  @media screen and (min-width: $desktop-up) {
+    transform: translate(0, 0);
+    bottom: 18px;
+    right: 18px;
+  }
+}
+.video-set-box {
+  position: relative;
 }
