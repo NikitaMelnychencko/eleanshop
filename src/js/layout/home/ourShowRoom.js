@@ -2,7 +2,6 @@ import 'animate.css';
 import pageShowroomSliderData from '../../json/ourShowroom.json';
 import pageShowroomMarkupTemplate from '../../../views/partials/home/ourShowRoom.hbs';
 import refs from '../../refs/refs.js';
-
 const { mainEL } = refs;
 
 window.jQuery = window.$ = require('jquery');
