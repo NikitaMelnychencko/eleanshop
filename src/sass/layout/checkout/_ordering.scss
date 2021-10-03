@@ -238,12 +238,11 @@
 }
 
 .ordering__btn--promocode {
-  padding: 13px 29px;
+  padding: 13px 11px;
   height: 50px;
   border: none;
-
+  font-family: $third-font-family,sans-serif;
   background-color: $btn-background-color;
-  font-family: $primary-font-family;
   font-size: 17px;
   line-height: 1.35;
   color: $btn-text-color;
