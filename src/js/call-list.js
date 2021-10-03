@@ -1,6 +1,7 @@
 import refs from './refs/refs.js';
 import updateBin from './updateBin.js';
 updateBin();
+
 //======home======//
 import home from '../views/layouts/home.hbs';
 import { pageHeroSliderMarkup, heroSlider } from './layout/home/hero.js';
