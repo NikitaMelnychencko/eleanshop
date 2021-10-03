@@ -1,4 +1,11 @@
-import { productInfoMarkup, createListener } from '../layout/product/infoAboutProduct'
+import q from '../layout/product/infoAboutProduct.js'
+import refs from '../refs/refs.js'
 
-refs.mainEL.insertAdjacentHTML('beforeend', productInfoMarkup)
-createListener()
+//const { create, createListener, createBtn, size } = q;
+
+//refs.mainEL.insertAdjacentHTML('beforeend', create);
+//createListener();
+//console.log(createBtn('1', size))
+
+
+//import sizeChose from '../layout/fitting/sizeChose.js';

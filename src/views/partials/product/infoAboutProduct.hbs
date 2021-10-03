@@ -2,20 +2,20 @@
   <div class="container product__container">
 
     {{#each this}}
-
     {{> productSlider}}
+    {{/each}}
 
       <article class="product__content">
         <div class="product__name-wrapper">
-          <h2 class="product__name">{{productName}}</h2>
+          <h2 class="product__name">{{productInfo.productName}}</h2>
           <button class="button__like"></button>
-          <p class="product__price">{{productPrice}} <span class="product__currency">&#8372;</span></p>
+          <p class="product__price">{{productInfo.productPrice}} <span class="product__currency">&#8372;</span></p>
         </div>
 
         <h3 class="product__size size__title">размер</h3>
         <ul class="size__list">
-          {{#each size}}
-          <li class="size__item">{{this.key}}</li>
+          {{#each this.btn}}
+          <li class="size__item">{{{this}}}</li>
           {{/each}}
         </ul>
 
@@ -41,7 +41,7 @@
         <div class="colorpicker">
           <h3 class="colorpicker__title">цвет</h3>
           <ul class="colorpicker__list">
-            {{#each color}}
+            {{#each productInfo.color}}
             <li class="colorpicker__item">
               <button class="button__colorpicker button__colorpicker--{{this.colorName}}" id="{{this.colorHex}}" type="button">
               </button>
@@ -58,8 +58,8 @@
         </ul>
 
         <div class="product__info">
-          <p class="product__description">{{productDescription}}</p>
-          <p class="product__composition"><span class="product__composition--bold">Состав:</span> {{productComposition}}
+          <p class="product__description">{{productInfo.productDescription}}</p>
+          <p class="product__composition"><span class="product__composition--bold">Состав:</span> {{productInfo.productComposition}}
           </p>
         </div>
 
@@ -106,7 +106,7 @@
         </div>
       </article>
 
-    {{/each}}
+   
 
   </div>
 </section>
