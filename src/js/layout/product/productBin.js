@@ -107,6 +107,7 @@ export default class ProductBin {
 
   _onCloseModal = () => {
     this.self.classList.add('hidden');
+    document.body.style.overflow = 'scroll';
     this._deleteEvent();
   };
 
@@ -175,6 +176,7 @@ export default class ProductBin {
     }
     this._addMarkup(this.root);
     this.self.classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
   };
 
   initialBin = () => {
