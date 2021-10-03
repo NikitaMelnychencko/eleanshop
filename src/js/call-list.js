@@ -1,15 +1,18 @@
-import refs from './refs/refs.js'
-function homeRender() { }
+import refs from './refs/refs.js';
+import updateBin from './updateBin.js';
+
+function homeRender() {}
 //=====brand========//
-function brandRender() { }
+function brandRender() {}
 //=====checkout========//
-import {ModalData, createPayment} from './layout/checkout/payment'
-import { ordering,openOrderingFunction } from './layout/checkout/ordering'
+import { ModalData, createPayment } from './layout/checkout/payment';
+import { ordering, openOrderingFunction } from './layout/checkout/ordering';
 import payment_checkout from '../views/layouts/checkout.hbs';
-function checkoutRender() {
+export function checkoutRender() {
+  updateBin();
   const createCheckout = payment_checkout({ createPayment, ordering });
   refs.mainEL.insertAdjacentHTML('beforeend', createCheckout);
-  openOrderingFunction()
+  openOrderingFunction();
   const inputTime = new ModalData({
     idInput: 'js-time',
     idList: 'time-list',
@@ -19,21 +22,18 @@ function checkoutRender() {
     idList: 'day-list',
   });
 }
-checkoutRender() 
+// checkoutRender();
 //=====contact========//
-function contactRender() { }
+function contactRender() {}
 //=====delivery========//
-function deliveryRender() { }
+function deliveryRender() {}
 //=====favorites========//
-function favoritesRender() { }
+function favoritesRender() {}
 //=====fitting========//
-function fittingRender() { }
+function fittingRender() {}
 //=====product========//
-function productRender() { }
+function productRender() {}
 //=====reviews========//
-function reviewsRender() { }
+function reviewsRender() {}
 //=====showroom========//
-function showroomRender() { }
-
-
-
+function showroomRender() {}

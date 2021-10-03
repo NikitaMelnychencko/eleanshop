@@ -1,5 +1,6 @@
 import markupBin from '../../../views/partials/product/productBin.hbs';
 import dataBin from '../../json/orderinginsertion.json';
+import { checkoutRender } from '../../call-list.js';
 
 export default class ProductBin {
   constructor({ root, typeInsert, data = dataBin }) {
@@ -114,6 +115,7 @@ export default class ProductBin {
   _onClickNext = () => {
     this._onCloseModal();
     //function of clicking on the Checkout button
+    checkoutRender();
   };
 
   _setEvent = () => {
