@@ -7,11 +7,17 @@
       width: auto;
     }
   }
+
   @media screen and (min-width: $desktop-up) {
+    padding-bottom: 326px;
     & .container {
       display: flex;
       padding-left: 42px;
     }
+  }
+
+  &__title {
+    @extend %hide;
   }
 
   &__item {
@@ -27,10 +33,18 @@
         font-weight: normal;
       }
       @media screen and (min-width: $desktop-up) {
-        background-position-x: calc(50% + 480px);
+        background-position-x: calc(50% + 500px);
       }
+
       & .container {
         flex-direction: row-reverse;
+        align-items: end;
+      }
+
+      & .hand-sewn__block-text {
+        @media screen and (min-width: $desktop-up) {
+          padding-bottom: 62px; //48px
+        }
       }
     }
     &:nth-child(2n) {
@@ -39,7 +53,12 @@
       @media screen and (min-width: $desktop-up) {
         background-image: url('./images/handSewn-bg-left.png');
         padding-bottom: 0;
-        background-position-x: calc(50% - 418px);
+        background-position-x: calc(50% - 438px);
+      }
+      & .hand-sewn__block-text {
+        @media screen and (min-width: $desktop-up) {
+          padding-bottom: 48px; //48px
+        }
       }
     }
 
@@ -70,10 +89,11 @@
     @media screen and (min-width: $desktop-up) {
       width: 50%;
       padding-left: 42px;
-      padding-bottom: 80px;
+      padding-bottom: 62px; //48px
       padding-top: 68px;
     }
   }
+
   &__list-info {
     counter-reset: section;
     padding-left: 34px;

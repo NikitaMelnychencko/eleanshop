@@ -1,27 +1,31 @@
 import './sass/main.scss';
 import './js/importImages/importImages.js';
-
+import './js/call-list.js';
+import './js/updateBin.js';
 //=========layout===============
-//static
-import './js/layout/static/header.js';
-import './js/layout/static/footer.js';
+
 //main
 import './js/layout/home/hero.js';
-import './js/layout/home/contend.js';
+import './js/layout/home/content.js';
 import './js/layout/home/aboutTheBrand.js';
 import './js/layout/home/ourShowRoom.js';
 import './js/layout/home/registrationFormForFitting.js';
 import './js/layout/home/starClients.js';
-import './js/layout/home/inInstgram.js';
+import './js/layout/home/inInstagram.js';
 //catalog
 import './js/layout/сatalog/filter.js';
 import './js/layout/сatalog/gallery.js';
 //product
 import './js/layout/product/infoAboutProduct.js';
-import './js/layout/product/recomendationsCategory.js';
 import './js/layout/product/productCreateInfo.js';
-import './js/layout/product/test_recomendationsCategory.js';
+import './js/layout/product/productBin.js';
+import './js/layout/product/recomendationsCategory.js';
+import './js/layout/product/productModalAddToCart.js';
 import './js/layout/product/productHandSewn.js';
+import './js/test/test_productBin.js';
+import './js/test/test_recomendationsCategory.js';
+import './js/test/test_productModalAddCArt.js';
+import './js/test/test_productHandSewn.js';
 
 //delivery
 import './js/layout/delivery/filter.js';
@@ -54,7 +58,14 @@ import './js/layout/favorites/sabmitEmail.js';
 // backfrop
 import './js/components/backdrop.js';
 
-
 //test
 import './js/test/test_productHandSewn.js';
 import './js/test/backdropTest.js';
+
+//blockHelp
+import './js/components/blockHelp/blockHelp';
+//static
+import './js/layout/static/header.js';
+import './js/layout/static/footer.js';
+//update viewport
+import './js/updateViewport/updateViewport';
