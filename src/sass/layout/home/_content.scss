@@ -7,7 +7,7 @@
 }
 
 .content__list {
-  display: inline-grid;
+  display: grid;
 
   grid-template-columns: repeat(2, 1fr);
   column-gap: 14px;
@@ -15,7 +15,7 @@
 
   @media screen and (min-width: $desktop-up) {
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(4);
 
     row-gap: 67px;
   }
@@ -52,9 +52,6 @@
 
 .content__title {
   @extend %hide;
-}
-
-.content__link {
 }
 
 .content__category {

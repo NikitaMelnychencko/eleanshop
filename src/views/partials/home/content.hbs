@@ -5,13 +5,13 @@
             {{#each this}}
             <li class="content__item">
                     <h3 class="content__category">{{name}}</h3>
-                    <a href="{{link}}" class="content__link">
+                    {{!-- <a href=""> --}}
                         <picture class="content__img">
                             <source srcset="{{image}} 1x, {{image_2x}} 2x" media="(max-width: 720px)">
                             <source srcset="{{image-desk}} 1x, {{image-desk_2x}} 2x" media="(min-width: 1378px)">
-                            <img src="{{image}}" alt="{{description}}">
+                            <img id="{{id}}" src="{{image}}" alt="{{description}}">
                         </picture>
-                    </a>
+                    {{!-- </a> --}}
             </li>
             {{/each}}
         </ul>
