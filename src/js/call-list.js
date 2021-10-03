@@ -33,7 +33,54 @@ function favoritesRender() {}
 //=====fitting========//
 function fittingRender() {}
 //=====product========//
-function productRender() {}
+import ProductModalAddToCart from './layout/product/productModalAddToCart.js';
+import RecomendationsCategory from './layout/product/recomendationsCategory.js';
+import cards from './json/catalog.json';
+import productMarkup from '../views/layouts/product.hbs';
+import HandSewn from './layout/product/productHandSewn.js';
+
+function productRender() {
+  const objRecomendationsCategory = new RecomendationsCategory({
+    data: cards,
+  });
+  const objHandSewn = new HandSewn({
+    object: [
+      {
+        name: null, // a modal selector that is called when the button is clicked
+        className: 'is-hidden', // the class that hides the modal
+      },
+      {
+        name: '[data-modal]', // a backdrop selector that is called when the button is clicked
+        className: 'is-hidden', // the class that hides the backdrop
+      },
+    ],
+  });
+  const objProductModalAddToCart = new ProductModalAddToCart({
+    productName: 'ЖАКЕТ-СМОКИНГ С ЛАЦКАНМИ',
+    objectClose: [
+      {
+        name: '[data-modal]', // a backdrop selector that is called when the button is clicked
+        className: 'is-hidden', // the class that hides the backdrop
+      },
+    ],
+  });
+
+  const obj = {
+    recomendationCategory: objRecomendationsCategory.getMarkup(),
+    handSewn: objHandSewn.getMarkup(),
+    modalAddToCart: objProductModalAddToCart.getMarkup(),
+  };
+
+  refs.mainEL.insertAdjacentHTML('beforeend', productMarkup(obj));
+
+  objRecomendationsCategory.setSlider();
+  objHandSewn.setEvent();
+  objProductModalAddToCart.setEvent();
+  objProductModalAddToCart.setSlider();
+  objProductModalAddToCart.show('ЖАКЕТ-СМОКИНГ С ЛАЦКАНМИ'); // show modal window - call the listener on the button
+}
+
+productRender();
 //=====reviews========//
 function reviewsRender() {}
 //=====showroom========//
