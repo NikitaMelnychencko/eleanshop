@@ -1,7 +1,5 @@
 import pageHeroSliderData from '../../json/hero.json';
 import pageHeroMarkupTemplate from '../../../views/partials/home/hero.hbs';
-import refs from '../../refs/refs.js';
-const { mainEL } = refs;
 
 // Create Markup
 export const pageHeroSliderMarkup = pageHeroMarkupTemplate(pageHeroSliderData);
