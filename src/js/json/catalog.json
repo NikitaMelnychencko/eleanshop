@@ -5,11 +5,11 @@
     "icon": "./images/catalog.svg#icon-gallery-card-heart",
     "description": "Подчеркнет линию талии",
     "image": {
-      "srcset": "./images/card-1 1x, ./images/card-1@2x.jpg 2x",
+      "srcset": "./images/card-1.jpg 1x, ./images/card-1@2x.jpg 2x",
       "src": "./images/card-1",
       "alt": "Жакет-смокинг с лацканами"
     },
-    "price": "23 900 ",
+    "price": 23900,
     "category": ["Смокинги", "Новинки"],
     "collection": [],
     "size": [48, "XL"]
@@ -21,11 +21,11 @@
     "icon": "./images/catalog.svg#icon-gallery-card-heart",
     "description": "Подчеркнет линию талии",
     "image": {
-      "srcset": "./images/card-2 1x, ./images/card-2@2x.jpg 2x",
+      "srcset": "./images/card-2.jpg 1x, ./images/card-2@2x.jpg 2x",
       "src": "./images/card-2",
       "alt": " Классический комплект с смокингом..."
     },
-    "price": "65 300 ",
+    "price": 65300,
     "category": ["Смокинги"],
     "collection": ["Осень-зима 20-21"],
     "size": [50, "2XL"]
@@ -36,11 +36,11 @@
     "icon": "./images/catalog.svg#icon-gallery-card-heart",
     "description": "Подчеркнет линию талии",
     "image": {
-      "srcset": "./images/card-3 1x, ./images/card-3@2x.jpg 2x",
+      "srcset": "./images/card-3.jpg 1x, ./images/card-3@2x.jpg 2x",
       "src": "./images/card-3",
       "alt": "Белый жакет смокинг"
     },
-    "price": "26 900",
+    "price": 26900,
     "category": ["Смокинги", "Новинки"],
     "collection": [],
     "size": [42, 46, "S", "L"]
@@ -51,11 +51,11 @@
     "icon": "./images/catalog.svg#icon-gallery-card-heart",
     "description": "Мировая классика",
     "image": {
-      "srcset": "./images/card-4 1x, ./images/card-4@2x.jpg 2x",
+      "srcset": "./images/card-4.jpg 1x, ./images/card-4@2x.jpg 2x",
       "src": "./images/card-4",
       "alt": " Жакет-смокинг бархатный"
     },
-    "price": "29 500",
+    "price": 29500,
     "category": ["Смокинги"],
     "collection": ["Осень-зима 20-21"],
     "size": [40, 44, "XS", "M"]
@@ -66,11 +66,11 @@
     "icon": "./images/catalog.svg#icon-gallery-card-heart",
     "description": "Подчеркнет линию талии",
     "image": {
-      "srcset": "./images/card-5 1x, ./images/card-5@2x.jpg 2x",
+      "srcset": "./images/card-5.jpg 1x, ./images/card-5@2x.jpg 2x",
       "src": "./images/card-5",
       "alt": " Жакет-смокинг прямой"
     },
-    "price": "21 900",
+    "price": 21900,
     "category": ["Смокинги"],
     "collection": [],
     "size": [50, "2XL"]
@@ -81,11 +81,11 @@
     "icon": "./images/catalog.svg#icon-gallery-card-heart",
     "description": "Подчеркнет линию талии",
     "image": {
-      "srcset": "./images/card-6 1x, ./images/card-6@2x.jpg 2x",
+      "srcset": "./images/card-6.jpg 1x, ./images/card-6@2x.jpg 2x",
       "src": "./images/card-6",
       "alt": "Белый смокинг с брюками-клёш"
     },
-    "price": "40 400",
+    "price": 40400,
     "category": ["Смокинги", "Новинки"],
     "collection": ["Осень-зима 20-21"],
     "size": [48, "XL"]
@@ -96,11 +96,11 @@
     "icon": "./images/catalog.svg#icon-gallery-card-heart",
     "description": "Мировая классика",
     "image": {
-      "srcset": "./images/card-7 1x, ./images/card-7@2x.jpg 2x",
+      "srcset": "./images/card-7.jpg 1x, ./images/card-7@2x.jpg 2x",
       "src": "./images/card-7",
       "alt": "Жакет - смокинг приталенный синий"
     },
-    "price": "26 900",
+    "price": 26900,
     "category": ["Смокинги", "Новинки"],
     "collection": [],
     "size": [42, 46, "S", "L"]
@@ -111,11 +111,11 @@
     "icon": "./images/catalog.svg#icon-gallery-card-heart",
     "description": "Подчеркнет линию талии",
     "image": {
-      "srcset": "./images/card-8 1x, ./images/card-8@2x.jpg 2x",
+      "srcset": "./images/card-8.jpg 1x, ./images/card-8@2x.jpg 2x",
       "src": "./images/card-8",
       "alt": "Платье-смокинг длинное"
     },
-    "price": "24 900",
+    "price": 24900,
     "category": ["Смокинги", "Новинки"],
     "collection": ["Свадьба и выпускной"],
     "size": [40, 44, "XS", "M"]
@@ -126,11 +126,11 @@
     "icon": "./images/catalog.svg#icon-gallery-card-heart",
     "description": "Мировая классика",
     "image": {
-      "srcset": "./images/card-9 1x, ./images/card-9@2x.jpg 2x",
+      "srcset": "./images/card-9.jpg 1x, ./images/card-9@2x.jpg 2x",
       "src": "./images/card-9",
       "alt": "Белый смокинг и брюки с лампасами"
     },
-    "price": "41 100",
+    "price": 41100,
     "category": ["Смокинги"],
     "collection": [],
     "size": [48, "XL"]
@@ -141,11 +141,11 @@
     "icon": "./images/catalog.svg#icon-gallery-card-heart",
     "description": "Подчеркнет линию талии",
     "image": {
-      "srcset": "./images/card-10 1x, ./images/card-10@2x.jpg 2x",
+      "srcset": "./images/card-10.jpg 1x, ./images/card-10@2x.jpg 2x",
       "src": "./images/card-10",
       "alt": "Классический комплект с бабочкой"
     },
-    "price": "51 800",
+    "price": 51800,
     "category": ["Смокинги", "Новинки", "Осень-зима 20-21"],
     "collection": [],
     "size": [42, 46, "S", "L"]
@@ -156,11 +156,11 @@
     "icon": "./images/catalog.svg#icon-gallery-card-heart",
     "description": "Подчеркнет линию талии",
     "image": {
-      "srcset": "./images/card-11 1x, ./images/card-11@2x.jpg 2x",
+      "srcset": "./images/card-11.jpg 1x, ./images/card-11@2x.jpg 2x",
       "src": "./images/card-11",
       "alt": " Жакет-смокинг"
     },
-    "price": "23 900",
+    "price": 23900,
     "category": ["Смокинги"],
     "collection": [],
     "size": [50, "2XL"]
@@ -171,11 +171,11 @@
     "icon": "./images/catalog.svg#icon-gallery-card-heart",
     "description": "Мировая классика",
     "image": {
-      "srcset": "./images/card-12 1x, ./images/card-12@2x.jpg 2x",
+      "srcset": "./images/card-12.jpg 1x, ./images/card-12@2x.jpg 2x",
       "src": "./images/card-12",
       "alt": "Платье-смокинг молочное"
     },
-    "price": "65 300",
+    "price": 65300,
     "category": ["Смокинги", "Новинки", "Платья"],
     "collection": ["Свадьба и выпускной", "Вечерние комплекты"],
     "size": [40, 44, "XS", "M"]
@@ -186,11 +186,11 @@
     "icon": "./images/catalog.svg#icon-gallery-card-heart",
     "description": "Подчеркнет линию талии",
     "image": {
-      "srcset": "./images/card-13 1x, ./images/card-13@2x.jpg 2x",
+      "srcset": "./images/card-13.jpg 1x, ./images/card-13@2x.jpg 2x",
       "src": "./images/card-13",
       "alt": "Топ с кружевом черный"
     },
-    "price": "23 900",
+    "price": 23900,
     "category": ["Новинки", "Топы и жилеты"],
     "collection": [],
     "size": [48, "XL"]
@@ -201,11 +201,11 @@
     "icon": "./images/catalog.svg#icon-gallery-card-heart",
     "description": "Мировая классика",
     "image": {
-      "srcset": "./images/card-14 1x, ./images/card-14@2x.jpg 2x",
+      "srcset": "./images/card-14.jpg 1x, ./images/card-14@2x.jpg 2x",
       "src": "./images/card-14",
       "alt": "Юбка - карандаш"
     },
-    "price": "65 300",
+    "price": 65300,
     "category": ["Новинки", "Юбки"],
     "collection": ["Вечерние комплекты"],
     "size": [42, 46, "S", "L"]
@@ -216,11 +216,11 @@
     "icon": "./images/catalog.svg#icon-gallery-card-heart",
     "description": "Подчеркнет линию талии",
     "image": {
-      "srcset": "./images/card-15 1x, ./images/card-15@2x.jpg 2x",
+      "srcset": "./images/card-15.jpg 1x, ./images/card-15@2x.jpg 2x",
       "src": "./images/card-15",
       "alt": "Блуза с баской"
     },
-    "price": "23 900",
+    "price": 23900,
     "category": ["Блузы", "Свадьба и выпускной"],
     "collection": ["Свадьба и выпускной"],
     "size": [48, "XL"]
@@ -231,11 +231,11 @@
     "icon": "./images/catalog.svg#icon-gallery-card-heart",
     "description": "Подчеркнет линию талии",
     "image": {
-      "srcset": "./images/card-16 1x, ./images/card-16@2x.jpg 2x",
+      "srcset": "./images/card-16.jpg 1x, ./images/card-16@2x.jpg 2x",
       "src": "./images/card-16",
       "alt": "Брюки клёш"
     },
-    "price": "23 900",
+    "price": 23900,
     "category": ["Брюки"],
     "collection": [],
     "size": [42, 46, "S", "L"]
@@ -246,11 +246,11 @@
     "description": "Мировая классика",
     "icon": "./images/catalog.svg#icon-gallery-card-heart",
     "image": {
-      "srcset": "./images/card-17 1x, ./images/card-17@2x.jpg 2x",
+      "srcset": "./images/card-17.jpg 1x, ./images/card-17@2x.jpg 2x",
       "src": "./images/card-17",
       "alt": "Брюки зауженные"
     },
-    "price": "65 300",
+    "price": 65300,
     "category": ["Брюки", "Новинки"],
     "collection": [],
     "size": [40, 44, "XS", "M"]
@@ -261,11 +261,11 @@
     "icon": "./images/catalog.svg#icon-gallery-card-heart",
     "description": "Подчеркнет линию талии",
     "image": {
-      "srcset": "./images/card-18 1x, ./images/card-18@2x.jpg 2x",
+      "srcset": "./images/card-18.jpg 1x, ./images/card-18@2x.jpg 2x",
       "src": "./images/card-18",
       "alt": "Красный приталенный смокинг"
     },
-    "price": "23 900",
+    "price": 23900,
     "category": ["Смокинг", "Новинки"],
     "collection": [],
     "size": [48, "XL"]
@@ -276,11 +276,11 @@
     "icon": "./images/catalog.svg#icon-gallery-card-heart",
     "description": "Мировая классика",
     "image": {
-      "srcset": "./images/card-19 1x, ./images/card-19@2x.jpg 2x",
+      "srcset": "./images/card-19.jpg 1x, ./images/card-19@2x.jpg 2x",
       "src": "./images/card-19",
       "alt": "Костюм бархатный"
     },
-    "price": "65 300",
+    "price": 65300,
     "category": ["Костюмы"],
     "collection": ["Осень-зима 20-21"],
     "size": [42, 46, "S", "L"]
@@ -291,11 +291,11 @@
     "icon": "./images/catalog.svg#icon-gallery-card-heart",
     "description": "Подчеркнет линию талии",
     "image": {
-      "srcset": "./images/card-1-desktop 1x, ./images/card-1-desktop@2x.jpg 2x",
+      "srcset": "./images/card-1-desktop.jpg 1x, ./images/card-1-desktop@2x.jpg 2x",
       "src": "./images/card-1-desktop",
       "alt": "Жакет-смокинг с лацканами"
     },
-    "price": "23 900 ",
+    "price": 23900,
     "category": ["Смокинги", "Новинки"],
     "collection": [],
     "size": [48, "XL"]
@@ -307,11 +307,11 @@
     "icon": "./images/catalog.svg#icon-gallery-card-heart",
     "description": "Подчеркнет линию талии",
     "image": {
-      "srcset": "./images/card-2-desktop 1x, ./images/card-2-desktop@2x.jpg 2x",
+      "srcset": "./images/card-2-desktop.jpg 1x, ./images/card-2-desktop@2x.jpg 2x",
       "src": "./images/card-2-desktop",
       "alt": " Классический комплект с смокингом..."
     },
-    "price": "65 300 ",
+    "price": 65300,
     "category": ["Смокинги"],
     "collection": ["Осень-зима 20-21"],
     "size": [40, 44, "XS", "M"]
@@ -322,11 +322,11 @@
     "icon": "./images/catalog.svg#icon-gallery-card-heart",
     "description": "Подчеркнет линию талии",
     "image": {
-      "srcset": "./images/card-3-desktop 1x, ./images/card-3-desktop@2x.jpg 2x",
+      "srcset": "./images/card-3-desktop.jpg 1x, ./images/card-3-desktop@2x.jpg 2x",
       "src": "./images/card-3-desktop",
       "alt": "Белый жакет смокинг"
     },
-    "price": "26 900",
+    "price": 26900,
     "category": ["Смокинги", "Новинки"],
     "collection": [],
     "size": [48, "XL"]
@@ -337,11 +337,11 @@
     "icon": "./images/catalog.svg#icon-gallery-card-heart",
     "description": "Мировая классика",
     "image": {
-      "srcset": "./images/card-4-desktop 1x, ./images/card-4-desktop@2x.jpg 2x",
+      "srcset": "./images/card-4-desktop.jpg 1x, ./images/card-4-desktop@2x.jpg 2x",
       "src": "./images/card-4-desktop",
       "alt": " Жакет-смокинг бархатный"
     },
-    "price": "29 500",
+    "price": 29500,
     "category": ["Смокинги"],
     "collection": ["Осень-зима 20-21"],
     "size": [42, 46, "S", "L"]
@@ -352,11 +352,11 @@
     "icon": "./images/catalog.svg#icon-gallery-card-heart",
     "description": "Подчеркнет линию талии",
     "image": {
-      "srcset": "./images/card-5-desktop 1x, ./images/card-5-desktop@2x.jpg 2x",
+      "srcset": "./images/card-5-desktop.jpg 1x, ./images/card-5-desktop@2x.jpg 2x",
       "src": "./images/card-5-desktop",
       "alt": " Жакет-смокинг прямой"
     },
-    "price": "21 900",
+    "price": 21900,
     "category": ["Смокинги"],
     "collection": [],
     "size": [48, "XL"]
@@ -367,11 +367,11 @@
     "icon": "./images/catalog.svg#icon-gallery-card-heart",
     "description": "Подчеркнет линию талии",
     "image": {
-      "srcset": "./images/card-6-desktop 1x, ./images/card-6-desktop@2x.jpg 2x",
+      "srcset": "./images/card-6-desktop.jpg 1x, ./images/card-6-desktop@2x.jpg 2x",
       "src": "./images/card-6-desktop",
       "alt": "Белый смокинг с брюками-клёш"
     },
-    "price": "40 400",
+    "price": 40400,
     "category": ["Смокинги", "Новинки"],
     "collection": ["Осень-зима 20-21"],
     "size": [42, 46, "S", "L"]
@@ -382,11 +382,11 @@
     "icon": "./images/catalog.svg#icon-gallery-card-heart",
     "description": "Мировая классика",
     "image": {
-      "srcset": "./images/card-7-desktop 1x, ./images/card-7-desktop@2x.jpg 2x",
+      "srcset": "./images/card-7-desktop.jpg 1x, ./images/card-7-desktop@2x.jpg 2x",
       "src": "./images/card-7-desktop",
       "alt": "Жакет - смокинг приталенный синий"
     },
-    "price": "26 900",
+    "price": 26900,
     "category": ["Смокинги", "Новинки"],
     "collection": [],
     "size": [40, 44, "XS", "M"]
@@ -397,11 +397,11 @@
     "icon": "./images/catalog.svg#icon-gallery-card-heart",
     "description": "Подчеркнет линию талии",
     "image": {
-      "srcset": "./images/card-8-desktop 1x, ./images/card-8-desktop@2x.jpg 2x",
+      "srcset": "./images/card-8-desktop.jpg 1x, ./images/card-8-desktop@2x.jpg 2x",
       "src": "./images/card-8-desktop",
       "alt": "Платье-смокинг длинное"
     },
-    "price": "24 900",
+    "price": 24900,
     "category": ["Смокинги", "Новинки"],
     "collection": ["Свадьба и выпускной"],
     "size": [48, "XL"]
@@ -412,11 +412,11 @@
     "icon": "./images/catalog.svg#icon-gallery-card-heart",
     "description": "Мировая классика",
     "image": {
-      "srcset": "./images/card-9-desktop 1x, ./images/card-9-desktop@2x.jpg 2x",
+      "srcset": "./images/card-9-desktop.jpg 1x, ./images/card-9-desktop@2x.jpg 2x",
       "src": "./images/card-9-desktop",
       "alt": "Белый смокинг и брюки с лампасами"
     },
-    "price": "41 100",
+    "price": 41100,
     "category": ["Смокинги"],
     "collection": [],
     "size": [42, 46, "S", "L"]
@@ -427,11 +427,11 @@
     "icon": "./images/catalog.svg#icon-gallery-card-heart",
     "description": "Подчеркнет линию талии",
     "image": {
-      "srcset": "./images/card-10-desktop 1x, ./images/card-10-desktop@2x.jpg 2x",
+      "srcset": "./images/card-10-desktop.jpg 1x, ./images/card-10-desktop@2x.jpg 2x",
       "src": "./images/card-10-desktop",
       "alt": "Классический комплект с бабочкой"
     },
-    "price": "51 800",
+    "price": 51800,
     "category": ["Смокинги", "Новинки", "Осень-зима 20-21"],
     "collection": [],
     "size": [48, "XL"]
@@ -442,11 +442,11 @@
     "icon": "./images/catalog.svg#icon-gallery-card-heart",
     "description": "Подчеркнет линию талии",
     "image": {
-      "srcset": "./images/card-11-desktop 1x, ./images/card-11-desktop@2x.jpg 2x",
+      "srcset": "./images/card-11-desktop.jpg 1x, ./images/card-11-desktop@2x.jpg 2x",
       "src": "./images/card-11-desktop",
       "alt": " Жакет-смокинг"
     },
-    "price": "23 900",
+    "price": 23900,
     "category": ["Смокинги"],
     "collection": [],
     "size": [42, 46, "S", "L"]
@@ -457,11 +457,11 @@
     "icon": "./images/catalog.svg#icon-gallery-card-heart",
     "description": "Мировая классика",
     "image": {
-      "srcset": "./images/card-12-desktop 1x, ./images/card-12-desktop@2x.jpg 2x",
+      "srcset": "./images/card-12-desktop.jpg 1x, ./images/card-12-desktop@2x.jpg 2x",
       "src": "./images/card-12-desktop",
       "alt": "Платье-смокинг молочное"
     },
-    "price": "65 300",
+    "price": 65300,
     "category": ["Смокинги", "Новинки", "Платья"],
     "collection": ["Свадьба и выпускной", "Вечерние комплекты"],
     "size": [48, "XL"]
@@ -472,11 +472,11 @@
     "icon": "./images/catalog.svg#icon-gallery-card-heart",
     "description": "Подчеркнет линию талии",
     "image": {
-      "srcset": "./images/card-13-desktop 1x, ./images/card-13-desktop@2x.jpg 2x",
+      "srcset": "./images/card-13-desktop.jpg 1x, ./images/card-13-desktop@2x.jpg 2x",
       "src": "./images/card-13-desktop",
       "alt": "Топ с кружевом черный"
     },
-    "price": "23 900",
+    "price": 23900,
     "category": ["Новинки", "Топы и жилеты"],
     "collection": [],
     "size": [48, "XL"]
@@ -487,11 +487,11 @@
     "icon": "./images/catalog.svg#icon-gallery-card-heart",
     "description": "Мировая классика",
     "image": {
-      "srcset": "./images/card-14-desktop 1x, ./images/card-14-desktop@2x.jpg 2x",
+      "srcset": "./images/card-14-desktop.jpg 1x, ./images/card-14-desktop@2x.jpg 2x",
       "src": "./images/card-14-desktop",
       "alt": "Юбка - карандаш"
     },
-    "price": "65 300",
+    "price": 65300,
     "category": ["Новинки", "Юбки"],
     "collection": ["Вечерние комплекты"],
     "size": [42, 46, "S", "L"]
@@ -502,11 +502,11 @@
     "icon": "./images/catalog.svg#icon-gallery-card-heart",
     "description": "Подчеркнет линию талии",
     "image": {
-      "srcset": "./images/card-15-desktop 1x, ./images/card-15-desktop@2x.jpg 2x",
+      "srcset": "./images/card-15-desktop.jpg 1x, ./images/card-15-desktop@2x.jpg 2x",
       "src": "./images/card-15-desktop",
       "alt": "Блуза с баской"
     },
-    "price": "23 900",
+    "price": 23900,
     "category": ["Блузы", "Свадьба и выпускной"],
     "collection": ["Свадьба и выпускной"],
     "size": [48, "XL"]
@@ -516,11 +516,11 @@
     "icon": "./images/catalog.svg#icon-gallery-card-heart",
     "description": "Подчеркнет линию талии",
     "image": {
-      "srcset": "./images/card-16-desktop 1x, ./images/card-16-desktop@2x.jpg 2x",
+      "srcset": "./images/card-16-desktop.jpg 1x, ./images/card-16-desktop@2x.jpg 2x",
       "src": "./images/card-16",
       "alt": "Брюки клёш"
     },
-    "price": "23 900",
+    "price": 23900,
     "category": ["Брюки"],
     "collection": [],
     "size": [48, "XL"]
@@ -531,11 +531,11 @@
     "description": "Мировая классика",
     "icon": "./images/catalog.svg#icon-gallery-card-heart",
     "image": {
-      "srcset": "./images/card-17 1x, ./images/card-17-desktop@2x.jpg 2x",
+      "srcset": "./images/card-17.jpg 1x, ./images/card-17-desktop@2x.jpg 2x",
       "src": "./images/card-17",
       "alt": "Брюки зауженные"
     },
-    "price": "65 300",
+    "price": 65300,
     "category": ["Брюки", "Новинки"],
     "collection": [],
     "size": [42, 46, "S", "L"]
@@ -546,11 +546,11 @@
     "icon": "./images/catalog.svg#icon-gallery-card-heart",
     "description": "Подчеркнет линию талии",
     "image": {
-      "srcset": "./images/card-18-desktop 1x, ./images/card-18-desktop@2x.jpg 2x",
+      "srcset": "./images/card-18-desktop.jpg 1x, ./images/card-18-desktop@2x.jpg 2x",
       "src": "./images/card-18-desktop",
       "alt": "Красный приталенный смокинг"
     },
-    "price": "23 900",
+    "price": 23900,
     "category": ["Смокинг", "Новинки"],
     "collection": [],
     "size": [40, 44, "XS", "M"]
@@ -561,11 +561,11 @@
     "icon": "./images/catalog.svg#icon-gallery-card-heart",
     "description": "Мировая классика",
     "image": {
-      "srcset": "./images/card-19-desktop 1x, ./images/card-19-desktop@2x.jpg 2x",
+      "srcset": "./images/card-19-desktop.jpg 1x, ./images/card-19-desktop@2x.jpg 2x",
       "src": "./images/card-19",
       "alt": "Костюм бархатный"
     },
-    "price": "65 300",
+    "price": 65300,
     "category": ["Костюмы"],
     "collection": ["Осень-зима 20-21"],
     "size": [42, 46, "S", "L"]
@@ -577,11 +577,11 @@
     "icon": "./images/catalog.svg#icon-gallery-card-heart",
     "description": "Мировая классика",
     "image": {
-      "srcset": "./images/card-20-desktop 1x, ./images/card-20-desktop@2x.jpg 2x",
+      "srcset": "./images/card-20-desktop.jpg 1x, ./images/card-20-desktop@2x.jpg 2x",
       "src": "./images/card-20-desktop",
       "alt": "Костюм бархатный"
     },
-    "price": "65 300 ",
+    "price": 65300,
     "category": ["Костюмы"],
     "collection": ["Предзаказ"],
     "size": [48, "XL"]
@@ -592,11 +592,11 @@
     "icon": "./images/catalog.svg#icon-gallery-card-heart",
     "description": "Подчеркнет линию талии",
     "image": {
-      "srcset": "./images/card-1 1x, ./images/card-1@2x.jpg 2x",
+      "srcset": "./images/card-1.jpg 1x, ./images/card-1@2x.jpg 2x",
       "src": "./images/card-1",
       "alt": "Жакет-смокинг с лацканами"
     },
-    "price": "23 900 ",
+    "price": 23900,
     "category": ["Смокинги", "Новинки"],
     "collection": ["Осень-зима 20-21"],
     "size": [48, "XL"]
@@ -608,11 +608,11 @@
     "icon": "./images/catalog.svg#icon-gallery-card-heart",
     "description": "Подчеркнет линию талии",
     "image": {
-      "srcset": "./images/card-2 1x, ./images/card-2@2x.jpg 2x",
+      "srcset": "./images/card-2.jpg 1x, ./images/card-2@2x.jpg 2x",
       "src": "./images/card-2",
       "alt": " Классический комплект с смокингом..."
     },
-    "price": "65 300 ",
+    "price": 65300,
     "category": ["Смокинги"],
     "collection": ["Осень-зима 20-21"],
     "size": [50, "2XL"]
@@ -623,11 +623,11 @@
     "icon": "./images/catalog.svg#icon-gallery-card-heart",
     "description": "Подчеркнет линию талии",
     "image": {
-      "srcset": "./images/card-3 1x, ./images/card-3@2x.jpg 2x",
+      "srcset": "./images/card-3.jpg 1x, ./images/card-3@2x.jpg 2x",
       "src": "./images/card-3",
       "alt": "Белый жакет смокинг"
     },
-    "price": "26 900",
+    "price": 26900,
     "category": ["Смокинги", "Новинки"],
     "collection": ["Осень-зима 20-21"],
     "size": [42, 46, "S", "L"]
@@ -638,11 +638,11 @@
     "icon": "./images/catalog.svg#icon-gallery-card-heart",
     "description": "Мировая классика",
     "image": {
-      "srcset": "./images/card-4 1x, ./images/card-4@2x.jpg 2x",
+      "srcset": "./images/card-4.jpg 1x, ./images/card-4@2x.jpg 2x",
       "src": "./images/card-4",
       "alt": " Жакет-смокинг бархатный"
     },
-    "price": "29 500",
+    "price": 29500,
     "category": ["Смокинги"],
     "collection": ["Осень-зима 20-21"],
     "size": [40, 44, "XS", "M"]
@@ -653,11 +653,11 @@
     "icon": "./images/catalog.svg#icon-gallery-card-heart",
     "description": "Подчеркнет линию талии",
     "image": {
-      "srcset": "./images/card-5 1x, ./images/card-5@2x.jpg 2x",
+      "srcset": "./images/card-5.jpg 1x, ./images/card-5@2x.jpg 2x",
       "src": "./images/card-5",
       "alt": " Жакет-смокинг прямой"
     },
-    "price": "21 900",
+    "price": 21900,
     "category": ["Смокинги"],
     "collection": ["Осень-зима 20-21"],
     "size": [50, "2XL"]
@@ -668,11 +668,11 @@
     "icon": "./images/catalog.svg#icon-gallery-card-heart",
     "description": "Подчеркнет линию талии",
     "image": {
-      "srcset": "./images/card-6 1x, ./images/card-6@2x.jpg 2x",
+      "srcset": "./images/card-6.jpg 1x, ./images/card-6@2x.jpg 2x",
       "src": "./images/card-6",
       "alt": "Белый смокинг с брюками-клёш"
     },
-    "price": "40 400",
+    "price": 40400,
     "category": ["Смокинги", "Новинки"],
     "collection": ["Осень-зима 20-21"],
     "size": [48, "XL"]
@@ -683,11 +683,11 @@
     "icon": "./images/catalog.svg#icon-gallery-card-heart",
     "description": "Мировая классика",
     "image": {
-      "srcset": "./images/card-7 1x, ./images/card-7@2x.jpg 2x",
+      "srcset": "./images/card-7.jpg 1x, ./images/card-7@2x.jpg 2x",
       "src": "./images/card-7",
       "alt": "Жакет - смокинг приталенный синий"
     },
-    "price": "26 900",
+    "price": 26900,
     "category": ["Смокинги", "Новинки"],
     "collection": ["Осень-зима 20-21"],
     "size": [42, 46, "S", "L"]
@@ -698,11 +698,11 @@
     "icon": "./images/catalog.svg#icon-gallery-card-heart",
     "description": "Подчеркнет линию талии",
     "image": {
-      "srcset": "./images/card-8 1x, ./images/card-8@2x.jpg 2x",
+      "srcset": "./images/card-8.jpg 1x, ./images/card-8@2x.jpg 2x",
       "src": "./images/card-8",
       "alt": "Платье-смокинг длинное"
     },
-    "price": "24 900",
+    "price": 24900,
     "category": ["Смокинги", "Новинки"],
     "collection": ["Свадьба и выпускной"],
     "size": [40, 44, "XS", "M"]
@@ -713,11 +713,11 @@
     "icon": "./images/catalog.svg#icon-gallery-card-heart",
     "description": "Мировая классика",
     "image": {
-      "srcset": "./images/card-9 1x, ./images/card-9@2x.jpg 2x",
+      "srcset": "./images/card-9.jpg 1x, ./images/card-9@2x.jpg 2x",
       "src": "./images/card-9",
       "alt": "Белый смокинг и брюки с лампасами"
     },
-    "price": "41 100",
+    "price": 41100,
     "category": ["Смокинги"],
     "collection": ["Осень-зима 20-21"],
     "size": [48, "XL"]
@@ -728,11 +728,11 @@
     "icon": "./images/catalog.svg#icon-gallery-card-heart",
     "description": "Подчеркнет линию талии",
     "image": {
-      "srcset": "./images/card-10 1x, ./images/card-10@2x.jpg 2x",
+      "srcset": "./images/card-10.jpg 1x, ./images/card-10@2x.jpg 2x",
       "src": "./images/card-10",
       "alt": "Классический комплект с бабочкой"
     },
-    "price": "51 800",
+    "price": 51800,
     "category": ["Смокинги", "Новинки", "Осень-зима 20-21"],
     "collection": ["Осень-зима 20-21"],
     "size": [42, 46, "S", "L"]
@@ -743,11 +743,11 @@
     "icon": "./images/catalog.svg#icon-gallery-card-heart",
     "description": "Подчеркнет линию талии",
     "image": {
-      "srcset": "./images/card-11 1x, ./images/card-11@2x.jpg 2x",
+      "srcset": "./images/card-11.jpg 1x, ./images/card-11@2x.jpg 2x",
       "src": "./images/card-11",
       "alt": " Жакет-смокинг"
     },
-    "price": "23 900",
+    "price": 23900,
     "category": ["Смокинги"],
     "collection": ["Осень-зима 20-21"],
     "size": [50, "2XL"]
@@ -758,11 +758,11 @@
     "icon": "./images/catalog.svg#icon-gallery-card-heart",
     "description": "Мировая классика",
     "image": {
-      "srcset": "./images/card-12 1x, ./images/card-12@2x.jpg 2x",
+      "srcset": "./images/card-12.jpg 1x, ./images/card-12@2x.jpg 2x",
       "src": "./images/card-12",
       "alt": "Платье-смокинг молочное"
     },
-    "price": "65 300",
+    "price": 65300,
     "category": ["Смокинги", "Новинки", "Платья"],
     "collection": ["Свадьба и выпускной", "Вечерние комплекты"],
     "size": [40, 44, "XS", "M"]
@@ -773,11 +773,11 @@
     "icon": "./images/catalog.svg#icon-gallery-card-heart",
     "description": "Подчеркнет линию талии",
     "image": {
-      "srcset": "./images/card-13 1x, ./images/card-13@2x.jpg 2x",
+      "srcset": "./images/card-13.jpg 1x, ./images/card-13@2x.jpg 2x",
       "src": "./images/card-13",
       "alt": "Топ с кружевом черный"
     },
-    "price": "23 900",
+    "price": 23900,
     "category": ["Новинки", "Топы и жилеты"],
     "collection": ["Осень-зима 20-21"],
     "size": [48, "XL"]
@@ -788,11 +788,11 @@
     "icon": "./images/catalog.svg#icon-gallery-card-heart",
     "description": "Мировая классика",
     "image": {
-      "srcset": "./images/card-14 1x, ./images/card-14@2x.jpg 2x",
+      "srcset": "./images/card-14.jpg 1x, ./images/card-14@2x.jpg 2x",
       "src": "./images/card-14",
       "alt": "Юбка - карандаш"
     },
-    "price": "65 300",
+    "price": 65300,
     "category": ["Новинки", "Юбки"],
     "collection": ["Вечерние комплекты"],
     "size": [42, 46, "S", "L"]
@@ -803,11 +803,11 @@
     "icon": "./images/catalog.svg#icon-gallery-card-heart",
     "description": "Подчеркнет линию талии",
     "image": {
-      "srcset": "./images/card-15 1x, ./images/card-15@2x.jpg 2x",
+      "srcset": "./images/card-15.jpg 1x, ./images/card-15@2x.jpg 2x",
       "src": "./images/card-15",
       "alt": "Блуза с баской"
     },
-    "price": "23 900",
+    "price": 23900,
     "category": ["Блузы", "Свадьба и выпускной"],
     "collection": ["Свадьба и выпускной"],
     "size": [48, "XL"]
@@ -818,11 +818,11 @@
     "icon": "./images/catalog.svg#icon-gallery-card-heart",
     "description": "Подчеркнет линию талии",
     "image": {
-      "srcset": "./images/card-16 1x, ./images/card-16@2x.jpg 2x",
+      "srcset": "./images/card-16.jpg 1x, ./images/card-16@2x.jpg 2x",
       "src": "./images/card-16",
       "alt": "Брюки клёш"
     },
-    "price": "23 900",
+    "price": 23900,
     "category": ["Брюки"],
     "collection": ["Осень-зима 20-21"],
     "size": [42, 46, "S", "L"]
@@ -833,11 +833,11 @@
     "description": "Мировая классика",
     "icon": "./images/catalog.svg#icon-gallery-card-heart",
     "image": {
-      "srcset": "./images/card-17 1x, ./images/card-17@2x.jpg 2x",
+      "srcset": "./images/card-17.jpg 1x, ./images/card-17@2x.jpg 2x",
       "src": "./images/card-17",
       "alt": "Брюки зауженные"
     },
-    "price": "65 300",
+    "price": 65300,
     "category": ["Брюки", "Новинки"],
     "collection": ["Осень-зима 20-21"],
     "size": [40, 44, "XS", "M"]
@@ -848,11 +848,11 @@
     "icon": "./images/catalog.svg#icon-gallery-card-heart",
     "description": "Подчеркнет линию талии",
     "image": {
-      "srcset": "./images/card-18 1x, ./images/card-18@2x.jpg 2x",
+      "srcset": "./images/card-18.jpg 1x, ./images/card-18@2x.jpg 2x",
       "src": "./images/card-18",
       "alt": "Красный приталенный смокинг"
     },
-    "price": "23 900",
+    "price": 23900,
     "category": ["Смокинг", "Новинки"],
     "collection": ["Осень-зима 20-21"],
     "size": [48, "XL"]
@@ -863,11 +863,11 @@
     "icon": "./images/catalog.svg#icon-gallery-card-heart",
     "description": "Мировая классика",
     "image": {
-      "srcset": "./images/card-19 1x, ./images/card-19@2x.jpg 2x",
+      "srcset": "./images/card-19.jpg 1x, ./images/card-19@2x.jpg 2x",
       "src": "./images/card-19",
       "alt": "Костюм бархатный"
     },
-    "price": "65 300",
+    "price": 65300,
     "category": ["Костюмы"],
     "collection": ["Осень-зима 20-21"],
     "size": [42, 46, "S", "L"]
@@ -878,11 +878,11 @@
     "icon": "./images/catalog.svg#icon-gallery-card-heart",
     "description": "Подчеркнет линию талии",
     "image": {
-      "srcset": "./images/card-1-desktop 1x, ./images/card-1-desktop@2x.jpg 2x",
+      "srcset": "./images/card-1-desktop.jpg 1x, ./images/card-1-desktop@2x.jpg 2x",
       "src": "./images/card-1-desktop",
       "alt": "Жакет-смокинг с лацканами"
     },
-    "price": "23 900 ",
+    "price": 23900,
     "category": ["Смокинги", "Новинки"],
     "collection": ["Осень-зима 20-21"],
     "size": [48, "XL"]
@@ -894,11 +894,11 @@
     "icon": "./images/catalog.svg#icon-gallery-card-heart",
     "description": "Подчеркнет линию талии",
     "image": {
-      "srcset": "./images/card-2-desktop 1x, ./images/card-2-desktop@2x.jpg 2x",
+      "srcset": "./images/card-2-desktop.jpg 1x, ./images/card-2-desktop@2x.jpg 2x",
       "src": "./images/card-2-desktop",
       "alt": " Классический комплект с смокингом..."
     },
-    "price": "65 300 ",
+    "price": 65300,
     "category": ["Смокинги"],
     "collection": ["Осень-зима 20-21"],
     "size": [40, 44, "XS", "M"]
@@ -909,11 +909,11 @@
     "icon": "./images/catalog.svg#icon-gallery-card-heart",
     "description": "Подчеркнет линию талии",
     "image": {
-      "srcset": "./images/card-3-desktop 1x, ./images/card-3-desktop@2x.jpg 2x",
+      "srcset": "./images/card-3-desktop.jpg 1x, ./images/card-3-desktop@2x.jpg 2x",
       "src": "./images/card-3-desktop",
       "alt": "Белый жакет смокинг"
     },
-    "price": "26 900",
+    "price": 26900,
     "category": ["Смокинги", "Новинки"],
     "collection": ["Осень-зима 20-21"],
     "size": [48, "XL"]
@@ -924,11 +924,11 @@
     "icon": "./images/catalog.svg#icon-gallery-card-heart",
     "description": "Мировая классика",
     "image": {
-      "srcset": "./images/card-4-desktop 1x, ./images/card-4-desktop@2x.jpg 2x",
+      "srcset": "./images/card-4-desktop.jpg 1x, ./images/card-4-desktop@2x.jpg 2x",
       "src": "./images/card-4-desktop",
       "alt": " Жакет-смокинг бархатный"
     },
-    "price": "29 500",
+    "price": 29500,
     "category": ["Смокинги"],
     "collection": ["Осень-зима 20-21"],
     "size": [42, 46, "S", "L"]
@@ -939,11 +939,11 @@
     "icon": "./images/catalog.svg#icon-gallery-card-heart",
     "description": "Подчеркнет линию талии",
     "image": {
-      "srcset": "./images/card-5-desktop 1x, ./images/card-5-desktop@2x.jpg 2x",
+      "srcset": "./images/card-5-desktop.jpg 1x, ./images/card-5-desktop@2x.jpg 2x",
       "src": "./images/card-5-desktop",
       "alt": " Жакет-смокинг прямой"
     },
-    "price": "21 900",
+    "price": 21900,
     "category": ["Смокинги"],
     "collection": ["Осень-зима 20-21"],
     "size": [48, "XL"]
@@ -954,11 +954,11 @@
     "icon": "./images/catalog.svg#icon-gallery-card-heart",
     "description": "Подчеркнет линию талии",
     "image": {
-      "srcset": "./images/card-6-desktop 1x, ./images/card-6-desktop@2x.jpg 2x",
+      "srcset": "./images/card-6-desktop.jpg 1x, ./images/card-6-desktop@2x.jpg 2x",
       "src": "./images/card-6-desktop",
       "alt": "Белый смокинг с брюками-клёш"
     },
-    "price": "40 400",
+    "price": 40400,
     "category": ["Смокинги", "Новинки"],
     "collection": ["Осень-зима 20-21"],
     "size": [42, 46, "S", "L"]
@@ -969,11 +969,11 @@
     "icon": "./images/catalog.svg#icon-gallery-card-heart",
     "description": "Мировая классика",
     "image": {
-      "srcset": "./images/card-7-desktop 1x, ./images/card-7-desktop@2x.jpg 2x",
+      "srcset": "./images/card-7-desktop.jpg 1x, ./images/card-7-desktop@2x.jpg 2x",
       "src": "./images/card-7-desktop",
       "alt": "Жакет - смокинг приталенный синий"
     },
-    "price": "26 900",
+    "price": 26900,
     "category": ["Смокинги", "Новинки"],
     "collection": ["Осень-зима 20-21"],
     "size": [40, 44, "XS", "M"]
@@ -984,11 +984,11 @@
     "icon": "./images/catalog.svg#icon-gallery-card-heart",
     "description": "Подчеркнет линию талии",
     "image": {
-      "srcset": "./images/card-8-desktop 1x, ./images/card-8-desktop@2x.jpg 2x",
+      "srcset": "./images/card-8-desktop.jpg 1x, ./images/card-8-desktop@2x.jpg 2x",
       "src": "./images/card-8-desktop",
       "alt": "Платье-смокинг длинное"
     },
-    "price": "24 900",
+    "price": 24900,
     "category": ["Смокинги", "Новинки"],
     "collection": ["Свадьба и выпускной"],
     "size": [48, "XL"]
@@ -999,11 +999,11 @@
     "icon": "./images/catalog.svg#icon-gallery-card-heart",
     "description": "Мировая классика",
     "image": {
-      "srcset": "./images/card-9-desktop 1x, ./images/card-9-desktop@2x.jpg 2x",
+      "srcset": "./images/card-9-desktop.jpg 1x, ./images/card-9-desktop@2x.jpg 2x",
       "src": "./images/card-9-desktop",
       "alt": "Белый смокинг и брюки с лампасами"
     },
-    "price": "41 100",
+    "price": 41100,
     "category": ["Смокинги"],
     "collection": ["Осень-зима 20-21"],
     "size": [42, 46, "S", "L"]
@@ -1014,11 +1014,11 @@
     "icon": "./images/catalog.svg#icon-gallery-card-heart",
     "description": "Подчеркнет линию талии",
     "image": {
-      "srcset": "./images/card-10-desktop 1x, ./images/card-10-desktop@2x.jpg 2x",
+      "srcset": "./images/card-10-desktop.jpg 1x, ./images/card-10-desktop@2x.jpg 2x",
       "src": "./images/card-10-desktop",
       "alt": "Классический комплект с бабочкой"
     },
-    "price": "51 800",
+    "price": 51800,
     "category": ["Смокинги", "Новинки", "Осень-зима 20-21"],
     "collection": ["Осень-зима 20-21"],
     "size": [48, "XL"]
@@ -1029,11 +1029,11 @@
     "icon": "./images/catalog.svg#icon-gallery-card-heart",
     "description": "Подчеркнет линию талии",
     "image": {
-      "srcset": "./images/card-11-desktop 1x, ./images/card-11-desktop@2x.jpg 2x",
+      "srcset": "./images/card-11-desktop.jpg 1x, ./images/card-11-desktop@2x.jpg 2x",
       "src": "./images/card-11-desktop",
       "alt": " Жакет-смокинг"
     },
-    "price": "23 900",
+    "price": 23900,
     "category": ["Смокинги"],
     "collection": ["Осень-зима 20-21"],
     "size": [42, 46, "S", "L"]
@@ -1044,11 +1044,11 @@
     "icon": "./images/catalog.svg#icon-gallery-card-heart",
     "description": "Мировая классика",
     "image": {
-      "srcset": "./images/card-12-desktop 1x, ./images/card-12-desktop@2x.jpg 2x",
+      "srcset": "./images/card-12-desktop.jpg 1x, ./images/card-12-desktop@2x.jpg 2x",
       "src": "./images/card-12-desktop",
       "alt": "Платье-смокинг молочное"
     },
-    "price": "65 300",
+    "price": 65300,
     "category": ["Смокинги", "Новинки", "Платья"],
     "collection": ["Свадьба и выпускной", "Вечерние комплекты"],
     "size": [48, "XL"]
@@ -1059,11 +1059,11 @@
     "icon": "./images/catalog.svg#icon-gallery-card-heart",
     "description": "Подчеркнет линию талии",
     "image": {
-      "srcset": "./images/card-13-desktop 1x, ./images/card-13-desktop@2x.jpg 2x",
+      "srcset": "./images/card-13-desktop.jpg 1x, ./images/card-13-desktop@2x.jpg 2x",
       "src": "./images/card-13-desktop",
       "alt": "Топ с кружевом черный"
     },
-    "price": "23 900",
+    "price": 23900,
     "category": ["Новинки", "Топы и жилеты"],
     "collection": ["Осень-зима 20-21"],
     "size": [48, "XL"]
@@ -1074,11 +1074,11 @@
     "icon": "./images/catalog.svg#icon-gallery-card-heart",
     "description": "Мировая классика",
     "image": {
-      "srcset": "./images/card-14-desktop 1x, ./images/card-14-desktop@2x.jpg 2x",
+      "srcset": "./images/card-14-desktop.jpg 1x, ./images/card-14-desktop@2x.jpg 2x",
       "src": "./images/card-14-desktop",
       "alt": "Юбка - карандаш"
     },
-    "price": "65 300",
+    "price": 65300,
     "category": ["Новинки", "Юбки"],
     "collection": ["Вечерние комплекты"],
     "size": [42, 46, "S", "L"]
@@ -1089,11 +1089,11 @@
     "icon": "./images/catalog.svg#icon-gallery-card-heart",
     "description": "Подчеркнет линию талии",
     "image": {
-      "srcset": "./images/card-15-desktop 1x, ./images/card-15-desktop@2x.jpg 2x",
+      "srcset": "./images/card-15-desktop.jpg 1x, ./images/card-15-desktop@2x.jpg 2x",
       "src": "./images/card-15-desktop",
       "alt": "Блуза с баской"
     },
-    "price": "23 900",
+    "price": 23900,
     "category": ["Блузы", "Свадьба и выпускной"],
     "collection": ["Свадьба и выпускной"],
     "size": [48, "XL"]
@@ -1103,11 +1103,11 @@
     "icon": "./images/catalog.svg#icon-gallery-card-heart",
     "description": "Подчеркнет линию талии",
     "image": {
-      "srcset": "./images/card-16-desktop 1x, ./images/card-16-desktop@2x.jpg 2x",
+      "srcset": "./images/card-16-desktop.jpg 1x, ./images/card-16-desktop@2x.jpg 2x",
       "src": "./images/card-16",
       "alt": "Брюки клёш"
     },
-    "price": "23 900",
+    "price": 23900,
     "category": ["Брюки"],
     "collection": ["Осень-зима 20-21"],
     "size": [48, "XL"]
@@ -1118,11 +1118,11 @@
     "description": "Мировая классика",
     "icon": "./images/catalog.svg#icon-gallery-card-heart",
     "image": {
-      "srcset": "./images/card-17 1x, ./images/card-17-desktop@2x.jpg 2x",
+      "srcset": "./images/card-17.jpg 1x, ./images/card-17-desktop@2x.jpg 2x",
       "src": "./images/card-17",
       "alt": "Брюки зауженные"
     },
-    "price": "65 300",
+    "price": 65300,
     "category": ["Брюки", "Новинки"],
     "collection": ["Осень-зима 20-21"],
     "size": [42, 46, "S", "L"]
@@ -1133,11 +1133,11 @@
     "icon": "./images/catalog.svg#icon-gallery-card-heart",
     "description": "Подчеркнет линию талии",
     "image": {
-      "srcset": "./images/card-18-desktop 1x, ./images/card-18-desktop@2x.jpg 2x",
+      "srcset": "./images/card-18-desktop.jpg 1x, ./images/card-18-desktop@2x.jpg 2x",
       "src": "./images/card-18-desktop",
       "alt": "Красный приталенный смокинг"
     },
-    "price": "23 900",
+    "price": 23900,
     "category": ["Смокинг", "Новинки"],
     "collection": ["Осень-зима 20-21"],
     "size": [40, 44, "XS", "M"]
@@ -1148,11 +1148,11 @@
     "icon": "./images/catalog.svg#icon-gallery-card-heart",
     "description": "Мировая классика",
     "image": {
-      "srcset": "./images/card-19-desktop 1x, ./images/card-19-desktop@2x.jpg 2x",
+      "srcset": "./images/card-19-desktop.jpg 1x, ./images/card-19-desktop@2x.jpg 2x",
       "src": "./images/card-19",
       "alt": "Костюм бархатный"
     },
-    "price": "65 300",
+    "price": 65300,
     "category": ["Костюмы"],
     "collection": ["Осень-зима 20-21"],
     "size": [42, 46, "S", "L"]
@@ -1164,11 +1164,11 @@
     "icon": "./images/catalog.svg#icon-gallery-card-heart",
     "description": "Мировая классика",
     "image": {
-      "srcset": "./images/card-20-desktop 1x, ./images/card-20-desktop@2x.jpg 2x",
+      "srcset": "./images/card-20-desktop.jpg 1x, ./images/card-20-desktop@2x.jpg 2x",
       "src": "./images/card-20-desktop",
       "alt": "Костюм бархатный"
     },
-    "price": "65 300 ",
+    "price": 65300,
     "category": ["Костюмы"],
     "collection": ["Предзаказ"],
     "size": [48, "XL"]
