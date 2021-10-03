@@ -1,0 +1,92 @@
+[
+  {
+    "id": "1",
+    "name": "Белый смокинг и брюки с лампасами",
+    "price": "41400",
+    "size": "46",
+    "count": "1",
+    "img": "./images/product1.jpg",
+    "img2": "./images/product1@2x.jpg"
+  },
+  {
+    "id": "2",
+    "name": "Красный приталенный смокинг",
+    "price": "26900",
+    "size": "50",
+    "count": "2",
+    "img": "./images/product2.jpg",
+    "img2": "./images/product2@2x.jpg"
+  },
+  {
+    "id": "3",
+    "name": "Белый смокинг и брюки с лампасами",
+    "price": "41400",
+    "size": "46",
+    "count": "1",
+    "img": "./images/product1.jpg",
+    "img2": "./images/product1@2x.jpg"
+  },
+  {
+    "id": "4",
+    "name": "Красный приталенный смокинг",
+    "price": "26900",
+    "size": "50",
+    "count": "2",
+    "img": "./images/product2.jpg",
+    "img2": "./images/product2@2x.jpg"
+  },
+  {
+    "id": "5",
+    "name": "Белый смокинг и брюки с лампасами",
+    "price": "41400",
+    "size": "46",
+    "count": "1",
+    "img": "./images/product1.jpg",
+    "img2": "./images/product1@2x.jpg"
+  },
+  {
+    "id": "6",
+    "name": "Красный приталенный смокинг",
+    "price": "26900",
+    "size": "50",
+    "count": "2",
+    "img": "./images/product2.jpg",
+    "img2": "./images/product2@2x.jpg"
+  },
+  {
+    "id": "7",
+    "name": "Белый смокинг и брюки с лампасами",
+    "price": "41400",
+    "size": "46",
+    "count": "1",
+    "img": "./images/product1.jpg",
+    "img2": "./images/product1@2x.jpg"
+  },
+  {
+    "id": "8",
+    "name": "Красный приталенный смокинг",
+    "price": "26900",
+    "size": "50",
+    "count": "2",
+    "img": "./images/product2.jpg",
+    "img2": "./images/product2@2x.jpg"
+  },
+  {
+    "id": "9",
+    "name": "Белый смокинг и брюки с лампасами",
+    "price": "41400",
+    "size": "46",
+    "count": "1",
+    "img": "./images/product1.jpg",
+    "img2": "./images/product1@2x.jpg"
+  },
+  {
+    "id": "10",
+    "name": "Красный приталенный смокинг",
+    "price": "26900",
+    "size": "50",
+    "count": "2",
+    "img": "./images/product2.jpg",
+    "img2": "./images/product2@2x.jpg"
+  }
+]
