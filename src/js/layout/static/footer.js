@@ -23,29 +23,37 @@ desktopSubmitBtn.addEventListener('submit', onSubmitBtnDesktop)
 closeOpenPlus.forEach((evt) => {
     evt.addEventListener('click', (el) => {
         el.preventDefault()
+        const test = document.querySelector('.dropdown-content')
+        console.log(test)
         const dropDown = document.querySelector('.open-menu');
         if (el.target.nextElementSibling) {
+
             if (dropDown) {
                 dropDown.classList.toggle('open-menu')
                 dropDown.nextElementSibling.classList.toggle('js-dropdown-none');
                 if (el.target === dropDown) {
                     return;
+                } else if (el.target === test) {
+                    dropDown.classList.remove('open-menu')
                 }
+                // if (el.target === test) {
+                //     dropDown.classList.remove('open-menu')
+                // }
             }
+
             el.target.classList.toggle('open-menu');
             console.log(el.target)
             console.log(el.target.nextElementSibling)
             el.target.nextElementSibling.classList.toggle('js-dropdown-none');
+
         }
+
         else if (!el.target.nextElementSibling) {
             window.location.href = el.target
         }
     });
 
 });
-
-const test2 = new IntersectionObserver(test)
-test2.observe(elem)
 
 // Активация деактивация чекбокса
 function onAgreeCheckBox(evt) {
