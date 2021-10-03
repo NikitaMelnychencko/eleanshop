@@ -1,4 +1,3 @@
-
 <h2 class='ordering__title'>Оформление заказа</h2>
 <div class='ordering__cards'>
     <!--the card with the chosen item-->
@@ -72,21 +71,66 @@
                 </svg>
             </button>
 
+      <img class='ordering__image' src='{{label.img}}' alt='article' />
+      <div class='ordering__box'>
+
+        <p class='ordering__label'>{{label.name}}</p>
+
+        <div class='ordering__selects'>
+          <select class='ordering__select ordering__select--color' name='color' id='color'>
+            {{#each color}}
+              <option value='{{value}}'>{{text}}</option>
+            {{/each}}
+
+          </select>
+
+          <select class='ordering__select' name='size' id='color'>
+            {{#each size}}
+              <option value='{{value}}'>{{text}}</option>
+            {{/each}}
+
+          </select>
+
+          <button class='ordering__btn--minus ordering__btn' type='button'>-</button>
+          <span class='ordering__btn ordering__value'>1</span>
+          <button class='ordering__btn--plus ordering__btn' type='button'>+</button>
+
+          <span class='ordering__price'>10000</span>
         </div>
-        
+        <button class='ordering__button--close ordering__close' type='button'>
+          <svg
+            class='ordering__icon--close ordering__close'
+            aria-label='close'
+            width='16'
+            height='16'
+          >
+            <use
+              class='ordering__icon-cross ordering__close'
+              href='./images/exampl.svg#icon-menu_burger_close'
+            >
+            </use>
+          </svg>
+        </button>
+
+      </div>
+
     </div>
-    {{/each}}
-    <!---->
+  {{/each}}
+  <!---->
 
 </div>
 <div class='ordering__promocodebox'>
-    <div class='ordering__promocodethumb'>
-        <input class='ordering__input--promocode' type='text' placeholder='введите промо код (если имеется)' />
-        <button class='ordering__btn--promocode' type='submit'>Применить</button>
-    </div>
-    <span class='ordering__discount'>Скидка <span class='ordering__discount--value'>0</span>%</span>
-    <div class='ordering__totalbox'>
-        <p class='ordering__totalprice'>Итоговая стоимость:</p>
-        <span class='ordering__total'>0</span>
-    </div>
+  <div class='ordering__promocodethumb'>
+    <input
+      class='ordering__input--promocode'
+      type='text'
+      placeholder='введите промо код (если имеется)'
+    />
+    <button class='ordering__btn--promocode' type='submit'>Применить</button>
+  </div>
+  <span class='ordering__discount'>Скидка <span class='ordering__discount--value'>0</span>%</span>
+  <div class='ordering__totalbox'>
+    <p class='ordering__totalprice'>Итоговая стоимость:</p>
+    <span class='ordering__total'>0</span>
+  </div>
 </div>
