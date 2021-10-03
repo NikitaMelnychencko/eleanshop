@@ -14,7 +14,7 @@
             <div class='ordering__selects'>
 
                 <div class="ordering__item ordering__select--color">
-                    <div class='ordering__select ordering__select--color ordering-input-js' id="js-day" name="day">
+                    <div class='ordering__select ordering__select--color ordering-input-js'>
                         <div class="ordering__colorname">{{label.сolorSelected}}   
                         <svg class='ordering__circle' aria-label='circle' width='20' height='20'>
                             <use class='ordering__circle--color' href='./images/exampl.svg#{{label.circleSelected}}'>
@@ -26,7 +26,7 @@
                         </use>
                     </svg></div>
                 
-                    <ul class="ordering-list ordering-list--hide ordering-list-js " id='day-list'>
+                    <ul class="ordering-list ordering-list--hide ordering-list-js ">
                         {{#each color}}
                         <li class="ordering-list__item ordering-item-js">{{text}}
                             <svg class='ordering__circle' aria-label='circle' width='20' height='20'>
