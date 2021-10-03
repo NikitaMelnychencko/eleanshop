@@ -21,7 +21,8 @@
 <symbol id="icon-hero-arrow-right" viewBox="0 0 81 32">
 <path fill="none" stroke="#fff" style="stroke: var(--color2, #fff)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2.9091" d="M59.27 4.593l18.852 10.884-18.852 10.884v-21.769z"></path>
 <path fill="none" stroke="#fff" style="stroke: var(--color2, #fff)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2.9091" d="M60.669 16.165h-60.243"></path>
-
 </symbol>
+
+
 </defs>
 </svg>

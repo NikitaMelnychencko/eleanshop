@@ -12,17 +12,15 @@ const savedData = localStorage.getItem('orderingData')
 const parsedData = JSON.parse(savedData)
 // console.log(parsedData)
 
-const ordering = ordering_ordering({parsedData, orderingInsertion});
+const ordering = ordering_ordering({ parsedData, orderingInsertion });
 
-const createCheckout = payment_checkout({ ordering })
+const createCheckout = payment_checkout({ ordering });
 refs.mainEL.insertAdjacentHTML('beforeend', createCheckout);
-
-
 
 const orderingApplyBtn = document.querySelector('.ordering__btn--promocode');
 const orderingPromocodeInput = document.querySelector('.ordering__input--promocode');
 const orderingDiscount = document.querySelector('.ordering__discount--value');
-const orderingTotal = document.querySelector('.ordering__total')
+const orderingTotal = document.querySelector('.ordering__total');
 const cards = document.querySelector('.ordering__cards');
 
 window.onload = renewTotalPriceWithDiscount()
@@ -77,23 +75,23 @@ function setQuantityOrRemove(e) {
 }
 
 function orderingIncrement(e) {
-    let value = e.target.previousElementSibling.textContent;
-    e.target.previousElementSibling.textContent = Number(value) + 1;
+  let value = e.target.previousElementSibling.textContent;
+  e.target.previousElementSibling.textContent = Number(value) + 1;
 }
 
 function orderingDecrement(e) {
-         let value = e.target.nextElementSibling.textContent;
-        if(Number(value) > 1){
-            e.target.nextElementSibling.textContent = Number(value) - 1;
-            return true;
-        } else {
-            return false;
-        }
+  let value = e.target.nextElementSibling.textContent;
+  if (Number(value) > 1) {
+    e.target.nextElementSibling.textContent = Number(value) - 1;
+    return true;
+  } else {
+    return false;
+  }
 }
 
 function removeOrderingCard(e) {
-    const arr = e.currentTarget.children;
-for (let i = 0; i <= arr.length; i += 1){
+  const arr = e.currentTarget.children;
+  for (let i = 0; i <= arr.length; i += 1) {
     if (arr[i].contains(e.target)) {
         e.currentTarget.removeChild(arr[i]);
         renewTotalPriceWithDiscount();
@@ -102,12 +100,15 @@ for (let i = 0; i <= arr.length; i += 1){
 }
 
 function countTotalPrice(e) {
-    let orderingPricesArray = document.querySelectorAll('.ordering__price');
-    
-    let orderingTotalPrice = [...orderingPricesArray].reduce((totalPrices, orderingPricesArray) => totalPrices + Number(orderingPricesArray.innerHTML), 0);
+  let orderingPricesArray = document.querySelectorAll('.ordering__price');
 
-    orderingTotal.textContent = orderingTotalPrice;
-    return orderingTotalPrice
+  let orderingTotalPrice = [...orderingPricesArray].reduce(
+    (totalPrices, orderingPricesArray) => totalPrices + Number(orderingPricesArray.innerHTML),
+    0,
+  );
+
+  orderingTotal.textContent = orderingTotalPrice;
+  return orderingTotalPrice;
 }
 
 function countTotalPriceWithDiscount(e) {
@@ -134,10 +135,10 @@ function renewTotalPriceWithDiscount() {
 }
 
 function getDiscount() {
-    let promocodeValue = orderingPromocodeInput.value;
-    const gettingPromocodeObject = promocodes.find(promocode => promocode.value == promocodeValue);
-     
-    return gettingPromocodeObject.discount
+  let promocodeValue = orderingPromocodeInput.value;
+  const gettingPromocodeObject = promocodes.find(promocode => promocode.value == promocodeValue);
+
+  return gettingPromocodeObject.discount;
 }
 
 // в totalPrice лежит функция, которая возвращает итоговую стоимость, но нужно проверять, сработает ли правильно
