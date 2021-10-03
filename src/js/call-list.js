@@ -3,11 +3,15 @@ import updateBin from './updateBin.js';
 updateBin();
 //======home======//
 import home from '../views/layouts/home.hbs';
-import {pageHeroSliderMarkup,hero} from './layout/home/hero.js'
+import { pageHeroSliderMarkup, heroSlider } from './layout/home/hero.js'
+
 function homeRender() {
-  const homeMarkup = home()
-  mainEL.insertAdjacentHTML('beforeend', pageHeroSliderMarkup);
+  const homeMarkup = home({ pageHeroSliderMarkup })
+  console.log(homeMarkup);
+  refs.mainEL.insertAdjacentHTML('beforeend', homeMarkup);
+  heroSlider()
 }
+homeRender();
 //=====brand========//
 function brandRender() {}
 //=====checkout========//

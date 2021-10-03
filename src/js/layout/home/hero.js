@@ -3,13 +3,12 @@ import pageHeroMarkupTemplate from '../../../views/partials/home/hero.hbs';
 import refs from '../../refs/refs.js';
 const { mainEL } = refs;
 
-window.jQuery = window.$ = require('jquery');
-require('../../slider/slick.min.js');
-
 // Create Markup
 export const pageHeroSliderMarkup = pageHeroMarkupTemplate(pageHeroSliderData);
 
-export function hero() {
+export function heroSlider() {
+window.jQuery = window.$ = require('jquery');
+require('../../slider/slick.min.js');  
   // Slider options
   $(document).ready(function () {
     $('.hero__slider').slick({
