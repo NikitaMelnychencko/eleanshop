@@ -28,56 +28,40 @@ cards.addEventListener('click', setQuantityOrRemove);
 orderingApplyBtn.addEventListener('click', countTotalPriceWithDiscount);
 
 function setQuantityOrRemove(e) {
-//      if(e.target === undefined){
-// return
-// }
     if (e.target.classList.contains('ordering__btn--plus')) {
         orderingIncrement(e);
 
-        const cardsArray = e.currentTarget.children;
-        for (let i = 0; i <= cardsArray.length; i += 1){
-            if (cardsArray[i].contains(e.target)) {
-                let priceSpan = cardsArray[i].querySelector('.ordering__price');
-                let pricePerItem = priceSpan.innerHTML;
-                let newValue = Number(e.target.previousElementSibling.textContent)
-                let totalPricePerItem = Number(pricePerItem) / (newValue-1) + Number(pricePerItem);
+        let priceSpan = e.target.parentElement.lastElementChild
+        let pricePerItem = priceSpan.innerText;
+        let newValue = Number(e.target.previousElementSibling.textContent)
+        let totalPricePerItem = Number(pricePerItem) / (newValue - 1) + Number(pricePerItem);
 
-                priceSpan.textContent = totalPricePerItem
-                renewTotalPriceWithDiscount()
-            }
-        }   
-    }    
+        priceSpan.textContent = totalPricePerItem
+        renewTotalPriceWithDiscount() 
+    }
     else if (e.target.classList.contains('ordering__btn--minus')) {
         let checker = orderingDecrement(e);
-        const cardsArrayDecr = e.currentTarget.children;
-        
-        for (let i = 0; i <= cardsArrayDecr.length; i += 1){
-            if (cardsArrayDecr[i].contains(e.target)) {
-                let priceSpan = cardsArrayDecr[i].querySelector('.ordering__price');
-                
-                let pricePerItem = priceSpan.innerHTML;
-
-                let newValue = Number(e.target.nextElementSibling.textContent);
+        let priceSpan = e.target.parentElement.lastElementChild
+        let pricePerItem = priceSpan.innerText;
+        let newValue = Number(e.target.nextElementSibling.textContent);
                   
-                let totalPricePerItem = Number(pricePerItem) - Math.round(Number(pricePerItem) / (newValue+1));
-                if (checker) {
-                    priceSpan.textContent = totalPricePerItem;
-                    renewTotalPriceWithDiscount()
-
-                }
-            }
-        }         
-    } 
+        let totalPricePerItem = Number(pricePerItem) - Math.round(Number(pricePerItem) / (newValue + 1));
+        if (checker) {
+            priceSpan.textContent = totalPricePerItem;
+            renewTotalPriceWithDiscount()
+        }
+    }
     else if (e.target.classList.contains('ordering__close')) {
         removeOrderingCard(e);
-    
-    }  
+    } 
 }
+
 
 function orderingIncrement(e) {
   let value = e.target.previousElementSibling.textContent;
   e.target.previousElementSibling.textContent = Number(value) + 1;
 }
+
 
 function orderingDecrement(e) {
   let value = e.target.nextElementSibling.textContent;
@@ -90,13 +74,8 @@ function orderingDecrement(e) {
 }
 
 function removeOrderingCard(e) {
-  const arr = e.currentTarget.children;
-  for (let i = 0; i <= arr.length; i += 1) {
-    if (arr[i].contains(e.target)) {
-        e.currentTarget.removeChild(arr[i]);
-        renewTotalPriceWithDiscount();
-    }
-    }    
+    e.target.closest('.ordering__card').remove()
+        renewTotalPriceWithDiscount();  
 }
 
 function countTotalPrice(e) {
@@ -141,10 +120,6 @@ function getDiscount() {
   return gettingPromocodeObject.discount;
 }
 
-// в totalPrice лежит функция, которая возвращает итоговую стоимость, но нужно проверять, сработает ли правильно
-export const totalPrice =  renewTotalPriceWithDiscount.bind();
-// console.log(totalPrice())
-
 
 const inputs = document.querySelectorAll('.ordering-input-js');
 const lists = document.querySelectorAll('.ordering-list-js');
@@ -152,11 +127,12 @@ inputs.forEach(input => input.addEventListener('click', onOrderingColorInputClic
 
 function onOrderingColorInputClick(e) {
     const selectedInput = this
-    const list = this.parentElement.lastElementChild
-    list.classList.toggle("ordering-list--hide")
-    // document.body.classList.toggle("extra")
-    const items = list.querySelectorAll('.ordering-item-js')
-    items.forEach(item => item.addEventListener('click',onColorClick)) 
+    const list = this.parentElement.lastElementChild;
+    list.classList.toggle("ordering-list--hide");
+    this.lastElementChild.classList.toggle("ordering__arrow--rotate");
+    const items = list.querySelectorAll('.ordering-item-js');
+    items.forEach(item => item.addEventListener('click', onColorClick));
+        
 }
 
 function onColorClick() {

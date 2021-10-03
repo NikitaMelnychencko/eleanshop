@@ -138,7 +138,7 @@
   border-top: none;
   top: 40px;
   left: 0;
-  max-height: 150px;
+  max-height: 115px;
   overflow-y: auto;
 
   box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.15);
@@ -155,6 +155,10 @@
 }
 .ordering-list--hide {
   display: none;
+}
+
+.ordering__arrow--rotate {
+  transform: rotate(180deg);
 }
 
 .ordering-list__item {
@@ -300,15 +304,23 @@
 }
 
 .ordering__input--promocode {
-  padding: 13px;
   height: 50px;
   border: 1px dotted $secondary-border-color;
-  @media screen and (min-width: $mobile-first) {
+  @media screen and (min-width: $mobile-first) and (max-width: $mobile-only) {
+    padding: 13px 5px 13px 5px;
+    flex-grow: 1;
+    max-width: 264px;
+    border-right: none;
+  }
+
+  @media screen and (min-width: $tablet-general) and (max-width: $tablet-only) {
+    padding: 13px 10px 13px 10px;
     width: 264px;
     border-right: none;
   }
 
   @media screen and (min-width: $desktop-up) {
+    padding: 13px;
     margin-right: 14px;
     width: 389px;
     border: 1px dotted $secondary-border-color;
@@ -324,7 +336,6 @@
 }
 
 .ordering__btn--promocode {
-  padding: 13px 29px;
   height: 50px;
   border: none;
 
@@ -333,6 +344,13 @@
   font-size: 17px;
   line-height: 1.35;
   color: $btn-text-color;
+  @media screen and (min-width: $mobile-first) and (max-width: $mobile-only) {
+    padding: 13px;
+  }
+
+  @media screen and (min-width: $tablet-general) {
+    padding: 13px 29px;
+  }
 
   @media screen and (min-width: $desktop-up) {
     border-radius: 3px;
@@ -384,6 +402,12 @@
   }
 }
 
-.ordering .ordering__promocodethumb {
-  display: inline-flex;
+.ordering__promocodethumb {
+  @media screen and (min-width: $mobile-first) and (max-width: $tablet-only) {
+    display: flex;
+  }
+
+  @media screen and (min-width: $desktop-up) {
+    display: inline-flex;
+  }
 }

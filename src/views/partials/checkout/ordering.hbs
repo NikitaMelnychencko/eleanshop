@@ -42,21 +42,19 @@
                     <div class='ordering__select ordering__select--size ordering-input-js'>
                         <div class="ordering__colorname">размер {{label.sizeSelected}}
                         </div>
-                        <svg class='ordering__arrow' aria-label='close' width='10' height='10'>
-                            <use class='close' href='./images/exampl.svg#icon-ordering-arrow'>
+                        <svg class='ordering__arrow' aria-label='arrow' width='10' height='10'>
+                            <use class='arrow' href='./images/exampl.svg#icon-ordering-arrow'>
                             </use>
                         </svg>
                     </div>
 
-                    <ul class="ordering-list showroom-list--hide ordering-list-js ">
+                    <ul class="ordering-list ordering-list--hide ordering-list-js ">
                         {{#each size}}
                         <li class="ordering-list__item ordering-item-js">{{text}}
-
                         </li>
                         {{/each}}
                     </ul>
                 </div>
-
 
                 <button class='ordering__btn--minus ordering__btn' type='button'>-</button>
                 <span class='ordering__btn ordering__value'>1</span>
