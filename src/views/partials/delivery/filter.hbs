@@ -1,6 +1,7 @@
 <h2 class='typeofdelivery'>
   ВИДЫ ДОСТАВКИ
 </h2>
+{{#each this}}
 <li class='description-title'>
   <p class='description-main'>
     {{desctiption}}
@@ -33,9 +34,5 @@
   <p class='description-main'>
     {{desctiptiondic}}
   </p>
-  </div>
-   <svg class='time__icon' width='40px' height='40px' role='img' aria-label='Иконка солнца'>
-      <use href="./images/exampl.svg#icon-compass"></use>
-    </svg> 
 </li>
-
+{{/each}}

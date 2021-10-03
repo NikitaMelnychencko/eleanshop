@@ -1,0 +1,27 @@
+[
+  {
+    "id-title-image" : "showroom-slider-image-01",
+    "image-mobile-1x" : "./images/showroom-mobile-01.jpg",
+    "image-mobile-2x": "./images/showroom-mobile-01@2x.jpg",
+    "image-desktop-1x" : "./images/showroom-desktop-01.jpg",
+    "image-desktop-2x": "./images/showroom-desktop-01@2x.jpg",
+    "name-title" : "Our showroom"
+  },
+    {
+    "id-title-image" : "showroom-slider-image-02",
+    "image-mobile-1x" : "./images/showroom-mobile-02.jpg",
+    "image-mobile-2x": "./images/showroom-mobile-02@2x.jpg",
+    "image-desktop-1x" : "./images/showroom-desktop-02.jpg",
+    "image-desktop-2x": "./images/showroom-desktop-02@2x.jpg",
+    "name-title" : "Our showroom"
+  },
+    {
+    "id-title-image" : "showroom-slider-image-03",
+    "image-mobile-1x" : "./images/showroom-mobile-03.jpg",
+    "image-mobile-2x": "./images/showroom-mobile-03@2x.jpg",
+    "image-desktop-1x" : "./images/showroom-desktop-03.jpg",
+    "image-desktop-2x": "./images/showroom-desktop-03@2x.jpg",
+    "name-title" : "Our showroom"
+  }
+]
+

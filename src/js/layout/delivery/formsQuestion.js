@@ -8,7 +8,7 @@ const { questanswer: myAnswer } = myRefs;
 
 const QuestionMarkUp = createFotoDelivery(questionJson);
 
-myAnswer.insertAdjacentHTML('beforeend', QuestionMarkUp);
+// myAnswer.insertAdjacentHTML('beforeend', QuestionMarkUp);
 
 function createFotoDelivery(menu) {
   return menu.map(questionForm).join('');

@@ -1,16 +1,18 @@
-<li class='qusetion-title'>
-  <a class='question-block'>
-    <h2 class='question-head'>
-      {{question}}
-    </h2>
-    <svg class='question__icon' width='27px' height='27px' role='img' aria-label='Иконка солнца'>
-      <use href='./images/exampl.svg#icon-compass'></use>
-    </svg>
-  </a>
-  <p class='answers-body'>
-    {{answers}}
-    <p class='answers-foot'>
-      {{answersmin}}
+{{#each this}}
+  <li class='qusetion-title'>
+    <a class='question-block'>
+      <h2 class='question-head'>
+        {{question}}
+      </h2>
+      <svg class='question__icon' width='28px' height='28px' role='img' aria-label='Иконка солнца'>
+        <use href=''></use>
+      </svg>
+    </a>
+    <p class='answers-body'>
+      {{answers}}
+      <p class='answers-foot'>
+        {{answersmin}}
+      </p>
     </p>
-  </p>
-</li>
+  </li>
+{{/each}}

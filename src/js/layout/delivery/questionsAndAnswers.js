@@ -4,9 +4,9 @@ import myRefs from '../../refs/refs';
 
 const STORAGE_KEY = 'question-message';
 
-myRefs.form.addEventListener('submit', onFormSubmit);
-myRefs.textarea.addEventListener('input', throttle(onTextareIput), 100);
-myRefs.inputname.addEventListener('input', throttle(onTextareIput));
+// myRefs.form.addEventListener('submit', onFormSubmit);
+// myRefs.textarea.addEventListener('input', throttle(onTextareIput), 100);
+// myRefs.inputname.addEventListener('input', throttle(onTextareIput));
 populateMessag();
 function onFormSubmit(event) {
   event.preventDefault();
@@ -20,8 +20,8 @@ function onTextareIput(event) {
 }
 
 function populateMessag() {
-  const saveMessage = localStorage.getItem(STORAGE_KEY);
-  if (!saveMessage) {
-    myRefs.textarea.value = saveMessage;
-  }
+  //   const saveMessage = localStorage.getItem(STORAGE_KEY);
+  //   if (!saveMessage) {
+  //     myRefs.textarea.value = saveMessage;
+  //   }
 }

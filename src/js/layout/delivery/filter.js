@@ -7,7 +7,7 @@ import deliveryfilter from '../../../views/partials/delivery/filter.hbs';
 const { descriptiontitle: myDesc } = myRefs;
 const filterMarkUp = createFilterDelivery(deliveryfiljson);
 
-myDesc.insertAdjacentHTML('beforeend', filterMarkUp);
+// myDesc.insertAdjacentHTML('beforeend', filterMarkUp);
 
 function createFilterDelivery(menu) {
   return menu.map(deliveryfilter).join('');

@@ -57,7 +57,7 @@
     left: 2px;
     height: 12px;
     width: 12px;
-    background-color: black;
+    background-color: $secondary-accent-btn-color;
     border-radius: 100%;
   }
   &::before {
@@ -66,7 +66,7 @@
     height: 28px;
     width: 28px;
     margin-right: 10px;
-    border: 1px solid #d0d0d0;
+    border: 1px solid $third-border-color;
     border-radius: 100%;
   }
 }
@@ -84,7 +84,7 @@
     left: 13px;
     height: 10px;
     width: 10px;
-    background-color: black;
+    background-color: $secondary-accent-btn-color;
   }
 
   &::before {
@@ -93,7 +93,7 @@
     height: 26px;
     width: 26px;
     margin-right: 10px;
-    border: 1px solid #d0d0d0;
+    border: 1px solid $third-border-color;
   }
   .basic-information__checkbox:checked + &::after {
     display: block;
@@ -186,10 +186,10 @@
   font-size: 12px;
   line-height: 3.33;
   letter-spacing: 0.06em;
-  color: #a6a6a9;
+  color: $form-text-color;
 
   &:hover {
-    background-color: #f8efe7;
+    background-color: $accent-background-selector-color;
   }
   & span {
     padding-right: 8px;
@@ -199,7 +199,7 @@
   display: none;
   width: 8px;
   height: 6px;
-  fill: #000000;
+  fill: $primary-svg-color;
   .showroom-list__item:hover & {
     position: absolute;
     height: 21px;
@@ -235,13 +235,13 @@
   font-weight: 500;
   font-size: 13px;
   line-height: 1.38;
-  color: #b3b3b3;
+  color: $secondary-form-text-color;
 }
 
 //payment-method
 .payment {
   padding-bottom: 31px;
-  border-bottom: 1px solid #e3e4e4;
+  border-bottom: 1px solid $border-color;
   margin-bottom: 24px;
 }
 
@@ -263,7 +263,7 @@
   height: 28px;
   width: 28px;
   margin-right: 10px;
-  border: 1px solid #d0d0d0;
+  border: 1px solid $third-border-color;
   border-radius: 50%;
 }
 
@@ -302,4 +302,23 @@
   .description__text + .description__text {
     margin-top: 30px;
   }
+}
+.description-images {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 37px;
+}
+.description__text {
+  display: block;
+  padding-right: 36px;
+  line-height: 1.53;
+}
+.description__text + .description__text {
+  margin-top: 30px;
+}
+.total--flex {
+  display: flex;
+}
+.card-image--no-gap {
+  background-color: $menu-background-color;
 }
