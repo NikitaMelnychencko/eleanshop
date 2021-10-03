@@ -178,9 +178,10 @@
   --animate-repeat: 0;
 
   @media screen and (min-width: $desktop-up) {
-    width: 426px;
-    height: 502px;
+    min-width: 426px;
+    min-height: 502px;
 
     --animate-repeat: infinite;
+    --animate-duration: 2s;
   }
 }

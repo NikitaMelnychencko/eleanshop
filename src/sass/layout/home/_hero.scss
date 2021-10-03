@@ -112,16 +112,19 @@
 
 .hero__slider .slider__item {
   position: relative;
-  padding: 0px 15px;
-
-  @media screen and (max-width: $tablet-only) {
-    padding: 0px;
-  }
 }
 .hero__slider .slider__item img {
   max-width: 100%;
+  min-width: 320px;
+  min-height: 590px;
+
   margin-left: auto;
   margin-right: auto;
+
+  @media screen and (min-width: $desktop-up) {
+    min-width: 1378px;
+    min-height: 545px;
+  }
 }
 
 .hero__slider .slider__item h1 {

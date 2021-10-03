@@ -1,16 +1,18 @@
-import pageHeroSliderData from '../../json/hero.json';
-import pageHeroMarkupTemplate from '../../../views/partials/home/hero.hbs';
+import pageInInstagramSliderData from '../../json/inInstagram.json';
+import pageInInstagramMarkupTemplate from '../../../views/partials/home/inInstagram.hbs';
 
-// Create Markup
-export const pageHeroSliderMarkup = pageHeroMarkupTemplate(pageHeroSliderData);
+// Create markup and render in html
+export const pageInInstagramSliderMarkup = pageInInstagramMarkupTemplate({
+  pageInInstagramSliderData,
+});
 
-export function heroSlider() {
+export function instagramSlider() {
   window.jQuery = window.$ = require('jquery');
   require('../../slider/slick.min.js');
   // Slider options
   $(document).ready(function () {
-    $('.hero__slider').slick({
-      arrows: true,
+    $('.in-instagram__slider').slick({
+      arrows: false,
       dots: true,
       adaptiveHeight: true,
       slidesToShow: 1,
@@ -29,21 +31,8 @@ export function heroSlider() {
       touchThreshold: 4,
       touchMove: true,
       waitForAnimate: true,
-
-      responsive: [
-        {
-          breakpoint: 1377,
-          settings: {
-            arrows: false,
-          },
-        },
-        {
-          breakpoint: 1378,
-          settings: {
-            mobileFirst: true,
-          },
-        },
-      ],
+      mobileFirst: true,
+      variableWidth: true,
     });
   });
 }
