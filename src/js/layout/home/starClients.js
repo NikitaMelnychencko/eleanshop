@@ -4,8 +4,6 @@ import starClients_reviewsChat from '../../json/homeRewiesChat/homeReviewsChat.j
 import starClients_reviewsChatOthers from '../../json/homeRewiesChat/homeReviewsChatOthers.json';
 import pageStarClientsSliderData from '../../json/starClients.json';
 import pageStarClientsMarkupTemplate from '../../../views/partials/home/starClients.hbs';
-// import refs from '../../refs/refs.js';
-// const { mainEL } = refs;
 
 // Create markup and render in html
 const cardChatReviewsMarkup = starClients_cardChatReviewsTempl(starClients_reviewsChat);
