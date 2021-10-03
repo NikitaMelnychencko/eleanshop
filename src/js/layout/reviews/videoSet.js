@@ -1,8 +1,8 @@
-import refs from '../../refs/refs.js'
+import refs from '../../refs/refs.js';
 import set from '../../../../src/js/json/videoSet.json';
-import setHbs from "../../../../src/views/partials/reviews/videoSet.hbs";
- import client from "../../../../src/views/partials/home/starClients.hbs"
-import setReviews from "../../../../src/views/partials/reviews/pageReviews.hbs";
+import setHbs from '../../../../src/views/partials/reviews/videoSet.hbs';
+import client from '../../../../src/views/partials/home/starClients.hbs';
+import setReviews from '../../../../src/views/layouts/reviews.hbs';
 
 import starClients_starClientsTempl from '../../../views/partials/home/starClients.hbs';
 import starClients_cardChatReviewsTempl from '../../../views/components/cardChatReviews.hbs';
@@ -18,15 +18,13 @@ const clientStar = pageStarClientsMarkupTemplate({
   cardChatReviewsMarkup,
 });
 
-
-
-const { mainEL} = refs;
+const { mainEL } = refs;
 
 // 1. Содание разметки сета
-const setVideoHbs = setHbs(set)
+const setVideoHbs = setHbs(set);
 
 const pageReviews = setReviews({ clientStar, setVideoHbs });
-  
+
 mainEL.insertAdjacentHTML('beforeend', pageReviews);
 
 $('.videoset').slick({
@@ -44,7 +42,7 @@ $('.videoset').slick({
         centerPadding: '40px',
         infinite: false,
         dots: false,
-      }
-    }]
+      },
+    },
+  ],
 });
-
