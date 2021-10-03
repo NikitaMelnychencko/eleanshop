@@ -58,6 +58,10 @@ import './js/layout/favorites/sabmitEmail.js';
 // backfrop
 import './js/components/backdrop.js';
 
+// modals
+import './js/layout/product/preorderModal.js';
+import './js/layout/product/tryOnModelsModal.js';
+
 //test
 import './js/test/test_productHandSewn.js';
 import './js/test/backdropTest.js';

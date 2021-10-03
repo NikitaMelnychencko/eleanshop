@@ -1,0 +1,16 @@
+{{#each this}}
+  <li class="sizes__item ">
+    
+    <label class="size size--{{#unless is-available}}not-{{/unless}}available">
+      <input
+        class="size__checkbox visually-hidden"
+        type="checkbox"
+        name="size"
+        value="{{size}}"
+        {{#unless is-available}}disabled{{/unless}}
+      />
+      
+      <span class="size__number">{{size}}</span>
+    </label>
+  </li>
+{{/each}}

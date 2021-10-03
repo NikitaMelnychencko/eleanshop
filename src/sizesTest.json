@@ -1,0 +1,8 @@
+[
+  { "size": "40", "is-available": true },
+  { "size": "42", "is-available": true },
+  { "size": "44", "is-available": false },
+  { "size": "46", "is-available": true },
+  { "size": "48", "is-available": false },
+  { "size": "50", "is-available": true }
+]
