@@ -1,6 +1,6 @@
 .in-instagram {
   padding-top: 25px;
-  padding-bottom: 50px;
+  padding-bottom: 319px;
 }
 
 .in-instagram__container {
@@ -40,9 +40,7 @@
 .in-instagram .slick-list {
   overflow: hidden;
 
-  @media screen and (min-width: $mobile-first) and (max-width: $mobile-general) {
-    position: relative;
-  }
+  position: relative;
 }
 
 /* Slide Ribbon */
