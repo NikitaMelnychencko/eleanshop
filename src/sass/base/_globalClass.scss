@@ -4,17 +4,21 @@
 // HelveticaNeueCyr = Open Sans (400 )
 // Futura-Book,Futura Md BT = Jost (400)
 
-//$tablet-general for modal window implementation 
+//$tablet-general for modal window implementation
 body {
+  position: relative;
+
   margin: 0;
   background-color: $primary-background-color;
   color: $primary-text-color;
-  font-family: $primary-font-family, sans-serif; 
+  font-family: $primary-font-family, sans-serif;
   font-size: 15px;
   line-height: 1.46;
-  
 }
 
+body.modal-open {
+  overflow: hidden;
+}
 
 .container {
   margin-left: auto;
@@ -29,7 +33,7 @@ body {
     width: $mobile-general;
   }
   @media screen and (min-width: $tablet-general) {
-    width: $tablet-general; 
+    width: $tablet-general;
   }
   @media screen and (min-width: $desktop-up) {
     width: $desktop-up;
