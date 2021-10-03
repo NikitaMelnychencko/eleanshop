@@ -1,5 +1,5 @@
 .showroom {
-  padding-top: 25px;
+  padding-top: 4px;
   padding-bottom: 25px;
 }
 
@@ -62,8 +62,11 @@
 .showroom .slick-list {
   overflow: hidden;
 
-  @media screen and (min-width: $mobile-first) and (max-width: $tablet-only) {
-    position: relative;
+  position: relative;
+
+  @media screen and (min-width: $desktop-up) {
+    height: 575px !important;
+    padding-left: 20px;
   }
 }
 
@@ -71,6 +74,11 @@
 .showroom .slick-track {
   display: flex;
   align-items: flex-start;
+
+  @media screen and (min-width: $desktop-up) {
+    padding-top: 15px;
+    padding-left: 20px;
+  }
 }
 
 .showroom .slick-track .slider__item {
@@ -82,9 +90,6 @@
       margin-top: 21px;
     }
   }
-}
-
-.showroom .current-slide {
 }
 
 .showroom .slick-dots {
@@ -170,8 +175,12 @@
   width: 374px;
   height: 512px;
 
+  --animate-repeat: 0;
+
   @media screen and (min-width: $desktop-up) {
-    width: 446px;
-    height: 522px;
+    width: 426px;
+    height: 502px;
+
+    --animate-repeat: infinite;
   }
 }
