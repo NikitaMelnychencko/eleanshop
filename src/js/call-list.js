@@ -11,6 +11,7 @@ import { ordering, openOrderingFunction } from './layout/checkout/ordering';
 import payment_checkout from '../views/layouts/checkout.hbs';
 export function checkoutRender() {
   updateBin();
+  refs.mainEL.innerHTML='';
   const createCheckout = payment_checkout({ createPayment, ordering });
   refs.mainEL.insertAdjacentHTML('beforeend', createCheckout);
   openOrderingFunction();
