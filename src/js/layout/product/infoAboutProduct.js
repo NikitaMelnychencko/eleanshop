@@ -1,31 +1,25 @@
 import productInfo from '../../../js/json/product/productInfo.json'
 import productTemplate from '../../../views/partials/product/infoAboutProduct.hbs'
-import refs from '../../refs/refs.js'
 
+//* way to get a function to get size grid (don't clear)
+// import sizeChose from '../fitting/sizeChose.js';
+// const { createBtn } = sizeChose;
 
-//! -----------------------------------------------Rendering a section
-/* const createProductMarkup = (data) => {
-  return productTemplate(data)
-} */
+// * save data to localstorage temporary
+localStorage.setItem('productInfoData', JSON.stringify(productInfo));
+const savedProductInfoData = localStorage.getItem('productInfoData');
+const parsedProductInfoData = JSON.parse(savedProductInfoData);
 
-//const productInfoMarkup = createProductMarkup(productInfo)
+//! ---------------------------------------------------Rendering a section
+function createFullMarkup() {
+  
+  return productTemplate({ parsedProductInfoData })
 
-
-const productInfoMarkup = create();
-
-function create(event) {
-  const btn = createBtn('1', size);
-  console.log(btn);
-  //console.log(productInfo);
-
-  console.log( productTemplate({productInfo, btn}));
-  return productTemplate({productInfo, btn});
+  //* way to get a function to get size grid (don't clear)
+  // const btn = createBtn(parsedProductInfoData);
+  // return productTemplate({parsedProductInfoData, btn});
 };
-refs.mainEL.insertAdjacentHTML('beforeend', productInfoMarkup);
-createListener();
-
-
-// !--------------------------------------------------------------Colorpicker
+// !--------------------------------------------------Colorpicker
 
 function addCurrentClass(button) {
   button.classList.add('button__colorpicker--current');
@@ -54,7 +48,7 @@ function fixateCurrentClass(buttonArray, productColor) {
   }
 }
 
-//! -----------------------------------------------Characteristic-menu
+//! ---------------------------------------------Characteristic-menu
 function toggleIsOpenClass(menu){
   menu.classList.toggle("is-open");
 }
@@ -64,7 +58,7 @@ function transformPlusToMinus(button){
 }
 
 
-function createListener() {
+function createAllListeners() {
   const characteristicListEl = document.querySelector('.product__characteristics')
   const paramsMenuEl = document.querySelector('[data-params-menu]')
   const aditionalMenuEl = document.querySelector('[data-aditional-menu]')
@@ -74,6 +68,8 @@ function createListener() {
   const colorpickerButtonsEl = document.querySelectorAll('.button__colorpicker')
   let productColor = localStorage.getItem('productColor')
 
+  fixateCurrentClass(colorpickerButtonsEl, productColor)
+  
   const onCharacteristicsListClick = (event) => {
     const isParams = event.target.classList.contains('button__plus--params')
     const isAditional = event.target.classList.contains('button__plus--aditional')
@@ -102,46 +98,11 @@ function createListener() {
     setProductColor(colorpickerButton.id)
   }
 
-  fixateCurrentClass(colorpickerButtonsEl, productColor) 
-
+  
   characteristicListEl.addEventListener('click', onCharacteristicsListClick)
   colorpickerListEl.addEventListener('click', onColorpickerListClick)
 }
 
 
-// EXPORT TO MAIN FILE
-export default { create, createListener, createBtn, size };
-
-// потом УБРАТЬ!!
-//refs.mainEL.insertAdjacentHTML('beforeend', productInfoMarkup)
-//createListener()
-
-//---------------------------------------------------------------------
-import size from '../../../js/json/product/productInfo.json';
-
-function createBtn(id, json) {
-  const Array = json
-    //find the selected object (item of clothing) in json and pull out an array of sizes
-   // .find(x => x.id === id)
-    .size//sort sizes in order
-    .sort((a, b) => Number(Object.keys(a)) - Number(Object.keys(b)))
-    //create an array of dice sizes that are and are not
-    .map(value => {
-      const array = [];
-      if (Object.values(value)[0]) {
-        array.push(
-          `<button class="size-chose__size-list-btn" type="button">${
-            Object.keys(value)[0]
-          }</button>`,
-        );
-      } else {
-        array.push(
-          `<button disabled class="size-chose__size-list-btn size-chose__disabled" type="button">${
-            Object.keys(value)[0]
-          }</button>`,
-        );
-      }
-      return array;
-    });
-  return Array;
-}
+//! EXPORT TO MAIN FILE
+export default { createAllListeners, createFullMarkup };

@@ -7,9 +7,9 @@
 
       <article class="product__content">
         <div class="product__name-wrapper">
-          <h2 class="product__name">{{productInfo.productName}}</h2>
+          <h2 class="product__name">{{parsedProductInfoData.productName}}</h2>
           <button class="button__like"></button>
-          <p class="product__price">{{productInfo.productPrice}} <span class="product__currency">&#8372;</span></p>
+          <p class="product__price">{{parsedProductInfoData.productPrice}} <span class="product__currency">&#8372;</span></p>
         </div>
 
         <h3 class="product__size size__title">размер</h3>
@@ -41,7 +41,7 @@
         <div class="colorpicker">
           <h3 class="colorpicker__title">цвет</h3>
           <ul class="colorpicker__list">
-            {{#each productInfo.color}}
+            {{#each parsedProductInfoData.color}}
             <li class="colorpicker__item">
               <button class="button__colorpicker button__colorpicker--{{this.colorName}}" id="{{this.colorHex}}" type="button">
               </button>
@@ -58,8 +58,8 @@
         </ul>
 
         <div class="product__info">
-          <p class="product__description">{{productInfo.productDescription}}</p>
-          <p class="product__composition"><span class="product__composition--bold">Состав:</span> {{productInfo.productComposition}}
+          <p class="product__description">{{parsedProductInfoData.productDescription}}</p>
+          <p class="product__composition"><span class="product__composition--bold">Состав:</span> {{parsedProductInfoData.productComposition}}
           </p>
         </div>
 
@@ -69,22 +69,10 @@
               <p class="product__characteristics-name">параметры</p>
               <button class="button__plus button__plus--params" type="button"></button>
               <ul class="params__grid" data-params-menu>
-                <li class="params__item">Вид застежки:</li>
-                <li class="params__item">Пуговица, обтянутая атласом</li>
-                <li class="params__item">Длина изделия:</li>
-                <li class="params__item">По спинке 69 см</li>
-                <li class="params__item">Крой:</li>
-                <li class="params__item">Приталенный</li>
-                <li class="params__item">Рисунок:</li>
-                <li class="params__item">Без рисунка</li>
-                <li class="params__item">Тип карманов:</li>
-                <li class="params__item">Прорезные "листочки"</li>
-                <li class="params__item">Конструктивные элементы:</li>
-                <li class="params__item">Рельефные швы</li>
-                <li class="params__item">Материал подкладки:</li>
-                <li class="params__item">Вискоза 100%</li>
-                <li class="params__item">Уход за вещами:</li>
-                <li class="params__item">Химчистка</li>
+                {{#each parsedProductInfoData.productParams}}
+                  <li class="params__item">{{this.params}}</li>
+                  <li class="params__item">{{this.value}}</li>
+                {{/each}}
               </ul>
             </li>
             <li>

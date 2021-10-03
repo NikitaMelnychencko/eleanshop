@@ -1,11 +1,7 @@
-import q from '../layout/product/infoAboutProduct.js'
+import productFunctions from '../layout/product/infoAboutProduct.js'
 import refs from '../refs/refs.js'
 
-//const { create, createListener, createBtn, size } = q;
+const { createAllListeners, createFullMarkup } = productFunctions;
 
-//refs.mainEL.insertAdjacentHTML('beforeend', create);
-//createListener();
-//console.log(createBtn('1', size))
-
-
-//import sizeChose from '../layout/fitting/sizeChose.js';
+refs.mainEL.insertAdjacentHTML('beforeend', createFullMarkup());
+createAllListeners();
