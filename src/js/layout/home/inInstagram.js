@@ -1,7 +1,5 @@
 import pageInInstagramSliderData from '../../json/inInstagram.json';
 import pageInInstagramMarkupTemplate from '../../../views/partials/home/inInstagram.hbs';
-// import refs from '../../refs/refs.js';
-// const { mainEL } = refs;
 
 // Create markup and render in html
 export const pageInInstagramSliderMarkup = pageInInstagramMarkupTemplate({
