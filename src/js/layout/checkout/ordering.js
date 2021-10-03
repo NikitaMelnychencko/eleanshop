@@ -153,7 +153,7 @@ inputs.forEach(input => input.addEventListener('click', onOrderingColorInputClic
 function onOrderingColorInputClick(e) {
     const selectedInput = this
     const list = this.parentElement.lastElementChild
-    list.classList.toggle("showroom-list--hide")
+    list.classList.toggle("ordering-list--hide")
     // document.body.classList.toggle("extra")
     const items = list.querySelectorAll('.ordering-item-js')
     items.forEach(item => item.addEventListener('click',onColorClick)) 
