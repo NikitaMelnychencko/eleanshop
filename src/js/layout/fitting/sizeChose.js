@@ -35,7 +35,6 @@ function onResize(event) {
   const btnCloseRef = document.querySelector('.form__button-сlose');
   btnCloseRef.style.right = `${right}px`;
 }
-
 //function for creating dice of clothing sizes
 function createBtn(id) {
   const Array = size
