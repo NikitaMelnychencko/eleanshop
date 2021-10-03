@@ -18,10 +18,16 @@ import './js/layout/сatalog/filter.js';
 import './js/layout/сatalog/gallery.js';
 //product
 import './js/layout/product/infoAboutProduct.js';
-import './js/layout/product/recomendationsCategory.js';
 import './js/layout/product/productSlider.js';
-import './js/layout/product/test_recomendationsCategory.js';
+import './js/layout/product/productCreateInfo.js';
+import './js/layout/product/productBin.js';
+import './js/layout/product/recomendationsCategory.js';
+import './js/layout/product/productModalAddToCart.js';
 import './js/layout/product/productHandSewn.js';
+import './js/test/test_productBin.js';
+import './js/test/test_recomendationsCategory.js';
+import './js/test/test_productModalAddCArt.js';
+import './js/test/test_productHandSewn.js';
 
 //delivery
 import './js/layout/delivery/filter.js';
@@ -54,7 +60,9 @@ import './js/layout/favorites/sabmitEmail.js';
 // backfrop
 import './js/components/backdrop.js';
 
-
 //test
 import './js/test/test_productHandSewn.js';
 import './js/test/backdropTest.js';
+
+//blockHelp
+import './js/components/blockHelp/blockHelp';

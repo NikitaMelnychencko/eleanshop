@@ -5,6 +5,9 @@ $star-clients-slider-dots: #d9dbe1;
 $star-clients-slider-dots-placeholder: #ffffff;
 $star-clients-slider-dots-border: #e1e1e1;
 $hero-slider-dots: rgba(255, 255, 255, 0.45);
+$in-instagram-slider-dots: #d9dbe1;
+$in-instagram-slider-dots-placeholder: #ffffff;
+$in-instagram-slider-dots-border: #e1e1e1;
 
 //text
 $primary-text-color: #171717;
@@ -12,13 +15,14 @@ $secondary-text-color: #000000;
 $third-text-color: #c0a78f;
 $selection-text-color: #ffffff;
 $form-text-color: #a6a6a9;
-
+$secondary-form-text-color:#B3B3B3;
 $input-text-color: hsl(0, 0%, 72%);
 $btn-text-color: #c7c3c3;
 $fourth-text-color: #afafaf;
 $fourth-text-color: #a7a7a7;
 $fifth-text-color: #b8b5b5;
 $sixth-text-color: #c0c0c0;
+$seventh-text-color: #9d9dad;
 $product-price-color: #333333;
 $product-info-color: #242424;
 
@@ -26,12 +30,13 @@ $product-info-color: #242424;
 $primary-title-text-color: #000000;
 $secondary-title-text-color: #272727;
 $selection-title-text-color: #ffffff;
-$secondary-title-black-color: #222222;
+//$secondary-title-black-color: #222222;
 $third-title-text-color: #3d3d3d;
 $colorpicker-title-color: #3d3d3d;
 
 //title-text-shadow
 $primary-title-text-shadow: 0px 0px 1px #000000;
+
 
 //accent
 $accent-color: #e1c4a9;
@@ -42,6 +47,8 @@ $accent-currency-color: #caaf97;
 $accent-colorpicker-black: #242424;
 $accent-colorpicker-red: #f2404a;
 $accent-colorpicker-grey: #e2dfdf;
+$third-accent-color: #c0a78f;
+$accent-background-selector-color:#F8EFE7;
 
 //background
 $primary-background-color: #ffffff;
@@ -53,6 +60,12 @@ $menu-background-color: #e1c4a9;
 $button-background-color: #242424;
 $btn-background-color: #efefef;
 $params-background-color: #dadada;
+
+$btn-background-color: #efefef;
+$message-amount-thumb-color: #e20613;
+
+//svg-fill
+$primary-svg-color: #000000;
 
 //logo
 $primary-logo-color: #000000;
@@ -71,6 +84,7 @@ $colorpicker-border-color: #e6e6e6;
 $colorpicker-icon-border-color: #e2dfdf;
 $colorpicker-icon-border-hover: #b59475;
 $button-purchase-border: #e3e3e3;
+$third-border-color: #D0D0D0;
 
 //input
 $placeholder-color: #a6a6a9;
@@ -83,6 +97,7 @@ $button-border-color: #e7dcdc;
 $button-hover-background-color: #000000;
 $button-size-option-color: #b59475;
 $button-size-option-hover-color: #222222;
+$button-counter-color: #c6c6c6;
 
 // backdrop
 $backdrop-color: #e5e5e5;

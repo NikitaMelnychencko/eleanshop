@@ -6,6 +6,8 @@
 
 //$tablet-general for modal window implementation
 body {
+  position: relative;
+
   margin: 0;
   background-color: $primary-background-color;
   color: $primary-text-color;
