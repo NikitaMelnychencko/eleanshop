@@ -1,7 +1,6 @@
 import payment_payment from '../../../views/partials/checkout/payment.hbs';
-
 import method from '../../json/method.json';
-import refs from '../../refs/refs.js';
+
 
 require('geteventlisteners');
 export const createPayment = payment_payment({ method });

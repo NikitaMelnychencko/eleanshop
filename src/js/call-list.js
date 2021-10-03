@@ -33,13 +33,14 @@ homeRender();
 function brandRender() {}
 
 //=====checkout========//
-import { ModalData, createPayment } from './layout/checkout/payment';
-import { ordering, openOrderingFunction } from './layout/checkout/ordering';
+import { ModalData, createPayment } from './layout/checkout/payment.js';
+import { ordering, openOrderingFunction } from './layout/checkout/ordering.js';
+import {backdropMarkup,buttonOpen } from './layout/checkout/thanksForOrdering.js';
 import payment_checkout from '../views/layouts/checkout.hbs';
 export function checkoutRender() {
   updateBin();
   refs.mainEL.innerHTML = '';
-  const createCheckout = payment_checkout({ createPayment, ordering });
+  const createCheckout = payment_checkout({ createPayment, ordering, backdropMarkup});
   refs.mainEL.insertAdjacentHTML('beforeend', createCheckout);
   openOrderingFunction();
   const inputTime = new ModalData({
@@ -50,6 +51,7 @@ export function checkoutRender() {
     idInput: 'js-day',
     idList: 'day-list',
   });
+  buttonOpen()
 }
 // checkoutRender();
 //=====contact========//
