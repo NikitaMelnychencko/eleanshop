@@ -30,8 +30,9 @@ orderingApplyBtn.addEventListener('click', countTotalPriceWithDiscount);
 function setQuantityOrRemove(e) {
     if (e.target.classList.contains('ordering__btn--plus')) {
         orderingIncrement(e);
-
-        let priceSpan = e.target.parentElement.lastElementChild
+      
+        let priceSpan = e.target.parentElement.nextElementSibling
+      
         let pricePerItem = priceSpan.innerText;
         let newValue = Number(e.target.previousElementSibling.textContent)
         let totalPricePerItem = Number(pricePerItem) / (newValue - 1) + Number(pricePerItem);
@@ -41,7 +42,7 @@ function setQuantityOrRemove(e) {
     }
     else if (e.target.classList.contains('ordering__btn--minus')) {
         let checker = orderingDecrement(e);
-        let priceSpan = e.target.parentElement.lastElementChild
+        let priceSpan = e.target.parentElement.nextElementSibling
         let pricePerItem = priceSpan.innerText;
         let newValue = Number(e.target.nextElementSibling.textContent);
                   

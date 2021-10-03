@@ -68,7 +68,14 @@
   font-size: 18px;
   line-height: 1.11;
 
-  @media screen and (min-width: $mobile-first) and (max-width: $tablet-only) {
+  @media screen and (min-width: $mobile-first) and (max-width: $mobile-general) {
+    display: inline-block;
+    margin-bottom: 60px;
+    margin-right: 45px;
+    height: 60px;
+  }
+
+  @media screen and (min-width: $mobile-general) and (max-width: $tablet-only) {
     display: inline-block;
     margin-bottom: 50px;
     margin-right: 45px;
@@ -84,6 +91,14 @@
   align-items: center;
   margin-right: 0;
   margin-left: auto;
+
+  @media screen and (min-width: $mobile-first) and (max-width: $mobile-general) {
+    display: inline-block;
+  }
+  @media screen and (min-width: $mobile-general) {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .ordering__select--color {
@@ -94,6 +109,10 @@
 
 .ordering__item {
   position: relative;
+
+  @media screen and (min-width: $mobile-first) and (max-width: $mobile-general) {
+    margin-bottom: 14px;
+  }
 
   @media screen and (min-width: $mobile-general) {
     margin-right: 14px;
@@ -196,6 +215,17 @@
   margin-left: 10px;
 }
 
+.ordering__counter {
+  display: flex;
+  align-items: center;
+}
+
+.ordering_value {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
 .ordering__btn {
   display: flex;
   justify-content: center;
@@ -211,17 +241,17 @@
   color: $input-text-color;
 }
 
-.ordering_value {
-  margin: 0;
-  padding: 0;
-}
-
 .ordering__price {
   font-family: $primary-font-family;
   font-size: 18px;
   line-height: 1.27;
 
-  @media screen and (min-width: $mobile-first) and (max-width: $mobile-only) {
+  @media screen and (min-width: $mobile-first) and (max-width: $mobile-general) {
+    position: absolute;
+    top: 90px;
+  }
+
+  @media screen and (min-width: $mobile-general) and (max-width: $mobile-only) {
     position: absolute;
     top: 55px;
     left: 0;
@@ -304,17 +334,23 @@
 }
 
 .ordering__input--promocode {
+  padding: 13px 10px;
   height: 50px;
   border: 1px dotted $secondary-border-color;
-  @media screen and (min-width: $mobile-first) and (max-width: $mobile-only) {
-    padding: 13px 5px 13px 5px;
+
+  @media screen and (min-width: $mobile-first) and (max-width: $mobile-general) {
+    width: 264px;
+    display: inline-block;
+    margin-bottom: 14px;
+  }
+  @media screen and (min-width: $mobile-general) and (max-width: $mobile-only) {
     flex-grow: 1;
     max-width: 264px;
     border-right: none;
   }
 
   @media screen and (min-width: $tablet-general) and (max-width: $tablet-only) {
-    padding: 13px 10px 13px 10px;
+    padding: 13px 10px;
     width: 264px;
     border-right: none;
   }
@@ -336,6 +372,7 @@
 }
 
 .ordering__btn--promocode {
+  padding: 13px 29px;
   height: 50px;
   border: none;
 
@@ -344,13 +381,6 @@
   font-size: 17px;
   line-height: 1.35;
   color: $btn-text-color;
-  @media screen and (min-width: $mobile-first) and (max-width: $mobile-only) {
-    padding: 13px;
-  }
-
-  @media screen and (min-width: $tablet-general) {
-    padding: 13px 29px;
-  }
 
   @media screen and (min-width: $desktop-up) {
     border-radius: 3px;
@@ -403,7 +433,12 @@
 }
 
 .ordering__promocodethumb {
-  @media screen and (min-width: $mobile-first) and (max-width: $tablet-only) {
+  @media screen and (min-width: $mobile-first) and (max-width: $mobile-general) {
+    display: block;
+    text-align: center;
+  }
+
+  @media screen and (min-width: $mobile-general) and (max-width: $tablet-only) {
     display: flex;
   }
 
