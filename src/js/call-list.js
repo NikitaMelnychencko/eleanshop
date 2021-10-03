@@ -1,5 +1,6 @@
 import refs from './refs/refs.js';
 import updateBin from './updateBin.js';
+updateBin();
 
 function homeRender() {}
 //=====brand========//
