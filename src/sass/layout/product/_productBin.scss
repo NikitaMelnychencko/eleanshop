@@ -9,9 +9,12 @@
   padding: 46px 20px 50px;
   background-color: $selection-text-color;
   overflow: scroll;
+  // transform: translateY(150%);
+  transition: $time-cubic;
 
   &.hidden {
-    @extend %hide;
+    // @extend %hide;
+    transform: translateY(-250%);
   }
 
   @media screen and (min-width: $desktop-up) {
