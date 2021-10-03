@@ -1,11 +1,34 @@
 // Суда буду вносить функционал
-import '../../../index.js';
-import myRefs from '../../refs/refs';
-import deliveryfoto from '../../../js/json/delivery.json';
+import refs from '../../refs/refs';
+import deliveryfoto from '../../../js/json/deliveryImage.json';
 import delivery from '../../../views/partials/delivery/deliveryTypes.hbs';
 import deliveryButton from '../../../views/partials/delivery/buttonDelivProct.hbs';
-import '../../../images/img/elean62862 1.jpeg';
-import '../../../images/svg/Group.svg';
+import deliveryPage from '../../../views/layouts/delivery.hbs';
+import deliveryfiljson from '../../../js/json/filter.json';
+import deliveryfilter from '../../../views/partials/delivery/filter.hbs';
+import formsQuestions from '../../../views/partials/delivery/formsQuestion.hbs';
+import formQuestionsData from '../../../js/json/formsQuestion.json';
+
+const descriptionDelivery = deliveryfilter(deliveryfiljson);
+
+const mainImageDelivery = delivery(deliveryfoto);
+const buttonsDelivery = deliveryButton();
+const questionDelivery = formsQuestions(formQuestionsData);
+const deliveryPageMarkUp = deliveryPage({
+  mainImageDelivery,
+  buttonsDelivery,
+  descriptionDelivery,
+  questionDelivery,
+});
+refs.mainEL.insertAdjacentHTML('beforeend', deliveryPageMarkUp);
+
+// const myRefs = {
+//   mainfoto: document.querySelector('.js-mainfoto'),,
+//   delheadnav: myButtonDeliv,
+//   openModalBtn: openModal,
+//   closeModalBtn: colseModal,
+//   modal: modal,
+// };
 
 const {
   mainfoto: myFoto,
@@ -13,13 +36,13 @@ const {
   // openModalBtn: openModal,
   // closeModalBtn: colseModal,
   // modal: modal,
-} = myRefs;
+} = refs;
 
-const fotoMarkUp = createFotoDelivery(deliveryfoto);
-const delButtonMarkUp = createButtonDelivery(deliveryfoto);
+// const fotoMarkUp = createFotoDelivery(deliveryfoto);
+// const delButtonMarkUp = createButtonDelivery(deliveryfoto);
 
-myFoto.insertAdjacentHTML('beforeend', fotoMarkUp);
-myButtonDeliv.insertAdjacentHTML('beforeend', delButtonMarkUp);
+// myFoto.insertAdjacentHTML('beforeend', fotoMarkUp);
+// myButtonDeliv.insertAdjacentHTML('beforeend', delButtonMarkUp);
 
 function createFotoDelivery(menu) {
   return menu.map(delivery).join('');
@@ -38,6 +61,7 @@ const openModal = (triggerSelector, modalDataSelector) => {
     modal.classList.add('modal_active');
   });
 };
+
 openModal('.buttons__button_one', '.modal[data-modal="one"]');
 openModal('.buttons__button_two', '.modal[data-modal="two"]');
 openModal('.buttons__button_third', '.modal[data-modal="third"]');

@@ -185,3 +185,7 @@ import '../../images/img/checkout/payment/mirror_reflection.jpg';
 import '../../images/img/checkout/payment/mirror_reflection@2x.jpg';
 import '../../images/svg/murkup.svg';
 import '../../images/svg/murkup_arow.svg';
+
+//=============delivery=====================
+import '../../images/img/elean62862_1.jpeg';
+import '../../images/svg/Group.svg';

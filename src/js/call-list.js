@@ -55,7 +55,12 @@ export function checkoutRender() {
 //=====contact========//
 function contactRender() {}
 //=====delivery========//
+import deliveryMarkUp from '../views/layouts/delivery.hbs';
+// import
+
 function deliveryRender() {}
+// function deliveryRender()
+
 //=====favorites========//
 function favoritesRender() {}
 //=====fitting========//
