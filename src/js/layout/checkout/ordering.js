@@ -1,14 +1,16 @@
-import ordering_ordering from '../../../views/partials/checkout/ordering.hbs';
-import payment_checkout from '../../../views/layouts/checkout.hbs';
-import refs from '../../refs/refs.js';
-import '../../../images/img/white-suit.jpg';
-import '../../../images/img/red-suit.jpg';
-import promocodes from '../../json/promocode.json';
-import orderingInsertion from '../../json/orderinginsertion.json';
+import ordering_ordering from '../../../views/partials/checkout/ordering.hbs'
+import payment_checkout from '../../../views/layouts/checkout.hbs'
+import refs from '../../refs/refs.js'
+import '../../../images/img/white-suit.jpg'
+import '../../../images/img/red-suit.jpg'
+import promocodes from '../../json/promocode.json'
+import orderingInsertion from '../../json/orderinginsertion.json'
+import { times } from 'lodash'
 
 localStorage.setItem('orderingData', JSON.stringify(orderingInsertion));
-const savedData = localStorage.getItem('orderingData');
-const parsedData = JSON.parse(savedData);
+const savedData = localStorage.getItem('orderingData')
+const parsedData = JSON.parse(savedData)
+// console.log(parsedData)
 
 const ordering = ordering_ordering({ parsedData, orderingInsertion });
 
@@ -21,49 +23,55 @@ const orderingDiscount = document.querySelector('.ordering__discount--value');
 const orderingTotal = document.querySelector('.ordering__total');
 const cards = document.querySelector('.ordering__cards');
 
-window.onload = countTotalPrice();
+window.onload = renewTotalPriceWithDiscount()
 cards.addEventListener('click', setQuantityOrRemove);
 orderingApplyBtn.addEventListener('click', countTotalPriceWithDiscount);
 
 function setQuantityOrRemove(e) {
-  if (e.target.classList.contains('ordering__btn--plus')) {
-    orderingIncrement(e);
+//      if(e.target === undefined){
+// return
+// }
+    if (e.target.classList.contains('ordering__btn--plus')) {
+        orderingIncrement(e);
 
-    const cardsArray = e.currentTarget.children;
-    for (let i = 0; i <= cardsArray.length; i += 1) {
-      if (cardsArray[i].contains(e.target)) {
-        let priceSpan = cardsArray[i].querySelector('.ordering__price');
-        let pricePerItem = priceSpan.innerHTML;
-        let newValue = Number(e.target.previousElementSibling.textContent);
-        let totalPricePerItem = Number(pricePerItem) / (newValue - 1) + Number(pricePerItem);
+        const cardsArray = e.currentTarget.children;
+        for (let i = 0; i <= cardsArray.length; i += 1){
+            if (cardsArray[i].contains(e.target)) {
+                let priceSpan = cardsArray[i].querySelector('.ordering__price');
+                let pricePerItem = priceSpan.innerHTML;
+                let newValue = Number(e.target.previousElementSibling.textContent)
+                let totalPricePerItem = Number(pricePerItem) / (newValue-1) + Number(pricePerItem);
 
-        priceSpan.textContent = totalPricePerItem;
-        countTotalPrice();
-      }
-    }
-  } else if (e.target.classList.contains('ordering__btn--minus')) {
-    let checker = orderingDecrement(e);
-    const cardsArrayDecr = e.currentTarget.children;
+                priceSpan.textContent = totalPricePerItem
+                renewTotalPriceWithDiscount()
+            }
+        }   
+    }    
+    else if (e.target.classList.contains('ordering__btn--minus')) {
+        let checker = orderingDecrement(e);
+        const cardsArrayDecr = e.currentTarget.children;
+        
+        for (let i = 0; i <= cardsArrayDecr.length; i += 1){
+            if (cardsArrayDecr[i].contains(e.target)) {
+                let priceSpan = cardsArrayDecr[i].querySelector('.ordering__price');
+                
+                let pricePerItem = priceSpan.innerHTML;
 
-    for (let i = 0; i <= cardsArrayDecr.length; i += 1) {
-      if (cardsArrayDecr[i].contains(e.target)) {
-        let priceSpan = cardsArrayDecr[i].querySelector('.ordering__price');
+                let newValue = Number(e.target.nextElementSibling.textContent);
+                  
+                let totalPricePerItem = Number(pricePerItem) - Math.round(Number(pricePerItem) / (newValue+1));
+                if (checker) {
+                    priceSpan.textContent = totalPricePerItem;
+                    renewTotalPriceWithDiscount()
 
-        let pricePerItem = priceSpan.innerHTML;
-
-        let newValue = Number(e.target.nextElementSibling.textContent);
-
-        let totalPricePerItem =
-          Number(pricePerItem) - Math.round(Number(pricePerItem) / (newValue + 1));
-        if (checker) {
-          priceSpan.textContent = totalPricePerItem;
-          countTotalPrice();
-        }
-      }
-    }
-  } else if (e.target.classList.contains('ordering__close')) {
-    removeOrderingCard(e);
-  }
+                }
+            }
+        }         
+    } 
+    else if (e.target.classList.contains('ordering__close')) {
+        removeOrderingCard(e);
+    
+    }  
 }
 
 function orderingIncrement(e) {
@@ -85,9 +93,10 @@ function removeOrderingCard(e) {
   const arr = e.currentTarget.children;
   for (let i = 0; i <= arr.length; i += 1) {
     if (arr[i].contains(e.target)) {
-      e.currentTarget.removeChild(arr[i]);
+        e.currentTarget.removeChild(arr[i]);
+        renewTotalPriceWithDiscount();
     }
-  }
+    }    
 }
 
 function countTotalPrice(e) {
@@ -103,11 +112,26 @@ function countTotalPrice(e) {
 }
 
 function countTotalPriceWithDiscount(e) {
-  e.preventDefault();
-  const totalPrice = countTotalPrice();
-  let discount = getDiscount();
-  orderingDiscount.textContent = discount;
-  orderingTotal.textContent = totalPrice - (totalPrice / 100) * discount;
+    e.preventDefault();
+    const totalPrice = countTotalPrice();
+    let discount = getDiscount();
+    orderingDiscount.textContent = discount;
+    orderingTotal.textContent = totalPrice - (totalPrice / 100 * discount);
+}
+
+function renewTotalPriceWithDiscount() {
+    const totalPrice = countTotalPrice();
+    let finalPrice = 0;
+        const discountValue = Number(orderingDiscount.innerText);
+        if (discountValue !== undefined) {
+            finalPrice = totalPrice - (totalPrice / 100 * discountValue);
+            orderingTotal.textContent = finalPrice;
+        } else {
+            finalPrice = totalPrice
+            orderingTotal.textContent = finalPrice;
+        }
+    
+    return finalPrice
 }
 
 function getDiscount() {
@@ -117,11 +141,29 @@ function getDiscount() {
   return gettingPromocodeObject.discount;
 }
 
-export const totalPrice = countTotalPrice();
+// в totalPrice лежит функция, которая возвращает итоговую стоимость, но нужно проверять, сработает ли правильно
+export const totalPrice =  renewTotalPriceWithDiscount.bind();
+// console.log(totalPrice())
 
 
-// const testButton = document.querySelector('.testButton')
-// testButton.addEventListener('click', settingDataToLocalStorage)
-// function settingDataToLocalStorage() {
-//     localStorage.setItem('orderingData', JSON.stringify(orderingInsertion));
-// }
+const inputs = document.querySelectorAll('.ordering-input-js');
+const lists = document.querySelectorAll('.ordering-list-js');
+inputs.forEach(input => input.addEventListener('click', onOrderingColorInputClick))
+
+function onOrderingColorInputClick(e) {
+    const selectedInput = this
+    const list = this.parentElement.lastElementChild
+    list.classList.toggle("ordering-list--hide")
+    // document.body.classList.toggle("extra")
+    const items = list.querySelectorAll('.ordering-item-js')
+    items.forEach(item => item.addEventListener('click',onColorClick)) 
+}
+
+function onColorClick() {
+    const colorItemValue = this.innerHTML
+    const colorInput = this.parentElement.parentElement.firstElementChild.firstElementChild;
+    const item = this
+    colorInput.innerHTML = colorItemValue;
+
+}
+
