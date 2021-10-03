@@ -7,8 +7,8 @@ const { mainEL } = refs;
 export const pageHeroSliderMarkup = pageHeroMarkupTemplate(pageHeroSliderData);
 
 export function heroSlider() {
-window.jQuery = window.$ = require('jquery');
-require('../../slider/slick.min.js');  
+  window.jQuery = window.$ = require('jquery');
+  require('../../slider/slick.min.js');
   // Slider options
   $(document).ready(function () {
     $('.hero__slider').slick({
