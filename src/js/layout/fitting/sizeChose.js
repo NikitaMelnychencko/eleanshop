@@ -22,7 +22,7 @@ function onBtnClick(id) {
     btnSize.addEventListener('click', value => {
       if (value.target.nodeName === 'BUTTON')
       {
-        sendingValue(value.target.textContent);
+        sendingValue(id, value.target.textContent);
       }
     });
   }
@@ -64,8 +64,8 @@ function createBtn(id) {
   return createMarkup(Array);
 }
 //function that returns a string with the size on the card that you selected
-function sendingValue(value) {
-  save('sizeClose', value);
+function sendingValue(id, value) {
+  save(`sizeClose_id-${id}`, value);
   const backdrop = new Backdrop()
   .closeModalForm();
 }
