@@ -4,9 +4,9 @@ import catalog from '../../json/catalog.json';
 
 import '../../../images/svg/catalog/catalog.svg#icon-gallery-card-heart';
 
-// const catalogItems = document.querySelector('.js-catalog');
 export const catalogListMarkup = gallery(catalog);
 export function openCategory() {
+  const catalogItems = document.querySelector('.js-catalog');
   const cardHeartIcon = catalogItems.querySelectorAll('.icon-gallery-card-heart');
 
   const cardHeartIconArray = Array.from(cardHeartIcon);

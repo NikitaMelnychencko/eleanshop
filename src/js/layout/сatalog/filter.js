@@ -1,10 +1,10 @@
 import filter from '../../../views/partials/сatalog/filter.hbs';
 import filterLib from '../../json/filterLib.json';
 
-// const filterList = document.querySelector('#filter');
 export const filterListMakeup = filter(filterLib);
 
 export function openFilter() {
+  const filterList = document.querySelector('#filter');
   const catalogColHeader = document.querySelector('.catalog-collection-header');
   const catalogCatHeader = document.querySelector('.catalog-category-header');
 
