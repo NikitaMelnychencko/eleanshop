@@ -60,8 +60,9 @@
   }
 
   @media screen and (min-width: $mobile-general) {
-    top: auto;
+    top: 0;
     bottom: 100%;
+    transform: translateY(-100%);
 
     justify-content: space-between;
 
