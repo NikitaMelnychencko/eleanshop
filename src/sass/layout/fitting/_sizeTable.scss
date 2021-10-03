@@ -1,49 +1,81 @@
-.size-table-standart {
-  margin-bottom: 32px;
+.size-table {
+  &__modal-container {
+    padding: 66px 20px 60px 20px;
 
-  font-family: $third-font-family;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.15;
+    background-color: $primary-background-color;
 
-  text-align: center;
-  letter-spacing: 0.05em;
-
-  color: $primary-text-color;
-}
-.size-table-modal-container {
-  //position: relative;
-  //top: 0;
-  //transform: translateY(-50%);
-  z-index: 100;
-
-  width: 100vw;
-  height: 100vw;
-  padding: 66px 20px 60px 20px;
-
-  background-color: $primary-background-color;
-
-  @media screen and (min-width: $mobile-general) {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-    min-width: 400px;
-    max-width: 660px;
+    @media screen and (min-width: $mobile-general) {
+      margin-left: auto;
+      margin-right: auto;
+      min-width: 400px;
+      max-width: 792px;
+    }
+    @media screen and (min-width: $mobile-only) {
+      padding: 66px 120px 68px 107px;
+    }
   }
-  @media screen and (min-width: $mobile-only) {
-    padding: 66px 120px 68px 120px;
+  &__standart {
+    margin-bottom: 32px;
+
+    font-family: $third-font-family;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 1.1;
+
+    letter-spacing: 0.03em;
+
+    color: $primary-text-color;
+  }
+  &__table {
+    display: grid;
+    border-collapse: collapse;
+    min-width: 100%;
+    grid-template-columns:
+      minmax(85px, 1fr) minmax(85px, 1fr) minmax(85px, 1fr)
+      minmax(85px, 1fr) minmax(85px, 1fr);
+
+    & > thead,
+    tbody,
+    tr {
+      display: contents;
+    }
+    & > thead > tr > th,
+    td {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    & > thead > tr > th {
+      position: sticky;
+      top: 0;
+      padding-bottom: 12px;
+      text-align: left;
+      font-family: $third-font-family;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 1.11;
+    }
+    & > tbody > tr > td {
+      padding-top: 20px;
+      padding-bottom: 20px;
+
+      border-top: 1px solid #e6e7eb;
+
+      font-family: $third-font-family;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 1.47;
+
+      letter-spacing: 0.05em;
+      & > span {
+        display: inline-block;
+        background: #000000;
+        color: #e6e7eb;
+        padding: 3px;
+        min-width: 65px;
+      }
+    }
   }
 }
-//----delete all after this line---------------------
-body {
-  background-color: teal;
-}
-/* 
-    Блочная модель 
-    Типографика 
-    Отображение 
-    Прочее 
-    
-*/
