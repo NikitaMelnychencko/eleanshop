@@ -1,0 +1,44 @@
+<div class='contacts__tel'>
+  <h3 class='contacts__tel-title'>Контакты</h3>
+  <ul class='contacts__list contacts-item-first-ul'>
+    <li class='contacts__item'>
+      <svg class='contacts__icons'>
+        <use href='./images/exampl.svg#icon-call'></use>
+      </svg>
+      <a class='contacts__link' href='tel:{{phoneNumber}}'>ТЕЛ.:
+        {{phoneNumberFormated}}</a></li>
+    <li class='contacts__item'>
+      <svg class='contacts__icons'>
+        <use href='./images/exampl.svg#icon-contacts-mail'></use>
+      </svg>
+      <a class='contacts__link' href='mailto:{{email}}'>EMAIL:
+        {{email}}</a></li>
+    <li class='contacts__item'>
+      <svg class='contacts__icons'>
+        <use href='./images/exampl.svg#icon-viber'></use>
+      </svg>
+      <a class='contacts__link' href={{viberRef}}>VIBER:
+        {{viberNumber}}</a></li>
+    <li class='contacts__item contacts-list-name'>{{entrepreneurName}}</li>
+    <li class='contacts__item contacts-list-name'>{{entrepreneurInfo}}</li>
+  </ul>
+</div>
+
+<address class='contacts__adress'>
+  <h3 class='contacts__subheading'>АДРЕС И РЕЖИМ РАБОТЫ</h3>
+  <ul class='contacts__list contacts-item-second-ul'>
+
+    <li class='contacts__item'>
+      <svg class='contacts__icons'>
+        <use href='./images/exampl.svg#icon-contacts-clock'></use>
+      </svg>
+      {{visitingHours}}</li>
+    <li class='contacts__item'>
+      <svg class='contacts__icons'>
+        <use href='./images/exampl.svg#icon-compass'></use>
+      </svg>
+
+      АДРЕС:
+      {{adress}}</li>
+  </ul>
+</address>
