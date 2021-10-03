@@ -3,6 +3,7 @@ import refs from '../../refs/refs.js'
 
 const {
     closeOpenPlus,
+    dropDown,
     openList,
     openSubMenu,
     inputStorageMobile,
@@ -17,39 +18,43 @@ mobileSubmitBtn.addEventListener('submit', onSubmitBtnMobile)
 desktopSubmitBtn.addEventListener('submit', onSubmitBtnDesktop)
 
 // Функция раскрытия списка-меню
-
-
-
 closeOpenPlus.forEach((evt) => {
     evt.addEventListener('click', (el) => {
         el.preventDefault()
         const test = document.querySelector('.dropdown-content')
-        console.log(test)
         const dropDown = document.querySelector('.open-menu');
         if (el.target.nextElementSibling) {
-
             if (dropDown) {
                 dropDown.classList.toggle('open-menu')
                 dropDown.nextElementSibling.classList.toggle('js-dropdown-none');
                 if (el.target === dropDown) {
                     return;
                 } else if (el.target === test) {
-                    dropDown.classList.remove('open-menu')
+                    dropDown.parentElement.classList.remove('.js-dropdown-none');
                 }
-                // if (el.target === test) {
-                //     dropDown.classList.remove('open-menu')
-                // }
             }
-
             el.target.classList.toggle('open-menu');
-            console.log(el.target)
-            console.log(el.target.nextElementSibling)
+            // console.log(el.target)
+            // console.log(el.target.nextElementSibling)
             el.target.nextElementSibling.classList.toggle('js-dropdown-none');
-
-        }
-
-        else if (!el.target.nextElementSibling) {
+        } else {
             window.location.href = el.target
+        }
+    });
+});
+
+//==== Скрытие меню при переходе на другой блок
+dropDown.forEach((evt) => {
+    console.log(evt)
+    evt.addEventListener('click', (el) => {
+        el.preventDefault()
+        const dropDown = document.querySelector('.js-dropdown-none');
+        const openMenu = document.querySelector('.open-menu')
+        if (el.target) {
+            dropDown.classList.remove('js-dropdown-none')
+            openMenu.classList.remove('open-menu')
+            window.location.href = el.target
+
         }
     });
 
@@ -111,7 +116,7 @@ function onSubmitBtnDesktop(evt) {
 //     evt.addEventListener('click', (el) => {
 //         const click = el.currentTarget;
 //         console.log(click)
-//         if (dSeorch === click) {
+//         if (idSeorch === click) {
 //             window.location.href = click.target
 //             console.log("Работает?")
 //         }
