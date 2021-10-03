@@ -1,4 +1,7 @@
-%button-pad{
+
+//product
+
+%button-pad {
   font-weight: 500;
   font-size: 15px;
   line-height: 1.2;
@@ -7,13 +10,12 @@
   padding: 16px 88px 19px 88px;
 }
 
-.button__checkout{
+.button__checkout {
   @extend %button-pad;
   display: block;
   width: 100%;
-  background-color:$button-background-color ;
+  background-color: $button-background-color;
   color: $selection-text-color;
-
 }
 
 .button-add-likes {
@@ -143,6 +145,12 @@
     background-color: $third-text-color;
     border: none;
     color: $selection-text-color;
+
+    &:hover,
+    &:focus {
+      background-color: $selection-text-color;
+      color: $third-text-color;
+    }
   }
 }
 //home-reviews button
@@ -201,7 +209,7 @@
   width: 40px;
   height: 40px;
   background-color: transparent;
-  background-image: url(../images/arrow-up-circle-fill.svg);
+  background-image: url(./images/arrow-up-circle-fill.svg);
   background-repeat: no-repeat;
   background-size: contain;
   outline: none;

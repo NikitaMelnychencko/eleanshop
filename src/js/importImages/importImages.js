@@ -84,8 +84,16 @@ import '../../images/img/product/handSewn/handSewn-mobile-2.jpg';
 import '../../images/img/product/handSewn/handSewn-mobile-2@2x.jpg';
 import '../../images/img/product/handSewn/handSewn-bg-right.png';
 import '../../images/img/product/handSewn/handSewn-bg-left.png';
+import '../../images/img/product/productBin/product1.jpg';
+import '../../images/img/product/productBin/product1@2x.jpg';
+import '../../images/img/product/productBin/product2.jpg';
+import '../../images/img/product/productBin/product2@2x.jpg';
 import '../../images/svg/sprite.svg';
 import '../../images/svg/thanks_for_ordering.svg';
+import '../../images/svg/product/product-icon-close.svg';
+import '../../images/svg/product/icon-product-delivery.svg';
+import '../../images/svg/product/product-modal-button-close.svg';
+
 
 //==============blockHelp=================
 import '../../images/svg/blockHelp/arrow.svg';
@@ -93,8 +101,6 @@ import '../../images/svg/blockHelp/cross.svg';
 import '../../images/svg/blockHelp/helpChat.svg';
 import '../../images/svg/blockHelp/helpPhone.svg';
 import '../../images/svg/blockHelp/rectangleWhite.svg';
-
-
 
 //============inInstagram===========
 import '../../images/img/page-in-instagram/we-are-in-insta-01.jpg';
@@ -107,7 +113,6 @@ import '../../images/img/page-in-instagram/we-are-in-insta-04.jpg';
 import '../../images/img/page-in-instagram/we-are-in-insta-04@2x.jpg';
 import '../../images/img/page-in-instagram/we-are-in-insta-05.jpg';
 import '../../images/img/page-in-instagram/we-are-in-insta-05@2x.jpg';
-
 
 //===============payment===========================
 

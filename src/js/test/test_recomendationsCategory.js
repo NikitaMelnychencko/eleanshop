@@ -1,8 +1,15 @@
-import RecomendationsCategory from '../layout/product/recomendationsCategory.js';
-import cards from '../json/recomendationCategory.json';
+import RecomendationsCategory from '../layout/product/recomendationsCategory';
+import cards from '../json/catalog.json';
 
-const obj = new RecomendationsCategory({
-  root: 'main',
-  typeInsert: 'beforeEnd',
-  data: cards.filter((el, idx) => idx <= 3),
+const objRecomendationsCategory = new RecomendationsCategory({
+  // root: 'main',
+  // typeInsert: 'beforeEnd',
+  data: cards,
 });
+
+document
+  .querySelector('main')
+  .insertAdjacentHTML('beforeEnd', objRecomendationsCategory.getMarkup());
+
+// objRecomendationsCategory.getMarkup();
+objRecomendationsCategory.setSlider();
