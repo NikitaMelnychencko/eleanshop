@@ -1,8 +1,17 @@
 import refs from './refs/refs.js';
 import updateBin from './updateBin.js';
 updateBin();
+//======home======//
+import home from '../views/layouts/home.hbs';
+import { pageHeroSliderMarkup, heroSlider } from './layout/home/hero.js'
 
-function homeRender() {}
+function homeRender() {
+  const homeMarkup = home({ pageHeroSliderMarkup })
+  console.log(homeMarkup);
+  refs.mainEL.insertAdjacentHTML('beforeend', homeMarkup);
+  heroSlider()
+}
+homeRender();
 //=====brand========//
 function brandRender() {}
 //=====checkout========//
