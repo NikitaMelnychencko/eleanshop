@@ -11,7 +11,7 @@ import './js/layout/home/aboutTheBrand.js';
 import './js/layout/home/ourShowRoom.js';
 import './js/layout/home/registrationFormForFitting.js';
 import './js/layout/home/starClients.js';
-import './js/layout/home/inInstgram.js';
+import './js/layout/home/inInstagram.js';
 //catalog
 import './js/layout/сatalog/filter.js';
 import './js/layout/сatalog/gallery.js';
