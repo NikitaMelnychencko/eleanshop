@@ -1,62 +1,69 @@
-<div class='form-fitting-showroom'>
-  <svg class='form-fitting-showroom__icon'>
-    <use href='./images/exampl.svg#icon-bluze'></use>
+<div class='form-reviews'>
+  <svg class='form-reviews__icon'>
+    <use href='./images/exampl.svg#icon-ask-question-form'></use>
   </svg>
-  <h4 class='form-fitting-showroom__title'>Записаться на примерку в шоуруме</h4>
-  <form class='form-fitting-showroom__form' action='#' id='contactFormInputs'>
-    <div class='form-fitting-showroom__horiz-block'>
-      <label class='form-fitting-showroom__input-box'>
-        <span class='form-fitting-showroom__input-wrapper star-form'>
+  <h4 class='form-reviews__title'>Оставить отзыв</h4>
+  <form class='form-reviews__form' action='#' id='contactFormInputs'>
+    <div class='form-reviews__horiz-block'>
+      <label class='form-reviews__input-box'>
+        <span class='form-reviews__input-wrapper star-form'>
           <input
             type='text'
             name='name'
-            class='form-fitting-showroom__input'
+            class='form-reviews__input'
             minlength='2'
             required
             placeholder='Введите имя'
           />
         </span>
       </label>
-      <label class='form-fitting-showroom__input-box'>
-        <span class='form-fitting-showroom__input-wrapper star-form'>
+      <label class='form-reviews__input-box'>
+        <span class='form-reviews__input-wrapper star-form'>
           <input
             type='tel'
             name='tel'
-            class='form-fitting-showroom__input form-fitting-showroom__input-center'
+            class='form-reviews__input form-reviews__input-center'
             required
             pattern='[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}'
             placeholder='Введите телефон'
           />
         </span>
       </label>
-      <label class='form-fitting-showroom__input-box'>
-        <span class='form-fitting-showroom__input-wrapper'>
+      <label class='form-reviews__input-box'>
+        <span class='form-reviews__input-wrapper'>
           <input
             type='text'
-            name='date'
-            class='form-fitting-showroom__input'
+            name='email'
+            class='form-reviews__input'
             required
-            placeholder='Введите удобное время'
+            placeholder='Введите e-mail'
           />
         </span>
       </label>
     </div>
-    <div class='form-fitting-showroom__horiz-block'>
-      <label class='form-fitting-showroom__comment-box'>
+    <div class='form-reviews__horiz-block'>
+      <label class='form-reviews__comment-box'>
         <textarea
           type='text'
           name='comment'
-          class='form-fitting-showroom__comment'
+          class='form-reviews__comment'
           minlength='2'
           required
           placeholder='Добавить комментарий'
         ></textarea>
       </label>
-      <div class='form-fitting-showroom__button'>
-        <button class='form-fitting-showroom__send-btn-text' type='submit'>
-          Записаться
+      <div class='form-reviews__button'>
+        <button class='form-reviews__send-btn-text' type='submit'>
+          Отправить
         </button>
       </div>
+    </div>
+    <div>
+      <button class='form-reviews__button-add-photo'>
+        <svg class='form-reviews__icon'>
+          <use href='./images/exampl.svg#icon-form-reviews-add-photo'></use>
+        </svg>Добавить фотографию
+      </button>
     </div>
   </form>
 </div>
