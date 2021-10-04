@@ -9,7 +9,7 @@ li {
   justify-content: space-between;
   margin-bottom: 10px;
 }
-.fitting_first-row {
+.fitting__first-row {
   font-weight: 600;
   font-size: 15px;
   line-height: 1.2;
@@ -20,7 +20,7 @@ li {
 .fitting-row {
   border: 1px solid #cfd5e2;
 }
-.fitting_size {
+.fitting__size {
   font-size: 15px;
   line-height: 22px;
   letter-spacing: 0.05em;
@@ -55,20 +55,30 @@ li {
 
 /*   DESKTOP */
 
-@media screen and (min-width: 768px) {
-  .fitting_product-shipping--container {
+.fitting__product-shipping--container{
+  @media screen and (min-width: $mobile-first) {
+padding-left: 20px;
+padding-right: 20px;
+  }
+  @media screen and (min-width: $tablet-general) {
+  
     max-width: 669px;
     padding-left: 15px;
     padding-right: 15px;
-    margin-left: 1050px;
-  }
+    margin-left: 60%;
+}
+}
+@media screen and (min-width: 768px) {
+  
 
   .fitting__heading {
     text-align: center;
   }
-   .fitting__section {
+  .fitting__section {
     background: url('./images/elean47390.png') 0 0 /100% no-repeat;
-  } 
+    background-color: #e5e5e5;
+    overflow: hidden;
+  }
 
   .fitting__size-table {
     background-color: #f9f9f9;
@@ -77,6 +87,10 @@ li {
   .fitting__minor-title {
     margin-bottom: 35px;
     margin-top: 0;
+    
+        @media screen and (min-width: $mobile-first) and (max-width: $tablet-general) { 
+       margin-bottom: 30px;
+     } 
   }
   .fitting__description-item {
     padding: 15px;
