@@ -5,13 +5,14 @@
   text-align: center;
   letter-spacing: 0.1em;
   padding: 16px 88px 19px 88px;
+  cursor: pointer;
 }
 
 .button__checkout {
   @extend %button-pad;
   display: block;
   width: 100%;
-  background-color: $button-background-color;
+  background-color: $button-checkout-color;
   color: $selection-text-color;
 }
 
@@ -36,6 +37,105 @@
   }
 }
 
+.button-counter {
+  display: block;
+  padding: 10px;
+  width: 40px;
+  height: 40px;
+  border: 1px solid $primery-border-color;
+  color: $button-counter-color;
+  background-color: $selection-text-color;
+  font-family: $selection-font-family;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  &_active:hover,
+  &_active:focus {
+    color: $selection-text-color;
+    background-color: $button-counter-color;
+    border: none;
+  }
+
+  &__button-icon {
+    width: 15px;
+    height: 15px;
+  }
+}
+
+.product-button-modal {
+  width: 100%;
+  padding: 22px;
+  text-align: center;
+  background-color: $selection-text-color;
+  color: $secondary-text-color;
+  border: 1px solid $primery-border-color;
+  transition: $time-cubic;
+  cursor: pointer;
+
+  &:focus,
+  &:hover {
+    background-color: $secondary-text-color;
+    color: $selection-text-color;
+    border: none;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: $desktop-up) {
+    padding: 18px;
+    width: 330px;
+    &:not(:last-child) {
+      margin-bottom: 0;
+      margin-right: 14px;
+    }
+  }
+}
+
+.product-close-modal {
+  position: absolute;
+
+  right: 0;
+  padding: 14px;
+  border: none;
+  background-color: $primary-logo-color;
+  width: 40px;
+  height: 40px;
+  @media screen and (max-width: $mobile-only) {
+    top: 0;
+  }
+
+  &__button-text {
+    display: none;
+    @media screen and (min-width: $desktop-up) {
+      margin-right: 36px;
+      text-transform: uppercase;
+      display: inline;
+      color: $selection-text-color;
+    }
+  }
+
+  &__close-icon {
+    width: 12px;
+    height: 12px;
+    stroke: $btn-background-color;
+  }
+
+  @media screen and (min-width: $desktop-up) {
+    bottom: 100%;
+    padding: 6px 12px;
+    width: auto;
+
+    &_small {
+      bottom: calc(100% - 40px);
+      padding: 14px;
+      width: 40px;
+    }
+  }
+}
+
 .delivery-button {
   display: none;
   @media screen and (min-width: $desktop-up) {
@@ -44,6 +144,12 @@
     background-color: $third-text-color;
     border: none;
     color: $selection-text-color;
+
+    &:hover,
+    &:focus {
+      background-color: $selection-text-color;
+      color: $third-text-color;
+    }
   }
 }
 //home-reviews button
@@ -102,7 +208,7 @@
   width: 40px;
   height: 40px;
   background-color: transparent;
-  background-image: url(../images/arrow-up-circle-fill.svg);
+  background-image: url(./images/arrow-up-circle-fill.svg);
   background-repeat: no-repeat;
   background-size: contain;
   outline: none;
@@ -165,4 +271,20 @@
   line-height: 1.14;
   background-color: $modal-background-color;
   color: $input-text-color;
+}
+
+.ordering__btn--promocode {
+  padding: 13px 11px;
+  height: 50px;
+  border: none;
+
+  background-color: $btn-background-color;
+  font-family: $third-font-family, sans-serif;
+  font-size: 17px;
+  line-height: 1.35;
+  color: $btn-text-color;
+
+  @media screen and (min-width: $desktop-up) {
+    border-radius: 3px;
+  }
 }

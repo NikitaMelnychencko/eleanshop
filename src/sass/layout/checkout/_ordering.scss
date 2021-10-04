@@ -7,7 +7,7 @@
 
   @media screen and (min-width: $desktop-up) {
     padding-top: 70px;
-    padding-bottom: 40px;
+    padding-bottom: 327px;
   }
 }
 
@@ -364,7 +364,7 @@
   }
 
   &::placeholder {
-    font-family: $third-font-family;
+    font-family: $third-font-family,sans-serif;
     font-size: 12px;
     line-height: 2.08;
     font-weight: 500;
@@ -388,8 +388,9 @@
 //   }
 // }
 
+
 .ordering__discount {
-  font-family: $third-font-family;
+  font-family: $third-font-family,sans-serif;
   font-size: 18px;
   line-height: 2.08;
   font-weight: 500;
