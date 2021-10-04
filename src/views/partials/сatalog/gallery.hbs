@@ -1,15 +1,14 @@
 {{#each this}}
 
-  <div class='catalog-item {{seemore}}' id='{{id}}'>
-    <div class='catalog-card'>
-      <img class='card-image' srcset='{{image.srcset}}' src='{{image.src}}' alt='{{image.alt}}' />
-      <div class='card-content'>
-        <h2 class='card-name'>{{name}}</h2>
-        <svg class='icon-gallery-card-heart'><use href='{{icon}}'></use></svg>
-        <div class='card-price-descr'>
-          <p class='card-price'>{{price}}₽</p>
-          <p class='card-descr'>{{description}}</p>
-        </div></div>
-    </div>
+<div class='catalog-item {{seemore}}' id='{{id}}'>
+  <div class='catalog-card'>
+    <img class='card-image' srcset='{{image.srcset}}' src='{{image.src}}' alt='{{image.alt}}' />
+    <div class='card-content'>
+      <h2 class='card-name'>{{name}}</h2>
+      <svg class='icon-gallery-card-heart'><use href='{{icon}}'></use></svg>
+      <div class='card-price-descr'>
+        <p class='card-price'>{{productPrice}}₽</p>
+        <p class='card-descr'>{{description}}</p>
+      </div></div>
   </div>
 {{/each}}
