@@ -22,7 +22,9 @@
   position: relative;
   list-style: none;
   @media screen and (min-width: $desktop-up) {
-    margin: 0px 7px;
+    &+.video-set__item{
+      margin-left: 14px;
+    }
   }
 }
 
@@ -91,7 +93,7 @@
   }
 }
 .video-subtitle {
-  flex-grow: 1;
+  min-height: 60px;
 }
 
 .videoset .slick-dots {
