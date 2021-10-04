@@ -187,7 +187,7 @@ export default class ProductBin {
     this.counter = [...document.querySelectorAll('.product-bin__product-count')];
     this.deleteBtn = [...document.querySelectorAll('.product-bin__button-del')];
     this.buttonClose = document.querySelectorAll('.js-close-modal');
-    this.buttonNext = document.querySelector('.js-next');
+    this.buttonNext = document.querySelector('.js-next-bin');
     this.totalPrice = document.querySelector('.product-bin__total-price');
     this._onTotal();
     this._setEvent();

@@ -3,6 +3,7 @@ require('../../slick/slick.min.js');
 
 import RecomendationsCategory from './recomendationsCategory.js';
 import modalAddToCartMark from '../../../views/partials/product/productModalAddToCart.hbs';
+import { checkoutRender } from '../../call-list.js';
 
 export default class ProductModalAddToCart {
   constructor({ root, typeInsert = 'beforeEnd', productName, objectClose }) {
@@ -85,10 +86,14 @@ export default class ProductModalAddToCart {
   _onClickNext = () => {
     this._onCloseModal();
     // тут прописать открітие след. модалки
+    console.log('Next Step');
+    console.log(checkoutRender);
+    checkoutRender();
   };
 
   _setNextBtnEvent = () => {
-    this.buttonNext = document.querySelector('.js-next');
+    this.buttonNext = document.querySelector('.js-next-modal-to-cart');
+    console.log(this.buttonNext);
     if (this.buttonNext) {
       this.buttonNext.addEventListener('click', this._onClickNext);
     }
@@ -97,6 +102,7 @@ export default class ProductModalAddToCart {
   setEvent = () => {
     this._setCloseEvent();
     this._setNextBtnEvent();
+    this.objCatalog.setEvent('.product-modal-add-cart');
   };
 
   show = name => {
