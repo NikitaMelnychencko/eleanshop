@@ -8,6 +8,7 @@
     letter-spacing: 0.05em;
 
     color: $secondary-title-text-color;
+    margin-bottom: 55px;
 
     &::after {
       background: $favorites-after-color;
@@ -15,7 +16,12 @@
   }
 
   &__data {
-    display: flex;
+    &-item {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
 
     &::after {
       background: $favorites-after-color;
@@ -25,14 +31,22 @@
   &__image {
     width: 110px;
     height: 130px;
+    // margin-right: 13px;
   }
 
   &__info {
+    display: block;
     font-family: $primary-font-family;
     font-size: 15px;
     line-height: 20 / 15 * 100%;
 
     color: $favorites-info-color;
+    width: 200px;
+    // margin-right: 20px;
+  }
+
+  &__text {
+    margin-bottom: 10px;
   }
 
   &__description {
@@ -42,6 +56,7 @@
     background: $primary-background-color;
     border: 1px solid $favorites-description-color;
     box-sizing: border-box;
+    // margin-right: 15px;
   }
 
   &__button-buy {
@@ -53,12 +68,12 @@
     text-align: center;
     letter-spacing: 0.1em;
 
+    background: $menu-background-color;
     color: $selection-text-color;
 
     width: 198px;
     height: 40px;
-
-    background: $menu-background-color;
+    margin-bottom: 12px;
   }
 
   &__button-delete {

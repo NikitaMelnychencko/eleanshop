@@ -1,20 +1,25 @@
 import markupTempl from '../../../views/layouts/favorites.hbs';
 
 class Favorites {
-  constructor({ selector, place, data }) {
-    this.place = document.querySelector(selector);
-    this.place = place;
-    this.markcup = markupTempl(data);
-    this.data = { fav: [] };
-    this.data['fav'] = [...data];
-    localStorage.setItem('favorites', JSON.stringify(this.data));
+  constructor() {
+    this.data = localStorage.getItem('favorites');
+    console.log(`~ data`, this.data);
+    if (this.data !== null) {
+      this.data = JSON.parse(this.data);
+      console.log(`~ data`, this.data);
+      this.markcup = markupTempl(this.data['fav']);
+    }
   }
 
   init() {
-    dataRef = document.querySelector('.favorites__data');
-    sendEMailRef = document.querySelector('.favorites__sand-on-email--button');
-    dataRef.addEventListener('click', onButtonsClick);
-    sendEMailRef.addEventListener('click', onButtonSendEMailClick);
+    let dataRef = document.querySelector('.favorites__data');
+    if (dataRef !== null) {
+      dataRef.addEventListener('click', this.onButtonsClick);
+    }
+    let sendEMailRef = document.querySelector('.favorites__sand-on-email--button');
+    if (sendEMailRef !== null) {
+      sendEMailRef.addEventListener('click', this.onButtonSendEMailClick);
+    }
   }
 
   onButtonsClick(event) {
@@ -45,6 +50,7 @@ class Favorites {
       elem.sizeSelected = this.data['fav'][i].size;
       elem.colorSelected = this.data['fav'][i].color;
       elem.circleSelected = '';
+      elem.description = '';
       elem.count = 1;
 
       dataBin = localStorage.getItem('orderingData');

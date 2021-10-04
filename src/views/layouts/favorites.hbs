@@ -3,15 +3,16 @@
         <h2 class="favorites__title">ИЗБРАННОЕ</h2>
         <ul class="favorites__data">
             {{#each this}}
-            <li id="{{id}}">
+            <li class="favorites__data-item" id="{{id}}">
                 <picture>
                     <source srcset='{{image.srcset}}' media='(min-width: 1920px)' />
                     <source srcset='{{image.srcset-mobile}}' media='(max-width: 414px)' />
                     <img class='favorites__image' src='{{image.src}}' alt='{{image.alt}}' />
                 </picture>
-                <div>
-                    <p class="favorites__info">{{name}}</p>
-                    <p class="favorites__info">{{price}}</p>
+                <div class="favorites__info">
+                    <p class="favorites__text">{{name}}</p>
+                    <p class="favorites__text">Размер {{size}}</p>
+                    <p>{{price}} грн</p>
                 </div>
                 <textarea class='favorites__description' name="{{id}}" cols="30" rows="10" placeholder="ДОБАВИТЬ КОММЕНТАРИЙ"></textarea>
                 <div>

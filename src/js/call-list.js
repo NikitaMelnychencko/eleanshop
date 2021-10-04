@@ -1,5 +1,6 @@
 import refs from './refs/refs.js';
 import updateBin from './updateBin.js';
+
 updateBin();
 
 //======home======//
@@ -30,7 +31,7 @@ function homeRender() {
 }
 homeRender();
 //=====brand========//
-function brandRender() { }
+function brandRender() {}
 
 //=====checkout========//
 import { ModalData, createPayment } from './layout/checkout/payment';
@@ -53,13 +54,26 @@ export function checkoutRender() {
 }
 // checkoutRender();
 //=====contact========//
-function contactRender() { }
+function contactRender() {}
 //=====delivery========//
-function deliveryRender() { }
+function deliveryRender() {}
 //=====favorites========//
-function favoritesRender() { }
+import Favorites from './layout/favorites/favorites.js';
+import favorit from './json/favorites.json';
+
+export function favoritesRender() {
+  let data = {};
+  data['fav'] = [...favorit];
+  localStorage.setItem('favorites', JSON.stringify(data));
+
+  const favorites = new Favorites();
+
+  refs.mainEL.innerHTML = favorites.markcup;
+  console.log(`~ refs.mainEL`, refs.mainEL);
+  favorites.init();
+}
 //=====fitting========//
-function fittingRender() { }
+function fittingRender() {}
 //=====product========//
 import ProductModalAddToCart from './layout/product/productModalAddToCart.js';
 import RecomendationsCategory from './layout/product/recomendationsCategory.js';
@@ -110,6 +124,6 @@ function productRender() {
 
 productRender();
 //=====reviews========//
-function reviewsRender() { }
+function reviewsRender() {}
 //=====showroom========//
-function showroomRender() { }
+function showroomRender() {}
