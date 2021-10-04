@@ -1,4 +1,4 @@
-%button-pad{
+%button-pad {
   font-weight: 500;
   font-size: 15px;
   line-height: 1.2;
@@ -7,13 +7,12 @@
   padding: 16px 88px 19px 88px;
 }
 
-.button__checkout{
+.button__checkout {
   @extend %button-pad;
   display: block;
   width: 100%;
-  background-color:$button-background-color ;
+  background-color: $button-background-color;
   color: $selection-text-color;
-
 }
 
 .button-add-likes {
@@ -45,7 +44,8 @@
     background-color: $third-text-color;
     border: none;
     color: $selection-text-color;
-  }}
+  }
+}
 //home-reviews button
 //home-review button placeholder styles
 %button-line {
@@ -112,8 +112,57 @@
   @media screen and (min-width: $desktop-up) {
     bottom: 0px;
     right: 470px;
+  }
+}
 
+.ordering__btn--promocode {
+  padding: 13px 29px;
+  height: 50px;
+  border: none;
 
+  background-color: $btn-background-color;
+  font-family: $selection-font-family;
+  font-size: 17px;
+  line-height: 1.35;
+  color: $btn-text-color;
+
+  @media screen and (min-width: $desktop-up) {
+    border-radius: 3px;
+  }
+}
+
+.ordering__button--close {
+  width: 40px;
+  height: 40px;
+  background-color: $modal-background-color;
+
+  @media screen and (min-width: $mobile-first) and (max-width: $tablet-only) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: 0;
+    border: 1px solid $primary-border-color;
+    fill: $primary-border-color;
   }
 
+  @media screen and (min-width: $desktop-up) {
+    border: 0;
+    fill: $input-text-color;
+  }
+}
+
+.ordering__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  border: 1px solid $secondary-border-color;
+
+  font-size: 20px;
+  font-family: $primary-font-family;
+  line-height: 1.14;
+  background-color: $modal-background-color;
+  color: $input-text-color;
 }

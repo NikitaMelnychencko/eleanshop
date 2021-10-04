@@ -14,7 +14,7 @@
 .ordering__title {
   border-bottom: 1px solid $border-color;
 
-  font-family: $primary-font-family;
+  font-family: $selection-font-family;
   font-size: 21px;
   line-height: 0.95;
   letter-spacing: 0, 05em;
@@ -135,7 +135,7 @@
   padding-left: 9px;
   padding-right: 9px;
   color: $input-text-color;
-  font-family: $third-font-family, sans-serif;
+  font-family: $selection-font-family, sans-serif;
   font-size: 17px;
   line-height: 1.35;
 }
@@ -191,10 +191,9 @@
   padding-right: 9px;
 
   color: $input-text-color;
-  font-family: $primary-font-family;
+  font-family: $selection-font-family;
   font-size: 17px;
   line-height: 1.35;
-  font-family: $third-font-family, sans-serif;
 
   @media screen and (min-width: $mobile-first) {
     width: 121px;
@@ -242,7 +241,8 @@
 }
 
 .ordering__price {
-  font-family: $primary-font-family;
+  font-family: $third-font-family;
+  font-weight: 500;
   font-size: 18px;
   line-height: 1.27;
 
@@ -363,7 +363,7 @@
   }
 
   &::placeholder {
-    font-family: $primary-font-family;
+    font-family: $third-font-family;
     font-size: 12px;
     line-height: 2.08;
     font-weight: 500;
@@ -377,7 +377,7 @@
   border: none;
 
   background-color: $btn-background-color;
-  font-family: $primary-font-family;
+  font-family: $selection-font-family;
   font-size: 17px;
   line-height: 1.35;
   color: $btn-text-color;
@@ -388,7 +388,7 @@
 }
 
 .ordering__discount {
-  font-family: $primary-font-family;
+  font-family: $third-font-family;
   font-size: 18px;
   line-height: 2.08;
   font-weight: 500;
@@ -407,7 +407,7 @@
 
 .ordering__totalprice {
   margin-right: 5px;
-  font-family: $primary-font-family;
+  font-family: $third-font-family;
   font-size: 18px;
   line-height: 1.11;
   font-weight: 500;
@@ -419,7 +419,7 @@
 }
 
 .ordering__total {
-  font-family: $primary-font-family;
+  font-family: $third-font-family;
   font-size: 18px;
   line-height: 1.11;
   font-weight: 500;
