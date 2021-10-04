@@ -1,8 +1,8 @@
 import { stringify } from 'postcss';
 import refs from '../../refs/refs.js';
+import collection from '../../json/linkingPagesFooter/linkingPagesOnClick.json';
 import { scrollTo } from '../../components/blockHelp/blockHelp';
 import { productRender, contactRender, deliveryRender, favoritesRender, showroomRender } from '../../call-list';
-
 
 const {
     closeOpenPlus,
@@ -22,6 +22,14 @@ checkBoxIcon.addEventListener('click', onAgreeCheckBox)
 mobileSubmitBtn.addEventListener('submit', onSubmitBtnMobile)
 desktopSubmitBtn.addEventListener('submit', onSubmitBtnDesktop)
 
+
+
+collection.forEach((el, index) => {
+    console.log(el)
+
+});
+
+
 //===включение плавной прокрутки на  desktop
 desktop.forEach((evt) => {
 
@@ -37,11 +45,7 @@ desktop.forEach((evt) => {
 //=== Прослушивание меню Footer__Desktop по id и запись в LockalStorage===//
 linkMenuFooterDesktop.forEach((evt) => {
     const idlinkDesktop = evt.id
-    console.log(evt.id)
-
     evt.addEventListener('click', (el) => {
-        const selected = el.target;
-        console.log(selected)
         if (selected) {
             localStorage.setItem(idlinkDesktop, selected)
         }

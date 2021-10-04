@@ -1,10 +1,12 @@
-{
-    "colection": {
-        "id": [
-            "catalog-autumn-winter"
-        ],
-        "call": [
-            "catalog-autumn-winte"
-        ]
+[
+    {
+        "colection": {
+            "id": [
+                "catalog-autumn-winter"
+            ],
+            "call": [
+                "catalog-autumn-winte"
+            ]
+        }
     }
-}
+]
