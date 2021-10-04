@@ -1,11 +1,9 @@
-import blockHelp_blockHelpTemplate from '../../../views/components/blockHelp.hbs';
-
 import refs from '../../refs/refs';
 
 const { mainEL } = refs;
 
-mainEL.insertAdjacentHTML('beforeend', blockHelp_blockHelpTemplate());
 
+export function blockHelpRenderOpen(){
 //variables
 //help buttons
 const helpButtonChat = document.querySelector('.button-chat');
@@ -258,4 +256,5 @@ function scrollTo(to, duration = 700) {
       }
     };
   animateScroll();
+}
 }

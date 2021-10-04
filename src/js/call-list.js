@@ -27,10 +27,12 @@ function homeRender() {
   starClientsSlider();
   starClientsComments();
   instagramSlider();
+  blockHelpRender()
 }
 homeRender();
 //=====brand========//
-function brandRender() {}
+function brandRender() {
+}
 
 //=====checkout========//
 import { ModalData, createPayment } from './layout/checkout/payment.js';
@@ -51,16 +53,20 @@ export function checkoutRender() {
     idInput: 'js-day',
     idList: 'day-list',
   });
+  blockHelpRender()
 }
-// checkoutRender();
 //=====contact========//
-function contactRender() {}
+function contactRender() {
+}
 //=====delivery========//
-function deliveryRender() {}
+function deliveryRender() {
+}
 //=====favorites========//
-function favoritesRender() {}
+function favoritesRender() {
+}
 //=====fitting========//
-function fittingRender() {}
+function fittingRender() {
+}
 //=====product========//
 import ProductModalAddToCart from './layout/product/productModalAddToCart.js';
 import RecomendationsCategory from './layout/product/recomendationsCategory.js';
@@ -111,6 +117,16 @@ function productRender() {
 
 productRender();
 //=====reviews========//
-function reviewsRender() {}
+function reviewsRender() {
+}
 //=====showroom========//
-function showroomRender() {}
+function showroomRender() { 
+}
+
+//=====blockHelp========//
+import blockHelp_blockHelpTemplate from '../views/components/blockHelp.hbs';
+import {blockHelpRenderOpen} from './components/blockHelp/blockHelp.js'
+function blockHelpRender() {
+  refs.mainEL.insertAdjacentHTML('beforeend', blockHelp_blockHelpTemplate());
+  blockHelpRenderOpen()
+}
