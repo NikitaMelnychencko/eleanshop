@@ -19,20 +19,27 @@ export function videosetSlickSettings() {
   $(document).ready(function () {
     $('.videoset').slick({
       infinite: true,
+      centerMode: true,
       slidesToShow: 1,
       slidesToScroll: 1,
       arrows: false,
       mobileFirst: true,
       dots: true,
+      // centerPadding: '40px',
+      // variableWidth: true,
+      lazyLoad: 'progressive',
+      variableWidth: true,
       responsive: [
         {
           breakpoint: 1377,
           settings: {
             slidesToShow: 4,
-            centerPadding: '40px',
+            // centerPadding: '40px',
             infinite: false,
             dots: false,
             infinite: false,
+            centerMode: false,
+            variableWidth: false,
           },
         },
       ],
