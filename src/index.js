@@ -1,16 +1,17 @@
 import './sass/main.scss';
 import './js/importImages/importImages.js';
 import './js/call-list.js';
+import './js/updateBin.js';
 //=========layout===============
 
 //main
-import './js/layout/home/hero.js'
-import './js/layout/home/content.js'
-import './js/layout/home/aboutTheBrand.js'
-import './js/layout/home/ourShowRoom.js'
-import './js/layout/home/registrationFormForFitting.js'
-import './js/layout/home/starClients.js'
-import './js/layout/home/inInstgram.js'
+import './js/layout/home/hero.js';
+import './js/layout/home/content.js';
+import './js/layout/home/aboutTheBrand.js';
+import './js/layout/home/ourShowRoom.js';
+import './js/layout/home/registrationFormForFitting.js';
+import './js/layout/home/starClients.js';
+import './js/layout/home/inInstagram.js';
 //catalog
 import './js/layout/сatalog/filter.js';
 import './js/layout/сatalog/gallery.js';
@@ -66,3 +67,5 @@ import './js/components/blockHelp/blockHelp';
 //static
 import './js/layout/static/header.js';
 import './js/layout/static/footer.js';
+//update viewport
+import './js/updateViewport/updateViewport';

@@ -1,15 +1,15 @@
-import RecomendationsCategory from '../layout/product/recomendationsCategory';
-import cards from '../json/catalog.json';
+// import RecomendationsCategory from '../layout/product/recomendationsCategory';
+// import cards from '../json/catalog.json';
 
-const objRecomendationsCategory = new RecomendationsCategory({
-  // root: 'main',
-  // typeInsert: 'beforeEnd',
-  data: cards,
-});
+// const objRecomendationsCategory = new RecomendationsCategory({
+//   // root: 'main',
+//   // typeInsert: 'beforeEnd',
+//   data: cards,
+// });
 
-document
-  .querySelector('main')
-  .insertAdjacentHTML('beforeEnd', objRecomendationsCategory.getMarkup());
+// document
+//   .querySelector('main')
+//   .insertAdjacentHTML('beforeEnd', objRecomendationsCategory.getMarkup());
 
-// objRecomendationsCategory.getMarkup();
-objRecomendationsCategory.setSlider();
+// // objRecomendationsCategory.getMarkup();
+// objRecomendationsCategory.setSlider();
