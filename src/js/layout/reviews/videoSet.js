@@ -45,6 +45,9 @@ export function videosetSlickSettings() {
       ],
     });
   });
+}
+
+export function videoSetPlayer() {
   const reviewsRefs = {
     play: document.querySelectorAll('.video-set-svg'),
     video: document.querySelectorAll('.video-set__image'),

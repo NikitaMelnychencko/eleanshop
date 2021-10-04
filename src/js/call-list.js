@@ -28,7 +28,7 @@ function homeRender() {
   starClientsComments();
   instagramSlider();
 }
-// homeRender(); //========================================================call
+homeRender(); //========================================================call
 //=====brand========//
 import brand_page from '../views/layouts/brand.hbs';
 import {
@@ -140,12 +140,17 @@ function productRender() {
   objProductModalAddToCart.show('ЖАКЕТ-СМОКИНГ С ЛАЦКАНМИ'); // show modal window - call the listener on the button
 }
 
-// productRender(); //========================================================call
+productRender(); //========================================================call
 
 //=====reviews========//
 import reviews_page from '../views/layouts/reviews.hbs';
 import { formReviews, formReviewsMarkUp } from './layout/reviews/registrationFormForFitting.js';
-import { setVideoHbs, clientStar, videosetSlickSettings } from './layout/reviews/videoSet.js';
+import {
+  setVideoHbs,
+  clientStar,
+  videosetSlickSettings,
+  videoSetPlayer,
+} from './layout/reviews/videoSet.js';
 
 function reviewsRender() {
   const reviewsMarkUp = reviews_page({ setVideoHbs, clientStar, formReviewsMarkUp });
@@ -154,9 +159,10 @@ function reviewsRender() {
   starClientsSlider();
   starClientsComments();
   formReviews();
+  videoSetPlayer();
 }
 
-reviewsRender(); //========================================================call
+// reviewsRender(); //========================================================call
 
 //=====showroom========//
 import showroom_page from '../views/layouts/showroom.hbs';
