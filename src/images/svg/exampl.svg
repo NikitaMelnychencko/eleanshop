@@ -251,6 +251,12 @@
 <path d="M0 14.545h32v2.909h-32v-2.909z"></path>
 <path d="M14.545 32v-32h2.909v32h-2.909z"></path>
 </symbol>
+<symbol id="icon-play-video" viewBox="0 0 32 32">
+<path fill="#fff" style="fill: var(--color1, #fff)" d="M32 16c0 8.837-7.163 16-16 16s-16-7.163-16-16c0-8.837 7.163-16 16-16s16 7.163 16 16z"></path>
+<path fill="#000" style="fill: var(--color2, #000)" d="M22.918 15.67c0.213-0.13 0.213-0.44 0-0.571l-10.101-6.173c-0.223-0.136-0.509 0.024-0.509 0.285v12.346c0 0.261 0.286 0.421 0.509 0.285l10.101-6.173z"></path>
+</symbol>
 </defs>
     </defs>
 </svg>
+
+
