@@ -95,7 +95,6 @@ export default class ProductBin {
   };
 
   _onTotal = () => {
-    console.log(this.data);
     const n = this.data.reduce((total, el) => {
       return (total += Number(el.label.price) * Number(el.label.count));
     }, 0);

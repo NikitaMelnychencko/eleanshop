@@ -125,12 +125,24 @@ export default class RecomendationsCategory {
     }
   };
 
+  _removeFromFavorite = (id, dataId) => {
+    let ls = JSON.parse(localStorage.getItem('favorites'));
+    const lsid = ls.fav.findIndex(el => el.id === id);
+    ls.fav.splice(lsid, 1);
+    localStorage.setItem('favorites', JSON.stringify(ls));
+  };
+
   _onClickLike = el => {
     const id = el.currentTarget.dataset.id;
     const dataId = this.data.findIndex(el => el.id === id);
-    this.data[dataId].likes = true;
-    this._insertIntoLSFavorite(id, dataId);
-    el.currentTarget.classList.add('active');
+    if (this.data[dataId].likes) {
+      this.data[dataId].likes = false;
+      this._removeFromFavorite(id, dataId);
+    } else {
+      this.data[dataId].likes = true;
+      this._insertIntoLSFavorite(id, dataId);
+    }
+    el.currentTarget.classList.toggle('active');
   };
 
   setEvent = selector => {
