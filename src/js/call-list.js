@@ -2,15 +2,43 @@ import refs from './refs/refs.js';
 import updateBin from './updateBin.js';
 updateBin();
 
-function homeRender() {}
+//======home======//
+import home from '../views/layouts/home.hbs';
+import { pageHeroSliderMarkup, heroSlider } from './layout/home/hero.js';
+import { pageShowroomSliderMarkup, showroomSlider } from './layout/home/ourShowRoom.js';
+import {
+  pageStarClientsSliderMarkup,
+  starClientsSlider,
+  starClientsComments,
+} from './layout/home/starClients.js';
+import { pageInInstagramSliderMarkup, instagramSlider } from './layout/home/inInstagram.js';
+
+function homeRender() {
+  const homeMarkup = home({
+    pageHeroSliderMarkup,
+    pageShowroomSliderMarkup,
+    pageStarClientsSliderMarkup,
+    pageInInstagramSliderMarkup,
+  });
+
+  refs.mainEL.insertAdjacentHTML('beforeend', homeMarkup);
+  heroSlider();
+  showroomSlider();
+  starClientsSlider();
+  starClientsComments();
+  instagramSlider();
+}
+homeRender();
 //=====brand========//
 function brandRender() {}
+
 //=====checkout========//
 import { ModalData, createPayment } from './layout/checkout/payment';
 import { ordering, openOrderingFunction } from './layout/checkout/ordering';
 import payment_checkout from '../views/layouts/checkout.hbs';
 export function checkoutRender() {
   updateBin();
+  refs.mainEL.innerHTML = '';
   const createCheckout = payment_checkout({ createPayment, ordering });
   refs.mainEL.insertAdjacentHTML('beforeend', createCheckout);
   openOrderingFunction();
