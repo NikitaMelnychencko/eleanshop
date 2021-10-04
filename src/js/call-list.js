@@ -53,9 +53,9 @@ export function checkoutRender() {
 }
 // checkoutRender();
 //=====contact========//
-function contactRender() { }
+export function contactRender() { }
 //=====delivery========//
-function deliveryRender() { }
+export function deliveryRender() { }
 //=====favorites========//
 function favoritesRender() { }
 //=====fitting========//
@@ -112,4 +112,4 @@ productRender();
 //=====reviews========//
 function reviewsRender() { }
 //=====showroom========//
-function showroomRender() { }
+export function showroomRender() { }

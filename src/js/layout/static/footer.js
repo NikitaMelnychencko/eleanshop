@@ -1,7 +1,7 @@
 import { stringify } from 'postcss';
 import refs from '../../refs/refs.js';
 import { scrollTo } from '../../components/blockHelp/blockHelp';
-
+import { productRender, contactRender, deliveryRender, favoritesRender, showroomRender } from '../../call-list';
 
 
 const {
@@ -16,17 +16,35 @@ const {
     mobileSubmitBtn,
     desktopSubmitBtn,
     testIdInput,
-    desktop } = refs
+    desktop,
+    linkMenuFooterDesktop } = refs
 checkBoxIcon.addEventListener('click', onAgreeCheckBox)
 mobileSubmitBtn.addEventListener('submit', onSubmitBtnMobile)
 desktopSubmitBtn.addEventListener('submit', onSubmitBtnDesktop)
 
 //===включение плавной прокрутки на  desktop
 desktop.forEach((evt) => {
-    console.log(evt)
+
     evt.addEventListener('click', (el) => {
         scrollTo(0, 700);
+        if (el.target) {
+
+        }
         console.log(el.target)
+    });
+});
+
+//=== Прослушивание меню Footer__Desktop по id и запись в LockalStorage===//
+linkMenuFooterDesktop.forEach((evt) => {
+    const idlinkDesktop = evt.id
+    console.log(evt.id)
+
+    evt.addEventListener('click', (el) => {
+        const selected = el.target;
+        console.log(selected)
+        if (selected) {
+            localStorage.setItem(idlinkDesktop, selected)
+        }
     });
 });
 
@@ -85,15 +103,15 @@ function onAgreeCheckBox(evt) {
 
 // Назначение localStorage на input mobile
 inputStorageMobile.forEach((evt) => {
-    const idInputMobile = evt.id
+
     evt.addEventListener('input', (el) => {
         const subscribe = el.currentTarget.value;
-        console.log(subscribe)
         if (subscribe) {
             localStorage.setItem(idInputMobile, subscribe)
         }
     });
 });
+
 
 // Назначение localStorage на input desktop
 inputStorageDesktop.forEach((evt) => {
@@ -123,6 +141,9 @@ function onSubmitBtnDesktop(evt) {
     localStorage.removeItem('email');
 
 }
+
+//=== localStorage menu footer ===//
+
 
 
 
