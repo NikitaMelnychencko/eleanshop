@@ -39,11 +39,11 @@
     <div class='basic-information' role='group'>
       <h3 class='basic-information__title'>ОСНОВНАЯ ИНФОРМАЦИЯ</h3>
       <label class="basic-information__field">
-        <input type='text' name='name' required minlength='2' placeholder='ВВЕДИТЕ ФИО'/>
+        <input type='text' name='name'  minlength='2' placeholder='ВВЕДИТЕ ФИО' minlength="2" required/>
       </label>
       <label class="basic-information__field">
         <input
-          type='text'
+          type="tel"
           name='tel'
           required
           pattern='[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}'
@@ -52,7 +52,7 @@
         />
       </label>
       <label class="basic-information__field">
-        <input type='text' name='email' required placeholder='ВВЕДИТЕ E-MAIL' />
+        <input type='email' name='email' required placeholder='ВВЕДИТЕ E-MAIL' required/>
       </label>
       <label class="basic-information__field">
         <textarea name='feedback' placeholder='ДОБАВИТЬ КОММЕНТАРИЙ'></textarea>

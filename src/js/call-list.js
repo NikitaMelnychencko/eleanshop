@@ -35,7 +35,7 @@ function brandRender() {}
 //=====checkout========//
 import { ModalData, createPayment } from './layout/checkout/payment.js';
 import { ordering, openOrderingFunction } from './layout/checkout/ordering.js';
-import {backdropMarkup,buttonOpen } from './layout/checkout/thanksForOrdering.js';
+import {backdropMarkup} from './layout/checkout/thanksForOrdering.js';
 import payment_checkout from '../views/layouts/checkout.hbs';
 export function checkoutRender() {
   updateBin();
@@ -51,7 +51,6 @@ export function checkoutRender() {
     idInput: 'js-day',
     idList: 'day-list',
   });
-  buttonOpen()
 }
 // checkoutRender();
 //=====contact========//
