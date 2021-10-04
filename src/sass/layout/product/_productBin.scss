@@ -3,13 +3,13 @@
   top: 0;
   right: 0;
   z-index: 999;
-  width: 384px;
+  max-width: 384px;
+  width: 100%;
   height: auto;
   max-height: calc(100vh - 50px);
   padding: 46px 20px 50px;
   background-color: $selection-text-color;
   overflow: scroll;
-  // transform: translateY(150%);
   transition: $time-cubic;
 
   &.hidden {
@@ -18,7 +18,7 @@
   }
 
   @media screen and (min-width: $desktop-up) {
-    width: 640px;
+    max-width: 640px;
     padding: 46px 46px 50px;
   }
 
