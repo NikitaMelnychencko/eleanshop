@@ -1,0 +1,62 @@
+<div class='form-fitting-showroom'>
+  <svg class='form-fitting-showroom__icon'>
+    <use href='./images/exampl.svg#icon-bluze'></use>
+  </svg>
+  <h4 class='form-fitting-showroom__title'>Записаться на примерку в шоуруме</h4>
+  <form class='form-fitting-showroom__form' action='#' id='contactFormInputs'>
+    <div class='form-fitting-showroom__horiz-block'>
+      <label class='form-fitting-showroom__input-box'>
+        <span class='form-fitting-showroom__input-wrapper star-form'>
+          <input
+            type='text'
+            name='name'
+            class='form-fitting-showroom__input'
+            minlength='2'
+            required
+            placeholder='Введите имя'
+          />
+        </span>
+      </label>
+      <label class='form-fitting-showroom__input-box'>
+        <span class='form-fitting-showroom__input-wrapper star-form'>
+          <input
+            type='tel'
+            name='tel'
+            class='form-fitting-showroom__input form-fitting-showroom__input-center'
+            required
+            pattern='[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}'
+            placeholder='Введите телефон'
+          />
+        </span>
+      </label>
+      <label class='form-fitting-showroom__input-box'>
+        <span class='form-fitting-showroom__input-wrapper'>
+          <input
+            type='text'
+            name='date'
+            class='form-fitting-showroom__input'
+            required
+            placeholder='Введите удобное время'
+          />
+        </span>
+      </label>
+    </div>
+    <div class='form-fitting-showroom__horiz-block'>
+      <label class='form-fitting-showroom__comment-box'>
+        <textarea
+          type='text'
+          name='comment'
+          class='form-fitting-showroom__comment'
+          minlength='2'
+          required
+          placeholder='Добавить комментарий'
+        ></textarea>
+      </label>
+      <div class='form-fitting-showroom__button'>
+        <button class='form-fitting-showroom__send-btn-text' type='submit'>
+          Записаться
+        </button>
+      </div>
+    </div>
+  </form>
+</div>

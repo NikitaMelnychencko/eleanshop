@@ -15,7 +15,9 @@
   @media screen and (max-width: $mobile-only) {
   }
 }
-
+.header-container{
+  position: relative;
+}
 .head {
   display: flex;
   justify-content: space-between;
