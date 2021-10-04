@@ -68,3 +68,5 @@ import './js/components/blockHelp/blockHelp';
 //static
 import './js/layout/static/header.js';
 import './js/layout/static/footer.js';
+//update viewport
+import './js/updateViewport/updateViewport';
