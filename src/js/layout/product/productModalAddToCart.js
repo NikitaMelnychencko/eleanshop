@@ -12,7 +12,6 @@ export default class ProductModalAddToCart {
     this.objCatalog = new RecomendationsCategory({ countsCard: 3, buttonPagination: false });
     this.objectClose = objectClose;
     if (root) {
-      console.log(root);
       this.root = document.querySelector(root);
       this._addMarkup();
       this.self = document.querySelector('.product-modal-add-cart');
@@ -45,7 +44,6 @@ export default class ProductModalAddToCart {
   };
 
   _addSlider = () => {
-    console.log($('.product-modal-add-cart .slider'));
     $('.product-modal-add-cart .slider').slick({
       arrows: false,
       dots: this.buttonPagination,
@@ -86,14 +84,11 @@ export default class ProductModalAddToCart {
   _onClickNext = () => {
     this._onCloseModal();
     // тут прописать открітие след. модалки
-    console.log('Next Step');
-    console.log(checkoutRender);
     checkoutRender();
   };
 
   _setNextBtnEvent = () => {
     this.buttonNext = document.querySelector('.js-next-modal-to-cart');
-    console.log(this.buttonNext);
     if (this.buttonNext) {
       this.buttonNext.addEventListener('click', this._onClickNext);
     }
