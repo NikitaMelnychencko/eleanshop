@@ -225,20 +225,20 @@
   border: 0;
 }
 
-.ordering__btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 40px;
-  width: 40px;
-  border: 1px solid $secondary-border-color;
+// .ordering__btn {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   height: 40px;
+//   width: 40px;
+//   border: 1px solid $secondary-border-color;
 
-  font-size: 20px;
-  font-family: $primary-font-family;
-  line-height: 1.14;
-  background-color: $modal-background-color;
-  color: $input-text-color;
-}
+//   font-size: 20px;
+//   font-family: $primary-font-family;
+//   line-height: 1.14;
+//   background-color: $modal-background-color;
+//   color: $input-text-color;
+// }
 
 .ordering__price {
   font-family: $third-font-family;
@@ -276,27 +276,28 @@
   content: '\20B4';
   margin-left: 5px;
 }
-.ordering__button--close {
-  width: 40px;
-  height: 40px;
 
-  background-color: $modal-background-color;
+// .ordering__button--close {
+//   width: 40px;
+//   height: 40px;
 
-  @media screen and (min-width: $mobile-first) and (max-width: $tablet-only) {
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: 0;
-    border: 1px solid $primary-border-color;
-    fill: $primary-border-color;
-  }
+//   background-color: $modal-background-color;
 
-  @media screen and (min-width: $desktop-up) {
-    border: 0;
-    fill: $input-text-color;
-  }
-}
+//   @media screen and (min-width: $mobile-first) and (max-width: $tablet-only) {
+//     position: absolute;
+//     top: 0;
+//     right: 0;
+//     margin-left: auto;
+//     margin-right: 0;
+//     border: 1px solid $primary-border-color;
+//     fill: $primary-border-color;
+//   }
+
+//   @media screen and (min-width: $desktop-up) {
+//     border: 0;
+//     fill: $input-text-color;
+//   }
+// }
 
 .ordering__box {
   flex: 1;
@@ -371,21 +372,21 @@
   }
 }
 
-.ordering__btn--promocode {
-  padding: 13px 29px;
-  height: 50px;
-  border: none;
+// .ordering__btn--promocode {
+//   padding: 13px 29px;
+//   height: 50px;
+//   border: none;
 
-  background-color: $btn-background-color;
-  font-family: $selection-font-family;
-  font-size: 17px;
-  line-height: 1.35;
-  color: $btn-text-color;
+//   background-color: $btn-background-color;
+//   font-family: $selection-font-family;
+//   font-size: 17px;
+//   line-height: 1.35;
+//   color: $btn-text-color;
 
-  @media screen and (min-width: $desktop-up) {
-    border-radius: 3px;
-  }
-}
+//   @media screen and (min-width: $desktop-up) {
+//     border-radius: 3px;
+//   }
+// }
 
 .ordering__discount {
   font-family: $third-font-family;
