@@ -172,19 +172,6 @@
   }
 }
 
-//==================form-box
-.reviews-formReviews-box {
-  border: 1px dashed $form-dashed-color;
-  box-sizing: border-box;
-}
-
-.reviews-section-form {
-  padding-bottom: 30px;
-  @media screen and (min-width: $desktop-up) {
-    padding-bottom: 120px;
-  }
-}
-
 .video-set-fullscreen {
   display: none;
   fill: $hero-slider-dots;

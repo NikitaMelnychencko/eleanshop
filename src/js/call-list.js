@@ -50,7 +50,7 @@ export function brandRender() {
   formFittingInShowroom();
   infoAboutBrand();
 }
-// brandRender(); //========================================================call
+brandRender(); //========================================================call
 
 //=====checkout========//
 import { ModalData, createPayment } from './layout/checkout/payment';
@@ -71,7 +71,7 @@ export function checkoutRender() {
     idList: 'day-list',
   });
 }
-// checkoutRender(); //========================================================call
+checkoutRender(); //========================================================call
 
 //=====contact========//
 
@@ -83,7 +83,7 @@ export function contactRender() {
   refs.mainEL.insertAdjacentHTML('beforeend', contactPageMarkUp);
   formFittingInShowroom();
 }
-// contactRender(); //========================================================call
+contactRender(); //========================================================call
 
 //=====delivery========//
 function deliveryRender() {}
@@ -165,4 +165,4 @@ export function showroomRender() {
   refs.mainEL.insertAdjacentHTML('beforeend', showroomPageMarkUp);
   formFittingInShowroom();
 }
-// showroomRender(); //========================================================call
+showroomRender(); //========================================================call

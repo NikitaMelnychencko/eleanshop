@@ -47,7 +47,8 @@
   }
 }
 
-.star-form::after {
+.star-form-reviews::after {
+  display: none;
   content: '*';
   position: absolute;
   top: 20px;
@@ -56,6 +57,9 @@
   font-size: 18px;
   line-height: 1.4;
   color: $seventh-text-color;
+  @media screen and (min-width: 500px) {
+    display: block;
+  }
 }
 
 .form-reviews__horiz-block {
@@ -120,6 +124,7 @@
   justify-content: center;
   height: 100%;
   width: 100%;
+  cursor: pointer;
   &:focus,
   &:hover {
     color: $accent-btn-color;
@@ -145,6 +150,21 @@
   }
 }
 
+.form-reviews__comment-box::before {
+  display: none;
+  content: '*';
+  position: absolute;
+  top: 20px;
+  right: 15px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.4;
+  color: $seventh-text-color;
+  @media screen and (min-width: 500px) {
+    display: block;
+  }
+}
+
 .form-reviews__comment-box::after {
   @media screen and (min-width: $desktop-up) {
     content: 'Поля отмеченные “*” обязательны для заполнения';
@@ -154,7 +174,7 @@
     color: $seventh-text-color;
     position: absolute;
     bottom: -20px;
-    left: 0;
+    right: 0;
   }
 }
 
@@ -197,18 +217,54 @@
 }
 
 .form-reviews__button-add-photo {
-  display: flex;
-  align-items: center;
-  border: 1px dashed #c5c5d2;
-  box-sizing: border-box;
-  transform: matrix(-1, 0, 0, 1, 0, 0);
-  height: 40px;
-  padding-left: 12px;
-  padding-right: 7px;
+  display: none;
+  @media screen and (min-width: $desktop-up) {
+    display: flex;
+    border: 1px dashed #c5c5d2;
+    box-sizing: border-box;
+    height: 40px;
+    padding-left: 12px;
+    padding-right: 8px;
+    width: fit-content;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 1.77;
+    color: #9191a2;
+    cursor: pointer;
+    transition: color $time-cubic;
+    background-color: $modal-background-color;
+    &:hover {
+      color: $button-hover-background-color;
+    }
+  }
 }
 
-.form-reviews__icon {
-  height: 23px;
-  width: 22px;
-  stroke: red;
+.form-reviews__icon-add-photo {
+  display: none;
+  @media screen and (min-width: $desktop-up) {
+    display: block;
+    width: 22px;
+    height: 23px;
+    stroke: #afafbf;
+    margin-right: 13px;
+    transition: stroke $time-cubic;
+    .form-reviews__button-add-photo:hover & {
+      stroke: $button-hover-background-color;
+    }
+  }
+}
+
+.reviews-section-form {
+  padding-top: 23px;
+  padding-bottom: 60px;
+  @media screen and (min-width: $desktop-up) {
+    padding-bottom: 105px;
+    padding-top: 45px;
+  }
+}
+.reviews-formReviews-box {
+  border: 1px dashed $form-dashed-color;
+  box-sizing: border-box;
 }
