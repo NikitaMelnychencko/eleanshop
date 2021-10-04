@@ -292,13 +292,14 @@ font-style: normal;
         }
 }
 
-.footer__desktop-logo{
-    margin-right: 47px;
-}
+// .footer__desktop-logo{
+//     margin-right: 47px;
+// }
 .footer__desktop-logo-element{
      display: block;
-margin-top: 14px;
+    margin-top: 14px;
     margin-bottom: 44px;
+    
 }
 
 .footer__desktop-icon-logo{
@@ -312,11 +313,6 @@ margin-top: 14px;
     display: flex;
     justify-content:space-between;
     margin-bottom: 45px;
-    
-}
-
-.footer__desktop-list-contacts-email{
-    margin-top: 30px;
     
 }
 
@@ -341,6 +337,10 @@ font-style: normal;
     align-items: baseline;
 }
 
+.footer__desktop-list-contacts-mail{
+    margin-top: 30px;
+}
+
 .footer__desktop-list-contacts{
     font-size: 15px;
     line-height: 1.7;
@@ -359,11 +359,12 @@ font-style: normal;
 .footer__desktop-menu{
     display: block;
     margin-right: 83px;
+    margin-left: 10px;
 }
 
 .footer__desktop-social-list{
     display: flex;
-     margin-top: 37px;
+     margin-top: 31px;
 
 }
 .footer__desktop-social-list-icon{
