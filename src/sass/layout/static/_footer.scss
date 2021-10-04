@@ -278,7 +278,7 @@ font-style: normal;
     bottom: 0;
     z-index: 200;
 
-        @media screen and (max-width:$desktop-up){
+        @media screen and (max-width:$tablet-only){
             position: absolute;
             width: 1px;
             height: 1px;
