@@ -61,11 +61,14 @@ function favoritesRender() {}
 //=====fitting========//
 function fittingRender() {}
 //=====product========//
+import productFunctions from './layout/product/infoAboutProduct.js'
 import ProductModalAddToCart from './layout/product/productModalAddToCart.js';
 import RecomendationsCategory from './layout/product/recomendationsCategory.js';
 import cards from './json/catalog.json';
 import productMarkup from '../views/layouts/product.hbs';
 import HandSewn from './layout/product/productHandSewn.js';
+
+const { createAllListeners, createFullMarkup } = productFunctions;
 
 function productRender() {
   const objRecomendationsCategory = new RecomendationsCategory({
@@ -94,6 +97,7 @@ function productRender() {
   });
 
   const obj = {
+    infoAboutProduct: createFullMarkup(),
     recomendationCategory: objRecomendationsCategory.getMarkup(),
     handSewn: objHandSewn.getMarkup(),
     modalAddToCart: objProductModalAddToCart.getMarkup(),
@@ -101,6 +105,7 @@ function productRender() {
 
   refs.mainEL.insertAdjacentHTML('beforeend', productMarkup(obj));
 
+  createAllListeners();
   objRecomendationsCategory.setSlider();
   objHandSewn.setEvent();
   objProductModalAddToCart.setEvent();

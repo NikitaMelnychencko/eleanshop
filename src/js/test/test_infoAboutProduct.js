@@ -1,7 +1,7 @@
-import productFunctions from '../layout/product/infoAboutProduct.js'
-import refs from '../refs/refs.js'
+// import productFunctions from '../layout/product/infoAboutProduct.js'
+// import refs from '../refs/refs.js'
 
-const { createAllListeners, createFullMarkup } = productFunctions;
+// const { createAllListeners, createFullMarkup } = productFunctions;
 
-refs.mainEL.insertAdjacentHTML('beforeend', createFullMarkup());
-createAllListeners();
+// refs.mainEL.insertAdjacentHTML('beforeend', createFullMarkup());
+// createAllListeners();
