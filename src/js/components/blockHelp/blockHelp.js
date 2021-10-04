@@ -232,7 +232,7 @@ function onButtonScrollClick(event) {
   // Вызываем функцию, первый аргумент - отступ, второй - скорость скролла, чем больше значение, тем медленнее скорость прокрутки
   scrollTo(0, 700);
 }
-function scrollTo(to, duration = 700) {
+export function scrollTo(to, duration = 700) {
   const element = document.scrollingElement || document.documentElement,
     start = element.scrollTop,
     change = to - start,

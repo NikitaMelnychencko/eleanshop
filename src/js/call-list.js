@@ -30,7 +30,7 @@ function homeRender() {
 }
 homeRender();
 //=====brand========//
-function brandRender() {}
+function brandRender() { }
 
 //=====checkout========//
 import { ModalData, createPayment } from './layout/checkout/payment';
@@ -53,13 +53,13 @@ export function checkoutRender() {
 }
 // checkoutRender();
 //=====contact========//
-function contactRender() {}
+function contactRender() { }
 //=====delivery========//
-function deliveryRender() {}
+function deliveryRender() { }
 //=====favorites========//
-function favoritesRender() {}
+function favoritesRender() { }
 //=====fitting========//
-function fittingRender() {}
+function fittingRender() { }
 //=====product========//
 import productFunctions from './layout/product/infoAboutProduct.js'
 import ProductModalAddToCart from './layout/product/productModalAddToCart.js';
@@ -115,6 +115,6 @@ function productRender() {
 
 productRender();
 //=====reviews========//
-function reviewsRender() {}
+function reviewsRender() { }
 //=====showroom========//
-function showroomRender() {}
+function showroomRender() { }
