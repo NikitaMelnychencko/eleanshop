@@ -51,7 +51,6 @@ export function checkoutRender() {
     idList: 'day-list',
   });
 }
-checkoutRender();
 //=====contact========//
 function contactRender() {}
 //=====delivery========//
