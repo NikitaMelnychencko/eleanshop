@@ -295,13 +295,17 @@ font-style: normal;
 .footer__desktop-logo{
     margin-right: 47px;
 }
+.footer__desktop-logo-element{
+     display: block;
+margin-top: 14px;
+    margin-bottom: 44px;
+}
 
 .footer__desktop-icon-logo{
     display: block;
     width: 124px;
     height: 23px;
-    margin-top: 14px;
-    margin-bottom: 44px;
+    
 }
 
 .footer__desktop-list{
