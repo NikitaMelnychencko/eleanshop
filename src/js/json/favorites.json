@@ -8,7 +8,9 @@
       "src": "./images/product-mobile-1.jpg",
       "alt": "Жакет-смокинг с лацканами"
     },
-    "price": "23 900 "
+    "price": "23 900 ",
+    "size": 64,
+    "color": "white"
   },
   {
     "id": "Card-2",
@@ -19,7 +21,9 @@
       "src": "./images/product-mobile-2.jpg",
       "alt": "Классический комплект с смокингом и жилетом"
     },
-    "price": 65300
+    "price": 65300,
+    "size": 64,
+    "color": "white"
   },
   {
     "id": "Card-3",
@@ -30,7 +34,9 @@
       "src": "./images/product-mobile-3.jpg",
       "alt": "Белый жакет смокинг"
     },
-    "price": 26900
+    "price": 26900,
+    "size": 64,
+    "color": "white"
   },
   {
     "id": "Card-4",
@@ -41,6 +47,8 @@
       "src": "./images/product-mobile-1.jpg",
       "alt": "Жакет-смокинг бархатный"
     },
-    "price": 29500
+    "price": 29500,
+    "size": 64,
+    "color": "white"
   }
 ]
