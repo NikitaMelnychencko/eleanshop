@@ -8,13 +8,14 @@
   text-align: center;
   letter-spacing: 0.1em;
   padding: 16px 88px 19px 88px;
+  cursor: pointer;
 }
 
 .button__checkout {
   @extend %button-pad;
   display: block;
   width: 100%;
-  background-color: $button-background-color;
+  background-color: $button-first-fill-color;
   color: $selection-text-color;
 }
 
@@ -73,6 +74,7 @@
   color: $secondary-text-color;
   border: 1px solid $primery-border-color;
   transition: $time-cubic;
+  cursor: pointer;
 
   &:focus,
   &:hover {
