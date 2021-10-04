@@ -54,7 +54,6 @@ import './js/layout/favorites/sabmitEmail.js';
 // backfrop
 import './js/components/backdrop.js';
 
-
 //test
 import './js/test/test_productHandSewn.js';
 import './js/test/backdropTest.js';
