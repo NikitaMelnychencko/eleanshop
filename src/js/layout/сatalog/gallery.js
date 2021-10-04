@@ -21,12 +21,6 @@ export function openCategory() {
   const catalogSeeMoreIcon = document.querySelector('.catalog-icon-raws-round');
   console.log(catalogSeeMoreIcon);
 
-  // const seemoreDesktopItems = document.querySelectorAll('.seeMoreDesktop');
-  // console.log(seemoreDesktopItems);
-  // const seemoreMobileItems = document.querySelectorAll('.seeMoreMobile');
-  // console.log(seemoreMobileItems);
-  // const seemoreDesktopItemsArray = Array.from(seemoreDesktopItems);
-  // console.log(seemoreDesktopItemsArray);
   catalogSeeMoreIcon.addEventListener('click', seeMoreCards);
   function seeMoreCards(elem) {}
 

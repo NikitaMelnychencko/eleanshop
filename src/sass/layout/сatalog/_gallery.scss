@@ -1,4 +1,5 @@
 .catalog-container {
+  display: block;
   align-items: flex-start;
   justify-content: center;
   text-align: left;
@@ -49,15 +50,15 @@
     display: none;
   }
   @media screen and (min-width: 1378px) {
-    //   &:nth-child(n + 20) {
-    //     display: flex;
-    //   }
-    // &:nth-child(-n + 19) {
-    //   display: none;
-    // }
-    // &:nth-last-child(-n + 10) {
-    //   display: none;
-    // }
+    &:nth-child(n + 20) {
+      display: flex;
+    }
+    &:nth-child(-n + 19) {
+      display: none;
+    }
+    &:nth-last-child(-n + 10) {
+      display: none;
+    }
   }
 }
 .card-image:hover,
