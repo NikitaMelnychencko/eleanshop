@@ -37,7 +37,7 @@ function brandRender() {
 //=====checkout========//
 import { ModalData, createPayment } from './layout/checkout/payment.js';
 import { ordering, openOrderingFunction } from './layout/checkout/ordering.js';
-import {backdropMarkup} from './layout/checkout/thanksForOrdering.js';
+import { backdropMarkup } from './layout/checkout/thanksForOrdering.js';
 import payment_checkout from '../views/layouts/checkout.hbs';
 export function checkoutRender() {
   updateBin();
@@ -45,14 +45,13 @@ export function checkoutRender() {
   const createCheckout = payment_checkout({ createPayment, ordering, backdropMarkup});
   refs.mainEL.insertAdjacentHTML('beforeend', createCheckout);
   openOrderingFunction();
-  const inputTime = new ModalData({
-    idInput: 'js-time',
-    idList: 'time-list',
+  const modalOpen = new ModalData({
+    idInputDay: 'js-day',
+    idListDay: 'day-list',
+    idInputTime: 'js-time',
+    idListTime: 'time-list',
   });
-  const inputDay = new ModalData({
-    idInput: 'js-day',
-    idList: 'day-list',
-  });
+
   blockHelpRender()
 }
 //=====contact========//

@@ -12,7 +12,7 @@
       </div>
       <div class="showroom-method">
           <div class="showroom-method__item">
-            <input class="showroom-method__form"  name="day" id="js-day" placeholder="ВЫБЕРИТЕ ДАТУ"/>
+            <input class="showroom-method__form"  name="day" id="js-day" placeholder="ВЫБЕРИТЕ ДАТУ" required/>
             <ul class="showroom-list showroom-list--hide js-day" id='day-list'>
             {{#each method.day-data}}
               <li class="showroom-list__item" ><svg
@@ -23,7 +23,7 @@
             </ul>
           </div>
           <div class="showroom-method__item">
-            <input class="showroom-method__form"  name="time" id="js-time" placeholder="ВЫБЕРИТЕ ВРЕМЯ"/>
+            <input class="showroom-method__form"  name="time" id="js-time" placeholder="ВЫБЕРИТЕ ВРЕМЯ" required/>
             <ul class="showroom-list showroom-list--hide js-time" id='time-list'>
             {{#each method.time}}
               <li class="showroom-list__item" ><svg

@@ -6,8 +6,8 @@ export const createPayment = payment_payment({ method });
 
 
 export class ModalData {
-  constructor({ idInput, idList }) {
-    this._refs = this._getRefs(idInput, idList);
+  constructor({ idInputDay, idListDay,idInputTime,idListTime}) {
+    this._refs = this._getRefs(idInputDay, idListDay,idInputTime,idListTime);
     this._addEventDelivery();
     this._addEventInput();
     this._addEventList();
@@ -16,10 +16,12 @@ export class ModalData {
     this._updateTotalPrice();
     this._addEventFormSubmit();
   }
-  _getRefs(idInput, idList) {
+  _getRefs(idInputDay, idListDay, idInputTime, idListTime) {
     const refs = {
-      input: document.getElementById(`${idInput}`),
-      list: document.getElementById(`${idList}`),
+      inputDay: document.getElementById(`${idInputDay}`),
+      listDay: document.getElementById(`${idListDay}`),
+      inputTime: document.getElementById(`${idInputTime}`),
+      listTime: document.getElementById(`${idListTime}`),
       formDay: document.querySelector('.showroom-method'),
       delivery: document.querySelector('.delivery-method'),
       payment: document.querySelector('.payment'),
@@ -35,21 +37,30 @@ export class ModalData {
     return refs;
   }
   _addEventInput() {
-    this._refs.input.addEventListener('click', event => {
-      this._refs.list.classList.toggle('showroom-list--hide');
+    this._refs.inputDay.addEventListener('click', event => {
+      this._refs.listDay.classList.toggle('showroom-list--hide');
+      document.body.classList.toggle('extra');
+    });
+    this._refs.inputTime.addEventListener('click', event => {
+      this._refs.listTime.classList.toggle('showroom-list--hide');
       document.body.classList.toggle('extra');
     });
   }
   _addEventList() {
-    this._refs.list.addEventListener('click', event => {
-      this._refs.input.value = event.target.innerText;
-      this._refs.list.classList.toggle('showroom-list--hide');
-      this._addLocalStorage(this._refs.input.name, event.target.innerText);
+    this._refs.listDay.addEventListener('click', event => {
+      this._refs.inputDay.value = event.target.innerText;
+      this._refs.listDay.classList.toggle('showroom-list--hide');
+      this._addLocalStorage(this._refs.inputDay.name, event.target.innerText);
+    });
+    this._refs.listTime.addEventListener('click', event => {
+      this._refs.inputTime.value = event.target.innerText;
+      this._refs.listTime.classList.toggle('showroom-list--hide');
+      this._addLocalStorage(this._refs.inputTime.name, event.target.innerText);
     });
   }
   _addEventDelivery() {
     this._updateValueDelivery();
-    if (!this._refs.delivery.getEventListeners('click')) {
+    
       this._refs.delivery.addEventListener('click', event => {
         if (event.target.nodeName !== 'INPUT') {
           return;
@@ -59,13 +70,13 @@ export class ModalData {
           this._refs.formDay.classList.add('showroom-method--hide');
         } else {
           this._refs.formDay.classList.remove('showroom-method--hide');
-          console.log(this._refs.input.name);
+          
         }
         if (event.target.checked === true) {
           this._addLocalStorage(event.target.name, event.target.value);
         }
       });
-    }
+  
   }
   _addEventPayment() {
     this._updatePayment();
@@ -107,7 +118,8 @@ export class ModalData {
         if (el.value === 'Showroom'||el.value === 'By_courier_in_Kiev') {
           this._refs.formDay.classList.add('showroom-method--hide');
         } else {
-          localStorage.removeItem(`${this._refs.input.name}`);
+          localStorage.removeItem(`${this._refs.inputDay.name}`);
+          localStorage.removeItem(`${this._refs.inputTime.name}`);
         }
       }
     });
