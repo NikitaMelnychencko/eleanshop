@@ -1,3 +1,10 @@
+.hero {
+  padding-bottom: 67px;
+
+  @media screen and (max-width: $tablet-only) {
+    padding-bottom: 25px;
+  }
+}
 .hero .container {
   padding-left: 0;
   padding-right: 0;
@@ -6,7 +13,6 @@
 .hero__wrapper {
   height: 100%;
   padding-top: 0;
-  padding-bottom: 18px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -23,9 +29,7 @@
 .hero .slick-list {
   overflow: hidden;
 
-  @media screen and (min-width: $mobile-first) and (max-width: $mobile-general) {
-    position: relative;
-  }
+  position: relative;
 }
 
 /* Slide Ribbon */
@@ -36,7 +40,7 @@
 
 /* Dots */
 .hero__slider .slick-dots {
-  @media screen and (min-width: $mobile-first) and (max-width: $mobile-general) {
+  @media screen and (max-width: $tablet-only) {
     position: absolute;
     bottom: 0;
     left: 50%;
@@ -108,16 +112,19 @@
 
 .hero__slider .slider__item {
   position: relative;
-  padding: 0px 15px;
-
-  @media screen and (min-width: $mobile-first) and (max-width: $mobile-general) {
-    padding: 0px;
-  }
 }
 .hero__slider .slider__item img {
   max-width: 100%;
+  min-width: 320px;
+  min-height: 590px;
+
   margin-left: auto;
   margin-right: auto;
+
+  @media screen and (min-width: $desktop-up) {
+    min-width: 1378px;
+    min-height: 545px;
+  }
 }
 
 .hero__slider .slider__item h1 {
