@@ -1,0 +1,83 @@
+.brand-our-advantages-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+  @media screen and (min-width: $tablet-general) {
+    min-block-size: 100%;
+    margin-top: 20px;
+    margin-left: 20px;
+    flex-basis: calc((100% - 40px) / 2);
+  }
+  @media screen and (min-width: $desktop-up) {
+    flex-basis: calc((100% - 60px) / 3);
+  }
+}
+
+.brand-our-advantages-card__icon {
+  width: 60px;
+  height: 46px;
+  stroke: $third-accent-color;
+  margin-bottom: 30px;
+}
+
+.brand-our-advantages-card__text {
+  font-size: 15px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: $third-accent-color;
+  box-sizing: border-box;
+}
+
+.brand-section-our-advantages {
+  background-color: $secondary-background-color;
+  padding-top: 47px;
+  padding-bottom: 50px;
+  @media screen and (min-width: $desktop-up) {
+    padding-top: 67px;
+  }
+}
+
+.brand-section-our-advantages__title {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.1;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-bottom: 108px;
+  @media screen and (min-width: $desktop-up) {
+    margin-bottom: 67px;
+  }
+}
+
+.brand-section-our-advantages__text {
+  font-size: 15px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: $third-accent-color;
+}
+
+.brand-section-our-advantages__text:not(:last-child) {
+  margin-bottom: 114px;
+}
+
+.brand-section-our-advantages__text:last-child {
+  margin-bottom: 43px;
+}
+
+.brand-section-our-advantages__ul {
+  @media screen and (min-width: $tablet-general) {
+    display: flex;
+    margin-top: -20px;
+    margin-left: -20px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
