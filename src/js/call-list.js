@@ -28,7 +28,7 @@ function homeRender() {
   starClientsComments();
   instagramSlider();
 }
-homeRender();
+// homeRender(); //========================================================call
 //=====brand========//
 import brand_page from '../views/layouts/brand.hbs';
 import {
@@ -50,7 +50,7 @@ export function brandRender() {
   formFittingInShowroom();
   infoAboutBrand();
 }
-brandRender();
+// brandRender(); //========================================================call
 
 //=====checkout========//
 import { ModalData, createPayment } from './layout/checkout/payment';
@@ -71,7 +71,8 @@ export function checkoutRender() {
     idList: 'day-list',
   });
 }
-// checkoutRender();
+// checkoutRender(); //========================================================call
+
 //=====contact========//
 
 import contact_page from '../views/layouts/contact.hbs';
@@ -82,7 +83,7 @@ export function contactRender() {
   refs.mainEL.insertAdjacentHTML('beforeend', contactPageMarkUp);
   formFittingInShowroom();
 }
-contactRender();
+// contactRender(); //========================================================call
 
 //=====delivery========//
 function deliveryRender() {}
@@ -139,9 +140,23 @@ function productRender() {
   objProductModalAddToCart.show('ЖАКЕТ-СМОКИНГ С ЛАЦКАНМИ'); // show modal window - call the listener on the button
 }
 
-productRender();
+// productRender(); //========================================================call
+
 //=====reviews========//
-function reviewsRender() {}
+import reviews_page from '../views/layouts/reviews.hbs';
+import { formReviews, formReviewsMarkUp } from './layout/reviews/registrationFormForFitting.js';
+import { setVideoHbs, clientStar, videosetSlickSettings } from './layout/reviews/videoSet.js';
+
+function reviewsRender() {
+  const reviewsMarkUp = reviews_page({ setVideoHbs, clientStar, formReviewsMarkUp });
+  refs.mainEL.insertAdjacentHTML('beforeend', reviewsMarkUp);
+  videosetSlickSettings();
+  starClientsSlider();
+  starClientsComments();
+  formReviews();
+}
+
+reviewsRender(); //========================================================call
 
 //=====showroom========//
 import showroom_page from '../views/layouts/showroom.hbs';
@@ -150,4 +165,4 @@ export function showroomRender() {
   refs.mainEL.insertAdjacentHTML('beforeend', showroomPageMarkUp);
   formFittingInShowroom();
 }
-showroomRender();
+// showroomRender(); //========================================================call
