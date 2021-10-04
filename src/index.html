@@ -13,21 +13,19 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Jost&family=Lato:wght@400;700&family=Open+Sans&family=Red+Hat+Text:wght@400;500&display=swap"
     rel="stylesheet" />
-</head> 
+</head>
 
-<body>
-  <header class="header">
+<body class="">
+  <header class="js-header header">
     <div class="container header-container">
       <!-- //! ШАПКА-ПОЧАТОК -->
       <div class="head">
         <!-- Кнопка моб меню-початок -->
-        <button class="button button-open" type="button">
-          <svg class="button__svg-open">
+        <button class="js-button button" type="button">
+          <svg class="js-button__svg button__svg-open">
             <use href="./images/header.svg#header-mobile-burger"></use>
           </svg>
-        </button>
-        <button class="button button-close" type="button">
-          <svg class="button__svg-close">
+          <svg class="js-button__svg button__svg-close mod-hidden">
             <use href="./images/header.svg#header-mobile-close"></use>
           </svg>
         </button>
@@ -54,13 +52,10 @@
         <!-- Соцмережі_Декстоп-кінець -->
         <!-- Логотип-початок -->
         <a class="header-logo" href="./index.html">
-          <svg class="header-logo__svg-elean">
+          <svg class="js-logo__svg header-logo__svg-elean">
             <use href="./images/header.svg#header-logo"></use>
           </svg>
-          <svg class="header-logo__svg-e" width="20" height="26">
-            <use href="./images/header.svg#header-logo-e"></use>
-          </svg>
-          <p class="header-logo__text">ЖЕНСКИЙ</br>СМОКИНГ</p>
+          <p class="js-logo__text header-logo__text">ЖЕНСКИЙ</br>СМОКИНГ</p>
         </a>
         <!-- Логотип-кінець -->
         <!-- Телефон-початок -->
@@ -70,19 +65,23 @@
         <ul class="product-list">
           <li class="product-list__item">
             <a class="product-list__link" href="#">
-              <svg class="product-list__svg-favorites">
+              <svg class="js-svg-favorites product-list__svg-favorites">
                 <use href="./images/header.svg#header-favorites"></use>
               </svg>
-              <p class="product-list__text">0</p>
+              <p class="js-list__text product-list__text">0</p>
             </a>
           </li>
           <li class="product-list__item">
             <a class="product-list__link js-bin" href="#">
-              <svg class="product-list__svg-bin">
+              <svg class="js-svg-bin product-list__svg-bin">
                 <use href="./images/header.svg#header-bin">
                 </use>
               </svg>
-              <p class="product-list__text">0</p>
+              <svg class="js-svg-bin product-list__svg-bin-white mod-hidden">
+                <use href="./images/header.svg#header-bin-white">
+                </use>
+              </svg>
+              <p class="js-list__text product-list__text">0</p>
             </a>
           </li>
         </ul>
@@ -91,90 +90,110 @@
       <!--//! ШАПКА-КІНЕЦЬ -->
 
       <!--//! НАВІГАЦІЯ-ПОЧАТОК -->
-      <nav class="navigation">
-        <ul class="navigation-list">
-          <li class="navigation-list__item">НОВИНКИ</li>
-          <li class="navigation-list__item">КАТЕГОРИИ
-            <ul class="navigation-sublist">
-              <li class="navigation-sublist__subitem">Юбки</li>
-              <li class="navigation-sublist__subitem">Смокинг</li>
-              <li class="navigation-sublist__subitem">Костюмы</li>
-              <li class="navigation-sublist__subitem">Аксессуары</li>
-              <li class="navigation-sublist__subitem">Брюки</li>
-              <li class="navigation-sublist__subitem">Блузы</li>
-              <li class="navigation-sublist__subitem">Платья</li>
-              <li class="navigation-sublist__subitem">Топы и жилеты</li>
-            </ul>
+      <div class="js-wrapper">
+        <nav class="js-navigation navigation mod-hidden-nav">
+          <ul class="js-navigation-list navigation-list">
+            <li class="js-navigation-item navigation-list__item">
+              <a class="js-navigation-link navigation-list__link" href="#">НОВИНКИ</a>
+            </li>
+            <li class="js-navigation-item navigation-list__item">
+              <a class="js-navigation-link navigation-list__link" href="#">КАТЕГОРИИ</a>
+              <ul class="js-navigation-sublist navigation-sublist mod-hidden">
+                <li class="navigation-sublist__subitem"><a class="navigation-sublist__link" href="#">Юбки</a></li>
+                <li class="navigation-sublist__subitem"><a class="navigation-sublist__link" href="#">Смокинг</a></li>
+                <li class="navigation-sublist__subitem"><a class="navigation-sublist__link" href="#">Костюмы</a></li>
+                <li class="navigation-sublist__subitem"><a class="navigation-sublist__link" href="#">Аксессуары</a></li>
+                <li class="navigation-sublist__subitem"><a class="navigation-sublist__link" href="#">Брюки</a></li>
+                <li class="navigation-sublist__subitem"><a class="navigation-sublist__link" href="#">Блузы</a></li>
+                <li class="navigation-sublist__subitem"><a class="navigation-sublist__link" href="#">Платья</a></li>
+                <li class="navigation-sublist__subitem"><a class="navigation-sublist__link" href="#">Топы и жилеты</a>
+                </li>
+              </ul>
+            </li>
+            <li class="js-navigation-item navigation-list__item">
+              <a class="js-navigation-link navigation-list__link" href="#">НАШИ КОЛЛЕКЦИИ</a>
+              <ul class="js-navigation-sublist navigation-sublist mod-hidden">
+                <li class="navigation-sublist__subitem"><a class="navigation-sublist__link" href="#">Осень-зима
+                    20-21</a>
+                </li>
+                <li class="navigation-sublist__subitem"><a class="navigation-sublist__link" href="#">Вечерние
+                    комплекты</a></li>
+                <li class="navigation-sublist__subitem"><a class="navigation-sublist__link" href="#">Предзаказ</a></li>
+                <li class="navigation-sublist__subitem"><a class="navigation-sublist__link" href="#">Свадьба и
+                    выпускной</a></li>
+              </ul>
+            </li>
+            <li class="navigation-list__item navigation-list__header-logo-min">
+              <a class="header-logo-min" href="./index.html">
+                <svg class="header-logo__svg-e" width="20" height="26">
+                  <use href="./images/header.svg#header-logo-e"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="js-navigation-item navigation-list__item"><a class="js-navigation-link navigation-list__link"
+                href="#">ПОКУПАТЕЛЯМ</a>
+              <ul class="js-navigation-sublist navigation-sublist mod-hidden">
+                <li class="navigation-sublist__subitem"><a class="navigation-sublist__link" href="#">Доставка</a></li>
+                <li class="navigation-sublist__subitem"><a class="navigation-sublist__link" href="#">Акции</a></li>
+                <li class="navigation-sublist__subitem"><a class="navigation-sublist__link" href="#">Возврат</a></li>
+                <li class="navigation-sublist__subitem"><a class="navigation-sublist__link" href="#">Размерная
+                    таблица</a>
+                </li>
+                <li class="navigation-sublist__subitem"><a class="navigation-sublist__link" href="#">Примерка</a></li>
+                <li class="navigation-sublist__subitem"><a class="navigation-sublist__link" href="#">Оптовым
+                    покупателям</a></li>
+              </ul>
+            </li>
+            <li class="js-navigation-item navigation-list__item">
+              <a class="js-navigation-link navigation-list__link" href="#">О БРЕНДЕ</a>
+              <ul class="js-navigation-sublist navigation-sublist mod-hidden">
+                <li class="navigation-sublist__subitem"><a class="navigation-sublist__link" href="#">Шоурум</a></li>
+                <li class="navigation-sublist__subitem"><a class="navigation-sublist__link" href="#">Отзывы</a></li>
+                <li class="navigation-sublist__subitem"><a class="navigation-sublist__link" href="#">Статьи</a></li>
+                <li class="navigation-sublist__subitem"><a class="navigation-sublist__link" href="#">Блог</a></li>
+              </ul>
+            </li>
+            <li class="js-navigation-item navigation-list__item">
+              <a class="js-navigation-link navigation-list__link" href="#">ШОУРУМ</a>
+            </li>
+            <li class="js-navigation-item navigation-list__item">
+              <a class="js-navigation-link navigation-list__link" href="#">КОНТАКТЫ</a>
+            </li>
+          </ul>
+        </nav>
+        <!--//! НАВІГАЦІЯ-КІНЕЦЬ -->
+
+        <!--//! СОЦМЕРЕЖІ_МОБІЛЬНА-ПОЧАТОК -->
+        <ul class="js-social-list-mobile social-list-mobile mod-hidden">
+          <li class="social-list-mobile__item">
+            <a class="social-list-mobile__link" href="https://web.whatsapp.com/" target="_blank"
+              rel="noreferrer noopener">
+              <svg class="social-list-mobile__svg" width="16" height="16">
+                <use href="./images/header.svg#header-whatsapp"></use>
+              </svg>WhatsApp</a>
           </li>
-          <li class="navigation-list__item">НАШИ КОЛЛЕКЦИИ
-            <ul class="navigation-sublist">
-              <li class="navigation-sublist__subitem">Осень-зима 20-21</li>
-              <li class="navigation-sublist__subitem">Смокинг</li>
-              <li class="navigation-sublist__subitem">Костюмы</li>
-              <li class="navigation-sublist__subitem">Аксессуары</li>
-            </ul>
+          <li class="social-list-mobile__item">
+            <a class="social-list-mobile__link" href="https://uk-ua.facebook.com/" target="_blank"
+              rel="noreferrer noopener">
+              <svg class="social-list-mobile__svg" width="16" height="16">
+                <use href="./images/header.svg#header-facebook"></use>
+              </svg>Facebook</a>
           </li>
-          <li class="navigation-list__item">ПОКУПАТЕЛЯМ
-            <ul class="navigation-sublist">
-              <li class="navigation-sublist__subitem">Доставка</li>
-              <li class="navigation-sublist__subitem">Акции</li>
-              <li class="navigation-sublist__subitem">Возврат</li>
-              <li class="navigation-sublist__subitem">Размерная таблица</li>
-              <li class="navigation-sublist__subitem">Примерка</li>
-              <li class="navigation-sublist__subitem">Оптовым покупателям</li>
-            </ul>
+          <li class="social-list-mobile__item">
+            <a class="social-list-mobile__link" href="https://web.telegram.org/k/" target="_blank"
+              rel="noreferrer noopener">
+              <svg class="social-list-mobile__svg" width=" 18" height="16">
+                <use href="./images/header.svg#header-telegram"></use>
+              </svg>Telegram</a>
           </li>
-          <li class="navigation-list__item">О БРЕНДЕ
-            <ul class="navigation-sublist">
-              <li class="navigation-sublist__subitem">Шоурум</li>
-              <li class="navigation-sublist__subitem">Отзывы</li>
-              <li class="navigation-sublist__subitem">Статьи</li>
-              <li class="navigation-sublist__subitem">Блог</li>
-            </ul>
-          </li>
-          <li class="navigation-list__item">ШОУРУМ</li>
-          <li class="navigation-list__item">КОНТАКТЫ
-            <ul class="navigation-sublist">
-              <li class="navigation-sublist__subitem">Шоурум</li>
-              <li class="navigation-sublist__subitem">Отзывы</li>
-              <li class="navigation-sublist__subitem">Статьи</li>
-              <li class="navigation-sublist__subitem">Блог</li>
-            </ul>
+          <li class="social-list-mobile__item">
+            <a class="social-list-mobile__link" href="mailto:info@eleanboutique.ua">
+              <svg class="social-list-mobile__svg" width="18" height="16">
+                <use href="./images/header.svg#header-email"></use>
+              </svg>E-mail</a>
           </li>
         </ul>
-      </nav>
-      <!--//! НАВІГАЦІЯ-ПОЧАТОК -->
-
-      <!--//! СОЦМЕРЕЖІ_МОБІЛЬНА-ПОЧАТОК -->
-      <ul class="social-list-mobile">
-        <li class="social-list-mobile__item">
-          <a class="social-list-mobile__link" href="https://web.whatsapp.com/" target="_blank"
-            rel="noreferrer noopener">
-            <svg class="social-list-mobile__svg" width="16" height="16">
-              <use href="./images/header.svg#header-whatsapp"></use>
-            </svg>WhatsApp</a>
-        </li>
-        <li class="social-list-mobile__item">
-          <a class="social-list-mobile__link" href="https://uk-ua.facebook.com/" target="_blank"
-            rel="noreferrer noopener">
-            <svg class="social-list-mobile__svg" width="16" height="16">
-              <use href="./images/header.svg#header-facebook"></use>
-            </svg>Facebook</a>
-        </li>
-        <li class="social-list-mobile__item">
-          <a class="social-list-mobile__link" href="https://web.telegram.org/k/" target="_blank"
-            rel="noreferrer noopener">
-            <svg class="social-list-mobile__svg" width=" 18" height="16">
-              <use href="./images/header.svg#header-telegram"></use>
-            </svg>Telegram</a>
-        </li>
-        <li class="social-list-mobile__item">
-          <a class="social-list-mobile__link" href="mailto:info@eleanboutique.ua">
-            <svg class="social-list-mobile__svg" width="18" height="16">
-              <use href="./images/header.svg#header-email"></use>
-            </svg>E-mail</a>
-        </li>
-      </ul>
+      </div>
       <!--//! СОЦМЕРЕЖІ_МОБІЛЬНА-КІНЕЦЬ -->
 
       <!-- //! КОРЗИНА -->
@@ -191,7 +210,7 @@
           <div class='product-bin__title-line'></div>
         </div>
         <ul class='product-bin__list'>
-          </ul>
+        </ul>
         <div class='product-bin__block-total'>
           <span class='product-bin__total-text'>
             ИТОГО:
@@ -215,23 +234,11 @@
         <div class="footer__mobile">
           <ul class="footer__mobile-list">
             <li class="footer__mobile-list-item border">
-              <a href="" class="footer__mobile-list-item-plus open-menu">КОЛЛЕКЦИЯ
-                <div class="footer__mobile-icon-position-relative">
-                  <svg class="footer__mobile-icon-menu">
-                    <use href="./images/exampl.svg#icon-switch-plus" class="footer__icon-menu-open">
-                    </use>
-                  </svg>
-                </div>
-                <div class="footer__mobile-icon-position-absolute">
-                  <svg class="footer__mobile-icon-menu">
-                    <use href="./images/exampl.svg#icon-switch-minus" class="footer__mobile-icon-menu-close">
-                    </use>
-                  </svg>
-                </div>
+              <a class="footer__mobile-list-item-plus block-after">КОЛЛЕКЦИЯ
               </a>
-              <ul class="footer__mobile-list-dropdown js-dropdown" data-action="footer-data-open">
-                <li class="dropdown-content"><a href="" class="footer__mobile-submenu">Осень-зима 20-21</a></li>
-                <li class="dropdown-content"><a href="" class="footer__mobile-submenu">Вечерние комплекты</a></li>
+              <ul class="footer__mobile-list-dropdown" data-action="footer-data-open">
+                <li class="dropdown-content"><a href="#" class="footer__mobile-submenu">Осень-зима 20-21</a></li>
+                <li class="dropdown-content"><a href="#" class="footer__mobile-submenu">Вечерние комплекты</a></li>
                 <li class="dropdown-content"><a href="" class="footer__mobile-submenu">Свадьба и выпускной</a></li>
                 <li class="dropdown-content"><a href="" class="footer__mobile-submenu">Смокинг</a></li>
                 <li class="dropdown-content"><a href="" class="footer__mobile-submenu">Костюмы</a></li>
@@ -240,37 +247,14 @@
               </ul>
             </li>
             <li class="footer__mobile-list-item border">
-              <a href="#" id="showroom" class="footer__mobile-list-item-plus ">ШОУРУМ
-                <div class="footer__mobile-icon-position-relative">
-                  <svg class="footer__mobile-icon-menu">
-                    <use href="./images/exampl.svg#icon-switch-plus" class="footer__mobile-icon-menu-open">
-                    </use>
-                  </svg>
-                </div>
-                <div class="footer__mobile-icon-position-absolute">
-                  <svg class="footer__mobile-icon-menu">
-                    <use href="./images/exampl.svg#icon-switch-minus" class="footer__mobile-icon-menu-close">
-                    </use>
-                  </svg>
-                </div>
+              <a href="#" id="showroom" class="footer__mobile-list-item-plus block-after">ШОУРУМ
               </a>
             </li>
             <li class="footer__mobile-list-item border">
-              <a href="#" class="footer__mobile-list-item-plus open-menu">ПОКУПАТЕЛЯМ
-                <div class="footer__mobile-icon-position-relative">
-                  <svg class="footer__mobile-icon-menu">
-                    <use href="./images/exampl.svg#icon-switch-plus" class="footer__mobile-icon-menu-open">
-                    </use>
-                  </svg>
-                </div>
-                <div class="footer__mobile-icon-position-absolute">
-                  <svg class="footer__mobile-icon-menu">
-                    <use href="./images/exampl.svg#icon-switch-minus" class="footer__mobile-icon-menu-close">
-                    </use>
-                  </svg>
-                </div>
+              <a href="#" class="footer__mobile-list-item-plus block-after">ПОКУПАТЕЛЯМ
+
               </a>
-              <ul class="footer__mobile-list-dropdown js-dropdown">
+              <ul class="footer__mobile-list-dropdown">
                 <li class="dropdown-content"><a href="" data-set="delivery" class="footer__mobile-submenu">Доставка</a>
                 </li>
                 <li class="dropdown-content"><a href="" data-set="delivery" class="footer__mobile-submenu">Примерка</a>
@@ -279,22 +263,10 @@
                 <li class="dropdown-content"><a href="" class="footer__mobile-submenu">Возврат</a></li>
               </ul>
             </li>
-            <li class="footer__mobile-list-item border"><a href="#"
-                class="footer__mobile-list-item-plus open-menu">КОМПАНИЯ
-                <div class="footer__mobile-icon-position-relative ">
-                  <svg class="footer__mobile-icon-menu">
-                    <use href="./images/exampl.svg#icon-switch-plus" class="footer__mobile-icon-menu-open ">
-                    </use>
-                  </svg>
-                </div>
-                <div class="footer__mobile-icon-position-absolute">
-                  <svg class="footer__mobile-icon-menu">
-                    <use href="./images/exampl.svg#icon-switch-minus" class="footer__mobile-icon-menu-close">
-                    </use>
-                  </svg>
-                </div>
+            <li class="footer__mobile-list-item border"><a href="#" class="footer__mobile-list-item-plus block-after"
+                data-set="company">КОМПАНИЯ
               </a>
-              <ul class="footer__mobile-list-dropdown  js-dropdown">
+              <ul class="footer__mobile-list-dropdown">
                 <li class="dropdown-content"><a href="" id="infoAboutBrand" class="footer__mobile-submenu">О бренде</a>
                 </li>
                 <li class="dropdown-content"><a href="" class="footer__mobile-submenu">Об
@@ -303,37 +275,13 @@
               </ul>
             </li>
             <li class="footer__mobile-list-item border">
-              <a href="#" id="reviews" class="footer__mobile-list-item-plus">ОТЗЫВЫ
-                <div class="footer__mobile-icon-position-relative">
-                  <svg class="footer__mobile-icon-menu">
-                    <use href="./images/exampl.svg#icon-switch-plus" class="footer__mobile-icon-menu-open">
-                    </use>
-                  </svg>
-                </div>
-                <div class="footer__mobile-icon-position-absolute">
-                  <svg class="footer__mobile-icon-menu">
-                    <use href="./images/exampl.svg#icon-switch-minus" class="footer__mobile-icon-menu-close">
-                    </use>
-                  </svg>
-                </div>
+              <a href="#" id="reviews" class="footer__mobile-list-item-plus block-after">ОТЗЫВЫ
               </a>
             </li>
             <li class="footer__mobile-list-item border"><a href="#Contacts" id="contact"
-                class="footer__mobile-list-item-plus open-menu">КОНТАКТЫ
-                <div class="footer__mobile-icon-position-relative">
-                  <svg class="footer__mobile-icon-menu">
-                    <use href="./images/exampl.svg#icon-switch-plus" class="footer__mobile-icon-menu-open">
-                    </use>
-                  </svg>
-                </div>
-                <div class="footer__mobile-icon-position-absolute">
-                  <svg class="footer__mobile-icon-menu">
-                    <use href="./images/exampl.svg#icon-switch-minus" class="footer__mobile-icon-menu-close">
-                    </use>
-                  </svg>
-                </div>
+                class="footer__mobile-list-item-plus block-after" data-set="contacts">КОНТАКТЫ
               </a>
-              <ul class="footer__mobile-list-dropdown js-dropdown ">
+              <ul class="footer__mobile-list-dropdown ">
                 <li class="footer__mobile-list-item contacts">
                 </li>
                 <li class="footer__mobile-list-contacts">
@@ -348,7 +296,7 @@
                     info@eleanboutique.ua</a>
                 </li>
                 <address>
-                  <li class="footer__mobile-list-contacts"> <a href="#" id="map">г. Киев, Контрактовая площадь 8</a>
+                  <li class=""> <a href="#" id="map" class="footer__address">г. Киев, Контрактовая площадь 8</a>
                   </li>
                 </address>
 
@@ -383,7 +331,22 @@
               </li>
               <li class="footer__mobile-social-list-icon"><a href="https://www.facebook.com/" target="_blank"
                   rel="noreferrer noopener" class="footer__mobile-icon-link"><svg class="footer__mobile-icon">
-                    <use href="./images/exampl.svg#icon-facebook">
+                    <use href="./images/header.svg#header-whatsapp">
+                    </use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__mobile-social-list-icon"><a href="https://www.facebook.com/" target="_blank"
+                  rel="noreferrer noopener" class="footer__mobile-icon-link"><svg class="footer__mobile-icon">
+                    <use href="./images/header.svg#header-telegram">
+                    </use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="footer__mobile-social-list-icon"><a href="mailto:info@eleanboutique.ua" target="_blank"
+                  rel="noreferrer noopener" class="footer__mobile-icon-link"><svg class="footer__mobile-icon">
+                    <use href="./images/exampl.svg#icon-mail">
                     </use>
                   </svg>
                 </a>
@@ -407,9 +370,9 @@
       </div>
     </div>
     <div class="container">
-      <div class="footer__desktop">
+      <div class="footer__desktop footer__dark">
         <div class="footer__desktop-logo">
-          <a href="index.html"><svg class="footer__desktop-icon-logo">
+          <a href="index.html" class="footer__desktop-logo-element"><svg class="footer__desktop-icon-logo">
               <use href="./images/exampl.svg#icon-logo">
               </use>
             </svg>
@@ -422,7 +385,7 @@
               <a href="viber://chat?number=%2B380953542491" class="footer__desktop-list-contacts-chat">VIBER:
                 +38099-111-11-11</a>
             </li>
-            <li class="footer__desktop-list-contacts">
+            <li class="footer__desktop-list-contacts-mail">
               <a href="mailto:info@eleanboutique.ua" class="footer__desktop-list-contacts-email">EMAIL:
                 info@eleanboutique.ua</a>
             </li>
@@ -437,14 +400,13 @@
             <li class="footer__desktop-item"><a href="#" class="footer__desktop-list-link">КОНТАКТЫ</a></li>
           </ul>
           <ul class="footer__desktop-list-contacts-info">
-            <address>
-              <li class="footer__desktop-item-contacts-info">
-                <span>АДРЕС: <br> г. Киев, Контрактовая площадь 8</span>
-              </li>
-            </address>
-
             <li class="footer__desktop-item-contacts-info">
-              <span>РЕЖИМ РАБОТЫ: <br>с 9.00 до 21.00 шоурум: с 12.00 до 21.00</span>
+              <address>
+                <span class="footer__address">АДРЕС: <br> г. Киев, Контрактовая площадь 8</span>
+              </address>
+            </li>
+            <li class="footer__desktop-item-contacts-info">
+              <span class="footer__address">РЕЖИМ РАБОТЫ: <br>с 9.00 до 21.00 шоурум: с 12.00 до 21.00</span>
             </li>
           </ul>
           <ul class="footer__desktop-social-list">
@@ -461,6 +423,30 @@
               <a href="https://www.facebook.com/" target="_blank" rel="noreferrer noopener"
                 class="footer__desktop-icon-link"><svg class="footer__desktop-icon">
                   <use href="./images/exampl.svg#icon-facebook">
+                  </use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__desktop-social-list-icon">
+              <a href="https://web.whatsapp.com/" target="_blank" rel="noreferrer noopener"
+                class="footer__desktop-icon-link"><svg class="footer__desktop-icon">
+                  <use href="./images/header.svg#header-whatsapp">
+                  </use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__desktop-social-list-icon">
+              <a href="https://web.telegram.org/" target="_blank" rel="noreferrer noopener"
+                class="footer__desktop-icon-link"><svg class="footer__desktop-icon">
+                  <use href="./images/header.svg#header-telegram">
+                  </use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__desktop-social-list-icon">
+              <a href="mailto:info@eleanboutique.ua" target="_blank" rel="noreferrer noopener"
+                class="footer__desktop-icon-link"><svg class="footer__desktop-icon">
+                  <use href="./images/exampl.svg#icon-mail">
                   </use>
                 </svg>
               </a>

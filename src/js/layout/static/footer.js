@@ -1,52 +1,80 @@
 import { stringify } from 'postcss';
-import refs from '../../refs/refs.js'
+import refs from '../../refs/refs.js';
+import { scrollTo } from '../../components/blockHelp/blockHelp';
+
+
 
 const {
-    plusLink,
-    minusLink,
+    closeOpenPlus,
+    dropDown,
+    openList,
     openSubMenu,
-    isOpenIcon,
-    removeIconPlus,
-    iconMenu,
     inputStorageMobile,
     inputStorageDesktop,
     checkBoxIcon,
     agreeActive,
     mobileSubmitBtn,
     desktopSubmitBtn,
-    footerInput,
-    formRegistrMobile,
-    testIdInput } = refs
-console.log(testIdInput)
+    testIdInput,
+    desktop } = refs
 checkBoxIcon.addEventListener('click', onAgreeCheckBox)
 mobileSubmitBtn.addEventListener('submit', onSubmitBtnMobile)
 desktopSubmitBtn.addEventListener('submit', onSubmitBtnDesktop)
-console.log(desktopSubmitBtn)
-// Функция раскрытия списка-меню
-plusLink.forEach((evt) => {
-    const sibling = evt.nextElementSibling;
-    evt.addEventListener('click', (el, evt) => {
+
+//===включение плавной прокрутки на  desktop
+desktop.forEach((evt) => {
+    console.log(evt)
+    evt.addEventListener('click', (el) => {
+        scrollTo(0, 700);
+        console.log(el.target)
+    });
+});
+
+// === раскрытия списка-меню === 
+closeOpenPlus.forEach((evt) => {
+    evt.addEventListener('click', (el) => {
+        if (!el.target.nextElementSibling) {
+            scrollTo(0, 700);
+        }
         el.preventDefault()
-        sibling.classList.toggle('js-dropdown');
-        const arrow = sibling.querySelector('.footer__mobile-list-dropdown');
-        if (arrow) {
-            arrow.classList.toggle('js-dropdown');
+        const test = document.querySelector('.dropdown-content')
+        const dropDown = document.querySelector('.open-menu');
+        if (el.target.nextElementSibling) {
+            if (dropDown) {
+                dropDown.classList.toggle('open-menu')
+                dropDown.nextElementSibling.classList.toggle('js-dropdown-none');
+                if (el.target === dropDown) {
+                    return;
+                } else if (el.target === test) {
+                    dropDown.parentElement.classList.remove('.js-dropdown-none');
+                }
+            }
+            el.target.classList.toggle('open-menu');
+            // console.log(el.target)
+            // console.log(el.target.nextElementSibling)
+            el.target.nextElementSibling.classList.toggle('js-dropdown-none');
+        } else {
+            window.location.href = el.target
         }
     });
 });
 
-/*удаление иконки плюс при раскрытии спика*/
-
-plusLink.forEach((evt) => {
-    const sibl = evt.firstElementChild;
-    evt.addEventListener('click', (el, evt) => {
+//==== Скрытие меню при переходе на другой блок
+dropDown.forEach((evt) => {
+    evt.addEventListener('click', (el) => {
+        scrollTo(0, 700);
         el.preventDefault()
-        const plus = sibl.querySelector('.footer__mobile-icon-menu');
-        if (plus) {
-            plus.classList.toggle('is-open');
+        const dropDown = document.querySelector('.js-dropdown-none');
+        const openMenu = document.querySelector('.open-menu')
+        if (el.target) {
+            dropDown.classList.remove('js-dropdown-none')
+            openMenu.classList.remove('open-menu')
+            window.location.href = el.target
         }
     });
+
 });
+
 // Активация деактивация чекбокса
 function onAgreeCheckBox(evt) {
     const iconCheck = evt.currentTarget
@@ -56,7 +84,6 @@ function onAgreeCheckBox(evt) {
 }
 
 // Назначение localStorage на input mobile
-
 inputStorageMobile.forEach((evt) => {
     const idInputMobile = evt.id
     evt.addEventListener('input', (el) => {
@@ -68,9 +95,7 @@ inputStorageMobile.forEach((evt) => {
     });
 });
 
-
 // Назначение localStorage на input desktop
-
 inputStorageDesktop.forEach((evt) => {
     const idInputDesktop = evt.id
     evt.addEventListener('input', (el) => {
@@ -82,6 +107,7 @@ inputStorageDesktop.forEach((evt) => {
     });
 });
 
+//   сброс localStorage на input mobile
 function onSubmitBtnMobile(evt) {
     evt.preventDefault();
     evt.currentTarget.reset()
@@ -89,6 +115,7 @@ function onSubmitBtnMobile(evt) {
 
 }
 
+//   сброс localStorage на input desktop
 function onSubmitBtnDesktop(evt) {
     evt.preventDefault();
     evt.currentTarget.reset()
@@ -96,16 +123,6 @@ function onSubmitBtnDesktop(evt) {
     localStorage.removeItem('email');
 
 }
-// тут ловим все ссылки и перебераем все дата атребуты для преренаправления на нужную страницу
-const a = document.querySelectorAll('a')
-a.forEach((evt) => {
-    const idSeorch = evt.dataset
-    evt.addEventListener('click', (el) => {
-        const click = el.currentTarget;
-        console.log(click)
-        if (click === idSeorch) {
-            window.location.href = ""
-            console.log("Работает?")
-        }
-    })
-});
+
+
+
