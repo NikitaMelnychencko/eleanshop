@@ -30,7 +30,27 @@ function homeRender() {
 }
 homeRender();
 //=====brand========//
-function brandRender() {}
+import brand_page from '../views/layouts/brand.hbs';
+import {
+  formBrand,
+  infoAboutBrand,
+  brandOurAdvantages,
+  videoBrand,
+} from './layout/brand/infoAboutBrand.js';
+import { formFittingInShowroom } from './layout/brand/formFittingInShowroom.js';
+
+export function brandRender() {
+  const contactPageMarkUp = brand_page({
+    formBrand,
+    brandOurAdvantages,
+    contactsContact,
+    videoBrand,
+  });
+  refs.mainEL.insertAdjacentHTML('beforeend', contactPageMarkUp);
+  formFittingInShowroom();
+  infoAboutBrand();
+}
+brandRender();
 
 //=====checkout========//
 import { ModalData, createPayment } from './layout/checkout/payment';
@@ -53,7 +73,17 @@ export function checkoutRender() {
 }
 // checkoutRender();
 //=====contact========//
-function contactRender() {}
+
+import contact_page from '../views/layouts/contact.hbs';
+import { contactsMap, contactsContact } from './layout/contact/contact.js';
+
+export function contactRender() {
+  const contactPageMarkUp = contact_page({ formBrand, contactsMap, contactsContact });
+  refs.mainEL.insertAdjacentHTML('beforeend', contactPageMarkUp);
+  formFittingInShowroom();
+}
+contactRender();
+
 //=====delivery========//
 function deliveryRender() {}
 //=====favorites========//
@@ -61,6 +91,7 @@ function favoritesRender() {}
 //=====fitting========//
 function fittingRender() {}
 //=====product========//
+
 import ProductModalAddToCart from './layout/product/productModalAddToCart.js';
 import RecomendationsCategory from './layout/product/recomendationsCategory.js';
 import cards from './json/catalog.json';
@@ -111,5 +142,12 @@ function productRender() {
 productRender();
 //=====reviews========//
 function reviewsRender() {}
+
 //=====showroom========//
-function showroomRender() {}
+import showroom_page from '../views/layouts/showroom.hbs';
+export function showroomRender() {
+  const showroomPageMarkUp = showroom_page({ formBrand, pageShowroomSliderMarkup });
+  refs.mainEL.insertAdjacentHTML('beforeend', showroomPageMarkUp);
+  formFittingInShowroom();
+}
+showroomRender();
