@@ -7,12 +7,12 @@ import createMarkup from '../../../views/partials/fitting/sizeChose.hbs';
 
 let throttle = require('lodash.throttle');
 
-function onBtnClick(id) {
+function onBtnClick() {
   const backdropRef = document.querySelector('[data-modal]');
   const { mainEL } = getRefs;
   if (backdropRef === null) {
     const modalFormMarkup = modalFormMarkupTempl();
-    const backdropMarkup = backdropMarkupTempl(createBtn(id));
+    const backdropMarkup = backdropMarkupTempl(createMarkup(createBtn(size)));
  
     mainEL.insertAdjacentHTML('beforeend', backdropMarkup);
     window.addEventListener('resize', throttle(onResize, 50));
@@ -22,7 +22,7 @@ function onBtnClick(id) {
     btnSize.addEventListener('click', value => {
       if (value.target.nodeName === 'BUTTON')
       {
-        sendingValue(id, value.target.textContent);
+        sendingValue( value.target.textContent);
       }
     });
   }
@@ -36,11 +36,9 @@ function onResize(event) {
   btnCloseRef.style.right = `${right}px`;
 }
 //function for creating dice of clothing sizes
-function createBtn(id) {
-  const Array = size
-    //find the selected object (item of clothing) in json and pull out an array of sizes
-    .find(x => x.id === id)
-    .size//sort sizes in order
+function createBtn(json) {
+  const Array = json.size
+    //sort sizes in order
     .sort((a, b) => Number(Object.keys(a)) - Number(Object.keys(b)))
     //create an array of dice sizes that are and are not
     .map(value => {
@@ -60,7 +58,7 @@ function createBtn(id) {
       }
       return array;
     });
-  return createMarkup(Array);
+  return Array;
 }
 //function that returns a string with the size on the card that you selected
 function sendingValue(id, value) {
@@ -77,4 +75,4 @@ function save(key, value) {
     console.error('Set state error: ', err);
   }
 }
-export default {onBtnClick};
+export default {onBtnClick, createBtn};
