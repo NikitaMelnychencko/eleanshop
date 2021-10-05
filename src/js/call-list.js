@@ -13,7 +13,12 @@ import {
 } from './layout/home/starClients.js';
 import { pageInInstagramSliderMarkup, instagramSlider } from './layout/home/inInstagram.js';
 
-function homeRender() {
+export function homeRender() {
+  updateBin();
+  refs.mainEL.innerHTML = '';
+  getHome();
+}
+function getHome() {
   const homeMarkup = home({
     pageHeroSliderMarkup,
     pageShowroomSliderMarkup,
@@ -27,9 +32,9 @@ function homeRender() {
   starClientsSlider();
   starClientsComments();
   instagramSlider();
-  blockHelpRender()
+  blockHelpRender();
 }
-homeRender(); //========================================================call
+getHome(); //========================================================call
 //=====brand========//
 import brand_page from '../views/layouts/brand.hbs';
 import {
@@ -94,7 +99,13 @@ function deliveryRender() {}
 //=====favorites========//
 export function favoritesRender() {}
 //=====fitting========//
-function fittingRender() {}
+import { fitting } from './layout/fitting/sizeTable.js'
+import { openVideoSlider } from './layout/fitting/videoSlider.js'
+function fittingRender() {
+  refs.mainEL.insertAdjacentHTML('beforeend', fitting)
+  openVideoSlider()
+}
+fittingRender()
 //=====product========//
 
 import ProductModalAddToCart from './layout/product/productModalAddToCart.js';
@@ -102,6 +113,7 @@ import RecomendationsCategory from './layout/product/recomendationsCategory.js';
 import cards from './json/catalog.json';
 import productMarkup from '../views/layouts/product.hbs';
 import HandSewn from './layout/product/productHandSewn.js';
+import backdropMarkupTempl from '../views/components/backdrop.hbs';
 
 function productRender() {
   const objRecomendationsCategory = new RecomendationsCategory({
@@ -129,15 +141,18 @@ function productRender() {
     ],
   });
 
+  const modalFormMarkup = objProductModalAddToCart.getMarkup();
+  const backdropMarkup = backdropMarkupTempl(modalFormMarkup);
   const obj = {
     recomendationCategory: objRecomendationsCategory.getMarkup(),
     handSewn: objHandSewn.getMarkup(),
-    modalAddToCart: objProductModalAddToCart.getMarkup(),
+    backdrop: backdropMarkup,
   };
 
   refs.mainEL.insertAdjacentHTML('beforeend', productMarkup(obj));
-
+  document.querySelector('.form__button-сlose').style.display = 'none';
   objRecomendationsCategory.setSlider();
+  objRecomendationsCategory.setEvent();
   objHandSewn.setEvent();
   objProductModalAddToCart.setEvent();
   objProductModalAddToCart.setSlider();

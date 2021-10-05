@@ -1,6 +1,7 @@
 import markupBin from '../../../views/partials/product/productBin.hbs';
 import dataBin from '../../json/orderinginsertion.json';
 import { checkoutRender } from '../../call-list.js';
+import { scrollTo } from '../../components/blockHelp/blockHelp.js';
 
 export default class ProductBin {
   constructor({ root, typeInsert, data = dataBin }) {
@@ -95,7 +96,6 @@ export default class ProductBin {
   };
 
   _onTotal = () => {
-    console.log(this.data);
     const n = this.data.reduce((total, el) => {
       return (total += Number(el.label.price) * Number(el.label.count));
     }, 0);
@@ -108,7 +108,7 @@ export default class ProductBin {
 
   _onCloseModal = () => {
     this.self.classList.add('hidden');
-    document.body.style.overflow = 'scroll';
+    document.body.style.overflow = 'auto';
     this._deleteEvent();
   };
 
@@ -116,6 +116,7 @@ export default class ProductBin {
     this._onCloseModal();
     //function of clicking on the Checkout button
     checkoutRender();
+    scrollTo(0, 700);
   };
 
   _setEvent = () => {
@@ -187,7 +188,7 @@ export default class ProductBin {
     this.counter = [...document.querySelectorAll('.product-bin__product-count')];
     this.deleteBtn = [...document.querySelectorAll('.product-bin__button-del')];
     this.buttonClose = document.querySelectorAll('.js-close-modal');
-    this.buttonNext = document.querySelector('.js-next');
+    this.buttonNext = document.querySelector('.js-next-bin');
     this.totalPrice = document.querySelector('.product-bin__total-price');
     this._onTotal();
     this._setEvent();

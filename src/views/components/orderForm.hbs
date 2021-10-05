@@ -1,0 +1,130 @@
+{{! Order form for Modals }}
+<form class='order-form'>
+  <input
+    type='text'
+    name='client-name'
+    class='order-form__input'
+    id='client-name'
+    pattern='[A-Za-zА-Яа-яЁё]+'
+    placeholder='ВВЕДИТЕ ИМЯ *'
+    required
+  />
+  <input
+    type='tel'
+    name='client-tel'
+    class='order-form__input'
+    id='client-tel'
+    placeholder='ВВЕДИТЕ ТЕЛЕФОН *'
+    pattern='[0-9]{1,10}'
+    required
+    title='max 10 digits, for example: 0961111111'
+  />
+  <input
+    type='email'
+    name='client-email'
+    class='order-form__input'
+    id='client-email'
+    placeholder='ВВЕДИТЕ E-MAIL *'
+    required
+  />
+  <textarea
+    name='client-comments'
+    class='order-form__input order-form__comments'
+    id='client-comments'
+    placeholder='ДОБАВИТЬ КОММЕНТАРИЙ'
+    maxlength='300'
+  ></textarea>
+
+  <div class='sizes'>
+    <p class='sizes__text'>
+      ВЫБЕРИТЕ РАЗМЕР
+    </p>
+    <div class='sizes__list'>
+
+      <input
+        class='sizes__input'
+        type='radio'
+        id='sizeChoiceFirst'
+        name='sizeChoice'
+        value='40'
+        required
+      />
+      <label class='sizes__label' for='sizeChoiceFirst'>40</label>
+
+      <input
+        class='sizes__input'
+        type='radio'
+        id='sizeChoiceSecond'
+        name='sizeChoice'
+        value='42'
+        required
+      />
+      <label class='sizes__label' for='sizeChoiceSecond'>42</label>
+
+      <input
+        class='sizes__input'
+        type='radio'
+        id='sizeChoiceThird'
+        name='sizeChoice'
+        value='44'
+        required
+      />
+      <label class='sizes__label' for='sizeChoiceThird'> 44</label>
+
+      <input
+        class='sizes__input'
+        type='radio'
+        id='sizeChoiceFourth'
+        name='sizeChoice'
+        value='46'
+        required
+      />
+      <label class='sizes__label' for='sizeChoiceFourth'>46</label>
+
+      <input
+        class='sizes__input'
+        type='radio'
+        id='sizeChoiceFifth'
+        name='sizeChoice'
+        value='48'
+        required
+      />
+      <label class='sizes__label' for='sizeChoiceFifth'>48</label>
+
+      <input
+        class='sizes__input'
+        type='radio'
+        id='sizeChoiceSixth'
+        name='sizeChoice'
+        value='50'
+        required
+      />
+      <label class='sizes__label' for='sizeChoiceSixth'>50</label>
+
+    </div>
+
+  </div>
+
+  <div class='agreement'>
+    <label class='agreement__label'>
+      <input
+        type='checkbox'
+        name='agreement'
+        value='ok'
+        required
+        class='agreement__checkbox %hide'
+      />
+      <span class='agreement__checkbox-icon-thumb'></span>
+      <span class='agreement__text'>
+        Я согласен с
+        <a class='agreement__link' href='#'>
+          политикой конфиденциальности
+        </a>
+      </span>
+    </label>
+  </div>
+
+  <button type='submit' class='order-form__button btn'>
+    ОФОРМИТЬ ПРИМЕРКУ
+  </button>
+</form>
