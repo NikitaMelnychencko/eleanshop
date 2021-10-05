@@ -71,7 +71,7 @@ import payment_checkout from '../views/layouts/checkout.hbs';
 export function checkoutRender() {
   updateBin();
   refs.mainEL.innerHTML = '';
-  const createCheckout = payment_checkout({ createPayment, ordering, backdropMarkup});
+  const createCheckout = payment_checkout({ createPayment, ordering, backdropMarkup });
   refs.mainEL.insertAdjacentHTML('beforeend', createCheckout);
   openOrderingFunction();
   const modalOpen = new ModalData({
@@ -81,7 +81,7 @@ export function checkoutRender() {
     idListTime: 'time-list',
   });
 
-  blockHelpRender()
+  blockHelpRender();
 }
 
 //=====contact========//
@@ -90,9 +90,10 @@ import contact_page from '../views/layouts/contact.hbs';
 import { contactsMap, contactsContact } from './layout/contact/contact.js';
 
 export function contactRender() {
-  refs.mainEL.innerHTML = '';
+  
   const contactPageMarkUp = contact_page({ formBrand, contactsMap, contactsContact });
-  refs.mainEL.insertAdjacentHTML('beforeend', contactPageMarkUp);
+  refs.mainEL.innerHTML = contactPageMarkUp;
+  //refs.mainEL.insertAdjacentHTML('beforeend', contactPageMarkUp);
   formFittingInShowroom();
 }
 //contactRender(); //========================================================call
@@ -110,13 +111,17 @@ function fittingRender() {
 }
 fittingRender()
 //=====product========//
-
+import productFunctions from './layout/product/infoAboutProduct.js'
 import ProductModalAddToCart from './layout/product/productModalAddToCart.js';
 import RecomendationsCategory from './layout/product/recomendationsCategory.js';
 import cards from './json/catalog.json';
 import productMarkup from '../views/layouts/product.hbs';
 import HandSewn from './layout/product/productHandSewn.js';
 import backdropMarkupTempl from '../views/components/backdrop.hbs';
+import { preorderMark, setEventPreorder } from './layout/product/preorderModal.js';
+import { tryOnModels, setEventTryOnModels } from './layout/product/tryOnModelsModal.js';
+
+const { createAllListeners, createFullMarkup } = productFunctions;
 
 function productRender() {
   const objRecomendationsCategory = new RecomendationsCategory({
@@ -125,12 +130,8 @@ function productRender() {
   const objHandSewn = new HandSewn({
     object: [
       {
-        name: null, // a modal selector that is called when the button is clicked
-        className: 'is-hidden', // the class that hides the modal
-      },
-      {
-        name: '[data-modal]', // a backdrop selector that is called when the button is clicked
-        className: 'is-hidden', // the class that hides the backdrop
+        name: '.try-on__backdrop', // a modal selector that is called when the button is clicked
+        className: 'is-visible', // the class that hides the modal
       },
     ],
   });
@@ -147,19 +148,26 @@ function productRender() {
   const modalFormMarkup = objProductModalAddToCart.getMarkup();
   const backdropMarkup = backdropMarkupTempl(modalFormMarkup);
   const obj = {
+    infoAboutProduct: createFullMarkup(),
     recomendationCategory: objRecomendationsCategory.getMarkup(),
     handSewn: objHandSewn.getMarkup(),
     backdrop: backdropMarkup,
+    modalPreorder: preorderMark,
+    tryOnModels: tryOnModels,
   };
-
   refs.mainEL.insertAdjacentHTML('beforeend', productMarkup(obj));
+  // refs.mainEL.innerHTML = productMarkup(obj);
+
+  createAllListeners();
   document.querySelector('.form__button-сlose').style.display = 'none';
   objRecomendationsCategory.setSlider();
   objRecomendationsCategory.setEvent();
   objHandSewn.setEvent();
   objProductModalAddToCart.setEvent();
   objProductModalAddToCart.setSlider();
-  objProductModalAddToCart.show('ЖАКЕТ-СМОКИНГ С ЛАЦКАНМИ'); // show modal window - call the listener on the button
+  setEventPreorder();
+  setEventTryOnModels();
+  // objProductModalAddToCart.show('ЖАКЕТ-СМОКИНГ С ЛАЦКАНМИ'); // show modal window - call the listener on the button
 }
 
 productRender(); //========================================================call
@@ -191,16 +199,16 @@ import showroom_page from '../views/layouts/showroom.hbs';
 export function showroomRender() {
   refs.mainEL.innerHTML = '';
   const showroomPageMarkUp = showroom_page({ formBrand, pageShowroomSliderMarkup });
-  refs.mainEL.insertAdjacentHTML('beforeend', showroomPageMarkUp); +
-  showroomSlider();
+  refs.mainEL.insertAdjacentHTML('beforeend', showroomPageMarkUp);
+  +showroomSlider();
   formFittingInShowroom();
 }
 //showroomRender(); //========================================================call
 
 //=====blockHelp========//
 import blockHelp_blockHelpTemplate from '../views/components/blockHelp.hbs';
-import {blockHelpRenderOpen} from './components/blockHelp/blockHelp.js'
+import { blockHelpRenderOpen } from './components/blockHelp/blockHelp.js';
 function blockHelpRender() {
   refs.mainEL.insertAdjacentHTML('beforeend', blockHelp_blockHelpTemplate());
-  blockHelpRenderOpen()
+  blockHelpRenderOpen();
 }
