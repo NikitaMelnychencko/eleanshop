@@ -87,9 +87,10 @@ import contact_page from '../views/layouts/contact.hbs';
 import { contactsMap, contactsContact } from './layout/contact/contact.js';
 
 export function contactRender() {
-  refs.mainEL.innerHTML = '';
+  
   const contactPageMarkUp = contact_page({ formBrand, contactsMap, contactsContact });
-  refs.mainEL.insertAdjacentHTML('beforeend', contactPageMarkUp);
+  refs.mainEL.innerHTML = contactPageMarkUp;
+  //refs.mainEL.insertAdjacentHTML('beforeend', contactPageMarkUp);
   formFittingInShowroom();
 }
 //contactRender(); //========================================================call
@@ -107,7 +108,7 @@ function fittingRender() {
 }
 fittingRender()
 //=====product========//
-
+import productFunctions from './layout/product/infoAboutProduct.js'
 import ProductModalAddToCart from './layout/product/productModalAddToCart.js';
 import RecomendationsCategory from './layout/product/recomendationsCategory.js';
 import cards from './json/catalog.json';
@@ -116,6 +117,8 @@ import HandSewn from './layout/product/productHandSewn.js';
 import backdropMarkupTempl from '../views/components/backdrop.hbs';
 import { preorderMark, setEventPreorder } from './layout/product/preorderModal.js';
 import { tryOnModels, setEventTryOnModels } from './layout/product/tryOnModelsModal.js';
+
+const { createAllListeners, createFullMarkup } = productFunctions;
 
 function productRender() {
   const objRecomendationsCategory = new RecomendationsCategory({
@@ -142,6 +145,7 @@ function productRender() {
   const modalFormMarkup = objProductModalAddToCart.getMarkup();
   const backdropMarkup = backdropMarkupTempl(modalFormMarkup);
   const obj = {
+    infoAboutProduct: createFullMarkup(),
     recomendationCategory: objRecomendationsCategory.getMarkup(),
     handSewn: objHandSewn.getMarkup(),
     backdrop: backdropMarkup,
@@ -150,6 +154,8 @@ function productRender() {
   };
   refs.mainEL.insertAdjacentHTML('beforeend', productMarkup(obj));
   // refs.mainEL.innerHTML = productMarkup(obj);
+
+  createAllListeners();
   document.querySelector('.form__button-сlose').style.display = 'none';
   objRecomendationsCategory.setSlider();
   objRecomendationsCategory.setEvent();
