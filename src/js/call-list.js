@@ -36,6 +36,7 @@ import {
   infoAboutBrand,
   brandOurAdvantages,
   videoBrand,
+  brandPlayer,
 } from './layout/brand/infoAboutBrand.js';
 import { formFittingInShowroom } from './layout/brand/formFittingInShowroom.js';
 
@@ -49,6 +50,7 @@ export function brandRender() {
   refs.mainEL.insertAdjacentHTML('beforeend', contactPageMarkUp);
   formFittingInShowroom();
   infoAboutBrand();
+  brandPlayer();
 }
 brandRender(); //========================================================call
 
