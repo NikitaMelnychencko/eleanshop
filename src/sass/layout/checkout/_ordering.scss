@@ -2,7 +2,7 @@
   background-color: $modal-background-color;
   @media screen and (min-width: $mobile-first) {
     padding-top: 39px;
-    padding-bottom: 28px;
+    padding-bottom: 50px;
   }
 
   @media screen and (min-width: $desktop-up) {
@@ -14,7 +14,7 @@
 .ordering__title {
   border-bottom: 1px solid $border-color;
 
-  font-family: $primary-font-family;
+  font-family: $selection-font-family;
   font-size: 21px;
   line-height: 0.95;
   letter-spacing: 0, 05em;
@@ -68,7 +68,14 @@
   font-size: 18px;
   line-height: 1.11;
 
-  @media screen and (min-width: $mobile-first) and (max-width: $tablet-only) {
+  @media screen and (min-width: $mobile-first) and (max-width: $mobile-general) {
+    display: inline-block;
+    margin-bottom: 60px;
+    margin-right: 45px;
+    height: 60px;
+  }
+
+  @media screen and (min-width: $mobile-general) and (max-width: $tablet-only) {
     display: inline-block;
     margin-bottom: 50px;
     margin-right: 45px;
@@ -84,6 +91,14 @@
   align-items: center;
   margin-right: 0;
   margin-left: auto;
+
+  @media screen and (min-width: $mobile-first) and (max-width: $mobile-general) {
+    display: inline-block;
+  }
+  @media screen and (min-width: $mobile-general) {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .ordering__select--color {
@@ -94,6 +109,10 @@
 
 .ordering__item {
   position: relative;
+
+  @media screen and (min-width: $mobile-first) and (max-width: $mobile-general) {
+    margin-bottom: 14px;
+  }
 
   @media screen and (min-width: $mobile-general) {
     margin-right: 14px;
@@ -116,7 +135,7 @@
   padding-left: 9px;
   padding-right: 9px;
   color: $input-text-color;
-  font-family: $third-font-family, sans-serif;
+  font-family: $selection-font-family, sans-serif;
   font-size: 17px;
   line-height: 1.35;
 }
@@ -138,7 +157,7 @@
   border-top: none;
   top: 40px;
   left: 0;
-  max-height: 150px;
+  max-height: 115px;
   overflow-y: auto;
 
   box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.15);
@@ -157,6 +176,10 @@
   display: none;
 }
 
+.ordering__arrow--rotate {
+  transform: rotate(180deg);
+}
+
 .ordering-list__item {
   display: flex;
   align-items: center;
@@ -168,10 +191,9 @@
   padding-right: 9px;
 
   color: $input-text-color;
-  font-family: $primary-font-family;
+  font-family: $selection-font-family;
   font-size: 17px;
   line-height: 1.35;
-  font-family: $third-font-family, sans-serif;
 
   @media screen and (min-width: $mobile-first) {
     width: 121px;
@@ -192,18 +214,44 @@
   margin-left: 10px;
 }
 
+.ordering__counter {
+  display: flex;
+  align-items: center;
+}
 
 .ordering_value {
   margin: 0;
   padding: 0;
+  border: 0;
 }
 
+// .ordering__btn {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   height: 40px;
+//   width: 40px;
+//   border: 1px solid $secondary-border-color;
+
+//   font-size: 20px;
+//   font-family: $primary-font-family;
+//   line-height: 1.14;
+//   background-color: $modal-background-color;
+//   color: $input-text-color;
+// }
+
 .ordering__price {
-  font-family: $primary-font-family;
+  font-family: $third-font-family;
+  font-weight: 500;
   font-size: 18px;
   line-height: 1.27;
 
-  @media screen and (min-width: $mobile-first) and (max-width: $mobile-only) {
+  @media screen and (min-width: $mobile-first) and (max-width: $mobile-general) {
+    position: absolute;
+    top: 90px;
+  }
+
+  @media screen and (min-width: $mobile-general) and (max-width: $mobile-only) {
     position: absolute;
     top: 55px;
     left: 0;
@@ -228,27 +276,28 @@
   content: '\20B4';
   margin-left: 5px;
 }
-.ordering__button--close {
-  width: 40px;
-  height: 40px;
 
-  background-color: $modal-background-color;
+// .ordering__button--close {
+//   width: 40px;
+//   height: 40px;
 
-  @media screen and (min-width: $mobile-first) and (max-width: $tablet-only) {
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: 0;
-    border: 1px solid $primary-border-color;
-    fill: $primary-border-color;
-  }
+//   background-color: $modal-background-color;
 
-  @media screen and (min-width: $desktop-up) {
-    border: 0;
-    fill: $input-text-color;
-  }
-}
+//   @media screen and (min-width: $mobile-first) and (max-width: $tablet-only) {
+//     position: absolute;
+//     top: 0;
+//     right: 0;
+//     margin-left: auto;
+//     margin-right: 0;
+//     border: 1px solid $primary-border-color;
+//     fill: $primary-border-color;
+//   }
+
+//   @media screen and (min-width: $desktop-up) {
+//     border: 0;
+//     fill: $input-text-color;
+//   }
+// }
 
 .ordering__box {
   flex: 1;
@@ -286,22 +335,36 @@
 }
 
 .ordering__input--promocode {
-  padding: 13px;
+  padding: 13px 10px;
   height: 50px;
   border: 1px dotted $secondary-border-color;
-  @media screen and (min-width: $mobile-first) {
+
+  @media screen and (min-width: $mobile-first) and (max-width: $mobile-general) {
+    width: 264px;
+    display: inline-block;
+    margin-bottom: 14px;
+  }
+  @media screen and (min-width: $mobile-general) and (max-width: $mobile-only) {
+    flex-grow: 1;
+    max-width: 264px;
+    border-right: none;
+  }
+
+  @media screen and (min-width: $tablet-general) and (max-width: $tablet-only) {
+    padding: 13px 10px;
     width: 264px;
     border-right: none;
   }
 
   @media screen and (min-width: $desktop-up) {
+    padding: 13px;
     margin-right: 14px;
     width: 389px;
     border: 1px dotted $secondary-border-color;
   }
 
   &::placeholder {
-    font-family: $third-font-family,sans-serif;
+    font-family: $third-font-family;
     font-size: 12px;
     line-height: 2.08;
     font-weight: 500;
@@ -309,8 +372,24 @@
   }
 }
 
+// .ordering__btn--promocode {
+//   padding: 13px 29px;
+//   height: 50px;
+//   border: none;
+
+//   background-color: $btn-background-color;
+//   font-family: $selection-font-family;
+//   font-size: 17px;
+//   line-height: 1.35;
+//   color: $btn-text-color;
+
+//   @media screen and (min-width: $desktop-up) {
+//     border-radius: 3px;
+//   }
+// }
+
 .ordering__discount {
-  font-family: $third-font-family,sans-serif;
+  font-family: $third-font-family;
   font-size: 18px;
   line-height: 2.08;
   font-weight: 500;
@@ -329,7 +408,7 @@
 
 .ordering__totalprice {
   margin-right: 5px;
-  font-family: $primary-font-family;
+  font-family: $third-font-family;
   font-size: 18px;
   line-height: 1.11;
   font-weight: 500;
@@ -341,7 +420,7 @@
 }
 
 .ordering__total {
-  font-family: $primary-font-family;
+  font-family: $third-font-family;
   font-size: 18px;
   line-height: 1.11;
   font-weight: 500;
@@ -354,6 +433,17 @@
   }
 }
 
-.ordering .ordering__promocodethumb {
-  display: inline-flex;
+.ordering__promocodethumb {
+  @media screen and (min-width: $mobile-first) and (max-width: $mobile-general) {
+    display: block;
+    text-align: center;
+  }
+
+  @media screen and (min-width: $mobile-general) and (max-width: $tablet-only) {
+    display: flex;
+  }
+
+  @media screen and (min-width: $desktop-up) {
+    display: inline-flex;
+  }
 }

@@ -11,6 +11,7 @@ export default class RecomendationsCategory {
     this.countsCard = countsCard;
     this.buttonPagination = buttonPagination;
     this.data = this._getData(data);
+    this._getDataFavorite();
     if (root) {
       this.root = document.querySelector(root);
       this._addMarkup();
@@ -20,6 +21,19 @@ export default class RecomendationsCategory {
 
   _getRandom = max => {
     return Math.floor(Math.random() * (max + 1));
+  };
+
+  _getDataFavorite = () => {
+    const datas = JSON.parse(localStorage.getItem('favorites'));
+    if (datas) {
+      this.data.map(el => {
+        for (let { id } of datas.fav) {
+          el.likes = id === el.id ? true : false;
+        }
+      });
+    } else {
+      this.data.map(el => (el.likes = false));
+    }
   };
 
   _getData = data => {
@@ -48,7 +62,6 @@ export default class RecomendationsCategory {
 
   _addMarkup = () => {
     const mark = this._createMarkup();
-    console.log(mark);
     if (mark) {
       this.root.insertAdjacentHTML(this.typeInsert, mark);
     }
@@ -78,5 +91,67 @@ export default class RecomendationsCategory {
       slidesToShow: 2.5,
       focusOnSelect: true,
     });
+  };
+
+  _insertIntoLSFavorite = (id, dataId) => {
+    let ls = JSON.parse(localStorage.getItem('favorites'));
+    let newEl = true;
+    if (ls) {
+      ls.fav.forEach(el => {
+        if (el.id === id) {
+          newEl = false;
+        }
+      });
+    } else {
+      ls = { fav: [] };
+    }
+    if (newEl) {
+      const elem = {
+        id: this.data[dataId].id,
+        name: this.data[dataId].name,
+        image: {
+          srcset: this.data[dataId].image.srcset,
+          'srcset-mobile': '',
+          src: this.data[dataId].image.src,
+          alt: this.data[dataId].image.alt,
+        },
+        price: this.data[dataId].price,
+        size: 0,
+        description: this.data[dataId].description,
+        color: '',
+      };
+      ls.fav.push(elem);
+      localStorage.setItem('favorites', JSON.stringify(ls));
+    }
+  };
+
+  _removeFromFavorite = (id, dataId) => {
+    let ls = JSON.parse(localStorage.getItem('favorites'));
+    const lsid = ls.fav.findIndex(el => el.id === id);
+    ls.fav.splice(lsid, 1);
+    localStorage.setItem('favorites', JSON.stringify(ls));
+  };
+
+  _onClickLike = el => {
+    const id = el.currentTarget.dataset.id;
+    const dataId = this.data.findIndex(el => el.id === id);
+    if (this.data[dataId].likes) {
+      this.data[dataId].likes = false;
+      this._removeFromFavorite(id, dataId);
+    } else {
+      this.data[dataId].likes = true;
+      this._insertIntoLSFavorite(id, dataId);
+    }
+    el.currentTarget.classList.toggle('active');
+  };
+
+  setEvent = selector => {
+    if (!selector) {
+      this.buttonLike = document.querySelectorAll('.recomendation-category .js-btn-like');
+    } else {
+      const str = selector + ' .js-btn-like';
+      this.buttonLike = document.querySelectorAll(str);
+    }
+    this.buttonLike.forEach(el => el.addEventListener('click', this._onClickLike));
   };
 }
