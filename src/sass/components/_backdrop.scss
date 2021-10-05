@@ -12,9 +12,6 @@
   transition: opacity $time-cubic, visibility $time-cubic;
 
   &.is-hidden {
-    // visibility: hidden;
-    // opacity: 0;
-    // pointer-events: none;
     @extend %hide;
   }
 
@@ -84,14 +81,10 @@
       display: block;
       position: absolute;
       border: 0;
-
       white-space: nowrap;
-
       clip-path: inset(100%);
       clip: rect(0 0 0 0);
-
       overflow: hidden;
-
       width: 1px;
       height: 1px;
       margin: -1px;
@@ -103,7 +96,6 @@
     width: 20px;
     height: 20px;
     fill: $selection-text-color;
-
     .form__button-сlose:hover &,
     .form__button-сlose:focus & {
       fill: $secondary-text-color;

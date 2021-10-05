@@ -1,6 +1,5 @@
 .brand-container {
   padding-top: 39px;
-
   @media screen and (min-width: $desktop-up) {
     padding-top: 69px;
   }
@@ -41,13 +40,12 @@
 .brand-video__player {
   width: 100%;
   height: 665px;
-
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  // background-repeat: no-repeat;
+  // background-position: center;
+  // background-size: cover;
   overflow: hidden;
   position: relative;
-  // background-color: rgba(0, 0, 0, 0.25);
+  object-fit: cover;
   @media screen and (min-width: $desktop-up) {
     height: 600px;
   }
@@ -62,10 +60,9 @@
   z-index: 10;
   filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.25));
   transition: filter $time-cubic;
-  &:hover {
-    // background-color: red;
-    // stroke: rebeccapurple;
-    // -webkit-filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
+  cursor: pointer;
+  &:hover,
+  &:focus {
     filter: drop-shadow(0px 0px 5px $selection-text-color);
   }
 }
@@ -75,6 +72,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   height: 665px;
+  cursor: pointer;
 }
 
 .player-brand-box {
@@ -117,7 +115,6 @@
   line-height: 1.6;
   letter-spacing: 0.05em;
   color: $primary-text-color;
-
   width: 100%;
   @media screen and (min-width: $desktop-up) {
     flex-grow: 1;
@@ -163,10 +160,6 @@
   line-height: 1.5;
   letter-spacing: 0.05em;
   color: $primary-text-color;
-  // margin-bottom: 41px;
-  // @media screen and (min-width: $desktop-up) {
-  //   margin-bottom: 72px;
-  // }
 }
 
 .brand_section-container {
@@ -179,4 +172,27 @@
 
 .brandVideoPreview {
   background-image: url('./images/brand-video-image.jpg');
+}
+
+.brand-video__player-fullscreen {
+  display: none;
+  fill: $hero-slider-dots;
+  // fill: red;
+  position: absolute;
+  z-index: 2;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  transition: filter $time-cubic;
+  transition: fill $time-cubic;
+  cursor: pointer;
+  @media screen and (min-width: $desktop-up) {
+    &:hover {
+      fill: $accent-btn-color;
+      filter: drop-shadow(0px 0px 5px $selection-text-color);
+    }
+    bottom: 18px;
+    right: 120px;
+  }
 }
