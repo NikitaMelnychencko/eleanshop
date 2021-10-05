@@ -181,6 +181,7 @@ export function openOrderingFunction() {
       article.label.сolorSelected = this.innerText;
       article.label.circleSelected = circleLink;
     }  
- localStorage.setItem('orderingData', JSON.stringify(parsedData));
+    localStorage.setItem('orderingData', JSON.stringify(parsedData));
+    e.target.parentElement.classList.toggle('ordering-list--hide');
   }
 }
