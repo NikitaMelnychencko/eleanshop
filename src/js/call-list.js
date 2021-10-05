@@ -12,6 +12,7 @@ import {
   starClientsComments,
 } from './layout/home/starClients.js';
 import { pageInInstagramSliderMarkup, instagramSlider } from './layout/home/inInstagram.js';
+import {cardsMarkup,openContent} from './layout/home/content.js'
 
 export function homeRender() {
   updateBin();
@@ -21,6 +22,7 @@ export function homeRender() {
 function getHome() {
   const homeMarkup = home({
     pageHeroSliderMarkup,
+    cardsMarkup,
     pageShowroomSliderMarkup,
     pageStarClientsSliderMarkup,
     pageInInstagramSliderMarkup,
@@ -28,6 +30,7 @@ function getHome() {
 
   refs.mainEL.insertAdjacentHTML('beforeend', homeMarkup);
   heroSlider();
+  openContent();
   showroomSlider();
   starClientsSlider();
   starClientsComments();
