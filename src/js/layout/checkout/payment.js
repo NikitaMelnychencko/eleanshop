@@ -45,6 +45,12 @@ export class ModalData {
       this._refs.listTime.classList.toggle('showroom-list--hide');
       document.body.classList.toggle('extra');
     });
+    this._refs.inputDay.addEventListener('blur', event => {
+      this._addLocalStorage(event.target.name, event.target.value);
+    });
+    this._refs.inputTime.addEventListener('blur', event => {
+      this._addLocalStorage(event.target.name, event.target.value);
+    });
   }
   _addEventList() {
     this._refs.listDay.addEventListener('click', event => {
@@ -58,6 +64,7 @@ export class ModalData {
       this._addLocalStorage(this._refs.inputTime.name, event.target.innerText);
     });
   }
+  
   _addEventDelivery() {
     this._updateValueDelivery();
     
