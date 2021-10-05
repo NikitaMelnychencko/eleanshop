@@ -64,7 +64,6 @@ export class ModalData {
       this._addLocalStorage(this._refs.inputTime.name, event.target.innerText);
     });
   }
-  
   _addEventDelivery() {
     this._updateValueDelivery();
     
@@ -83,7 +82,6 @@ export class ModalData {
       if (event.target.checked === true) {
         this._addLocalStorage(event.target.name, event.target.value);
       }
-      console.log(event.target.checked);
       this._disableButton(event.target.value)
     });
   
@@ -134,7 +132,6 @@ export class ModalData {
   _disableButton(value) {
     if (value === 'Showroom' || value === 'By_courier_abroad') {
       this._refs.arrInputPayment.forEach((el, indx) => {
-        console.log(indx);
         if (indx === 1 || indx === 2) {
           el.disabled = true
           el.checked = false
