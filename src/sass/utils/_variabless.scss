@@ -21,15 +21,20 @@ $secondary-form-text-color: #b3b3b3;
 $input-text-color: hsl(0, 0%, 72%);
 $btn-text-color: #c7c3c3;
 $fourth-text-color: #afafaf;
-$fourth-text-color: #a7a7a7;
 $fifth-text-color: #b8b5b5;
 $sixth-text-color: #c0c0c0;
 $seventh-text-color: #9d9dad;
+$product-price-color: #333333;
+$product-info-color: #242424;
+$form-placeholder-text-color: #dadada;
 
 //title
 $primary-title-text-color: #000000;
 $secondary-title-text-color: #272727;
 $selection-title-text-color: #ffffff;
+$secondary-title-black-color: #222222;
+$third-title-text-color: #3d3d3d;
+$colorpicker-title-color: #3d3d3d;
 
 //title-text-shadow
 $primary-title-text-shadow: 0px 0px 1px #000000;
@@ -39,6 +44,10 @@ $accent-color: #e1c4a9;
 $accent-btn-color: #ffffff;
 $secondary-accent-btn-color: #242424;
 $accent-favorite-btn-color: #d7bca3;
+$accent-currency-color: #caaf97;
+$accent-colorpicker-black: #242424;
+$accent-colorpicker-red: #f2404a;
+$accent-colorpicker-grey: #e2dfdf;
 $third-accent-color: #c0a78f;
 $accent-background-selector-color: #f8efe7;
 $button-hover-background-color: #000000;
@@ -46,11 +55,15 @@ $button-hover-background-color: #000000;
 //background
 $primary-background-color: #ffffff;
 $secondary-background-color: #252831;
+$third-background-color:#f9f9f9;
 $footer-background-color: transparent;
-
+$product-slider-background-color: #ffffff;
 $modal-background-color: #ffffff;
 $menu-background-color: #e1c4a9;
-$button-background-color: #242424;
+$button-background-black-color: #242424;
+$btn-background-color: #efefef;
+$params-background-color: #dadada;
+$backdrop-background: rgba(0, 0, 0, 0.6);
 
 $btn-background-color: #efefef;
 $message-amount-thumb-color: #e20613;
@@ -69,8 +82,19 @@ $selection-text-color: #ffffff;
 $border-color: #e3e4e4;
 $primary-border-color: #676767;
 $secondary-border-color: #dadada;
+$product-slider-border-color: #dcdcdc;
+$size-item-border-color: #d7b494;
+$colorpicker-border-color: #e6e6e6;
+$colorpicker-icon-border-color: #e2dfdf;
+$colorpicker-icon-border-hover: #b59475;
+$button-purchase-border: #e3e3e3;
 $third-border-color: #d0d0d0;
-
+$accent-outline-btn-color: #ffffff;
+$delivery-border-color: #ddcdbd;
+$fourt-border-color: rgba(255, 255, 255, 0.25);
+$button-purchase-border-color: #242424;
+$fitting-borfer-color:#cfd5e2;
+$form-dashed-color: #b8b5b5;
 //input
 $placeholder-color: #a6a6a9;
 $primery-border-color: #e6e6e6;
@@ -79,18 +103,19 @@ $primaty-slick-dots: #ced2db;
 //button
 $button-text-color: #b6b6b6;
 $button-border-color: #e7dcdc;
+$button-hover-background-color: #000000;
+$button-size-option-color: #b59475;
+$button-size-option-hover-color: #222222;
+$button-counter-color: #c6c6c6;
 $button-background-color: transparent;
 $button-first-fill-color: #333333;
 $button-second-fill-color: #ffffff;
 $button-third-fill-color: #2f2f2f;
-$button-checkout-color:#242424;
-
+$button-checkout-color: #242424;
 
 // backdrop
 $backdrop-color: #e5e5e5;
 $button-counter-color: #c6c6c6;
-
-
 
 //bars
 $main-bar: #d7b494;
