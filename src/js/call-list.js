@@ -15,7 +15,8 @@ import {
   starClientsComments,
 } from './layout/home/starClients.js';
 import { pageInInstagramSliderMarkup, instagramSlider } from './layout/home/inInstagram.js';
-
+import {cardsMarkup,openContent} from './layout/home/content.js'
+import {aboutTheBrand_parsing,openAboutTheBrand} from './layout/home/aboutTheBrand.js'
 export function homeRender() {
   updateBin();
   refs.mainEL.innerHTML = '';
@@ -24,20 +25,24 @@ export function homeRender() {
 function getHome() {
   const homeMarkup = home({
     pageHeroSliderMarkup,
+    cardsMarkup,
     pageShowroomSliderMarkup,
     formBrand,
     pageStarClientsSliderMarkup,
     pageInInstagramSliderMarkup,
+    aboutTheBrand_parsing
   });
 
   refs.mainEL.insertAdjacentHTML('beforeend', homeMarkup);
   heroSlider();
+  openContent();
   showroomSlider();
   starClientsSlider();
   starClientsComments();
   instagramSlider();
   blockHelpRender();
   formFittingInShowroom();
+  openAboutTheBrand();
 }
 getHome(); //========================================================call
 //=====brand========//
@@ -70,9 +75,9 @@ import { backdropMarkup } from './layout/checkout/thanksForOrdering.js';
 import payment_checkout from '../views/layouts/checkout.hbs';
 export function checkoutRender() {
   updateBin();
-  refs.mainEL.innerHTML = '';
   const createCheckout = payment_checkout({ createPayment, ordering, backdropMarkup });
-  refs.mainEL.insertAdjacentHTML('beforeend', createCheckout);
+  refs.mainEL.innerHTML = createCheckout;
+  //refs.mainEL.insertAdjacentHTML('beforeend', createCheckout);
   openOrderingFunction();
   const modalOpen = new ModalData({
     idInputDay: 'js-day',
@@ -122,7 +127,7 @@ function deliveryRender() {
   deliveryThreeModal();
 }
 
- deliveryRender(); //========================================================call
+ //deliveryRender(); //========================================================call
 
 //=====favorites========//
 export function favoritesRender() {}
