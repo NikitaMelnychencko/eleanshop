@@ -11,7 +11,7 @@
   }
 }
 
-.product__name-wrapper {
+.product__main-info {
   position: relative;
   margin-bottom: 31px;
 
@@ -20,8 +20,12 @@
   }
 }
 
-.product__name {
+.product__name-wrapper {
+  display: flex;
   margin-bottom: 10px;
+}
+
+.product__name {
   font-size: 21px;
   line-height: 1;
   letter-spacing: 0.05em;
@@ -100,7 +104,7 @@
 .options__item {
   @media screen and (min-width: $tablet-general) {
     &:not(:last-child) {
-      margin-right: 12px;
+      margin-right: 10px;
     }
   }
 }
@@ -127,6 +131,7 @@
   @media screen and (min-width: $desktop-up) {
     font-size: 14px;
     line-height: 1.57;
+    padding-left: 25px;
   }
 }
 
@@ -144,6 +149,7 @@
   @media screen and (min-width: $tablet-general) {
     top: 50%;
     transform: translateY(-50%);
+    width: 20px;
   }
 }
 
@@ -249,7 +255,7 @@
   background-color: $primary-background-color;
   color: $secondary-accent-btn-color;
 
-  transition: background-color $time-cubic, color $time-cubic;
+  transition: background-color $time-cubic, color $time-cubic, border-color $time-cubic;
 
   @media screen and (min-width: $mobile-general) {
     width: 374px;
@@ -261,19 +267,19 @@
 }
 
 .button__purchase:hover {
-  background-color: $button-background-color;
+  background-color: $button-background-black-color;
   color: $accent-btn-color;
 }
 
 .button__purchase--buy {
   margin-bottom: 20px;
 
-  background: $button-background-color;
+  background: $button-background-black-color;
   color: $accent-btn-color;
 }
 
 .button__purchase--buy:hover {
-  border: 1px solid $button-purchase-border;
+  border: 1px solid $button-purchase-border-color;
   background: $accent-btn-color;
   color: $secondary-accent-btn-color;
 }

@@ -5,11 +5,12 @@ require('../../slick/slick.min')
 $(document).ready(function () {
   $('.product-slider-smaller').slick({
     arrows: false,
-    speed: 1000,
+    speed: 500,
     vertical: true,
     verticalSwiping: true,
     slidesToShow: 4,
     slidesToScroll: 1,
+    lazyLoad: "progressive",
     asNavFor: ".product-slider",
     centerMode: true,
     focusOnSelect: true,
@@ -21,8 +22,8 @@ $(document).ready(function () {
     fade: true,
     speed: 500,
     slidesToShow: 1,
+    lazyLoad: "progressive",
     asNavFor: ".product-slider-smaller",
-
   })
 });
 

@@ -6,12 +6,13 @@
     {{/each}}
 
       <article class="product__content">
-        <div class="product__name-wrapper">
-          <h2 class="product__name">{{parsedProductInfoData.productName}}</h2>
-          {{!-- {{> buttonAddLike}} --}}
-          <button class="button__like"></button>
-          <p class="product__price">{{parsedProductInfoData.productPrice}} <span class="product__currency">&#8372;</span></p>
-        </div>
+        <div class="product__main-info">
+          <div class="product__name-wrapper">
+            <h2 class="product__name">{{parsedProductInfoData.productName}}</h2>
+            {{> ../../components/buttonAddLike}}
+          </div>
+            <p class="product__price">{{parsedProductInfoData.productPrice}} <span class="product__currency">&#8372;</span></p>
+        </div>    
 
         <h3 class="product__size size__title">размер</h3>
         <ul class="size__list">
