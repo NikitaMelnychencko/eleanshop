@@ -1,10 +1,22 @@
 [
     {
         "id": "Delivery",
-        "name": "Delivery"
+        "name": "Delivery",
+        "render": "deliveryRender()"
     },
     {
         "id": "Payment",
-        "name": "Payment"
+        "name": "Payment",
+        "render": "deliveryRender()"
+    },
+    {
+        "id": "Return",
+        "name": "Return",
+        "render": "deliveryRender()"
+    },
+    {
+        "id": "Fitting",
+        "name": "Fitting",
+        "render": "formFittingInShowroom()"
     }
 ]

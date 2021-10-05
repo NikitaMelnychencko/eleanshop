@@ -4,6 +4,7 @@ import { scrollTo } from '../../components/blockHelp/blockHelp';
 import { productRender, contactRender, deliveryRender, favoritesRender, showroomRender, checkoutRender } from '../../call-list';
 import { id } from 'postcss-selector-parser';
 import { indexOf } from 'lodash';
+import { render } from 'node-sass';
 
 
 const {
@@ -32,17 +33,18 @@ test.addEventListener('click', noTestDesktop)
 function noTestDesktop(evt) {
     collection.forEach((el, indx) => {
         const test2 = evt.target.id
+        console.log(el.id)
         console.log(el.id === test2)
+        if (el.id === test2) {
+            console.log('el.render')
+        }
     });
 }
-
 //===включение плавной прокрутки на  desktop
 desktop.forEach((evt) => {
-
     evt.addEventListener('click', (el) => {
         scrollTo(0, 700);
         if (el.target) {
-
         }
     });
 });
@@ -60,7 +62,6 @@ linkMenuFooterDesktop.forEach((evt) => {
 //=== Прослушивание меню Footer__Mobile по id и запись в LockalStorage===//
 linkMenuFooterMobile.forEach((evt) => {
     const idlinkMobile = evt.id
-    console.log(idlinkMobile)
     evt.addEventListener('click', (el) => {
         const selected = el.target;
         if (selected) {
@@ -96,7 +97,6 @@ closeOpenPlus.forEach((evt) => {
             el.target.classList.toggle('open-menu');
             el.target.nextElementSibling.classList.toggle('js-dropdown-none');
         } else {
-
             window.location.href = el.target
         }
     });

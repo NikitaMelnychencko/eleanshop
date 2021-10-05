@@ -82,9 +82,8 @@ export function checkoutRender() {
 }
 
 //=====contact========//
-export function contactRender() { }
+
 //=====delivery========//
-export function deliveryRender() { }
 
 import contact_page from '../views/layouts/contact.hbs';
 import { contactsMap, contactsContact } from './layout/contact/contact.js';
@@ -181,7 +180,6 @@ function reviewsRender() {
 reviewsRender(); //========================================================call
 
 //=====showroom========//
-export function showroomRender() { }
 import showroom_page from '../views/layouts/showroom.hbs';
 export function showroomRender() {
   refs.mainEL.innerHTML = '';
