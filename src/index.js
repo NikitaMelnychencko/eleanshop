@@ -26,6 +26,8 @@ import './js/test/test_productBin.js';
 import './js/test/test_recomendationsCategory.js';
 import './js/test/test_productModalAddCArt.js';
 import './js/test/test_productHandSewn.js';
+import './js/layout/product/preorderModal';
+import './js/layout/product/tryOnModelsModal';
 
 //delivery
 import './js/layout/delivery/filter.js';
