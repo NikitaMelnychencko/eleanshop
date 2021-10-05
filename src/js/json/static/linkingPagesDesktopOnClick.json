@@ -1,0 +1,16 @@
+[
+    {
+        "colection": {
+            "id": [
+                "Delivery",
+                "Payment",
+                "Return"
+            ],
+            "call": [
+                "deliveryRender",
+                "star",
+                "joi"
+            ]
+        }
+    }
+]

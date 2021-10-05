@@ -1,45 +1,40 @@
 import refs from '../../refs/refs.js';
-import collection from '../../json/linkingPagesFooter/linkingPagesDesktopOnClick.json'
+import collection from '../../json/static/linkingPagesDesktopOnClick.json'
 import { scrollTo } from '../../components/blockHelp/blockHelp';
-import { productRender, contactRender, deliveryRender, favoritesRender, showroomRender, checkoutRender } from '../../call-list';
+import { brandRender, productRender, contactRender, reviewsRender, deliveryRender, favoritesRender, showroomRender, checkoutRender } from '../../call-list';
+import { formFittingInShowroom } from '../../layout/brand/formFittingInShowroom';
 import { id } from 'postcss-selector-parser';
 import { indexOf } from 'lodash';
-import { render } from 'node-sass';
-
-
 const {
     closeOpenPlus,
-    dropDown,
-    openList,
-    openSubMenu,
     inputStorageMobile,
     inputStorageDesktop,
     checkBoxIcon,
     agreeActive,
     mobileSubmitBtn,
     desktopSubmitBtn,
-    testIdInput,
     desktop,
     linkMenuFooterDesktop,
-    linkMenuFooterMobile } = refs
+    linkMenuFooterMobile,
+    showroomLink,
+    contactLinkDesktop,
+    deliveryLink,
+    reviewsLinkDesktop,
+    brandRenderMobile, fittingInShowroom } = refs
+
 checkBoxIcon.addEventListener('click', onAgreeCheckBox)
 mobileSubmitBtn.addEventListener('submit', onSubmitBtnMobile)
 desktopSubmitBtn.addEventListener('submit', onSubmitBtnDesktop)
-const test = document.querySelector('.footer__desktop-list')
-test.addEventListener('click', noTestDesktop)
 
 //===вызов функции таргета ===//
-test.addEventListener('click', noTestDesktop)
-function noTestDesktop(evt) {
-    collection.forEach((el, indx) => {
-        const test2 = evt.target.id
-        console.log(el.id)
-        console.log(el.id === test2)
-        if (el.id === test2) {
-            console.log('el.render')
-        }
-    });
-}
+
+// deliveryLink.addEventListener('click', deliveryRender);
+showroomLink.addEventListener('click', showroomRender);
+contactLinkDesktop.addEventListener('click', contactRender);
+reviewsLinkDesktop.addEventListener('click', reviewsRender);
+brandRenderMobile.addEventListener('click', brandRender);
+fittingInShowroom.addEventListener('.click', formFittingInShowroom);
+
 //===включение плавной прокрутки на  desktop
 desktop.forEach((evt) => {
     evt.addEventListener('click', (el) => {
@@ -59,15 +54,19 @@ linkMenuFooterDesktop.forEach((evt) => {
         }
     });
 });
+
 //=== Прослушивание меню Footer__Mobile по id и запись в LockalStorage===//
 linkMenuFooterMobile.forEach((evt) => {
-    const idlinkMobile = evt.id
+    const idlinkMobile = evt.dataset.atribute
     evt.addEventListener('click', (el) => {
         const selected = el.target;
         if (selected) {
+            console.log(selected)
             localStorage.setItem(idlinkMobile, selected)
         }
     });
+
+
 });
 
 // === раскрытия списка-меню === 
@@ -75,10 +74,9 @@ closeOpenPlus.forEach((evt) => {
     evt.addEventListener('click', (el) => {
         const idMuneClickMobile = evt.id;
         const clickEL = el.currentTarget;
-        console.log(clickEL)
-        console.log(idMuneClickMobile)
         if (!el.target.nextElementSibling) {
             scrollTo(0, 700);
+
             localStorage.setItem(idMuneClickMobile, clickEL)
         }
         el.preventDefault()
@@ -97,13 +95,14 @@ closeOpenPlus.forEach((evt) => {
             el.target.classList.toggle('open-menu');
             el.target.nextElementSibling.classList.toggle('js-dropdown-none');
         } else {
+
             window.location.href = el.target
         }
     });
 });
 
 //==== Скрытие меню при переходе на другой блок
-dropDown.forEach((evt) => {
+linkMenuFooterMobile.forEach((evt) => {
     evt.addEventListener('click', (el) => {
         scrollTo(0, 700);
         el.preventDefault()

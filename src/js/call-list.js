@@ -18,7 +18,7 @@ export function homeRender() {
   refs.mainEL.innerHTML = '';
   getHome();
 }
-function getHome() {
+export function getHome() {
   const homeMarkup = home({
     pageHeroSliderMarkup,
     pageShowroomSliderMarkup,
@@ -83,8 +83,6 @@ export function checkoutRender() {
 
 //=====contact========//
 
-//=====delivery========//
-
 import contact_page from '../views/layouts/contact.hbs';
 import { contactsMap, contactsContact } from './layout/contact/contact.js';
 
@@ -111,7 +109,7 @@ import productMarkup from '../views/layouts/product.hbs';
 import HandSewn from './layout/product/productHandSewn.js';
 import backdropMarkupTempl from '../views/components/backdrop.hbs';
 
-function productRender() {
+export function productRender() {
   const objRecomendationsCategory = new RecomendationsCategory({
     data: cards,
   });
@@ -167,7 +165,7 @@ import {
   videoSetPlayer,
 } from './layout/reviews/videoSet.js';
 
-function reviewsRender() {
+export function reviewsRender() {
   const reviewsMarkUp = reviews_page({ setVideoHbs, clientStar, formReviewsMarkUp });
   refs.mainEL.insertAdjacentHTML('beforeend', reviewsMarkUp);
   videosetSlickSettings();
