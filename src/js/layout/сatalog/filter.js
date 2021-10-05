@@ -10,15 +10,5 @@ const filtersRefs = {
    category : document.querySelectorAll('.filters-categor__item'),
    collection : document.querySelectorAll('.filters-collection__item'),
 }
+ element.addEventListener('click',)
 
-function filterClick() {
-    const filtersRefs = {
-   category : document.querySelectorAll('.filters-categor__item'),
-   collection : document.querySelectorAll('.filters-collection__item'),
-}
-    filtersRefs.category.forEach((element, index) => {
-        element.addEventListener('click', el => {
-            el.catalog.
-        }) 
-   }
-}
