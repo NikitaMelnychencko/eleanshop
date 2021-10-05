@@ -6,8 +6,8 @@ export const createPayment = payment_payment({ method });
 
 
 export class ModalData {
-  constructor({ idInputDay, idListDay,idInputTime,idListTime}) {
-    this._refs = this._getRefs(idInputDay, idListDay,idInputTime,idListTime);
+  constructor({ idInputDay, idListDay, idInputTime, idListTime }) {
+    this._refs = this._getRefs(idInputDay, idListDay, idInputTime, idListTime);
     this._addEventDelivery();
     this._addEventInput();
     this._addEventList();
@@ -61,25 +61,27 @@ export class ModalData {
   _addEventDelivery() {
     this._updateValueDelivery();
     
-      this._refs.delivery.addEventListener('click', event => {
-        if (event.target.nodeName !== 'INPUT') {
-          return;
-        }
+    this._refs.delivery.addEventListener('click', event => {
+      if (event.target.nodeName !== 'INPUT') {
+        return;
+      }
         
-        if (event.target.value === 'Showroom'||event.target.value === 'By_courier_in_Kiev' && event.target.checked === true) {
-          this._refs.formDay.classList.add('showroom-method--hide');
-          this._toggleInput(false,true)
-        } else {
-          this._refs.formDay.classList.remove('showroom-method--hide');
-          this._toggleInput(true,false)
-        }
-        if (event.target.checked === true) {
-          this._addLocalStorage(event.target.name, event.target.value);
-        }
-      });
+      if (event.target.value === 'Showroom' || event.target.value === 'By_courier_in_Kiev' && event.target.checked === true) {
+        this._refs.formDay.classList.add('showroom-method--hide');
+        this._toggleInput(false, true)
+      } else {
+        this._refs.formDay.classList.remove('showroom-method--hide');
+        this._toggleInput(true, false)
+      }
+      if (event.target.checked === true) {
+        this._addLocalStorage(event.target.name, event.target.value);
+      }
+      console.log(event.target.checked);
+      this._disableButton(event.target.value)
+    });
   
   }
-  _toggleInput(valueFirst,valueSecond) {
+  _toggleInput(valueFirst, valueSecond) {
     this._refs.inputDay.disabled = valueFirst;
     this._refs.inputTime.disabled = valueFirst;
     this._refs.inputDay.required = valueSecond;
@@ -112,8 +114,8 @@ export class ModalData {
       e.preventDefault();
       onBtnClick()
       this._refs.arrInputInf.forEach(el => {
-        el.value = '', 
-        el.checked = false
+        el.value = '',
+          el.checked = false
       })
       this._refs.textareaInfo.value = ''
     });
@@ -121,6 +123,22 @@ export class ModalData {
   }
   _addLocalStorage(name, value) {
     localStorage.setItem(`${name}`, `${value}`);
+  }
+  _disableButton(value) {
+    if (value === 'Showroom' || value === 'By_courier_abroad') {
+      this._refs.arrInputPayment.forEach((el, indx) => {
+        console.log(indx);
+        if (indx === 1 || indx === 2) {
+          el.disabled = true
+          el.checked = false
+          
+        }
+      })
+    } else {
+      this._refs.arrInputPayment.forEach((el, indx) => {
+        el.disabled = false
+      })
+    }
   }
   _updateValueDelivery() {
     const delivery = this._updateValueInLocal('delivery-method');

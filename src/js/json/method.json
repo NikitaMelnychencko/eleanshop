@@ -26,13 +26,13 @@
     {
       "id": "XWaQXcb11",
       "text": "Оплата картой",
-      "value": "Payment by card",
+      "value": "Payment_by_card",
       "checked": "checked"
     },
     {
       "id": "XWaREcv22",
       "text": "Наличными курьеру",
-      "value": "Cash to the courier"
+      "value": "Cash_to_the_courier"
     },
     {
       "id": "XWaNHbn33",
@@ -42,7 +42,7 @@
     {
       "id": "XWaTYmk44",
       "text": "Купить в рассрочку",
-      "value": "Buy in installments"
+      "value": "Buy_in_installments"
     }
   ],
   "day-data": [
