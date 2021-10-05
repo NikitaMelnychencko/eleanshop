@@ -11,10 +11,12 @@
   background-color: $selection-text-color;
   overflow: scroll;
   transition: $time-cubic;
+  opacity: 1;
 
   &.hidden {
     // @extend %hide;
-    transform: translateY(-250%);
+    transform: translateY(-100%);
+    opacity: 0;
   }
 
   @media screen and (min-width: $desktop-up) {
@@ -119,7 +121,7 @@
   &__button-del {
     color: $secondary-text-color;
     padding: 10px 14px;
-    border: none;
+    border: transparent;
     background-color: transparent;
     text-decoration-line: underline;
 
@@ -132,7 +134,7 @@
       &:focus {
         color: $selection-text-color;
         background-color: $secondary-text-color;
-        border: none;
+        border: 1px solid $secondary-text-color;
       }
     }
   }
