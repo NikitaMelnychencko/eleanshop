@@ -1,0 +1,194 @@
+// ---------------- Order form (for Pre-Order Modal and ) -----------------------
+.order-form {
+  @media screen and (min-width: $desktop-up) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+    column-gap: 17px;
+    row-gap: 23px;
+  }
+}
+
+.order-form__input {
+  display: block;
+  width: 100%;
+  height: 60px;
+
+  border: 1px solid #000000;
+  padding: 18px;
+
+  font-family: $third-font-family,sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.92;
+  letter-spacing: 0.06em;
+  color: inherit;
+
+  &::placeholder {
+    color: $placeholder-color;
+  }
+
+  @media screen and (max-width: $desktop-up - 1) {
+    margin-bottom: 13px;
+  }
+}
+
+.order-form__comments {
+  resize: none;
+  height: 96px;
+
+  overflow: auto;
+
+  @media screen and (max-width: $desktop-up - 1) {
+    margin-bottom: 25px;
+  }
+
+  @media screen and (min-width: $desktop-up) {
+    grid-column: 1/3;
+  }
+}
+
+.sizes {
+  @media screen and (min-width: $desktop-up) {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+
+.sizes__text {
+  margin-bottom: 16px;
+
+  text-transform: uppercase;
+  font-family: $third-font-family,sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.15;
+
+  text-align: center;
+  letter-spacing: 0.05em;
+
+  @media screen and (min-width: $desktop-up) {
+    display: flex;
+    flex-grow: 2;
+    justify-content: start;
+    align-items: center;
+
+    margin-bottom: 0;
+
+    text-align: start;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.06em;
+  }
+}
+
+.sizes__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: $desktop-up) {
+    justify-content: flex-start;
+    margin: 0;
+  }
+}
+
+.sizes__label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+
+  border: 1px solid #222222;
+  cursor: pointer;
+  color: $primary-text-color;
+
+  &:hover {
+    color: $selection-text-color;
+    background-color: $primary-logo-color;
+  }
+
+  .sizes__input:checked + & {
+    color: $selection-text-color;
+    background-color: $primary-logo-color;
+  }
+}
+.sizes__input {
+  @extend %hide;
+}
+
+.agreement {
+  margin-bottom: 30px;
+
+  @media screen and (min-width: $desktop-up) {
+    margin-bottom: 0px;
+    grid-column: 1/3;
+  }
+}
+.agreement__label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.agreement__checkbox {
+  @extend %hide;
+}
+.agreement__checkbox-icon-thumb {
+  width: 30px;
+  height: 30px;
+  margin-right: 15px;
+  border: 1px solid $secondary-text-color;
+  flex-shrink: 0;
+
+  transition: background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .agreement__checkbox:checked ~ & {
+    background-image: url(../images/check.svg);
+    background-repeat: no-repeat;
+    background-size: 15px 15px;
+    background-position: center;
+    background-origin: border-box;
+  }
+}
+
+.agreement__text {
+  font-family: $third-font-family,sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.21;
+}
+
+.agreement__link {
+  text-decoration: underline;
+  color: $primary-text-color;
+
+  transition: color $time-cubic;
+
+  &:hover,
+  &focus {
+    color: $accent-color;
+  }
+}
+
+.order-form__button {
+  width: 100%;
+  height: 60px;
+  padding: 20px;
+
+  background-color: black;
+  color: white;
+  border: 1px solid black;
+  cursor: pointer;
+
+  transition-property: color, background-color;
+  transition: $time-cubic;
+}
+
+.order-form__button:hover,
+.order-form__button:focus {
+  background-color: white;
+  color: black;
+}
