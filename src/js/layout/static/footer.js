@@ -20,28 +20,22 @@ const {
     desktopSubmitBtn,
     testIdInput,
     desktop,
-    linkMenuFooterDesktop } = refs
+    linkMenuFooterDesktop,
+    linkMenuFooterMobile } = refs
 checkBoxIcon.addEventListener('click', onAgreeCheckBox)
 mobileSubmitBtn.addEventListener('submit', onSubmitBtnMobile)
 desktopSubmitBtn.addEventListener('submit', onSubmitBtnDesktop)
 const test = document.querySelector('.footer__desktop-list')
 test.addEventListener('click', noTestDesktop)
 
+//===вызов функции таргета ===//
 test.addEventListener('click', noTestDesktop)
 function noTestDesktop(evt) {
     collection.forEach((el, indx) => {
         const test2 = evt.target.id
         console.log(el.id === test2)
-
-
-
     });
 }
-
-function testOpen(evt) {
-    console.log('все ок')
-}
-
 
 //===включение плавной прокрутки на  desktop
 desktop.forEach((evt) => {
@@ -64,12 +58,28 @@ linkMenuFooterDesktop.forEach((evt) => {
         }
     });
 });
+//=== Прослушивание меню Footer__Mobile по id и запись в LockalStorage===//
+linkMenuFooterMobile.forEach((evt) => {
+    const idlinkMobile = evt.id
+    console.log(idlinkMobile)
+    evt.addEventListener('click', (el) => {
+        const selected = el.target;
+        if (selected) {
+            localStorage.setItem(idlinkMobile, selected)
+        }
+    });
+});
 
 // === раскрытия списка-меню === 
 closeOpenPlus.forEach((evt) => {
     evt.addEventListener('click', (el) => {
+        const idMuneClickMobile = evt.id;
+        const clickEL = el.currentTarget;
+        console.log(clickEL)
+        console.log(idMuneClickMobile)
         if (!el.target.nextElementSibling) {
             scrollTo(0, 700);
+            localStorage.setItem(idMuneClickMobile, clickEL)
         }
         el.preventDefault()
         const test = document.querySelector('.dropdown-content')
@@ -85,10 +95,9 @@ closeOpenPlus.forEach((evt) => {
                 }
             }
             el.target.classList.toggle('open-menu');
-            // console.log(el.target)
-            // console.log(el.target.nextElementSibling)
             el.target.nextElementSibling.classList.toggle('js-dropdown-none');
         } else {
+
             window.location.href = el.target
         }
     });
@@ -159,7 +168,8 @@ function onSubmitBtnDesktop(evt) {
 
 }
 
-//=== localStorage menu footer ===//
+
+
 
 
 

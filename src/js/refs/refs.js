@@ -8,6 +8,7 @@ export default {
   checkBoxIcon: document.querySelector('.footer__desktop-license-icon-checkbox'),
   agreeActive: document.querySelector('.agree'),
   linkMenuFooterDesktop: document.querySelectorAll('.footer__desktop-list-link'),
+  linkMenuFooterMobile: document.querySelectorAll('.footer__mobile-submenu'),
   mobileSubmitBtn: document.querySelector('.footer__mobile-form'),
   desktopSubmitBtn: document.querySelector('.footer__desktop-form'),
   footerSectionDesktop: document.querySelector('.footer__desktop'),
