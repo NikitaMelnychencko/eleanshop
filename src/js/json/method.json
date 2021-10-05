@@ -1,23 +1,23 @@
 {
   "delivery": [
     {
-      "id": "delivery-method",
+      "id": "delivery-method--Showroom",
       "text": "Шоурум",
       "value": "Showroom"
     },
     {
-      "id": "delivery-method",
+      "id": "delivery-method--By_courier_in_Kiev",
       "text": "Курьером по Киеву",
       "value": "By_courier_in_Kiev"
     },
     {
-      "id": "delivery-method",
+      "id": "delivery-method--checked",
       "text": "Курьером по Украине",
       "value": "By_courier_in_Ukraine",
       "checked": "checked"
     },
     {
-      "id": "delivery-method",
+      "id": "delivery-method--By_courier_abroad",
       "text": "Курьером за границу",
       "value": "By_courier_abroad"
     }
