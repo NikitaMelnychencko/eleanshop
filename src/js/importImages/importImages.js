@@ -203,3 +203,12 @@ import '../../images/img/Reviews/poster/Black2V.jpg';
 import '../../images/img/Reviews/poster/23.jpg';
 import '../../images/img/Reviews/poster/55.jpg';
 import '../../images/img/Reviews/poster/78.jpg';
+
+//=========tryOnModal===========
+import '../../images/svg/tryOnModal/check.svg';
+import '../../images/svg/tryOnModal/crossTryOnModal.svg';
+import '../../images/svg/tryOnModal/model.svg';
+import '../../images/svg/tryOnModal/paiment.svg';
+import '../../images/svg/tryOnModal/request.svg';
+import '../../images/svg/tryOnModal/stylist.svg';
+import '../../images/svg/tryOnModal/time.svg';

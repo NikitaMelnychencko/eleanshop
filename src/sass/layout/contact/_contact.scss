@@ -74,8 +74,6 @@
   }
 }
 
-.contacts__title-box {
-}
 
 .contacts__link {
   font-size: 15px;
@@ -90,9 +88,11 @@
   line-height: 1.47;
   letter-spacing: 0.05em;
   color: $secondary-text-color;
-  margin-bottom: 21px;
   display: flex;
   align-items: center;
+  & + .contacts__item{
+    margin-top: 21px;
+  }
 }
 .contacts__icons {
   width: 24px;
@@ -114,12 +114,7 @@
   margin-bottom: 37px;
 }
 
-.contacts__item:last-child {
-  margin-bottom: 41px;
-  @media screen and (min-width: $desktop-up) {
-    margin-bottom: 0;
-  }
-}
+
 
 .contacts-map {
   border: none;
