@@ -82,16 +82,17 @@ import contact_page from '../views/layouts/contact.hbs';
 import { contactsMap, contactsContact } from './layout/contact/contact.js';
 
 export function contactRender() {
+  refs.mainEL.innerHTML = '';
   const contactPageMarkUp = contact_page({ formBrand, contactsMap, contactsContact });
   refs.mainEL.insertAdjacentHTML('beforeend', contactPageMarkUp);
   formFittingInShowroom();
 }
-contactRender(); //========================================================call
+//contactRender(); //========================================================call
 
 //=====delivery========//
 function deliveryRender() {}
 //=====favorites========//
-function favoritesRender() {}
+export function favoritesRender() {}
 //=====fitting========//
 function fittingRender() {}
 //=====product========//
@@ -170,11 +171,13 @@ reviewsRender(); //========================================================call
 //=====showroom========//
 import showroom_page from '../views/layouts/showroom.hbs';
 export function showroomRender() {
+  refs.mainEL.innerHTML = '';
   const showroomPageMarkUp = showroom_page({ formBrand, pageShowroomSliderMarkup });
-  refs.mainEL.insertAdjacentHTML('beforeend', showroomPageMarkUp);
+  refs.mainEL.insertAdjacentHTML('beforeend', showroomPageMarkUp); +
+  showroomSlider();
   formFittingInShowroom();
 }
-showroomRender(); //========================================================call
+//showroomRender(); //========================================================call
 
 //=====blockHelp========//
 import blockHelp_blockHelpTemplate from '../views/components/blockHelp.hbs';

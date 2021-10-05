@@ -1,6 +1,4 @@
-import { favoritesRender } from '../../call-list';
-import { showroomRender } from '../../call-list';
-import { contactRender } from '../../call-list';
+import { favoritesRender, showroomRender, contactRender } from '../../call-list.js';
 // import { Назва функції } from '../../call-list';
 
 import navListValue from '../../../../src/js/json/static/navListValue.json';
