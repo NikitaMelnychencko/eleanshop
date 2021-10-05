@@ -24,7 +24,7 @@
     name='client-email'
     class='order-form__input'
     id='client-email'
-    pattern='[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$'
+    pattern='[a-z0-9._%+-]+@[a-z0-9.-]+\\\.[a-z]{2,4}$'
     placeholder='ВВЕДИТЕ E-MAIL *'
     required
     title='example@mail.com'
@@ -41,33 +41,70 @@
     <p class='sizes__text'>
       ВЫБЕРИТЕ РАЗМЕР
     </p>
-    <div class="sizes__list">
-        
-          <input  class="sizes__input" type="radio" id="sizeChoiceFirst" name="sizeChoice" value="40" required>
-          <label class="sizes__label" for="sizeChoiceFirst">40</label> 
-       
-        
-          <input class="sizes__input" type="radio" id="sizeChoiceSecond" name="sizeChoice" value="42" required>
-           <label class="sizes__label" for="sizeChoiceSecond">42</label> 
-      
-       
-          <input class="sizes__input" type="radio" id="sizeChoiceThird" name="sizeChoice" value="44" required>
-           <label class="sizes__label" for="sizeChoiceThird"> 44</label>
-        
-       
-          <input class="sizes__input" type="radio" id="sizeChoiceFourth" name="sizeChoice" value="46" required>
-           <label class="sizes__label" for="sizeChoiceFourth">46</label>
-        
-        
-          <input class="sizes__input" type="radio" id="sizeChoiceFifth" name="sizeChoice" value="48" required>
-          <label class="sizes__label" for="sizeChoiceFifth">48</label>
-        
-        
-          <input class="sizes__input" type="radio" id="sizeChoiceSixth" name="sizeChoice" value="50" required>
-          <label class="sizes__label" for="sizeChoiceSixth">50</label>
-        
+    <div class='sizes__list'>
+
+      <input
+        class='sizes__input'
+        type='radio'
+        id='sizeChoiceFirst'
+        name='sizeChoice'
+        value='40'
+        required
+      />
+      <label class='sizes__label' for='sizeChoiceFirst'>40</label>
+
+      <input
+        class='sizes__input'
+        type='radio'
+        id='sizeChoiceSecond'
+        name='sizeChoice'
+        value='42'
+        required
+      />
+      <label class='sizes__label' for='sizeChoiceSecond'>42</label>
+
+      <input
+        class='sizes__input'
+        type='radio'
+        id='sizeChoiceThird'
+        name='sizeChoice'
+        value='44'
+        required
+      />
+      <label class='sizes__label' for='sizeChoiceThird'> 44</label>
+
+      <input
+        class='sizes__input'
+        type='radio'
+        id='sizeChoiceFourth'
+        name='sizeChoice'
+        value='46'
+        required
+      />
+      <label class='sizes__label' for='sizeChoiceFourth'>46</label>
+
+      <input
+        class='sizes__input'
+        type='radio'
+        id='sizeChoiceFifth'
+        name='sizeChoice'
+        value='48'
+        required
+      />
+      <label class='sizes__label' for='sizeChoiceFifth'>48</label>
+
+      <input
+        class='sizes__input'
+        type='radio'
+        id='sizeChoiceSixth'
+        name='sizeChoice'
+        value='50'
+        required
+      />
+      <label class='sizes__label' for='sizeChoiceSixth'>50</label>
+
     </div>
-    
+
   </div>
 
   <div class='agreement'>
@@ -79,7 +116,7 @@
         required
         class='agreement__checkbox %hide'
       />
-      <span class="agreement__checkbox-icon-thumb"></span>
+      <span class='agreement__checkbox-icon-thumb'></span>
       <span class='agreement__text'>
         Я согласен с
         <a class='agreement__link' href='#'>
