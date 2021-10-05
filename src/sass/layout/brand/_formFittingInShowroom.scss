@@ -14,7 +14,7 @@
   padding-right: 20px;
   padding-bottom: 40px;
 
-  @media screen and (min-width: 500px) and (max-width: $tablet-general) {
+  @media screen and (min-width: $desktop-up) and (max-width: $tablet-general) {
     position: relative;
     padding-top: 38px;
     padding-left: 40px;
@@ -46,7 +46,7 @@
   color: $button-hover-background-color;
   text-transform: uppercase;
   margin-bottom: 15px;
-  @media screen and (min-width: 500px) and (max-width: $tablet-general) {
+  @media screen and (min-width: $desktop-up) and (max-width: $tablet-general) {
     margin-bottom: 24px;
     text-align: left;
     font-size: 18px;
@@ -75,7 +75,7 @@
   font-size: 18px;
   line-height: 1.4;
   color: $seventh-text-color;
-  @media screen and (min-width: 500px) {
+  @media screen and (min-width: $desktop-up) {
     display: block;
   }
 }
@@ -85,7 +85,7 @@
   flex-wrap: wrap;
 }
 .form-fitting-showroom__horiz-block.in-form {
-  @media screen and (min-width: 500px) {
+  @media screen and (min-width: $desktop-up) {
     display: flex;
     flex-wrap: wrap;
   }
@@ -171,7 +171,7 @@
   height: 60px;
   width: 180px;
   flex-grow: 0;
-  margin-left: -1px;
+  border-left: none;
 }
 
 .form-fitting-showroom__button.in-form {
@@ -189,7 +189,7 @@
     height: 60px;
     width: 180px;
     flex-grow: 0;
-    margin-left: -1px;
+    border-left: none;
   }
 }
 
