@@ -197,7 +197,7 @@ import '../../images/img/Reviews/poster/78.jpg'
 
 //=========tryOnModal===========
 import '../../images/svg/tryOnModal/check.svg';
-import '../../images/svg/tryOnModal/cross.svg';
+import '../../images/svg/tryOnModal/crossTryOnModal.svg';
 import '../../images/svg/tryOnModal/model.svg';
 import '../../images/svg/tryOnModal/paiment.svg';
 import '../../images/svg/tryOnModal/request.svg';
