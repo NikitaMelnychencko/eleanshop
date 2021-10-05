@@ -3,11 +3,12 @@ import aboutTheBrand_aboutBrandTempl from '../../../views/partials/home/aboutThe
 import refs from '../../refs/refs';
     
 const { mainEL } = refs;
-const aboutTheBrand_parsing = aboutTheBrand_aboutBrandTempl();
+export const aboutTheBrand_parsing = aboutTheBrand_aboutBrandTempl();
 
-
+function openAboutTheBrand(){
 const homeAboutBrandLink = document.querySelector('.aboutBrand__link');
 homeAboutBrandLink.addEventListener('click', onAboutBrandLinkClick);
 function onAboutBrandLinkClick(event){
     event.preventDefault();
+    }
 }

@@ -70,9 +70,9 @@ import { backdropMarkup } from './layout/checkout/thanksForOrdering.js';
 import payment_checkout from '../views/layouts/checkout.hbs';
 export function checkoutRender() {
   updateBin();
-  refs.mainEL.innerHTML = '';
   const createCheckout = payment_checkout({ createPayment, ordering, backdropMarkup });
-  refs.mainEL.insertAdjacentHTML('beforeend', createCheckout);
+  refs.mainEL.innerHTML = createCheckout;
+  //refs.mainEL.insertAdjacentHTML('beforeend', createCheckout);
   openOrderingFunction();
   const modalOpen = new ModalData({
     idInputDay: 'js-day',
