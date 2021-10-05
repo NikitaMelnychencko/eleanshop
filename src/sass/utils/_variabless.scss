@@ -21,12 +21,13 @@ $secondary-form-text-color: #b3b3b3;
 $input-text-color: hsl(0, 0%, 72%);
 $btn-text-color: #c7c3c3;
 $fourth-text-color: #afafaf;
-$fourth-text-color: #a7a7a7;
 $fifth-text-color: #b8b5b5;
 $sixth-text-color: #c0c0c0;
 $seventh-text-color: #9d9dad;
 $product-price-color: #333333;
 $product-info-color: #242424;
+$form-placeholder-text-color: #DADADA;
+
 
 //title
 $primary-title-text-color: #000000;
@@ -62,6 +63,7 @@ $menu-background-color: #e1c4a9;
 $button-background-color: #242424;
 $btn-background-color: #efefef;
 $params-background-color: #dadada;
+$backdrop-background: rgba(0, 0, 0, 0.6);
 
 $btn-background-color: #efefef;
 $message-amount-thumb-color: #e20613;
@@ -87,7 +89,9 @@ $colorpicker-icon-border-color: #e2dfdf;
 $colorpicker-icon-border-hover: #b59475;
 $button-purchase-border: #e3e3e3;
 $third-border-color: #d0d0d0;
+$fourt-border-color: rgba(255, 255, 255, 0.25);
 
+$form-dashed-color: #b8b5b5;
 //input
 $placeholder-color: #a6a6a9;
 $primery-border-color: #e6e6e6;

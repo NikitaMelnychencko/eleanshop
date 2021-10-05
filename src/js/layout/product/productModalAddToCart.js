@@ -3,6 +3,8 @@ require('../../slick/slick.min.js');
 
 import RecomendationsCategory from './recomendationsCategory.js';
 import modalAddToCartMark from '../../../views/partials/product/productModalAddToCart.hbs';
+import { checkoutRender } from '../../call-list.js';
+import { scrollTo } from '../../components/blockHelp/blockHelp.js';
 
 export default class ProductModalAddToCart {
   constructor({ root, typeInsert = 'beforeEnd', productName, objectClose }) {
@@ -11,7 +13,6 @@ export default class ProductModalAddToCart {
     this.objCatalog = new RecomendationsCategory({ countsCard: 3, buttonPagination: false });
     this.objectClose = objectClose;
     if (root) {
-      console.log(root);
       this.root = document.querySelector(root);
       this._addMarkup();
       this.self = document.querySelector('.product-modal-add-cart');
@@ -44,7 +45,6 @@ export default class ProductModalAddToCart {
   };
 
   _addSlider = () => {
-    console.log($('.product-modal-add-cart .slider'));
     $('.product-modal-add-cart .slider').slick({
       arrows: false,
       dots: this.buttonPagination,
@@ -59,7 +59,7 @@ export default class ProductModalAddToCart {
     if (this.objectClose) {
       this.objectClose.forEach(el => {
         if (el.name) {
-          document.querySelector(el.name).classList.add(this.el.className);
+          document.querySelector(el.name).classList.add(el.className);
         }
       });
     }
@@ -85,10 +85,12 @@ export default class ProductModalAddToCart {
   _onClickNext = () => {
     this._onCloseModal();
     // тут прописать открітие след. модалки
+    checkoutRender();
+    scrollTo(0, 700);
   };
 
   _setNextBtnEvent = () => {
-    this.buttonNext = document.querySelector('.js-next');
+    this.buttonNext = document.querySelector('.js-next-modal-to-cart');
     if (this.buttonNext) {
       this.buttonNext.addEventListener('click', this._onClickNext);
     }
@@ -97,6 +99,7 @@ export default class ProductModalAddToCart {
   setEvent = () => {
     this._setCloseEvent();
     this._setNextBtnEvent();
+    this.objCatalog.setEvent('.product-modal-add-cart');
   };
 
   show = name => {
@@ -105,6 +108,13 @@ export default class ProductModalAddToCart {
     }
     document.querySelector('.js-productName').textContent = name;
     this.self.classList.remove('hidden');
+    if (this.objectClose) {
+      this.objectClose.forEach(el => {
+        if (el.name) {
+          document.querySelector(el.name).classList.remove(el.className);
+        }
+      });
+    }
     this.setEvent();
   };
 }

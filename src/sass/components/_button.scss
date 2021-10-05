@@ -7,23 +7,26 @@
   text-align: center;
   letter-spacing: 0.1em;
   padding: 16px 88px 19px 88px;
-  cursor: pointer;
+  border: inherit;
 }
 
 .button__checkout {
   @extend %button-pad;
   display: block;
   width: 100%;
-  background-color:$button-checkout-color;
+  background-color: $button-checkout-color;
   color: $selection-text-color;
 }
 
 .button-add-likes {
   margin-left: auto;
   background-color: transparent;
-  border: none;
+  border: transparent;
   padding-bottom: 15px;
   cursor: pointer;
+  &.active &__icon {
+    fill: $accent-favorite-btn-color;
+  }
 
   &__icon {
     fill: transparent;
@@ -52,11 +55,12 @@
   font-size: 20px;
   line-height: 1.15;
   text-align: center;
+  cursor: pointer;
   &_active:hover,
   &_active:focus {
     color: $selection-text-color;
     background-color: $button-counter-color;
-    border: none;
+    border: 1px solid $button-counter-color;
   }
 
   &__button-icon {
@@ -79,7 +83,7 @@
   &:hover {
     background-color: $secondary-text-color;
     color: $selection-text-color;
-    border: none;
+    border: 1px solid $secondary-text-color;
   }
 
   &:not(:last-child) {
@@ -98,7 +102,7 @@
 
 .product-close-modal {
   position: absolute;
-
+  cursor: pointer;
   right: 0;
   padding: 14px;
   border: none;
@@ -146,6 +150,7 @@
     background-color: $third-text-color;
     border: none;
     color: $selection-text-color;
+    cursor: pointer;
 
     &:hover,
     &:focus {
@@ -223,21 +228,21 @@
   }
 }
 
-.ordering__btn--promocode {
-  padding: 13px 29px;
-  height: 50px;
-  border: none;
+// .ordering__btn--promocode {
+//   padding: 13px 29px;
+//   height: 50px;
+//   border: none;
 
-  background-color: $btn-background-color;
-  font-family: $selection-font-family;
-  font-size: 17px;
-  line-height: 1.35;
-  color: $btn-text-color;
+//   background-color: $btn-background-color;
+//   font-family: $selection-font-family;
+//   font-size: 17px;
+//   line-height: 1.35;
+//   color: $btn-text-color;
 
-  @media screen and (min-width: $desktop-up) {
-    border-radius: 3px;
-  }
-}
+//   @media screen and (min-width: $desktop-up) {
+//     border-radius: 3px;
+//   }
+// }
 
 .ordering__button--close {
   width: 40px;
@@ -288,5 +293,10 @@
 
   @media screen and (min-width: $desktop-up) {
     border-radius: 3px;
+  }
+  &:hover,
+  &:focus{
+    background-color: $button-checkout-color;
+    color: $selection-text-color;
   }
 }
