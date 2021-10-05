@@ -27,6 +27,7 @@ function homeRender() {
   starClientsSlider();
   starClientsComments();
   instagramSlider();
+  blockHelpRender()
 }
 homeRender(); //========================================================call
 //=====brand========//
@@ -55,23 +56,24 @@ export function brandRender() {
 brandRender(); //========================================================call
 
 //=====checkout========//
-import { ModalData, createPayment } from './layout/checkout/payment';
-import { ordering, openOrderingFunction } from './layout/checkout/ordering';
+import { ModalData, createPayment } from './layout/checkout/payment.js';
+import { ordering, openOrderingFunction } from './layout/checkout/ordering.js';
+import { backdropMarkup } from './layout/checkout/thanksForOrdering.js';
 import payment_checkout from '../views/layouts/checkout.hbs';
 export function checkoutRender() {
   updateBin();
   refs.mainEL.innerHTML = '';
-  const createCheckout = payment_checkout({ createPayment, ordering });
+  const createCheckout = payment_checkout({ createPayment, ordering, backdropMarkup});
   refs.mainEL.insertAdjacentHTML('beforeend', createCheckout);
   openOrderingFunction();
-  const inputTime = new ModalData({
-    idInput: 'js-time',
-    idList: 'time-list',
+  const modalOpen = new ModalData({
+    idInputDay: 'js-day',
+    idListDay: 'day-list',
+    idInputTime: 'js-time',
+    idListTime: 'time-list',
   });
-  const inputDay = new ModalData({
-    idInput: 'js-day',
-    idList: 'day-list',
-  });
+
+  blockHelpRender()
 }
 
 //=====contact========//
@@ -173,3 +175,11 @@ export function showroomRender() {
   formFittingInShowroom();
 }
 showroomRender(); //========================================================call
+
+//=====blockHelp========//
+import blockHelp_blockHelpTemplate from '../views/components/blockHelp.hbs';
+import {blockHelpRenderOpen} from './components/blockHelp/blockHelp.js'
+function blockHelpRender() {
+  refs.mainEL.insertAdjacentHTML('beforeend', blockHelp_blockHelpTemplate());
+  blockHelpRenderOpen()
+}

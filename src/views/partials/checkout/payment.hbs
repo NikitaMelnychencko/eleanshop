@@ -12,7 +12,7 @@
       </div>
       <div class="showroom-method">
           <div class="showroom-method__item">
-            <input class="showroom-method__form"  name="day" id="js-day" placeholder="ВЫБЕРИТЕ ДАТУ"/>
+            <input class="showroom-method__form"  name="day" id="js-day" placeholder="ВЫБЕРИТЕ ДАТУ"  minlength='5' />
             <ul class="showroom-list showroom-list--hide js-day" id='day-list'>
             {{#each method.day-data}}
               <li class="showroom-list__item" ><svg
@@ -23,7 +23,7 @@
             </ul>
           </div>
           <div class="showroom-method__item">
-            <input class="showroom-method__form"  name="time" id="js-time" placeholder="ВЫБЕРИТЕ ВРЕМЯ"/>
+            <input class="showroom-method__form"  name="time" id="js-time" placeholder="ВЫБЕРИТЕ ВРЕМЯ"  minlength='5' />
             <ul class="showroom-list showroom-list--hide js-time" id='time-list'>
             {{#each method.time}}
               <li class="showroom-list__item" ><svg
@@ -39,11 +39,11 @@
     <div class='basic-information' role='group'>
       <h3 class='basic-information__title'>ОСНОВНАЯ ИНФОРМАЦИЯ</h3>
       <label class="basic-information__field">
-        <input type='text' name='name' required minlength='2' placeholder='ВВЕДИТЕ ФИО'/>
+        <input type='text' name='name'  minlength='2' placeholder='ВВЕДИТЕ ФИО' minlength="2" required/>
       </label>
       <label class="basic-information__field">
         <input
-          type='text'
+          type="tel"
           name='tel'
           required
           pattern='[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}'
@@ -52,13 +52,13 @@
         />
       </label>
       <label class="basic-information__field">
-        <input type='text' name='email' required placeholder='ВВЕДИТЕ E-MAIL' />
+        <input type='email' name='email' required placeholder='ВВЕДИТЕ E-MAIL' required/>
       </label>
       <label class="basic-information__field">
         <textarea name='feedback' placeholder='ДОБАВИТЬ КОММЕНТАРИЙ'></textarea>
       </label>
       <label class="basic-information__field">
-        <input class="basic-information__checkbox" type="checkbox" name='agreement-conditions' value="I agree" />
+        <input class="basic-information__checkbox" type="checkbox" name='agreement-conditions' value="I agree" required/>
         <span class="basic-information__text">Я принимаю договор публичной оферты</span>
       </label>
     </div>
@@ -81,7 +81,7 @@
       </div>
       
     </div>
-    <button class="button__checkout" type='submit'>ОФОРМИТЬ ЗАКАЗ</button>
+    <button class="button__checkout" type='submit' data-modal-open >ОФОРМИТЬ ЗАКАЗ</button>
   </div>
 
   <div class='description'>
