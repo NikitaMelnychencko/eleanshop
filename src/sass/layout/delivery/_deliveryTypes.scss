@@ -6,7 +6,12 @@
   display: none;
 }
 .listdelnav {
-  display: inline;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  &:not(:last-child) {
+    margin-right: 1px;
+  }
 }
 .head-delivery {
   text-align: center;
@@ -19,6 +24,9 @@
   letter-spacing: 5;
 }
 .uldelnav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
 .nav-product {
@@ -26,11 +34,21 @@
 }
 .product-button {
   background: none;
-  border: 1px solid $third-text-color;
+  outline: 1px solid $third-text-color;
+  border: none;
+  box-sizing: border-box;
   color: $third-text-color;
-  margin-left: -6px;
+  // margin-left: -1px;
   width: 126px;
-  height: 30;
+  height: 30px;
+  transition: background $time-cubic;
+  transition: color $time-cubic;
+  &:focus,
+  &:hover {
+    box-shadow: 0 0 5px 0 black;
+    color: white;
+    background: $button-hover-background-color;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -118,21 +136,21 @@
 .modal__inner {
   display: flex;
   flex-direction: column;
-  background: #b3a55a;
+  background: #ffffff;
   width: 100%;
   height: 100%;
   padding: 64px 24px;
   align-items: center;
   text-align: center;
   color: rgb(5, 5, 5);
-  border-radius: 30px;
+  // border-radius: 30px;
   position: relative;
   margin: 24px 0;
 }
 .modal__close {
   position: absolute;
-  top: 16px;
-  right: 16px;
+  top: 10px;
+  right: 15px;
   cursor: pointer;
   font-size: 14px;
 }

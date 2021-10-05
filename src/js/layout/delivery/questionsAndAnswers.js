@@ -25,7 +25,7 @@ import myRefs from '../../refs/refs';
 //     myRefs.textarea.value = saveMessage;
 //   }
 // }
-
+//==============================works
 const formquestion = {
   boxquestion: document.querySelectorAll('.js-question-box'),
   namequestion: document.querySelectorAll('[name="name"]'),
@@ -82,3 +82,4 @@ formquestion.formquestioninput.forEach(elem => {
   // getFormQuestionData.time.value = localStorage.getItem('formQuestionData-time');
   getFormQuestionData.coment.value = localStorage.getItem('formQuestionData-coment');
 });
+//=======================works

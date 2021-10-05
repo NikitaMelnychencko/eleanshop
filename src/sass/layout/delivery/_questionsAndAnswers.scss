@@ -25,11 +25,12 @@
   margin-left: 212px;
   margin-top: -6px;
   cursor: pointer;
-}
-.input-button:hover,
-.input-button:focus {
-  background-color: black;
-  color: white;
+
+  &:hover,
+  &:focus {
+    background-color: black;
+    color: white;
+  }
 }
 
 .ask-question {
@@ -87,5 +88,14 @@
     border: 1px solid $primary-logo-color;
     margin: 0;
     margin-left: -5px;
+  }
+}
+
+.js-question-box {
+  padding-top: 39px;
+  padding-bottom: 50px;
+  @media screen and (min-width: $desktop-up) {
+    padding-top: 69px;
+    padding-bottom: 100px;
   }
 }
