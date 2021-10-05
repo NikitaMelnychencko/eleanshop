@@ -4,8 +4,8 @@
     "name": "Жакет-смокинг с лацканами",
     "image": {
       "srcset": "./images/img_1jpg 1x, ./images/img_1@2x.jpg 2x",
-      "srcset-mobile": "./images/mg-mob_1.jpg 1x, ./images/mg-mob_1@2x.jpg 2x",
-      "src": "./images/mg-mob_1.jpg",
+      "srcset-mobile": "./images/img-mob_1.jpg 1x, ./images/img-mob_1@2x.jpg 2x",
+      "src": "./images/img-mob_1.jpg",
       "alt": "Жакет-смокинг с лацканами"
     },
     "price": "23 900 ",
@@ -18,8 +18,8 @@
     "name": "Классический комплект с смокингом и жилетом",
     "image": {
       "srcset": "./images/img_2jpg 1x, ./images/img_2@2x.jpg 2x",
-      "srcset-mobile": "./images/mg-mob_2.jpg 1x, ./images/mg-mob_2@2x.jpg 2x",
-      "src": "./images/mg-mob_2.jpg",
+      "srcset-mobile": "./images/img-mob_2.jpg 1x, ./images/img-mob_2@2x.jpg 2x",
+      "src": "./images/img-mob_2.jpg",
       "alt": "Классический комплект с смокингом и жилетом"
     },
     "price": 65300,
@@ -32,8 +32,8 @@
     "name": "Белый жакет смокинг",
     "image": {
       "srcset": "./images/img_3jpg 1x, ./images/img_3@2x.jpg 2x",
-      "srcset-mobile": "./images/mg-mob_3.jpg 1x, ./images/mg-mob_3@2x.jpg 2x",
-      "src": "./images/mg-mob_3.jpg",
+      "srcset-mobile": "./images/img-mob_3.jpg 1x, ./images/img-mob_3@2x.jpg 2x",
+      "src": "./images/img-mob_3.jpg",
       "alt": "Белый жакет смокинг"
     },
     "price": 26900,
@@ -46,8 +46,8 @@
     "name": "Жакет-смокинг бархатный",
     "image": {
       "srcset": "./images/img_4jpg 1x, ./images/img_4@2x.jpg 2x",
-      "srcset-mobile": "./images/mg-mob_4.jpg 1x, ./images/mg-mob_4@2x.jpg 2x",
-      "src": "./images/mg-mob_4.jpg",
+      "srcset-mobile": "./images/img-mob_4.jpg 1x, ./images/img-mob_4@2x.jpg 2x",
+      "src": "./images/img-mob_4.jpg",
       "alt": "Жакет-смокинг бархатный"
     },
     "price": 29500,

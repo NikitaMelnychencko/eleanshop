@@ -59,17 +59,17 @@ function contactRender() {}
 function deliveryRender() {}
 //=====favorites========//
 import Favorites from './layout/favorites/favorites.js';
-import favorit from './json/favorites.json';
+// import favorit from './json/favorites.json';
 
 export function favoritesRender() {
-  let data = {};
-  data['fav'] = [...favorit];
-  localStorage.setItem('favorites', JSON.stringify(data));
+  // let data = {};
+  // data['fav'] = [...favorit];
+  // localStorage.setItem('favorites', JSON.stringify(data));
 
+  // console.log('!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1');
   const favorites = new Favorites();
 
   refs.mainEL.innerHTML = favorites.markcup;
-  console.log(`~ refs.mainEL`, refs.mainEL);
   favorites.init();
 }
 //=====fitting========//
@@ -127,3 +127,4 @@ productRender();
 function reviewsRender() {}
 //=====showroom========//
 function showroomRender() {}
+favoritesRender();

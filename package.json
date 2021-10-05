@@ -63,6 +63,7 @@
   },
   "dependencies": {
     "geteventlisteners": "^1.1.0",
+    "lodash.debounce": "^4.0.8",
     "lodash.throttle": "^4.1.1",
     "yt-player": "^3.5.0"
   }

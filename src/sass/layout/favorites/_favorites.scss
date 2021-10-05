@@ -1,4 +1,7 @@
 .favorites {
+  margin-top: 70px;
+  margin-bottom: 70px;
+
   &__title {
     font-family: $selection-font-family;
     font-size: 21px;
@@ -16,11 +19,23 @@
   }
 
   &__data {
+    margin-bottom: 80px;
+
     &-item {
-      display: flex;
-      flex-wrap: nowrap;
-      justify-content: space-between;
-      margin-bottom: 20px;
+      position: relative;
+      margin-bottom: 285px;
+      @media screen and (min-width: $desktop-up) {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        margin-bottom: 0;
+      }
+
+      &:not(:last-child) {
+        @media screen and (min-width: $desktop-up) {
+          margin-bottom: 50px;
+        }
+      }
     }
 
     &::after {
@@ -28,38 +43,67 @@
     }
   }
 
-  &__image {
-    width: 110px;
-    height: 130px;
-    // margin-right: 13px;
-  }
+  &__product {
+    display: flex;
 
-  &__info {
-    display: block;
-    font-family: $primary-font-family;
-    font-size: 15px;
-    line-height: 20 / 15 * 100%;
+    &--image {
+      display: block;
+      width: 110px;
+      height: 130px;
+      margin-right: 16px;
+    }
 
-    color: $favorites-info-color;
-    width: 200px;
-    // margin-right: 20px;
-  }
+    &--info {
+      font-family: $primary-font-family;
+      font-size: 15px;
+      line-height: 20 / 15 * 100%;
 
-  &__text {
-    margin-bottom: 10px;
+      color: $favorites-info-color;
+      width: 200px;
+
+      @media screen and (min-width: $desktop-up) {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+      }
+
+      &-text {
+        display: block;
+        margin-bottom: 6px;
+        @media screen and (min-width: $desktop-up) {
+          margin-bottom: 10px;
+        }
+      }
+    }
   }
 
   &__description {
-    width: 690px;
-    height: 130px;
+    position: absolute;
+    top: 200px;
+    width: 100%;
 
-    background: $primary-background-color;
-    border: 1px solid $favorites-description-color;
-    box-sizing: border-box;
-    // margin-right: 15px;
+    @media screen and (min-width: $desktop-up) {
+      position: static;
+      display: block;
+      width: 690px;
+      height: 130px;
+
+      background: $primary-background-color;
+      border: 1px solid $favorites-description-color;
+      box-sizing: border-box;
+    }
+  }
+
+  &__button-group {
+    width: 200px;
   }
 
   &__button-buy {
+    position: absolute;
+    right: 0;
+    top: 100px;
+    width: 258px;
+    height: 40px;
     font-family: $third-font-family;
     font-weight: 500;
     font-size: 15px;
@@ -70,46 +114,95 @@
 
     background: $menu-background-color;
     color: $selection-text-color;
+    cursor: pointer;
 
-    width: 198px;
-    height: 40px;
-    margin-bottom: 12px;
+    @media screen and (min-width: $desktop-up) {
+      position: static;
+      width: 198px;
+      height: 40px;
+      margin-bottom: 12px;
+    }
+
+    &:hover,
+    &:focus {
+      color: $menu-background-color;
+      background: $selection-text-color;
+    }
   }
 
   &__button-delete {
-    width: 198px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 40px;
     height: 40px;
 
     border: 1px solid $secondary-border-color;
     box-sizing: border-box;
+    cursor: pointer;
+
+    font-family: $selection-font-family;
+    font-size: 17px;
+    line-height: 23 / 17 * 100%;
+
+    color: $btn-text-color;
+
+    @media screen and (min-width: $desktop-up) {
+      position: relative;
+      width: 198px;
+    }
+
+    &:hover,
+    &:focus {
+      color: $selection-text-color;
+      background: $btn-text-color;
+    }
+
+    &:hover &--icon,
+    &:focus &--icon {
+      stroke: $selection-text-color;
+    }
 
     &--text {
-      font-family: $selection-font-family;
-      font-size: 17px;
-      line-height: 23 / 17 * 100%;
+      display: none;
 
-      color: $btn-text-color;
+      @media screen and (min-width: $desktop-up) {
+        display: inline-block;
+      }
     }
 
     &--icon {
       width: 13px;
       height: 13px;
+      stroke: $btn-text-color;
+
+      @media screen and (min-width: $desktop-up) {
+        position: absolute;
+        right: 14px;
+        top: 13px;
+      }
     }
   }
 
   &__sand-on-email {
-    display: flex;
-    justify-content: flex-start;
+    @media screen and (min-width: $desktop-up) {
+      display: flex;
+      justify-content: flex-start;
+    }
 
     &--title {
       font-family: $third-font-family;
+      font-style: normal;
       font-weight: 500;
-      font-size: 18px;
-      line-height: 20 / 18 * 100%;
-
-      letter-spacing: 0.05em;
-
+      font-size: 16px;
+      line-height: 20 / 16 * 100%;
       color: $secondary-text-color;
+      margin-bottom: 30px;
+
+      @media screen and (min-width: $desktop-up) {
+        font-size: 18px;
+        line-height: 20 / 18 * 100%;
+      }
     }
 
     &--button {
@@ -123,9 +216,17 @@
 
       color: $selection-text-color;
       background: $favorites-info-color;
-
-      width: 282px;
+      cursor: pointer;
+      width: 100%;
       height: 50px;
+      margin-bottom: 26px;
+
+      @media screen and (min-width: $desktop-up) {
+        width: 282px;
+        margin-right: 22px;
+
+        margin-bottom: 0;
+      }
 
       &:hover,
       &:focus {
@@ -136,10 +237,15 @@
 
     &--text {
       font-family: $primary-font-family;
-      font-size: 15px;
-      line-height: 23 / 15 * 100%;
+      font-size: 14px;
+      line-height: 23 / 14 * 100%;
 
       color: $favorites-info-color;
+
+      width: 100%;
+      @media screen and (min-width: $desktop-up) {
+        width: 578px;
+      }
     }
   }
 }
