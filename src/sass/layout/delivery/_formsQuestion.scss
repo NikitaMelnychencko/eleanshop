@@ -24,7 +24,7 @@
 .question-block::after {
   content: '';
   position: absolute;
-  width: 108%;
+  width: 106%;
   height: 1px;
   left: -20px;
   top: 93%;
@@ -41,6 +41,10 @@
 
 .answers-foot {
   margin-top: 10px;
+}
+.question__icon {
+  width: 27px;
+  height: 27px;
 }
 
 @media screen and (min-width: 1378px) {
@@ -84,5 +88,44 @@
     width: 110%;
     left: -37px;
     top: 93%;
+  }
+}
+
+.qusetion-title:hover {
+  animation: 1.2s ease-in-out 0s normal none infinite running trambling-animation;
+}
+
+@keyframes trambling-animation {
+  0%,
+  50%,
+  100% {
+    transform: rotate(0deg);
+  }
+  10%,
+  30% {
+    transform: rotate(-4deg);
+  }
+  20%,
+  40% {
+    transform: rotate(4deg);
+  }
+}
+
+.qusetion-title {
+  // opacity: 0;
+  text-align: center;
+  animation: fadein 1s;
+  animation-delay: 1.5s;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -ms-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  } /*Update because you asked for this numbers BUT i propose from 0 otherwise you are instantly seeing the div. */
+  to {
+    opacity: 1;
   }
 }

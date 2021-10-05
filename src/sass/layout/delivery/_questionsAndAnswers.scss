@@ -22,7 +22,9 @@
   outline: none;
   vertical-align: top;
   border: 1px solid $primary-logo-color;
-  margin-left: 196px;
+  margin-left: 212px;
+  margin-top: -6px;
+  cursor: pointer;
 }
 .input-button:hover,
 .input-button:focus {
@@ -44,6 +46,10 @@
   font-size: 13px;
   text-align: left;
   line-height: 1.6;
+}
+.ask-question__icon {
+  width: 36px;
+  height: 35px;
 }
 
 @media screen and (min-width: 1378px) {

@@ -2,37 +2,40 @@
   ВИДЫ ДОСТАВКИ
 </h2>
 {{#each this}}
-<li class='description-title'>
-  <p class='description-main'>
-    {{desctiption}}
-  </p>
-  <p class='description-main'>
-    {{desctiption01}}
-  </p>
-  <p class='description-main'>
-    {{desctiptionname}}
-  </p>
-</li>
+  <li class='description-title'>
+    <p class='description-main'>
+      {{desctiption}}
+    </p>
+    <p class='description-main'>
+      {{desctiption01}}
+    </p>
+    <p class='description-main'>
+      {{desctiptionname}}
+    </p>
+  </li>
 
-<li class='description-title'>
-    <div class="navara">
-  <p class='description-main'>
-    {{desctiptiontime}}
-    </p></div>
-    <svg class='time__icon' width='40px' height='40px' role='img' aria-label='Иконка солнца'>
-      <use href="./images/exampl.svg#icon-compass"></use>
-    </svg> 
+  <li class='description-title'>
+    <div class='navara'>
+      <p class='description-main'>
+        {{desctiptiontime}}
+      </p>
+    </div>
+    <svg class='delivery__icon' role='img' aria-label='Иконка солнца'>
+      <use href='./images/exampl.svg#icon-compass'></use>
     </svg>
-</li>
+  </li>
 
-<li class='description-title'>
-  <div class="navara">
-  <p class='description-main'>
-    {{desctiptionreg}}
-  </p>
-
-  <p class='description-main'>
-    {{desctiptiondic}}
-  </p>
-</li>
+  <li class='description-title'>
+    <div class='navara'>
+      <p class='description-main'>
+        {{desctiptionreg}}
+      </p>
+      <p class='description-main'>
+        {{desctiptiondic}}
+      </p>
+    </div>
+    <svg class='delivery__icon' role='img' aria-label='Иконка солнца'>
+      <use href='./images/exampl.svg#icon-compass'></use>
+    </svg>
+  </li>
 {{/each}}
