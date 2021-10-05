@@ -27,39 +27,45 @@ function homeRender() {
   starClientsSlider();
   starClientsComments();
   instagramSlider();
+  blockHelpRender()
 }
 homeRender();
 //=====brand========//
-function brandRender() { }
+function brandRender() {
+}
 
 //=====checkout========//
-import { ModalData, createPayment } from './layout/checkout/payment';
-import { ordering, openOrderingFunction } from './layout/checkout/ordering';
+import { ModalData, createPayment } from './layout/checkout/payment.js';
+import { ordering, openOrderingFunction } from './layout/checkout/ordering.js';
+import { backdropMarkup } from './layout/checkout/thanksForOrdering.js';
 import payment_checkout from '../views/layouts/checkout.hbs';
 export function checkoutRender() {
   updateBin();
   refs.mainEL.innerHTML = '';
-  const createCheckout = payment_checkout({ createPayment, ordering });
+  const createCheckout = payment_checkout({ createPayment, ordering, backdropMarkup});
   refs.mainEL.insertAdjacentHTML('beforeend', createCheckout);
   openOrderingFunction();
-  const inputTime = new ModalData({
-    idInput: 'js-time',
-    idList: 'time-list',
+  const modalOpen = new ModalData({
+    idInputDay: 'js-day',
+    idListDay: 'day-list',
+    idInputTime: 'js-time',
+    idListTime: 'time-list',
   });
-  const inputDay = new ModalData({
-    idInput: 'js-day',
-    idList: 'day-list',
-  });
+
+  blockHelpRender()
 }
-// checkoutRender();
 //=====contact========//
-function contactRender() { }
+function contactRender() {
+}
 //=====delivery========//
-function deliveryRender() { }
+function deliveryRender() {
+}
 //=====favorites========//
-function favoritesRender() { }
+function favoritesRender() {
+}
 //=====fitting========//
-function fittingRender() { }
+function fittingRender() {
+}
 //=====product========//
 import ProductModalAddToCart from './layout/product/productModalAddToCart.js';
 import RecomendationsCategory from './layout/product/recomendationsCategory.js';
@@ -110,6 +116,16 @@ function productRender() {
 
 productRender();
 //=====reviews========//
-function reviewsRender() { }
+function reviewsRender() {
+}
 //=====showroom========//
-function showroomRender() { }
+function showroomRender() { 
+}
+
+//=====blockHelp========//
+import blockHelp_blockHelpTemplate from '../views/components/blockHelp.hbs';
+import {blockHelpRenderOpen} from './components/blockHelp/blockHelp.js'
+function blockHelpRender() {
+  refs.mainEL.insertAdjacentHTML('beforeend', blockHelp_blockHelpTemplate());
+  blockHelpRenderOpen()
+}

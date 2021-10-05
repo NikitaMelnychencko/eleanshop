@@ -52,6 +52,7 @@ import './js/layout/brand/formFittingInShowroom.js';
 //checkout
 import './js/layout/checkout/ordering.js';
 import './js/layout/checkout/payment.js';
+import './js/layout/checkout/thanksForOrdering.js';
 //favorites
 import './js/layout/favorites/favorites.js';
 import './js/layout/favorites/sabmitEmail.js';

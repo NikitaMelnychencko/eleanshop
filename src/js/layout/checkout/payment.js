@@ -1,29 +1,27 @@
 import payment_payment from '../../../views/partials/checkout/payment.hbs';
-
 import method from '../../json/method.json';
-import refs from '../../refs/refs.js';
-
+import {onBtnClick} from './thanksForOrdering'
 require('geteventlisteners');
 export const createPayment = payment_payment({ method });
-// const createCheckout = payment_checkout({ createPayment });
-// refs.mainEL.insertAdjacentHTML('beforeend', createCheckout);
 
 
 export class ModalData {
-  constructor({ idInput, idList }) {
-    this._refs = this._getRefs(idInput, idList);
-
+  constructor({ idInputDay, idListDay, idInputTime, idListTime }) {
+    this._refs = this._getRefs(idInputDay, idListDay, idInputTime, idListTime);
     this._addEventDelivery();
     this._addEventInput();
     this._addEventList();
     this._addEventPayment();
     this._addEventBasicInformation();
     this._updateTotalPrice();
+    this._addEventFormSubmit();
   }
-  _getRefs(idInput, idList) {
+  _getRefs(idInputDay, idListDay, idInputTime, idListTime) {
     const refs = {
-      input: document.getElementById(`${idInput}`),
-      list: document.getElementById(`${idList}`),
+      inputDay: document.getElementById(`${idInputDay}`),
+      listDay: document.getElementById(`${idListDay}`),
+      inputTime: document.getElementById(`${idInputTime}`),
+      listTime: document.getElementById(`${idListTime}`),
       formDay: document.querySelector('.showroom-method'),
       delivery: document.querySelector('.delivery-method'),
       payment: document.querySelector('.payment'),
@@ -39,35 +37,62 @@ export class ModalData {
     return refs;
   }
   _addEventInput() {
-    this._refs.input.addEventListener('click', event => {
-      this._refs.list.classList.toggle('showroom-list--hide');
+    this._refs.inputDay.addEventListener('click', event => {
+      this._refs.listDay.classList.toggle('showroom-list--hide');
       document.body.classList.toggle('extra');
+    });
+    this._refs.inputTime.addEventListener('click', event => {
+      this._refs.listTime.classList.toggle('showroom-list--hide');
+      document.body.classList.toggle('extra');
+    });
+    this._refs.inputDay.addEventListener('blur', event => {
+      this._addLocalStorage(event.target.name, event.target.value);
+    });
+    this._refs.inputTime.addEventListener('blur', event => {
+      this._addLocalStorage(event.target.name, event.target.value);
     });
   }
   _addEventList() {
-    this._refs.list.addEventListener('click', event => {
-      this._refs.input.value = event.target.innerText;
-      this._refs.list.classList.toggle('showroom-list--hide');
-      this._addLocalStorage(this._refs.input.name, event.target.innerText);
+    this._refs.listDay.addEventListener('click', event => {
+      this._refs.inputDay.value = event.target.innerText;
+      this._refs.listDay.classList.toggle('showroom-list--hide');
+      this._addLocalStorage(this._refs.inputDay.name, event.target.innerText);
+    });
+    this._refs.listTime.addEventListener('click', event => {
+      this._refs.inputTime.value = event.target.innerText;
+      this._refs.listTime.classList.toggle('showroom-list--hide');
+      this._addLocalStorage(this._refs.inputTime.name, event.target.innerText);
     });
   }
+  
   _addEventDelivery() {
     this._updateValueDelivery();
-    if (!this._refs.delivery.getEventListeners('click')) {
-      this._refs.delivery.addEventListener('click', event => {
-        if (event.target.nodeName !== 'INPUT') {
-          return;
-        }
-        if (event.target.value === 'Showroom' && event.target.checked === true) {
-          this._refs.formDay.classList.add('showroom-method--hide');
-        } else {
-          this._refs.formDay.classList.remove('showroom-method--hide');
-        }
-        if (event.target.checked === true) {
-          this._addLocalStorage(event.target.name, event.target.value);
-        }
-      });
-    }
+    
+    this._refs.delivery.addEventListener('click', event => {
+      if (event.target.nodeName !== 'INPUT') {
+        return;
+      }
+        
+      if (event.target.value === 'Showroom' || event.target.value === 'By_courier_in_Kiev' && event.target.checked === true) {
+        this._refs.formDay.classList.add('showroom-method--hide');
+        this._toggleInput(false, true)
+      } else {
+        this._refs.formDay.classList.remove('showroom-method--hide');
+        this._toggleInput(true, false)
+      }
+      if (event.target.checked === true) {
+        this._addLocalStorage(event.target.name, event.target.value);
+      }
+      console.log(event.target.checked);
+      this._disableButton(event.target.value)
+    });
+  
+  }
+  _toggleInput(valueFirst, valueSecond) {
+    this._refs.inputDay.disabled = valueFirst;
+    this._refs.inputTime.disabled = valueFirst;
+    this._refs.inputDay.required = valueSecond;
+    this._refs.inputTime.required = valueSecond;
   }
   _addEventPayment() {
     this._updatePayment();
@@ -91,18 +116,51 @@ export class ModalData {
       this._addLocalStorage(event.target.name, event.target.value);
     });
   }
+  _addEventFormSubmit() {
+    this._refs.orderingForm.addEventListener('submit', e => {
+      e.preventDefault();
+      onBtnClick()
+      this._refs.arrInputInf.forEach(el => {
+        el.value = '',
+          el.checked = false
+      })
+      this._refs.textareaInfo.value = ''
+    });
+
+  }
   _addLocalStorage(name, value) {
     localStorage.setItem(`${name}`, `${value}`);
+  }
+  _disableButton(value) {
+    if (value === 'Showroom' || value === 'By_courier_abroad') {
+      this._refs.arrInputPayment.forEach((el, indx) => {
+        console.log(indx);
+        if (indx === 1 || indx === 2) {
+          el.disabled = true
+          el.checked = false
+          
+        }
+      })
+    } else {
+      this._refs.arrInputPayment.forEach((el, indx) => {
+        el.disabled = false
+      })
+    }
   }
   _updateValueDelivery() {
     const delivery = this._updateValueInLocal('delivery-method');
     this._refs.arrInputDelivery.forEach(el => {
       if (el.value === delivery) {
         el.checked = true;
-        if (el.value === 'Showroom') {
+        if (el.value === 'Showroom'||el.value === 'By_courier_in_Kiev') {
           this._refs.formDay.classList.add('showroom-method--hide');
+          
+        } else {
+          localStorage.removeItem(`${this._refs.inputDay.name}`);
+          localStorage.removeItem(`${this._refs.inputTime.name}`);
         }
       }
+     console.dir(this._refs.inputDay);
     });
   }
   _updateValueBasicInformation() {
@@ -131,70 +189,5 @@ export class ModalData {
   _updateValueInLocal(name) {
     return localStorage.getItem(`${name}`);
   }
+
 }
-
-// class localStor{
-//   constructor() {
-//     this._refs = this._getRefs()
-//     this._addEventDelivery()
-//     this._addEventPayment()
-//     this._addEventBasicInformation()
-
-//   }
-//   _getRefs() {
-//     const refs = {
-//       formDay: document.querySelector('.showroom-method'),
-//       delivery: document.querySelector('.delivery-method'),
-//       payment: document.querySelector('.payment'),
-//       infoEL: document.querySelector('.basic-information'),
-//     }
-//     refs.arrInputInf = refs.infoEL.querySelectorAll('input')
-//     refs.textareaInfo = refs.infoEL.querySelector('textarea')
-//     return refs
-//   }
-//   _addEventDelivery() {
-//     if (!this._refs.delivery.getEventListeners('click')) {
-//       this._refs.delivery.addEventListener('click', event => {
-//         if (event.target.nodeName !== "INPUT") {
-//           return
-//         }
-//         if (event.target.value=== "Showroom"&&event.target.checked=== true) {
-//           this._refs.formDay.classList.add('showroom-method--hide')
-//         } else {
-//           this._refs.formDay.classList.remove('showroom-method--hide')
-
-//         }
-//         if (event.target.checked===true) {
-//           this._addLocalStorage(event.target.name,event.target.value)
-//         }
-//       })
-//     }
-
-//   }
-//   _addEventPayment() {
-//     this._refs.payment.addEventListener('click', event => {
-//       if (event.target.nodeName !== "INPUT") {
-//         return
-//       }
-//       if (event.target.checked===true) {
-//         this._addLocalStorage(event.target.name,event.target.value)
-//       }
-//     })
-//   }
-//   _addEventBasicInformation() {
-//     console.log(this._refs);
-//     this._refs.arrInputInf.forEach(elem => {
-//       elem.addEventListener('blur', event => {
-//         this._addLocalStorage(event.target.name,event.target.value)
-//       })
-//     })
-//     this._refs.textareaInfo.addEventListener('blur', event => {
-//       this._addLocalStorage(event.target.name,event.target.value)
-//     })
-//   }
-//   _addLocalStorage(name,value) {
-//     localStorage.setItem(`${name}`,`${value}`)
-
-//   }
-// }
-// const createLocal = new localStor()
