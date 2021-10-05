@@ -14,16 +14,19 @@
   @extend %button-pad;
   display: block;
   width: 100%;
-  background-color:$button-checkout-color;
+  background-color: $button-checkout-color;
   color: $selection-text-color;
 }
 
 .button-add-likes {
   margin-left: auto;
   background-color: transparent;
-  border: none;
+  border: transparent;
   padding-bottom: 15px;
   cursor: pointer;
+  &.active &__icon {
+    fill: $accent-favorite-btn-color;
+  }
 
   &__icon {
     fill: transparent;
@@ -52,11 +55,12 @@
   font-size: 20px;
   line-height: 1.15;
   text-align: center;
+  cursor: pointer;
   &_active:hover,
   &_active:focus {
     color: $selection-text-color;
     background-color: $button-counter-color;
-    border: none;
+    border: 1px solid $button-counter-color;
   }
 
   &__button-icon {
@@ -79,7 +83,7 @@
   &:hover {
     background-color: $secondary-text-color;
     color: $selection-text-color;
-    border: none;
+    border: 1px solid $secondary-text-color;
   }
 
   &:not(:last-child) {
@@ -98,7 +102,7 @@
 
 .product-close-modal {
   position: absolute;
-
+  cursor: pointer;
   right: 0;
   padding: 14px;
   border: none;
@@ -146,6 +150,7 @@
     background-color: $third-text-color;
     border: none;
     color: $selection-text-color;
+    cursor: pointer;
 
     &:hover,
     &:focus {
