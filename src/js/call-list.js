@@ -16,7 +16,7 @@ import {
 } from './layout/home/starClients.js';
 import { pageInInstagramSliderMarkup, instagramSlider } from './layout/home/inInstagram.js';
 import {cardsMarkup,openContent} from './layout/home/content.js'
-
+import {aboutTheBrand_parsing,openAboutTheBrand} from './layout/home/aboutTheBrand.js'
 export function homeRender() {
   updateBin();
   refs.mainEL.innerHTML = '';
@@ -30,6 +30,7 @@ function getHome() {
     formBrand,
     pageStarClientsSliderMarkup,
     pageInInstagramSliderMarkup,
+    aboutTheBrand_parsing
   });
 
   refs.mainEL.insertAdjacentHTML('beforeend', homeMarkup);
@@ -41,6 +42,7 @@ function getHome() {
   instagramSlider();
   blockHelpRender();
   formFittingInShowroom();
+  openAboutTheBrand();
 }
 getHome(); //========================================================call
 //=====brand========//
@@ -125,7 +127,7 @@ function deliveryRender() {
   deliveryThreeModal();
 }
 
- deliveryRender(); //========================================================call
+ //deliveryRender(); //========================================================call
 
 //=====favorites========//
 export function favoritesRender() {}
