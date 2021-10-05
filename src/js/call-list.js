@@ -13,7 +13,12 @@ import {
 } from './layout/home/starClients.js';
 import { pageInInstagramSliderMarkup, instagramSlider } from './layout/home/inInstagram.js';
 
-function homeRender() {
+export function homeRender() {
+  updateBin();
+  refs.mainEL.innerHTML = '';
+  getHome();
+}
+function getHome() {
   const homeMarkup = home({
     pageHeroSliderMarkup,
     pageShowroomSliderMarkup,
@@ -27,9 +32,9 @@ function homeRender() {
   starClientsSlider();
   starClientsComments();
   instagramSlider();
-  blockHelpRender()
+  blockHelpRender();
 }
-homeRender(); //========================================================call
+getHome(); //========================================================call
 //=====brand========//
 import brand_page from '../views/layouts/brand.hbs';
 import {
