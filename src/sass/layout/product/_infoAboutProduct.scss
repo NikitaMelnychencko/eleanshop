@@ -82,9 +82,8 @@
 }
 
 .size__item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flex();
+
   width: 50px;
   height: 50px;
 
@@ -110,6 +109,8 @@
 }
 
 .button__size-option {
+  @extend %button;
+
   position: relative;
   border: none;
   background-color: transparent;
@@ -118,8 +119,6 @@
 
   line-height: 1.27;
   text-transform: uppercase;
-  text-align: start;
-  cursor: pointer;
   letter-spacing: 0.02em;
 
   color: $button-size-option-color;
@@ -154,8 +153,8 @@
 }
 
 .colorpicker {
-  display: flex;
-  align-items: center;
+  @include flex($main: start);
+
   margin-bottom: 30px;
   padding-top: 15px;
   border-top: 1px solid $colorpicker-border-color;
@@ -241,15 +240,12 @@
 }
 
 .button__purchase {
+  @extend %button;
+
   width: 280px;
   padding: 17px 0px;
 
-  line-height: 1.2;
-  text-align: center;
-  letter-spacing: 0.1em;
   text-transform: uppercase;
-  cursor: pointer;
-  border: none;
   border-radius: 3px;
   border: 1px solid $button-purchase-border;
   background-color: $primary-background-color;
@@ -341,9 +337,8 @@
 }
 
 .product__characteristic-item {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include flex($main: space-between);
+
   flex-wrap: wrap;
   padding: 15px 0px;
   border-top: 1px solid $primery-border-color;
