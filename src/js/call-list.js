@@ -200,7 +200,7 @@ function productRender() {
     ],
   });
   const modalFormMarkupOrder = modalFormMarkupTempl();
-  const modalFormMarkup = objProductModalAddToCart.getMarkup() + modalFormMarkupOrder;
+  // const modalFormMarkup = modalFormMarkupOrder + objProductModalAddToCart.getMarkup();
   const backdropMarkup = backdropMarkupTempl(modalFormMarkup);
   const obj = {
     infoAboutProduct: createFullMarkup(),

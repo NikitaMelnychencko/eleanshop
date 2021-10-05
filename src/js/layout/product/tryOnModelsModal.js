@@ -85,13 +85,15 @@ function onButtonSubmitClick(event) {
       }
     });
     onButtonCloseModalClick();
+
     let backdropRef = document.querySelector('[data-modal]');
     backdropRef.classList.remove('is-hidden');
-    const right = (backdropRef.clientWidth - backdropRef.children[0].children[1].clientWidth) / 2;
+    const modalForm = document.querySelector('.ordering__form');
+    modalForm.style.display = 'block';
+    const right = (backdropRef.offsetWidth - modalForm.offsetWidth) / 2;
     const btnCloseRef = document.querySelector('.form__button-сlose');
     btnCloseRef.style.display = 'block';
     btnCloseRef.style.right = `${right}px`;
-    document.querySelector('.ordering__form').style.display = 'block';
     const backdrop = new Backdrop();
   }
 }
