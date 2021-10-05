@@ -28,7 +28,7 @@
                 
                     <ul class="ordering-list ordering-list--hide ordering-list-js ">
                         {{#each color}}
-                        <li class="ordering-list__item ordering-item-js">{{text}}
+                        <li class="ordering-list__item ordering-item-js js-color">{{text}}
                             <svg class='ordering__circle' aria-label='circle' width='20' height='20'>
                                 <use class='ordering__circle--color' href='./images/exampl.svg#{{circle}}'>
                                 </use>
@@ -40,7 +40,7 @@
 
                 <div class="ordering__item">
                     <div class='ordering__select ordering__select--size ordering-input-js'>
-                        <div class="ordering__colorname">размер {{label.sizeSelected}}
+                        <div class="ordering__colorname ordering__size">{{label.sizeSelected}}
                         </div>
                         <svg class='ordering__arrow' aria-label='arrow' width='10' height='10'>
                             <use class='arrow' href='./images/exampl.svg#icon-ordering-arrow'>
@@ -50,7 +50,7 @@
 
                     <ul class="ordering-list ordering-list--hide ordering-list-js ">
                         {{#each size}}
-                        <li class="ordering-list__item ordering-item-js">{{text}}
+                        <li class="ordering-list__item ordering-item-js js-size">{{text}}
                         </li>
                         {{/each}}
                     </ul>
