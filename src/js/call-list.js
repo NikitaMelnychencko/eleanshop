@@ -16,8 +16,8 @@ import {
   starClientsComments,
 } from './layout/home/starClients.js';
 import { pageInInstagramSliderMarkup, instagramSlider } from './layout/home/inInstagram.js';
-import {cardsMarkup,openContent} from './layout/home/content.js'
-import {aboutTheBrand_parsing,openAboutTheBrand} from './layout/home/aboutTheBrand.js'
+import { cardsMarkup, openContent } from './layout/home/content.js';
+import { aboutTheBrand_parsing, openAboutTheBrand } from './layout/home/aboutTheBrand.js';
 export function homeRender() {
   updateBin();
   refs.mainEL.innerHTML = '';
@@ -31,7 +31,7 @@ function getHome() {
     formBrand,
     pageStarClientsSliderMarkup,
     pageInInstagramSliderMarkup,
-    aboutTheBrand_parsing
+    aboutTheBrand_parsing,
   });
 
   refs.mainEL.insertAdjacentHTML('beforeend', homeMarkup);
@@ -90,11 +90,6 @@ export function checkoutRender() {
   blockHelpRender();
 }
 
-//=====contact========//
-<<<<<<< HEAD
-function contactRender() {}
-//=====delivery========//
-function deliveryRender() {}
 //=====favorites========//
 import Favorites from './layout/favorites/favorites.js';
 // import favorit from './json/favorites.json';
@@ -111,14 +106,11 @@ export function favoritesRender() {
   favorites.init();
 }
 //=====fitting========//
-function fittingRender() {}
-=======
 
 import contact_page from '../views/layouts/contact.hbs';
 import { contactsMap, contactsContact } from './layout/contact/contact.js';
 
 export function contactRender() {
-  
   const contactPageMarkUp = contact_page({ formBrand, contactsMap, contactsContact });
   refs.mainEL.innerHTML = contactPageMarkUp;
   //refs.mainEL.insertAdjacentHTML('beforeend', contactPageMarkUp);
@@ -150,10 +142,7 @@ function deliveryRender() {
   deliveryThreeModal();
 }
 
- //deliveryRender(); //========================================================call
-
-//=====favorites========//
-export function favoritesRender() {}
+//deliveryRender(); //========================================================call
 
 //=====fitting========//
 
@@ -178,11 +167,10 @@ function fittingRender() {
   // fittingVideoSliderPlayer();
   formFittingInShowroom();
 }
- //fittingRender(); //============================================================call
+//fittingRender(); //============================================================call
 
->>>>>>> main
 //=====product========//
-import productFunctions from './layout/product/infoAboutProduct.js'
+import productFunctions from './layout/product/infoAboutProduct.js';
 import ProductModalAddToCart from './layout/product/productModalAddToCart.js';
 import RecomendationsCategory from './layout/product/recomendationsCategory.js';
 import cards from './json/catalog.json';
@@ -244,12 +232,6 @@ function productRender() {
 // productRender(); //========================================================call
 
 //=====reviews========//
-<<<<<<< HEAD
-function reviewsRender() {}
-//=====showroom========//
-function showroomRender() {}
-favoritesRender();
-=======
 import reviews_page from '../views/layouts/reviews.hbs';
 import { formReviews, formReviewsMarkUp } from './layout/reviews/registrationFormForFitting.js';
 import {
@@ -289,4 +271,3 @@ function blockHelpRender() {
   refs.mainEL.insertAdjacentHTML('beforeend', blockHelp_blockHelpTemplate());
   blockHelpRenderOpen();
 }
->>>>>>> main
