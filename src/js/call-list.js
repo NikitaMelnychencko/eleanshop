@@ -39,7 +39,7 @@ function getHome() {
   blockHelpRender();
   formFittingInShowroom();
 }
-getHome(); //========================================================call
+// getHome(); //========================================================call
 //=====brand========//
 import brand_page from '../views/layouts/brand.hbs';
 import {
@@ -121,7 +121,7 @@ function deliveryRender() {
   deliveryThreeModal();
 }
 
-deliveryRender(); //========================================================call
+// deliveryRender(); //========================================================call
 
 //=====favorites========//
 export function favoritesRender() {}
@@ -253,3 +253,16 @@ function blockHelpRender() {
   refs.mainEL.insertAdjacentHTML('beforeend', blockHelp_blockHelpTemplate());
   blockHelpRenderOpen();
 }
+
+//======catalog=========//
+import catalogMarkUp from '../views/layouts/catalog.hbs';
+import { filterListMakeup, openFilter } from './layout/сatalog/filter.js';
+import { catalogListMarkup, openCategory } from './layout/сatalog/gallery.js';
+
+function catalogRender() {
+  const filterGalleryCatalogMarkup = catalogMarkUp({ filterListMakeup, catalogListMarkup });
+  refs.mainEL.insertAdjacentHTML('beforeend', filterGalleryCatalogMarkup);
+  openFilter();
+  openCategory();
+}
+catalogRender(); //========================================================call
