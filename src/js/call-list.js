@@ -71,7 +71,6 @@ export function checkoutRender() {
     idList: 'day-list',
   });
 }
-checkoutRender(); //========================================================call
 
 //=====contact========//
 
@@ -162,7 +161,7 @@ function reviewsRender() {
   videoSetPlayer();
 }
 
-// reviewsRender(); //========================================================call
+reviewsRender(); //========================================================call
 
 //=====showroom========//
 import showroom_page from '../views/layouts/showroom.hbs';
