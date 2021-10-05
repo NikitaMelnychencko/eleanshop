@@ -1,13 +1,13 @@
 .description-main {
-  font-weight: 400;
   font-size: 15px;
   line-height: 1.6;
-  font-family: $primary-font-family;
   color: $primary-text-color;
-  margin-bottom: 20px;
   display: flex;
   justify-content: space-between;
   width: 100%;
+  & + .description-main{
+    margin-top: 20px;
+  }
 }
 
 .description-main-text {
@@ -17,18 +17,29 @@
 .description-delivery li:nth-child(3) p {
   border-bottom: 1px solid $accent-outline-btn-color;
   border-top: 1px solid $accent-outline-btn-color;
-  padding-bottom: 20px;
 }
 .maindescrption {
   padding-top: 26px;
 }
-
-.description-title:last-child {
-  padding-top: 31px;
-  display: flex;
-  justify-content: space-between;
-  border-top: 1px solid #e3e4e4;
+.description-title{
+  &:last-child {
+    padding-top: 31px;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #e3e4e4;
+  }
+  &:not(:last-child) {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  &:nth-child(2){
+    margin-top: 35px;
+    margin-bottom: 20px;
+  }
 }
+
+
 
 .navara {
   width: 100%;
@@ -37,11 +48,7 @@
   margin-top: 10px;
 }
 
-.description-title:not(:last-child) {
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-}
+
 
 .delivery__icon {
   width: 40px;

@@ -122,7 +122,7 @@ function deliveryRender() {
   deliveryThreeModal();
 }
 
-// deliveryRender(); //========================================================call
+ deliveryRender(); //========================================================call
 
 //=====favorites========//
 export function favoritesRender() {}
@@ -150,7 +150,7 @@ function fittingRender() {
   // fittingVideoSliderPlayer();
   formFittingInShowroom();
 }
-// fittingRender(); //============================================================call
+ //fittingRender(); //============================================================call
 
 //=====product========//
 import productFunctions from './layout/product/infoAboutProduct.js'
