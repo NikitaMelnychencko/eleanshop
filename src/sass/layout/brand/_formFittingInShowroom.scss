@@ -66,6 +66,7 @@
 }
 
 .star-form::after {
+  display: none;
   content: '*';
   position: absolute;
   top: 20px;
@@ -74,6 +75,9 @@
   font-size: 18px;
   line-height: 1.4;
   color: $seventh-text-color;
+  @media screen and (min-width: 500px) {
+    display: block;
+  }
 }
 
 .form-fitting-showroom__horiz-block.in-page {
@@ -146,6 +150,7 @@
   justify-content: center;
   height: 100%;
   width: 100%;
+  cursor: pointer;
   &:focus,
   &:hover {
     color: $accent-btn-color;
