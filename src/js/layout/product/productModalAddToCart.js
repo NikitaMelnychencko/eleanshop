@@ -58,7 +58,7 @@ export default class ProductModalAddToCart {
     if (this.objectClose) {
       this.objectClose.forEach(el => {
         if (el.name) {
-          document.querySelector(el.name).classList.add(this.el.className);
+          document.querySelector(el.name).classList.add(el.className);
         }
       });
     }
@@ -106,6 +106,13 @@ export default class ProductModalAddToCart {
     }
     document.querySelector('.js-productName').textContent = name;
     this.self.classList.remove('hidden');
+    if (this.objectClose) {
+      this.objectClose.forEach(el => {
+        if (el.name) {
+          document.querySelector(el.name).classList.remove(el.className);
+        }
+      });
+    }
     this.setEvent();
   };
 }
