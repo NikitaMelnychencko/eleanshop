@@ -121,18 +121,36 @@ function deliveryRender() {
   deliveryThreeModal();
 }
 
-deliveryRender(); //========================================================call
+// deliveryRender(); //========================================================call
 
 //=====favorites========//
 export function favoritesRender() {}
+
 //=====fitting========//
-import { fitting } from './layout/fitting/sizeTable.js'
-import { openVideoSlider } from './layout/fitting/videoSlider.js'
+
+import sizeTable_markup from '../views/layouts/fitting.hbs';
+import { sizeTable_tableCreate } from './layout/fitting/sizeTable.js';
+import { informationAboutFitting_informationCreate } from './layout/fitting/informationAboutFitting.js';
+import {
+  openVideoSlider,
+  fittingVideoSliderPlayer,
+  videoSlider_videoSliderCreate,
+} from './layout/fitting/videoSlider.js';
+
 function fittingRender() {
-  refs.mainEL.insertAdjacentHTML('beforeend', fitting)
-  openVideoSlider()
+  const fittingMarkUp = sizeTable_markup({
+    sizeTable_tableCreate,
+    videoSlider_videoSliderCreate,
+    informationAboutFitting_informationCreate,
+    formBrand,
+  });
+  refs.mainEL.insertAdjacentHTML('beforeend', fittingMarkUp);
+  openVideoSlider();
+  // fittingVideoSliderPlayer();
+  formFittingInShowroom();
 }
-fittingRender()
+// fittingRender(); //============================================================call
+
 //=====product========//
 
 import ProductModalAddToCart from './layout/product/productModalAddToCart.js';
