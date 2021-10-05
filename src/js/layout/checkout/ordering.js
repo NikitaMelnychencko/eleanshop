@@ -185,11 +185,11 @@ export function openOrderingFunction() {
     
     let circleLink = colorInput.querySelector('.ordering__circle--color').getAttribute('href');
     
-    console.log(article.label.сolorSelected)
-    article.label.сolorSelected = this.innerText;
+    // console.log(article.label.сolorSelected)
+    // article.label.сolorSelected = this.innerText;
     article.label.сolorSelected = this.innerText;
   
-    console.log(article.label.сolorSelected)
+    // console.log(article.label.сolorSelected)
 
     article.label.circleSelected = circleLink;
     console.log(circleLink)
