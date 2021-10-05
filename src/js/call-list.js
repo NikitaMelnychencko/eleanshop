@@ -29,10 +29,31 @@ function homeRender() {
   instagramSlider();
   blockHelpRender()
 }
-homeRender();
+homeRender(); //========================================================call
 //=====brand========//
-function brandRender() {
+import brand_page from '../views/layouts/brand.hbs';
+import {
+  formBrand,
+  infoAboutBrand,
+  brandOurAdvantages,
+  videoBrand,
+  brandPlayer,
+} from './layout/brand/infoAboutBrand.js';
+import { formFittingInShowroom } from './layout/brand/formFittingInShowroom.js';
+
+export function brandRender() {
+  const contactPageMarkUp = brand_page({
+    formBrand,
+    brandOurAdvantages,
+    contactsContact,
+    videoBrand,
+  });
+  refs.mainEL.insertAdjacentHTML('beforeend', contactPageMarkUp);
+  formFittingInShowroom();
+  infoAboutBrand();
+  brandPlayer();
 }
+brandRender(); //========================================================call
 
 //=====checkout========//
 import { ModalData, createPayment } from './layout/checkout/payment.js';
@@ -54,19 +75,27 @@ export function checkoutRender() {
 
   blockHelpRender()
 }
+
 //=====contact========//
-function contactRender() {
+
+import contact_page from '../views/layouts/contact.hbs';
+import { contactsMap, contactsContact } from './layout/contact/contact.js';
+
+export function contactRender() {
+  const contactPageMarkUp = contact_page({ formBrand, contactsMap, contactsContact });
+  refs.mainEL.insertAdjacentHTML('beforeend', contactPageMarkUp);
+  formFittingInShowroom();
 }
+contactRender(); //========================================================call
+
 //=====delivery========//
-function deliveryRender() {
-}
+function deliveryRender() {}
 //=====favorites========//
-function favoritesRender() {
-}
+function favoritesRender() {}
 //=====fitting========//
-function fittingRender() {
-}
+function fittingRender() {}
 //=====product========//
+
 import ProductModalAddToCart from './layout/product/productModalAddToCart.js';
 import RecomendationsCategory from './layout/product/recomendationsCategory.js';
 import cards from './json/catalog.json';
@@ -114,13 +143,38 @@ function productRender() {
   objProductModalAddToCart.show('ЖАКЕТ-СМОКИНГ С ЛАЦКАНМИ'); // show modal window - call the listener on the button
 }
 
-productRender();
+productRender(); //========================================================call
+
 //=====reviews========//
+import reviews_page from '../views/layouts/reviews.hbs';
+import { formReviews, formReviewsMarkUp } from './layout/reviews/registrationFormForFitting.js';
+import {
+  setVideoHbs,
+  clientStar,
+  videosetSlickSettings,
+  videoSetPlayer,
+} from './layout/reviews/videoSet.js';
+
 function reviewsRender() {
+  const reviewsMarkUp = reviews_page({ setVideoHbs, clientStar, formReviewsMarkUp });
+  refs.mainEL.insertAdjacentHTML('beforeend', reviewsMarkUp);
+  videosetSlickSettings();
+  starClientsSlider();
+  starClientsComments();
+  formReviews();
+  videoSetPlayer();
 }
+
+reviewsRender(); //========================================================call
+
 //=====showroom========//
-function showroomRender() { 
+import showroom_page from '../views/layouts/showroom.hbs';
+export function showroomRender() {
+  const showroomPageMarkUp = showroom_page({ formBrand, pageShowroomSliderMarkup });
+  refs.mainEL.insertAdjacentHTML('beforeend', showroomPageMarkUp);
+  formFittingInShowroom();
 }
+showroomRender(); //========================================================call
 
 //=====blockHelp========//
 import blockHelp_blockHelpTemplate from '../views/components/blockHelp.hbs';

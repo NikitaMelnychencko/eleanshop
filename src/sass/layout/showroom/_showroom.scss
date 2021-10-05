@@ -1,0 +1,11 @@
+.showroom-formfittingInShowroom-box {
+  border: 1px dashed $form-dashed-color;
+  box-sizing: border-box;
+}
+
+.showroom-section {
+  padding-bottom: 30px;
+  @media screen and (min-width: $desktop-up) {
+    padding-bottom: 120px;
+  }
+}
