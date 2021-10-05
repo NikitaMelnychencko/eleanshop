@@ -17,13 +17,11 @@ export const tryOnModels = tryOnModelsModal({ orderForm });
 export function setEventTryOnModels() {
   const tryOnBackdrop = document.querySelector('.try-on__backdrop');
   const tryOnModalEl = document.querySelector('.try-on');
-  console.log(tryOnModalEl);
   const buttonCloseModal = tryOnModalEl.querySelector('.try-on__close-button');
   const orderFormEl = tryOnModalEl.querySelector('.order-form');
   const submitButton = tryOnModalEl.querySelector('.order-form__button');
   const sizeList = tryOnModalEl.querySelector('.sizes__list');
 
-  console.log('---------------TRY ON-------------------');
   buttonCloseModal.addEventListener('click', onButtonCloseModalClick);
   sizeList.addEventListener('click', onSizeListItemClick);
   submitButton.addEventListener('click', onButtonSubmitClick);
@@ -52,12 +50,8 @@ function onSizeListItemClick(event) {
   if (event.target.nodeName !== 'LABEL') {
     return;
   }
-  console.log('it is label');
   const sizeInput = event.target.previousElementSibling;
-  console.log(sizeInput.value);
   sizeInput.click();
-
-  console.log(sizeInput.checked);
 }
 
 //on submit button click, set info into local storage

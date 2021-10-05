@@ -30,8 +30,6 @@ export default class HandSewn {
   };
 
   _onNextBtnClick = () => {
-    console.log('==============');
-    console.log(this.object);
     if (this.object) {
       this.object.forEach(el => {
         if (el.name) {
@@ -40,10 +38,6 @@ export default class HandSewn {
       });
     }
   };
-
-  // _onButtonClick = () => {
-  //   this.button.addEventListener('clck', this.onNextBtnClick);
-  // };
 
   getMarkup = () => {
     this._createMarkup();
