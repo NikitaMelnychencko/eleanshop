@@ -1,0 +1,22 @@
+{{#each this}}
+<div class="filters">
+    <div class="filters-categor">
+        <ul class="filters-categor__list">
+            <h2 class="filters-categor__item">КАТЕГОРИИ</h2>
+            {{#each category}}
+            <li class="filters-categor__item">{{this}}</li>
+            {{/each}}
+        </ul>
+    </div>
+
+    <div class="filters-collection">
+        <ul class="filters-collection__list">
+            <h2 "filters-collection__titel">КОЛЕКЦИИ</h2>
+            {{#each collection}}
+            <li "filters-collection__item">{{this}}</li>
+            {{/each}}
+
+        </ul>
+    </div>
+</div>
+{{/each}}

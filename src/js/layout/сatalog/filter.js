@@ -1,16 +1,2 @@
-[
-  {
-    "category": [
-      "Новинки",
-      "Юбки",
-      "Смокинги",
-      "Костюмы",
-      "Аксессуары",
-      "Брюки",
-      "Блузы",
-      "Платья",
-      "Топы и жилеты"
-    ],
-    "collection": ["Осень-зима 20-21", "Вечерние комплекты", "Предзаказ", "Свадьба и выпускной"]
-  }
-]
+import filterList from '../../json/filter.json';
+import filterListHbs from '../../../views/partials/сatalog/filter.hbs';
