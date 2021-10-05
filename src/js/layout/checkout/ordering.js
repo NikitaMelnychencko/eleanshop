@@ -6,12 +6,12 @@ import '../../../images/img/red-suit.jpg';
 import promocodes from '../../json/promocode.json';
 import orderingInsertion from '../../json/orderinginsertion.json';
 
-localStorage.setItem('orderingData', JSON.stringify(orderingInsertion));
+// localStorage.setItem('orderingData', JSON.stringify(orderingInsertion));
 const savedData = localStorage.getItem('orderingData');
 const parsedData = JSON.parse(savedData);
 // console.log(parsedData)
 
-export const ordering = ordering_ordering({ parsedData, orderingInsertion });
+export const ordering = ordering_ordering(parsedData);
 
 export function openOrderingFunction() {
   const orderingApplyBtn = document.querySelector('.ordering__btn--promocode');
@@ -36,6 +36,9 @@ export function openOrderingFunction() {
 
       priceSpan.textContent = totalPricePerItem;
       renewTotalPriceWithDiscount();
+      console.log("Белый смокинг и брюки с лампасами" === "Белый смокинг и брюки с лампасами")
+      // parsedData.
+      // localStorage.setItem('')
     } else if (e.target.classList.contains('ordering__btn--minus')) {
       let checker = orderingDecrement(e);
       let priceSpan = e.target.parentElement.nextElementSibling;

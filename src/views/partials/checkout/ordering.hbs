@@ -1,7 +1,7 @@
 <h2 class='ordering__title'>Оформление заказа</h2>
 <div class='ordering__cards'>
     <!--the card with the chosen item-->
-    {{#each orderingInsertion}}
+    {{#each this}}
     <div class='ordering__card'>
         
         <img class='ordering_image'
@@ -57,7 +57,7 @@
                 </div>
                 <div class="ordering__counter">
                 <button class='ordering__btn--minus ordering__btn' type='button'>-</button>
-                <span class='ordering__btn ordering__value'>1</span>
+                <span class='ordering__btn ordering__value'>{{label.count}}</span>
                 <button class='ordering__btn--plus ordering__btn' type='button'>+</button>
                  </div> 
                 <span class='ordering__price'>{{label.price}}</span>
