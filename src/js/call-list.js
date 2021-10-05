@@ -99,7 +99,13 @@ function deliveryRender() {}
 //=====favorites========//
 export function favoritesRender() {}
 //=====fitting========//
-function fittingRender() {}
+import { fitting } from './layout/fitting/sizeTable.js'
+import { openVideoSlider } from './layout/fitting/videoSlider.js'
+function fittingRender() {
+  refs.mainEL.insertAdjacentHTML('beforeend', fitting)
+  openVideoSlider()
+}
+fittingRender()
 //=====product========//
 import productFunctions from './layout/product/infoAboutProduct.js'
 import ProductModalAddToCart from './layout/product/productModalAddToCart.js';
