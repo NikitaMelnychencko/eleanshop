@@ -6,12 +6,10 @@
         
         <img class='ordering_image'
         {{!-- srcset='{{label.img}} 1x, {{label.img2}} 2x' --}}
-        src='{{label.img}}' alt='article' />
-        <div class='ordering__box'>
-            
-            <p class='ordering__label'>{{label.name}}</p>
-            
-            <div class='ordering__selects'>
+        src='{{label.img}}'
+        alt='article'
+      />
+      <div class='ordering__box'>
 
                 <div class="ordering__item ordering__select--color">
                     <div class='ordering__select ordering__select--color ordering-input-js'>
@@ -67,9 +65,63 @@
                     <use class='ordering__icon-cross ordering__close' href='./images/exampl.svg#icon-menu_burger_close'>
                     </use>
                 </svg>
-            </button>
+              </div>
+              <svg class='ordering__arrow' aria-label='close' width='10' height='10'>
+                <use class='close' href='./images/exampl.svg#icon-ordering-arrow'>
+                </use>
+              </svg></div>
 
-      
+            <ul class='ordering-list ordering-list--hide ordering-list-js'>
+              {{#each color}}
+                <li class='ordering-list__item ordering-item-js'>{{text}}
+                  <svg class='ordering__circle' aria-label='circle' width='20' height='20'>
+                    <use class='ordering__circle--color' href='./images/exampl.svg#{{circle}}'>
+                    </use>
+                  </svg>
+                </li>
+              {{/each}}
+            </ul>
+          </div>
+
+          <div class='ordering__item'>
+            <div class='ordering__select ordering__select--size ordering-input-js'>
+              <div class='ordering__colorname'>размер
+                {{label.sizeSelected}}
+              </div>
+              <svg class='ordering__arrow' aria-label='arrow' width='10' height='10'>
+                <use class='arrow' href='./images/exampl.svg#icon-ordering-arrow'>
+                </use>
+              </svg>
+            </div>
+
+            <ul class='ordering-list ordering-list--hide ordering-list-js'>
+              {{#each size}}
+                <li class='ordering-list__item ordering-item-js'>{{text}}
+                </li>
+              {{/each}}
+            </ul>
+          </div>
+          <div class='ordering__counter'>
+            <button class='ordering__btn--minus ordering__btn' type='button'>-</button>
+            <span class='ordering__btn ordering__value'>1</span>
+            <button class='ordering__btn--plus ordering__btn' type='button'>+</button>
+          </div>
+          <span class='ordering__price'>{{label.price}}</span>
+        </div>
+        <button class='ordering__button--close ordering__close' type='button'>
+          <svg
+            class='ordering__icon--close ordering__close'
+            aria-label='close'
+            width='16'
+            height='16'
+          >
+            <use
+              class='ordering__icon-cross ordering__close'
+              href='./images/exampl.svg#icon-menu_burger_close'
+            >
+            </use>
+          </svg>
+        </button>
 
       </div>
 
