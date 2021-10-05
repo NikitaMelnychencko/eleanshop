@@ -1,20 +1,31 @@
+import { favoritesRender } from '../../call-list';
+import { showroomRender } from '../../call-list';
+import { contactRender } from '../../call-list';
+// import { Назва функції } from '../../call-list';
+
+import navListValue from '../../../../src/js/json/static/navListValue.json';
+
 const refs = {
   headerEl: document.querySelector('.js-header'),
-  buttonMobEl: document.querySelector('header .js-button'),
-  svgMobEl: document.querySelectorAll('header .js-button__svg'),
-  svgBinEl: document.querySelectorAll('header .js-svg-bin'),
-  socialMobEl: document.querySelector('header .js-social-list-mobile'),
-  logoSvgEl: document.querySelector('header .js-logo__svg'),
-  logoTextEl: document.querySelector('header .js-logo__text'),
-  listTextEl: document.querySelectorAll('header .js-list__text'),
-  svgFavoritesEl: document.querySelector('header .js-svg-favorites'),
-  navigationEl: document.querySelector('header .js-navigation'),
+  buttonMobEl: document.querySelector('.js-header-button'),
+  svgMobEl: document.querySelectorAll('.js-header-button__svg'),
+  svgBinEl: document.querySelectorAll('.js-header-svg-bin'),
+  socialMobEl: document.querySelector('.js-header-social-list-mobile'),
+  logoSvgEl: document.querySelector('.js-header-logo__svg'),
+  logoTextEl: document.querySelector('.js-header-logo__text'),
+  listTextEl: document.querySelectorAll('.js-header-list__text'),
+  svgFavoritesEl: document.querySelector('.js-header-svg-favorites'),
+  navigationEl: document.querySelector('.js-header-navigation'),
   bodyEl: document.querySelector('body'),
-  navListEl: document.querySelector('header .js-navigation-list'),
-  navSublistEl: document.getElementsByClassName('js-navigation-sublist'),
-  wrapperEl: document.querySelector('header .js-wrapper'),
-  navLinkEl: document.getElementsByClassName('js-navigation-link'),
-  navItemEl: document.querySelectorAll('header .js-navigation-item'),
+  navListEl: document.querySelector('.js-header-navigation-list'),
+  navSublistEl: document.getElementsByClassName('js-header-navigation-sublist'),
+  wrapperEl: document.querySelector('.js-header-wrapper'),
+  navLinkEl: document.getElementsByClassName('js-header-navigation-link'),
+  // ----------------------------------------------
+  contactEl: document.querySelector('#header-contact'),
+  showroomEl: document.querySelector('#header-showroom'),
+  catalogNewmEl: document.querySelector('#header-catalog-new'),
+  favoritesEl: document.querySelector('#header-favorites'),
 };
 
 const {
@@ -33,12 +44,19 @@ const {
   navSublistEl,
   wrapperEl,
   navLinkEl,
-  navItemEl,
+  contactEl,
+  showroomEl,
+  catalogNewmEl,
+  favoritesEl,
 } = refs;
 
-const qwe = document.getElementsByClassName('navigation-sublist__link');
+//! ---------- ВИКЛИКИ ФУНКЦІЙ З КОЛ-ЛИСТА -----------
+favoritesEl.addEventListener('click', favoritesRender);
+showroomEl.addEventListener('click', showroomRender);
+contactEl.addEventListener('click', contactRender);
+// catalogNewmEl.addEventListener('click', Назва функції);
 
-// ---------- МОБІЛЬНА МОДАЛКА -----------
+//! ---------- МОДАЛКА МОБІЛЬНОЇ ВЕРСІЇ -----------
 buttonMobEl.addEventListener('click', fnMobileMenu);
 
 function fnMobileMenu() {
@@ -51,7 +69,7 @@ function fnMobileMenu() {
   logoTextEl.classList.toggle('mod-color');
   listTextEl.forEach(element => element.classList.toggle('mod-color'));
   svgFavoritesEl.classList.toggle('mod-stroke');
-  navigationEl.classList.toggle('mod-hidden-nav');
+  navigationEl.classList.toggle('mod-hidden-mob');
   wrapperEl.classList.toggle('wrapper');
   bodyEl.classList.toggle('mobile-open');
 
@@ -64,14 +82,14 @@ function fnMobileMenu() {
   }
 }
 
-// ---------- МОБІЛЬНЕ МЕНЮ -----------
+//! ---------- МЕНЮ НАВІГАЦІЇ МОБІЛЬНОЇ ВЕРСІЇ -----------
 let markup;
 
 function fnMobileList(event) {
   if (event.target.parentElement.children.length !== 1) {
     if (navListEl.children.length > 1) {
       markup = navListEl.innerHTML;
-      [...navSublistEl].forEach(element => element.classList.toggle('mod-hidden'));
+      [...navSublistEl].forEach(element => element.classList.toggle('mod-hidden-mob'));
       [...navLinkEl].forEach(element => element.classList.toggle('mod-rotate-navigation'));
       navListEl.innerHTML = event.target.parentNode.outerHTML;
     } else {
@@ -81,19 +99,17 @@ function fnMobileList(event) {
   }
 }
 
-// ---------- ДЕКСТОПНЕ МЕНЮ -----------
-if (matchMedia('(min-width: 1378px)').matches) {
-  navigationEl.addEventListener('mouseover', fnDesktopList);
-  navigationEl.addEventListener('mouseout', fnDesktopList);
-} else {
-  navigationEl.removeEventListener('mouseover', fnDesktopList);
-  navigationEl.removeEventListener('mouseout', fnDesktopList);
-}
+//! ---------- МЕНЮ НАВІГАЦІЇ ДЕКСТОПНОЇ ВЕРСІЇ (ЗАПИС В LOCAL STORAGE) -----------
 
-function fnDesktopList(event) {
-  console.dir(event.target);
-  if (event.target.nodeName === 'LI')
-    [...navSublistEl]
-      .find(element => element === event.target.lastElementChild)
-      .classList.toggle('mod-hidden');
+navigationEl.addEventListener('click', fnSavelocalStorage);
+function fnSavelocalStorage(event) {
+  console.log(event.target.outerText);
+  navListValue.forEach(el => {
+    if (el[`${event.target.outerText.toLowerCase()}`]) {
+      localStorage.setItem(
+        event.target.outerText.toLowerCase(),
+        el[`${event.target.outerText.toLowerCase()}`],
+      );
+    }
+  });
 }
