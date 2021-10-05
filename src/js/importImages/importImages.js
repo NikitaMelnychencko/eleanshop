@@ -2,6 +2,8 @@ import '../../images/svg/exampl.svg';
 
 //============header======================
 import '../../images/svg/header.svg';
+import '../../images/img/header/header-arrow.svg';
+//=========== hero========================
 
 //=========== hero========================
 import '../../images/img/page-hero/mobile/hero-title-01/hero-title-mobile-01.jpg';
@@ -189,3 +191,15 @@ import '../../images/svg/murkup_arow.svg';
 //=============delivery=====================
 import '../../images/img/elean62862_1.jpeg';
 import '../../images/svg/Group.svg';
+import '../../images/img/checkout/payment/buyers.jpg';
+import '../../images/img/checkout/payment/buyers@2x.jpg';
+import '../../images/img/checkout/payment/mirror_reflection.jpg';
+import '../../images/img/checkout/payment/mirror_reflection@2x.jpg';
+import '../../images/svg/murkup.svg';
+import '../../images/svg/murkup_arow.svg';
+
+//===============Reviews===========================
+import '../../images/img/Reviews/poster/Black2V.jpg';
+import '../../images/img/Reviews/poster/23.jpg';
+import '../../images/img/Reviews/poster/55.jpg';
+import '../../images/img/Reviews/poster/78.jpg';
