@@ -1,6 +1,7 @@
 import markupBin from '../../../views/partials/product/productBin.hbs';
 import dataBin from '../../json/orderinginsertion.json';
 import { checkoutRender } from '../../call-list.js';
+import { scrollTo } from '../../components/blockHelp/blockHelp.js';
 
 export default class ProductBin {
   constructor({ root, typeInsert, data = dataBin }) {
@@ -115,6 +116,7 @@ export default class ProductBin {
     this._onCloseModal();
     //function of clicking on the Checkout button
     checkoutRender();
+    scrollTo(0, 700);
   };
 
   _setEvent = () => {

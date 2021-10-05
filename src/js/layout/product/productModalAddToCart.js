@@ -4,6 +4,7 @@ require('../../slick/slick.min.js');
 import RecomendationsCategory from './recomendationsCategory.js';
 import modalAddToCartMark from '../../../views/partials/product/productModalAddToCart.hbs';
 import { checkoutRender } from '../../call-list.js';
+import { scrollTo } from '../../components/blockHelp/blockHelp.js';
 
 export default class ProductModalAddToCart {
   constructor({ root, typeInsert = 'beforeEnd', productName, objectClose }) {
@@ -85,6 +86,7 @@ export default class ProductModalAddToCart {
     this._onCloseModal();
     // тут прописать открітие след. модалки
     checkoutRender();
+    scrollTo(0, 700);
   };
 
   _setNextBtnEvent = () => {
