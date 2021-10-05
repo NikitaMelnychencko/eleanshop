@@ -1,0 +1,63 @@
+{
+  "id": 1,
+  "image": [
+    {
+      "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
+      "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
+      "imageMobile": "./images/tuxedo-and-vest-mobile-1.jpg",
+      "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-1@2x.jpg ",
+      "imageDescriprion": "девушка в белом смокинге с желеткой"
+    },
+    {
+      "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-2.jpg ",
+      "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-2@2x.jpg",
+      "imageMobile": "./images/tuxedo-and-vest-mobile-2.jpg",
+      "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
+      "imageDescriprion": "девушка в белом смокинге с желеткой"
+    },
+    {
+      "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-3.jpg ",
+      "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-3@2x.jpg",
+      "imageMobile": "./images/tuxedo-and-vest-mobile-3.jpg",
+      "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
+      "imageDescriprion": "девушка в белом смокинге с желеткой"
+    },
+    {
+      "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-4.jpg ",
+      "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-4@2x.jpg",
+      "imageMobile": "./images/tuxedo-and-vest-mobile-4.jpg",
+      "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-4@2x.jpg ",
+      "imageDescriprion": "девушка в белом смокинге с желеткой"
+    }
+  ],
+  "productName": "Классический комплект со смокингом и желетом",
+  "productPrice": "65 300",
+  "size": [
+    {"40": true},
+    {"42": true},
+    {"44": true},
+    {"46": true},
+    {"48": false},
+    {"50": false}
+  ],
+  "color": [
+    {"colorName": "black", "colorHex": "#242424"},
+    {"colorName": "red", "colorHex": "#F2404A"},
+    {"colorName": "grey", "colorHex": "#E2DFDF"},
+    {"colorName": "blue", "colorHex": "#38548A"}
+  ],
+  "productDescription": "Приталенный силуэт и заостренные лацканы подчеркивают линию талии, визуально корректируя фигуру до желанной всем 'песочные часы'. Классика женского смокинга, которую одобрил бы сам Ив Сен Лоран.",
+  "productComposition": " 98% шерсть, 2% эластан, отделка шелком",
+  "productParams": [
+    {"params": "Вид застежки:", "value": "Пуговица, обтянутая атласом"},
+    {"params": "Длина изделия:", "value": "По спинке 69 см"},
+    {"params": "Крой:", "value": "Приталенный"},
+    {"params": "Рисунок:", "value": "Без рисунка"},
+    {"params": "Тип карманов:", "value": "Прорезные 'листочки'"},
+    {"params": "Конструктивные элементы:", "value": "Рельефные швы"},
+    {"params": "Материал подкладки", "value": "Вискоза 100%"},
+    {"params": "Уход за вещами:", "value": "Химчистка"}
+  ],
+  "productAdditional": "Как принято считать, стремящиеся вытеснить традиционное производство, нанотехнологии ассоциативно распределены по отраслям. А также независимые государства освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, ограничены исключительно образом мышления."
+}
+

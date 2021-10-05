@@ -28,7 +28,6 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-
   transition: opacity $time-cubic, transform $time-cubic;
 }
 
@@ -75,14 +74,10 @@
     &-text {
       position: absolute;
       border: 0;
-
       white-space: nowrap;
-
       clip-path: inset(100%);
       clip: rect(0 0 0 0);
-
       overflow: hidden;
-
       width: 1px;
       height: 1px;
       margin: -1px;
@@ -94,7 +89,6 @@
     width: 20px;
     height: 20px;
     fill: $selection-text-color;
-
     .form__button-сlose:hover &,
     .form__button-сlose:focus & {
       fill: $secondary-text-color;
