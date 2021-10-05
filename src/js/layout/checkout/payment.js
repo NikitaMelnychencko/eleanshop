@@ -68,15 +68,22 @@ export class ModalData {
         
         if (event.target.value === 'Showroom'||event.target.value === 'By_courier_in_Kiev' && event.target.checked === true) {
           this._refs.formDay.classList.add('showroom-method--hide');
+          this._toggleInput(false,true)
         } else {
           this._refs.formDay.classList.remove('showroom-method--hide');
-          
+          this._toggleInput(true,false)
         }
         if (event.target.checked === true) {
           this._addLocalStorage(event.target.name, event.target.value);
         }
       });
   
+  }
+  _toggleInput(valueFirst,valueSecond) {
+    this._refs.inputDay.disabled = valueFirst;
+    this._refs.inputTime.disabled = valueFirst;
+    this._refs.inputDay.required = valueSecond;
+    this._refs.inputTime.required = valueSecond;
   }
   _addEventPayment() {
     this._updatePayment();
@@ -104,8 +111,13 @@ export class ModalData {
     this._refs.orderingForm.addEventListener('submit', e => {
       e.preventDefault();
       onBtnClick()
-     
+      this._refs.arrInputInf.forEach(el => {
+        el.value = '', 
+        el.checked = false
+      })
+      this._refs.textareaInfo.value = ''
     });
+
   }
   _addLocalStorage(name, value) {
     localStorage.setItem(`${name}`, `${value}`);
@@ -117,11 +129,13 @@ export class ModalData {
         el.checked = true;
         if (el.value === 'Showroom'||el.value === 'By_courier_in_Kiev') {
           this._refs.formDay.classList.add('showroom-method--hide');
+          
         } else {
           localStorage.removeItem(`${this._refs.inputDay.name}`);
           localStorage.removeItem(`${this._refs.inputTime.name}`);
         }
       }
+     console.dir(this._refs.inputDay);
     });
   }
   _updateValueBasicInformation() {
