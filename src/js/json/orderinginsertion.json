@@ -8,7 +8,7 @@
       "price": "10000",
       "sizeSelected": "46",
       "сolorSelected": "белый",
-      "circleSelected": "icon-circle-white",
+      "circleSelected": "./images/exampl.svg#icon-circle-white",
       "count": "1"
     },
     "color": [

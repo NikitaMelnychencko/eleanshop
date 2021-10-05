@@ -2,7 +2,7 @@
 <div class='ordering__cards'>
     <!--the card with the chosen item-->
     {{#each this}}
-    <div class='ordering__card'>
+    <div class='ordering__card' id="{{label.id}}">
         
         <img class='ordering_image'
         {{!-- srcset='{{label.img}} 1x, {{label.img2}} 2x' --}}
@@ -17,7 +17,7 @@
                     <div class='ordering__select ordering__select--color ordering-input-js'>
                         <div class="ordering__colorname">{{label.сolorSelected}}   
                         <svg class='ordering__circle' aria-label='circle' width='20' height='20'>
-                            <use class='ordering__circle--color' href='./images/exampl.svg#{{label.circleSelected}}'>
+                            <use class='ordering__circle--color' href='{{label.circleSelected}}'>
                             </use>
                         </svg>
                         </div>
