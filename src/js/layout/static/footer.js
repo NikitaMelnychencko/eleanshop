@@ -1,4 +1,3 @@
-import { stringify } from 'postcss';
 import refs from '../../refs/refs.js';
 import collection from '../../json/linkingPagesFooter/linkingPagesDesktopOnClick.json'
 import { scrollTo } from '../../components/blockHelp/blockHelp';
