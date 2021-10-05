@@ -1,0 +1,146 @@
+.question-answer {
+  text-align: center;
+  font-size: 21px;
+  line-height: 1.05;
+  color: $primary-logo-color;
+  margin-bottom: 31px;
+}
+.qusetion-title {
+  flex-basis: calc(100% / 1 - 20px);
+  margin-bottom: 17px;
+  outline: 1px dotted $third-text-color;
+  padding: 20px;
+}
+
+.question-block {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding-bottom: 13px;
+}
+
+.question-block::after {
+  content: '';
+  position: absolute;
+  width: 112%;
+  height: 1px;
+  left: -20px;
+  top: 93%;
+  transform: translateY(-50%);
+  border-bottom: 1px dotted $third-text-color;
+}
+.answers-body {
+  padding-top: 20px;
+  font-size: 15px;
+  text-align: left;
+  line-height: 1.46;
+}
+
+.answers-foot {
+  margin-top: 10px;
+}
+
+.question__icon {
+  width: 27px;
+  height: 27px;
+}
+
+.question-head {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.1;
+
+  letter-spacing: 0.02em;
+}
+
+@media screen and (min-width: $desktop-up) {
+  .question-head {
+    text-align: left;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 1.05;
+    padding-bottom: 12px;
+  }
+
+  .question-body {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-left: -10px;
+    margin-top: -10px;
+  }
+
+  .qusetion-title {
+    width: 654px;
+    flex-basis: calc(100% / 2 - 20px);
+    margin-top: 10px;
+    margin-left: 10px;
+    outline: 1px dotted $third-text-color;
+  }
+
+  .qusetion-title:nth-child(2n) {
+    margin-left: 29px;
+  }
+  .qusetion-title:nth-child(3n) {
+    height: 247px;
+  }
+  .qusetion-title:nth-child(4n) {
+    height: 197px;
+  }
+
+  .question-block::after {
+    width: 107%;
+    left: -20px;
+    top: 93%;
+  }
+}
+
+.qusetion-title:hover {
+  animation: 1.2s ease-in-out 0s normal none infinite running trambling-animation;
+}
+
+@keyframes trambling-animation {
+  0%,
+  50%,
+  100% {
+    transform: rotate(0deg);
+  }
+  10%,
+  30% {
+    transform: rotate(-4deg);
+  }
+  20%,
+  40% {
+    transform: rotate(4deg);
+  }
+}
+
+.qusetion-title {
+  // opacity: 0;
+  // text-align: center;
+  animation: fadein 1s;
+  animation-delay: 1.5s;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -ms-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  } /*Update because you asked for this numbers BUT i propose from 0 otherwise you are instantly seeing the div. */
+  to {
+    opacity: 1;
+  }
+}
+
+.question {
+  padding-top: 32px;
+  @media screen and (min-width: $desktop-up) {
+    padding-top: 0;
+  }
+}
+
+.question-main {
+  margin-bottom: 60px;
+}
