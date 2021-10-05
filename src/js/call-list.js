@@ -66,7 +66,6 @@ import cards from './json/catalog.json';
 import productMarkup from '../views/layouts/product.hbs';
 import HandSewn from './layout/product/productHandSewn.js';
 import backdropMarkupTempl from '../views/components/backdrop.hbs';
-import modalFormMarkupTempl from '../views/components/thanksForOrdering.hbs';
 
 function productRender() {
   const objRecomendationsCategory = new RecomendationsCategory({
