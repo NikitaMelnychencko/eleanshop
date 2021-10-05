@@ -26,22 +26,24 @@ export default class HandSewn {
 
   _addButtonListener = () => {
     this.button = document.querySelector('.js-button-product-delivery');
-    this.button.addEventListener('click', this._onButtonClick);
+    this.button.addEventListener('click', this._onNextBtnClick);
   };
 
   _onNextBtnClick = () => {
+    console.log('==============');
+    console.log(this.object);
     if (this.object) {
       this.object.forEach(el => {
         if (el.name) {
-          document.querySelector(el.name).classList.remove(this.el.className);
+          document.querySelector(el.name).classList.add(el.className);
         }
       });
     }
   };
 
-  _onButtonClick = () => {
-    this.button.addEventListener('clck', this.onNextBtnClick);
-  };
+  // _onButtonClick = () => {
+  //   this.button.addEventListener('clck', this.onNextBtnClick);
+  // };
 
   getMarkup = () => {
     this._createMarkup();
