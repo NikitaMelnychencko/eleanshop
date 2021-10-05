@@ -31,7 +31,7 @@
 
 /* extra */
 .slider {
-  position: relative;
+  // position: relative;
   /* padding-left: 15px; */
   /*  padding-right: 50px; */
 }
@@ -87,13 +87,17 @@ body > main > section.fitting__section > div > div.fitting__video-slider > h3:be
   background-color: #f9f9f9;
 }
 .slider .slick-dots {
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+  // @media screen and (min-width: $mobile-first) and (max-width: $tablet-general) {
+  //   display: absolute;
+  //   top: 107%;
+  // }
   display: flex;
   align-items: center;
   justify-content: center;
-  @media screen and (min-width: $mobile-first) and (max-width: $tablet-general) {
-    display: absolute;
-    top: 107%;
-  }
+  //   margin-bottom: 46px;
 }
 .slider .slick-dots li {
   list-style: none;
@@ -102,7 +106,7 @@ body > main > section.fitting__section > div > div.fitting__video-slider > h3:be
   font-size: 0;
   width: 5px;
   height: 5px;
-  background-color: #d8deea;
+  background-color: $in-instagram-slider-dots;
   border-radius: 70%;
   border: none;
   margin-top: 15px;
@@ -112,9 +116,68 @@ body > main > section.fitting__section > div > div.fitting__video-slider > h3:be
   border-radius: 20%;
 }
 .slider__item {
-  margin-left: 15px;
+  position: relative;
+
+  // & + & {
+  //   margin-left: 15px;
+  // }
 
   @media screen and (min-width: $mobile-first) {
     margin-left: 0;
+  }
+}
+
+.video-fitting-svg {
+  position: absolute;
+  z-index: 2;
+  bottom: 50%;
+  right: 50%;
+  width: 45px;
+  height: 45px;
+  transform: translate(50%, 50%);
+  transition: filter $time-cubic;
+  cursor: pointer;
+
+  @media screen and (min-width: $desktop-up) {
+    .video-fitting-box:hover & {
+      filter: drop-shadow(0px 0px 5px $selection-text-color);
+    }
+    transform: translate(0, 0);
+    bottom: 18px;
+    right: 18px;
+  }
+}
+
+.video-fitting-box {
+  // position: relative;
+  // height: 665px;
+  // width: 100%;
+  // margin-bottom: 23px;
+  @media screen and (min-width: $desktop-up) {
+    // margin-bottom: 19px;
+    // height: 401px;
+  }
+}
+
+.video-fitting-fullscreen {
+  display: none;
+  fill: $hero-slider-dots;
+  // fill: red;
+  position: absolute;
+  z-index: 2;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  transition: filter $time-cubic;
+  transition: fill $time-cubic;
+  cursor: pointer;
+  @media screen and (min-width: $desktop-up) {
+    &:hover {
+      fill: $accent-btn-color;
+      filter: drop-shadow(0px 0px 5px $selection-text-color);
+    }
+    bottom: 18px;
+    right: 18px;
   }
 }

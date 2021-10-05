@@ -55,7 +55,9 @@ export default class ProductModalAddToCart {
   };
 
   _onCloseModal = () => {
-    this.self.classList.add('hidden');
+    if (this.self) {
+      this.self.classList.add('hidden');
+    }
     if (this.objectClose) {
       this.objectClose.forEach(el => {
         if (el.name) {

@@ -149,6 +149,32 @@ import '../../images/img/product/productBin/product2.jpg';
 import '../../images/img/product/productBin/product2@2x.jpg';
 import '../../images/svg/sprite.svg';
 import '../../images/svg/thanks_for_ordering.svg';
+
+// ============productInfo===========
+import '../../images/img/products/mobile/tuxedo-and-vest-mobile-1.jpg'
+import '../../images/img/products/mobile/tuxedo-and-vest-mobile-2.jpg'
+import '../../images/img/products/mobile/tuxedo-and-vest-mobile-3.jpg'
+import '../../images/img/products/mobile/tuxedo-and-vest-mobile-4.jpg'
+import '../../images/img/products/mobile/tuxedo-and-vest-mobile-5.jpg'
+import '../../images/img/products/mobile/tuxedo-and-vest-mobile-1@2x.jpg'
+import '../../images/img/products/mobile/tuxedo-and-vest-mobile-2@2x.jpg'
+import '../../images/img/products/mobile/tuxedo-and-vest-mobile-3@2x.jpg'
+import '../../images/img/products/mobile/tuxedo-and-vest-mobile-4@2x.jpg'
+import '../../images/img/products/mobile/tuxedo-and-vest-mobile-5@2x.jpg'
+import '../../images/img/products/desktop/tuxedo-and-vest-mini-desktop-1.jpg'
+import '../../images/img/products/desktop/tuxedo-and-vest-mini-desktop-2.jpg'
+import '../../images/img/products/desktop/tuxedo-and-vest-mini-desktop-3.jpg'
+import '../../images/img/products/desktop/tuxedo-and-vest-mini-desktop-4.jpg'
+import '../../images/img/products/desktop/tuxedo-and-vest-mini-desktop-1@2x.jpg'
+import '../../images/img/products/desktop/tuxedo-and-vest-mini-desktop-2@2x.jpg'
+import '../../images/img/products/desktop/tuxedo-and-vest-mini-desktop-3@2x.jpg'
+import '../../images/img/products/desktop/tuxedo-and-vest-mini-desktop-4@2x.jpg'
+import '../../images/svg/products/circle-black.svg';
+import '../../images/svg/products/circle-red.svg';
+import '../../images/svg/products/circle-grey.svg';
+import '../../images/svg/products/circle-green.svg';
+import '../../images/svg/products/circle-blue.svg';
+import '../../images/svg/products/circle-white.svg';
 import '../../images/svg/product/product-icon-close.svg';
 import '../../images/svg/product/icon-product-delivery.svg';
 import '../../images/svg/product/product-modal-button-close.svg';
@@ -181,21 +207,21 @@ import '../../images/img/product/productBin/product2.jpg';
 import '../../images/img/product/productBin/product2@2x.jpg';
 
 //===============payment===========================//
-import '../../images/img/checkout/payment/buyers.jpg'
-import '../../images/img/checkout/payment/buyers@2x.jpg'
-import '../../images/img/checkout/payment/mirror_reflection.jpg'
-import '../../images/img/checkout/payment/mirror_reflection@2x.jpg'
-import '../../images/svg/murkup.svg'
-import '../../images/svg/murkup_arow.svg'
+import '../../images/img/checkout/payment/buyers.jpg';
+import '../../images/img/checkout/payment/buyers@2x.jpg';
+import '../../images/img/checkout/payment/mirror_reflection.jpg';
+import '../../images/img/checkout/payment/mirror_reflection@2x.jpg';
+import '../../images/svg/murkup.svg';
+import '../../images/svg/murkup_arow.svg';
 //=========fitting=========================//
-import '../../images/img/elean47390.jpg'
-import '../../images/svg/arrow-left.svg'
-import '../../images/svg/arrow-right.svg'
+import '../../images/img/elean47390.jpg';
+import '../../images/svg/arrow-left.svg';
+import '../../images/svg/arrow-right.svg';
 //===============Reviews===========================//
-import '../../images/img/Reviews/poster/Black2V.jpg'
-import '../../images/img/Reviews/poster/23.jpg'
-import '../../images/img/Reviews/poster/55.jpg'
-import '../../images/img/Reviews/poster/78.jpg'
+import '../../images/img/Reviews/poster/Black2V.jpg';
+import '../../images/img/Reviews/poster/23.jpg';
+import '../../images/img/Reviews/poster/55.jpg';
+import '../../images/img/Reviews/poster/78.jpg';
 
 //=========tryOnModal===========//
 import '../../images/svg/tryOnModal/check.svg';
@@ -205,3 +231,13 @@ import '../../images/svg/tryOnModal/paiment.svg';
 import '../../images/svg/tryOnModal/request.svg';
 import '../../images/svg/tryOnModal/stylist.svg';
 import '../../images/svg/tryOnModal/time.svg';
+
+//=============delivery=====================
+import '../../images/img/elean62862_1.jpeg';
+import '../../images/svg/Group.svg';
+import '../../images/img/checkout/payment/buyers.jpg';
+import '../../images/img/checkout/payment/buyers@2x.jpg';
+import '../../images/img/checkout/payment/mirror_reflection.jpg';
+import '../../images/img/checkout/payment/mirror_reflection@2x.jpg';
+import '../../images/svg/murkup.svg';
+import '../../images/svg/murkup_arow.svg';

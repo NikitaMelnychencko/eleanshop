@@ -1,0 +1,18 @@
+{{#each this}}
+  <li class='qusetion-title'>
+    <div class='question-block'>
+      <h4 class='question-head'>
+        {{question}}
+      </h4>
+      <svg class='question__icon' role='img' aria-label='Иконка солнца'>
+        <use href='./images/exampl.svg#icon-delivery-ask-card'></use>
+      </svg>
+    </div>
+    <p class='answers-body'>
+      {{answers}}
+      {{!-- <p class='answers-foot'>
+        {{answersmin}}
+      </p> --}}
+    </p>
+  </li>
+{{/each}}
