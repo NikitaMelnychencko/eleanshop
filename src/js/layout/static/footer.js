@@ -1,8 +1,11 @@
 import { stringify } from 'postcss';
 import refs from '../../refs/refs.js';
-import collection from '../../json/linkingPagesFooter/linkingPagesOnClick.json';
+import collection from '../../json/linkingPagesFooter/linkingPagesDesktopOnClick.json'
 import { scrollTo } from '../../components/blockHelp/blockHelp';
-import { productRender, contactRender, deliveryRender, favoritesRender, showroomRender } from '../../call-list';
+import { productRender, contactRender, deliveryRender, favoritesRender, showroomRender, checkoutRender } from '../../call-list';
+import { id } from 'postcss-selector-parser';
+import { indexOf } from 'lodash';
+
 
 const {
     closeOpenPlus,
@@ -21,13 +24,23 @@ const {
 checkBoxIcon.addEventListener('click', onAgreeCheckBox)
 mobileSubmitBtn.addEventListener('submit', onSubmitBtnMobile)
 desktopSubmitBtn.addEventListener('submit', onSubmitBtnDesktop)
+const test = document.querySelector('.footer__desktop-list')
+test.addEventListener('click', noTestDesktop)
+
+test.addEventListener('click', noTestDesktop)
+function noTestDesktop(evt) {
+    collection.forEach((el, indx) => {
+        const test2 = evt.target.id
+        console.log(el.id === test2)
 
 
 
-collection.forEach((el, index) => {
-    console.log(el)
+    });
+}
 
-});
+function testOpen(evt) {
+    console.log('все ок')
+}
 
 
 //===включение плавной прокрутки на  desktop
@@ -38,7 +51,6 @@ desktop.forEach((evt) => {
         if (el.target) {
 
         }
-        console.log(el.target)
     });
 });
 
@@ -46,6 +58,7 @@ desktop.forEach((evt) => {
 linkMenuFooterDesktop.forEach((evt) => {
     const idlinkDesktop = evt.id
     evt.addEventListener('click', (el) => {
+        const selected = el.target;
         if (selected) {
             localStorage.setItem(idlinkDesktop, selected)
         }
