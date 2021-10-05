@@ -275,7 +275,7 @@ font-style: normal;
     position: absolute;
     opacity: 1;
     display: flex;
-    bottom: 0;
+    bottom: 36px;
     z-index: 200;
 
         @media screen and (max-width:$tablet-only){

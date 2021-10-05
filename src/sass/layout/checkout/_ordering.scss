@@ -14,7 +14,7 @@
 .ordering__title {
   border-bottom: 1px solid $border-color;
 
-  font-family: $selection-font-family;
+  font-family: $selection-font-family,sans-serif;
   font-size: 21px;
   line-height: 0.95;
   letter-spacing: 0, 05em;
@@ -62,7 +62,6 @@
 }
 
 .ordering__label {
-  font-family: $primary-font-family;
   color: $secondary-accent-btn-color;
   font-weight: 500;
   font-size: 18px;
@@ -241,7 +240,7 @@
 // }
 
 .ordering__price {
-  font-family: $third-font-family;
+  font-family: $third-font-family,sans-serif;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.27;
@@ -364,7 +363,7 @@
   }
 
   &::placeholder {
-    font-family: $third-font-family;
+    font-family: $third-font-family,sans-serif;
     font-size: 12px;
     line-height: 2.08;
     font-weight: 500;
@@ -389,7 +388,7 @@
 // }
 
 .ordering__discount {
-  font-family: $third-font-family;
+  font-family: $third-font-family,sans-serif;
   font-size: 18px;
   line-height: 2.08;
   font-weight: 500;
@@ -408,7 +407,7 @@
 
 .ordering__totalprice {
   margin-right: 5px;
-  font-family: $third-font-family;
+  font-family: $third-font-family,sans-serif;
   font-size: 18px;
   line-height: 1.11;
   font-weight: 500;
@@ -420,7 +419,7 @@
 }
 
 .ordering__total {
-  font-family: $third-font-family;
+  font-family: $third-font-family,sans-serif;
   font-size: 18px;
   line-height: 1.11;
   font-weight: 500;

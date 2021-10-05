@@ -17,7 +17,7 @@
 
   &__title {
     display: block;
-    font-family: $selection-font-family;
+    font-family: $selection-font-family,sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 30px;
@@ -31,7 +31,7 @@
   }
 
   &__context {
-    font-family: $selection-font-family;
+    font-family: $selection-font-family,sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
