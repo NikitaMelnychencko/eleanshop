@@ -1,23 +1,22 @@
 [
-{
-    "video": "https://player.vimeo.com/video/564680854?title=0&amp;portrait=0&amp;byline=0&amp;autoplay=1",
-    "poster": "./images/Black2V.jpg",
-    "description": "Образ со смокингом"
-
-},
-{
-"video": "https://player.vimeo.com/video/564680854?title=0&amp;portrait=0&amp;byline=0&amp;autoplay=1",
-"poster": "./images/55.jpg",
-"description": "Образ с красным смокингом и черным топом"
-},
-{
-"video": "https://player.vimeo.com/video/564680854?title=0&amp;portrait=0&amp;byline=0&amp;autoplay=1",
-"poster": "./images/23.jpg",
-"description": "Синий костюм с брюками"
-},
-{
-"video": "https://player.vimeo.com/video/564680854?title=0&amp;portrait=0&amp;byline=0&amp;autoplay=1",
-"poster": "./images/78.jpg",
-"description": "Образ с костюмом"
-}
+    {
+        "video": "http://techslides.com/demos/sample-videos/small.webm",
+        "poster": "./images/Black2V.jpg",
+        "description": "Образ со смокингом"
+    },
+    {
+        "video": "http://techslides.com/demos/sample-videos/small.webm",
+        "poster": "./images/55.jpg",
+        "description": "Образ с красным смокингом и черным топом"
+    },
+    {
+        "video": "http://techslides.com/demos/sample-videos/small.webm",
+        "poster": "./images/23.jpg",
+        "description": "Синий костюм с брюками"
+    },
+    {
+        "video": "http://techslides.com/demos/sample-videos/small.webm",
+        "poster": "./images/78.jpg",
+        "description": "Образ с костюмом"
+    }
 ]

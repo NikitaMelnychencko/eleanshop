@@ -27,39 +27,76 @@ function homeRender() {
   starClientsSlider();
   starClientsComments();
   instagramSlider();
+  blockHelpRender()
 }
-homeRender();
+homeRender(); //========================================================call
 //=====brand========//
-function brandRender() {}
+import brand_page from '../views/layouts/brand.hbs';
+import {
+  formBrand,
+  infoAboutBrand,
+  brandOurAdvantages,
+  videoBrand,
+  brandPlayer,
+} from './layout/brand/infoAboutBrand.js';
+import { formFittingInShowroom } from './layout/brand/formFittingInShowroom.js';
+
+export function brandRender() {
+  const contactPageMarkUp = brand_page({
+    formBrand,
+    brandOurAdvantages,
+    contactsContact,
+    videoBrand,
+  });
+  refs.mainEL.insertAdjacentHTML('beforeend', contactPageMarkUp);
+  formFittingInShowroom();
+  infoAboutBrand();
+  brandPlayer();
+}
+brandRender(); //========================================================call
 
 //=====checkout========//
-import { ModalData, createPayment } from './layout/checkout/payment';
-import { ordering, openOrderingFunction } from './layout/checkout/ordering';
+import { ModalData, createPayment } from './layout/checkout/payment.js';
+import { ordering, openOrderingFunction } from './layout/checkout/ordering.js';
+import { backdropMarkup } from './layout/checkout/thanksForOrdering.js';
 import payment_checkout from '../views/layouts/checkout.hbs';
 export function checkoutRender() {
   updateBin();
   refs.mainEL.innerHTML = '';
-  const createCheckout = payment_checkout({ createPayment, ordering });
+  const createCheckout = payment_checkout({ createPayment, ordering, backdropMarkup});
   refs.mainEL.insertAdjacentHTML('beforeend', createCheckout);
   openOrderingFunction();
-  const inputTime = new ModalData({
-    idInput: 'js-time',
-    idList: 'time-list',
+  const modalOpen = new ModalData({
+    idInputDay: 'js-day',
+    idListDay: 'day-list',
+    idInputTime: 'js-time',
+    idListTime: 'time-list',
   });
-  const inputDay = new ModalData({
-    idInput: 'js-day',
-    idList: 'day-list',
-  });
+
+  blockHelpRender()
 }
+
 //=====contact========//
-function contactRender() {}
+
+import contact_page from '../views/layouts/contact.hbs';
+import { contactsMap, contactsContact } from './layout/contact/contact.js';
+
+export function contactRender() {
+  refs.mainEL.innerHTML = '';
+  const contactPageMarkUp = contact_page({ formBrand, contactsMap, contactsContact });
+  refs.mainEL.insertAdjacentHTML('beforeend', contactPageMarkUp);
+  formFittingInShowroom();
+}
+//contactRender(); //========================================================call
+
 //=====delivery========//
 function deliveryRender() {}
 //=====favorites========//
-function favoritesRender() {}
+export function favoritesRender() {}
 //=====fitting========//
 function fittingRender() {}
 //=====product========//
+
 import ProductModalAddToCart from './layout/product/productModalAddToCart.js';
 import RecomendationsCategory from './layout/product/recomendationsCategory.js';
 import cards from './json/catalog.json';
@@ -111,8 +148,45 @@ function productRender() {
   objProductModalAddToCart.show('ЖАКЕТ-СМОКИНГ С ЛАЦКАНМИ'); // show modal window - call the listener on the button
 }
 
-productRender();
+productRender(); //========================================================call
+
 //=====reviews========//
-function reviewsRender() {}
+import reviews_page from '../views/layouts/reviews.hbs';
+import { formReviews, formReviewsMarkUp } from './layout/reviews/registrationFormForFitting.js';
+import {
+  setVideoHbs,
+  clientStar,
+  videosetSlickSettings,
+  videoSetPlayer,
+} from './layout/reviews/videoSet.js';
+
+function reviewsRender() {
+  const reviewsMarkUp = reviews_page({ setVideoHbs, clientStar, formReviewsMarkUp });
+  refs.mainEL.insertAdjacentHTML('beforeend', reviewsMarkUp);
+  videosetSlickSettings();
+  starClientsSlider();
+  starClientsComments();
+  formReviews();
+  videoSetPlayer();
+}
+
+reviewsRender(); //========================================================call
+
 //=====showroom========//
-function showroomRender() {}
+import showroom_page from '../views/layouts/showroom.hbs';
+export function showroomRender() {
+  refs.mainEL.innerHTML = '';
+  const showroomPageMarkUp = showroom_page({ formBrand, pageShowroomSliderMarkup });
+  refs.mainEL.insertAdjacentHTML('beforeend', showroomPageMarkUp); +
+  showroomSlider();
+  formFittingInShowroom();
+}
+//showroomRender(); //========================================================call
+
+//=====blockHelp========//
+import blockHelp_blockHelpTemplate from '../views/components/blockHelp.hbs';
+import {blockHelpRenderOpen} from './components/blockHelp/blockHelp.js'
+function blockHelpRender() {
+  refs.mainEL.insertAdjacentHTML('beforeend', blockHelp_blockHelpTemplate());
+  blockHelpRenderOpen()
+}
