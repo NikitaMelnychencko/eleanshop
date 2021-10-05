@@ -1,41 +1,38 @@
-<h3 class='typeofdelivery'>
-  ВИДЫ ДОСТАВКИ
-</h3>
 {{#each this}}
   <li class='description-title'>
-    <p class='description-main'>
-      {{desctiption}}
-    </p>
-    <p class='description-main'>
-      {{desctiption01}}
-    </p>
-    <p class='description-main'>
-      {{desctiptionname}}
-    </p>
+    <div class='description-main'>
+      <p class='description-main-text'>{{desctiption}}</p>
+    </div>
+    <div class='description-main'>
+      <p class='description-main-text'>{{desctiption01}}</p>
+    </div>
+    <div class='description-main'>
+      <p class='description-main-text'>{{desctiptionname}}</p>
+    </div>
   </li>
-
   <li class='description-title'>
     <div class='navara'>
-      <p class='description-main'>
-        {{desctiptiontime}}
-      </p>
-    </div>
-    <svg class='delivery__icon' role='img' aria-label='Иконка солнца'>
-      <use href='./images/exampl.svg#icon-delivery-clock'></use>
-    </svg>
-  </li>
+      <div class='description-main'>
+        <p class='description-main-text'>{{desctiptiontime}}</p>
+        <svg class='delivery__icon' role='img' aria-label='Иконка солнца'>
+          <use href='./images/exampl.svg#icon-delivery-clock'></use>
+        </svg>
+      </div>
 
+    </div>
+  </li>
   <li class='description-title'>
     <div class='navara'>
-      <p class='description-main'>
-        {{desctiptionreg}}
-      </p>
-      <p class='description-main'>
-        {{desctiptiondic}}
-      </p>
+      <div class='description-main description-main-cl'>
+        <p class='description-main-text'>{{desctiptionreg}}</p>
+        <svg class='delivery__icon' role='img' aria-label='Иконка солнца'>
+          <use href='./images/exampl.svg#icon-delivery-surprise'></use>
+        </svg>
+      </div>
+
+      <div class='description-main description-main-cl'>
+        <p class='description-main-text'>{{desctiptiondic}}</p>
+      </div>
     </div>
-    <svg class='delivery__icon' role='img' aria-label='Иконка солнца'>
-      <use href='./images/exampl.svg#icon-delivery-surprise'></use>
-    </svg>
   </li>
 {{/each}}

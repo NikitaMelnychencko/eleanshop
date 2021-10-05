@@ -79,7 +79,7 @@
   border-right: 1px solid $delivery-border-color;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: $desktop-up) {
   .delivery-foto {
     opacity: 1;
     width: 748px;
@@ -89,6 +89,7 @@
   .head-delivery {
     margin-top: 69px;
   }
+
   .typeofdelivery {
     display: block;
   }
@@ -99,7 +100,7 @@
     width: 100%;
   }
 
-  .delivery {
+  .delivery-container {
     display: flex;
     margin-bottom: 69px;
   }
