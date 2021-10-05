@@ -1,9 +1,7 @@
 .question-answer {
   text-align: center;
-  font-weight: 400;
   font-size: 21px;
   line-height: 1.05;
-  font-family: $primary-font-family;
   color: $primary-logo-color;
   margin-bottom: 31px;
 }
@@ -32,7 +30,6 @@
   border-bottom: 1px dotted $third-text-color;
 }
 .answers-body {
-  font-family: $primary-font-family;
   padding-top: 20px;
   font-size: 15px;
   text-align: left;
@@ -58,7 +55,6 @@
 
 @media screen and (min-width: $desktop-up) {
   .question-head {
-    font-family: $primary-font-family;
     text-align: left;
     font-weight: 400;
     font-size: 21px;

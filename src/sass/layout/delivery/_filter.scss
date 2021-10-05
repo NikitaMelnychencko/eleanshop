@@ -26,7 +26,7 @@
     padding-top: 31px;
     display: flex;
     justify-content: space-between;
-    border-top: 1px solid #e3e4e4;
+    border-top: 1px solid $border-color;
   }
   &:not(:last-child) {
     display: flex;
@@ -78,7 +78,7 @@
 
   .message__icon {
     height: 46px;
-    stroke: #c0a78f;
+    stroke: $menu-background-color;
     margin-bottom: 23px;
   }
 }
