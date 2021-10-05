@@ -65,7 +65,8 @@ import RecomendationsCategory from './layout/product/recomendationsCategory.js';
 import cards from './json/catalog.json';
 import productMarkup from '../views/layouts/product.hbs';
 import HandSewn from './layout/product/productHandSewn.js';
-import productBackdropMarkup from '../views/partials/product/productBackdrop.hbs';
+import backdropMarkupTempl from '../views/components/backdrop.hbs';
+import modalFormMarkupTempl from '../views/components/thanksForOrdering.hbs';
 
 function productRender() {
   const objRecomendationsCategory = new RecomendationsCategory({
@@ -87,20 +88,22 @@ function productRender() {
     productName: 'ЖАКЕТ-СМОКИНГ С ЛАЦКАНМИ',
     objectClose: [
       {
-        name: '.product-backdrop', // a backdrop selector that is called when the button is clicked
-        className: 'hidden', // the class that hides the backdrop
+        name: '[data-modal]', // a backdrop selector that is called when the button is clicked
+        className: 'is-hidden', // the class that hides the backdrop
       },
     ],
   });
-  const backdropMarkup = productBackdropMarkup([objProductModalAddToCart.getMarkup()]);
+
+  const modalFormMarkup = objProductModalAddToCart.getMarkup();
+  const backdropMarkup = backdropMarkupTempl(modalFormMarkup);
   const obj = {
     recomendationCategory: objRecomendationsCategory.getMarkup(),
     handSewn: objHandSewn.getMarkup(),
-    modalAddToCart: backdropMarkup,
+    backdrop: backdropMarkup,
   };
 
   refs.mainEL.insertAdjacentHTML('beforeend', productMarkup(obj));
-
+  document.querySelector('.form__button-сlose').style.display = 'none';
   objRecomendationsCategory.setSlider();
   objRecomendationsCategory.setEvent();
   objHandSewn.setEvent();
