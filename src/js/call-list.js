@@ -144,6 +144,9 @@ function deliveryRender() {
 
 //deliveryRender(); //========================================================call
 
+//=====favorites========//
+export function favoritesRender() {}
+
 //=====fitting========//
 
 import sizeTable_markup from '../views/layouts/fitting.hbs';
@@ -167,20 +170,21 @@ function fittingRender() {
   // fittingVideoSliderPlayer();
   formFittingInShowroom();
 }
-//fittingRender(); //============================================================call
+
+fittingRender();
 
 //=====product========//
-import productFunctions from './layout/product/infoAboutProduct.js';
+import { callProductPageFunctional, createFullMarkup } from './layout/product/infoAboutProduct.js'
 import ProductModalAddToCart from './layout/product/productModalAddToCart.js';
 import RecomendationsCategory from './layout/product/recomendationsCategory.js';
 import cards from './json/catalog.json';
 import productMarkup from '../views/layouts/product.hbs';
 import HandSewn from './layout/product/productHandSewn.js';
 import backdropMarkupTempl from '../views/components/backdrop.hbs';
+
+import modalFormMarkupTempl from '../views/components/thanksForOrdering.hbs';
 import { preorderMark, setEventPreorder } from './layout/product/preorderModal.js';
 import { tryOnModels, setEventTryOnModels } from './layout/product/tryOnModelsModal.js';
-
-const { createAllListeners, createFullMarkup } = productFunctions;
 
 function productRender() {
   const objRecomendationsCategory = new RecomendationsCategory({
@@ -203,11 +207,11 @@ function productRender() {
       },
     ],
   });
-
-  const modalFormMarkup = objProductModalAddToCart.getMarkup();
+  const modalFormMarkupOrder = modalFormMarkupTempl();
+  // const modalFormMarkup = modalFormMarkupOrder + objProductModalAddToCart.getMarkup();
   const backdropMarkup = backdropMarkupTempl(modalFormMarkup);
   const obj = {
-    infoAboutProduct: createFullMarkup(),
+    infoAboutProduct: createFullMarkup,
     recomendationCategory: objRecomendationsCategory.getMarkup(),
     handSewn: objHandSewn.getMarkup(),
     backdrop: backdropMarkup,
@@ -217,8 +221,9 @@ function productRender() {
   refs.mainEL.insertAdjacentHTML('beforeend', productMarkup(obj));
   // refs.mainEL.innerHTML = productMarkup(obj);
 
-  createAllListeners();
+  callProductPageFunctional(objProductModalAddToCart.show);
   document.querySelector('.form__button-сlose').style.display = 'none';
+  document.querySelector('.ordering__form').style.display = 'none';
   objRecomendationsCategory.setSlider();
   objRecomendationsCategory.setEvent();
   objHandSewn.setEvent();
