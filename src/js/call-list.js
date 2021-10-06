@@ -271,4 +271,4 @@ export function catalogRender() {
 
   // console.log(filterGalleryCatalogMarkup);
 }
-catalogRender(); //========================================================call
+//catalogRender(); //========================================================call
