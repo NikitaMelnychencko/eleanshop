@@ -296,6 +296,7 @@ import '../../images/svg/murkup.svg';
 import '../../images/svg/murkup_arow.svg';
 //=========fitting=========================//
 import '../../images/img/elean47390.jpg';
+import '../../images/img/elean47390@2x.jpg';
 import '../../images/svg/arrow-left.svg';
 import '../../images/svg/arrow-right.svg';
 //===============Reviews===========================//
