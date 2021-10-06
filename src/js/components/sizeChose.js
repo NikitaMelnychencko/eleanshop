@@ -1,5 +1,5 @@
-import createMarkup from '../../../views/partials/fitting/sizeChose.hbs';
-import Backdrop from '../../components/backdrop.js';
+import createMarkup from '../../views/components/sizeChose.hbs'; 
+import Backdrop from '../components/backdrop.js';
 
 function sizeListener(){
    const btnSize = document.querySelector('.size-chose__size-list');

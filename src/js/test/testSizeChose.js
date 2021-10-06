@@ -1,4 +1,4 @@
-// import sizeChose from '../layout/fitting/sizeChose.js';
+// import sizeChose from '../components/sizeChose.js';
 // import size from '../json/sizeChose.json';
 
 // const {createMarkup, sizeListener, createBtn} = sizeChose;
@@ -9,7 +9,6 @@
 //  const btnRef = document.querySelector('[data-modal-open]');
 // btnRef.addEventListener('click', onBtnClick);
 
-// //-------------------------------------------
 // import getRefs from '../refs/refs.js';
 // import Backdrop from '../components/backdrop.js';
 // import backdropMarkupTempl from '../../views/components/backdrop.hbs';
