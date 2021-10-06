@@ -19,10 +19,6 @@ import { cardsMarkup, openContent } from './layout/home/content.js';
 import { aboutTheBrand_parsing, openAboutTheBrand } from './layout/home/aboutTheBrand.js';
 export function homeRender() {
   updateBin();
-  refs.mainEL.innerHTML = '';
-  getHome();
-}
-export function getHome() {
   const homeMarkup = home({
     pageHeroSliderMarkup,
     cardsMarkup,
@@ -32,8 +28,8 @@ export function getHome() {
     pageInInstagramSliderMarkup,
     aboutTheBrand_parsing,
   });
-
-  refs.mainEL.insertAdjacentHTML('beforeend', homeMarkup);
+  refs.mainEL.innerHTML = homeMarkup;
+  
   heroSlider();
   openContent();
   showroomSlider();
@@ -44,7 +40,7 @@ export function getHome() {
   formFittingInShowroom();
   openAboutTheBrand();
 }
-getHome(); //========================================================call
+homeRender(); //========================================================call
 //=====brand========//
 import brand_page from '../views/layouts/brand.hbs';
 import {
@@ -121,7 +117,7 @@ export function deliveryRender() {
     questionDelivery,
     formDeliveryMarkUp,
   });
-  refs.mainEL.insertAdjacentHTML('beforeend', deliveryPageMarkUp);
+  refs.mainEL.innerHTML = deliveryPageMarkUp;
   formDelivery();
   deliveryThreeModal();
 }
@@ -149,14 +145,13 @@ export function fittingRender() {
     informationAboutFitting_informationCreate,
     formBrand,
   });
-  refs.mainEL.insertAdjacentHTML('beforeend', fittingMarkUp);
+  refs.mainEL.innerHTML = fittingMarkUp;
   openVideoSlider();
   // fittingVideoSliderPlayer();
   formFittingInShowroom();
 }
 //fittingRender(); //============================================================call
 
-fittingRender();
 
 //=====product========//
 import { callProductPageFunctional, createFullMarkup } from './layout/product/infoAboutProduct.js';
@@ -233,7 +228,7 @@ import {
 
 export function reviewsRender() {
   const reviewsMarkUp = reviews_page({ setVideoHbs, clientStar, formReviewsMarkUp });
-  refs.mainEL.insertAdjacentHTML('beforeend', reviewsMarkUp);
+  refs.mainEL.innerHTML = reviewsMarkUp;
   videosetSlickSettings();
   starClientsSlider();
   starClientsComments();
@@ -246,10 +241,9 @@ export function reviewsRender() {
 //=====showroom========//
 import showroom_page from '../views/layouts/showroom.hbs';
 export function showroomRender() {
-  refs.mainEL.innerHTML = '';
   const showroomPageMarkUp = showroom_page({ formBrand, pageShowroomSliderMarkup });
-  refs.mainEL.insertAdjacentHTML('beforeend', showroomPageMarkUp);
-  +showroomSlider();
+  refs.mainEL.innerHTML = showroomPageMarkUp;
+  showroomSlider();
   formFittingInShowroom();
 }
 //showroomRender(); //========================================================call===================
