@@ -1,10 +1,6 @@
-// import sizeTable from '../layout/fitting/sizeTable.js';
+import sizeTableMarkup from '../components/sizeTable.js';
+import getRefs from '../refs/refs.js';
 
-// const body = document.querySelector('body');
-// body.insertAdjacentHTML('beforebegin', '<button data-modal-open>!!!!!!!BUTTON ON MODAL Size Chose !!!!!!</button>');
+const { mainEL } = getRefs;
 
-// const { onBtnClick} = sizeTable;
-
-// const btnRef = document.querySelector('[data-modal-open]');
-
-// btnRef.addEventListener('click', onBtnClick);
+mainEL.insertAdjacentHTML('beforeend', sizeTableMarkup);
