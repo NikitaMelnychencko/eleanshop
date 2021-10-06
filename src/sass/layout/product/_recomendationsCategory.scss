@@ -106,8 +106,12 @@
     object-position: 50% 50%;
     max-height: 500px;
     .product-modal-add-cart & {
-      max-height: 260px;
-      max-width: 200px;
+      max-height: 200px;
+      max-width: 150px;
+      @media screen and (min-width: $desktop-up) {
+        max-height: 260px;
+        max-width: 200px;
+      }
     }
   }
 
