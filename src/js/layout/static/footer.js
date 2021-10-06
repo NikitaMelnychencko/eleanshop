@@ -1,7 +1,6 @@
 import refs from '../../refs/refs.js';
 import { scrollTo } from '../../components/blockHelp/blockHelp';
-import { formFittingInShowroom } from '../../layout/fitting/formFittingInShowroom';
-import { brandRender, productRender, contactRender, reviewsRender, deliveryRender, favoritesRender, showroomRender, checkoutRender } from '../../call-list';
+import { fittingRender, brandRender, productRender, contactRender, reviewsRender, deliveryRender, favoritesRender, showroomRender, checkoutRender } from '../../call-list';
 import { id } from 'postcss-selector-parser';
 import { indexOf } from 'lodash';
 const {
@@ -44,10 +43,8 @@ linkMenuFooterDesktop.forEach((evt) => {
 //=== addEventListener Footer__Mobile on id and LockalStorage===//
 linkMenuFooterMobile.forEach((evt) => {
     const idlinkMobile = evt.textContent
-    console.log(idlinkMobile)
     evt.addEventListener('click', (el) => {
         const selected = el.target.dataset.atribute;
-        console.log(selected)
         if (selected) {
             localStorage.setItem(idlinkMobile, selected)
         }
@@ -151,6 +148,8 @@ function onSubmitBtnDesktop(evt) {
 
 }
 
+//=== RENDER ===//
+
 const dataActionCollectio = document.querySelectorAll('[data-atribute]')
 
 dataActionCollectio.forEach((evt) => {
@@ -191,7 +190,7 @@ dataActionCollectio.forEach((evt) => {
         //==== formFittingInShowroom ===//
         if (targetLink === 'fitting') {
             console.log('formFittingInShowroom');
-            return formFittingInShowroom();
+            return fittingRender();
         }
 
         //==== reviewsRender ===//
@@ -211,7 +210,7 @@ dataActionCollectio.forEach((evt) => {
         //==== FittingRender ===//
         if (targetLink === 'Fitting') {
             console.log('formFittingInShowroom: Desktop')
-            return formFittingInShowroom();
+            return fittingRender();
         }
         //==== ContactsRender ===//
         if (targetLink === 'Contacts') {
@@ -219,7 +218,6 @@ dataActionCollectio.forEach((evt) => {
             return contactRender();
         }
     })
-
 });
 
 
