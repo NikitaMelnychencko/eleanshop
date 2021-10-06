@@ -10,7 +10,7 @@
     padding-top: 10px;
   }
 }
-
+//!----------------------------------------------------prod main info
 .product__main-info {
   position: relative;
   margin-bottom: 31px;
@@ -29,7 +29,6 @@
   font-size: 21px;
   line-height: 1;
   letter-spacing: 0.05em;
-  font-family: $primary-font-family;
   color: $secondary-title-text-color;
 
   @media screen and (min-width: $desktop-up) {
@@ -57,7 +56,8 @@
 .product__currency {
   color: $accent-currency-color;
 }
-
+//!----------------------------------------------------end of prod main info
+//!----------------------------------------------------size list
 .size__title {
   margin-bottom: 20px;
 
@@ -90,7 +90,8 @@
   border: 1px solid $size-item-border-color;
   color: $size-item-border-color;
 }
-
+//!----------------------------------------------------end of size list
+//!----------------------------------------------------size options
 .options {
   display: flex;
   margin-bottom: 21px;
@@ -129,7 +130,7 @@
   transition: color $time-cubic, stroke $time-cubic, fill $time-cubic;
 
   @media screen and (min-width: $desktop-up) {
-    font-size: 14px;
+    font-size: 13px;
     line-height: 1.57;
     padding-left: 25px;
   }
@@ -152,7 +153,8 @@
     width: 20px;
   }
 }
-
+//!----------------------------------------------------end of size options
+//!----------------------------------------------------colorpicker
 .colorpicker {
   @include flex($main: start);
 
@@ -225,7 +227,8 @@
 .button__colorpicker--current {
   border: 1px solid $colorpicker-icon-border-hover;
 }
-
+//!----------------------------------------------------end of colorpicker
+//!----------------------------------------------------button list
 .button__list {
   display: flex;
   flex-wrap: wrap;
@@ -263,7 +266,7 @@
   }
 }
 
-.button__purchase:hover {
+.button__purchase--fit:hover {
   background-color: $button-background-black-color;
   color: $accent-btn-color;
 }
@@ -298,7 +301,7 @@
   }
 }
 
-.button__purchase--installment {
+.button__purchase--installment:disabled {
   @media screen and (min-width: $mobile-general) {
     width: 230px;
   }
@@ -308,6 +311,12 @@
   }
 }
 
+.button__purchase--installment:disabled {
+  opacity: 0.2;
+  cursor: auto;
+}
+//!----------------------------------------------------end of button list
+//!----------------------------------------------------prod info
 .product__info {
   margin-bottom: 37px;
 
@@ -333,6 +342,8 @@
   font-weight: 700;
 }
 
+//!----------------------------------------------------end of prod info
+//!----------------------------------------------------prod characteristics
 .product__characteristics {
   margin-bottom: 19px;
 }
@@ -405,8 +416,6 @@
     transform: rotate(180deg);
   }
 }
-// !--------------------------------------------- END OF ABOUT PRODUCT//
-// !--------------------------------------------- CHARACTERISTIC MENU//
 
 .params__grid {
   display: none;
@@ -463,4 +472,4 @@
   pointer-events: auto;
   transform: scale(1);
 }
-// !--------------------------------------------- END OF CHARACTERISTIC MENU//
+//!---------------------------------------------------- end of prod characteristics
