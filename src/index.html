@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -55,14 +56,14 @@
           <svg class="js-header-logo__svg header-logo__svg-elean">
             <use href="./images/header.svg#header-logo"></use>
           </svg>
-          <p class="js-header-logo__text header-logo__text">ЖЕНСКИЙ</br>СМОКИНГ</p>
+          <p class="js-header-logo__text header-logo__text">ЖЕНСКИЙ<br>СМОКИНГ</p>
         </a>
         <!-- Логотип-кінець -->
         <!-- Телефон-початок -->
         <a class="header-phone" href="tel:+380990000000">+38(099)-000-00-00</a>
         <!-- Телефон-кінець-->
         <!-- Обране_Корзина-початок -->
-        <ul class="product-list">
+        <ul class="js-product-list product-list">
           <li class="product-list__item">
             <a class="product-list__link" href="#" id="header-favorites">
               <svg class="js-header-svg-favorites product-list__svg-favorites">
@@ -77,11 +78,7 @@
                 <use href="./images/header.svg#header-bin">
                 </use>
               </svg>
-              <svg class="js-header-svg-bin product-list__svg-bin-white mod-hidden">
-                <use href="./images/header.svg#header-bin-white">
-                </use>
-              </svg>
-              <p class="js-list__text product-list__text js-counter">0</p>
+              <p class="js-header-list__text product-list__text">0</p>
             </a>
           </li>
         </ul>
@@ -99,58 +96,73 @@
             <li class="navigation-list__item">
               <a class="js-header-navigation-link navigation-list__link" href="#">КАТЕГОРИИ</a>
               <ul class="js-header-navigation-sublist navigation-sublist mod-hidden-mob">
-                <li class="navigation-sublist__subitem"><a class="navigation-sublist__link" href="#">Юбки</a></li>
-                <li class="navigation-sublist__subitem"><a class="navigation-sublist__link" href="#">Смокинг</a></li>
-                <li class="navigation-sublist__subitem"><a class="navigation-sublist__link" href="#">Костюмы</a></li>
-                <li class="navigation-sublist__subitem"><a class="navigation-sublist__link" href="#">Аксессуары</a></li>
-                <li class="navigation-sublist__subitem"><a class="navigation-sublist__link" href="#">Брюки</a></li>
-                <li class="navigation-sublist__subitem"><a class="navigation-sublist__link" href="#">Блузы</a></li>
-                <li class="navigation-sublist__subitem"><a class="navigation-sublist__link" href="#">Платья</a></li>
-                <li class="navigation-sublist__subitem"><a class="navigation-sublist__link" href="#">Топы и жилеты</a>
+                <li class="navigation-sublist__subitem"><a class="navigation-sublist__link" href="#"
+                    data-atribute="skirts">Юбки</a></li>
+                <li class="navigation-sublist__subitem"><a class="navigation-sublist__link" href="#"
+                    data-atribute="the-tuxedo">Смокинг</a></li>
+                <li class="navigation-sublist__subitem"><a class="navigation-sublist__link" href="#"
+                    data-atribute="costumes">Костюмы</a></li>
+                <li class="navigation-sublist__subitem"><a class="navigation-sublist__link" href="#"
+                    data-atribute="accessories">Аксессуары</a></li>
+                <li class="navigation-sublist__subitem"><a class="navigation-sublist__link" href="#"
+                    data-atribute="pants">Брюки</a></li>
+                <li class="navigation-sublist__subitem"><a class="navigation-sublist__link" href="#"
+                    data-atribute="blouses">Блузы</a></li>
+                <li class="navigation-sublist__subitem"><a class="navigation-sublist__link" href="#"
+                    data-atribute="dresses">Платья</a></li>
+                <li class="navigation-sublist__subitem"><a class="navigation-sublist__link" href="#"
+                    data-atribute="tops-and-vests">Топы и жилеты</a>
                 </li>
               </ul>
             </li>
             <li class="navigation-list__item">
               <a class="js-header-navigation-link navigation-list__link" href="#">НАШИ КОЛЛЕКЦИИ</a>
               <ul class="js-header-navigation-sublist navigation-sublist mod-hidden-mob">
-                <li class="navigation-sublist__subitem"><a class="navigation-sublist__link" href="#">Осень-зима
+                <li class="navigation-sublist__subitem"><a class="navigation-sublist__link" href="#"
+                    data-atribute="autumn-winter">Осень-зима
                     20-21</a>
                 </li>
-                <li class="navigation-sublist__subitem"><a class="navigation-sublist__link" href="#">Вечерние
+                <li class="navigation-sublist__subitem"><a class="navigation-sublist__link" href="#"
+                    data-atribute="evening-sets">Вечерние
                     комплекты</a></li>
-                <li class="navigation-sublist__subitem"><a class="navigation-sublist__link" href="#">Предзаказ</a></li>
-                <li class="navigation-sublist__subitem"><a class="navigation-sublist__link" href="#">Свадьба и
+                <li class="navigation-sublist__subitem"><a class="navigation-sublist__link" href="#"
+                    data-atribute="preorder">Предзаказ</a></li>
+                <li class="navigation-sublist__subitem"><a class="navigation-sublist__link" href="#"
+                    data-atribute="wedding-and-graduation">Свадьба и
                     выпускной</a></li>
               </ul>
             </li>
-            <!-- <li class="navigation-list__item navigation-list__header-logo-min">
-              <a class="header-logo-min" href="./index.html">
-                <svg class="header-logo__svg-e" width="20" height="26">
-                  <use href="./images/header.svg#header-logo-e"></use>
-                </svg>
-              </a>
-            </li> -->
             <li class="navigation-list__item"><a class="js-header-navigation-link navigation-list__link"
                 href="#">ПОКУПАТЕЛЯМ</a>
               <ul class="js-header-navigation-sublist navigation-sublist mod-hidden-mob">
-                <li class="navigation-sublist__subitem"><a class="navigation-sublist__link" href="#">Доставка</a></li>
-                <li class="navigation-sublist__subitem"><a class="navigation-sublist__link" href="#">Акции</a></li>
-                <li class="navigation-sublist__subitem"><a class="navigation-sublist__link" href="#">Возврат</a></li>
-                <li class="navigation-sublist__subitem"><a class="navigation-sublist__link" href="#">Размерная
+                <li class="navigation-sublist__subitem"><a class="navigation-sublist__link" href="#"
+                    data-atribute="delivery">Доставка</a></li>
+                <li class="navigation-sublist__subitem"><a class="navigation-sublist__link" href="#"
+                    data-atribute="promotions">Акции</a></li>
+                <li class="navigation-sublist__subitem"><a class="navigation-sublist__link" href="#"
+                    data-atribute="return">Возврат</a></li>
+                <li class="navigation-sublist__subitem"><a class="navigation-sublist__link" href="#"
+                    data-atribute="size-сhart">Размерная
                     таблица</a>
                 </li>
-                <li class="navigation-sublist__subitem"><a class="navigation-sublist__link" href="#">Примерка</a></li>
-                <li class="navigation-sublist__subitem"><a class="navigation-sublist__link" href="#">Оптовым
+                <li class="navigation-sublist__subitem"><a class="navigation-sublist__link" href="#"
+                    data-atribute="fitting">Примерка</a></li>
+                <li class="navigation-sublist__subitem"><a class="navigation-sublist__link" href="#"
+                    data-atribute="for-wholesale-buyers">Оптовым
                     покупателям</a></li>
               </ul>
             </li>
             <li class="navigation-list__item">
               <a class="js-header-navigation-link navigation-list__link" href="#">О БРЕНДЕ</a>
               <ul class="js-header-navigation-sublist navigation-sublist mod-hidden-mob">
-                <li class="navigation-sublist__subitem"><a class="navigation-sublist__link" href="#">Шоурум</a></li>
-                <li class="navigation-sublist__subitem"><a class="navigation-sublist__link" href="#">Отзывы</a></li>
-                <li class="navigation-sublist__subitem"><a class="navigation-sublist__link" href="#">Статьи</a></li>
-                <li class="navigation-sublist__subitem"><a class="navigation-sublist__link" href="#">Блог</a></li>
+                <li class="navigation-sublist__subitem"><a class="navigation-sublist__link" href="#"
+                    data-atribute="showroom">Шоурум</a></li>
+                <li class="navigation-sublist__subitem"><a class="navigation-sublist__link" href="#"
+                    data-atribute="reviews">Отзывы</a></li>
+                <li class="navigation-sublist__subitem"><a class="navigation-sublist__link" href="#"
+                    data-atribute="articles">Статьи</a></li>
+                <li class="navigation-sublist__subitem"><a class="navigation-sublist__link" href="#"
+                    data-atribute="blog">Блог</a></li>
               </ul>
             </li>
             <li class="navigation-list__item">

@@ -58,7 +58,7 @@ export function brandRender() {
     contactsContact,
     videoBrand,
   });
-  refs.mainEL.insertAdjacentHTML('beforeend', contactPageMarkUp);
+  refs.mainEL.innerHTML = contactPageMarkUp;
   formFittingInShowroom();
   infoAboutBrand();
   brandPlayer();
@@ -143,9 +143,6 @@ export function deliveryRender() {
 }
 
 //deliveryRender(); //========================================================call
-
-//=====fitting========//
-
 import sizeTable_markup from '../views/layouts/fitting.hbs';
 import sizeTableMarcup from './components/sizeTable.js';
 import { informationAboutFitting_informationCreate } from './layout/fitting/informationAboutFitting.js';
