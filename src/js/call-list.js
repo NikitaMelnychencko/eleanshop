@@ -6,13 +6,17 @@ updateBin();
 import home from '../views/layouts/home.hbs';
 import { pageHeroSliderMarkup, heroSlider } from './layout/home/hero.js';
 import { pageShowroomSliderMarkup, showroomSlider } from './layout/home/ourShowRoom.js';
+import { formFittingInShowroom } from './layout/brand/formFittingInShowroom.js';
+import { formBrand } from './layout/brand/infoAboutBrand.js';
+
 import {
   pageStarClientsSliderMarkup,
   starClientsSlider,
   starClientsComments,
 } from './layout/home/starClients.js';
 import { pageInInstagramSliderMarkup, instagramSlider } from './layout/home/inInstagram.js';
-
+import {cardsMarkup,openContent} from './layout/home/content.js'
+import {aboutTheBrand_parsing,openAboutTheBrand} from './layout/home/aboutTheBrand.js'
 export function homeRender() {
   updateBin();
   refs.mainEL.innerHTML = '';
@@ -21,30 +25,34 @@ export function homeRender() {
 function getHome() {
   const homeMarkup = home({
     pageHeroSliderMarkup,
+    cardsMarkup,
     pageShowroomSliderMarkup,
+    formBrand,
     pageStarClientsSliderMarkup,
     pageInInstagramSliderMarkup,
+    aboutTheBrand_parsing
   });
 
   refs.mainEL.insertAdjacentHTML('beforeend', homeMarkup);
   heroSlider();
+  openContent();
   showroomSlider();
   starClientsSlider();
   starClientsComments();
   instagramSlider();
   blockHelpRender();
+  formFittingInShowroom();
+  openAboutTheBrand();
 }
 getHome(); //========================================================call
 //=====brand========//
 import brand_page from '../views/layouts/brand.hbs';
 import {
-  formBrand,
   infoAboutBrand,
   brandOurAdvantages,
   videoBrand,
   brandPlayer,
 } from './layout/brand/infoAboutBrand.js';
-import { formFittingInShowroom } from './layout/brand/formFittingInShowroom.js';
 
 export function brandRender() {
   const contactPageMarkUp = brand_page({
@@ -58,7 +66,7 @@ export function brandRender() {
   infoAboutBrand();
   brandPlayer();
 }
-brandRender(); //========================================================call
+// brandRender(); //========================================================call
 
 //=====checkout========//
 import { ModalData, createPayment } from './layout/checkout/payment.js';
@@ -67,9 +75,9 @@ import { backdropMarkup } from './layout/checkout/thanksForOrdering.js';
 import payment_checkout from '../views/layouts/checkout.hbs';
 export function checkoutRender() {
   updateBin();
-  refs.mainEL.innerHTML = '';
   const createCheckout = payment_checkout({ createPayment, ordering, backdropMarkup });
-  refs.mainEL.insertAdjacentHTML('beforeend', createCheckout);
+  refs.mainEL.innerHTML = createCheckout;
+  //refs.mainEL.insertAdjacentHTML('beforeend', createCheckout);
   openOrderingFunction();
   const modalOpen = new ModalData({
     idInputDay: 'js-day',
@@ -93,20 +101,62 @@ export function contactRender() {
   //refs.mainEL.insertAdjacentHTML('beforeend', contactPageMarkUp);
   formFittingInShowroom();
 }
-//contactRender(); //========================================================call
+//contactRender(); //========================================================call==================================
 
 //=====delivery========//
-function deliveryRender() {}
+import deliveryMarkUp from '../views/layouts/delivery.hbs';
+import { formDeliveryMarkUp, formDelivery } from './layout/delivery/formsQuestion.js';
+import { deliveryThreeModal } from './layout/delivery/deliveryTypes.js';
+import {
+  buttonsDelivery,
+  mainImageDelivery,
+  descriptionDelivery,
+  questionDelivery,
+} from './layout/delivery/deliveryTypes.js';
+
+function deliveryRender() {
+  const deliveryPageMarkUp = deliveryMarkUp({
+    buttonsDelivery,
+    mainImageDelivery,
+    descriptionDelivery,
+    questionDelivery,
+    formDeliveryMarkUp,
+  });
+  refs.mainEL.insertAdjacentHTML('beforeend', deliveryPageMarkUp);
+  formDelivery();
+  deliveryThreeModal();
+}
+
+ //deliveryRender(); //========================================================call
+
 //=====favorites========//
 export function favoritesRender() {}
+
 //=====fitting========//
-import { fitting } from './layout/fitting/sizeTable.js'
-import { openVideoSlider } from './layout/fitting/videoSlider.js'
+
+import sizeTable_markup from '../views/layouts/fitting.hbs';
+import { sizeTable_tableCreate } from './layout/fitting/sizeTable.js';
+import { informationAboutFitting_informationCreate } from './layout/fitting/informationAboutFitting.js';
+import {
+  openVideoSlider,
+  fittingVideoSliderPlayer,
+  videoSlider_videoSliderCreate,
+} from './layout/fitting/videoSlider.js';
+
 function fittingRender() {
-  refs.mainEL.insertAdjacentHTML('beforeend', fitting)
-  openVideoSlider()
+  const fittingMarkUp = sizeTable_markup({
+    sizeTable_tableCreate,
+    videoSlider_videoSliderCreate,
+    informationAboutFitting_informationCreate,
+    formBrand,
+  });
+  refs.mainEL.insertAdjacentHTML('beforeend', fittingMarkUp);
+  openVideoSlider();
+  // fittingVideoSliderPlayer();
+  formFittingInShowroom();
 }
-fittingRender()
+ //fittingRender(); //============================================================call
+
 //=====product========//
 import { callProductPageFunctional, createFullMarkup } from './layout/product/infoAboutProduct.js'
 import ProductModalAddToCart from './layout/product/productModalAddToCart.js';
@@ -165,7 +215,7 @@ function productRender() {
   // objProductModalAddToCart.show('ЖАКЕТ-СМОКИНГ С ЛАЦКАНМИ'); // show modal window - call the listener on the button
 }
 
-productRender(); //========================================================call
+// productRender(); //========================================================call
 
 //=====reviews========//
 import reviews_page from '../views/layouts/reviews.hbs';
@@ -187,7 +237,7 @@ function reviewsRender() {
   videoSetPlayer();
 }
 
-reviewsRender(); //========================================================call
+// reviewsRender(); //========================================================call
 
 //=====showroom========//
 import showroom_page from '../views/layouts/showroom.hbs';
@@ -198,7 +248,7 @@ export function showroomRender() {
   +showroomSlider();
   formFittingInShowroom();
 }
-//showroomRender(); //========================================================call
+//showroomRender(); //========================================================call===================
 
 //=====blockHelp========//
 import blockHelp_blockHelpTemplate from '../views/components/blockHelp.hbs';
