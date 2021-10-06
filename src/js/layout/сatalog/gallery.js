@@ -2,6 +2,10 @@ import gallery from '../../../views/partials/сatalog/gallery.hbs';
 
 import catalog from '../../json/catalog.json';
 
+import { productRender } from '../../call-list.js';
+
+import { scrollTo } from '../../components/blockHelp/blockHelp.js';
+
 // import '../../../images/svg/catalog/catalog.svg#icon-gallery-card-heart';
 
 export const catalogListMarkup = gallery(catalog);
@@ -23,6 +27,9 @@ export function openCategory() {
   catalogSeeMoreIcon.addEventListener('click', seeMoreCards);
   function seeMoreCards(elem) {}
 
+  const cards = document.querySelectorAll('.catalog-item');
+  cards.forEach(el => el.addEventListener('click', cardToProduct));
+
   // function myFunction() {
   //   var dots = document.getElementById('dots');
   //   var moreText = document.getElementById('more');
@@ -38,4 +45,17 @@ export function openCategory() {
   //     moreText.style.display = 'inline';
   //   }
   // }
+}
+
+function cardToProduct(e) {
+  if (e.target.nodeName !== 'use' && e.target.nodeName !== 'svg') {
+    const id = e.currentTarget.getAttribute('id');
+    catalog.forEach(el => {
+      if (el.id === id) {
+        localStorage.setItem('productInfoData', JSON.stringify(el));
+      }
+    });
+    productRender();
+    scrollTo(0, 700);
+  }
 }
