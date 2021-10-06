@@ -6,7 +6,7 @@
   padding-right: 20px;
   padding-bottom: 40px;
 
-  @media screen and (min-width: 500px) and (max-width: $tablet-general) {
+  @media screen and (min-width: $desktop-up) and (max-width: $tablet-general) {
     position: relative;
     padding-top: 38px;
     padding-left: 40px;
@@ -28,7 +28,7 @@
   color: $button-hover-background-color;
   text-transform: uppercase;
   margin-bottom: 15px;
-  @media screen and (min-width: 500px) and (max-width: $tablet-general) {
+  @media screen and (min-width: $desktop-up) and (max-width: $tablet-general) {
     margin-bottom: 24px;
     text-align: left;
     font-size: 18px;
@@ -57,13 +57,13 @@
   font-size: 18px;
   line-height: 1.4;
   color: $seventh-text-color;
-  @media screen and (min-width: 500px) {
+  @media screen and (min-width: $desktop-up) {
     display: block;
   }
 }
 
 .form-reviews__horiz-block {
-  @media screen and (min-width: 500px) {
+  @media screen and (min-width: $desktop-up) {
     display: flex;
     flex-wrap: wrap;
   }
@@ -146,7 +146,7 @@
     height: 60px;
     width: 180px;
     flex-grow: 0;
-    margin-left: -1px;
+    border-left: none;
   }
 }
 
@@ -160,7 +160,7 @@
   font-size: 18px;
   line-height: 1.4;
   color: $seventh-text-color;
-  @media screen and (min-width: 500px) {
+  @media screen and (min-width: $desktop-up) {
     display: block;
   }
 }
@@ -183,7 +183,7 @@
   height: 120px;
   width: 100%;
 
-  @media screen and (min-width: 500px) and (max-width: $tablet-general) {
+  @media screen and (min-width: $desktop-up) and (max-width: $tablet-general) {
     height: 130px;
   }
   @media screen and (min-width: $desktop-up) {

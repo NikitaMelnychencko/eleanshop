@@ -1,11 +1,11 @@
 import '../../images/svg/exampl.svg';
 
-//============header======================
+//============header======================//
 import '../../images/svg/header.svg';
 import '../../images/img/header/header-arrow.svg';
-//=========== hero========================
+//=========== hero========================//
 
-//=========== hero========================
+//=========== hero========================//
 import '../../images/img/page-hero/mobile/hero-title-01/hero-title-mobile-01.jpg';
 import '../../images/img/page-hero/mobile/hero-title-01/hero-title-mobile-01@2x.jpg';
 import '../../images/img/page-hero/mobile/hero-title-02/hero-title-mobile-02.jpg';
@@ -27,7 +27,7 @@ import '../../images/svg/hero-svg-original/hero-arrow-right.svg';
 import '../../images/svg/clients-svg-original/clients-arrow-right.svg';
 import '../../images/svg/clients-svg-original/clients-arrow-right.svg';
 
-// ================content=========================
+// ================content=========================//
 // Mobile
 import '../../images/img/home/content/mobile/img-mob_1.jpg';
 import '../../images/img/home/content/mobile/img-mob_1@2x.jpg';
@@ -71,14 +71,14 @@ import '../../images/img/home/content/desk/img_9@2x.jpg';
 import '../../images/img/home/content/desk/img_10.jpg';
 import '../../images/img/home/content/desk/img_10@2x.jpg';
 
-//============ homeAboutBrand======================
+//============ homeAboutBrand======================//
 import '../../images/img/homeAboutBrand/aboutBrandArrow.png';
 import '../../images/img/homeAboutBrand/aboutBrandDesktop@1x.jpg';
 import '../../images/img/homeAboutBrand/aboutBrandDesktop@2x.jpg';
 import '../../images/img/homeAboutBrand/aboutBrandMob@1x.jpg';
 import '../../images/img/homeAboutBrand/aboutBrandMob@2x.jpg';
 
-//============ ourShowroom =========================
+//============ ourShowroom =========================//
 import '../../images/img/page-showroom/desktop/01/showroom-desktop-01.jpg';
 import '../../images/img/page-showroom/desktop/01/showroom-desktop-01@2x.jpg';
 import '../../images/img/page-showroom/desktop/02/showroom-desktop-02.jpg';
@@ -92,7 +92,7 @@ import '../../images/img/page-showroom/mobile/02/showroom-mobile-02@2x.jpg';
 import '../../images/img/page-showroom/mobile/03/showroom-mobile-03.jpg';
 import '../../images/img/page-showroom/mobile/03/showroom-mobile-03@2x.jpg';
 
-//============ page-Brand======================
+//============ page-Brand======================//
 import '../../images/img/brand/elena-des.jpg';
 import '../../images/img/brand/elena-des@2x.jpg';
 import '../../images/img/brand/elena-mob.jpg';
@@ -103,7 +103,7 @@ import '../../images/img/brand/two-an-mob.jpg';
 import '../../images/img/brand/two-an-mob@2x.jpg';
 import '../../images/img/brand/brand-video-image.jpg';
 
-//============ starClients=========================
+//============ starClients=========================//
 import '../../images/img/page-clients/client-01/starClient-01.jpg';
 import '../../images/img/page-clients/client-01/starClient-01@2x.jpg';
 import '../../images/img/page-clients/client-01/starClient-01@3x.jpg';
@@ -130,9 +130,10 @@ import '../../images/img/homeReviewsChat/chatImage@1x.png';
 import '../../images/img/homeReviewsChat/chatImage@2x.png';
 import '../../images/svg/homeReviewsChat/Foreground.svg';
 import '../../images/svg/homeReviewsChat/Union.svg';
+
 import '../../images/svg/homeReviewsChat/arrow-up-circle-fill.svg';
 
-//============product===========
+//============product===========//
 import '../../images/img/product/handSewn/handSewn-desktop-1.jpg';
 import '../../images/img/product/handSewn/handSewn-desktop-1@2x.jpg';
 import '../../images/img/product/handSewn/handSewn-desktop-2.jpg';
@@ -149,18 +150,124 @@ import '../../images/img/product/productBin/product2.jpg';
 import '../../images/img/product/productBin/product2@2x.jpg';
 import '../../images/svg/sprite.svg';
 import '../../images/svg/thanks_for_ordering.svg';
+
+// =======catalog========
+import '../../images/svg/catalog/catalog.svg';
+import '../../images/img/catalog/card-1.jpg';
+import '../../images/img/catalog/card-1@2x.jpg';
+import '../../images/img/catalog/card-2.jpg';
+import '../../images/img/catalog/card-2@2x.jpg';
+import '../../images/img/catalog/card-3.jpg';
+import '../../images/img/catalog/card-3@2x.jpg';
+import '../../images/img/catalog/card-4.jpg';
+import '../../images/img/catalog/card-4@2x.jpg';
+import '../../images/img/catalog/card-5.jpg';
+import '../../images/img/catalog/card-5@2x.jpg';
+import '../../images/img/catalog/card-6.jpg';
+import '../../images/img/catalog/card-6@2x.jpg';
+import '../../images/img/catalog/card-7.jpg';
+import '../../images/img/catalog/card-7@2x.jpg';
+import '../../images/img/catalog/card-8.jpg';
+import '../../images/img/catalog/card-8@2x.jpg';
+import '../../images/img/catalog/card-9.jpg';
+import '../../images/img/catalog/card-9@2x.jpg';
+import '../../images/img/catalog/card-10.jpg';
+import '../../images/img/catalog/card-10@2x.jpg';
+import '../../images/img/catalog/card-11.jpg';
+import '../../images/img/catalog/card-11@2x.jpg';
+import '../../images/img/catalog/card-12.jpg';
+import '../../images/img/catalog/card-12@2x.jpg';
+import '../../images/img/catalog/card-13.jpg';
+import '../../images/img/catalog/card-13@2x.jpg';
+import '../../images/img/catalog/card-14.jpg';
+import '../../images/img/catalog/card-14@2x.jpg';
+import '../../images/img/catalog/card-15.jpg';
+import '../../images/img/catalog/card-15@2x.jpg';
+import '../../images/img/catalog/card-16.jpg';
+import '../../images/img/catalog/card-16@2x.jpg';
+import '../../images/img/catalog/card-17.jpg';
+import '../../images/img/catalog/card-17@2x.jpg';
+import '../../images/img/catalog/card-18.jpg';
+import '../../images/img/catalog/card-18@2x.jpg';
+import '../../images/img/catalog/card-19.jpg';
+import '../../images/img/catalog/card-19@2x.jpg';
+import '../../images/img/catalog/card-1-desktop.jpg';
+import '../../images/img/catalog/card-1-desktop@2x.jpg';
+import '../../images/img/catalog/card-2-desktop.jpg';
+import '../../images/img/catalog/card-2-desktop@2x.jpg';
+import '../../images/img/catalog/card-3-desktop.jpg';
+import '../../images/img/catalog/card-3-desktop@2x.jpg';
+import '../../images/img/catalog/card-4-desktop.jpg';
+import '../../images/img/catalog/card-4-desktop@2x.jpg';
+import '../../images/img/catalog/card-5-desktop.jpg';
+import '../../images/img/catalog/card-5-desktop@2x.jpg';
+import '../../images/img/catalog/card-6-desktop.jpg';
+import '../../images/img/catalog/card-6-desktop@2x.jpg';
+import '../../images/img/catalog/card-7-desktop.jpg';
+import '../../images/img/catalog/card-7-desktop@2x.jpg';
+import '../../images/img/catalog/card-8-desktop.jpg';
+import '../../images/img/catalog/card-8-desktop@2x.jpg';
+import '../../images/img/catalog/card-9-desktop.jpg';
+import '../../images/img/catalog/card-9-desktop@2x.jpg';
+import '../../images/img/catalog/card-10-desktop.jpg';
+import '../../images/img/catalog/card-10-desktop@2x.jpg';
+import '../../images/img/catalog/card-11-desktop.jpg';
+import '../../images/img/catalog/card-11-desktop@2x.jpg';
+import '../../images/img/catalog/card-12-desktop.jpg';
+import '../../images/img/catalog/card-12-desktop@2x.jpg';
+import '../../images/img/catalog/card-13-desktop.jpg';
+import '../../images/img/catalog/card-13-desktop@2x.jpg';
+import '../../images/img/catalog/card-14-desktop.jpg';
+import '../../images/img/catalog/card-14-desktop@2x.jpg';
+import '../../images/img/catalog/card-15-desktop.jpg';
+import '../../images/img/catalog/card-15-desktop@2x.jpg';
+import '../../images/img/catalog/card-16-desktop.jpg';
+import '../../images/img/catalog/card-16-desktop@2x.jpg';
+import '../../images/img/catalog/card-17-desktop.jpg';
+import '../../images/img/catalog/card-17-desktop@2x.jpg';
+import '../../images/img/catalog/card-18-desktop.jpg';
+import '../../images/img/catalog/card-18-desktop@2x.jpg';
+import '../../images/img/catalog/card-19-desktop.jpg';
+import '../../images/img/catalog/card-19-desktop@2x.jpg';
+import '../../images/img/catalog/card-20-desktop.jpg';
+import '../../images/img/catalog/card-20-desktop@2x.jpg';
+// ============productInfo===========
+import '../../images/img/products/mobile/tuxedo-and-vest-mobile-1.jpg';
+import '../../images/img/products/mobile/tuxedo-and-vest-mobile-2.jpg';
+import '../../images/img/products/mobile/tuxedo-and-vest-mobile-3.jpg';
+import '../../images/img/products/mobile/tuxedo-and-vest-mobile-4.jpg';
+import '../../images/img/products/mobile/tuxedo-and-vest-mobile-5.jpg';
+import '../../images/img/products/mobile/tuxedo-and-vest-mobile-1@2x.jpg';
+import '../../images/img/products/mobile/tuxedo-and-vest-mobile-2@2x.jpg';
+import '../../images/img/products/mobile/tuxedo-and-vest-mobile-3@2x.jpg';
+import '../../images/img/products/mobile/tuxedo-and-vest-mobile-4@2x.jpg';
+import '../../images/img/products/mobile/tuxedo-and-vest-mobile-5@2x.jpg';
+import '../../images/img/products/desktop/tuxedo-and-vest-mini-desktop-1.jpg';
+import '../../images/img/products/desktop/tuxedo-and-vest-mini-desktop-2.jpg';
+import '../../images/img/products/desktop/tuxedo-and-vest-mini-desktop-3.jpg';
+import '../../images/img/products/desktop/tuxedo-and-vest-mini-desktop-4.jpg';
+import '../../images/img/products/desktop/tuxedo-and-vest-mini-desktop-1@2x.jpg';
+import '../../images/img/products/desktop/tuxedo-and-vest-mini-desktop-2@2x.jpg';
+import '../../images/img/products/desktop/tuxedo-and-vest-mini-desktop-3@2x.jpg';
+import '../../images/img/products/desktop/tuxedo-and-vest-mini-desktop-4@2x.jpg';
+import '../../images/svg/products/circle-black.svg';
+import '../../images/svg/products/circle-red.svg';
+import '../../images/svg/products/circle-grey.svg';
+import '../../images/svg/products/circle-green.svg';
+import '../../images/svg/products/circle-blue.svg';
+import '../../images/svg/products/circle-white.svg';
 import '../../images/svg/product/product-icon-close.svg';
 import '../../images/svg/product/icon-product-delivery.svg';
 import '../../images/svg/product/product-modal-button-close.svg';
 
-//==============blockHelp=================
+//==============blockHelp=================//
 import '../../images/svg/blockHelp/arrow.svg';
 import '../../images/svg/blockHelp/cross.svg';
 import '../../images/svg/blockHelp/helpChat.svg';
 import '../../images/svg/blockHelp/helpPhone.svg';
 import '../../images/svg/blockHelp/rectangleWhite.svg';
 
-//============inInstagram===========
+//============inInstagram===========//
 import '../../images/img/page-in-instagram/we-are-in-insta-01.jpg';
 import '../../images/img/page-in-instagram/we-are-in-insta-01@2x.jpg';
 import '../../images/img/page-in-instagram/we-are-in-insta-02.jpg';
@@ -172,7 +279,7 @@ import '../../images/img/page-in-instagram/we-are-in-insta-04@2x.jpg';
 import '../../images/img/page-in-instagram/we-are-in-insta-05.jpg';
 import '../../images/img/page-in-instagram/we-are-in-insta-05@2x.jpg';
 
-//===============payment===========================
+//===============payment===========================//
 
 import '../../images/svg/product/product-icon-close.svg';
 import '../../images/img/product/productBin/product1.jpg';
@@ -180,22 +287,25 @@ import '../../images/img/product/productBin/product1@2x.jpg';
 import '../../images/img/product/productBin/product2.jpg';
 import '../../images/img/product/productBin/product2@2x.jpg';
 
-//===============payment===========================
-import '../../images/img/checkout/payment/buyers.jpg'
-import '../../images/img/checkout/payment/buyers@2x.jpg'
-import '../../images/img/checkout/payment/mirror_reflection.jpg'
-import '../../images/img/checkout/payment/mirror_reflection@2x.jpg'
-import '../../images/svg/murkup.svg'
-import '../../images/svg/murkup_arow.svg'
+//===============payment===========================//
+import '../../images/img/checkout/payment/buyers.jpg';
+import '../../images/img/checkout/payment/buyers@2x.jpg';
+import '../../images/img/checkout/payment/mirror_reflection.jpg';
+import '../../images/img/checkout/payment/mirror_reflection@2x.jpg';
+import '../../images/svg/murkup.svg';
+import '../../images/svg/murkup_arow.svg';
+//=========fitting=========================//
+import '../../images/img/elean47390.jpg';
+import '../../images/img/elean47390@2x.jpg';
+import '../../images/svg/arrow-left.svg';
+import '../../images/svg/arrow-right.svg';
+//===============Reviews===========================//
+import '../../images/img/Reviews/poster/Black2V.jpg';
+import '../../images/img/Reviews/poster/23.jpg';
+import '../../images/img/Reviews/poster/55.jpg';
+import '../../images/img/Reviews/poster/78.jpg';
 
-
-//===============Reviews===========================
-import '../../images/img/Reviews/poster/Black2V.jpg'
-import '../../images/img/Reviews/poster/23.jpg'
-import '../../images/img/Reviews/poster/55.jpg'
-import '../../images/img/Reviews/poster/78.jpg'
-
-//=========tryOnModal===========
+//=========tryOnModal===========//
 import '../../images/svg/tryOnModal/check.svg';
 import '../../images/svg/tryOnModal/crossTryOnModal.svg';
 import '../../images/svg/tryOnModal/model.svg';
@@ -203,3 +313,13 @@ import '../../images/svg/tryOnModal/paiment.svg';
 import '../../images/svg/tryOnModal/request.svg';
 import '../../images/svg/tryOnModal/stylist.svg';
 import '../../images/svg/tryOnModal/time.svg';
+
+//=============delivery=====================
+import '../../images/img/elean62862_1.jpg';
+import '../../images/svg/Group.svg';
+import '../../images/img/checkout/payment/buyers.jpg';
+import '../../images/img/checkout/payment/buyers@2x.jpg';
+import '../../images/img/checkout/payment/mirror_reflection.jpg';
+import '../../images/img/checkout/payment/mirror_reflection@2x.jpg';
+import '../../images/svg/murkup.svg';
+import '../../images/svg/murkup_arow.svg';

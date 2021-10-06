@@ -1,3 +1,12 @@
+.contacts-section {
+  padding-top: 39px;
+  padding-bottom: 20px;
+  @media screen and (min-width: $desktop-up) {
+    padding-top: 69px;
+    padding-bottom: 386px;
+  }
+}
+
 .contacts-container {
   padding-right: 0;
   padding-left: 0;
@@ -8,7 +17,6 @@
     grid-template-columns: 1fr 1fr;
     grid-auto-rows: minmax(100px, auto);
     grid-column-gap: 65px;
-    margin-bottom: 100px;
   }
 }
 
@@ -19,10 +27,8 @@
   letter-spacing: 0.05em;
   color: $secondary-text-color;
   margin-bottom: 21px;
-  padding-top: 39px;
   margin-bottom: 21px;
   @media screen and (min-width: $desktop-up) {
-    padding-top: 69px;
     margin-bottom: 40px;
   }
 }
@@ -57,11 +63,9 @@
 .contacts__form {
   padding-left: 20px;
   padding-right: 20px;
-  margin-bottom: 20px;
   @media screen and (min-width: $desktop-up) {
     padding-right: 0;
     padding-left: 0;
-    margin-bottom: 0;
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 2;

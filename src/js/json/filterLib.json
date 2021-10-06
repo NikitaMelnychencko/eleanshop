@@ -1,0 +1,42 @@
+{
+  "filter_category": [
+    {
+      "category": "Новинки"
+    },
+    {
+      "category": "Юбки"
+    },
+    {
+      "category": "Смокинги"
+    },
+    {
+      "category": "Аксессуары"
+    },
+    {
+      "category": "Брюки"
+    },
+    {
+      "category": "Блузы"
+    },
+    {
+      "category": "Платья"
+    },
+    {
+      "category": "Топы и жилеты"
+    }
+  ],
+  "filter_collection": [
+    {
+      "collection": "Осень-зима 20-21"
+    },
+    {
+      "collection": "Вечерние комплекты"
+    },
+    {
+      "collection": "Предзаказ"
+    },
+    {
+      "collection": "Свадьба и выпускной"
+    }
+  ]
+}

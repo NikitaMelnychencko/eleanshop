@@ -3,9 +3,10 @@
   box-sizing: border-box;
 }
 
-.showroom-section {
+.showroom-page-section {
   padding-bottom: 30px;
   @media screen and (min-width: $desktop-up) {
-    padding-bottom: 120px;
+    padding-top: 69px;
+    padding-bottom: 328px;
   }
 }

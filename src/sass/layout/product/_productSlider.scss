@@ -1,0 +1,132 @@
+.product {
+  @media screen and (min-width: $desktop-up) {
+    padding-top: 50px;
+  }
+}
+
+.product__container {
+  @media screen and (min-width: $desktop-up) {
+    display: flex;
+    width: $desktop-up;
+  }
+}
+
+// ! ----------------------------------------------SMALLLER SLIDER //
+.product-slider-smaller__wrapper {
+  @media screen and (min-width: $desktop-up) {
+    margin-right: 88px;
+  }
+}
+.product-slider-smaller {
+  @media screen and (max-width: $tablet-only) {
+    display: none;
+  }
+}
+
+.product-slider-smaller .slick-list {
+  width: 64px;
+  overflow: hidden;
+  padding: 0;
+}
+
+.product-slider-smaller .slick-track {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-slider-smaller .slick-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-slider-smaller .slick-slide.slick-current {
+  border: 1px solid $product-slider-border-color;
+  padding: 10px 8px;
+  box-sizing: content-box;
+}
+
+.product-slider-smaller__item {
+  &:not(:last-child) {
+    margin-bottom: 8px;
+  }
+}
+
+.product-slider-smaller__image {
+  width: 47px;
+  height: 71px;
+  cursor: pointer;
+}
+// !--------------------------------------------- END OF SMALLER SLIDER//
+// !--------------------------------------------- MAIN SLIDER//
+.product-slider__wrapper {
+  margin-bottom: 38px;
+
+  @media screen and (min-width: $tablet-general) and (max-width: $tablet-only) {
+    min-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (min-width: $desktop-up) {
+    width: 700px;
+    margin-right: 88px;
+  }
+}
+.product-slider .slick-list {
+  overflow: hidden;
+}
+
+.product-slider .slick-track {
+  display: flex;
+}
+
+.product-slider .slick-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.product-slider .slick-dots li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin: 0 14px;
+}
+.product-slider .slick-dots button {
+  border-color: transparent;
+  font-size: 0;
+  line-height: 0;
+  border-radius: 10px;
+  width: 6px;
+  height: 6px;
+
+  position: absolute;
+  z-index: 1000;
+  bottom: 19px;
+
+  @media screen and (min-width: $desktop-up) {
+    display: none;
+  }
+}
+.product-slider .slick-dots li.slick-active {
+  margin: 0 14px;
+}
+.product-slider .slick-dots li.slick-active button {
+  width: 26px;
+}
+
+.product-slider__image {
+  @media screen and (min-width: $tablet-general) {
+    min-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (min-width: $desktop-up) {
+    min-width: 700px;
+  }
+}
+// !--------------------------------------------- END OF MAIN SLIDER//
