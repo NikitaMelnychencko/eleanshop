@@ -259,10 +259,12 @@ import catalogMarkUp from '../views/layouts/catalog.hbs';
 import { filterListMakeup, openFilter } from './layout/сatalog/filter.js';
 import { catalogListMarkup, openCategory } from './layout/сatalog/gallery.js';
 
-function catalogRender() {
+export function catalogRender() {
   const filterGalleryCatalogMarkup = catalogMarkUp({ filterListMakeup, catalogListMarkup });
   refs.mainEL.insertAdjacentHTML('beforeend', filterGalleryCatalogMarkup);
   openFilter();
   openCategory();
+
+  // console.log(filterGalleryCatalogMarkup);
 }
 catalogRender(); //========================================================call

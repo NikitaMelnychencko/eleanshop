@@ -54,3 +54,9 @@
 .collection-item:focus {
   color: #ae9177;
 }
+
+.filter-category-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}

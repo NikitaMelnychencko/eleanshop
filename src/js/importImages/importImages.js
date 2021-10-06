@@ -152,6 +152,7 @@ import '../../images/svg/sprite.svg';
 import '../../images/svg/thanks_for_ordering.svg';
 
 // =======catalog========
+import '../../images/svg/catalog/catalog.svg';
 import '../../images/img/catalog/card-1.jpg';
 import '../../images/img/catalog/card-1@2x.jpg';
 import '../../images/img/catalog/card-2.jpg';

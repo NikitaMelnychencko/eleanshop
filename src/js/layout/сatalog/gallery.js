@@ -2,7 +2,7 @@ import gallery from '../../../views/partials/сatalog/gallery.hbs';
 
 import catalog from '../../json/catalog.json';
 
-import '../../../images/svg/catalog/catalog.svg#icon-gallery-card-heart';
+// import '../../../images/svg/catalog/catalog.svg#icon-gallery-card-heart';
 
 export const catalogListMarkup = gallery(catalog);
 export function openCategory() {
@@ -19,7 +19,6 @@ export function openCategory() {
   }
 
   const catalogSeeMoreIcon = document.querySelector('.catalog-icon-raws-round');
-  console.log(catalogSeeMoreIcon);
 
   catalogSeeMoreIcon.addEventListener('click', seeMoreCards);
   function seeMoreCards(elem) {}
