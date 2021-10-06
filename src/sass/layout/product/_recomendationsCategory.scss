@@ -74,6 +74,8 @@
 
   &__item {
     min-width: 0;
+    display: flex;
+    flex-direction: column;
 
     &:not(:last-child) {
       margin-right: 10px;
@@ -81,8 +83,6 @@
 
     @media screen and (min-width: $desktop-up) {
       width: calc((100% - 3 * 34px) / 4);
-      display: flex;
-      flex-direction: column;
 
       &:not(:last-child) {
         margin-right: 34px;
@@ -105,11 +105,20 @@
     object-fit: cover;
     object-position: 50% 50%;
     max-height: 500px;
+    .product-modal-add-cart & {
+      max-height: 260px;
+      max-width: 200px;
+    }
   }
 
   &__block-characters {
     display: flex;
     padding-bottom: 24px;
+    .product-modal-add-cart & {
+      @media screen and (min-width: $desktop-up) {
+        padding-bottom: 0;
+      }
+    }
   }
 
   &__item-title {

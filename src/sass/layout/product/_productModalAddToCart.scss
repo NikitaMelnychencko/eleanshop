@@ -22,8 +22,7 @@
   }
 
   @media screen and (min-width: $desktop-up) {
-    padding-top: 66px;
-    padding-bottom: 70px;
+    padding: 66px 120px 70px;
     width: 914px;
     height: 694px;
     max-width: 914px;
@@ -38,8 +37,8 @@
     padding-left: 20px;
     padding-right: 20px;
     @media screen and (min-width: $desktop-up) {
-      padding-left: 118px;
-      padding-right: 118px;
+      padding-left: 0;
+      padding-right: 0;
     }
   }
 
@@ -69,7 +68,7 @@
     }
 
     @media screen and (min-width: $desktop-up) {
-      margin-bottom: 30px;
+      margin-bottom: 20px;
       font-size: 30px;
       line-height: 1.1;
       letter-spacing: 0.03em;

@@ -25,7 +25,7 @@ export default class ProductBin {
       this.data = this.dataBin;
     }
     this.data.forEach(el => {
-      const arr = el.label.price.split('');
+      const arr = String(el.label.price).split('');
       for (let i = arr.length - 3; i > 0; i -= 3) {
         arr.splice(i, 0, ' ');
       }
