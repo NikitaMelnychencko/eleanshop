@@ -170,7 +170,11 @@ export function fittingRender() {
 //fittingRender(); //============================================================call
 
 //=====product========//
-import { callProductPageFunctional, createFullMarkup } from './layout/product/infoAboutProduct.js';
+import {
+  setProductSlider,
+  callProductPageFunctional,
+  createFullMarkup,
+} from './layout/product/infoAboutProduct.js';
 import ProductModalAddToCart from './layout/product/productModalAddToCart.js';
 import RecomendationsCategory from './layout/product/recomendationsCategory.js';
 import cards from './json/catalog.json';
@@ -182,7 +186,7 @@ import modalFormMarkupTempl from '../views/components/thanksForOrdering.hbs';
 import { preorderMark, setEventPreorder } from './layout/product/preorderModal.js';
 import { tryOnModels, setEventTryOnModels } from './layout/product/tryOnModelsModal.js';
 
-function productRender() {
+export function productRender() {
   const objRecomendationsCategory = new RecomendationsCategory({
     data: cards,
   });
@@ -214,9 +218,9 @@ function productRender() {
     modalPreorder: preorderMark,
     tryOnModels: tryOnModels,
   };
-  refs.mainEL.insertAdjacentHTML('beforeend', productMarkup(obj));
-  // refs.mainEL.innerHTML = productMarkup(obj);
-
+  // refs.mainEL.insertAdjacentHTML('beforeend', productMarkup(obj));
+  refs.mainEL.innerHTML = productMarkup(obj);
+  setProductSlider();
   callProductPageFunctional(objProductModalAddToCart.show);
   document.querySelector('.form__button-сlose').style.display = 'none';
   document.querySelector('.ordering__form').style.display = 'none';
@@ -227,7 +231,6 @@ function productRender() {
   objProductModalAddToCart.setSlider();
   setEventPreorder();
   setEventTryOnModels();
-  // objProductModalAddToCart.show('ЖАКЕТ-СМОКИНГ С ЛАЦКАНМИ'); // show modal window - call the listener on the button
 }
 
 // productRender(); //========================================================call
