@@ -46,7 +46,7 @@ import './js/layout/contact/contact.js';
 //fitting
 import './js/layout/fitting/informationAboutFitting.js';
 import './js/components/sizeTable.js';
-import './js/layout/fitting/sizeChose.js';
+import './js/components/sizeChose.js';
 import './js/layout/fitting/videoSlider.js';
 import './js/layout/fitting/formFittingInShowroom.js';
 //brand

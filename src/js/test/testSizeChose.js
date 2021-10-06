@@ -1,4 +1,4 @@
-import sizeChose from '../layout/fitting/sizeChose.js';
+import sizeChose from '../components/sizeChose.js';
 const { onBtnClick } = sizeChose;
 
 //const body = document.querySelector('body');

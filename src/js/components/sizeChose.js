@@ -1,32 +1,29 @@
-import getRefs from '../../refs/refs.js'
-import Backdrop from '../../components/backdrop.js';
-import backdropMarkupTempl from '../../../views/components/backdrop.hbs';
-import modalFormMarkupTempl from '../../../views/partials/fitting/sizeChose.hbs';
-import size from '../../json/sizeChose.json';
-import createMarkup from '../../../views/partials/fitting/sizeChose.hbs';
+import getRefs from '../refs/refs.js';
+import Backdrop from './backdrop.js';
+import backdropMarkupTempl from '../../views/components/backdrop.hbs';
+import modalFormMarkupTempl from '../../views/components/sizeChose.hbs';
+import size from '../json/sizeChose.json';
 
 let throttle = require('lodash.throttle');
+const backdrop = new Backdrop();
 
 function onBtnClick() {
   const backdropRef = document.querySelector('[data-modal]');
   const { mainEL } = getRefs;
   if (backdropRef === null) {
-    const modalFormMarkup = modalFormMarkupTempl();
-    const backdropMarkup = backdropMarkupTempl(createMarkup(createBtn(size)));
- 
+    const backdropMarkup = backdropMarkupTempl(modalFormMarkupTempl(createBtn(size)));
+
     mainEL.insertAdjacentHTML('beforeend', backdropMarkup);
     window.addEventListener('resize', throttle(onResize, 50));
 
     const btnSize = document.querySelector('.size-chose__size-list');
 
     btnSize.addEventListener('click', value => {
-      if (value.target.nodeName === 'BUTTON')
-      {
-        sendingValue( value.target.textContent);
+      if (value.target.nodeName === 'BUTTON') {
+        sendingValue(value.target.textContent);
       }
     });
   }
-  const backdrop = new Backdrop();
   onResize();
 }
 function onResize(event) {
@@ -63,8 +60,7 @@ function createBtn(json) {
 //function that returns a string with the size on the card that you selected
 function sendingValue(id, value) {
   save(`sizeClose_id-${id}`, value);
-  const backdrop = new Backdrop()
-  .closeModalForm();
+  backdrop.closeModalForm();
 }
 //function writes the selected size to sizeClose in localStorage
 function save(key, value) {
@@ -75,4 +71,4 @@ function save(key, value) {
     console.error('Set state error: ', err);
   }
 }
-export default {onBtnClick, createBtn};
+export default { onBtnClick, createBtn };
