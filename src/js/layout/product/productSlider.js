@@ -1,6 +1,6 @@
 //!----------------------------------------------- -----Product sliders/
-window.jQuery = window.$ = require("jquery");
-require('../../slick/slick.min')
+window.jQuery = window.$ = require('jquery');
+require('../../slick/slick.min');
 
 $(document).ready(function () {
   $('.product-slider-smaller').slick({
@@ -10,11 +10,11 @@ $(document).ready(function () {
     verticalSwiping: true,
     slidesToShow: 4,
     slidesToScroll: 1,
-    lazyLoad: "progressive",
-    asNavFor: ".product-slider",
+    lazyLoad: 'progressive',
+    asNavFor: '.product-slider',
     centerMode: true,
     focusOnSelect: true,
-    centerPadding: '0px'
+    centerPadding: '0px',
   });
   $('.product-slider').slick({
     arrows: false,
@@ -22,12 +22,7 @@ $(document).ready(function () {
     fade: true,
     speed: 500,
     slidesToShow: 1,
-    lazyLoad: "progressive",
-    asNavFor: ".product-slider-smaller",
-  })
+    lazyLoad: 'progressive',
+    asNavFor: '.product-slider-smaller',
+  });
 });
-
-
-
-
-

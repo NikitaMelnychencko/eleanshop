@@ -78,7 +78,6 @@ export default class RecomendationsCategory {
   };
 
   setSlider = () => {
-    console.log('innerWidth', window.innerWidth);
     if (window.innerWidth <= 720) {
       this._addSlider();
     }
