@@ -19,10 +19,6 @@ import { cardsMarkup, openContent } from './layout/home/content.js';
 import { aboutTheBrand_parsing, openAboutTheBrand } from './layout/home/aboutTheBrand.js';
 export function homeRender() {
   updateBin();
-  refs.mainEL.innerHTML = '';
-  getHome();
-}
-function getHome() {
   const homeMarkup = home({
     pageHeroSliderMarkup,
     cardsMarkup,
@@ -32,8 +28,8 @@ function getHome() {
     pageInInstagramSliderMarkup,
     aboutTheBrand_parsing,
   });
-
-  refs.mainEL.insertAdjacentHTML('beforeend', homeMarkup);
+  refs.mainEL.innerHTML = homeMarkup;
+  
   heroSlider();
   openContent();
   showroomSlider();
@@ -44,7 +40,7 @@ function getHome() {
   formFittingInShowroom();
   openAboutTheBrand();
 }
-getHome(); //========================================================call
+homeRender(); //========================================================call
 //=====brand========//
 import brand_page from '../views/layouts/brand.hbs';
 import {
@@ -113,7 +109,7 @@ import {
   questionDelivery,
 } from './layout/delivery/deliveryTypes.js';
 
-function deliveryRender() {
+export function deliveryRender() {
   const deliveryPageMarkUp = deliveryMarkUp({
     buttonsDelivery,
     mainImageDelivery,
@@ -121,7 +117,7 @@ function deliveryRender() {
     questionDelivery,
     formDeliveryMarkUp,
   });
-  refs.mainEL.insertAdjacentHTML('beforeend', deliveryPageMarkUp);
+  refs.mainEL.innerHTML = deliveryPageMarkUp;
   formDelivery();
   deliveryThreeModal();
 }
@@ -129,7 +125,7 @@ function deliveryRender() {
 //deliveryRender(); //========================================================call
 
 //=====favorites========//
-export function favoritesRender() {}
+export function favoritesRender() { }
 
 //=====fitting========//
 
@@ -142,20 +138,20 @@ import {
   videoSlider_videoSliderCreate,
 } from './layout/fitting/videoSlider.js';
 
-function fittingRender() {
+export function fittingRender() {
   const fittingMarkUp = sizeTable_markup({
     sizeTable_tableCreate,
     videoSlider_videoSliderCreate,
     informationAboutFitting_informationCreate,
     formBrand,
   });
-  refs.mainEL.insertAdjacentHTML('beforeend', fittingMarkUp);
+  refs.mainEL.innerHTML = fittingMarkUp;
   openVideoSlider();
   // fittingVideoSliderPlayer();
   formFittingInShowroom();
 }
+//fittingRender(); //============================================================call
 
-fittingRender();
 
 //=====product========//
 import { callProductPageFunctional, createFullMarkup } from './layout/product/infoAboutProduct.js';
@@ -230,9 +226,9 @@ import {
   videoSetPlayer,
 } from './layout/reviews/videoSet.js';
 
-function reviewsRender() {
+export function reviewsRender() {
   const reviewsMarkUp = reviews_page({ setVideoHbs, clientStar, formReviewsMarkUp });
-  refs.mainEL.insertAdjacentHTML('beforeend', reviewsMarkUp);
+  refs.mainEL.innerHTML = reviewsMarkUp;
   videosetSlickSettings();
   starClientsSlider();
   starClientsComments();
@@ -245,10 +241,9 @@ function reviewsRender() {
 //=====showroom========//
 import showroom_page from '../views/layouts/showroom.hbs';
 export function showroomRender() {
-  refs.mainEL.innerHTML = '';
   const showroomPageMarkUp = showroom_page({ formBrand, pageShowroomSliderMarkup });
-  refs.mainEL.insertAdjacentHTML('beforeend', showroomPageMarkUp);
-  +showroomSlider();
+  refs.mainEL.innerHTML = showroomPageMarkUp;
+  showroomSlider();
   formFittingInShowroom();
 }
 //showroomRender(); //========================================================call===================

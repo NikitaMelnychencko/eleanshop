@@ -1,3 +1,7 @@
+
+
+
+
 //==== настройка иконок мобильного меню====//
 .footer__mobile-list-item-plus::before,
 .footer__mobile-list-item-plus::after {
@@ -163,8 +167,6 @@ font-style: normal;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-left: 15px;
-
 }
 
 .footer__mobile-icon-logo{
@@ -266,10 +268,14 @@ font-style: normal;
     width: 22px;
     height: 6px;
     cursor: pointer;
-    
 }
 
 //==============desktop=========//
+
+.footer__wite-stile{
+    display: block;
+    color: #FFFFFF;
+}
 
  .footer__desktop{
     position: absolute;
@@ -292,9 +298,7 @@ font-style: normal;
         }
 }
 
-// .footer__desktop-logo{
-//     margin-right: 47px;
-// }
+
 .footer__desktop-logo-element{
      display: block;
     margin-top: 14px;
