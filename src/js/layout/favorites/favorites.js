@@ -1,5 +1,6 @@
 import markupTempl from '../../../views/layouts/favorites.hbs';
 import { favoritesRender } from '../../call-list.js';
+import refs from '../../refs/refs.js';
 
 let debounce = require('lodash.debounce');
 
@@ -8,6 +9,7 @@ class Favorites {
     this.data = localStorage.getItem('favorites');
     if (this.data !== null) {
       this.data = JSON.parse(this.data);
+      refs.numRef.innerHTML = this.data['fav'].length;
       this.markcup = markupTempl(this.data['fav']);
     }
   }
@@ -27,12 +29,10 @@ class Favorites {
   onButtonsClick(event) {
     let data = localStorage.getItem('favorites');
     data = JSON.parse(data);
-    console.log(`~ data`, data);
-    console.log(`~ event.target.classList`, event.target.classList);
+    refs.numRef.innerHTML = data.length;
 
     if (event.target.classList[0] === 'favorites__button-buy') {
       let id = event.target.parentNode.parentNode.id;
-      console.log(`~ id`, id);
       const ulRef = document.querySelector('.favorites__data');
       let i = 0;
       for (const el of ulRef.children) {
@@ -41,22 +41,20 @@ class Favorites {
         }
         i += 1;
       }
-      console.log(`~ i`, i);
 
       if (data !== null) {
         let dataBin = localStorage.getItem('orderingData');
-        dataBin = JSON.parse(dataBin);
-        console.log(`~ dataBin`, dataBin);
+        if (dataBin !== null) {
+          dataBin = JSON.parse(dataBin);
+        } else {
+          dataBin = [];
+        }
         let isCont = true;
         for (const obj of dataBin) {
-          console.log(`~ obj`, obj);
-          console.log(`1 ${obj.label.id} === ${data['fav'][i].id}`);
-          if ((obj.label.id = data['fav'][i].id)) {
-            console.log(`~ ${obj.label.id} === ${data['fav'][i].id}`);
+          if (obj.label.id === data['fav'][i].id) {
             isCont = false;
           }
         }
-        console.log(`~ isCont`, isCont);
         if (!isCont) {
           return;
         }
@@ -69,9 +67,10 @@ class Favorites {
         } else {
           imgs = data['fav'][i].image.srcset.split(',');
         }
+        console.log(`~ imgs`, imgs);
         imgs[1] = imgs[1].trim();
-        elem.label.img = imgs[0];
-        elem.label.img2 = imgs[2];
+        elem.label.img = imgs[0].split(' ')[0];
+        elem.label.img2 = imgs[1].split(' ')[0];
         elem.label.price = data['fav'][i].price;
         elem.label.sizeSelected = data['fav'][i].size;
         elem.label.colorSelected = data['fav'][i].color;
@@ -79,12 +78,7 @@ class Favorites {
         elem.label.description = '';
         elem.label.count = 1;
 
-        if (dataBin !== null) {
-          dataBin = JSON.parse(dataBin);
-          dataBin = [...dataBin, elem];
-        } else {
-          dataBin = [elem];
-        }
+        dataBin = [...dataBin, elem];
         localStorage.setItem('orderingData', JSON.stringify(dataBin));
       }
     } else if (
@@ -99,7 +93,6 @@ class Favorites {
           id = event.target.parentNode.parentNode.parentNode.id;
         }
 
-        data = JSON.parse(data);
         let done = [];
         for (const element of data['fav']) {
           if (element.id != id) {
@@ -111,6 +104,7 @@ class Favorites {
       localStorage.setItem('favorites', JSON.stringify(data));
       favoritesRender();
     }
+    refs.numRef.innerHTML = data['fav'].length;
   }
 
   onButtonSendEMailClick() {
