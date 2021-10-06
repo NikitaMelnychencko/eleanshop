@@ -1,0 +1,181 @@
+.catalog-category-filter-gallery {
+  background-color: var($modal-background-color);
+  @media screen and (min-width: $desktop-up) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.catalog-list {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+  grid-gap: 16px;
+  margin-bottom: 20px;
+  @media screen and (min-width: $desktop-up) {
+    grid-template-columns: repeat(4, 260px);
+    grid-gap: 16px;
+    margin-bottom: 20px;
+  }
+}
+
+.catalog-item {
+  box-sizing: border-box;
+  grid-row-start: span 1;
+  height: 390px;
+  padding-bottom: 120px;
+
+  @media screen and (min-width: $desktop-up) {
+    grid-row-start: span 2;
+    height: 473px;
+    padding-bottom: 100px;
+  }
+}
+
+.catalog-item:nth-child(5n + 5) {
+  @media screen and (max-width: $tablet-only) {
+    grid-row-start: span 2;
+    grid-column-start: span 2;
+    height: 630px;
+  }
+}
+
+.catalog-item:nth-child(22n + 4),
+.catalog-item:nth-child(22n + 8),
+.catalog-item:nth-child(22n + 12),
+.catalog-item:nth-child(22n + 19) {
+  @media screen and (min-width: $desktop-up) {
+    grid-row-start: span 3;
+    height: 715px;
+  }
+}
+
+//==<<<<<<<<<<<<<<<<=== hides more cards than maket (скрывает больше карточек. Для открытия дополнительных, менять этот параметр в сторону увеличения цифры)
+.catalog-item:nth-child(n + 23) {
+  display: none;
+}
+//==<<<<<<<<<<<<<<<<=== hides more cards than maket (скрывает больше карточек. Для открытия дополнительных, менять этот параметр в сторону увеличения цифры)
+
+.card-price-descr {
+  @media screen and (min-width: $desktop-up) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.card-content {
+  position: relative;
+}
+.card-name {
+  width: 140px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.2;
+  color: var ($third-logo-color);
+  min-height: 35px;
+  margin-top: 19px;
+  margin-bottom: 15px;
+  @media screen and (min-width: $desktop-up) {
+    width: 209px;
+    min-height: 35px;
+    margin-top: 19px;
+    margin-bottom: 15px;
+  }
+}
+.card-price {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.4;
+  color: var($third-logo-color);
+}
+.card-image {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+  cursor: pointer;
+  transition: box-shadow $time-cubic;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 0 20px #afafaf;
+  }
+}
+.icon-gallery-card-heart {
+  position: absolute;
+  width: 16px;
+  height: 13px;
+  top: 19px;
+  right: 2px;
+  z-index: 1;
+  fill: none;
+  cursor: pointer;
+  @media screen and (min-width: $desktop-up) {
+    width: 21px;
+    height: 18px;
+    top: 5px;
+  }
+}
+
+.heart-click {
+  fill: #c4c4c4;
+}
+.card-descr {
+  font-family: var($third-font-family);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.75;
+  color: #afafaf;
+  margin-bottom: 0;
+}
+.catalog-icon-raws-round {
+  display: block;
+  margin: 0 auto;
+  width: 20px;
+  height: 20px;
+  z-index: 1;
+  transition: fill $time-cubic;
+  fill: #c7c7c7;
+  &:hover,
+  &:focus {
+    fill: #afafaf;
+  }
+}
+
+.catalog-category-name {
+  display: none;
+  @media screen and (min-width: $desktop-up) {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 37px;
+    font-size: 21px;
+    line-height: 0.95;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: var($secondary-title-text-color);
+    text-transform: uppercase;
+  }
+}
+.catalog-category-filter {
+  display: none;
+
+  @media screen and (min-width: $desktop-up) {
+    display: block;
+    cursor: pointer;
+    align-items: stretch;
+    width: 100%;
+  }
+}
+.catalog-card {
+  height: 100%;
+  width: 100%;
+}
+
+.catalog-section {
+  padding-bottom: 21px;
+  padding-top: 25px;
+
+  @media screen and (min-width: $desktop-up) {
+    padding-bottom: 350px;
+    padding-top: 69px;
+  }
+}

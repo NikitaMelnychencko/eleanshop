@@ -1,6 +1,6 @@
 import refs from '../../refs/refs.js';
 import { scrollTo } from '../../components/blockHelp/blockHelp';
-import { fittingRender, brandRender, productRender, contactRender, reviewsRender, deliveryRender, favoritesRender, showroomRender, checkoutRender } from '../../call-list';
+import {catalogRender, fittingRender, brandRender, productRender, contactRender, reviewsRender, deliveryRender, favoritesRender, showroomRender, checkoutRender } from '../../call-list';
 import { id } from 'postcss-selector-parser';
 import { indexOf } from 'lodash';
 const {

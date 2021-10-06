@@ -29,7 +29,7 @@ export function homeRender() {
     aboutTheBrand_parsing,
   });
   refs.mainEL.innerHTML = homeMarkup;
-  
+
   heroSlider();
   openContent();
   showroomSlider();
@@ -125,7 +125,7 @@ export function deliveryRender() {
 //deliveryRender(); //========================================================call
 
 //=====favorites========//
-export function favoritesRender() { }
+export function favoritesRender() {}
 
 //=====fitting========//
 
@@ -151,7 +151,6 @@ export function fittingRender() {
   formFittingInShowroom();
 }
 //fittingRender(); //============================================================call
-
 
 //=====product========//
 import { callProductPageFunctional, createFullMarkup } from './layout/product/infoAboutProduct.js';
@@ -255,3 +254,18 @@ function blockHelpRender() {
   refs.mainEL.insertAdjacentHTML('beforeend', blockHelp_blockHelpTemplate());
   blockHelpRenderOpen();
 }
+
+//======catalog=========//
+import catalogMarkUp from '../views/layouts/catalog.hbs';
+import { filterListMakeup, openFilter } from './layout/сatalog/filter.js';
+import { catalogListMarkup, openCategory } from './layout/сatalog/gallery.js';
+
+export function catalogRender() {
+  const filterGalleryCatalogMarkup = catalogMarkUp({ filterListMakeup, catalogListMarkup });
+  refs.mainEL.innerHTML = filterGalleryCatalogMarkup;
+  openFilter();
+  openCategory();
+
+  // console.log(filterGalleryCatalogMarkup);
+}
+//catalogRender(); //========================================================call
