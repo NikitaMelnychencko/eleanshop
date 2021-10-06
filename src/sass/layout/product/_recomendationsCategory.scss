@@ -28,6 +28,7 @@
   &__list {
     padding-top: 30px;
     overflow: hidden;
+    // max-height: 373px;
 
     & .slider {
       min-width: 0;
@@ -80,6 +81,9 @@
 
     @media screen and (min-width: $desktop-up) {
       width: calc((100% - 3 * 34px) / 4);
+      display: flex;
+      flex-direction: column;
+
       &:not(:last-child) {
         margin-right: 34px;
       }
@@ -91,11 +95,16 @@
     border-radius: 3px;
     overflow: hidden;
     cursor: pointer;
+    flex-grow: 1;
   }
 
   &__image {
     display: block;
     width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+    max-height: 500px;
   }
 
   &__block-characters {
