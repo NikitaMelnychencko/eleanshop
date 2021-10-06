@@ -68,7 +68,7 @@ import payment_checkout from '../views/layouts/checkout.hbs';
 export function checkoutRender() {
   updateBin();
   refs.mainEL.innerHTML = '';
-  const createCheckout = payment_checkout({ createPayment, ordering, backdropMarkup});
+  const createCheckout = payment_checkout({ createPayment, ordering, backdropMarkup });
   refs.mainEL.insertAdjacentHTML('beforeend', createCheckout);
   openOrderingFunction();
   const modalOpen = new ModalData({
@@ -78,7 +78,7 @@ export function checkoutRender() {
     idListTime: 'time-list',
   });
 
-  blockHelpRender()
+  blockHelpRender();
 }
 
 //=====contact========//
@@ -100,6 +100,8 @@ function deliveryRender() {}
 export function favoritesRender() {}
 //=====fitting========//
 function fittingRender() {}
+//=====catalog========//
+export function catalogRender() {}
 //=====product========//
 
 import ProductModalAddToCart from './layout/product/productModalAddToCart.js';
@@ -182,16 +184,16 @@ import showroom_page from '../views/layouts/showroom.hbs';
 export function showroomRender() {
   refs.mainEL.innerHTML = '';
   const showroomPageMarkUp = showroom_page({ formBrand, pageShowroomSliderMarkup });
-  refs.mainEL.insertAdjacentHTML('beforeend', showroomPageMarkUp); +
-  showroomSlider();
+  refs.mainEL.insertAdjacentHTML('beforeend', showroomPageMarkUp);
+  +showroomSlider();
   formFittingInShowroom();
 }
 //showroomRender(); //========================================================call
 
 //=====blockHelp========//
 import blockHelp_blockHelpTemplate from '../views/components/blockHelp.hbs';
-import {blockHelpRenderOpen} from './components/blockHelp/blockHelp.js'
+import { blockHelpRenderOpen } from './components/blockHelp/blockHelp.js';
 function blockHelpRender() {
   refs.mainEL.insertAdjacentHTML('beforeend', blockHelp_blockHelpTemplate());
-  blockHelpRenderOpen()
+  blockHelpRenderOpen();
 }

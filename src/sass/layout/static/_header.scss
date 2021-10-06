@@ -5,6 +5,7 @@
   padding-top: 10px;
   padding-bottom: 10px;
   background-color: $primary-background-color;
+  border-bottom: 1px solid $secondary-border-color;
 
   @media screen and (min-width: $desktop-up) {
     padding-top: 18px;
@@ -30,7 +31,7 @@
   margin-right: 43px;
   padding: 10px;
   line-height: 0;
-  background-color: $button-background-color;
+  background-color: transparent;
   border: none;
   cursor: pointer;
 
@@ -55,7 +56,7 @@
 .button__svg-open,
 .button__svg-close {
   width: 18px;
-  height: 16px;
+  height: 17px;
 }
 
 .button__svg-open {
@@ -101,10 +102,12 @@
   transition: $time-cubic;
 
   &:hover,
-  &:focus,
+  &:focus {
+    background-color: $button-hover-background-color;
+  }
+
   &:hover > .social-list-desktop__svg,
   &:focus > .social-list-desktop__svg {
-    background-color: $button-hover-background-color;
     fill: $button-second-fill-color;
   }
 }
@@ -133,7 +136,7 @@
 
 .header-logo__svg-elean {
   width: 90px;
-  height: 16px;
+  height: 17px;
   margin-right: 5px;
   fill: $primary-logo-color;
 
@@ -150,7 +153,7 @@
 }
 
 .header-logo__text {
-  font-family: $secondary-font-family;
+  font-family: $secondary-font-family, sans-serif;
   font-weight: 500;
   font-size: 10px;
   line-height: 1;
@@ -180,7 +183,7 @@
   @media screen and (min-width: $desktop-up) {
     margin-right: 40px;
     padding: 10px;
-    font-family: $secondary-font-family;
+    font-family: $secondary-font-family, sans-serif;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.29;
@@ -224,43 +227,62 @@
   display: block;
   padding: 10px;
   line-height: 0;
+  border-radius: 6px;
+  transition-property: background-color;
+  transition: $time-cubic;
+
+  @media screen and (min-width: $desktop-up) {
+    &:hover,
+    &:focus {
+      background-color: $button-hover-background-color;
+    }
+
+    &:hover > .product-list__svg-favorites,
+    &:focus > .product-list__svg-favorites,
+    &:hover > .product-list__svg-bin,
+    &:focus > .product-list__svg-bin,
+    &:hover .product-list__text,
+    &:focus .product-list__text {
+      color: $selection-text-color;
+      fill: $button-hover-background-color;
+      stroke: $selection-text-color;
+    }
+  }
 }
 
 .product-list__svg-favorites {
   width: 20px;
-  height: 16px;
+  height: 17px;
   fill: none;
   stroke: $button-first-fill-color;
 
   @media screen and (min-width: $desktop-up) {
     width: 23px;
     height: 20px;
+    transition-property: fill, stroke;
+    transition: $time-cubic;
   }
-}
-
-.product-list__svg-bin,
-.product-list__svg-bin-white {
-  width: 17px;
-  height: 16px;
 }
 
 .product-list__svg-bin {
+  width: 17px;
+  height: 17px;
+  fill: $menu-background-color;
+  stroke: $button-first-fill-color;
+
   @media screen and (min-width: $desktop-up) {
     width: 19px;
     height: 20px;
+    transition-property: fill, stroke;
+    transition: $time-cubic;
   }
-}
-
-.product-list__svg-bin-white {
-  fill: $button-background-color;
-  stroke: $selection-text-color;
 }
 
 .product-list__text {
   position: absolute;
-  right: 1px;
+  right: 2px;
   top: 5px;
-  font-family: $secondary-font-family;
+  font-family: $secondary-font-family, sans-serif;
   font-weight: 700;
   font-size: 8px;
   line-height: 1.25;
@@ -269,6 +291,8 @@
   @media screen and (min-width: $desktop-up) {
     top: 3px;
     font-size: 9px;
+    transition-property: color;
+    transition: $time-cubic;
   }
 }
 
@@ -277,7 +301,7 @@
     display: flex;
     justify-content: space-between;
     align-items: stretch;
-    width: 1100px;
+    width: 1000px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -287,11 +311,16 @@
   @media screen and (min-width: $desktop-up) {
     display: flex;
     justify-content: space-between;
-    flex-grow: 1;
+    width: 100%;
   }
 }
 
 .navigation-list__item {
+  font-family: $secondary-font-family, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.1em;
+
   @media screen and (max-width: $mobile-only) {
     border-bottom: 2px solid $fourt-border-color;
 
@@ -303,34 +332,11 @@
   @media screen and (min-width: $desktop-up) {
     position: relative;
     text-align: center;
-
-    // &:nth-child(1),
-    // &:nth-child(5),
-    // &:nth-child(7) {
-    //   width: 100px;
-    // }
-
-    // &:nth-child(2) {
-    //   width: 145px;
-    // }
-
-    // &:nth-child(3),
-    // &:nth-child(4) {
-    //   width: 205px;
-    // }
-
-    // &:nth-child(6) {
-    //   width: 90px;
-    // }
   }
 }
 
 .navigation-list__link {
-  font-family: $secondary-font-family;
-  font-weight: 400;
-  font-size: 16px;
   line-height: 4.38;
-  letter-spacing: 0.1em;
   color: $selection-text-color;
 
   @media screen and (max-width: $mobile-only) {
@@ -351,32 +357,33 @@
   }
 
   @media screen and (min-width: $desktop-up) {
-    padding-top: 8px;
-    padding-bottom: 8px;
-    padding-left: 10px;
-    padding-right: 10px;
-    font-family: $selection-font-family;
+    width: 100%;
+    padding: 10px;
+    font-family: $selection-font-family, sans-serif;
     font-size: 14px;
     line-height: 1.43;
     color: $secondary-text-color;
     border-radius: 6px;
-    transition-property: color, ackground-color;
+    transition-property: color, background-color;
     transition: $time-cubic;
-  }
 
-  &:hover,
-  &:focus {
-    background-color: $button-hover-background-color;
-    color: $selection-text-color;
+    &:hover,
+    &:focus {
+      color: $selection-text-color;
+      background-color: $button-hover-background-color;
+    }
   }
 }
 
 .navigation-sublist {
   @media screen and (min-width: $desktop-up) {
     position: absolute;
+    left: 50%;
     display: none;
+    width: max-content;
     padding-top: 20px;
     background-color: $primary-background-color;
+    transform: translateX(-50%);
   }
 }
 
@@ -387,19 +394,6 @@
     }
   }
 }
-
-// .navigation-list__header-logo-min {
-//   display: none;
-// }
-
-// .header-logo-min {
-//   padding-left: 5px;
-//   padding-right: 5px;
-// }
-
-// .header-logo__svg-e {
-//   fill: $primary-logo-color;
-// }
 
 .navigation-sublist__subitem {
   @media screen and (max-width: $mobile-only) {
@@ -413,14 +407,19 @@
       border-bottom: 2px solid $fourt-border-color;
     }
   }
+
+  @media screen and (min-width: $desktop-up) {
+    transition-property: background-color;
+    transition: $time-cubic;
+    &:hover,
+    &:focus {
+      background-color: $button-hover-background-color;
+    }
+  }
 }
 
 .navigation-sublist__link {
-  font-family: $secondary-font-family;
-  font-weight: 400;
-  font-size: 16px;
   line-height: 4.38;
-  letter-spacing: 0.1em;
   color: $selection-text-color;
 
   @media screen and (max-width: $mobile-only) {
@@ -428,11 +427,19 @@
   }
 
   @media screen and (min-width: $desktop-up) {
-    padding-left: 10px;
-    padding-right: 10px;
-    font-family: $selection-font-family;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: $selection-font-family, sans-serif;
     line-height: 2.8;
     color: $secondary-text-color;
+    border-radius: 6px;
+    transition-property: color;
+    transition: $time-cubic;
+
+    &:hover,
+    &:focus {
+      color: $selection-text-color;
+    }
   }
 }
 
@@ -477,7 +484,7 @@
   align-items: center;
   width: 100%;
   height: 100%;
-  font-family: $third-font-family;
+  font-family: $third-font-family, sans-serif;
   font-weight: 400;
   font-size: 13px;
   line-height: 1.23;
@@ -497,6 +504,8 @@
 
 .mod-background-color {
   background-color: $menu-background-color;
+  transition-property: background-color;
+  transition: $time-cubic;
 }
 
 .mod-hidden {
@@ -509,6 +518,10 @@
 
 .mod-color {
   color: $selection-text-color;
+}
+
+.mod-fill-transp {
+  fill: transparent;
 }
 
 .mod-stroke {
@@ -558,28 +571,3 @@ body.mobile-open {
     height: 90vh;
   }
 }
-
-// Обсервер
-// .header-container {
-//   position: relative;
-// }
-
-// .navigation {
-//   position: absolute;
-//   top: 0px;
-//   left: 50%;
-//   transform: translateX(-50%);
-// }
-
-// .header-logo__svg-elean,
-// .header-logo__text {
-//   display: none;
-// }
-
-// .header-logo__svg-e {
-//   display: block;
-// }
-
-// .header-phone {
-//   display: none;
-// }
