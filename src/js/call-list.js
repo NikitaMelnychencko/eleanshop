@@ -154,13 +154,7 @@ function fittingRender() {
   // fittingVideoSliderPlayer();
   formFittingInShowroom();
 }
-//fittingRender(); //============================================================call=======
-import { fitting } from './layout/fitting/sizeTable.js';
-import { openVideoSlider } from './layout/fitting/videoSlider.js';
-function fittingRender() {
-  refs.mainEL.insertAdjacentHTML('beforeend', fitting);
-  openVideoSlider();
-}
+
 fittingRender();
 
 //=====product========//
