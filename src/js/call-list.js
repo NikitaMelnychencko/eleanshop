@@ -145,7 +145,7 @@ export function deliveryRender() {
 //deliveryRender(); //========================================================call
 
 import sizeTable_markup from '../views/layouts/fitting.hbs';
-import { sizeTable_tableCreate } from './layout/fitting/sizeTable.js';
+import sizeTableMarcup from './components/sizeTable.js';
 import { informationAboutFitting_informationCreate } from './layout/fitting/informationAboutFitting.js';
 import {
   openVideoSlider,
@@ -155,7 +155,7 @@ import {
 
 export function fittingRender() {
   const fittingMarkUp = sizeTable_markup({
-    sizeTable_tableCreate,
+    sizeTableMarcup,
     videoSlider_videoSliderCreate,
     informationAboutFitting_informationCreate,
     formBrand,
