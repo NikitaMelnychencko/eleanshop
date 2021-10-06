@@ -1,7 +1,6 @@
 import filter from '../../../views/partials/сatalog/filter.hbs';
 import filterLib from '../../json/filterLib.json';
-
-export const filterListMakeup = filter(filterLib);
+export const filterListMakeup = filter({filterLib});
 
 export function openFilter() {
   const filterList = document.querySelector('#filter');
