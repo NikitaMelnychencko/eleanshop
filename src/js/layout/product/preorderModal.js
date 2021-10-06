@@ -1,4 +1,5 @@
 // console.log('Hello world');
+import Backdrop from '../../components/backdrop';
 import preorderModal from '../../../views/components/preorderModal.hbs';
 import orderForm from '../../../views/components/orderForm.hbs';
 import refs from '../../refs/refs';
@@ -84,6 +85,17 @@ function onButtonSubmitClick(event) {
         localStorage.setItem(input.name, input.value);
       }
     });
+    onButtonCloseModalClick();
   }
   onButtonCloseModalClick();
+
+  let backdropRef = document.querySelector('[data-modal]');
+  backdropRef.classList.remove('is-hidden');
+  const modalForm = document.querySelector('.ordering__form');
+  modalForm.style.display = 'block';
+  const right = (backdropRef.offsetWidth - modalForm.offsetWidth) / 2;
+  const btnCloseRef = document.querySelector('.form__button-сlose');
+  btnCloseRef.style.display = 'block';
+  btnCloseRef.style.right = `${right}px`;
+  const backdrop = new Backdrop();
 }

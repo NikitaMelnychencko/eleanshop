@@ -15,31 +15,32 @@ import {
   starClientsComments,
 } from './layout/home/starClients.js';
 import { pageInInstagramSliderMarkup, instagramSlider } from './layout/home/inInstagram.js';
-
+import { cardsMarkup, openContent } from './layout/home/content.js';
+import { aboutTheBrand_parsing, openAboutTheBrand } from './layout/home/aboutTheBrand.js';
 export function homeRender() {
   updateBin();
-  refs.mainEL.innerHTML = '';
-  getHome();
-}
-function getHome() {
   const homeMarkup = home({
     pageHeroSliderMarkup,
+    cardsMarkup,
     pageShowroomSliderMarkup,
     formBrand,
     pageStarClientsSliderMarkup,
     pageInInstagramSliderMarkup,
+    aboutTheBrand_parsing,
   });
+  refs.mainEL.innerHTML = homeMarkup;
 
-  refs.mainEL.insertAdjacentHTML('beforeend', homeMarkup);
   heroSlider();
+  openContent();
   showroomSlider();
   starClientsSlider();
   starClientsComments();
   instagramSlider();
   blockHelpRender();
   formFittingInShowroom();
+  openAboutTheBrand();
 }
-getHome(); //========================================================call
+homeRender(); //========================================================call
 //=====brand========//
 import brand_page from '../views/layouts/brand.hbs';
 import {
@@ -56,7 +57,7 @@ export function brandRender() {
     contactsContact,
     videoBrand,
   });
-  refs.mainEL.insertAdjacentHTML('beforeend', contactPageMarkUp);
+  refs.mainEL.innerHTML = contactPageMarkUp;
   formFittingInShowroom();
   infoAboutBrand();
   brandPlayer();
@@ -70,9 +71,9 @@ import { backdropMarkup } from './layout/checkout/thanksForOrdering.js';
 import payment_checkout from '../views/layouts/checkout.hbs';
 export function checkoutRender() {
   updateBin();
-  refs.mainEL.innerHTML = '';
   const createCheckout = payment_checkout({ createPayment, ordering, backdropMarkup });
-  refs.mainEL.insertAdjacentHTML('beforeend', createCheckout);
+  refs.mainEL.innerHTML = createCheckout;
+  //refs.mainEL.insertAdjacentHTML('beforeend', createCheckout);
   openOrderingFunction();
   const modalOpen = new ModalData({
     idInputDay: 'js-day',
@@ -90,7 +91,6 @@ import contact_page from '../views/layouts/contact.hbs';
 import { contactsMap, contactsContact } from './layout/contact/contact.js';
 
 export function contactRender() {
-  
   const contactPageMarkUp = contact_page({ formBrand, contactsMap, contactsContact });
   refs.mainEL.innerHTML = contactPageMarkUp;
   //refs.mainEL.insertAdjacentHTML('beforeend', contactPageMarkUp);
@@ -109,7 +109,7 @@ import {
   questionDelivery,
 } from './layout/delivery/deliveryTypes.js';
 
-function deliveryRender() {
+export function deliveryRender() {
   const deliveryPageMarkUp = deliveryMarkUp({
     buttonsDelivery,
     mainImageDelivery,
@@ -117,17 +117,17 @@ function deliveryRender() {
     questionDelivery,
     formDeliveryMarkUp,
   });
-  refs.mainEL.insertAdjacentHTML('beforeend', deliveryPageMarkUp);
+  refs.mainEL.innerHTML = deliveryPageMarkUp;
   formDelivery();
   deliveryThreeModal();
 }
 
- deliveryRender(); //========================================================call
+//deliveryRender(); //========================================================call
 
 //=====favorites========//
 export function favoritesRender() {}
 
-//=====fitting========//
+//=====product========//
 
 import sizeTable_markup from '../views/layouts/fitting.hbs';
 import { sizeTable_tableCreate } from './layout/fitting/sizeTable.js';
@@ -138,34 +138,38 @@ import {
   videoSlider_videoSliderCreate,
 } from './layout/fitting/videoSlider.js';
 
-function fittingRender() {
+export function fittingRender() {
   const fittingMarkUp = sizeTable_markup({
     sizeTable_tableCreate,
     videoSlider_videoSliderCreate,
     informationAboutFitting_informationCreate,
     formBrand,
   });
-  refs.mainEL.insertAdjacentHTML('beforeend', fittingMarkUp);
+  refs.mainEL.innerHTML = fittingMarkUp;
   openVideoSlider();
   // fittingVideoSliderPlayer();
   formFittingInShowroom();
 }
- //fittingRender(); //============================================================call
+//fittingRender(); //============================================================call
 
 //=====product========//
-import productFunctions from './layout/product/infoAboutProduct.js'
+import {
+  setProductSlider,
+  callProductPageFunctional,
+  createFullMarkup,
+} from './layout/product/infoAboutProduct.js';
 import ProductModalAddToCart from './layout/product/productModalAddToCart.js';
 import RecomendationsCategory from './layout/product/recomendationsCategory.js';
 import cards from './json/catalog.json';
 import productMarkup from '../views/layouts/product.hbs';
 import HandSewn from './layout/product/productHandSewn.js';
 import backdropMarkupTempl from '../views/components/backdrop.hbs';
+
+import modalFormMarkupTempl from '../views/components/thanksForOrdering.hbs';
 import { preorderMark, setEventPreorder } from './layout/product/preorderModal.js';
 import { tryOnModels, setEventTryOnModels } from './layout/product/tryOnModelsModal.js';
 
-const { createAllListeners, createFullMarkup } = productFunctions;
-
-function productRender() {
+export function productRender() {
   const objRecomendationsCategory = new RecomendationsCategory({
     data: cards,
   });
@@ -186,22 +190,23 @@ function productRender() {
       },
     ],
   });
-
-  const modalFormMarkup = objProductModalAddToCart.getMarkup();
+  const modalFormMarkupOrder = modalFormMarkupTempl();
+  const modalFormMarkup = modalFormMarkupOrder + objProductModalAddToCart.getMarkup();
   const backdropMarkup = backdropMarkupTempl(modalFormMarkup);
   const obj = {
-    infoAboutProduct: createFullMarkup(),
+    infoAboutProduct: createFullMarkup,
     recomendationCategory: objRecomendationsCategory.getMarkup(),
     handSewn: objHandSewn.getMarkup(),
     backdrop: backdropMarkup,
     modalPreorder: preorderMark,
     tryOnModels: tryOnModels,
   };
-  refs.mainEL.insertAdjacentHTML('beforeend', productMarkup(obj));
-  // refs.mainEL.innerHTML = productMarkup(obj);
-
-  createAllListeners();
+  // refs.mainEL.insertAdjacentHTML('beforeend', productMarkup(obj));
+  refs.mainEL.innerHTML = productMarkup(obj);
+  setProductSlider();
+  callProductPageFunctional(objProductModalAddToCart.show);
   document.querySelector('.form__button-сlose').style.display = 'none';
+  document.querySelector('.ordering__form').style.display = 'none';
   objRecomendationsCategory.setSlider();
   objRecomendationsCategory.setEvent();
   objHandSewn.setEvent();
@@ -209,7 +214,6 @@ function productRender() {
   objProductModalAddToCart.setSlider();
   setEventPreorder();
   setEventTryOnModels();
-  // objProductModalAddToCart.show('ЖАКЕТ-СМОКИНГ С ЛАЦКАНМИ'); // show modal window - call the listener on the button
 }
 
 // productRender(); //========================================================call
@@ -224,9 +228,9 @@ import {
   videoSetPlayer,
 } from './layout/reviews/videoSet.js';
 
-function reviewsRender() {
+export function reviewsRender() {
   const reviewsMarkUp = reviews_page({ setVideoHbs, clientStar, formReviewsMarkUp });
-  refs.mainEL.insertAdjacentHTML('beforeend', reviewsMarkUp);
+  refs.mainEL.innerHTML = reviewsMarkUp;
   videosetSlickSettings();
   starClientsSlider();
   starClientsComments();
@@ -239,10 +243,9 @@ function reviewsRender() {
 //=====showroom========//
 import showroom_page from '../views/layouts/showroom.hbs';
 export function showroomRender() {
-  refs.mainEL.innerHTML = '';
   const showroomPageMarkUp = showroom_page({ formBrand, pageShowroomSliderMarkup });
-  refs.mainEL.insertAdjacentHTML('beforeend', showroomPageMarkUp);
-  +showroomSlider();
+  refs.mainEL.innerHTML = showroomPageMarkUp;
+  showroomSlider();
   formFittingInShowroom();
 }
 //showroomRender(); //========================================================call===================
@@ -254,3 +257,18 @@ function blockHelpRender() {
   refs.mainEL.insertAdjacentHTML('beforeend', blockHelp_blockHelpTemplate());
   blockHelpRenderOpen();
 }
+
+//======catalog=========//
+import catalogMarkUp from '../views/layouts/catalog.hbs';
+import { filterListMakeup, openFilter } from './layout/сatalog/filter.js';
+import { catalogListMarkup, openCategory } from './layout/сatalog/gallery.js';
+
+export function catalogRender() {
+  const filterGalleryCatalogMarkup = catalogMarkUp({ filterListMakeup, catalogListMarkup });
+  refs.mainEL.innerHTML = filterGalleryCatalogMarkup;
+  openFilter();
+  openCategory();
+
+  // console.log(filterGalleryCatalogMarkup);
+}
+//catalogRender(); //========================================================call
