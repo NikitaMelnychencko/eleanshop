@@ -57,7 +57,7 @@ export function brandRender() {
     contactsContact,
     videoBrand,
   });
-  refs.mainEL.insertAdjacentHTML('beforeend', contactPageMarkUp);
+  refs.mainEL.innerHTML = contactPageMarkUp;
   formFittingInShowroom();
   infoAboutBrand();
   brandPlayer();
@@ -127,7 +127,7 @@ export function deliveryRender() {
 //=====favorites========//
 export function favoritesRender() {}
 
-//=====fitting========//
+//=====product========//
 
 import sizeTable_markup from '../views/layouts/fitting.hbs';
 import { sizeTable_tableCreate } from './layout/fitting/sizeTable.js';
