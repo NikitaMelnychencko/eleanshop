@@ -1,6 +1,7 @@
 import markupBin from '../../../views/partials/product/productBin.hbs';
 import dataBin from '../../json/orderinginsertion.json';
 import { checkoutRender } from '../../call-list.js';
+import { scrollTo } from '../../components/blockHelp/blockHelp.js';
 
 export default class ProductBin {
   constructor({ root, typeInsert, data = dataBin }) {
@@ -22,16 +23,15 @@ export default class ProductBin {
       this.data = JSON.parse(dataLS);
     } else {
       this.data = this.dataBin;
-
-      this.data.forEach(el => {
-        const arr = el.label.price.split('');
-        for (let i = arr.length - 3; i > 0; i -= 3) {
-          arr.splice(i, 0, ' ');
-        }
-        el.label.priceTxt = arr.join('') + '<span> &#8372;</span>';
-        localStorage.setItem('orderingData', JSON.stringify(this.data));
-      });
     }
+    this.data.forEach(el => {
+      const arr = String(el.label.price).split('');
+      for (let i = arr.length - 3; i > 0; i -= 3) {
+        arr.splice(i, 0, ' ');
+      }
+      el.label.priceTxt = arr.join('') + ' &#8372;';
+      localStorage.setItem('orderingData', JSON.stringify(this.data));
+    });
   };
 
   _createMarkup = () => {
@@ -95,7 +95,6 @@ export default class ProductBin {
   };
 
   _onTotal = () => {
-    console.log(this.data);
     const n = this.data.reduce((total, el) => {
       return (total += Number(el.label.price) * Number(el.label.count));
     }, 0);
@@ -108,7 +107,7 @@ export default class ProductBin {
 
   _onCloseModal = () => {
     this.self.classList.add('hidden');
-    document.body.style.overflow = 'scroll';
+    document.body.style.overflow = 'auto';
     this._deleteEvent();
   };
 
@@ -116,6 +115,7 @@ export default class ProductBin {
     this._onCloseModal();
     //function of clicking on the Checkout button
     checkoutRender();
+    scrollTo(0, 700);
   };
 
   _setEvent = () => {
@@ -187,7 +187,7 @@ export default class ProductBin {
     this.counter = [...document.querySelectorAll('.product-bin__product-count')];
     this.deleteBtn = [...document.querySelectorAll('.product-bin__button-del')];
     this.buttonClose = document.querySelectorAll('.js-close-modal');
-    this.buttonNext = document.querySelector('.js-next');
+    this.buttonNext = document.querySelector('.js-next-bin');
     this.totalPrice = document.querySelector('.product-bin__total-price');
     this._onTotal();
     this._setEvent();

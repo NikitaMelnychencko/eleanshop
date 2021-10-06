@@ -12,14 +12,13 @@
   transition: opacity $time-cubic, visibility $time-cubic;
 
   &.is-hidden {
-    // visibility: hidden;
-    // opacity: 0;
-    // pointer-events: none;
     @extend %hide;
   }
 
-  &.is-hidden .modal {
-    transform: translate(-50%, -50%) scale(0.8);
+  @media screen and (min-width: $desktop-up) {
+    &.is-hidden .modal {
+      transform: translate(-50%, -50%) scale(0.8);
+    }
   }
 }
 
@@ -27,9 +26,12 @@
   position: relative;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(1);
 
-  transition: opacity $time-cubic, transform $time-cubic;
+  @media screen and (min-width: $desktop-up) {
+    transform: translate(-50%, -50%) scale(1);
+
+    transition: opacity $time-cubic, transform $time-cubic;
+  }
 }
 
 .form__button-сlose {
@@ -72,18 +74,18 @@
     padding-right: 12px;
   }
 
-  @media screen and (max-width: $mobile-general) {
-    &-text {
+  &-text {
+    @media screen and (max-width: $desktop-up - 1px) {
+      display: none;
+    }
+    @media screen and (min-width: $desktop-up) {
+      display: block;
       position: absolute;
       border: 0;
-
       white-space: nowrap;
-
       clip-path: inset(100%);
       clip: rect(0 0 0 0);
-
       overflow: hidden;
-
       width: 1px;
       height: 1px;
       margin: -1px;
@@ -95,7 +97,6 @@
     width: 20px;
     height: 20px;
     fill: $selection-text-color;
-
     .form__button-сlose:hover &,
     .form__button-сlose:focus & {
       fill: $secondary-text-color;

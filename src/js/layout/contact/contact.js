@@ -1,12 +1,5 @@
-import refs from '../../refs/refs';
-import contactsTemplate from '../../../views/layouts/contact.hbs';
 import contact_map from '../../../views/partials/contact/map.hbs';
 import contacts_contact from '../../../views/partials/contact/contact.hbs';
-import form_fitting_in_showroom from '../../../views/partials/brand/formFittingInShowroom.hbs';
 import contactsData from '../../json/contacts.json';
-const { mainEL } = refs;
-const contactsMap = contact_map();
-const formFittingInShowroom = form_fitting_in_showroom();
-const contactsContact = contacts_contact(contactsData[0]);
-const contactsMarkup = contactsTemplate({ contactsMap, contactsContact, formFittingInShowroom });
-mainEL.insertAdjacentHTML('beforeend', contactsMarkup);
+export const contactsMap = contact_map();
+export const contactsContact = contacts_contact(contactsData[0]);

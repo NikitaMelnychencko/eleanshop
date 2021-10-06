@@ -1,3 +1,68 @@
-import createTable from '../../../views/partials/fitting/sizeTable.hbs';
-const body = document.querySelector('body');
-body.innerHTML = createTable;
+<h3 class='fitting__minor-title'>ВИДЕО ПРИМЕРОК</h3>
+<div class='fitting__video-slider-container'>
+
+  <div class='splide'>
+    <div class='splide__track'>
+
+      <div class='slider'>
+        {{#each this}}
+          <div class='slider__item'>
+            <div class='video-fitting__link'>
+              <div class='video-fitting-box'>
+                <video class='fitting__video' src='{{video}}' poster='{{poster}}' preload='none'>
+                </video>
+                <svg class='video-fitting-svg' name='play'>
+                  <use href='./images/exampl.svg#icon-play-video'> </use>
+                </svg>
+                <svg class='video-fitting-fullscreen' name='fullscreen'>
+                  <use href='./images/exampl.svg#icon-fullscreen'> </use>
+                </svg>
+              </div>
+            </div>
+          </div>
+        {{/each}}
+
+        {{!  
+        <div class='slider__item'>
+          <video class='fitting__first-video' controls src='https://imgur.com/Pq7hxWp.mp4'>
+          </video>
+        </div>
+
+        <div class='slider__item'>
+          <video class='fitting__video' controls src='https://imgur.com/gIzK9ab.mp4'>
+          </video>
+        </div>
+
+        <div class='slider__item'>
+          <video class='fitting__video' controls src='https://imgur.com/Pq7hxWp.mp4'>
+          </video>
+        </div>
+        <div class='slider__item'>
+          <video class='fitting__video' controls src='https://imgur.com/Pq7hxWp.mp4'>
+          </video>
+        </div>
+        <div class='slider__item'>
+          <video class='fitting__video' controls src='https://imgur.com/gIzK9ab.mp4'>
+          </video>
+        </div>
+        <div class='slider__item'>
+          <video class='fitting__video' controls src='https://imgur.com/Pq7hxWp.mp4'>
+          </video>
+        </div>
+        <div class='slider__item'>
+          <video class='fitting__video' controls src='https://imgur.com/Pq7hxWp.mp4'>
+          </video>
+        </div>
+        <div class='slider__item'>
+          <video class='fitting__video' controls src='https://imgur.com/gIzK9ab.mp4'>
+          </video>
+        </div>
+        <div class='slider__item'>
+          <video class='fitting__video' controls src='https://imgur.com/Pq7hxWp.mp4'>
+          </video>
+        </div> }}
+
+      </div>
+    </div>
+  </div>
+</div>

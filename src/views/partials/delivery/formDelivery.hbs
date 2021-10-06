@@ -1,0 +1,64 @@
+<div class='form-delivery'>
+  <svg class='form-delivery__icon'>
+    <use href='./images/exampl.svg#icon-delivery-ask-question'></use>
+  </svg>
+  <h4 class='form-delivery__title'>Задать вопрос</h4>
+  <form class='form-delivery__form' action='#' id='contactFormInputs'>
+    <div class='form-delivery__horiz-block'>
+      <label class='form-delivery__input-box'>
+        <span class='form-delivery__input-wrapper star-form-delivery'>
+          <input
+            type='text'
+            name='name'
+            class='form-delivery__input'
+            minlength='2'
+            required
+            placeholder='Введите имя'
+          />
+        </span>
+      </label>
+      <label class='form-delivery__input-box'>
+        <span class='form-delivery__input-wrapper star-form-delivery'>
+          <input
+            type='tel'
+            name='tel'
+            class='form-delivery__input form-delivery__input-center'
+            required
+            pattern='[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}'
+            placeholder='Введите телефон'
+          />
+        </span>
+      </label>
+      <label class='form-delivery__input-box'>
+        <span class='form-delivery__input-wrapper star-form-delivery'>
+          <input
+            type='text'
+            name='time'
+            class='form-delivery__input'
+            required
+            placeholder='Введите удобное время'
+          />
+        </span>
+      </label>
+    </div>
+    <div class='form-delivery__horiz-block'>
+      <label class='form-delivery__comment-box'>
+        <textarea
+          type='text'
+          name='comment'
+          class='form-delivery__comment'
+          minlength='2'
+          required
+          placeholder='Добавить комментарий'
+        ></textarea>
+      </label>
+      <div class='form-delivery__button'>
+        <button class='form-delivery__send-btn-text' type='submit'>
+          Отправить
+        </button>
+      </div>
+    </div>
+    <div>
+    </div>
+  </form>
+</div>
