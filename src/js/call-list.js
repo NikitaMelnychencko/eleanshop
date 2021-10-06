@@ -109,7 +109,7 @@ import {
   questionDelivery,
 } from './layout/delivery/deliveryTypes.js';
 
-function deliveryRender() {
+export function deliveryRender() {
   const deliveryPageMarkUp = deliveryMarkUp({
     buttonsDelivery,
     mainImageDelivery,

@@ -1,8 +1,7 @@
 import refs from '../../refs/refs.js';
-import collection from '../../json/static/linkingPagesDesktopOnClick.json'
 import { scrollTo } from '../../components/blockHelp/blockHelp';
+import { formFittingInShowroom } from '../../layout/fitting/formFittingInShowroom';
 import { brandRender, productRender, contactRender, reviewsRender, deliveryRender, favoritesRender, showroomRender, checkoutRender } from '../../call-list';
-import { formFittingInShowroom } from '../../layout/brand/formFittingInShowroom';
 import { id } from 'postcss-selector-parser';
 import { indexOf } from 'lodash';
 const {
@@ -16,26 +15,13 @@ const {
     desktop,
     linkMenuFooterDesktop,
     linkMenuFooterMobile,
-    showroomLink,
-    contactLinkDesktop,
-    deliveryLink,
-    reviewsLinkDesktop,
-    brandRenderMobile, fittingInShowroom } = refs
+} = refs
 
 checkBoxIcon.addEventListener('click', onAgreeCheckBox)
 mobileSubmitBtn.addEventListener('submit', onSubmitBtnMobile)
 desktopSubmitBtn.addEventListener('submit', onSubmitBtnDesktop)
 
-//===вызов функции таргета ===//
-
-// deliveryLink.addEventListener('click', deliveryRender);
-showroomLink.addEventListener('click', showroomRender);
-contactLinkDesktop.addEventListener('click', contactRender);
-reviewsLinkDesktop.addEventListener('click', reviewsRender);
-brandRenderMobile.addEventListener('click', brandRender);
-fittingInShowroom.addEventListener('.click', formFittingInShowroom);
-
-//===включение плавной прокрутки на  desktop
+//=== smooth scrolling on  desktop
 desktop.forEach((evt) => {
     evt.addEventListener('click', (el) => {
         scrollTo(0, 700);
@@ -44,32 +30,31 @@ desktop.forEach((evt) => {
     });
 });
 
-//=== Прослушивание меню Footer__Desktop по id и запись в LockalStorage===//
+//=== addEventListener Footer__Desktop on dataAction and LockalStorage===//
 linkMenuFooterDesktop.forEach((evt) => {
-    const idlinkDesktop = evt.id
+    const idlinkDesktop = evt.textContent
     evt.addEventListener('click', (el) => {
-        const selected = el.target;
+        const selected = el.target.dataset.atribute;
         if (selected) {
             localStorage.setItem(idlinkDesktop, selected)
         }
     });
 });
 
-//=== Прослушивание меню Footer__Mobile по id и запись в LockalStorage===//
+//=== addEventListener Footer__Mobile on id and LockalStorage===//
 linkMenuFooterMobile.forEach((evt) => {
-    const idlinkMobile = evt.dataset.atribute
+    const idlinkMobile = evt.textContent
+    console.log(idlinkMobile)
     evt.addEventListener('click', (el) => {
-        const selected = el.target;
+        const selected = el.target.dataset.atribute;
+        console.log(selected)
         if (selected) {
-            console.log(selected)
             localStorage.setItem(idlinkMobile, selected)
         }
     });
-
-
 });
 
-// === раскрытия списка-меню === 
+// === drop-down menu-list ===
 closeOpenPlus.forEach((evt) => {
     evt.addEventListener('click', (el) => {
         const idMuneClickMobile = evt.id;
@@ -101,7 +86,7 @@ closeOpenPlus.forEach((evt) => {
     });
 });
 
-//==== Скрытие меню при переходе на другой блок
+//==== Hiding the menu when switching to another block
 linkMenuFooterMobile.forEach((evt) => {
     evt.addEventListener('click', (el) => {
         scrollTo(0, 700);
@@ -117,7 +102,7 @@ linkMenuFooterMobile.forEach((evt) => {
 
 });
 
-// Активация деактивация чекбокса
+// Activation deactivation checkbox
 function onAgreeCheckBox(evt) {
     const iconCheck = evt.currentTarget
     if (iconCheck) {
@@ -125,7 +110,7 @@ function onAgreeCheckBox(evt) {
     }
 }
 
-// Назначение localStorage на input mobile
+// Appointment localStorage on input mobile
 inputStorageMobile.forEach((evt) => {
 
     evt.addEventListener('input', (el) => {
@@ -137,7 +122,7 @@ inputStorageMobile.forEach((evt) => {
 });
 
 
-// Назначение localStorage на input desktop
+// Appointment localStorage на input desktop
 inputStorageDesktop.forEach((evt) => {
     const idInputDesktop = evt.id
     evt.addEventListener('input', (el) => {
@@ -149,7 +134,7 @@ inputStorageDesktop.forEach((evt) => {
     });
 });
 
-//   сброс localStorage на input mobile
+//   Remuve localStorage on input mobile
 function onSubmitBtnMobile(evt) {
     evt.preventDefault();
     evt.currentTarget.reset()
@@ -157,7 +142,7 @@ function onSubmitBtnMobile(evt) {
 
 }
 
-//   сброс localStorage на input desktop
+//   Remuve localStorage on input desktop
 function onSubmitBtnDesktop(evt) {
     evt.preventDefault();
     evt.currentTarget.reset()
@@ -165,6 +150,78 @@ function onSubmitBtnDesktop(evt) {
     localStorage.removeItem('email');
 
 }
+
+const dataActionCollectio = document.querySelectorAll('[data-atribute]')
+
+dataActionCollectio.forEach((evt) => {
+    evt.addEventListener('click', (el) => {
+        console.log(el.target.dataset)
+        const targetLink = el.target.dataset.atribute
+        //==== MobileRender ===//
+
+        //==== catalogRender ===//
+        if (targetLink === 'autumn-winter' || targetLink === 'evening-sets' || targetLink === 'edding-and-graduation' || targetLink === 'the-tuxedo' || targetLink === 'costumes' || targetLink === 'pants' || targetLink === 'blouses') {
+            console.log('catalog')
+            return catalogRender()
+        }
+
+        //==== brandRender ===//
+        if (targetLink === 'about-the-brand' || targetLink === 'about-founders' || targetLink === 'blog') {
+            console.log('brandRender');
+            return brandRender();
+        }
+        //==== showroomRender ===//
+        if (targetLink === 'showroom') {
+            console.log('showroomRender');
+            return showroomRender();
+        }
+
+        //==== deliveryRender ===//
+        if (targetLink === 'delivery' || targetLink === 'return' || targetLink === 'payment') {
+            console.log('deliveryRender');
+            return deliveryRender();
+        }
+
+        //==== showroomRender ===//
+        if (targetLink === 'showroom' || targetLink === 'showroom') {
+            console.log('showroomRender');
+            return showroomRender();
+        }
+
+        //==== formFittingInShowroom ===//
+        if (targetLink === 'fitting') {
+            console.log('formFittingInShowroom');
+            return formFittingInShowroom();
+        }
+
+        //==== reviewsRender ===//
+        if (targetLink === 'reviews') {
+            console.log('reviewsRender');
+            return reviewsRender();
+        }
+
+        //==== renderDesktop ===//
+
+        //==== DeliveryRender ===//
+        if (targetLink === 'Delivery' || targetLink === 'Payment' || targetLink === 'Return') {
+            console.log('deliveryRender: Desktop')
+            return deliveryRender();
+        }
+
+        //==== FittingRender ===//
+        if (targetLink === 'Fitting') {
+            console.log('formFittingInShowroom: Desktop')
+            return formFittingInShowroom();
+        }
+        //==== ContactsRender ===//
+        if (targetLink === 'Contacts') {
+            console.log('contactRender: Desktop')
+            return contactRender();
+        }
+    })
+
+});
+
 
 
 

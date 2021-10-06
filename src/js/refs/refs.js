@@ -5,11 +5,9 @@ export default {
   form: document.querySelector('.js-question-form'),
   textarea: document.querySelector('.js-question-form textarea'),
   inputname: document.querySelector('.input-name'),
-
   bodyEl: document.querySelector('body'),
   mainEL: document.querySelector('main'),
   delheadnav: document.querySelector('.js-nav-product'),
-
   main: document.querySelector('main'),
   bodyEl: document.querySelector('body'),
   mainEL: document.querySelector('main'),
@@ -36,18 +34,7 @@ export default {
   bodyEl: document.querySelector('body'),
   mainEL: document.querySelector('main'),
   setList: document.querySelector('.js-videoset'),
-  showroomLink: document.querySelector('#footer-mobile-showroom'),
-  contactLinkDesktop: document.querySelector('[data-atribute="Contacts"]'),
-  deliveryLink: document.querySelector('[data-atribute="Delivery"]'),
-  reviewsLinkDesktop: document.querySelector('[data-atribute="reviews"]'),
-  brandRenderMobile: document.querySelector('[data-atribute="about-the-brand"]'),
-  fittingInShowroom: document.querySelector('[data-atribute="fitting"]'),
 
-
-
-
-  // catalogNewmEl: document.querySelector('#header-catalog-new'),
-  // favoritesEl: document.querySelector('#header-favorites'),
 
   // videobox: document.querySelector('.js-videobox'),
   // overlay: document.querySelector('.videobox__overlay'),
