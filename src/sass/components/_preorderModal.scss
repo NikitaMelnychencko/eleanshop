@@ -1,9 +1,14 @@
 // ============= PRE-ORDER MODAL ======================
 
 .preorder {
-  width: 394px;
-
-  margin: 0 auto;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  @media screen and (min-width: $mobile-general) {
+    top: 10%;
+    width: 394px;
+  }
   padding: 70px 20px;
 
   background-color: $primary-background-color;
@@ -11,6 +16,47 @@
   @media screen and (min-width: $desktop-up) {
     width: 1017px;
     padding: 70px 120px;
+  }
+}
+
+.preoder__close-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: $button-hover-background-color;
+  background-image: url(../images/crossTryOnModal.svg);
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  background-position: center;
+cursor: pointer;
+  @media screen and (min-width: $desktop-up) {
+    transform: translateY(-100%);
+    width: 120px;
+    height: 25px;
+    background-position: 95px 3px;
+    padding: 7px 10px;
+  }
+}
+.preoder__close-button-text {
+  display: none;
+  @media screen and (min-width: $desktop-up) {
+    display: flex;
+    align-items: center;
+    color: $selection-text-color;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+  &:after {
+    content: '';
+    width: 23px;
+    height: 1px;
+    background-color: $primary-background-color;
+    margin-left: 5px;
   }
 }
 
@@ -36,7 +82,7 @@
   margin-bottom: 20px;
 
   text-transform: uppercase;
-  font-family: $third-font-family;
+  font-family: $third-font-family,sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.44;
@@ -55,7 +101,9 @@
 }
 
 .preorder__text-column:first-child {
+  margin-bottom: 23px;
   @media screen and (min-width: $desktop-up) {
+    margin-bottom: 0;
     margin-right: 23px;
   }
 }
@@ -66,7 +114,11 @@
   font-family: $selection-font-family;
   font-size: 18px;
   line-height: 1.28;
+  & + .preorder__text{
+    margin-top: 22px;
+  }
 }
+
 
 .contacts {
   margin-top: 27px;
@@ -96,7 +148,7 @@
 .preorder__amount {
   margin-bottom: 36px;
 
-  font-family: $selection-font-family;
+  font-family: $selection-font-family,sans-serif;
   font-size: 19px;
   line-height: 1.21;
   color: $third-text-color;

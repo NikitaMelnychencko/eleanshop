@@ -37,10 +37,13 @@
 //product
 @import './layout/product/infoAboutProduct';
 @import './layout/product/recomendationsCategory';
-@import './layout/product/productCreateInfo';
+@import './layout/product/productSlider';
 @import './layout/product/productHandSewn';
 @import './layout/product/productModalAddToCart';
 @import './layout/product/productBin';
+@import './components/orderForm';
+@import './components/preorderModal';
+@import './components/tryOnModelsModal';
 //delivery
 @import './layout/delivery/filter';
 @import './layout/delivery/deliveryTypes';
@@ -56,7 +59,8 @@
 @import './layout/contact/contact';
 //fitting
 @import './layout/fitting/informationAboutFitting';
-@import './layout/fitting/sizeTable';
+@import './components/sizeChose';
+@import './components/sizeTable';
 @import './layout/fitting/videoSlider';
 @import './layout/fitting/formFittingInShowroom';
 //brand

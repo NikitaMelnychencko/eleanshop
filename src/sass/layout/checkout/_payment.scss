@@ -1,56 +1,56 @@
 //delivery
-.form__method-ordering--flex{
-  margin-bottom: 60px;
+.form__method-ordering--flex {
   @media screen and(min-width: $desktop-up) {
     display: flex;
-    justify-content: space-between
+    justify-content: space-between;
   }
 }
 .delivery__title,
 .basic-information__title,
-.payment-method__title{
+.payment-method__title {
   margin-bottom: 30px;
-  font-family: $third-font-family,sans-serif;
+  font-family: $third-font-family, sans-serif;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.11;
   letter-spacing: 0.05em;
   color: $secondary-text-color;
 }
-.basic-information{
+.basic-information {
   margin-bottom: 37px;
   .information-for-user,
-  &{
+  & {
     @media screen and(min-width: $desktop-up) {
       width: 690px;
     }
-  } 
+  }
 }
 
 .delivery-method,
-.payment-method{
+.payment-method {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   @media screen and(min-width: $desktop-up) {
     width: 690px;
   }
-  
+  & span {
+    cursor: pointer;
+  }
 }
 .delivery-method__item,
-.payment-method__item{
+.payment-method__item {
   display: flex;
   align-items: center;
   margin-bottom: 25px;
-  
 }
 
 .delivery-method__text,
-.payment-method__text{
+.payment-method__text {
   display: flex;
   align-items: center;
   position: relative;
-  &::after{
+  &::after {
     position: absolute;
     display: none;
     content: '';
@@ -61,9 +61,8 @@
     width: 12px;
     background-color: $secondary-accent-btn-color;
     border-radius: 100%;
-    
   }
-  &::before{
+  &::before {
     display: block;
     content: '';
     height: 28px;
@@ -72,12 +71,27 @@
     border: 1px solid $third-border-color;
     border-radius: 100%;
   }
-  
+}
+.delivery-method__form-radio:checked + .delivery-method__text::after {
+  display: block;
+}
+
+.delivery-method__form-radio:checked:focus + .delivery-method__text::before {
+  outline: 2px solid #2196f3;
+}
+
+.payment-method__form-radio:checked + .payment-method__text::after {
+  display: block;
+}
+
+.payment-method__form-radio:checked:focus + .payment-method__text::before {
+  outline: 2px solid #2196f3;
 }
 .basic-information__text {
   display: flex;
   align-items: center;
   position: relative;
+  cursor: pointer;
 
   &::after {
     position: absolute;
@@ -89,8 +103,6 @@
     height: 10px;
     width: 10px;
     background-color: $secondary-accent-btn-color;
-    
-
   }
 
   &::before {
@@ -100,59 +112,61 @@
     width: 26px;
     margin-right: 10px;
     border: 1px solid $third-border-color;
-    
   }
   .basic-information__checkbox:checked + &::after {
     display: block;
   }
-
-}
-.delivery-method__form-radio:checked + .delivery-method__text::after {
-    display: block;
-}
-.payment-method__form-radio:checked + .payment-method__text::after {
-  display: block;
+  .basic-information__checkbox:focus + &::before,
+  .basic-information__checkbox:checked:focus + &::before {
+    outline: 2px solid #2196f3;
+  }
 }
 
 .delivery-method__text,
-.payment-method__text{
+.payment-method__text {
   font-size: 17px;
   line-height: 1.35;
 }
 .delivery-method__item:last-child,
-.payment-method__item:last-child{
+.payment-method__item:last-child {
   margin-bottom: 0px;
 }
 
-.delivery-method__item:nth-child(2){
+.delivery-method__item:nth-child(2) {
   @media screen and(min-width: $mobile-general) {
     margin-left: 46px;
   }
-
 }
-.showroom-method{
+.showroom-method {
   display: none;
 
-  &--hide{
+  &--hide {
     display: flex;
     flex-direction: column;
-    margin-top:50px;
+    margin-top: 50px;
     @media screen and(min-width: $desktop-up) {
       flex-direction: row;
     }
   }
 }
-.showroom-method__item input{
+.showroom-method__item input {
   width: 100%;
   height: 50px;
   padding: 14px 18px 11px 18px;
-
+  border: 1px solid $secondary-border-color;
   @media screen and(min-width: $desktop-up) {
     width: 335px;
   }
-
+  &::placeholder {
+    font-family: $third-font-family, sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 2.08;
+    letter-spacing: 0.06em;
+    color: $form-text-color;
+  }
 }
-.showroom-method__item{
+.showroom-method__item {
   position: relative;
 }
 .showroom-method__item::after {
@@ -161,61 +175,59 @@
   right: 16px;
   transform: translate(-50%, -50%) rotate(0deg);
   display: block;
-  content: " ";
+  content: ' ';
   width: 14px;
   height: 7px;
   background: url('../images/murkup_arow.svg') 0 0 /100% no-repeat;
 
-
   .extra & {
-    transform:translate(-50%, -50%) rotate(-180deg);
+    transform: translate(-50%, -50%) rotate(-180deg);
   }
 }
-.showroom-method__item + .showroom-method__item{
+.showroom-method__item + .showroom-method__item {
   margin-top: 19px;
   @media screen and(min-width: $desktop-up) {
     margin-top: 0;
     margin-left: 19px;
   }
-  
 }
-.showroom-list{
-  
+.showroom-list {
   box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.15);
-  
-  &--hide{
+
+  &--hide {
     display: none;
   }
-  
+  .showroom-method__item input:focus & {
+    display: block;
+  }
 }
 
-.showroom-list__item{
+.showroom-list__item {
   position: relative;
   display: flex;
   align-items: center;
   height: 42px;
   padding: 12px 0 12px 39px;
-  font-family: $third-font-family,sans-serif;
+  font-family: $third-font-family, sans-serif;
   font-weight: 500;
   font-size: 12px;
   line-height: 3.33;
   letter-spacing: 0.06em;
   color: $form-text-color;
 
-  &:hover{
+  &:hover {
     background-color: $accent-background-selector-color;
   }
-  & span{
+  & span {
     padding-right: 8px;
   }
-  
 }
-.showroom-list__icon-murkup{
+.showroom-list__icon-murkup {
   display: none;
   width: 8px;
   height: 6px;
-  fill:$primary-svg-color;
-  .showroom-list__item:hover &{
+  fill: $primary-svg-color;
+  .showroom-list__item:hover & {
     position: absolute;
     height: 21px;
     left: 16px;
@@ -224,30 +236,53 @@
 }
 
 //basic-information
-.basic-information{
+.basic-information {
   margin-top: 37px;
 }
-.basic-information input,
-.basic-information textarea{
+.basic-information label {
   width: 100%;
-  height: 60px;
-  padding: 20px 0 20px 12px;
+  display: block;
+  position: relative;
   margin-bottom: 13px;
+  &:not(:nth-last-child(-n + 2))::before {
+    position: absolute;
+    top: 30px;
+    right: 12px;
+    transform: translate(-50%, -50%);
+    content: '*';
+    font-family: $third-font-family, sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.39;
+    color: $form-text-color;
+    display: block;
+  }
+}
 
+.basic-information input,
+.basic-information textarea {
+  width: 100%;
+  padding: 16px 0 16px 18px;
+  font-family: $third-font-family, sans-serif;
   font-weight: 500;
   font-size: 13px;
   line-height: 1.92;
   letter-spacing: 0.06em;
-
+  border: 1px solid $secondary-border-color;
   color: $secondary-text-color;
+  &::placeholder {
+    font-size: 12px;
+    line-height: 2.08;
+    color: $form-text-color;
+  }
 }
 .basic-information textarea {
   height: 130px;
   padding: 13px 0 0 12px;
   margin-bottom: 18px;
-
+  resize: none;
 }
-.basic-information__text{
+.basic-information__text {
   font-weight: 500;
   font-size: 13px;
   line-height: 1.38;
@@ -255,16 +290,15 @@
 }
 
 //payment-method
-.payment{
+.payment {
   padding-bottom: 31px;
   border-bottom: 1px solid $border-color;
   margin-bottom: 24px;
 }
 
-
 .delivery-method input[type='radio'],
 .payment-method__item input[type='radio'],
-.basic-information input[type='checkbox']{
+.basic-information input[type='checkbox'] {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -276,56 +310,59 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-.delivery-method__icon-check{
+.delivery-method__icon-check {
   height: 28px;
   width: 28px;
   margin-right: 10px;
   border: 1px solid $third-border-color;
   border-radius: 50%;
-
- }
-
+}
 
 //total
-.total{
+.total {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 30px;
-  
 }
 .total__text,
-.total__value{
+.total__value {
   font-weight: 500;
   font-size: 18px;
   line-height: 1.11;
   color: $secondary-text-color;
 }
 //description
-.description{
+.description {
   display: none;
+
   @media screen and(min-width: $desktop-up) {
     display: block;
     margin-top: 30px;
     width: 550px;
   }
 }
-.description-images{
+
+.description-images {
   display: flex;
   justify-content: flex-end;
   margin-bottom: 37px;
 }
-.description__text{
+
+.description__text {
   display: block;
   padding-right: 36px;
-  line-height: 1.53;  
+  line-height: 1.53;
 }
-.description__text+.description__text{
+
+.description__text+.description__text {
   margin-top: 30px;
 }
-.total--flex{
+
+.total--flex {
   display: flex;
 }
-.card-image--no-gap{
+
+.card-image--no-gap {
   background-color: $menu-background-color;
 }

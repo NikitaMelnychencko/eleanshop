@@ -3,22 +3,24 @@
   top: 0;
   right: 0;
   z-index: 999;
-  width: 384px;
+  max-width: 384px;
+  width: 100%;
   height: auto;
   max-height: calc(100vh - 50px);
   padding: 46px 20px 50px;
   background-color: $selection-text-color;
   overflow: scroll;
-  // transform: translateY(150%);
   transition: $time-cubic;
+  opacity: 1;
 
   &.hidden {
     // @extend %hide;
-    transform: translateY(-250%);
+    transform: translateY(-100%);
+    opacity: 0;
   }
 
   @media screen and (min-width: $desktop-up) {
-    width: 640px;
+    max-width: 640px;
     padding: 46px 46px 50px;
   }
 
@@ -119,7 +121,7 @@
   &__button-del {
     color: $secondary-text-color;
     padding: 10px 14px;
-    border: none;
+    border: transparent;
     background-color: transparent;
     text-decoration-line: underline;
 
@@ -132,7 +134,7 @@
       &:focus {
         color: $selection-text-color;
         background-color: $secondary-text-color;
-        border: none;
+        border: 1px solid $secondary-text-color;
       }
     }
   }
@@ -161,5 +163,8 @@
 
   &__ordered {
     width: 100%;
+  }
+  &__product-price {
+    white-space: nowrap;
   }
 }

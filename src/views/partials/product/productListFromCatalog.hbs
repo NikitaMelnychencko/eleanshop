@@ -3,11 +3,11 @@
     <li class='recomendation-category__item slider__item'>
       <a href='./' class='recomendation-category__link' data-id="{{id}}">
         <picture>
-          <source srcset="{{image.srcset}}" media='(min-width: 1920px)' />
-          {{#if image.srcset-mobile}}
-            <source srcset="{{image.srcset-mobile}}" media='(max-width: 414px)' />
+          <source srcset="{{img.srcset}}" media='(min-width: 1920px)' />
+          {{#if img.srcset-mobile}}
+            <source srcset="{{img.srcset-mobile}}" media='(max-width: 414px)' />
           {{/if}}
-          <img src="{{image.src}}" alt="{{image.alt}}" class='recomendation-category__image' />
+          <img src="{{img.src}}" alt="{{img.alt}}" class='recomendation-category__image' />
         </picture>
       </a>
       <div class='recomendation-category__card-text'>
@@ -15,15 +15,15 @@
           <h3 class='recomendation-category__item-title'>
             {{name}}
           </h3>
-          <button class='button-add-likes'>
+          <button class='button-add-likes {{#if likes}} active{{/if}} js-btn-like' data-id="{{id}}">
             <svg class='button-add-likes__icon'>
-              <use href="{{icon}}"></use>
+              <use href='./images/icon-product-delivery.svg#icon-heart'></use>
             </svg>
           </button>
         </div>
         <div class='recomendation-category__block-characters'>
           <span class='recomendation-category__price'>
-            {{price}}
+            {{productPrice}}
             <span>
               ₴
             </span>

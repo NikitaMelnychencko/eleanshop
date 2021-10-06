@@ -40,8 +40,6 @@
 <symbol id="header-bin" viewBox="0 0 29 32">
 <path
         fill="none"
-        stroke="#333"
-        style="stroke: var(--color2, #333)"
         stroke-linejoin="miter"
         stroke-linecap="butt"
         stroke-miterlimit="3.8637"
@@ -50,23 +48,15 @@
       />
 <path
         fill="none"
-        stroke="#333"
-        style="stroke: var(--color2, #333)"
         stroke-linejoin="miter"
         stroke-linecap="butt"
         stroke-miterlimit="3.8637"
         stroke-width="1.4545"
         d="M8.571 7.547c0 0 0 0.255 0-2.066 0-2.32 1.756-4.2 3.921-4.2s3.921 1.88 3.921 4.2 0 2.066 0 2.066"
       />
-<path
-        fill="#e1c4a9"
-        style="fill: var(--color3, #e1c4a9)"
-        d="M5.469 6.548h22.895v23.793h-22.895v-23.793z"
-      />
+<path d="M5.469 6.548h22.895v23.793h-22.895v-23.793z" />
 <path
         fill="none"
-        stroke="#000"
-        style="stroke: var(--color4, #000)"
         stroke-linejoin="miter"
         stroke-linecap="butt"
         stroke-miterlimit="3.8637"
@@ -75,8 +65,6 @@
       />
 <path
         fill="none"
-        stroke="#333"
-        style="stroke: var(--color2, #333)"
         stroke-linejoin="miter"
         stroke-linecap="butt"
         stroke-miterlimit="3.8637"
@@ -121,21 +109,6 @@
       />
 <path
         d="M1.647 1.329c-0.432-0.344-1.061-0.273-1.405 0.158s-0.273 1.061 0.158 1.405l1.247-1.564zM35.772 31.1c0.432 0.344 1.061 0.273 1.405-0.158s0.273-1.061-0.158-1.405l-1.247 1.564zM0.4 2.893l35.372 28.207 1.247-1.564-35.372-28.207-1.247 1.564z"
-      />
-</symbol>
-<symbol id="header-logo-e" viewBox="0 0 27 32">
-<path
-        d="M4.772 28.998l-3.575 2.004v0.417h23.888l1.162-7.985-0.195-0.022-4.917 7.069h-11.73v-14.704h6.633l2.631 4.127h0.375v-9.080h-0.375l-2.631 4.015h-6.633v-13.899h10.231l3.777 7.047h0.202v-7.985h-22.418v0.417l3.575 2.026v26.555z"
-      />
-</symbol>
-<symbol id="header-arrow-right" viewBox="0 0 19 32">
-<path
-        d="M0.818 28.112c-0.588 0.588-0.588 1.542 0 2.13s1.542 0.588 2.13 0l-2.13-2.13zM15.059 16l1.065 1.065 1.065-1.065-1.065-1.065-1.065 1.065zM2.947 1.759c-0.588-0.588-1.542-0.588-2.13 0s-0.588 1.542 0 2.13l2.13-2.13zM2.947 30.241l13.176-13.177-2.13-2.13-13.176 13.176 2.13 2.13zM16.124 14.935l-13.176-13.176-2.13 2.13 13.176 13.176 2.13-2.13z"
-      />
-</symbol>
-<symbol id="header-arrow-bottom" viewBox="0 0 54 32">
-<path
-        d="M6.61 1.39c-1-1-2.621-1-3.62 0s-1 2.621 0 3.62l3.62-3.62zM27.2 25.6l-1.81 1.81 1.81 1.81 1.81-1.81-1.81-1.81zM51.41 5.010c1-1 1-2.621 0-3.62s-2.621-1-3.62 0l3.62 3.62zM2.99 5.010l22.4 22.4 3.62-3.62-22.4-22.4-3.62 3.62zM29.010 27.41l22.4-22.4-3.62-3.62-22.4 22.4 3.62 3.62z"
       />
 </symbol>
 <symbol id="header-facebook1" viewBox="0 0 15 32">
