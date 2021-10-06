@@ -76,11 +76,23 @@ padding-right: 20px;
   .fitting__section {
     padding-top: 68px;
     padding-bottom: 451px;
-    background: url('./images/elean47390.jpg') 0 0 /100% no-repeat;
+      background-image: url('./images/elean47390.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
     background-color: $primary-background-color;
-    overflow: hidden;
-  }
 
+      
+  }
+  @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+      .fitting__section {
+        background-image: url('./images/elean47390@2x.jpg');
+      }
+    }
   .fitting__size-table {
     background-color: $third-background-color;
     padding: 35px;
