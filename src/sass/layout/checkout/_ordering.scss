@@ -92,7 +92,7 @@
   margin-right: 0;
   margin-left: auto;
 
-  @media screen and (min-width: $mobile-first) and (max-width: $mobile-general) {
+  @media screen and (min-width: $mobile-first) and (max-width: 415px) {
     display: inline-block;
   }
   @media screen and (min-width: $mobile-general) {
@@ -159,6 +159,7 @@
   left: 0;
   max-height: 115px;
   overflow-y: auto;
+  z-index: 500;
 
   box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.15);
 }
@@ -268,7 +269,8 @@
   }
 
   @media screen and (min-width: $desktop-up) {
-    margin: 0 18px 0 52px;
+    margin: 0 18px 0 42px;
+    min-width: 82px;
   }
 }
 .ordering__price:after,
