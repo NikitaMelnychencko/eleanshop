@@ -1,40 +1,19 @@
-import getRefs from '../../refs/refs.js'
-import Backdrop from '../../components/backdrop.js';
-import backdropMarkupTempl from '../../../views/components/backdrop.hbs';
-import modalFormMarkupTempl from '../../../views/partials/fitting/sizeChose.hbs';
-import size from '../../json/sizeChose.json';
 import createMarkup from '../../../views/partials/fitting/sizeChose.hbs';
+//import Backdrop from '../../components/backdrop.js';
 
-let throttle = require('lodash.throttle');
+function createMarkupModalSize(json) {
+ return createMarkup(createBtn(json));
+};
 
-function onBtnClick() {
-  const backdropRef = document.querySelector('[data-modal]');
-  const { mainEL } = getRefs;
-  if (backdropRef === null) {
-    const modalFormMarkup = modalFormMarkupTempl();
-    const backdropMarkup = backdropMarkupTempl(createMarkup(createBtn(size)));
- 
-    mainEL.insertAdjacentHTML('beforeend', backdropMarkup);
-    window.addEventListener('resize', throttle(onResize, 50));
-
-    const btnSize = document.querySelector('.size-chose__size-list');
-
+function sizeListener(){
+   const btnSize = document.querySelector('.size-chose__size-list');
     btnSize.addEventListener('click', value => {
       if (value.target.nodeName === 'BUTTON')
       {
         sendingValue( value.target.textContent);
       }
     });
-  }
-  const backdrop = new Backdrop();
-  onResize();
-}
-function onResize(event) {
-  let backdropRef = document.querySelector('[data-modal]');
-  const right = (backdropRef.clientWidth - backdropRef.children[0].children[1].clientWidth) / 2;
-  const btnCloseRef = document.querySelector('.form__button-сlose');
-  btnCloseRef.style.right = `${right}px`;
-}
+};
 //function for creating dice of clothing sizes
 function createBtn(json) {
   const Array = json.size
@@ -75,4 +54,4 @@ function save(key, value) {
     console.error('Set state error: ', err);
   }
 }
-export default {onBtnClick, createBtn};
+export default {createMarkupModalSize, sizeListener, createBtn};
