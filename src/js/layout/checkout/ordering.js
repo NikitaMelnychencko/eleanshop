@@ -6,12 +6,11 @@ import '../../../images/img/red-suit.jpg';
 import promocodes from '../../json/promocode.json';
 import orderingInsertion from '../../json/orderinginsertion.json';
 
-localStorage.setItem('orderingData', JSON.stringify(orderingInsertion));
+// localStorage.setItem('orderingData', JSON.stringify(orderingInsertion));
 const savedData = localStorage.getItem('orderingData');
 const parsedData = JSON.parse(savedData);
-// console.log(parsedData)
 
-export const ordering = ordering_ordering({ parsedData, orderingInsertion });
+export const ordering = ordering_ordering(parsedData);
 
 export function openOrderingFunction() {
   const orderingApplyBtn = document.querySelector('.ordering__btn--promocode');
@@ -19,8 +18,20 @@ export function openOrderingFunction() {
   const orderingDiscount = document.querySelector('.ordering__discount--value');
   const orderingTotal = document.querySelector('.ordering__total');
   const cards = document.querySelector('.ordering__cards');
+  const priceSpans = document.querySelectorAll('.ordering__price')
+  const counterSpans = document.querySelectorAll('.ordering__value')
+  const binValue = document.querySelector('.js-counter')
 
+  window.onload = updatePriceSpans();
   window.onload = renewTotalPriceWithDiscount();
+
+  function updatePriceSpans() {
+    [...priceSpans].forEach(price => {
+      let counterValue = price.parentElement.querySelector('.ordering__value').innerText
+      price.textContent = Number(counterValue) * Number(price.innerText)
+    })
+  }
+
   cards.addEventListener('click', setQuantityOrRemove);
   orderingApplyBtn.addEventListener('click', countTotalPriceWithDiscount);
 
@@ -36,6 +47,7 @@ export function openOrderingFunction() {
 
       priceSpan.textContent = totalPricePerItem;
       renewTotalPriceWithDiscount();
+
     } else if (e.target.classList.contains('ordering__btn--minus')) {
       let checker = orderingDecrement(e);
       let priceSpan = e.target.parentElement.nextElementSibling;
@@ -56,16 +68,43 @@ export function openOrderingFunction() {
   function orderingIncrement(e) {
     let value = e.target.previousElementSibling.textContent;
     e.target.previousElementSibling.textContent = Number(value) + 1;
+    value = Number(value) + 1
+
+    setValueInLocalStorage(e, value)
+    updateTotalValueInBin();
+  }
+
+  function updateTotalValueInBin() {
+    let countersTotalValue = [...counterSpans].reduce(
+      (totalPrices, counterSpans) => totalPrices + Number(counterSpans.innerText),
+      0,
+    );
+    binValue.textContent = countersTotalValue
+
   }
 
   function orderingDecrement(e) {
     let value = e.target.nextElementSibling.textContent;
     if (Number(value) > 1) {
       e.target.nextElementSibling.textContent = Number(value) - 1;
+
+      value = Number(value) - 1
+
+      setValueInLocalStorage(e, value)
+      updateTotalValueInBin();
+
       return true;
     } else {
       return false;
     }
+  }
+
+  function setValueInLocalStorage(e, value) {
+    const articleId = e.target.closest('.ordering__card').getAttribute('id');
+    const article = parsedData.find(obj => obj.label.id === articleId)
+
+    article.label.count = value
+    localStorage.setItem('orderingData', JSON.stringify(parsedData));
   }
 
   function removeOrderingCard(e) {
@@ -104,7 +143,6 @@ export function openOrderingFunction() {
       finalPrice = totalPrice;
       orderingTotal.textContent = finalPrice;
     }
-
     return finalPrice;
   }
 
@@ -128,10 +166,22 @@ export function openOrderingFunction() {
     items.forEach(item => item.addEventListener('click', onColorClick));
   }
 
-  function onColorClick() {
+  function onColorClick(e) {
     const colorItemValue = this.innerHTML;
     const colorInput = this.parentElement.parentElement.firstElementChild.firstElementChild;
     const item = this;
     colorInput.innerHTML = colorItemValue;
+
+    const articleId = colorInput.closest('.ordering__card').getAttribute('id');
+    const article = parsedData.find(obj => obj.label.id === articleId);
+    if (e.target.classList.contains('js-size')) {
+      article.label.sizeSelected = colorItemValue;
+    } else if (e.target.classList.contains('js-color')) {
+        let circleLink = colorInput.querySelector('.ordering__circle--color').getAttribute('href');
+      article.label.сolorSelected = this.innerText;
+      article.label.circleSelected = circleLink;
+    }  
+    localStorage.setItem('orderingData', JSON.stringify(parsedData));
+    e.target.parentElement.classList.toggle('ordering-list--hide');
   }
 }

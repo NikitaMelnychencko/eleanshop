@@ -1,5 +1,5 @@
 // Try on Modal ("ХОТИТЕ ПРИМЕРИТЬ ДАННУЮ МОДЕЛЬ ПЕРЕД ПОКУПКОЙ? ЛЕГКО!")
-
+import Backdrop from '../../components/backdrop';
 import tryOnModelsModal from '../../../views/components/tryOnModelsModal.hbs';
 import orderForm from '../../../views/components/orderForm.hbs';
 import refs from '../../refs/refs';
@@ -85,5 +85,15 @@ function onButtonSubmitClick(event) {
       }
     });
     onButtonCloseModalClick();
+
+    let backdropRef = document.querySelector('[data-modal]');
+    backdropRef.classList.remove('is-hidden');
+    const modalForm = document.querySelector('.ordering__form');
+    modalForm.style.display = 'block';
+    const right = (backdropRef.offsetWidth - modalForm.offsetWidth) / 2;
+    const btnCloseRef = document.querySelector('.form__button-сlose');
+    btnCloseRef.style.display = 'block';
+    btnCloseRef.style.right = `${right}px`;
+    const backdrop = new Backdrop();
   }
 }

@@ -314,7 +314,7 @@ import '../../images/svg/tryOnModal/stylist.svg';
 import '../../images/svg/tryOnModal/time.svg';
 
 //=============delivery=====================
-import '../../images/img/elean62862_1.jpeg';
+import '../../images/img/elean62862_1.jpg';
 import '../../images/svg/Group.svg';
 import '../../images/img/checkout/payment/buyers.jpg';
 import '../../images/img/checkout/payment/buyers@2x.jpg';
