@@ -1,9 +1,5 @@
 import createMarkup from '../../../views/partials/fitting/sizeChose.hbs';
-//import Backdrop from '../../components/backdrop.js';
-
-function createMarkupModalSize(json) {
- return createMarkup(createBtn(json));
-};
+import Backdrop from '../../components/backdrop.js';
 
 function sizeListener(){
    const btnSize = document.querySelector('.size-chose__size-list');
@@ -40,8 +36,8 @@ function createBtn(json) {
   return Array;
 }
 //function that returns a string with the size on the card that you selected
-function sendingValue(id, value) {
-  save(`sizeClose_id-${id}`, value);
+function sendingValue(value) {
+  save(`sizeClose`, value);
   const backdrop = new Backdrop()
   .closeModalForm();
 }
@@ -54,4 +50,4 @@ function save(key, value) {
     console.error('Set state error: ', err);
   }
 }
-export default {createMarkupModalSize, sizeListener, createBtn};
+export default {createMarkup, sizeListener, createBtn};
