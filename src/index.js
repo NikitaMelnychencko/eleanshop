@@ -17,6 +17,7 @@ import './js/layout/сatalog/filter.js';
 import './js/layout/сatalog/gallery.js';
 //product
 import './js/layout/product/infoAboutProduct.js';
+// import './js/layout/product/productCreateInfo.js';
 import './js/layout/product/productSlider.js';
 import './js/layout/product/productBin.js';
 import './js/layout/product/recomendationsCategory.js';
@@ -44,7 +45,8 @@ import './js/layout/showroom/showroom.js';
 import './js/layout/contact/contact.js';
 //fitting
 import './js/layout/fitting/informationAboutFitting.js';
-import './js/layout/fitting/sizeTable.js';
+import './js/components/sizeTable.js';
+import './js/components/sizeChose.js';
 import './js/layout/fitting/videoSlider.js';
 import './js/layout/fitting/formFittingInShowroom.js';
 //brand
@@ -64,6 +66,8 @@ import './js/components/backdrop.js';
 //test
 import './js/test/test_productHandSewn.js';
 import './js/test/backdropTest.js';
+import './js/test/testSizeTable.js';
+import './js/test/testSizeChose';
 import './js/test/test_infoAboutProduct.js';
 
 //blockHelp
