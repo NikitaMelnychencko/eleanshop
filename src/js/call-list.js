@@ -158,7 +158,7 @@ function fittingRender() {
 fittingRender();
 
 //=====product========//
-import { callProductPageFunctional, createFullMarkup } from './layout/product/infoAboutProduct.js'
+import { callProductPageFunctional, createFullMarkup } from './layout/product/infoAboutProduct.js';
 import ProductModalAddToCart from './layout/product/productModalAddToCart.js';
 import RecomendationsCategory from './layout/product/recomendationsCategory.js';
 import cards from './json/catalog.json';
@@ -192,7 +192,7 @@ function productRender() {
     ],
   });
   const modalFormMarkupOrder = modalFormMarkupTempl();
-  // const modalFormMarkup = modalFormMarkupOrder + objProductModalAddToCart.getMarkup();
+  const modalFormMarkup = modalFormMarkupOrder + objProductModalAddToCart.getMarkup();
   const backdropMarkup = backdropMarkupTempl(modalFormMarkup);
   const obj = {
     infoAboutProduct: createFullMarkup,
