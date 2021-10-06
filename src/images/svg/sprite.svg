@@ -22,6 +22,10 @@
 <path fill="none" stroke="#fff" style="stroke: var(--color2, #fff)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2.9091" d="M59.27 4.593l18.852 10.884-18.852 10.884v-21.769z"></path>
 <path fill="none" stroke="#fff" style="stroke: var(--color2, #fff)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2.9091" d="M60.669 16.165h-60.243"></path>
 </symbol>
+<symbol id="icon-delete" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">>
+<path d="M1 14L14 1" stroke="#C5C0C0"/>
+<path d="M14 14L1 1" stroke="#C5C0C0"/>
+</symbol>
 <symbol id="icon-hanger" viewBox="0 0 36 32">
 <path fill="none" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.1333" d="M14.933 20.267c-4.298 3.255-12.8 10.667-12.8 10.667h32l-15.059-13.078c1.443-1.4 4.214-4.861 5.365-6.543 2.071-3.027 0.769-9.178-6.024-9.179-7.341-0-7.624 7.128-5.459 9.862"></path>
 </symbol>

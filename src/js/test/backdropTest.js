@@ -26,7 +26,7 @@ function onBtnClick(event) {
 
 function onResize(event) {
   let backdropRef = document.querySelector('[data-modal]');
-  const right = (backdropRef.clientWidth - backdropRef.children[0].children[1].clientWidth) / 2;
+  const right = (backdropRef.clientWidth - backdropRef.children[0].children[1].offsetWidth) / 2;
   const btnCloseRef = document.querySelector('.form__button-сlose');
   btnCloseRef.style.right = `${right}px`;
 }

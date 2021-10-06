@@ -34,6 +34,8 @@ export default {
   bodyEl: document.querySelector('body'),
   mainEL: document.querySelector('main'),
   setList: document.querySelector('.js-videoset'),
+  numRef: document.querySelector('.product-list__text'),
+
   // ----- header-start ------
   headerEl: document.querySelector('.js-header'),
   buttonMobEl: document.querySelector('.js-header-button'),

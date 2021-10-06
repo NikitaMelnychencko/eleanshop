@@ -1,5 +1,6 @@
 import refs from './refs/refs.js';
 import updateBin from './updateBin.js';
+
 updateBin();
 
 //======home======//
@@ -85,7 +86,26 @@ export function checkoutRender() {
   blockHelpRender();
 }
 
-//=====contact========//
+//=====favorites========//
+import Favorites from './layout/favorites/favorites.js';
+// import favorit from './json/favorites.json';
+
+export function favoritesRender() {
+  // let data = {};
+  // data['fav'] = [...favorit];
+  // localStorage.setItem('favorites', JSON.stringify(data));
+
+  // console.log('!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1');
+  const favorites = new Favorites();
+  // favorites.updateCount.bind(favorites);
+
+  refs.mainEL.innerHTML = favorites.markcup;
+  favorites.init();
+}
+let data = localStorage.getItem('favorites');
+data = JSON.parse(data);
+refs.numRef.innerHTML = data['fav'].length;
+//=====fitting========//
 
 import contact_page from '../views/layouts/contact.hbs';
 import { contactsMap, contactsContact } from './layout/contact/contact.js';
@@ -123,14 +143,8 @@ export function deliveryRender() {
 }
 
 //deliveryRender(); //========================================================call
-
-//=====favorites========//
-export function favoritesRender() {}
-
-//=====product========//
-
 import sizeTable_markup from '../views/layouts/fitting.hbs';
-import { sizeTable_tableCreate } from './layout/fitting/sizeTable.js';
+import sizeTableMarcup from './components/sizeTable.js';
 import { informationAboutFitting_informationCreate } from './layout/fitting/informationAboutFitting.js';
 import {
   openVideoSlider,
@@ -140,7 +154,7 @@ import {
 
 export function fittingRender() {
   const fittingMarkUp = sizeTable_markup({
-    sizeTable_tableCreate,
+    sizeTableMarcup,
     videoSlider_videoSliderCreate,
     informationAboutFitting_informationCreate,
     formBrand,
