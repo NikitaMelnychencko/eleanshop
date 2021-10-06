@@ -15,8 +15,8 @@ import {
   starClientsComments,
 } from './layout/home/starClients.js';
 import { pageInInstagramSliderMarkup, instagramSlider } from './layout/home/inInstagram.js';
-import { cardsMarkup, openContent } from './layout/home/content.js'
-import { aboutTheBrand_parsing, openAboutTheBrand } from './layout/home/aboutTheBrand.js'
+import { cardsMarkup, openContent } from './layout/home/content.js';
+import { aboutTheBrand_parsing, openAboutTheBrand } from './layout/home/aboutTheBrand.js';
 export function homeRender() {
   updateBin();
   refs.mainEL.innerHTML = '';
@@ -30,7 +30,7 @@ export function getHome() {
     formBrand,
     pageStarClientsSliderMarkup,
     pageInInstagramSliderMarkup,
-    aboutTheBrand_parsing
+    aboutTheBrand_parsing,
   });
 
   refs.mainEL.insertAdjacentHTML('beforeend', homeMarkup);
@@ -95,7 +95,6 @@ import contact_page from '../views/layouts/contact.hbs';
 import { contactsMap, contactsContact } from './layout/contact/contact.js';
 
 export function contactRender() {
-
   const contactPageMarkUp = contact_page({ formBrand, contactsMap, contactsContact });
   refs.mainEL.innerHTML = contactPageMarkUp;
   //refs.mainEL.insertAdjacentHTML('beforeend', contactPageMarkUp);
@@ -143,7 +142,7 @@ import {
   videoSlider_videoSliderCreate,
 } from './layout/fitting/videoSlider.js';
 
-function fittingRender() {
+export function fittingRender() {
   const fittingMarkUp = sizeTable_markup({
     sizeTable_tableCreate,
     videoSlider_videoSliderCreate,
@@ -157,14 +156,18 @@ function fittingRender() {
 }
 //fittingRender(); //============================================================call
 
+fittingRender();
+
 //=====product========//
-import { callProductPageFunctional, createFullMarkup } from './layout/product/infoAboutProduct.js'
+import { callProductPageFunctional, createFullMarkup } from './layout/product/infoAboutProduct.js';
 import ProductModalAddToCart from './layout/product/productModalAddToCart.js';
 import RecomendationsCategory from './layout/product/recomendationsCategory.js';
 import cards from './json/catalog.json';
 import productMarkup from '../views/layouts/product.hbs';
 import HandSewn from './layout/product/productHandSewn.js';
 import backdropMarkupTempl from '../views/components/backdrop.hbs';
+
+import modalFormMarkupTempl from '../views/components/thanksForOrdering.hbs';
 import { preorderMark, setEventPreorder } from './layout/product/preorderModal.js';
 import { tryOnModels, setEventTryOnModels } from './layout/product/tryOnModelsModal.js';
 
@@ -189,8 +192,8 @@ function productRender() {
       },
     ],
   });
-
-  const modalFormMarkup = objProductModalAddToCart.getMarkup();
+  const modalFormMarkupOrder = modalFormMarkupTempl();
+  const modalFormMarkup = modalFormMarkupOrder + objProductModalAddToCart.getMarkup();
   const backdropMarkup = backdropMarkupTempl(modalFormMarkup);
   const obj = {
     infoAboutProduct: createFullMarkup,
@@ -205,6 +208,7 @@ function productRender() {
 
   callProductPageFunctional(objProductModalAddToCart.show);
   document.querySelector('.form__button-сlose').style.display = 'none';
+  document.querySelector('.ordering__form').style.display = 'none';
   objRecomendationsCategory.setSlider();
   objRecomendationsCategory.setEvent();
   objHandSewn.setEvent();
