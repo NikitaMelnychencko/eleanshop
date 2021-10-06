@@ -4,9 +4,8 @@ import Backdrop from '../../components/backdrop.js';
 function sizeListener(){
    const btnSize = document.querySelector('.size-chose__size-list');
     btnSize.addEventListener('click', value => {
-      if (value.target.nodeName === 'BUTTON')
-      {
-        sendingValue( value.target.textContent);
+      if (value.target.nodeName === 'BUTTON') {
+        sendingValue(value.target.textContent);
       }
     });
 };

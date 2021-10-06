@@ -1,0 +1,97 @@
+.size-table {
+  &__modal-container {
+    padding: 66px 20px 66px 20px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-color: $primary-background-color;
+
+    @media screen and (min-width: $mobile-general) {
+      min-width: 400px;
+      max-width: 792px;
+      max-height: 562px;
+    }
+    @media screen and (min-width: $mobile-only) {
+      padding: 66px 120px 66px 107px;
+    }
+  }
+  &__standart {
+    margin-bottom: 32px;
+    font-family: $third-font-family;
+    font-size: 20px;
+    line-height: 1.15;
+    letter-spacing: 0.05em;
+    text-align: center;
+    font-weight: 500;
+    color: $primary-text-color;
+
+    @media screen and (min-width: $mobile-general) {
+      font-size: 30px;
+      line-height: 1.1;
+      text-align: left;
+      letter-spacing: 0.03em;
+    }
+  }
+  &__table {
+    display: grid;
+    border-collapse: collapse;
+    min-width: 100%;
+    grid-template-columns:
+      minmax(85px, 1fr) minmax(55px, 1fr) minmax(55px, 1fr)
+      minmax(55px, 1fr) minmax(55px, 1fr);
+
+    &:nth(:first-child) {
+      grid-auto-rows: 59px;
+    }
+
+    @media screen and (min-width: $mobile-general) {
+      grid-template-columns:
+        minmax(85px, 1fr) minmax(85px, 1fr) minmax(85px, 1fr)
+        minmax(85px, 1fr) minmax(85px, 1fr);
+    }
+    & > thead,
+    tbody,
+    tr {
+      display: contents;
+    }
+    & > thead > tr > th,
+    td {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    & > thead > tr > th {
+      position: sticky;
+      top: 0;
+      padding-bottom: 12px;
+      text-align: left;
+      font-family: $third-font-family;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 1.11;
+    }
+    & > tbody > tr > td {
+      padding-top: 19px;
+      padding-bottom: 21px;
+
+      border-top: 1px solid $table-border-color;
+
+      font-family: $third-font-family;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 1.47;
+
+      letter-spacing: 0.05em;
+      & > span {
+        display: inline-block;
+        background: #000000;
+        color: $table-border-color;
+        padding: 0 3px;
+        min-width: 65px;
+      }
+    }
+  }
+}
