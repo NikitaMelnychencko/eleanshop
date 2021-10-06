@@ -85,6 +85,7 @@ function onButtonSubmitClick(event) {
         localStorage.setItem(input.name, input.value);
       }
     });
+    onButtonCloseModalClick();
   }
   onButtonCloseModalClick();
 
