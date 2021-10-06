@@ -3,7 +3,7 @@ import './js/importImages/importImages.js';
 import './js/call-list.js';
 import './js/updateBin.js';
 //=========layout===============
-// ./js/components
+
 //main
 import './js/layout/home/hero.js';
 import './js/layout/home/content.js';
@@ -46,6 +46,7 @@ import './js/layout/contact/contact.js';
 //fitting
 import './js/layout/fitting/informationAboutFitting.js';
 import './js/components/sizeTable.js';
+import './js/components/sizeChose.js';
 import './js/layout/fitting/videoSlider.js';
 import './js/layout/fitting/formFittingInShowroom.js';
 //brand
@@ -66,6 +67,7 @@ import './js/components/backdrop.js';
 import './js/test/test_productHandSewn.js';
 import './js/test/backdropTest.js';
 import './js/test/testSizeTable.js';
+import './js/test/testSizeChose';
 import './js/test/test_infoAboutProduct.js';
 
 //blockHelp
