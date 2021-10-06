@@ -1,647 +1,4826 @@
 [
   {
+    "added": "1",
     "id": "Card-1",
-    "name": "/ Жакет-смокинг с лацканами",
-    "icon": "../../images/svg/catalog/catalog.svg#icon-gallery-card-heart",
-    "description": "Подчеркнет линию талии",
-    "image": {
-      "srcset": "./images/card-1 1x, ./images/card-1@2x.jpg 2x",
-      "src": "./images/card-1",
+    "image": [
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-1.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-a nd-vest-mobile-1@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-2.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-2@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-2.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-3.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-3@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-3.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-4.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-4@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-4.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-4@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      }
+    ],
+    "img": {
+      "srcset": "./images/card-1.jpg 1x, ./images/card-1@2x.jpg 2x",
+      "src": "./images/card-1.jpg",
       "alt": "Жакет-смокинг с лацканами"
     },
-    "price": "23 900 ",
-    "category": ["Смокинги", "Новинки"],
-    "collection": []
+    "name": "/ Жакет-смокинг с лацканами",
+    "icon": "./images/catalog.svg#icon-gallery-card-heart",
+    "description": "Подчеркнет линию талии",
+    "productName": "Классический комплект со смокингом и желетом",
+    "productPrice": 65300,
+    "category": [
+      "Смокинги",
+      "Новинки"
+    ],
+    "collection": [],
+    "size": [
+      {
+        "40": true
+      },
+      {
+        "42": true
+      },
+      {
+        "44": true
+      },
+      {
+        "46": true
+      },
+      {
+        "48": false
+      },
+      {
+        "50": false
+      }
+    ],
+    "color": [
+      {
+        "colorName": "black",
+        "colorHex": "#242424"
+      },
+      {
+        "colorName": "red",
+        "colorHex": "#F2404A"
+      },
+      {
+        "colorName": "grey",
+        "colorHex": "#E2DFDF"
+      },
+      {
+        "colorName": "blue",
+        "colorHex": "#38548A"
+      }
+    ],
+    "productDescription": "Приталенный силуэт и заостренные лацканы подчеркивают линию талии, визуально корректируя фигуру до желанной всем 'песочные часы'. Классика женского смокинга, которую одобрил бы сам Ив Сен Лоран.",
+    "productComposition": " 98% шерсть, 2% эластан, отделка шелком",
+    "productParams": [
+      {
+        "params": "Вид застежки:",
+        "value": "Пуговица, обтянутая атласом"
+      },
+      {
+        "params": "Длина изделия:",
+        "value": "По спинке 69 см"
+      },
+      {
+        "params": "Крой:",
+        "value": "Приталенный"
+      },
+      {
+        "params": "Рисунок:",
+        "value": "Без рисунка"
+      },
+      {
+        "params": "Тип карманов:",
+        "value": "Прорезные 'листочки'"
+      },
+      {
+        "params": "Конструктивные элементы:",
+        "value": "Рельефные швы"
+      },
+      {
+        "params": "Материал подкладки",
+        "value": "Вискоза 100%"
+      },
+      {
+        "params": "Уход за вещами:",
+        "value": "Химчистка"
+      }
+    ]
   },
-
   {
+    "added": "2",
     "id": "Card-2",
-    "name": "/ Классический комплект с смокингом...",
-    "icon": "../../images/svg/catalog/catalog.svg#icon-gallery-card-heart",
-    "description": "Подчеркнет линию талии",
-    "image": {
-      "srcset": "./images/card-2 1x, ./images/card-2@2x.jpg 2x",
-      "src": "./images/card-2",
+    "image": [
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-1.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-1@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-2.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-2@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-2.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-3.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-3@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-3.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-4.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-4@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-4.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-4@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      }
+    ],
+    "img": {
+      "srcset": "./images/card-2.jpg 1x, ./images/card-2@2x.jpg 2x",
+      "src": "./images/card-2.jpg",
       "alt": " Классический комплект с смокингом..."
     },
-    "price": "65 300 ",
-    "category": ["Смокинги"],
-    "collection": ["Осень-зима 20-21"]
+    "name": "/ Классический комплект с смокингом...",
+    "icon": "./images/catalog.svg#icon-gallery-card-heart",
+    "description": "Подчеркнет линию талии",
+    "productName": "Классический комплект со смокингом и желетом",
+    "productPrice": 65300,
+    "category": [
+      "Смокинги"
+    ],
+    "collection": [
+      "Осень-зима 20-21"
+    ],
+    "size": [
+      {
+        "40": true
+      },
+      {
+        "42": true
+      },
+      {
+        "44": true
+      },
+      {
+        "46": true
+      },
+      {
+        "48": false
+      },
+      {
+        "50": false
+      }
+    ],
+    "color": [
+      {
+        "colorName": "black",
+        "colorHex": "#242424"
+      },
+      {
+        "colorName": "red",
+        "colorHex": "#F2404A"
+      },
+      {
+        "colorName": "grey",
+        "colorHex": "#E2DFDF"
+      },
+      {
+        "colorName": "blue",
+        "colorHex": "#38548A"
+      }
+    ],
+    "productDescription": "Приталенный силуэт и заостренные лацканы подчеркивают линию талии, визуально корректируя фигуру до желанной всем 'песочные часы'. Классика женского смокинга, которую одобрил бы сам Ив Сен Лоран.",
+    "productComposition": " 98% шерсть, 2% эластан, отделка шелком",
+    "productParams": [
+      {
+        "params": "Вид застежки:",
+        "value": "Пуговица, обтянутая атласом"
+      },
+      {
+        "params": "Длина изделия:",
+        "value": "По спинке 69 см"
+      },
+      {
+        "params": "Крой:",
+        "value": "Приталенный"
+      },
+      {
+        "params": "Рисунок:",
+        "value": "Без рисунка"
+      },
+      {
+        "params": "Тип карманов:",
+        "value": "Прорезные 'листочки'"
+      },
+      {
+        "params": "Конструктивные элементы:",
+        "value": "Рельефные швы"
+      },
+      {
+        "params": "Материал подкладки",
+        "value": "Вискоза 100%"
+      },
+      {
+        "params": "Уход за вещами:",
+        "value": "Химчистка"
+      }
+    ]
   },
   {
+    "added": "3",
     "id": "Card-3",
-    "name": "/ Белый жакет смокинг",
-    "icon": "../../images/svg/catalog/catalog.svg#icon-gallery-card-heart",
-    "description": "Подчеркнет линию талии",
-    "image": {
-      "srcset": "./images/card-3 1x, ./images/card-3@2x.jpg 2x",
-      "src": "./images/card-3",
+    "image": [
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-1.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-1@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-2.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-2@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-2.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-3.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-3@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-3.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-4.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-4@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-4.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-4@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      }
+    ],
+    "img": {
+      "srcset": "./images/card-3.jpg 1x, ./images/card-3@2x.jpg 2x",
+      "src": "./images/card-3.jpg",
       "alt": "Белый жакет смокинг"
     },
-    "price": "26 900",
-    "category": ["Смокинги", "Новинки"],
-    "collection": []
+    "name": "/ Белый жакет смокинг",
+    "icon": "./images/catalog.svg#icon-gallery-card-heart",
+    "description": "Подчеркнет линию талии",
+    "productName": "Классический комплект со смокингом и желетом",
+    "productPrice": 65300,
+    "category": [
+      "Смокинги",
+      "Новинки"
+    ],
+    "collection": [],
+    "size": [
+      {
+        "40": true
+      },
+      {
+        "42": true
+      },
+      {
+        "44": true
+      },
+      {
+        "46": true
+      },
+      {
+        "48": false
+      },
+      {
+        "50": false
+      }
+    ],
+    "color": [
+      {
+        "colorName": "black",
+        "colorHex": "#242424"
+      },
+      {
+        "colorName": "red",
+        "colorHex": "#F2404A"
+      },
+      {
+        "colorName": "grey",
+        "colorHex": "#E2DFDF"
+      },
+      {
+        "colorName": "blue",
+        "colorHex": "#38548A"
+      }
+    ],
+    "productDescription": "Приталенный силуэт и заостренные лацканы подчеркивают линию талии, визуально корректируя фигуру до желанной всем 'песочные часы'. Классика женского смокинга, которую одобрил бы сам Ив Сен Лоран.",
+    "productComposition": " 98% шерсть, 2% эластан, отделка шелком",
+    "productParams": [
+      {
+        "params": "Вид застежки:",
+        "value": "Пуговица, обтянутая атласом"
+      },
+      {
+        "params": "Длина изделия:",
+        "value": "По спинке 69 см"
+      },
+      {
+        "params": "Крой:",
+        "value": "Приталенный"
+      },
+      {
+        "params": "Рисунок:",
+        "value": "Без рисунка"
+      },
+      {
+        "params": "Тип карманов:",
+        "value": "Прорезные 'листочки'"
+      },
+      {
+        "params": "Конструктивные элементы:",
+        "value": "Рельефные швы"
+      },
+      {
+        "params": "Материал подкладки",
+        "value": "Вискоза 100%"
+      },
+      {
+        "params": "Уход за вещами:",
+        "value": "Химчистка"
+      }
+    ]
   },
   {
+    "added": "4",
     "id": "Card-4",
-    "name": "/ Жакет-смокинг бархатный",
-    "icon": "../../images/svg/catalog/catalog.svg#icon-gallery-card-heart",
-    "description": "Мировая классика",
-    "image": {
-      "srcset": "./images/card-4 1x, ./images/card-4@2x.jpg 2x",
-      "src": "./images/card-4",
+    "image": [
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-1.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-1@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-2.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-2@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-2.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-3.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-3@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-3.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-4.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-4@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-4.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-4@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      }
+    ],
+    "img": {
+      "srcset": "./images/card-4.jpg 1x, ./images/card-4@2x.jpg 2x",
+      "src": "./images/card-4.jpg",
       "alt": " Жакет-смокинг бархатный"
     },
-    "price": "29 500",
-    "category": ["Смокинги"],
-    "collection": ["Осень-зима 20-21"]
+    "name": "/ Жакет-смокинг бархатный",
+    "icon": "./images/catalog.svg#icon-gallery-card-heart",
+    "description": "Подчеркнет линию талии",
+    "productName": "Классический комплект со смокингом и желетом",
+    "productPrice": 65300,
+    "category": [
+      "Смокинги"
+    ],
+    "collection": [
+      "Осень-зима 20-21"
+    ],
+    "size": [
+      {
+        "40": true
+      },
+      {
+        "42": true
+      },
+      {
+        "44": true
+      },
+      {
+        "46": true
+      },
+      {
+        "48": false
+      },
+      {
+        "50": false
+      }
+    ],
+    "color": [
+      {
+        "colorName": "black",
+        "colorHex": "#242424"
+      },
+      {
+        "colorName": "red",
+        "colorHex": "#F2404A"
+      },
+      {
+        "colorName": "grey",
+        "colorHex": "#E2DFDF"
+      },
+      {
+        "colorName": "blue",
+        "colorHex": "#38548A"
+      }
+    ],
+    "productDescription": "Приталенный силуэт и заостренные лацканы подчеркивают линию талии, визуально корректируя фигуру до желанной всем 'песочные часы'. Классика женского смокинга, которую одобрил бы сам Ив Сен Лоран.",
+    "productComposition": " 98% шерсть, 2% эластан, отделка шелком",
+    "productParams": [
+      {
+        "params": "Вид застежки:",
+        "value": "Пуговица, обтянутая атласом"
+      },
+      {
+        "params": "Длина изделия:",
+        "value": "По спинке 69 см"
+      },
+      {
+        "params": "Крой:",
+        "value": "Приталенный"
+      },
+      {
+        "params": "Рисунок:",
+        "value": "Без рисунка"
+      },
+      {
+        "params": "Тип карманов:",
+        "value": "Прорезные 'листочки'"
+      },
+      {
+        "params": "Конструктивные элементы:",
+        "value": "Рельефные швы"
+      },
+      {
+        "params": "Материал подкладки",
+        "value": "Вискоза 100%"
+      },
+      {
+        "params": "Уход за вещами:",
+        "value": "Химчистка"
+      }
+    ]
   },
   {
+    "added": "5",
     "id": "Card-5",
-    "name": "/ Жакет-смокинг прямой",
-    "icon": "../../images/svg/catalog/catalog.svg#icon-gallery-card-heart",
-    "description": "Подчеркнет линию талии",
-    "image": {
-      "srcset": "./images/card-5 1x, ./images/card-5@2x.jpg 2x",
-      "src": "./images/card-5",
+    "image": [
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-1.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-1@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-2.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-2@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-2.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-3.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-3@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-3.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-4.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-4@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-4.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-4@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      }
+    ],
+    "img": {
+      "srcset": "./images/card-5.jpg 1x, ./images/card-5@2x.jpg 2x",
+      "src": "./images/card-5.jpg",
       "alt": " Жакет-смокинг прямой"
     },
-    "price": "21 900",
-    "category": ["Смокинги"],
-    "collection": []
+    "name": "/ Жакет-смокинг прямой",
+    "icon": "./images/catalog.svg#icon-gallery-card-heart",
+    "description": "Подчеркнет линию талии",
+    "productName": "Классический комплект со смокингом и желетом",
+    "productPrice": 65300,
+    "category": [
+      "Смокинги"
+    ],
+    "collection": [
+      "Осень-зима 20-21"
+    ],
+    "size": [
+      {
+        "40": true
+      },
+      {
+        "42": true
+      },
+      {
+        "44": true
+      },
+      {
+        "46": true
+      },
+      {
+        "48": false
+      },
+      {
+        "50": false
+      }
+    ],
+    "color": [
+      {
+        "colorName": "black",
+        "colorHex": "#242424"
+      },
+      {
+        "colorName": "red",
+        "colorHex": "#F2404A"
+      },
+      {
+        "colorName": "grey",
+        "colorHex": "#E2DFDF"
+      },
+      {
+        "colorName": "blue",
+        "colorHex": "#38548A"
+      }
+    ],
+    "productDescription": "Приталенный силуэт и заостренные лацканы подчеркивают линию талии, визуально корректируя фигуру до желанной всем 'песочные часы'. Классика женского смокинга, которую одобрил бы сам Ив Сен Лоран.",
+    "productComposition": " 98% шерсть, 2% эластан, отделка шелком",
+    "productParams": [
+      {
+        "params": "Вид застежки:",
+        "value": "Пуговица, обтянутая атласом"
+      },
+      {
+        "params": "Длина изделия:",
+        "value": "По спинке 69 см"
+      },
+      {
+        "params": "Крой:",
+        "value": "Приталенный"
+      },
+      {
+        "params": "Рисунок:",
+        "value": "Без рисунка"
+      },
+      {
+        "params": "Тип карманов:",
+        "value": "Прорезные 'листочки'"
+      },
+      {
+        "params": "Конструктивные элементы:",
+        "value": "Рельефные швы"
+      },
+      {
+        "params": "Материал подкладки",
+        "value": "Вискоза 100%"
+      },
+      {
+        "params": "Уход за вещами:",
+        "value": "Химчистка"
+      }
+    ]
   },
   {
+    "added": "6",
     "id": "Card-6",
-    "name": "/ Белый смокинг с брюками-клёш",
-    "icon": "../../images/svg/catalog/catalog.svg#icon-gallery-card-heart",
-    "description": "Подчеркнет линию талии",
-    "image": {
-      "srcset": "./images/card-6 1x, ./images/card-6@2x.jpg 2x",
-      "src": "./images/card-6",
+    "image": [
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-1.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-1@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-2.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-2@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-2.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-3.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-3@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-3.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-4.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-4@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-4.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-4@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      }
+    ],
+    "img": {
+      "srcset": "./images/card-6.jpg 1x, ./images/card-6@2x.jpg 2x",
+      "src": "./images/card-6.jpg",
       "alt": "Белый смокинг с брюками-клёш"
     },
-    "price": "40 400",
-    "category": ["Смокинги", "Новинки"],
-    "collection": ["Осень-зима 20-21"]
-  },
-  {
-    "id": "Card-7",
-    "name": "/ Жакет - смокинг приталенный синий",
-    "icon": "../../images/svg/catalog/catalog.svg#icon-gallery-card-heart",
-    "description": "Мировая классика",
-    "image": {
-      "srcset": "./images/card-7 1x, ./images/card-7@2x.jpg 2x",
-      "src": "./images/card-7",
-      "alt": "Жакет - смокинг приталенный синий"
-    },
-    "price": "26 900",
-    "category": ["Смокинги", "Новинки"],
-    "collection": []
-  },
-  {
-    "id": "Card-8",
-    "name": "/ Платье-смокинг длинное",
-    "icon": "../../images/svg/catalog/catalog.svg#icon-gallery-card-heart",
-    "description": "Подчеркнет линию талии",
-    "image": {
-      "srcset": "./images/card-8 1x, ./images/card-8@2x.jpg 2x",
-      "src": "./images/card-8",
-      "alt": "Платье-смокинг длинное"
-    },
-    "price": "24 900",
-    "category": ["Смокинги", "Новинки"],
-    "collection": ["Свадьба и выпускной"]
-  },
-  {
-    "id": "Card-9",
-    "name": "/ Белый смокинг и брюки с лампасами",
-    "icon": "../../images/svg/catalog/catalog.svg#icon-gallery-card-heart",
-    "description": "Мировая классика",
-    "image": {
-      "srcset": "./images/card-9 1x, ./images/card-9@2x.jpg 2x",
-      "src": "./images/card-9",
-      "alt": "Белый смокинг и брюки с лампасами"
-    },
-    "price": "41 100",
-    "category": ["Смокинги"],
-    "collection": []
-  },
-  {
-    "id": "Card-10",
-    "name": "/ Классический комплект с бабочкой",
-    "icon": "../../images/svg/catalog/catalog.svg#icon-gallery-card-heart",
-    "description": "Подчеркнет линию талии",
-    "image": {
-      "srcset": "./images/card-10 1x, ./images/card-10@2x.jpg 2x",
-      "src": "./images/card-10",
-      "alt": "Классический комплект с бабочкой"
-    },
-    "price": "51 800",
-    "category": ["Смокинги", "Новинки", "Осень-зима 20-21"]
-  },
-  {
-    "id": "Card-11",
-    "name": "/ Жакет-смокинг",
-    "icon": "../../images/svg/catalog/catalog.svg#icon-gallery-card-heart",
-    "description": "Подчеркнет линию талии",
-    "image": {
-      "srcset": "./images/card-11 1x, ./images/card-11@2x.jpg 2x",
-      "src": "./images/card-11",
-      "alt": " Жакет-смокинг"
-    },
-    "price": "23 900",
-    "category": ["Смокинги"],
-    "collection": []
-  },
-  {
-    "id": "Card-12",
-    "name": "/ Платье-смокинг молочное",
-    "icon": "../../images/svg/catalog/catalog.svg#icon-gallery-card-heart",
-    "description": "Мировая классика",
-    "image": {
-      "srcset": "./images/card-12 1x, ./images/card-12@2x.jpg 2x",
-      "src": "./images/card-12",
-      "alt": "Платье-смокинг молочное"
-    },
-    "price": "65 300",
-    "category": ["Смокинги", "Новинки", "Платья"],
-    "collection": ["Свадьба и выпускной", "Вечерние комплекты"]
-  },
-  {
-    "id": "Card-13",
-    "name": "/ Топ с кружевом черный",
-    "icon": "../../images/svg/catalog/catalog.svg#icon-gallery-card-heart",
-    "description": "Подчеркнет линию талии",
-    "image": {
-      "srcset": "./images/card-13 1x, ./images/card-13@2x.jpg 2x",
-      "src": "./images/card-13",
-      "alt": "Топ с кружевом черный"
-    },
-    "price": "23 900",
-    "category": ["Новинки", "Топы и жилеты"],
-    "collection": []
-  },
-  {
-    "id": "Card-14",
-    "name": "/ Юбка - карандаш",
-    "icon": "../../images/svg/catalog/catalog.svg#icon-gallery-card-heart",
-    "description": "Мировая классика",
-    "image": {
-      "srcset": "./images/card-14 1x, ./images/card-14@2x.jpg 2x",
-      "src": "./images/card-14",
-      "alt": "Юбка - карандаш"
-    },
-    "price": "65 300",
-    "category": ["Новинки", "Юбки"],
-    "collection": ["Вечерние комплекты"]
-  },
-  {
-    "id": "Card-15",
-    "name": "/ Блуза с баской",
-    "icon": "../../images/svg/catalog/catalog.svg#icon-gallery-card-heart",
-    "description": "Подчеркнет линию талии",
-    "image": {
-      "srcset": "./images/card-15 1x, ./images/card-15@2x.jpg 2x",
-      "src": "./images/card-15",
-      "alt": "Блуза с баской"
-    },
-    "price": "23 900",
-    "category": ["Блузы", "Свадьба и выпускной"],
-    "collection": ["Свадьба и выпускной"]
-  },
-  {
-    "id": "Card-16",
-    "name": "/ Брюки клёш",
-    "icon": "../../images/svg/catalog/catalog.svg#icon-gallery-card-heart",
-    "description": "Подчеркнет линию талии",
-    "image": {
-      "srcset": "./images/card-16 1x, ./images/card-16@2x.jpg 2x",
-      "src": "./images/card-16",
-      "alt": "Брюки клёш"
-    },
-    "price": "23 900",
-    "category": ["Брюки"],
-    "collection": []
-  },
-  {
-    "id": "Card-17",
-    "name": "/ Брюки зауженные",
-    "description": "Мировая классика",
-    "icon": "../../images/svg/catalog/catalog.svg#icon-gallery-card-heart",
-    "image": {
-      "srcset": "./images/card-17 1x, ./images/card-17@2x.jpg 2x",
-      "src": "./images/card-17",
-      "alt": "Брюки зауженные"
-    },
-    "price": "65 300",
-    "category": ["Брюки", "Новинки"],
-    "collection": []
-  },
-  {
-    "id": "Card-18",
-    "name": "/ Красный приталенный смокинг",
-    "icon": "../../images/svg/catalog/catalog.svg#icon-gallery-card-heart",
-    "description": "Подчеркнет линию талии",
-    "image": {
-      "srcset": "./images/card-18 1x, ./images/card-18@2x.jpg 2x",
-      "src": "./images/card-18",
-      "alt": "Красный приталенный смокинг"
-    },
-    "price": "23 900",
-    "category": ["Смокинг", "Новинки"],
-    "collection": []
-  },
-  {
-    "id": "Card-19",
-    "name": "/ Костюм бархатный",
-    "icon": "../../images/svg/catalog/catalog.svg#icon-gallery-card-heart",
-    "description": "Мировая классика",
-    "image": {
-      "srcset": "./images/card-19 1x, ./images/card-19@2x.jpg 2x",
-      "src": "./images/card-19",
-      "alt": "Костюм бархатный"
-    },
-    "price": "65 300",
-    "category": ["Костюмы"],
-    "collection": ["Осень-зима 20-21"]
-  },
-  {
-    "id": "Card-1-desktop",
-    "name": "/ Жакет-смокинг с лацканами",
-    "icon": "../../images/svg/catalog/catalog.svg#icon-gallery-card-heart",
-    "description": "Подчеркнет линию талии",
-    "image": {
-      "srcset": "./images/card-1-desktop 1x, ./images/card-1-desktop@2x.jpg 2x",
-      "src": "./images/card-1-desktop",
-      "alt": "Жакет-смокинг с лацканами"
-    },
-    "price": "23 900 ",
-    "category": ["Смокинги", "Новинки"],
-    "collection": []
-  },
-
-  {
-    "id": "Card-2-desktop",
-    "name": "/ Классический комплект с смокингом...",
-    "icon": "../../images/svg/catalog/catalog.svg#icon-gallery-card-heart",
-    "description": "Подчеркнет линию талии",
-    "image": {
-      "srcset": "./images/card-2-desktop 1x, ./images/card-2-desktop@2x.jpg 2x",
-      "src": "./images/card-2-desktop",
-      "alt": " Классический комплект с смокингом..."
-    },
-    "price": "65 300 ",
-    "category": ["Смокинги"],
-    "collection": ["Осень-зима 20-21"]
-  },
-  {
-    "id": "Card-3-desktop",
-    "name": "/ Белый жакет смокинг",
-    "icon": "../../images/svg/catalog/catalog.svg#icon-gallery-card-heart",
-    "description": "Подчеркнет линию талии",
-    "image": {
-      "srcset": "./images/card-3-desktop 1x, ./images/card-3-desktop@2x.jpg 2x",
-      "src": "./images/card-3-desktop",
-      "alt": "Белый жакет смокинг"
-    },
-    "price": "26 900",
-    "category": ["Смокинги", "Новинки"],
-    "collection": []
-  },
-  {
-    "id": "Card-4-desktop",
-    "name": "/ Жакет-смокинг бархатный",
-    "icon": "../../images/svg/catalog/catalog.svg#icon-gallery-card-heart",
-    "description": "Мировая классика",
-    "image": {
-      "srcset": "./images/card-4-desktop 1x, ./images/card-4-desktop@2x.jpg 2x",
-      "src": "./images/card-4-desktop",
-      "alt": " Жакет-смокинг бархатный"
-    },
-    "price": "29 500",
-    "category": ["Смокинги"],
-    "collection": ["Осень-зима 20-21"]
-  },
-  {
-    "id": "Card-5-desktop",
-    "name": "/ Жакет-смокинг прямой",
-    "icon": "../../images/svg/catalog/catalog.svg#icon-gallery-card-heart",
-    "description": "Подчеркнет линию талии",
-    "image": {
-      "srcset": "./images/card-5-desktop 1x, ./images/card-5-desktop@2x.jpg 2x",
-      "src": "./images/card-5-desktop",
-      "alt": " Жакет-смокинг прямой"
-    },
-    "price": "21 900",
-    "category": ["Смокинги"],
-    "collection": []
-  },
-  {
-    "id": "Card-6-desktop",
-    "name": "/ Белый смокинг с брюками-клёш",
-    "icon": "../../images/svg/catalog/catalog.svg#icon-gallery-card-heart",
-    "description": "Подчеркнет линию талии",
-    "image": {
-      "srcset": "./images/card-6-desktop 1x, ./images/card-6-desktop@2x.jpg 2x",
-      "src": "./images/card-6-desktop",
-      "alt": "Белый смокинг с брюками-клёш"
-    },
-    "price": "40 400",
-    "category": ["Смокинги", "Новинки"],
-    "collection": ["Осень-зима 20-21"]
-  },
-  {
-    "id": "Card-7-desktop",
-    "name": "/ Жакет - смокинг приталенный синий",
-    "icon": "../../images/svg/catalog/catalog.svg#icon-gallery-card-heart",
-    "description": "Мировая классика",
-    "image": {
-      "srcset": "./images/card-7-desktop 1x, ./images/card-7-desktop@2x.jpg 2x",
-      "src": "./images/card-7-desktop",
-      "alt": "Жакет - смокинг приталенный синий"
-    },
-    "price": "26 900",
-    "category": ["Смокинги", "Новинки"],
-    "collection": []
-  },
-  {
-    "id": "Card-8-desktop",
-    "name": "/ Платье-смокинг длинное",
-    "icon": "../../images/svg/catalog/catalog.svg#icon-gallery-card-heart",
-    "description": "Подчеркнет линию талии",
-    "image": {
-      "srcset": "./images/card-8-desktop 1x, ./images/card-8-desktop@2x.jpg 2x",
-      "src": "./images/card-8-desktop",
-      "alt": "Платье-смокинг длинное"
-    },
-    "price": "24 900",
-    "category": ["Смокинги", "Новинки"],
-    "collection": ["Свадьба и выпускной"]
-  },
-  {
-    "id": "Card-9-desktop",
-    "name": "/ Белый смокинг и брюки с лампасами",
-    "icon": "../../images/svg/catalog/catalog.svg#icon-gallery-card-heart",
-    "description": "Мировая классика",
-    "image": {
-      "srcset": "./images/card-9-desktop 1x, ./images/card-9-desktop@2x.jpg 2x",
-      "src": "./images/card-9-desktop",
-      "alt": "Белый смокинг и брюки с лампасами"
-    },
-    "price": "41 100",
-    "category": ["Смокинги"],
-    "collection": []
-  },
-  {
-    "id": "Card-10-desktop",
-    "name": "/ Классический комплект с бабочкой",
-    "icon": "../../images/svg/catalog/catalog.svg#icon-gallery-card-heart",
-    "description": "Подчеркнет линию талии",
-    "image": {
-      "srcset": "./images/card-10-desktop 1x, ./images/card-10-desktop@2x.jpg 2x",
-      "src": "./images/card-10-desktop",
-      "alt": "Классический комплект с бабочкой"
-    },
-    "price": "51 800",
-    "category": ["Смокинги", "Новинки", "Осень-зима 20-21"]
-  },
-  {
-    "id": "Card-11-desktop",
-    "name": "/ Жакет-смокинг",
-    "icon": "../../images/svg/catalog/catalog.svg#icon-gallery-card-heart",
-    "description": "Подчеркнет линию талии",
-    "image": {
-      "srcset": "./images/card-11-desktop 1x, ./images/card-11-desktop@2x.jpg 2x",
-      "src": "./images/card-11-desktop",
-      "alt": " Жакет-смокинг"
-    },
-    "price": "23 900",
-    "category": ["Смокинги"],
-    "collection": []
-  },
-  {
-    "id": "Card-12-desktop",
-    "name": "/ Платье-смокинг молочное",
-    "icon": "../../images/svg/catalog/catalog.svg#icon-gallery-card-heart",
-    "description": "Мировая классика",
-    "image": {
-      "srcset": "./images/card-12-desktop 1x, ./images/card-12-desktop@2x.jpg 2x",
-      "src": "./images/card-12-desktop",
-      "alt": "Платье-смокинг молочное"
-    },
-    "price": "65 300",
-    "category": ["Смокинги", "Новинки", "Платья"],
-    "collection": ["Свадьба и выпускной", "Вечерние комплекты"]
-  },
-  {
-    "id": "Card-13-desktop",
-    "name": "/ Топ с кружевом черный",
-    "icon": "../../images/svg/catalog/catalog.svg#icon-gallery-card-heart",
-    "description": "Подчеркнет линию талии",
-    "image": {
-      "srcset": "./images/card-13-desktop 1x, ./images/card-13-desktop@2x.jpg 2x",
-      "src": "./images/card-13-desktop",
-      "alt": "Топ с кружевом черный"
-    },
-    "price": "23 900",
-    "category": ["Новинки", "Топы и жилеты"],
-    "collection": []
-  },
-  {
-    "id": "Card-14-desktop",
-    "name": "/ Юбка - карандаш",
-    "icon": "../../images/svg/catalog/catalog.svg#icon-gallery-card-heart",
-    "description": "Мировая классика",
-    "image": {
-      "srcset": "./images/card-14-desktop 1x, ./images/card-14-desktop@2x.jpg 2x",
-      "src": "./images/card-14-desktop",
-      "alt": "Юбка - карандаш"
-    },
-    "price": "65 300",
-    "category": ["Новинки", "Юбки"],
-    "collection": ["Вечерние комплекты"]
-  },
-  {
-    "id": "Card-15-desktop",
-    "name": "/ Блуза с баской",
-    "icon": "../../images/svg/catalog/catalog.svg#icon-gallery-card-heart",
-    "description": "Подчеркнет линию талии",
-    "image": {
-      "srcset": "./images/card-15-desktop 1x, ./images/card-15-desktop@2x.jpg 2x",
-      "src": "./images/card-15-desktop",
-      "alt": "Блуза с баской"
-    },
-    "price": "23 900",
-    "category": ["Блузы", "Свадьба и выпускной"],
-    "collection": ["Свадьба и выпускной"]
-  },
-  {
-    "id": "Card-16-desktop",
-    "name": "/ Брюки клёш",
-    "icon": "../../images/svg/catalog/catalog.svg#icon-gallery-card-heart",
-    "description": "Подчеркнет линию талии",
-    "image": {
-      "srcset": "./images/card-16-desktop 1x, ./images/card-16-desktop@2x.jpg 2x",
-      "src": "./images/card-16",
-      "alt": "Брюки клёш"
-    },
-    "price": "23 900",
-    "category": ["Брюки"],
-    "collection": []
-  },
-  {
-    "id": "Card-17-desktop",
-    "name": "/ Брюки зауженные",
-    "description": "Мировая классика",
-    "icon": "../../images/svg/catalog/catalog.svg#icon-gallery-card-heart",
-    "image": {
-      "srcset": "./images/card-17 1x, ./images/card-17-desktop@2x.jpg 2x",
-      "src": "./images/card-17",
-      "alt": "Брюки зауженные"
-    },
-    "price": "65 300",
-    "category": ["Брюки", "Новинки"],
-    "collection": []
-  },
-  {
-    "id": "Card-18-desktop",
-    "name": "/ Красный приталенный смокинг",
-    "icon": "../../images/svg/catalog/catalog.svg#icon-gallery-card-heart",
-    "description": "Подчеркнет линию талии",
-    "image": {
-      "srcset": "./images/card-18-desktop 1x, ./images/card-18-desktop@2x.jpg 2x",
-      "src": "./images/card-18-desktop",
-      "alt": "Красный приталенный смокинг"
-    },
-    "price": "23 900",
-    "category": ["Смокинг", "Новинки"],
-    "collection": []
-  },
-  {
-    "id": "Card-19-desktop",
-    "name": "/ Костюм бархатный",
-    "icon": "../../images/svg/catalog/catalog.svg#icon-gallery-card-heart",
-    "description": "Мировая классика",
-    "image": {
-      "srcset": "./images/card-19-desktop 1x, ./images/card-19-desktop@2x.jpg 2x",
-      "src": "./images/card-19",
-      "alt": "Костюм бархатный"
-    },
-    "price": "65 300",
-    "category": ["Костюмы"],
-    "collection": ["Осень-зима 20-21"]
-  },
-
-  {
-    "id": "Card-20-desktop",
-    "name": "/ Костюм бархатный",
-    "icon": "../../images/svg/catalog/catalog.svg#icon-gallery-card-heart",
-    "description": "Мировая классика",
-    "image": {
-      "srcset": "./images/card-20-desktop 1x, ./images/card-20-desktop@2x.jpg 2x",
-      "src": "./images/card-20-desktop",
-      "alt": "Костюм бархатный"
-    },
-    "price": "65 300 ",
-    "category": ["Костюмы"],
-    "collection": ["Предзаказ"]
-  },
-  {
-    "id": "Card-1-desktop",
-    "name": "/ Жакет-смокинг с лацканами",
-    "icon": "../../images/svg/catalog/catalog.svg#icon-gallery-card-heart",
-    "description": "Подчеркнет линию талии",
-    "image": {
-      "srcset": "./images/card-1-desktop 1x, ./images/card-1-desktop@2x.jpg 2x",
-      "src": "./images/card-1-desktop",
-      "alt": "Жакет-смокинг с лацканами"
-    },
-    "price": "23 900 ",
-    "category": ["Смокинги", "Новинки"],
-    "collection": []
-  },
-
-  {
-    "id": "Card-2-desktop",
-    "name": "/ Классический комплект с смокингом...",
-    "icon": "../../images/svg/catalog/catalog.svg#icon-gallery-card-heart",
-    "image": {
-      "srcset": "./images/card-2-desktop 1x, ./images/card-2-desktop@2x.jpg 2x",
-      "src": "./images/card-2-desktop",
-      "alt": " Классический комплект с смокингом..."
-    },
-    "price": "65 300 ",
-    "category": ["Смокинги"],
-    "collection": ["Осень-зима 20-21"]
-  },
-  {
-    "id": "Card-3-desktop",
-    "name": "/ Белый жакет смокинг",
-    "icon": "../../images/svg/catalog/catalog.svg#icon-gallery-card-heart",
-    "description": "Подчеркнет линию талии",
-    "image": {
-      "srcset": "./images/card-3-desktop 1x, ./images/card-3-desktop@2x.jpg 2x",
-      "src": "./images/card-3-desktop",
-      "alt": "Белый жакет смокинг"
-    },
-    "price": "26 900",
-    "category": ["Смокинги", "Новинки"],
-    "collection": []
-  },
-  {
-    "id": "Card-4-desktop",
-    "name": "/ Жакет-смокинг бархатный",
-    "icon": "../../images/svg/catalog/catalog.svg#icon-gallery-card-heart",
-    "description": "Мировая классика",
-    "image": {
-      "srcset": "./images/card-4-desktop 1x, ./images/card-4-desktop@2x.jpg 2x",
-      "src": "./images/card-4-desktop",
-      "alt": " Жакет-смокинг бархатный"
-    },
-    "price": "29 500",
-    "category": ["Смокинги"],
-    "collection": ["Осень-зима 20-21"]
-  },
-  {
-    "id": "Card-5-desktop",
-    "name": "/ Жакет-смокинг прямой",
-    "icon": "../../images/svg/catalog/catalog.svg#icon-gallery-card-heart",
-    "description": "Подчеркнет линию талии",
-    "image": {
-      "srcset": "./images/card-5-desktop 1x, ./images/card-5-desktop@2x.jpg 2x",
-      "src": "./images/card-5-desktop",
-      "alt": " Жакет-смокинг прямой"
-    },
-    "price": "21 900",
-    "category": ["Смокинги"],
-    "collection": []
-  },
-  {
-    "id": "Card-6-desktop",
     "name": "/ Белый смокинг с брюками-клёш",
     "icon": "./images/catalog.svg#icon-gallery-card-heart",
     "description": "Подчеркнет линию талии",
-    "image": {
-      "srcset": "./images/card-6-desktop 1x, ./images/card-6-desktop@2x.jpg 2x",
-      "src": "./images/card-6-desktop",
-      "alt": "Белый смокинг с брюками-клёш"
-    },
-    "price": "40 400",
-    "category": ["Смокинги", "Новинки"],
-    "collection": ["Осень-зима 20-21"]
+    "productName": "Классический комплект со смокингом и желетом",
+    "productPrice": 40400,
+    "category": [
+      "Смокинги",
+      "Новинки"
+    ],
+    "collection": [
+      "Осень-зима 20-21"
+    ],
+    "size": [
+      {
+        "40": true
+      },
+      {
+        "42": true
+      },
+      {
+        "44": true
+      },
+      {
+        "46": true
+      },
+      {
+        "48": false
+      },
+      {
+        "50": false
+      }
+    ],
+    "color": [
+      {
+        "colorName": "black",
+        "colorHex": "#242424"
+      },
+      {
+        "colorName": "red",
+        "colorHex": "#F2404A"
+      },
+      {
+        "colorName": "grey",
+        "colorHex": "#E2DFDF"
+      },
+      {
+        "colorName": "blue",
+        "colorHex": "#38548A"
+      }
+    ],
+    "productDescription": "Приталенный силуэт и заостренные лацканы подчеркивают линию талии, визуально корректируя фигуру до желанной всем 'песочные часы'. Классика женского смокинга, которую одобрил бы сам Ив Сен Лоран.",
+    "productComposition": " 98% шерсть, 2% эластан, отделка шелком",
+    "productParams": [
+      {
+        "params": "Вид застежки:",
+        "value": "Пуговица, обтянутая атласом"
+      },
+      {
+        "params": "Длина изделия:",
+        "value": "По спинке 69 см"
+      },
+      {
+        "params": "Крой:",
+        "value": "Приталенный"
+      },
+      {
+        "params": "Рисунок:",
+        "value": "Без рисунка"
+      },
+      {
+        "params": "Тип карманов:",
+        "value": "Прорезные 'листочки'"
+      },
+      {
+        "params": "Конструктивные элементы:",
+        "value": "Рельефные швы"
+      },
+      {
+        "params": "Материал подкладки",
+        "value": "Вискоза 100%"
+      },
+      {
+        "params": "Уход за вещами:",
+        "value": "Химчистка"
+      }
+    ]
   },
   {
-    "id": "Card-7-desktop",
-    "name": "/ Жакет - смокинг приталенный синий",
-    "icon": "../../images/svg/catalog/catalog.svg#icon-gallery-card-heart",
-    "description": "Мировая классика",
-    "image": {
-      "srcset": "./images/card-7-desktop 1x, ./images/card-7-desktop@2x.jpg 2x",
-      "src": "./images/card-7-desktop",
+    "added": "7",
+    "id": "Card-7",
+    "image": [
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-1.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-a nd-vest-mobile-1@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-2.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-2@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-2.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-3.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-3@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-3.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-4.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-4@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-4.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-4@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      }
+    ],
+    "img": {
+      "srcset": "./images/card-7.jpg 1x, ./images/card-7@2x.jpg 2x",
+      "src": "./images/card-7.jpg",
       "alt": "Жакет - смокинг приталенный синий"
     },
-    "price": "26 900",
-    "category": ["Смокинги", "Новинки"],
-    "collection": []
+    "name": "/ Жакет - смокинг приталенный синий",
+    "icon": "./images/catalog.svg#icon-gallery-card-heart",
+    "description": "Мировая классика",
+    "productName": "Классический комплект со смокингом и желетом",
+    "productPrice": 26900,
+    "category": [
+      "Смокинги",
+      "Новинки"
+    ],
+    "collection": [],
+    "size": [
+      {
+        "40": true
+      },
+      {
+        "42": true
+      },
+      {
+        "44": true
+      },
+      {
+        "46": true
+      },
+      {
+        "48": false
+      },
+      {
+        "50": false
+      }
+    ],
+    "color": [
+      {
+        "colorName": "black",
+        "colorHex": "#242424"
+      },
+      {
+        "colorName": "red",
+        "colorHex": "#F2404A"
+      },
+      {
+        "colorName": "grey",
+        "colorHex": "#E2DFDF"
+      },
+      {
+        "colorName": "blue",
+        "colorHex": "#38548A"
+      }
+    ],
+    "productDescription": "Приталенный силуэт и заостренные лацканы подчеркивают линию талии, визуально корректируя фигуру до желанной всем 'песочные часы'. Классика женского смокинга, которую одобрил бы сам Ив Сен Лоран.",
+    "productComposition": " 98% шерсть, 2% эластан, отделка шелком",
+    "productParams": [
+      {
+        "params": "Вид застежки:",
+        "value": "Пуговица, обтянутая атласом"
+      },
+      {
+        "params": "Длина изделия:",
+        "value": "По спинке 69 см"
+      },
+      {
+        "params": "Крой:",
+        "value": "Приталенный"
+      },
+      {
+        "params": "Рисунок:",
+        "value": "Без рисунка"
+      },
+      {
+        "params": "Тип карманов:",
+        "value": "Прорезные 'листочки'"
+      },
+      {
+        "params": "Конструктивные элементы:",
+        "value": "Рельефные швы"
+      },
+      {
+        "params": "Материал подкладки",
+        "value": "Вискоза 100%"
+      },
+      {
+        "params": "Уход за вещами:",
+        "value": "Химчистка"
+      }
+    ]
+  },
+  {
+    "added": "8",
+    "id": "Card-8",
+    "image": [
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-1.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-a nd-vest-mobile-1@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-2.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-2@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-2.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-3.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-3@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-3.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-4.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-4@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-4.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-4@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      }
+    ],
+    "img": {
+      "srcset": "./images/card-8.jpg 1x, ./images/card-8@2x.jpg 2x",
+      "src": "./images/card-8.jpg",
+      "alt": "Платье-смокинг длинное"
+    },
+    "name": "/ Платье-смокинг длинное",
+    "icon": "./images/catalog.svg#icon-gallery-card-heart",
+    "description": "Подчеркнет линию талии",
+    "productName": "Классический комплект со смокингом и желетом",
+    "productPrice": 24900,
+    "category": [
+      "Смокинги",
+      "Новинки"
+    ],
+    "collection": [
+      "Свадьба и выпускной"
+    ],
+    "size": [
+      {
+        "40": true
+      },
+      {
+        "42": true
+      },
+      {
+        "44": true
+      },
+      {
+        "46": true
+      },
+      {
+        "48": false
+      },
+      {
+        "50": false
+      }
+    ],
+    "color": [
+      {
+        "colorName": "black",
+        "colorHex": "#242424"
+      },
+      {
+        "colorName": "red",
+        "colorHex": "#F2404A"
+      },
+      {
+        "colorName": "grey",
+        "colorHex": "#E2DFDF"
+      },
+      {
+        "colorName": "blue",
+        "colorHex": "#38548A"
+      }
+    ],
+    "productDescription": "Приталенный силуэт и заостренные лацканы подчеркивают линию талии, визуально корректируя фигуру до желанной всем 'песочные часы'. Классика женского смокинга, которую одобрил бы сам Ив Сен Лоран.",
+    "productComposition": " 98% шерсть, 2% эластан, отделка шелком",
+    "productParams": [
+      {
+        "params": "Вид застежки:",
+        "value": "Пуговица, обтянутая атласом"
+      },
+      {
+        "params": "Длина изделия:",
+        "value": "По спинке 69 см"
+      },
+      {
+        "params": "Крой:",
+        "value": "Приталенный"
+      },
+      {
+        "params": "Рисунок:",
+        "value": "Без рисунка"
+      },
+      {
+        "params": "Тип карманов:",
+        "value": "Прорезные 'листочки'"
+      },
+      {
+        "params": "Конструктивные элементы:",
+        "value": "Рельефные швы"
+      },
+      {
+        "params": "Материал подкладки",
+        "value": "Вискоза 100%"
+      },
+      {
+        "params": "Уход за вещами:",
+        "value": "Химчистка"
+      }
+    ]
+  },
+  {
+    "added": "9",
+    "id": "Card-9",
+    "image": [
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-1.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-a nd-vest-mobile-1@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-2.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-2@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-2.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-3.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-3@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-3.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-4.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-4@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-4.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-4@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      }
+    ],
+    "img": {
+      "srcset": "./images/card-9.jpg 1x, ./images/card-9@2x.jpg 2x",
+      "src": "./images/card-9.jpg",
+      "alt": "Белый смокинг и брюки с лампасами"
+    },
+    "name": "/ Жакет-смокинг с лацканами",
+    "icon": "./images/catalog.svg#icon-gallery-card-heart",
+    "description": "Подчеркнет линию талии",
+    "productName": "Классический комплект со смокингом и желетом",
+    "productPrice": 41100,
+    "category": [
+      "Смокинги"
+    ],
+    "collection": [],
+    "size": [
+      {
+        "40": true
+      },
+      {
+        "42": true
+      },
+      {
+        "44": true
+      },
+      {
+        "46": true
+      },
+      {
+        "48": false
+      },
+      {
+        "50": false
+      }
+    ],
+    "color": [
+      {
+        "colorName": "black",
+        "colorHex": "#242424"
+      },
+      {
+        "colorName": "red",
+        "colorHex": "#F2404A"
+      },
+      {
+        "colorName": "grey",
+        "colorHex": "#E2DFDF"
+      },
+      {
+        "colorName": "blue",
+        "colorHex": "#38548A"
+      }
+    ],
+    "productDescription": "Приталенный силуэт и заостренные лацканы подчеркивают линию талии, визуально корректируя фигуру до желанной всем 'песочные часы'. Классика женского смокинга, которую одобрил бы сам Ив Сен Лоран.",
+    "productComposition": " 98% шерсть, 2% эластан, отделка шелком",
+    "productParams": [
+      {
+        "params": "Вид застежки:",
+        "value": "Пуговица, обтянутая атласом"
+      },
+      {
+        "params": "Длина изделия:",
+        "value": "По спинке 69 см"
+      },
+      {
+        "params": "Крой:",
+        "value": "Приталенный"
+      },
+      {
+        "params": "Рисунок:",
+        "value": "Без рисунка"
+      },
+      {
+        "params": "Тип карманов:",
+        "value": "Прорезные 'листочки'"
+      },
+      {
+        "params": "Конструктивные элементы:",
+        "value": "Рельефные швы"
+      },
+      {
+        "params": "Материал подкладки",
+        "value": "Вискоза 100%"
+      },
+      {
+        "params": "Уход за вещами:",
+        "value": "Химчистка"
+      }
+    ]
+  },
+  {
+    "added": "10",
+    "id": "Card-10",
+    "image": [
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-1.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-a nd-vest-mobile-1@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-2.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-2@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-2.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-3.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-3@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-3.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-4.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-4@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-4.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-4@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      }
+    ],
+    "img": {
+      "srcset": "./images/card-10.jpg 1x, ./images/card-10@2x.jpg 2x",
+      "src": "./images/card-10.jpg",
+      "alt": "Классический комплект с бабочкой"
+    },
+    "name": "/ Классический комплект с бабочкой",
+    "icon": "./images/catalog.svg#icon-gallery-card-heart",
+    "description": "Подчеркнет линию талии",
+    "productName": "Классический комплект со смокингом и желетом",
+    "productPrice": 51800,
+    "category": [
+      "Смокинги",
+      "Новинки",
+      "Осень-зима 20-21"
+    ],
+    "collection": [],
+    "size": [
+      {
+        "40": true
+      },
+      {
+        "42": true
+      },
+      {
+        "44": true
+      },
+      {
+        "46": true
+      },
+      {
+        "48": false
+      },
+      {
+        "50": false
+      }
+    ],
+    "color": [
+      {
+        "colorName": "black",
+        "colorHex": "#242424"
+      },
+      {
+        "colorName": "red",
+        "colorHex": "#F2404A"
+      },
+      {
+        "colorName": "grey",
+        "colorHex": "#E2DFDF"
+      },
+      {
+        "colorName": "blue",
+        "colorHex": "#38548A"
+      }
+    ],
+    "productDescription": "Приталенный силуэт и заостренные лацканы подчеркивают линию талии, визуально корректируя фигуру до желанной всем 'песочные часы'. Классика женского смокинга, которую одобрил бы сам Ив Сен Лоран.",
+    "productComposition": " 98% шерсть, 2% эластан, отделка шелком",
+    "productParams": [
+      {
+        "params": "Вид застежки:",
+        "value": "Пуговица, обтянутая атласом"
+      },
+      {
+        "params": "Длина изделия:",
+        "value": "По спинке 69 см"
+      },
+      {
+        "params": "Крой:",
+        "value": "Приталенный"
+      },
+      {
+        "params": "Рисунок:",
+        "value": "Без рисунка"
+      },
+      {
+        "params": "Тип карманов:",
+        "value": "Прорезные 'листочки'"
+      },
+      {
+        "params": "Конструктивные элементы:",
+        "value": "Рельефные швы"
+      },
+      {
+        "params": "Материал подкладки",
+        "value": "Вискоза 100%"
+      },
+      {
+        "params": "Уход за вещами:",
+        "value": "Химчистка"
+      }
+    ]
+  },
+  {
+    "added": "11",
+    "id": "Card-11",
+    "image": [
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-1.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-a nd-vest-mobile-1@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-2.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-2@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-2.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-3.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-3@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-3.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-4.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-4@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-4.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-4@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      }
+    ],
+    "img": {
+      "srcset": "./images/card-11.jpg 1x, ./images/card-11@2x.jpg 2x",
+      "src": "./images/card-11.jpg",
+      "alt": " Жакет-смокинг"
+    },
+    "name": "/ Жакет-смокинг",
+    "icon": "./images/catalog.svg#icon-gallery-card-heart",
+    "description": "Подчеркнет линию талии",
+    "productName": "Классический комплект со смокингом и желетом",
+    "productPrice": 23900,
+    "category": [
+      "Смокинги"
+    ],
+    "collection": [],
+    "size": [
+      {
+        "40": true
+      },
+      {
+        "42": true
+      },
+      {
+        "44": true
+      },
+      {
+        "46": true
+      },
+      {
+        "48": false
+      },
+      {
+        "50": false
+      }
+    ],
+    "color": [
+      {
+        "colorName": "black",
+        "colorHex": "#242424"
+      },
+      {
+        "colorName": "red",
+        "colorHex": "#F2404A"
+      },
+      {
+        "colorName": "grey",
+        "colorHex": "#E2DFDF"
+      },
+      {
+        "colorName": "blue",
+        "colorHex": "#38548A"
+      }
+    ],
+    "productDescription": "Приталенный силуэт и заостренные лацканы подчеркивают линию талии, визуально корректируя фигуру до желанной всем 'песочные часы'. Классика женского смокинга, которую одобрил бы сам Ив Сен Лоран.",
+    "productComposition": " 98% шерсть, 2% эластан, отделка шелком",
+    "productParams": [
+      {
+        "params": "Вид застежки:",
+        "value": "Пуговица, обтянутая атласом"
+      },
+      {
+        "params": "Длина изделия:",
+        "value": "По спинке 69 см"
+      },
+      {
+        "params": "Крой:",
+        "value": "Приталенный"
+      },
+      {
+        "params": "Рисунок:",
+        "value": "Без рисунка"
+      },
+      {
+        "params": "Тип карманов:",
+        "value": "Прорезные 'листочки'"
+      },
+      {
+        "params": "Конструктивные элементы:",
+        "value": "Рельефные швы"
+      },
+      {
+        "params": "Материал подкладки",
+        "value": "Вискоза 100%"
+      },
+      {
+        "params": "Уход за вещами:",
+        "value": "Химчистка"
+      }
+    ]
+  },
+  {
+    "added": "12",
+    "id": "Card-12",
+    "image": [
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-1.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-a nd-vest-mobile-1@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-2.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-2@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-2.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-3.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-3@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-3.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-4.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-4@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-4.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-4@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      }
+    ],
+    "img": {
+      "srcset": "./images/card-12.jpg 1x, ./images/card-12@2x.jpg 2x",
+      "src": "./images/card-12.jpg",
+      "alt": "Платье-смокинг молочное"
+    },
+    "name": "/ Платье-смокинг молочное",
+    "icon": "./images/catalog.svg#icon-gallery-card-heart",
+    "description": "Мировая классика",
+    "productName": "Классический комплект со смокингом и желетом",
+    "productPrice": 65300,
+    "category": [
+      "Смокинги",
+      "Новинки",
+      "Платья"
+    ],
+    "collection": [
+      "Свадьба и выпускной",
+      "Вечерние комплекты"
+    ],
+    "size": [
+      {
+        "40": true
+      },
+      {
+        "42": true
+      },
+      {
+        "44": true
+      },
+      {
+        "46": true
+      },
+      {
+        "48": false
+      },
+      {
+        "50": false
+      }
+    ],
+    "color": [
+      {
+        "colorName": "black",
+        "colorHex": "#242424"
+      },
+      {
+        "colorName": "red",
+        "colorHex": "#F2404A"
+      },
+      {
+        "colorName": "grey",
+        "colorHex": "#E2DFDF"
+      },
+      {
+        "colorName": "blue",
+        "colorHex": "#38548A"
+      }
+    ],
+    "productDescription": "Приталенный силуэт и заостренные лацканы подчеркивают линию талии, визуально корректируя фигуру до желанной всем 'песочные часы'. Классика женского смокинга, которую одобрил бы сам Ив Сен Лоран.",
+    "productComposition": " 98% шерсть, 2% эластан, отделка шелком",
+    "productParams": [
+      {
+        "params": "Вид застежки:",
+        "value": "Пуговица, обтянутая атласом"
+      },
+      {
+        "params": "Длина изделия:",
+        "value": "По спинке 69 см"
+      },
+      {
+        "params": "Крой:",
+        "value": "Приталенный"
+      },
+      {
+        "params": "Рисунок:",
+        "value": "Без рисунка"
+      },
+      {
+        "params": "Тип карманов:",
+        "value": "Прорезные 'листочки'"
+      },
+      {
+        "params": "Конструктивные элементы:",
+        "value": "Рельефные швы"
+      },
+      {
+        "params": "Материал подкладки",
+        "value": "Вискоза 100%"
+      },
+      {
+        "params": "Уход за вещами:",
+        "value": "Химчистка"
+      }
+    ]
+  },
+  {
+    "added": "13",
+    "id": "Card-13",
+    "image": [
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-1.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-a nd-vest-mobile-1@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-2.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-2@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-2.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-3.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-3@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-3.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-4.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-4@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-4.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-4@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      }
+    ],
+    "img": {
+      "srcset": "./images/card-13.jpg 1x, ./images/card-13@2x.jpg 2x",
+      "src": "./images/card-13.jpg",
+      "alt": "Топ с кружевом черный"
+    },
+    "name": "/ Топ с кружевом черный",
+    "icon": "./images/catalog.svg#icon-gallery-card-heart",
+    "description": "Подчеркнет линию талии",
+    "productName": "Классический комплект со смокингом и желетом",
+    "productPrice": 23900,
+    "category": [
+      "Новинки",
+      "Топы и жилеты"
+    ],
+    "collection": [],
+    "size": [
+      {
+        "40": true
+      },
+      {
+        "42": true
+      },
+      {
+        "44": true
+      },
+      {
+        "46": true
+      },
+      {
+        "48": false
+      },
+      {
+        "50": false
+      }
+    ],
+    "color": [
+      {
+        "colorName": "black",
+        "colorHex": "#242424"
+      },
+      {
+        "colorName": "red",
+        "colorHex": "#F2404A"
+      },
+      {
+        "colorName": "grey",
+        "colorHex": "#E2DFDF"
+      },
+      {
+        "colorName": "blue",
+        "colorHex": "#38548A"
+      }
+    ],
+    "productDescription": "Приталенный силуэт и заостренные лацканы подчеркивают линию талии, визуально корректируя фигуру до желанной всем 'песочные часы'. Классика женского смокинга, которую одобрил бы сам Ив Сен Лоран.",
+    "productComposition": " 98% шерсть, 2% эластан, отделка шелком",
+    "productParams": [
+      {
+        "params": "Вид застежки:",
+        "value": "Пуговица, обтянутая атласом"
+      },
+      {
+        "params": "Длина изделия:",
+        "value": "По спинке 69 см"
+      },
+      {
+        "params": "Крой:",
+        "value": "Приталенный"
+      },
+      {
+        "params": "Рисунок:",
+        "value": "Без рисунка"
+      },
+      {
+        "params": "Тип карманов:",
+        "value": "Прорезные 'листочки'"
+      },
+      {
+        "params": "Конструктивные элементы:",
+        "value": "Рельефные швы"
+      },
+      {
+        "params": "Материал подкладки",
+        "value": "Вискоза 100%"
+      },
+      {
+        "params": "Уход за вещами:",
+        "value": "Химчистка"
+      }
+    ]
+  },
+  {
+    "added": "14",
+    "id": "Card-14",
+    "image": [
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-1.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-a nd-vest-mobile-1@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-2.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-2@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-2.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-3.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-3@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-3.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-4.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-4@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-4.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-4@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      }
+    ],
+    "img": {
+      "srcset": "./images/card-14.jpg 1x, ./images/card-14@2x.jpg 2x",
+      "src": "./images/card-14.jpg",
+      "alt": "Юбка - карандаш"
+    },
+    "name": "/ Юбка - карандаш",
+    "icon": "./images/catalog.svg#icon-gallery-card-heart",
+    "description": "Мировая классика",
+    "productName": "Классический комплект со смокингом и желетом",
+    "productPrice": 65300,
+    "category": [
+      "Новинки",
+      "Юбки"
+    ],
+    "collection": [
+      "Вечерние комплекты"
+    ],
+    "size": [
+      {
+        "40": true
+      },
+      {
+        "42": true
+      },
+      {
+        "44": true
+      },
+      {
+        "46": true
+      },
+      {
+        "48": false
+      },
+      {
+        "50": false
+      }
+    ],
+    "color": [
+      {
+        "colorName": "black",
+        "colorHex": "#242424"
+      },
+      {
+        "colorName": "red",
+        "colorHex": "#F2404A"
+      },
+      {
+        "colorName": "grey",
+        "colorHex": "#E2DFDF"
+      },
+      {
+        "colorName": "blue",
+        "colorHex": "#38548A"
+      }
+    ],
+    "productDescription": "Приталенный силуэт и заостренные лацканы подчеркивают линию талии, визуально корректируя фигуру до желанной всем 'песочные часы'. Классика женского смокинга, которую одобрил бы сам Ив Сен Лоран.",
+    "productComposition": " 98% шерсть, 2% эластан, отделка шелком",
+    "productParams": [
+      {
+        "params": "Вид застежки:",
+        "value": "Пуговица, обтянутая атласом"
+      },
+      {
+        "params": "Длина изделия:",
+        "value": "По спинке 69 см"
+      },
+      {
+        "params": "Крой:",
+        "value": "Приталенный"
+      },
+      {
+        "params": "Рисунок:",
+        "value": "Без рисунка"
+      },
+      {
+        "params": "Тип карманов:",
+        "value": "Прорезные 'листочки'"
+      },
+      {
+        "params": "Конструктивные элементы:",
+        "value": "Рельефные швы"
+      },
+      {
+        "params": "Материал подкладки",
+        "value": "Вискоза 100%"
+      },
+      {
+        "params": "Уход за вещами:",
+        "value": "Химчистка"
+      }
+    ]
+  },
+  {
+    "added": "15",
+    "id": "Card-15",
+    "image": [
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-1.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-a nd-vest-mobile-1@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-2.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-2@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-2.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-3.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-3@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-3.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-4.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-4@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-4.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-4@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      }
+    ],
+    "img": {
+      "srcset": "./images/card-15.jpg 1x, ./images/card-15@2x.jpg 2x",
+      "src": "./images/card-15.jpg",
+      "alt": "Блуза с баской"
+    },
+    "name": "/ Блуза с баской",
+    "icon": "./images/catalog.svg#icon-gallery-card-heart",
+    "description": "Подчеркнет линию талии",
+    "productName": "Классический комплект со смокингом и желетом",
+    "productPrice": 65300,
+    "category": [
+      "Блузы",
+      "Свадьба и выпускной"
+    ],
+    "collection": [
+      "Свадьба и выпускной"
+    ],
+    "size": [
+      {
+        "40": true
+      },
+      {
+        "42": true
+      },
+      {
+        "44": true
+      },
+      {
+        "46": true
+      },
+      {
+        "48": false
+      },
+      {
+        "50": false
+      }
+    ],
+    "color": [
+      {
+        "colorName": "black",
+        "colorHex": "#242424"
+      },
+      {
+        "colorName": "red",
+        "colorHex": "#F2404A"
+      },
+      {
+        "colorName": "grey",
+        "colorHex": "#E2DFDF"
+      },
+      {
+        "colorName": "blue",
+        "colorHex": "#38548A"
+      }
+    ],
+    "productDescription": "Приталенный силуэт и заостренные лацканы подчеркивают линию талии, визуально корректируя фигуру до желанной всем 'песочные часы'. Классика женского смокинга, которую одобрил бы сам Ив Сен Лоран.",
+    "productComposition": " 98% шерсть, 2% эластан, отделка шелком",
+    "productParams": [
+      {
+        "params": "Вид застежки:",
+        "value": "Пуговица, обтянутая атласом"
+      },
+      {
+        "params": "Длина изделия:",
+        "value": "По спинке 69 см"
+      },
+      {
+        "params": "Крой:",
+        "value": "Приталенный"
+      },
+      {
+        "params": "Рисунок:",
+        "value": "Без рисунка"
+      },
+      {
+        "params": "Тип карманов:",
+        "value": "Прорезные 'листочки'"
+      },
+      {
+        "params": "Конструктивные элементы:",
+        "value": "Рельефные швы"
+      },
+      {
+        "params": "Материал подкладки",
+        "value": "Вискоза 100%"
+      },
+      {
+        "params": "Уход за вещами:",
+        "value": "Химчистка"
+      }
+    ]
+  },
+  {
+    "added": "16",
+    "id": "Card-16",
+    "image": [
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-1.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-a nd-vest-mobile-1@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-2.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-2@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-2.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-3.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-3@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-3.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-4.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-4@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-4.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-4@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      }
+    ],
+    "img": {
+      "srcset": "./images/card-16.jpg 1x, ./images/card-16@2x.jpg 2x",
+      "src": "./images/card-16.jpg",
+      "alt": "Брюки клёш"
+    },
+    "name": "/ Брюки клёш",
+    "icon": "./images/catalog.svg#icon-gallery-card-heart",
+    "description": "Подчеркнет линию талии",
+    "productName": "Классический комплект со смокингом и желетом",
+    "productPrice": 23900,
+    "category": [
+      "Брюки"
+    ],
+    "collection": [],
+    "size": [
+      {
+        "40": true
+      },
+      {
+        "42": true
+      },
+      {
+        "44": true
+      },
+      {
+        "46": true
+      },
+      {
+        "48": false
+      },
+      {
+        "50": false
+      }
+    ],
+    "color": [
+      {
+        "colorName": "black",
+        "colorHex": "#242424"
+      },
+      {
+        "colorName": "red",
+        "colorHex": "#F2404A"
+      },
+      {
+        "colorName": "grey",
+        "colorHex": "#E2DFDF"
+      },
+      {
+        "colorName": "blue",
+        "colorHex": "#38548A"
+      }
+    ],
+    "productDescription": "Приталенный силуэт и заостренные лацканы подчеркивают линию талии, визуально корректируя фигуру до желанной всем 'песочные часы'. Классика женского смокинга, которую одобрил бы сам Ив Сен Лоран.",
+    "productComposition": " 98% шерсть, 2% эластан, отделка шелком",
+    "productParams": [
+      {
+        "params": "Вид застежки:",
+        "value": "Пуговица, обтянутая атласом"
+      },
+      {
+        "params": "Длина изделия:",
+        "value": "По спинке 69 см"
+      },
+      {
+        "params": "Крой:",
+        "value": "Приталенный"
+      },
+      {
+        "params": "Рисунок:",
+        "value": "Без рисунка"
+      },
+      {
+        "params": "Тип карманов:",
+        "value": "Прорезные 'листочки'"
+      },
+      {
+        "params": "Конструктивные элементы:",
+        "value": "Рельефные швы"
+      },
+      {
+        "params": "Материал подкладки",
+        "value": "Вискоза 100%"
+      },
+      {
+        "params": "Уход за вещами:",
+        "value": "Химчистка"
+      }
+    ]
+  },
+  {
+    "added": "17",
+    "id": "Card-17",
+    "image": [
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-1.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-a nd-vest-mobile-1@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-2.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-2@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-2.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-3.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-3@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-3.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-4.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-4@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-4.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-4@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      }
+    ],
+    "img": {
+      "srcset": "./images/card-17.jpg 1x, ./images/card-17@2x.jpg 2x",
+      "src": "./images/card-17.jpg",
+      "alt": "Брюки зауженные"
+    },
+    "name": "/ Брюки зауженные",
+    "description": "Мировая классика",
+    "icon": "./images/catalog.svg#icon-gallery-card-heart",
+    "productName": "Классический комплект со смокингом и желетом",
+    "productPrice": 65300,
+    "category": [
+      "Брюки",
+      "Новинки"
+    ],
+    "collection": [],
+    "size": [
+      {
+        "40": true
+      },
+      {
+        "42": true
+      },
+      {
+        "44": true
+      },
+      {
+        "46": true
+      },
+      {
+        "48": false
+      },
+      {
+        "50": false
+      }
+    ],
+    "color": [
+      {
+        "colorName": "black",
+        "colorHex": "#242424"
+      },
+      {
+        "colorName": "red",
+        "colorHex": "#F2404A"
+      },
+      {
+        "colorName": "grey",
+        "colorHex": "#E2DFDF"
+      },
+      {
+        "colorName": "blue",
+        "colorHex": "#38548A"
+      }
+    ],
+    "productDescription": "Приталенный силуэт и заостренные лацканы подчеркивают линию талии, визуально корректируя фигуру до желанной всем 'песочные часы'. Классика женского смокинга, которую одобрил бы сам Ив Сен Лоран.",
+    "productComposition": " 98% шерсть, 2% эластан, отделка шелком",
+    "productParams": [
+      {
+        "params": "Вид застежки:",
+        "value": "Пуговица, обтянутая атласом"
+      },
+      {
+        "params": "Длина изделия:",
+        "value": "По спинке 69 см"
+      },
+      {
+        "params": "Крой:",
+        "value": "Приталенный"
+      },
+      {
+        "params": "Рисунок:",
+        "value": "Без рисунка"
+      },
+      {
+        "params": "Тип карманов:",
+        "value": "Прорезные 'листочки'"
+      },
+      {
+        "params": "Конструктивные элементы:",
+        "value": "Рельефные швы"
+      },
+      {
+        "params": "Материал подкладки",
+        "value": "Вискоза 100%"
+      },
+      {
+        "params": "Уход за вещами:",
+        "value": "Химчистка"
+      }
+    ]
+  },
+  {
+    "added": "18",
+    "id": "Card-18",
+    "image": [
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-1.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-a nd-vest-mobile-1@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-2.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-2@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-2.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-3.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-3@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-3.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-4.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-4@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-4.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-4@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      }
+    ],
+    "img": {
+      "srcset": "./images/card-18.jpg 1x, ./images/card-18@2x.jpg 2x",
+      "src": "./images/card-18.jpg",
+      "alt": "Красный приталенный смокинг"
+    },
+    "name": "/ Красный приталенный смокинг",
+    "icon": "./images/catalog.svg#icon-gallery-card-heart",
+    "description": "Подчеркнет линию талии",
+    "productName": "Классический комплект со смокингом и желетом",
+    "productPrice": 23900,
+    "category": [
+      "Смокинг",
+      "Новинки"
+    ],
+    "collection": [],
+    "size": [
+      {
+        "40": true
+      },
+      {
+        "42": true
+      },
+      {
+        "44": true
+      },
+      {
+        "46": true
+      },
+      {
+        "48": false
+      },
+      {
+        "50": false
+      }
+    ],
+    "color": [
+      {
+        "colorName": "black",
+        "colorHex": "#242424"
+      },
+      {
+        "colorName": "red",
+        "colorHex": "#F2404A"
+      },
+      {
+        "colorName": "grey",
+        "colorHex": "#E2DFDF"
+      },
+      {
+        "colorName": "blue",
+        "colorHex": "#38548A"
+      }
+    ],
+    "productDescription": "Приталенный силуэт и заостренные лацканы подчеркивают линию талии, визуально корректируя фигуру до желанной всем 'песочные часы'. Классика женского смокинга, которую одобрил бы сам Ив Сен Лоран.",
+    "productComposition": " 98% шерсть, 2% эластан, отделка шелком",
+    "productParams": [
+      {
+        "params": "Вид застежки:",
+        "value": "Пуговица, обтянутая атласом"
+      },
+      {
+        "params": "Длина изделия:",
+        "value": "По спинке 69 см"
+      },
+      {
+        "params": "Крой:",
+        "value": "Приталенный"
+      },
+      {
+        "params": "Рисунок:",
+        "value": "Без рисунка"
+      },
+      {
+        "params": "Тип карманов:",
+        "value": "Прорезные 'листочки'"
+      },
+      {
+        "params": "Конструктивные элементы:",
+        "value": "Рельефные швы"
+      },
+      {
+        "params": "Материал подкладки",
+        "value": "Вискоза 100%"
+      },
+      {
+        "params": "Уход за вещами:",
+        "value": "Химчистка"
+      }
+    ]
+  },
+  {
+    "added": "19",
+    "id": "Card-19",
+    "image": [
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-1.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-a nd-vest-mobile-1@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-2.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-2@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-2.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-3.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-3@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-3.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-4.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-4@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-4.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-4@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      }
+    ],
+    "img": {
+      "srcset": "./images/card-19.jpg 1x, ./images/card-19@2x.jpg 2x",
+      "src": "./images/card-19.jpg",
+      "alt": "Костюм бархатный"
+    },
+    "name": "/ Костюм бархатный",
+    "icon": "./images/catalog.svg#icon-gallery-card-heart",
+    "description": "Мировая классика",
+    "productName": "Классический комплект со смокингом и желетом",
+    "productPrice": 65300,
+    "category": [
+      "Костюмы"
+    ],
+    "collection": [
+      "Осень-зима 20-21"
+    ],
+    "size": [
+      {
+        "40": true
+      },
+      {
+        "42": true
+      },
+      {
+        "44": true
+      },
+      {
+        "46": true
+      },
+      {
+        "48": false
+      },
+      {
+        "50": false
+      }
+    ],
+    "color": [
+      {
+        "colorName": "black",
+        "colorHex": "#242424"
+      },
+      {
+        "colorName": "red",
+        "colorHex": "#F2404A"
+      },
+      {
+        "colorName": "grey",
+        "colorHex": "#E2DFDF"
+      },
+      {
+        "colorName": "blue",
+        "colorHex": "#38548A"
+      }
+    ],
+    "productDescription": "Приталенный силуэт и заостренные лацканы подчеркивают линию талии, визуально корректируя фигуру до желанной всем 'песочные часы'. Классика женского смокинга, которую одобрил бы сам Ив Сен Лоран.",
+    "productComposition": " 98% шерсть, 2% эластан, отделка шелком",
+    "productParams": [
+      {
+        "params": "Вид застежки:",
+        "value": "Пуговица, обтянутая атласом"
+      },
+      {
+        "params": "Длина изделия:",
+        "value": "По спинке 69 см"
+      },
+      {
+        "params": "Крой:",
+        "value": "Приталенный"
+      },
+      {
+        "params": "Рисунок:",
+        "value": "Без рисунка"
+      },
+      {
+        "params": "Тип карманов:",
+        "value": "Прорезные 'листочки'"
+      },
+      {
+        "params": "Конструктивные элементы:",
+        "value": "Рельефные швы"
+      },
+      {
+        "params": "Материал подкладки",
+        "value": "Вискоза 100%"
+      },
+      {
+        "params": "Уход за вещами:",
+        "value": "Химчистка"
+      }
+    ]
+  },
+  {
+    "added": "20",
+    "id": "Card-1-desktop",
+    "image": [
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-1.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-a nd-vest-mobile-1@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-2.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-2@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-2.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-3.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-3@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-3.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-4.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-4@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-4.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-4@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      }
+    ],
+    "img": {
+      "srcset": "./images/card-1-desktop.jpg 1x, ./images/card-1-desktop@2x.jpg 2x",
+      "src": "./images/card-1-desktop.jpg",
+      "alt": "Жакет-смокинг с лацканами"
+    },
+    "name": "/ Жакет-смокинг с лацканами",
+    "icon": "./images/catalog.svg#icon-gallery-card-heart",
+    "description": "Подчеркнет линию талии",
+    "productName": "Классический комплект со смокингом и желетом",
+    "productPrice": 23900,
+    "category": [
+      "Смокинги",
+      "Новинки"
+    ],
+    "collection": [],
+    "size": [
+      {
+        "40": true
+      },
+      {
+        "42": true
+      },
+      {
+        "44": true
+      },
+      {
+        "46": true
+      },
+      {
+        "48": false
+      },
+      {
+        "50": false
+      }
+    ],
+    "color": [
+      {
+        "colorName": "black",
+        "colorHex": "#242424"
+      },
+      {
+        "colorName": "red",
+        "colorHex": "#F2404A"
+      },
+      {
+        "colorName": "grey",
+        "colorHex": "#E2DFDF"
+      },
+      {
+        "colorName": "blue",
+        "colorHex": "#38548A"
+      }
+    ],
+    "productDescription": "Приталенный силуэт и заостренные лацканы подчеркивают линию талии, визуально корректируя фигуру до желанной всем 'песочные часы'. Классика женского смокинга, которую одобрил бы сам Ив Сен Лоран.",
+    "productComposition": " 98% шерсть, 2% эластан, отделка шелком",
+    "productParams": [
+      {
+        "params": "Вид застежки:",
+        "value": "Пуговица, обтянутая атласом"
+      },
+      {
+        "params": "Длина изделия:",
+        "value": "По спинке 69 см"
+      },
+      {
+        "params": "Крой:",
+        "value": "Приталенный"
+      },
+      {
+        "params": "Рисунок:",
+        "value": "Без рисунка"
+      },
+      {
+        "params": "Тип карманов:",
+        "value": "Прорезные 'листочки'"
+      },
+      {
+        "params": "Конструктивные элементы:",
+        "value": "Рельефные швы"
+      },
+      {
+        "params": "Материал подкладки",
+        "value": "Вискоза 100%"
+      },
+      {
+        "params": "Уход за вещами:",
+        "value": "Химчистка"
+      }
+    ]
+  },
+  {
+    "added": "21",
+    "id": "Card-2-desktop",
+    "image": [
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-1.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-a nd-vest-mobile-1@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-2.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-2@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-2.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-3.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-3@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-3.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-4.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-4@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-4.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-4@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      }
+    ],
+    "img": {
+      "srcset": "./images/card-2-desktop.jpg 1x, ./images/card-2-desktop@2x.jpg 2x",
+      "src": "./images/card-2-desktop.jpg",
+      "alt": " Классический комплект с смокингом..."
+    },
+    "name": "/ Классический комплект с смокингом...",
+    "icon": "./images/catalog.svg#icon-gallery-card-heart",
+    "description": "Подчеркнет линию талии",
+    "productName": "Классический комплект со смокингом и желетом",
+    "productPrice": 65300,
+    "category": [
+      "Смокинги"
+    ],
+    "collection": [
+      "Осень-зима 20-21"
+    ],
+    "size": [
+      {
+        "40": true
+      },
+      {
+        "42": true
+      },
+      {
+        "44": true
+      },
+      {
+        "46": true
+      },
+      {
+        "48": false
+      },
+      {
+        "50": false
+      }
+    ],
+    "color": [
+      {
+        "colorName": "black",
+        "colorHex": "#242424"
+      },
+      {
+        "colorName": "red",
+        "colorHex": "#F2404A"
+      },
+      {
+        "colorName": "grey",
+        "colorHex": "#E2DFDF"
+      },
+      {
+        "colorName": "blue",
+        "colorHex": "#38548A"
+      }
+    ],
+    "productDescription": "Приталенный силуэт и заостренные лацканы подчеркивают линию талии, визуально корректируя фигуру до желанной всем 'песочные часы'. Классика женского смокинга, которую одобрил бы сам Ив Сен Лоран.",
+    "productComposition": " 98% шерсть, 2% эластан, отделка шелком",
+    "productParams": [
+      {
+        "params": "Вид застежки:",
+        "value": "Пуговица, обтянутая атласом"
+      },
+      {
+        "params": "Длина изделия:",
+        "value": "По спинке 69 см"
+      },
+      {
+        "params": "Крой:",
+        "value": "Приталенный"
+      },
+      {
+        "params": "Рисунок:",
+        "value": "Без рисунка"
+      },
+      {
+        "params": "Тип карманов:",
+        "value": "Прорезные 'листочки'"
+      },
+      {
+        "params": "Конструктивные элементы:",
+        "value": "Рельефные швы"
+      },
+      {
+        "params": "Материал подкладки",
+        "value": "Вискоза 100%"
+      },
+      {
+        "params": "Уход за вещами:",
+        "value": "Химчистка"
+      }
+    ]
+  },
+  {
+    "added": "22",
+    "id": "Card-3-desktop",
+    "image": [
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-1.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-a nd-vest-mobile-1@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-2.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-2@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-2.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-3.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-3@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-3.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-4.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-4@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-4.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-4@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      }
+    ],
+    "img": {
+      "srcset": "./images/card-3-desktop.jpg 1x, ./images/card-3-desktop@2x.jpg 2x",
+      "src": "./images/card-3-desktop.jpg",
+      "alt": "Белый жакет смокинг"
+    },
+    "name": "/ Белый жакет смокинг",
+    "icon": "./images/catalog.svg#icon-gallery-card-heart",
+    "description": "Подчеркнет линию талии",
+    "productName": "Классический комплект со смокингом и желетом",
+    "productPrice": 26900,
+    "category": [
+      "Смокинги",
+      "Новинки"
+    ],
+    "collection": [],
+    "size": [
+      {
+        "40": true
+      },
+      {
+        "42": true
+      },
+      {
+        "44": true
+      },
+      {
+        "46": true
+      },
+      {
+        "48": false
+      },
+      {
+        "50": false
+      }
+    ],
+    "color": [
+      {
+        "colorName": "black",
+        "colorHex": "#242424"
+      },
+      {
+        "colorName": "red",
+        "colorHex": "#F2404A"
+      },
+      {
+        "colorName": "grey",
+        "colorHex": "#E2DFDF"
+      },
+      {
+        "colorName": "blue",
+        "colorHex": "#38548A"
+      }
+    ],
+    "productDescription": "Приталенный силуэт и заостренные лацканы подчеркивают линию талии, визуально корректируя фигуру до желанной всем 'песочные часы'. Классика женского смокинга, которую одобрил бы сам Ив Сен Лоран.",
+    "productComposition": " 98% шерсть, 2% эластан, отделка шелком",
+    "productParams": [
+      {
+        "params": "Вид застежки:",
+        "value": "Пуговица, обтянутая атласом"
+      },
+      {
+        "params": "Длина изделия:",
+        "value": "По спинке 69 см"
+      },
+      {
+        "params": "Крой:",
+        "value": "Приталенный"
+      },
+      {
+        "params": "Рисунок:",
+        "value": "Без рисунка"
+      },
+      {
+        "params": "Тип карманов:",
+        "value": "Прорезные 'листочки'"
+      },
+      {
+        "params": "Конструктивные элементы:",
+        "value": "Рельефные швы"
+      },
+      {
+        "params": "Материал подкладки",
+        "value": "Вискоза 100%"
+      },
+      {
+        "params": "Уход за вещами:",
+        "value": "Химчистка"
+      }
+    ]
+  },
+  {
+    "added": "23",
+    "id": "Card-4-desktop",
+    "image": [
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-1.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-a nd-vest-mobile-1@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-2.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-2@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-2.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-3.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-3@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-3.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-4.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-4@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-4.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-4@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      }
+    ],
+    "img": {
+      "srcset": "./images/card-4-desktop.jpg 1x, ./images/card-4-desktop@2x.jpg 2x",
+      "src": "./images/card-4-desktop.jpg",
+      "alt": " Жакет-смокинг бархатный"
+    },
+    "name": "/ Жакет-смокинг бархатный",
+    "icon": "./images/catalog.svg#icon-gallery-card-heart",
+    "description": "Мировая классика",
+    "productName": "Классический комплект со смокингом и желетом",
+    "productPrice": 29500,
+    "category": [
+      "Смокинги"
+    ],
+    "collection": [
+      "Осень-зима 20-21"
+    ],
+    "size": [
+      {
+        "40": true
+      },
+      {
+        "42": true
+      },
+      {
+        "44": true
+      },
+      {
+        "46": true
+      },
+      {
+        "48": false
+      },
+      {
+        "50": false
+      }
+    ],
+    "color": [
+      {
+        "colorName": "black",
+        "colorHex": "#242424"
+      },
+      {
+        "colorName": "red",
+        "colorHex": "#F2404A"
+      },
+      {
+        "colorName": "grey",
+        "colorHex": "#E2DFDF"
+      },
+      {
+        "colorName": "blue",
+        "colorHex": "#38548A"
+      }
+    ],
+    "productDescription": "Приталенный силуэт и заостренные лацканы подчеркивают линию талии, визуально корректируя фигуру до желанной всем 'песочные часы'. Классика женского смокинга, которую одобрил бы сам Ив Сен Лоран.",
+    "productComposition": " 98% шерсть, 2% эластан, отделка шелком",
+    "productParams": [
+      {
+        "params": "Вид застежки:",
+        "value": "Пуговица, обтянутая атласом"
+      },
+      {
+        "params": "Длина изделия:",
+        "value": "По спинке 69 см"
+      },
+      {
+        "params": "Крой:",
+        "value": "Приталенный"
+      },
+      {
+        "params": "Рисунок:",
+        "value": "Без рисунка"
+      },
+      {
+        "params": "Тип карманов:",
+        "value": "Прорезные 'листочки'"
+      },
+      {
+        "params": "Конструктивные элементы:",
+        "value": "Рельефные швы"
+      },
+      {
+        "params": "Материал подкладки",
+        "value": "Вискоза 100%"
+      },
+      {
+        "params": "Уход за вещами:",
+        "value": "Химчистка"
+      }
+    ]
+  },
+  {
+    "added": "24",
+    "id": "Card-5-desktop",
+    "image": [
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-1.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-a nd-vest-mobile-1@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-2.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-2@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-2.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-3.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-3@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-3.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-4.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-4@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-4.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-4@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      }
+    ],
+    "img": {
+      "srcset": "./images/card-5-desktop.jpg 1x, ./images/card-5-desktop@2x.jpg 2x",
+      "src": "./images/card-5-desktop.jpg",
+      "alt": " Жакет-смокинг прямой"
+    },
+    "name": "/ Жакет-смокинг прямой",
+    "icon": "./images/catalog.svg#icon-gallery-card-heart",
+    "description": "Подчеркнет линию талии",
+    "productName": "Классический комплект со смокингом и желетом",
+    "productPrice": 21900,
+    "category": [
+      "Смокинги"
+    ],
+    "collection": [],
+    "size": [
+      {
+        "40": true
+      },
+      {
+        "42": true
+      },
+      {
+        "44": true
+      },
+      {
+        "46": true
+      },
+      {
+        "48": false
+      },
+      {
+        "50": false
+      }
+    ],
+    "color": [
+      {
+        "colorName": "black",
+        "colorHex": "#242424"
+      },
+      {
+        "colorName": "red",
+        "colorHex": "#F2404A"
+      },
+      {
+        "colorName": "grey",
+        "colorHex": "#E2DFDF"
+      },
+      {
+        "colorName": "blue",
+        "colorHex": "#38548A"
+      }
+    ],
+    "productDescription": "Приталенный силуэт и заостренные лацканы подчеркивают линию талии, визуально корректируя фигуру до желанной всем 'песочные часы'. Классика женского смокинга, которую одобрил бы сам Ив Сен Лоран.",
+    "productComposition": " 98% шерсть, 2% эластан, отделка шелком",
+    "productParams": [
+      {
+        "params": "Вид застежки:",
+        "value": "Пуговица, обтянутая атласом"
+      },
+      {
+        "params": "Длина изделия:",
+        "value": "По спинке 69 см"
+      },
+      {
+        "params": "Крой:",
+        "value": "Приталенный"
+      },
+      {
+        "params": "Рисунок:",
+        "value": "Без рисунка"
+      },
+      {
+        "params": "Тип карманов:",
+        "value": "Прорезные 'листочки'"
+      },
+      {
+        "params": "Конструктивные элементы:",
+        "value": "Рельефные швы"
+      },
+      {
+        "params": "Материал подкладки",
+        "value": "Вискоза 100%"
+      },
+      {
+        "params": "Уход за вещами:",
+        "value": "Химчистка"
+      }
+    ]
+  },
+  {
+    "added": "25",
+    "id": "Card-6-desktop",
+    "image": [
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-1.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-a nd-vest-mobile-1@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-2.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-2@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-2.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-3.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-3@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-3.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-4.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-4@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-4.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-4@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      }
+    ],
+    "img": {
+      "srcset": "./images/card-6-desktop.jpg 1x, ./images/card-6-desktop@2x.jpg 2x",
+      "src": "./images/card-6-desktop.jpg",
+      "alt": "Белый смокинг с брюками-клёш"
+    },
+    "name": "/ Белый смокинг с брюками-клёш",
+    "icon": "./images/catalog.svg#icon-gallery-card-heart",
+    "description": "Подчеркнет линию талии",
+    "productName": "Классический комплект со смокингом и желетом",
+    "productPrice": 40400,
+    "category": [
+      "Смокинги",
+      "Новинки"
+    ],
+    "collection": [
+      "Осень-зима 20-21"
+    ],
+    "size": [
+      {
+        "40": true
+      },
+      {
+        "42": true
+      },
+      {
+        "44": true
+      },
+      {
+        "46": true
+      },
+      {
+        "48": false
+      },
+      {
+        "50": false
+      }
+    ],
+    "color": [
+      {
+        "colorName": "black",
+        "colorHex": "#242424"
+      },
+      {
+        "colorName": "red",
+        "colorHex": "#F2404A"
+      },
+      {
+        "colorName": "grey",
+        "colorHex": "#E2DFDF"
+      },
+      {
+        "colorName": "blue",
+        "colorHex": "#38548A"
+      }
+    ],
+    "productDescription": "Приталенный силуэт и заостренные лацканы подчеркивают линию талии, визуально корректируя фигуру до желанной всем 'песочные часы'. Классика женского смокинга, которую одобрил бы сам Ив Сен Лоран.",
+    "productComposition": " 98% шерсть, 2% эластан, отделка шелком",
+    "productParams": [
+      {
+        "params": "Вид застежки:",
+        "value": "Пуговица, обтянутая атласом"
+      },
+      {
+        "params": "Длина изделия:",
+        "value": "По спинке 69 см"
+      },
+      {
+        "params": "Крой:",
+        "value": "Приталенный"
+      },
+      {
+        "params": "Рисунок:",
+        "value": "Без рисунка"
+      },
+      {
+        "params": "Тип карманов:",
+        "value": "Прорезные 'листочки'"
+      },
+      {
+        "params": "Конструктивные элементы:",
+        "value": "Рельефные швы"
+      },
+      {
+        "params": "Материал подкладки",
+        "value": "Вискоза 100%"
+      },
+      {
+        "params": "Уход за вещами:",
+        "value": "Химчистка"
+      }
+    ]
+  },
+  {
+    "added": "26",
+    "id": "Card-7-desktop",
+    "image": [
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-1.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-a nd-vest-mobile-1@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-2.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-2@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-2.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-3.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-3@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-3.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-4.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-4@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-4.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-4@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      }
+    ],
+    "img": {
+      "srcset": "./images/card-7-desktop.jpg 1x, ./images/card-7-desktop@2x.jpg 2x",
+      "src": "./images/card-7-desktop.jpg",
+      "alt": "Жакет - смокинг приталенный синий"
+    },
+    "name": "/ Жакет - смокинг приталенный синий",
+    "icon": "./images/catalog.svg#icon-gallery-card-heart",
+    "description": "Мировая классика",
+    "productName": "Классический комплект со смокингом и желетом",
+    "productPrice": 26900,
+    "category": [
+      "Смокинги",
+      "Новинки"
+    ],
+    "collection": [],
+    "size": [
+      {
+        "40": true
+      },
+      {
+        "42": true
+      },
+      {
+        "44": true
+      },
+      {
+        "46": true
+      },
+      {
+        "48": false
+      },
+      {
+        "50": false
+      }
+    ],
+    "color": [
+      {
+        "colorName": "black",
+        "colorHex": "#242424"
+      },
+      {
+        "colorName": "red",
+        "colorHex": "#F2404A"
+      },
+      {
+        "colorName": "grey",
+        "colorHex": "#E2DFDF"
+      },
+      {
+        "colorName": "blue",
+        "colorHex": "#38548A"
+      }
+    ],
+    "productDescription": "Приталенный силуэт и заостренные лацканы подчеркивают линию талии, визуально корректируя фигуру до желанной всем 'песочные часы'. Классика женского смокинга, которую одобрил бы сам Ив Сен Лоран.",
+    "productComposition": " 98% шерсть, 2% эластан, отделка шелком",
+    "productParams": [
+      {
+        "params": "Вид застежки:",
+        "value": "Пуговица, обтянутая атласом"
+      },
+      {
+        "params": "Длина изделия:",
+        "value": "По спинке 69 см"
+      },
+      {
+        "params": "Крой:",
+        "value": "Приталенный"
+      },
+      {
+        "params": "Рисунок:",
+        "value": "Без рисунка"
+      },
+      {
+        "params": "Тип карманов:",
+        "value": "Прорезные 'листочки'"
+      },
+      {
+        "params": "Конструктивные элементы:",
+        "value": "Рельефные швы"
+      },
+      {
+        "params": "Материал подкладки",
+        "value": "Вискоза 100%"
+      },
+      {
+        "params": "Уход за вещами:",
+        "value": "Химчистка"
+      }
+    ]
+  },
+  {
+    "added": "27",
+    "id": "Card-8-desktop",
+    "image": [
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-1.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-a nd-vest-mobile-1@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-2.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-2@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-2.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-3.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-3@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-3.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-4.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-4@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-4.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-4@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      }
+    ],
+    "img": {
+      "srcset": "./images/card-8-desktop.jpg 1x, ./images/card-8-desktop@2x.jpg 2x",
+      "src": "./images/card-8-desktop.jpg",
+      "alt": "Платье-смокинг длинное"
+    },
+    "name": "/ Платье-смокинг длинное",
+    "icon": "./images/catalog.svg#icon-gallery-card-heart",
+    "description": "Подчеркнет линию талии",
+    "productName": "Классический комплект со смокингом и желетом",
+    "productPrice": 24900,
+    "category": [
+      "Смокинги",
+      "Новинки"
+    ],
+    "collection": [
+      "Свадьба и выпускной"
+    ],
+    "size": [
+      {
+        "40": true
+      },
+      {
+        "42": true
+      },
+      {
+        "44": true
+      },
+      {
+        "46": true
+      },
+      {
+        "48": false
+      },
+      {
+        "50": false
+      }
+    ],
+    "color": [
+      {
+        "colorName": "black",
+        "colorHex": "#242424"
+      },
+      {
+        "colorName": "red",
+        "colorHex": "#F2404A"
+      },
+      {
+        "colorName": "grey",
+        "colorHex": "#E2DFDF"
+      },
+      {
+        "colorName": "blue",
+        "colorHex": "#38548A"
+      }
+    ],
+    "productDescription": "Приталенный силуэт и заостренные лацканы подчеркивают линию талии, визуально корректируя фигуру до желанной всем 'песочные часы'. Классика женского смокинга, которую одобрил бы сам Ив Сен Лоран.",
+    "productComposition": " 98% шерсть, 2% эластан, отделка шелком",
+    "productParams": [
+      {
+        "params": "Вид застежки:",
+        "value": "Пуговица, обтянутая атласом"
+      },
+      {
+        "params": "Длина изделия:",
+        "value": "По спинке 69 см"
+      },
+      {
+        "params": "Крой:",
+        "value": "Приталенный"
+      },
+      {
+        "params": "Рисунок:",
+        "value": "Без рисунка"
+      },
+      {
+        "params": "Тип карманов:",
+        "value": "Прорезные 'листочки'"
+      },
+      {
+        "params": "Конструктивные элементы:",
+        "value": "Рельефные швы"
+      },
+      {
+        "params": "Материал подкладки",
+        "value": "Вискоза 100%"
+      },
+      {
+        "params": "Уход за вещами:",
+        "value": "Химчистка"
+      }
+    ]
+  },
+  {
+    "added": "28",
+    "id": "Card-9-desktop",
+    "image": [
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-1.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-a nd-vest-mobile-1@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-2.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-2@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-2.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-3.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-3@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-3.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-4.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-4@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-4.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-4@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      }
+    ],
+    "img": {
+      "srcset": "./images/card-9-desktop.jpg 1x, ./images/card-9-desktop@2x.jpg 2x",
+      "src": "./images/card-9-desktop.jpg",
+      "alt": "Белый смокинг и брюки с лампасами"
+    },
+    "name": "/ Белый смокинг и брюки с лампасами",
+    "icon": "./images/catalog.svg#icon-gallery-card-heart",
+    "description": "Мировая классика",
+    "productName": "Классический комплект со смокингом и желетом",
+    "productPrice": 41100,
+    "category": [
+      "Смокинги"
+    ],
+    "collection": [],
+    "size": [
+      {
+        "40": true
+      },
+      {
+        "42": true
+      },
+      {
+        "44": true
+      },
+      {
+        "46": true
+      },
+      {
+        "48": false
+      },
+      {
+        "50": false
+      }
+    ],
+    "color": [
+      {
+        "colorName": "black",
+        "colorHex": "#242424"
+      },
+      {
+        "colorName": "red",
+        "colorHex": "#F2404A"
+      },
+      {
+        "colorName": "grey",
+        "colorHex": "#E2DFDF"
+      },
+      {
+        "colorName": "blue",
+        "colorHex": "#38548A"
+      }
+    ],
+    "productDescription": "Приталенный силуэт и заостренные лацканы подчеркивают линию талии, визуально корректируя фигуру до желанной всем 'песочные часы'. Классика женского смокинга, которую одобрил бы сам Ив Сен Лоран.",
+    "productComposition": " 98% шерсть, 2% эластан, отделка шелком",
+    "productParams": [
+      {
+        "params": "Вид застежки:",
+        "value": "Пуговица, обтянутая атласом"
+      },
+      {
+        "params": "Длина изделия:",
+        "value": "По спинке 69 см"
+      },
+      {
+        "params": "Крой:",
+        "value": "Приталенный"
+      },
+      {
+        "params": "Рисунок:",
+        "value": "Без рисунка"
+      },
+      {
+        "params": "Тип карманов:",
+        "value": "Прорезные 'листочки'"
+      },
+      {
+        "params": "Конструктивные элементы:",
+        "value": "Рельефные швы"
+      },
+      {
+        "params": "Материал подкладки",
+        "value": "Вискоза 100%"
+      },
+      {
+        "params": "Уход за вещами:",
+        "value": "Химчистка"
+      }
+    ]
+  },
+  {
+    "added": "29",
+    "id": "Card-10-desktop",
+    "image": [
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-1.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-a nd-vest-mobile-1@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-2.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-2@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-2.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-3.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-3@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-3.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-4.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-4@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-4.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-4@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      }
+    ],
+    "img": {
+      "srcset": "./images/card-10-desktop.jpg 1x, ./images/card-10-desktop@2x.jpg 2x",
+      "src": "./images/card-10-desktop.jpg",
+      "alt": "Классический комплект с бабочкой"
+    },
+    "name": "/ Классический комплект с бабочкой",
+    "icon": "./images/catalog.svg#icon-gallery-card-heart",
+    "description": "Подчеркнет линию талии",
+    "productName": "Классический комплект со смокингом и желетом",
+    "productPrice": 51800,
+    "category": [
+      "Смокинги",
+      "Новинки",
+      "Осень-зима 20-21"
+    ],
+    "collection": [],
+    "size": [
+      {
+        "40": true
+      },
+      {
+        "42": true
+      },
+      {
+        "44": true
+      },
+      {
+        "46": true
+      },
+      {
+        "48": false
+      },
+      {
+        "50": false
+      }
+    ],
+    "color": [
+      {
+        "colorName": "black",
+        "colorHex": "#242424"
+      },
+      {
+        "colorName": "red",
+        "colorHex": "#F2404A"
+      },
+      {
+        "colorName": "grey",
+        "colorHex": "#E2DFDF"
+      },
+      {
+        "colorName": "blue",
+        "colorHex": "#38548A"
+      }
+    ],
+    "productDescription": "Приталенный силуэт и заостренные лацканы подчеркивают линию талии, визуально корректируя фигуру до желанной всем 'песочные часы'. Классика женского смокинга, которую одобрил бы сам Ив Сен Лоран.",
+    "productComposition": " 98% шерсть, 2% эластан, отделка шелком",
+    "productParams": [
+      {
+        "params": "Вид застежки:",
+        "value": "Пуговица, обтянутая атласом"
+      },
+      {
+        "params": "Длина изделия:",
+        "value": "По спинке 69 см"
+      },
+      {
+        "params": "Крой:",
+        "value": "Приталенный"
+      },
+      {
+        "params": "Рисунок:",
+        "value": "Без рисунка"
+      },
+      {
+        "params": "Тип карманов:",
+        "value": "Прорезные 'листочки'"
+      },
+      {
+        "params": "Конструктивные элементы:",
+        "value": "Рельефные швы"
+      },
+      {
+        "params": "Материал подкладки",
+        "value": "Вискоза 100%"
+      },
+      {
+        "params": "Уход за вещами:",
+        "value": "Химчистка"
+      }
+    ]
+  },
+  {
+    "added": "30",
+    "id": "Card-11-desktop",
+    "image": [
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-1.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-a nd-vest-mobile-1@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-2.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-2@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-2.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-3.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-3@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-3.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-4.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-4@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-4.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-4@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      }
+    ],
+    "img": {
+      "srcset": "./images/card-11-desktop.jpg 1x, ./images/card-11-desktop@2x.jpg 2x",
+      "src": "./images/card-11-desktop.jpg",
+      "alt": " Жакет-смокинг"
+    },
+    "name": "/ Жакет-смокинг",
+    "icon": "./images/catalog.svg#icon-gallery-card-heart",
+    "description": "Подчеркнет линию талии",
+    "productName": "Классический комплект со смокингом и желетом",
+    "productPrice": 23900,
+    "category": [
+      "Смокинги"
+    ],
+    "collection": [],
+    "size": [
+      {
+        "40": true
+      },
+      {
+        "42": true
+      },
+      {
+        "44": true
+      },
+      {
+        "46": true
+      },
+      {
+        "48": false
+      },
+      {
+        "50": false
+      }
+    ],
+    "color": [
+      {
+        "colorName": "black",
+        "colorHex": "#242424"
+      },
+      {
+        "colorName": "red",
+        "colorHex": "#F2404A"
+      },
+      {
+        "colorName": "grey",
+        "colorHex": "#E2DFDF"
+      },
+      {
+        "colorName": "blue",
+        "colorHex": "#38548A"
+      }
+    ],
+    "productDescription": "Приталенный силуэт и заостренные лацканы подчеркивают линию талии, визуально корректируя фигуру до желанной всем 'песочные часы'. Классика женского смокинга, которую одобрил бы сам Ив Сен Лоран.",
+    "productComposition": " 98% шерсть, 2% эластан, отделка шелком",
+    "productParams": [
+      {
+        "params": "Вид застежки:",
+        "value": "Пуговица, обтянутая атласом"
+      },
+      {
+        "params": "Длина изделия:",
+        "value": "По спинке 69 см"
+      },
+      {
+        "params": "Крой:",
+        "value": "Приталенный"
+      },
+      {
+        "params": "Рисунок:",
+        "value": "Без рисунка"
+      },
+      {
+        "params": "Тип карманов:",
+        "value": "Прорезные 'листочки'"
+      },
+      {
+        "params": "Конструктивные элементы:",
+        "value": "Рельефные швы"
+      },
+      {
+        "params": "Материал подкладки",
+        "value": "Вискоза 100%"
+      },
+      {
+        "params": "Уход за вещами:",
+        "value": "Химчистка"
+      }
+    ]
+  },
+  {
+    "added": "31",
+    "id": "Card-12-desktop",
+    "image": [
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-1.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-a nd-vest-mobile-1@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-2.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-2@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-2.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-3.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-3@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-3.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-4.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-4@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-4.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-4@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      }
+    ],
+    "img": {
+      "srcset": "./images/card-12-desktop.jpg 1x, ./images/card-12-desktop@2x.jpg 2x",
+      "src": "./images/card-12-desktop.jpg",
+      "alt": "Платье-смокинг молочное"
+    },
+    "name": "/ Платье-смокинг молочное",
+    "icon": "./images/catalog.svg#icon-gallery-card-heart",
+    "description": "Мировая классика",
+    "productName": "Классический комплект со смокингом и желетом",
+    "productPrice": 65300,
+    "category": [
+      "Смокинги",
+      "Новинки",
+      "Платья"
+    ],
+    "collection": [
+      "Свадьба и выпускной",
+      "Вечерние комплекты"
+    ],
+    "size": [
+      {
+        "40": true
+      },
+      {
+        "42": true
+      },
+      {
+        "44": true
+      },
+      {
+        "46": true
+      },
+      {
+        "48": false
+      },
+      {
+        "50": false
+      }
+    ],
+    "color": [
+      {
+        "colorName": "black",
+        "colorHex": "#242424"
+      },
+      {
+        "colorName": "red",
+        "colorHex": "#F2404A"
+      },
+      {
+        "colorName": "grey",
+        "colorHex": "#E2DFDF"
+      },
+      {
+        "colorName": "blue",
+        "colorHex": "#38548A"
+      }
+    ],
+    "productDescription": "Приталенный силуэт и заостренные лацканы подчеркивают линию талии, визуально корректируя фигуру до желанной всем 'песочные часы'. Классика женского смокинга, которую одобрил бы сам Ив Сен Лоран.",
+    "productComposition": " 98% шерсть, 2% эластан, отделка шелком",
+    "productParams": [
+      {
+        "params": "Вид застежки:",
+        "value": "Пуговица, обтянутая атласом"
+      },
+      {
+        "params": "Длина изделия:",
+        "value": "По спинке 69 см"
+      },
+      {
+        "params": "Крой:",
+        "value": "Приталенный"
+      },
+      {
+        "params": "Рисунок:",
+        "value": "Без рисунка"
+      },
+      {
+        "params": "Тип карманов:",
+        "value": "Прорезные 'листочки'"
+      },
+      {
+        "params": "Конструктивные элементы:",
+        "value": "Рельефные швы"
+      },
+      {
+        "params": "Материал подкладки",
+        "value": "Вискоза 100%"
+      },
+      {
+        "params": "Уход за вещами:",
+        "value": "Химчистка"
+      }
+    ]
+  },
+  {
+    "added": "32",
+    "id": "Card-13-desktop",
+    "image": [
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-1.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-a nd-vest-mobile-1@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-2.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-2@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-2.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-3.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-3@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-3.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-4.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-4@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-4.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-4@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      }
+    ],
+    "img": {
+      "srcset": "./images/card-13-desktop.jpg 1x, ./images/card-13-desktop@2x.jpg 2x",
+      "src": "./images/card-13-desktop.jpg",
+      "alt": "Топ с кружевом черный"
+    },
+    "name": "/ Топ с кружевом черный",
+    "icon": "./images/catalog.svg#icon-gallery-card-heart",
+    "description": "Подчеркнет линию талии",
+    "productName": "Классический комплект со смокингом и желетом",
+    "productPrice": 23900,
+    "category": [
+      "Новинки",
+      "Топы и жилеты"
+    ],
+    "collection": [],
+    "size": [
+      {
+        "40": true
+      },
+      {
+        "42": true
+      },
+      {
+        "44": true
+      },
+      {
+        "46": true
+      },
+      {
+        "48": false
+      },
+      {
+        "50": false
+      }
+    ],
+    "color": [
+      {
+        "colorName": "black",
+        "colorHex": "#242424"
+      },
+      {
+        "colorName": "red",
+        "colorHex": "#F2404A"
+      },
+      {
+        "colorName": "grey",
+        "colorHex": "#E2DFDF"
+      },
+      {
+        "colorName": "blue",
+        "colorHex": "#38548A"
+      }
+    ],
+    "productDescription": "Приталенный силуэт и заостренные лацканы подчеркивают линию талии, визуально корректируя фигуру до желанной всем 'песочные часы'. Классика женского смокинга, которую одобрил бы сам Ив Сен Лоран.",
+    "productComposition": " 98% шерсть, 2% эластан, отделка шелком",
+    "productParams": [
+      {
+        "params": "Вид застежки:",
+        "value": "Пуговица, обтянутая атласом"
+      },
+      {
+        "params": "Длина изделия:",
+        "value": "По спинке 69 см"
+      },
+      {
+        "params": "Крой:",
+        "value": "Приталенный"
+      },
+      {
+        "params": "Рисунок:",
+        "value": "Без рисунка"
+      },
+      {
+        "params": "Тип карманов:",
+        "value": "Прорезные 'листочки'"
+      },
+      {
+        "params": "Конструктивные элементы:",
+        "value": "Рельефные швы"
+      },
+      {
+        "params": "Материал подкладки",
+        "value": "Вискоза 100%"
+      },
+      {
+        "params": "Уход за вещами:",
+        "value": "Химчистка"
+      }
+    ]
+  },
+  {
+    "added": "33",
+    "id": "Card-14-desktop",
+    "image": [
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-1.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-a nd-vest-mobile-1@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-2.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-2@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-2.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-3.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-3@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-3.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-4.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-4@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-4.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-4@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      }
+    ],
+    "img": {
+      "srcset": "./images/card-14-desktop.jpg 1x, ./images/card-14-desktop@2x.jpg 2x",
+      "src": "./images/card-14-desktop.jpg",
+      "alt": "Юбка - карандаш"
+    },
+    "name": "/ Юбка - карандаш",
+    "icon": "./images/catalog.svg#icon-gallery-card-heart",
+    "description": "Мировая классика",
+    "productName": "Классический комплект со смокингом и желетом",
+    "productPrice": 65300,
+    "category": [
+      "Новинки",
+      "Юбки"
+    ],
+    "collection": [
+      "Вечерние комплекты"
+    ],
+    "size": [
+      {
+        "40": true
+      },
+      {
+        "42": true
+      },
+      {
+        "44": true
+      },
+      {
+        "46": true
+      },
+      {
+        "48": false
+      },
+      {
+        "50": false
+      }
+    ],
+    "color": [
+      {
+        "colorName": "black",
+        "colorHex": "#242424"
+      },
+      {
+        "colorName": "red",
+        "colorHex": "#F2404A"
+      },
+      {
+        "colorName": "grey",
+        "colorHex": "#E2DFDF"
+      },
+      {
+        "colorName": "blue",
+        "colorHex": "#38548A"
+      }
+    ],
+    "productDescription": "Приталенный силуэт и заостренные лацканы подчеркивают линию талии, визуально корректируя фигуру до желанной всем 'песочные часы'. Классика женского смокинга, которую одобрил бы сам Ив Сен Лоран.",
+    "productComposition": " 98% шерсть, 2% эластан, отделка шелком",
+    "productParams": [
+      {
+        "params": "Вид застежки:",
+        "value": "Пуговица, обтянутая атласом"
+      },
+      {
+        "params": "Длина изделия:",
+        "value": "По спинке 69 см"
+      },
+      {
+        "params": "Крой:",
+        "value": "Приталенный"
+      },
+      {
+        "params": "Рисунок:",
+        "value": "Без рисунка"
+      },
+      {
+        "params": "Тип карманов:",
+        "value": "Прорезные 'листочки'"
+      },
+      {
+        "params": "Конструктивные элементы:",
+        "value": "Рельефные швы"
+      },
+      {
+        "params": "Материал подкладки",
+        "value": "Вискоза 100%"
+      },
+      {
+        "params": "Уход за вещами:",
+        "value": "Химчистка"
+      }
+    ]
+  },
+  {
+    "added": "34",
+    "id": "Card-15-desktop",
+    "image": [
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-1.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-a nd-vest-mobile-1@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-2.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-2@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-2.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-3.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-3@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-3.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-4.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-4@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-4.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-4@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      }
+    ],
+    "img": {
+      "srcset": "./images/card-15-desktop.jpg 1x, ./images/card-15-desktop@2x.jpg 2x",
+      "src": "./images/card-15-desktop.jpg",
+      "alt": "Блуза с баской"
+    },
+    "name": "/ Блуза с баской",
+    "icon": "./images/catalog.svg#icon-gallery-card-heart",
+    "description": "Подчеркнет линию талии",
+    "productName": "Классический комплект со смокингом и желетом",
+    "productPrice": 23900,
+    "category": [
+      "Блузы",
+      "Свадьба и выпускной"
+    ],
+    "collection": [
+      "Свадьба и выпускной"
+    ],
+    "size": [
+      {
+        "40": true
+      },
+      {
+        "42": true
+      },
+      {
+        "44": true
+      },
+      {
+        "46": true
+      },
+      {
+        "48": false
+      },
+      {
+        "50": false
+      }
+    ],
+    "color": [
+      {
+        "colorName": "black",
+        "colorHex": "#242424"
+      },
+      {
+        "colorName": "red",
+        "colorHex": "#F2404A"
+      },
+      {
+        "colorName": "grey",
+        "colorHex": "#E2DFDF"
+      },
+      {
+        "colorName": "blue",
+        "colorHex": "#38548A"
+      }
+    ],
+    "productDescription": "Приталенный силуэт и заостренные лацканы подчеркивают линию талии, визуально корректируя фигуру до желанной всем 'песочные часы'. Классика женского смокинга, которую одобрил бы сам Ив Сен Лоран.",
+    "productComposition": " 98% шерсть, 2% эластан, отделка шелком",
+    "productParams": [
+      {
+        "params": "Вид застежки:",
+        "value": "Пуговица, обтянутая атласом"
+      },
+      {
+        "params": "Длина изделия:",
+        "value": "По спинке 69 см"
+      },
+      {
+        "params": "Крой:",
+        "value": "Приталенный"
+      },
+      {
+        "params": "Рисунок:",
+        "value": "Без рисунка"
+      },
+      {
+        "params": "Тип карманов:",
+        "value": "Прорезные 'листочки'"
+      },
+      {
+        "params": "Конструктивные элементы:",
+        "value": "Рельефные швы"
+      },
+      {
+        "params": "Материал подкладки",
+        "value": "Вискоза 100%"
+      },
+      {
+        "params": "Уход за вещами:",
+        "value": "Химчистка"
+      }
+    ]
+  },
+  {
+    "added": "35",
+    "id": "Card-16-desktop",
+    "image": [
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-1.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-a nd-vest-mobile-1@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-2.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-2@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-2.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-3.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-3@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-3.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-4.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-4@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-4.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-4@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      }
+    ],
+    "img": {
+      "srcset": "./images/card-16-desktop.jpg 1x, ./images/card-16-desktop@2x.jpg 2x",
+      "src": "./images/card-16.jpg",
+      "alt": "Брюки клёш"
+    },
+    "name": "Брюки клёш",
+    "icon": "./images/catalog.svg#icon-gallery-card-heart",
+    "description": "Подчеркнет линию талии",
+    "productName": "Классический комплект со смокингом и желетом",
+    "productPrice": 23900,
+    "category": [
+      "Брюки"
+    ],
+    "collection": [],
+    "size": [
+      {
+        "40": true
+      },
+      {
+        "42": true
+      },
+      {
+        "44": true
+      },
+      {
+        "46": true
+      },
+      {
+        "48": false
+      },
+      {
+        "50": false
+      }
+    ],
+    "color": [
+      {
+        "colorName": "black",
+        "colorHex": "#242424"
+      },
+      {
+        "colorName": "red",
+        "colorHex": "#F2404A"
+      },
+      {
+        "colorName": "grey",
+        "colorHex": "#E2DFDF"
+      },
+      {
+        "colorName": "blue",
+        "colorHex": "#38548A"
+      }
+    ],
+    "productDescription": "Приталенный силуэт и заостренные лацканы подчеркивают линию талии, визуально корректируя фигуру до желанной всем 'песочные часы'. Классика женского смокинга, которую одобрил бы сам Ив Сен Лоран.",
+    "productComposition": " 98% шерсть, 2% эластан, отделка шелком",
+    "productParams": [
+      {
+        "params": "Вид застежки:",
+        "value": "Пуговица, обтянутая атласом"
+      },
+      {
+        "params": "Длина изделия:",
+        "value": "По спинке 69 см"
+      },
+      {
+        "params": "Крой:",
+        "value": "Приталенный"
+      },
+      {
+        "params": "Рисунок:",
+        "value": "Без рисунка"
+      },
+      {
+        "params": "Тип карманов:",
+        "value": "Прорезные 'листочки'"
+      },
+      {
+        "params": "Конструктивные элементы:",
+        "value": "Рельефные швы"
+      },
+      {
+        "params": "Материал подкладки",
+        "value": "Вискоза 100%"
+      },
+      {
+        "params": "Уход за вещами:",
+        "value": "Химчистка"
+      }
+    ]
+  },
+  {
+    "added": "36",
+    "id": "Card-17",
+    "image": [
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-1.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-a nd-vest-mobile-1@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-2.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-2@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-2.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-3.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-3@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-3.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-4.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-4@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-4.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-4@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      }
+    ],
+    "img": {
+      "srcset": "./images/card-17.jpg 1x, ./images/card-17-desktop@2x.jpg 2x",
+      "src": "./images/card-17.jpg",
+      "alt": "Брюки зауженные"
+    },
+    "name": "/ Брюки зауженные",
+    "description": "Мировая классика",
+    "icon": "./images/catalog.svg#icon-gallery-card-heart",
+    "productName": "Классический комплект со смокингом и желетом",
+    "productPrice": 65300,
+    "category": [
+      "Брюки",
+      "Новинки"
+    ],
+    "collection": [],
+    "size": [
+      {
+        "40": true
+      },
+      {
+        "42": true
+      },
+      {
+        "44": true
+      },
+      {
+        "46": true
+      },
+      {
+        "48": false
+      },
+      {
+        "50": false
+      }
+    ],
+    "color": [
+      {
+        "colorName": "black",
+        "colorHex": "#242424"
+      },
+      {
+        "colorName": "red",
+        "colorHex": "#F2404A"
+      },
+      {
+        "colorName": "grey",
+        "colorHex": "#E2DFDF"
+      },
+      {
+        "colorName": "blue",
+        "colorHex": "#38548A"
+      }
+    ],
+    "productDescription": "Приталенный силуэт и заостренные лацканы подчеркивают линию талии, визуально корректируя фигуру до желанной всем 'песочные часы'. Классика женского смокинга, которую одобрил бы сам Ив Сен Лоран.",
+    "productComposition": " 98% шерсть, 2% эластан, отделка шелком",
+    "productParams": [
+      {
+        "params": "Вид застежки:",
+        "value": "Пуговица, обтянутая атласом"
+      },
+      {
+        "params": "Длина изделия:",
+        "value": "По спинке 69 см"
+      },
+      {
+        "params": "Крой:",
+        "value": "Приталенный"
+      },
+      {
+        "params": "Рисунок:",
+        "value": "Без рисунка"
+      },
+      {
+        "params": "Тип карманов:",
+        "value": "Прорезные 'листочки'"
+      },
+      {
+        "params": "Конструктивные элементы:",
+        "value": "Рельефные швы"
+      },
+      {
+        "params": "Материал подкладки",
+        "value": "Вискоза 100%"
+      },
+      {
+        "params": "Уход за вещами:",
+        "value": "Химчистка"
+      }
+    ]
+  },
+  {
+    "added": "37",
+    "id": "Card-18",
+    "image": [
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-1.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-a nd-vest-mobile-1@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-2.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-2@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-2.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-3.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-3@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-3.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-4.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-4@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-4.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-4@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      }
+    ],
+    "img": {
+      "srcset": "./images/card-18-desktop.jpg 1x, ./images/card-18-desktop@2x.jpg 2x",
+      "src": "./images/card-18-desktop.jpg",
+      "alt": "Красный приталенный смокинг"
+    },
+    "name": "/ Красный приталенный смокинг",
+    "icon": "./images/catalog.svg#icon-gallery-card-heart",
+    "description": "Подчеркнет линию талии",
+    "productName": "Классический комплект со смокингом и желетом",
+    "productPrice": 23900,
+    "category": [
+      "Смокинг",
+      "Новинки"
+    ],
+    "collection": [],
+    "size": [
+      {
+        "40": true
+      },
+      {
+        "42": true
+      },
+      {
+        "44": true
+      },
+      {
+        "46": true
+      },
+      {
+        "48": false
+      },
+      {
+        "50": false
+      }
+    ],
+    "color": [
+      {
+        "colorName": "black",
+        "colorHex": "#242424"
+      },
+      {
+        "colorName": "red",
+        "colorHex": "#F2404A"
+      },
+      {
+        "colorName": "grey",
+        "colorHex": "#E2DFDF"
+      },
+      {
+        "colorName": "blue",
+        "colorHex": "#38548A"
+      }
+    ],
+    "productDescription": "Приталенный силуэт и заостренные лацканы подчеркивают линию талии, визуально корректируя фигуру до желанной всем 'песочные часы'. Классика женского смокинга, которую одобрил бы сам Ив Сен Лоран.",
+    "productComposition": " 98% шерсть, 2% эластан, отделка шелком",
+    "productParams": [
+      {
+        "params": "Вид застежки:",
+        "value": "Пуговица, обтянутая атласом"
+      },
+      {
+        "params": "Длина изделия:",
+        "value": "По спинке 69 см"
+      },
+      {
+        "params": "Крой:",
+        "value": "Приталенный"
+      },
+      {
+        "params": "Рисунок:",
+        "value": "Без рисунка"
+      },
+      {
+        "params": "Тип карманов:",
+        "value": "Прорезные 'листочки'"
+      },
+      {
+        "params": "Конструктивные элементы:",
+        "value": "Рельефные швы"
+      },
+      {
+        "params": "Материал подкладки",
+        "value": "Вискоза 100%"
+      },
+      {
+        "params": "Уход за вещами:",
+        "value": "Химчистка"
+      }
+    ]
+  },
+  {
+    "added": "38",
+    "id": "Card-19-desktop",
+    "image": [
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-1.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-a nd-vest-mobile-1@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-2.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-2@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-2.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-3.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-3@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-3.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-4.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-4@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-4.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-4@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      }
+    ],
+    "img": {
+      "srcset": "./images/card-19-desktop.jpg 1x, ./images/card-19-desktop@2x.jpg 2x",
+      "src": "./images/card-19.jpg",
+      "alt": "Костюм бархатный"
+    },
+    "name": "/ Костюм бархатный",
+    "icon": "./images/catalog.svg#icon-gallery-card-heart",
+    "description": "Мировая классика",
+    "productName": "Классический комплект со смокингом и желетом",
+    "productPrice": 65300,
+    "category": [
+      "Костюмы"
+    ],
+    "collection": [
+      "Осень-зима 20-21"
+    ],
+    "size": [
+      {
+        "40": true
+      },
+      {
+        "42": true
+      },
+      {
+        "44": true
+      },
+      {
+        "46": true
+      },
+      {
+        "48": false
+      },
+      {
+        "50": false
+      }
+    ],
+    "color": [
+      {
+        "colorName": "black",
+        "colorHex": "#242424"
+      },
+      {
+        "colorName": "red",
+        "colorHex": "#F2404A"
+      },
+      {
+        "colorName": "grey",
+        "colorHex": "#E2DFDF"
+      },
+      {
+        "colorName": "blue",
+        "colorHex": "#38548A"
+      }
+    ],
+    "productDescription": "Приталенный силуэт и заостренные лацканы подчеркивают линию талии, визуально корректируя фигуру до желанной всем 'песочные часы'. Классика женского смокинга, которую одобрил бы сам Ив Сен Лоран.",
+    "productComposition": " 98% шерсть, 2% эластан, отделка шелком",
+    "productParams": [
+      {
+        "params": "Вид застежки:",
+        "value": "Пуговица, обтянутая атласом"
+      },
+      {
+        "params": "Длина изделия:",
+        "value": "По спинке 69 см"
+      },
+      {
+        "params": "Крой:",
+        "value": "Приталенный"
+      },
+      {
+        "params": "Рисунок:",
+        "value": "Без рисунка"
+      },
+      {
+        "params": "Тип карманов:",
+        "value": "Прорезные 'листочки'"
+      },
+      {
+        "params": "Конструктивные элементы:",
+        "value": "Рельефные швы"
+      },
+      {
+        "params": "Материал подкладки",
+        "value": "Вискоза 100%"
+      },
+      {
+        "params": "Уход за вещами:",
+        "value": "Химчистка"
+      }
+    ]
+  },
+  {
+    "added": "39",
+    "id": "Card-20-desktop",
+    "image": [
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-1.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-a nd-vest-mobile-1@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-2.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-2@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-2.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-3.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-3@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-3.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-4.jpg ",
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-4@2x.jpg",
+        "imageMobile": "./images/tuxedo-and-vest-mobile-4.jpg",
+        "imageMobileHigherResolution": "./images/tuxedo-and-vest-mobile-4@2x.jpg ",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      }
+    ],
+    "img": {
+      "srcset": "./images/card-20-desktop.jpg 1x, ./images/card-20-desktop@2x.jpg 2x",
+      "src": "./images/card-20-desktop.jpg",
+      "alt": "Костюм бархатный"
+    },
+    "name": "/ Костюм бархатный",
+    "icon": "./images/catalog.svg#icon-gallery-card-heart",
+    "description": "Мировая классика",
+    "productName": "Классический комплект со смокингом и желетом",
+    "productPrice": 65300,
+    "category": [
+      "Костюмы"
+    ],
+    "collection": [
+      "Предзаказ"
+    ],
+    "size": [
+      {
+        "40": true
+      },
+      {
+        "42": true
+      },
+      {
+        "44": true
+      },
+      {
+        "46": true
+      },
+      {
+        "48": false
+      },
+      {
+        "50": false
+      }
+    ],
+    "color": [
+      {
+        "colorName": "black",
+        "colorHex": "#242424"
+      },
+      {
+        "colorName": "red",
+        "colorHex": "#F2404A"
+      },
+      {
+        "colorName": "grey",
+        "colorHex": "#E2DFDF"
+      },
+      {
+        "colorName": "blue",
+        "colorHex": "#38548A"
+      }
+    ],
+    "productDescription": "Приталенный силуэт и заостренные лацканы подчеркивают линию талии, визуально корректируя фигуру до желанной всем 'песочные часы'. Классика женского смокинга, которую одобрил бы сам Ив Сен Лоран.",
+    "productComposition": " 98% шерсть, 2% эластан, отделка шелком",
+    "productParams": [
+      {
+        "params": "Вид застежки:",
+        "value": "Пуговица, обтянутая атласом"
+      },
+      {
+        "params": "Длина изделия:",
+        "value": "По спинке 69 см"
+      },
+      {
+        "params": "Крой:",
+        "value": "Приталенный"
+      },
+      {
+        "params": "Рисунок:",
+        "value": "Без рисунка"
+      },
+      {
+        "params": "Тип карманов:",
+        "value": "Прорезные 'листочки'"
+      },
+      {
+        "params": "Конструктивные элементы:",
+        "value": "Рельефные швы"
+      },
+      {
+        "params": "Материал подкладки",
+        "value": "Вискоза 100%"
+      },
+      {
+        "params": "Уход за вещами:",
+        "value": "Химчистка"
+      }
+    ]
   }
 ]
