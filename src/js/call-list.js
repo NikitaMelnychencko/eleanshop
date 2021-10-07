@@ -103,8 +103,10 @@ export function favoritesRender() {
   favorites.init();
 }
 let data = localStorage.getItem('favorites');
-data = JSON.parse(data);
-refs.numRef.innerHTML = data['fav'].length;
+if (!data == null) {
+  data = JSON.parse(data);
+  refs.numRef.innerHTML = data['fav'].length;
+}
 //=====fitting========//
 
 import contact_page from '../views/layouts/contact.hbs';
