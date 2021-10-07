@@ -4,6 +4,8 @@ require('../../slick/slick.min.js');
 import cardsMarkup from '../../../views/partials/product/recomendationsCategory.hbs';
 import listCards from '../../../views/partials/product/productListFromCatalog.hbs';
 import cards from '../../json/catalog.json';
+import { productRender } from '../../call-list.js';
+import { scrollTo } from '../../components/blockHelp/blockHelp.js';
 
 export default class RecomendationsCategory {
   constructor({ root, typeInsert, data = cards, countsCard = 4, buttonPagination = true }) {
@@ -145,13 +147,40 @@ export default class RecomendationsCategory {
     el.currentTarget.classList.toggle('active');
   };
 
+  _cardToProduct = e => {
+    if (e.target.nodeName !== 'use' && e.target.nodeName !== 'svg') {
+      const id = e.currentTarget.getAttribute('id');
+      cards.forEach(el => {
+        if (el.id === id) {
+          localStorage.setItem('productInfoData', JSON.stringify(el));
+        }
+      });
+      this.removeEvent();
+      productRender();
+      scrollTo(0, 700);
+    }
+  };
+
+  removeEvent = () => {
+    this.buttonLike.forEach(el => el.removeEventListener('click', this._onClickLike));
+    this.cardsEl.forEach(el => el.removeEventListener('click', this._cardToProduct));
+    this.cardsEl.forEach(el => el.removeEventListener('touch', this._cardToProduct));
+  };
+
   setEvent = selector => {
     if (!selector) {
       this.buttonLike = document.querySelectorAll('.recomendation-category .js-btn-like');
+      this.cardsEl = document.querySelectorAll(
+        '.recomendation-category .recomendation-category__item',
+      );
     } else {
       const str = selector + ' .js-btn-like';
       this.buttonLike = document.querySelectorAll(str);
+      const strCard = selector + ' .recomendation-category__item';
+      this.cardsEl = document.querySelectorAll('.recomendation-category__item');
     }
     this.buttonLike.forEach(el => el.addEventListener('click', this._onClickLike));
+    this.cardsEl.forEach(el => el.addEventListener('click', this._cardToProduct));
+    this.cardsEl.forEach(el => el.addEventListener('touch', this._cardToProduct));
   };
 }
