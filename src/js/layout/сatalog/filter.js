@@ -1,6 +1,8 @@
 import filter from '../../../views/partials/сatalog/filter.hbs';
 import filterLib from '../../json/filterLib.json';
-export const filterListMakeup = filter({filterLib});
+import { filteredCatalog } from './gallery.js';
+
+export const filterListMakeup = filter({ filterLib });
 
 export function openFilter() {
   const filterList = document.querySelector('#filter');
@@ -33,4 +35,18 @@ export function openFilter() {
   function categoryNameChosing(e) {
     categoryName.textContent = e.target.textContent;
   }
+
+  catalogArr.forEach(el => {
+    el.addEventListener('click', e => {
+      const fname = e.target.textContent;
+      filteredCatalog(fname);
+    });
+  });
+
+  collectionArr.forEach(el => {
+    el.addEventListener('click', e => {
+      const fname = e.target.textContent;
+      filteredCatalog(fname);
+    });
+  });
 }

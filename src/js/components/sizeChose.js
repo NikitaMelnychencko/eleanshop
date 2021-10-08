@@ -1,37 +1,14 @@
-import getRefs from '../refs/refs.js';
-import Backdrop from './backdrop.js';
-import backdropMarkupTempl from '../../views/components/backdrop.hbs';
-import modalFormMarkupTempl from '../../views/components/sizeChose.hbs';
-import size from '../json/sizeChose.json';
+import createMarkup from '../../views/components/sizeChose.hbs'; 
+import Backdrop from '../components/backdrop.js';
 
-let throttle = require('lodash.throttle');
-const backdrop = new Backdrop();
-
-function onBtnClick() {
-  const backdropRef = document.querySelector('[data-modal]');
-  const { mainEL } = getRefs;
-  if (backdropRef === null) {
-    const backdropMarkup = backdropMarkupTempl(modalFormMarkupTempl(createBtn(size)));
-
-    mainEL.insertAdjacentHTML('beforeend', backdropMarkup);
-    window.addEventListener('resize', throttle(onResize, 50));
-
-    const btnSize = document.querySelector('.size-chose__size-list');
-
+function sizeListener(){
+   const btnSize = document.querySelector('.size-chose__size-list');
     btnSize.addEventListener('click', value => {
       if (value.target.nodeName === 'BUTTON') {
         sendingValue(value.target.textContent);
       }
     });
-  }
-  onResize();
-}
-function onResize(event) {
-  let backdropRef = document.querySelector('[data-modal]');
-  const right = (backdropRef.clientWidth - backdropRef.children[0].children[1].clientWidth) / 2;
-  const btnCloseRef = document.querySelector('.form__button-сlose');
-  btnCloseRef.style.right = `${right}px`;
-}
+};
 //function for creating dice of clothing sizes
 function createBtn(json) {
   const Array = json.size
@@ -58,9 +35,10 @@ function createBtn(json) {
   return Array;
 }
 //function that returns a string with the size on the card that you selected
-function sendingValue(id, value) {
-  save(`sizeClose_id-${id}`, value);
-  backdrop.closeModalForm();
+function sendingValue(value) {
+  save(`sizeClose`, value);
+  const backdrop = new Backdrop()
+  .closeModalForm();
 }
 //function writes the selected size to sizeClose in localStorage
 function save(key, value) {
@@ -71,4 +49,4 @@ function save(key, value) {
     console.error('Set state error: ', err);
   }
 }
-export default { onBtnClick, createBtn };
+export default {createMarkup, sizeListener, createBtn};
