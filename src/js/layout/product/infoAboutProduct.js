@@ -41,8 +41,8 @@ export function setProductSlider() {
 }
 
 export function createFullMarkup() {
-  // savedProductInfoData = localStorage.getItem('productInfoData');
-  // parsedProductInfoData = JSON.parse(savedProductInfoData);
+  savedProductInfoData = localStorage.getItem('productInfoData');
+  parsedProductInfoData = JSON.parse(savedProductInfoData);
 
   return productTemplate({ parsedProductInfoData });
   //* way to get a function to get size grid (don't clear)

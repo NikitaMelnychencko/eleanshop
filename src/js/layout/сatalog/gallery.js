@@ -27,8 +27,9 @@ export function openCategory() {
   catalogSeeMoreIcon.addEventListener('click', seeMoreCards);
   function seeMoreCards(elem) {}
 
-  const cards = document.querySelectorAll('.catalog-item');
-  cards.forEach(el => el.addEventListener('click', cardToProduct));
+  const cardsList = document.querySelector('.catalog-list');
+  cardsList.addEventListener('click', cardToProduct);
+  cardsList.addEventListener('touchend', cardToProduct);
 
   // function myFunction() {
   //   var dots = document.getElementById('dots');
@@ -49,7 +50,19 @@ export function openCategory() {
 
 function cardToProduct(e) {
   if (e.target.nodeName !== 'use' && e.target.nodeName !== 'svg') {
-    const id = e.currentTarget.getAttribute('id');
+    let id = '';
+    if (!e.target.getAttribute('id')) {
+      let el = e.target.parentElement;
+      while (!id) {
+        if (el.getAttribute('id')) {
+          id = el.getAttribute('id');
+        } else {
+          el = el.parentElement;
+        }
+      }
+    } else {
+      id = e.currentTarget.getAttribute('id');
+    }
     catalog.forEach(el => {
       if (el.id === id) {
         localStorage.setItem('productInfoData', JSON.stringify(el));
@@ -57,5 +70,16 @@ function cardToProduct(e) {
     });
     productRender();
     scrollTo(0, 700);
+  }
+}
+
+export function filteredCatalog(filterName) {
+  const fcatalog = catalog.filter(
+    el => el.category.indexOf(filterName) >= 0 || el.collection.indexOf(filterName) >= 0,
+  );
+  if (fcatalog.length > 0) {
+    const catalogLM = gallery(fcatalog);
+    document.querySelector('.catalog-list').innerHTML = catalogLM;
+    openCategory();
   }
 }
