@@ -16,6 +16,8 @@ export default {
   inputStorageDesktop: document.querySelectorAll('.footer__desktop-form-input'),
   checkBoxIcon: document.querySelector('.footer__desktop-license-icon-checkbox'),
   agreeActive: document.querySelector('.agree'),
+  dropDown: document.querySelector('.open-menu'),
+  dropDownList: document.querySelector('.dropdown-content'),
   linkMenuFooterDesktop: document.querySelectorAll('.footer__desktop-list-link'),
   linkMenuFooterMobile: document.querySelectorAll('.footer__mobile-submenu'),
   mobileSubmitBtn: document.querySelector('.footer__mobile-form'),
