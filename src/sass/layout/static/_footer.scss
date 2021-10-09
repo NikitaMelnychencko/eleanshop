@@ -1,7 +1,5 @@
 
 
-
-
 //==== настройка иконок мобильного меню====//
 .footer__mobile-list-item-plus::before,
 .footer__mobile-list-item-plus::after {
@@ -272,13 +270,16 @@ font-style: normal;
 
 //==============desktop=========//
 
-.footer__wite-stile{
-    display: block;
-    color: #FFFFFF;
-}
+
+
+// .footer__black-them{
+//     color: rgb(242, 234, 234);
+//     background-color: rgb(99, 87, 87);
+
+// }
 
  .footer__desktop{
-    position: absolute;
+    position: absolute; 
     opacity: 1;
     display: flex;
     bottom: 0;

@@ -1,8 +1,9 @@
 import refs from '../../refs/refs.js';
 import { scrollTo } from '../../components/blockHelp/blockHelp';
-import {catalogRender, fittingRender, brandRender, productRender, contactRender, reviewsRender, deliveryRender, favoritesRender, showroomRender, checkoutRender } from '../../call-list';
+import { catalogRender, fittingRender, brandRender, productRender, contactRender, reviewsRender, deliveryRender, favoritesRender, showroomRender, checkoutRender } from '../../call-list';
 import { id } from 'postcss-selector-parser';
 import { indexOf } from 'lodash';
+
 const {
     closeOpenPlus,
     inputStorageMobile,
@@ -34,8 +35,9 @@ linkMenuFooterDesktop.forEach((evt) => {
     const idlinkDesktop = evt.textContent
     evt.addEventListener('click', (el) => {
         const selected = el.target.dataset.atribute;
+        console.log(selected)
         if (selected) {
-            localStorage.setItem(idlinkDesktop, selected)
+            localStorage.setItem("footer-filter-desktop", selected)
         }
     });
 });
@@ -44,9 +46,8 @@ linkMenuFooterDesktop.forEach((evt) => {
 linkMenuFooterMobile.forEach((evt) => {
     const idlinkMobile = evt.textContent
     evt.addEventListener('click', (el) => {
-        const selected = el.target.dataset.atribute;
         if (selected) {
-            localStorage.setItem(idlinkMobile, selected)
+            localStorage.setItem("footer-filter-mobile", selected)
         }
     });
 });
@@ -58,8 +59,8 @@ closeOpenPlus.forEach((evt) => {
         const clickEL = el.currentTarget;
         if (!el.target.nextElementSibling) {
             scrollTo(0, 700);
-
-            localStorage.setItem(idMuneClickMobile, clickEL)
+            console.log(idMuneClickMobile)
+            localStorage.setItem("footer-filtr-mobile", idMuneClickMobile)
         }
         el.preventDefault()
         const test = document.querySelector('.dropdown-content')
