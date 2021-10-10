@@ -10,7 +10,7 @@
   width: 100vw;
   height: 100vh;
   z-index: 9999;
-  overflow: scroll;
+  // overflow: hidden;
 
   transform: perspective(600px) translate(-100%, -50%) rotateX(0deg);
   opacity: 1;
@@ -28,7 +28,6 @@
     height: auto;
     max-width: 914px;
     max-height: 694px;
-    overflow: hidden;
     transform: perspective(600px) translate(-50%, -50%) rotateX(0deg);
 
     & .recomendation-category__item {

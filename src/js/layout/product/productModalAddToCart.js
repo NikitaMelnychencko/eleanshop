@@ -117,6 +117,8 @@ export default class ProductModalAddToCart {
         }
       });
     }
+    document.querySelector('.form__button-сlose').style.display = 'none';
+    document.querySelector('.ordering__form').style.display = 'none';
     this.setEvent();
   };
 }
