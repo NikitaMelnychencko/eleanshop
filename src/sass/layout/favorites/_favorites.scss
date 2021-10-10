@@ -12,10 +12,6 @@
 
     color: $secondary-title-text-color;
     margin-bottom: 55px;
-
-    &::after {
-      background: $favorites-after-color;
-    }
   }
 
   &__data {
@@ -37,9 +33,12 @@
         }
       }
     }
+    &::before {
+      @include line($favorites-after-color, -40px);
+    }
 
     &::after {
-      background: $favorites-after-color;
+      @include line($favorites-after-color, 40px);
     }
   }
 
@@ -54,17 +53,19 @@
     }
 
     &--info {
+      display: block;
       font-family: $primary-font-family;
       font-size: 15px;
       line-height: 20 / 15 * 100%;
 
       color: $favorites-info-color;
-      width: 200px;
+      max-width: 55%;
 
       @media screen and (min-width: $desktop-up) {
         display: flex;
         justify-content: center;
         flex-direction: column;
+        width: 200px;
       }
 
       &-text {
@@ -102,8 +103,9 @@
   &__button-buy {
     position: absolute;
     right: 0;
-    top: 100px;
-    width: 258px;
+    top: 140px;
+
+    width: 100%;
     height: 40px;
     font-family: $third-font-family;
     font-weight: 500;
@@ -116,6 +118,13 @@
     background: $menu-background-color;
     color: $selection-text-color;
     cursor: pointer;
+    margin: 0 auto;
+
+    @media screen and (min-width: $mobile-general) {
+      width: 258px;
+
+      top: 100px;
+    }
 
     @media screen and (min-width: $desktop-up) {
       position: static;

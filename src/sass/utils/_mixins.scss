@@ -11,3 +11,11 @@
   align-items: $cross;
   justify-content: $main;
 }
+
+@mixin line($color: color, $transfY: transfY, $main: center) {
+  display: inline-block;
+  content: '';
+  border-bottom: 0.1rem solid $color;
+  width: 100%;
+  transform: translateY($transfY);
+}

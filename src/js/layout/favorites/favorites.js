@@ -6,6 +6,8 @@ let debounce = require('lodash.debounce');
 
 class Favorites {
   constructor() {
+    this.markcup = '';
+    refs.numRef.innerHTML = 0;
     this.data = localStorage.getItem('favorites');
     if (this.data !== null) {
       this.data = JSON.parse(this.data);
@@ -67,7 +69,7 @@ class Favorites {
         } else {
           imgs = data['fav'][i].image.srcset.split(',');
         }
-        console.log(`~ imgs`, imgs);
+
         imgs[1] = imgs[1].trim();
         elem.label.img = imgs[0].split(' ')[0];
         elem.label.img2 = imgs[1].split(' ')[0];
