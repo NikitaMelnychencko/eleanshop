@@ -43,10 +43,9 @@ export default {
   navSublistEl: document.getElementsByClassName('js-header-navigation-sublist'),
   wrapperEl: document.querySelector('.js-header-wrapper'),
   navLinkEl: document.getElementsByClassName('js-header-navigation-link'),
-  contactEl: document.querySelector('#header-contact'),
-  showroomEl: document.querySelector('#header-showroom'),
-  catalogNewEl: document.querySelector('#header-catalog-new'),
   favoritesEl: document.querySelector('#header-favorites'),
+  favQuantityEl: document.getElementById('js-text-fav'),
+  binQuantityEl: document.getElementById('js-text-bin'),
   // ----- header-end ------
   // videobox: document.querySelector('.js-videobox'),
   // overlay: document.querySelector('.videobox__overlay'),

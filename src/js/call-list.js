@@ -127,7 +127,6 @@ export function contactRender() {
   classBody()
   const contactPageMarkUp = contact_page({ formBrand, contactsMap, contactsContact });
   refs.mainEL.innerHTML = contactPageMarkUp;
-  refs.mainEL.insertAdjacentHTML('beforeend', contactPageMarkUp);
   formFittingInShowroom();
 }
 //contactRender(); //========================================================call==================================
@@ -179,7 +178,7 @@ export function fittingRender() {
     formBrand,
   });
   refs.mainEL.innerHTML = fittingMarkUp;
-  //openVideoSlider();
+  openVideoSlider();
   //fittingVideoSliderPlayer();
   formFittingInShowroom();
 }

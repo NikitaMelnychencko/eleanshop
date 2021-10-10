@@ -19,9 +19,9 @@
 <body class="">
   <header class="js-header header">
     <div class="container header-container">
-      <!-- //! ШАПКА-ПОЧАТОК -->
+      <!-- //! HAT-BEGINNING -->
       <div class="head">
-        <!-- Кнопка моб меню-початок -->
+        <!-- Mob menu start button -->
         <button class="js-header-button button" type="button">
           <svg class="js-header-button__svg button__svg-open">
             <use href="./images/header.svg#header-mobile-burger"></use>
@@ -30,8 +30,8 @@
             <use href="./images/header.svg#header-mobile-close"></use>
           </svg>
         </button>
-        <!-- Кнопка моб меню-кінець -->
-        <!-- Соцмережі_Декстоп-початок -->
+        <!-- Mob menu end button -->
+        <!-- Social networks Desktop-beginning -->
         <ul class="social-list-desktop">
           <li class="social-list-desktop__item">
             <a class="social-list-desktop__link" href="https://www.instagram.com/" target="_blank"
@@ -50,26 +50,26 @@
             </a>
           </li>
         </ul>
-        <!-- Соцмережі_Декстоп-кінець -->
-        <!-- Логотип-початок -->
+        <!-- Social networks_Dextop-end -->
+        <!-- Start logo -->
         <a class="header-logo" href="./index.html">
           <svg class="js-header-logo__svg header-logo__svg-elean">
             <use href="./images/header.svg#header-logo"></use>
           </svg>
           <p class="js-header-logo__text header-logo__text">ЖЕНСКИЙ<br>СМОКИНГ</p>
         </a>
-        <!-- Логотип-кінець -->
-        <!-- Телефон-початок -->
+        <!-- End logo -->
+        <!-- Phone-start -->
         <a class="header-phone" href="tel:+380990000000">+38(099)-000-00-00</a>
-        <!-- Телефон-кінець-->
-        <!-- Обране_Корзина-початок -->
+        <!-- Phone-end-->
+        <!-- Selected Cart-start -->
         <ul class="js-product-list product-list">
           <li class="product-list__item">
             <a class="product-list__link" href="#" id="header-favorites">
               <svg class="js-header-svg-favorites product-list__svg-favorites">
                 <use href="./images/header.svg#header-favorites"></use>
               </svg>
-              <p class="js-header-list__text product-list__text">0</p>
+              <p class="js-header-list__text product-list__text" id="js-text-fav">0</p>
             </a>
           </li>
           <li class="product-list__item">
@@ -78,20 +78,21 @@
                 <use href="./images/header.svg#header-bin">
                 </use>
               </svg>
-              <p class="js-header-list__text product-list__text">0</p>
+              <p class="js-header-list__text product-list__text" id="js-text-bin">0</p>
             </a>
           </li>
         </ul>
-        <!-- Обране_Корзина-кінець -->
+        <!-- Favorites_Card-end -->
       </div>
-      <!--//! ШАПКА-КІНЕЦЬ -->
+      <!--//! HAT-END -->
 
-      <!--//! НАВІГАЦІЯ-ПОЧАТОК -->
+      <!--//! NAVIGATION-BEGINNING -->
       <div class="js-header-wrapper">
         <nav class="js-header-navigation navigation mod-hidden-mob">
           <ul class="js-header-navigation-list navigation-list">
             <li class="navigation-list__item">
-              <a class="js-header-navigation-link navigation-list__link" href="#" id="header-catalog-new">НОВИНКИ</a>
+              <a class="js-header-navigation-link navigation-list__link" href="#"
+                data-atribute="new-products">НОВИНКИ</a>
             </li>
             <li class="navigation-list__item">
               <a class="js-header-navigation-link navigation-list__link" href="#">КАТЕГОРИИ</a>
@@ -135,47 +136,37 @@
             <li class="navigation-list__item"><a class="js-header-navigation-link navigation-list__link"
                 href="#">ПОКУПАТЕЛЯМ</a>
               <ul class="js-header-navigation-sublist navigation-sublist mod-hidden-mob">
-                <li class="navigation-sublist__subitem"><a class="navigation-sublist__link" href="#"
-                    data-atribute="delivery">Доставка</a></li>
-                <li class="navigation-sublist__subitem"><a class="navigation-sublist__link" href="#"
-                    data-atribute="promotions">Акции</a></li>
-                <li class="navigation-sublist__subitem"><a class="navigation-sublist__link" href="#"
-                    data-atribute="return">Возврат</a></li>
-                <li class="navigation-sublist__subitem"><a class="navigation-sublist__link" href="#"
-                    data-atribute="size-сhart">Размерная
+                <li class="navigation-sublist__subitem"><a class="navigation-sublist__link" href="#">Доставка</a></li>
+                <li class="navigation-sublist__subitem"><a class="navigation-sublist__link" href="#">Акции</a></li>
+                <li class="navigation-sublist__subitem"><a class="navigation-sublist__link" href="#">Возврат</a></li>
+                <li class="navigation-sublist__subitem"><a class="navigation-sublist__link" href="#">Размерная
                     таблица</a>
                 </li>
-                <li class="navigation-sublist__subitem"><a class="navigation-sublist__link" href="#"
-                    data-atribute="fitting">Примерка</a></li>
-                <li class="navigation-sublist__subitem"><a class="navigation-sublist__link" href="#"
-                    data-atribute="for-wholesale-buyers">Оптовым
+                <li class="navigation-sublist__subitem"><a class="navigation-sublist__link" href="#">Примерка</a></li>
+                <li class="navigation-sublist__subitem"><a class="navigation-sublist__link" href="#">Оптовым
                     покупателям</a></li>
               </ul>
             </li>
             <li class="navigation-list__item">
               <a class="js-header-navigation-link navigation-list__link" href="#">О БРЕНДЕ</a>
               <ul class="js-header-navigation-sublist navigation-sublist mod-hidden-mob">
-                <li class="navigation-sublist__subitem"><a class="navigation-sublist__link" href="#"
-                    data-atribute="showroom">Шоурум</a></li>
-                <li class="navigation-sublist__subitem"><a class="navigation-sublist__link" href="#"
-                    data-atribute="reviews">Отзывы</a></li>
-                <li class="navigation-sublist__subitem"><a class="navigation-sublist__link" href="#"
-                    data-atribute="articles">Статьи</a></li>
-                <li class="navigation-sublist__subitem"><a class="navigation-sublist__link" href="#"
-                    data-atribute="blog">Блог</a></li>
+                <li class="navigation-sublist__subitem"><a class="navigation-sublist__link" href="#">Шоурум</a></li>
+                <li class="navigation-sublist__subitem"><a class="navigation-sublist__link" href="#">Отзывы</a></li>
+                <li class="navigation-sublist__subitem"><a class="navigation-sublist__link" href="#">Статьи</a></li>
+                <li class="navigation-sublist__subitem"><a class="navigation-sublist__link" href="#">Блог</a></li>
               </ul>
             </li>
             <li class="navigation-list__item">
-              <a class="js-header-navigation-link navigation-list__link" href="#" id="header-showroom">ШОУРУМ</a>
+              <a class="js-header-navigation-link navigation-list__link" href="#">ШОУРУМ</a>
             </li>
             <li class="navigation-list__item">
-              <a class="js-header-navigation-link navigation-list__link" href="#" id="header-contact">КОНТАКТЫ</a>
+              <a class="js-header-navigation-link navigation-list__link" href="#">КОНТАКТЫ</a>
             </li>
           </ul>
         </nav>
-        <!--//! НАВІГАЦІЯ-КІНЕЦЬ -->
+        <!--//! NAVIGATION-END -->
 
-        <!--//! СОЦМЕРЕЖІ_МОБІЛЬНА-ПОЧАТОК -->
+        <!-- //! SOCIAL NETWORKS_MOBILE-BEGINNING -->
         <ul class="js-header-social-list-mobile social-list-mobile mod-hidden">
           <li class="social-list-mobile__item">
             <a class="social-list-mobile__link" href="https://web.whatsapp.com/" target="_blank"
@@ -206,9 +197,9 @@
           </li>
         </ul>
       </div>
-      <!--//! СОЦМЕРЕЖІ_МОБІЛЬНА-КІНЕЦЬ -->
+      <!--//! SOCIAL NETWORKS_MOBILE-END -->
 
-      <!-- //! КОРЗИНА -->
+      <!-- //! BASKET -->
       <div class='product-bin hidden'>
         <button class='product-close-modal product-close-modal_small js-close-modal'>
           <svg class='product-close-modal__close-icon'>
@@ -235,7 +226,7 @@
           ОФОРМИТЬ ЗАКАЗ
         </button>
       </div>
-      <!-- //! КОРЗИНА - КІНЕЦЬ -->
+      <!-- //! BASKET - END -->
     </div>
   </header>
   <main></main>

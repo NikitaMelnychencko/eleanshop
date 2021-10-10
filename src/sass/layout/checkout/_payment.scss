@@ -1,6 +1,7 @@
 //delivery
 .form__method-ordering--flex {
   @media screen and(min-width: $desktop-up) {
+    margin-top: 47px;
     display: flex;
     justify-content: space-between;
   }
