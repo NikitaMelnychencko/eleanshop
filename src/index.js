@@ -45,10 +45,12 @@ import './js/layout/showroom/showroom.js';
 import './js/layout/contact/contact.js';
 //fitting
 import './js/layout/fitting/informationAboutFitting.js';
-import './js/components/sizeTable.js';
-import './js/components/sizeChose.js';
+import './js/layout/fitting/sizeTable.js';
 import './js/layout/fitting/videoSlider.js';
 import './js/layout/fitting/formFittingInShowroom.js';
+//! ?????????
+import './js/components/sizeTable.js';
+import './js/components/sizeChose.js';
 //brand
 import './js/layout/brand/infoAboutBrand.js';
 import './js/layout/brand/ourAdvantages.js';
