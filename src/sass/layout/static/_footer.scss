@@ -272,11 +272,9 @@ font-style: normal;
 
 
 
-// .footer__black-them{
-//     color: rgb(242, 234, 234);
-//     background-color: rgb(99, 87, 87);
-
-// }
+.footer__them-black{
+    color: rgb(252, 249, 249);
+}
 
  .footer__desktop{
     position: absolute; 
@@ -318,7 +316,7 @@ font-style: normal;
     display: flex;
     justify-content:space-between;
     margin-bottom: 45px;
-    
+   
 }
 
 .footer__desktop-list-contacts-telephon,

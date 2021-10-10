@@ -113,7 +113,7 @@ import { contactsMap, contactsContact } from './layout/contact/contact.js';
 export function contactRender() {
   const contactPageMarkUp = contact_page({ formBrand, contactsMap, contactsContact });
   refs.mainEL.innerHTML = contactPageMarkUp;
-  //refs.mainEL.insertAdjacentHTML('beforeend', contactPageMarkUp);
+  refs.mainEL.insertAdjacentHTML('beforeend', contactPageMarkUp);
   formFittingInShowroom();
 }
 //contactRender(); //========================================================call==================================
