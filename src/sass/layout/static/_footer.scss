@@ -269,7 +269,7 @@
   position: absolute;
   opacity: 1;
   display: flex;
-  bottom: 0;
+  bottom: 32px;
   z-index: 200;
 
   @media screen and (max-width: $tablet-only) {
