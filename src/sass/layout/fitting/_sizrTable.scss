@@ -1,0 +1,142 @@
+.responsive-table li {
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.fitting__first-row {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 1.2;
+  color: $product-info-color;
+  margin-bottom: 9px;
+  padding: 0;
+}
+
+.fitting-row {
+  border: 1px solid $fitting-borfer-color;
+}
+
+.fitting__size {
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: 0.05em;
+  color: $third-text-color;
+  margin-left: 5px;
+  margin-right: auto;
+  position: absolute;
+  top: -1px;
+}
+
+.col1 {
+  flex-basis: 5%;
+  position: relative;
+}
+
+.col2 {
+  flex-basis: 5%;
+}
+
+.col3 {
+  flex-basis: 5%;
+}
+
+.col4 {
+  flex-basis: 5%;
+}
+
+.col5 {
+  flex-basis: 5%;
+}
+
+.fitting-row:hover,
+.fitting-row:focus {
+  background-color: rgba(106, 4, 5, 0.1);
+}
+
+/*   DESKTOP */
+
+.fitting__product-shipping--container {
+  @media screen and (min-width: $mobile-first) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @media screen and (min-width: $tablet-general) {
+
+    max-width: 669px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 60%;
+  }
+}
+
+.fitting__description-item {
+  margin-bottom: 75px;
+}
+
+@media screen and (min-width: $desktop-up) {
+
+
+  .fitting__heading {
+    text-align: center;
+  }
+
+  .fitting__section {
+    padding-top: 68px;
+    padding-bottom: 451px;
+    background-image: url('./images/elean47390.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    background-color: $primary-background-color;
+
+
+  }
+
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    .fitting__section {
+      background-image: url('./images/elean47390@2x.jpg');
+    }
+  }
+
+  .fitting__size-table {
+    background-color: $third-background-color;
+    padding: 35px;
+  }
+
+  .fitting__minor-title {
+    margin-bottom: 35px;
+    margin-top: 0;
+
+    @media screen and (min-width: $mobile-first) and (max-width: $tablet-general) {
+      margin-bottom: 30px;
+    }
+  }
+
+  .fitting__description-item {
+    padding: 15px;
+  }
+
+  .fitting__video-slider {
+    background-color: $third-background-color;
+    padding: 35px;
+  }
+
+  .fitting__video,
+  .fitting__first-video {
+    width: 183px;
+    display: block;
+  }
+
+  .fitting__video-slider-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
