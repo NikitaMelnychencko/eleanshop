@@ -4,6 +4,8 @@ require('../../slick/slick.min.js');
 import cardsMarkup from '../../../views/partials/product/recomendationsCategory.hbs';
 import listCards from '../../../views/partials/product/productListFromCatalog.hbs';
 import cards from '../../json/catalog.json';
+import { productRender } from '../../call-list.js';
+import { scrollTo } from '../../components/blockHelp/blockHelp.js';
 
 export default class RecomendationsCategory {
   constructor({ root, typeInsert, data = cards, countsCard = 4, buttonPagination = true }) {
@@ -132,8 +134,23 @@ export default class RecomendationsCategory {
     localStorage.setItem('favorites', JSON.stringify(ls));
   };
 
-  _onClickLike = el => {
-    const id = el.currentTarget.dataset.id;
+  _onClickLike = e => {
+    let id = '';
+    let elemLike = null;
+    if (!e.target.dataset.id) {
+      let el = e.target.parentElement;
+      while (!id) {
+        if (el.dataset.id) {
+          id = el.dataset.id;
+          elemLike = el;
+        } else {
+          el = el.parentElement;
+        }
+      }
+    } else {
+      id = e.target.dataset.id;
+      elemLike = e.target;
+    }
     const dataId = this.data.findIndex(el => el.id === id);
     if (this.data[dataId].likes) {
       this.data[dataId].likes = false;
@@ -142,16 +159,58 @@ export default class RecomendationsCategory {
       this.data[dataId].likes = true;
       this._insertIntoLSFavorite(id, dataId);
     }
-    el.currentTarget.classList.toggle('active');
+    elemLike.classList.toggle('active');
+  };
+
+  _cardToProduct = e => {
+    if (e.target.nodeName !== 'use' && e.target.nodeName !== 'svg') {
+      let id = '';
+      if (!e.target.getAttribute('id')) {
+        let el = e.target.parentElement;
+        while (!id) {
+          if (el.getAttribute('id')) {
+            id = el.getAttribute('id');
+          } else {
+            el = el.parentElement;
+          }
+        }
+      } else {
+        id = e.currentTarget.getAttribute('id');
+      }
+      cards.forEach(el => {
+        if (el.id === id) {
+          localStorage.setItem('productInfoData', JSON.stringify(el));
+        }
+      });
+      this.removeEvent();
+      productRender();
+      scrollTo(0, 700);
+    }
+  };
+
+  _onClickCards = e => {
+    if (e.target.nodeName !== 'use' && e.target.nodeName !== 'svg') {
+      this._cardToProduct(e);
+    } else {
+      this._onClickLike(e);
+    }
+  };
+
+  removeEvent = () => {
+    this.cardsListEl.removeEventListener('click', this._onClickCards);
+    this.cardsListEl.removeEventListener('touch', this._onClickCards);
   };
 
   setEvent = selector => {
     if (!selector) {
-      this.buttonLike = document.querySelectorAll('.recomendation-category .js-btn-like');
+      this.cardsListEl = document.querySelector(
+        '.recomendation-category .recomendation-category__list',
+      );
     } else {
-      const str = selector + ' .js-btn-like';
-      this.buttonLike = document.querySelectorAll(str);
+      const strCard = selector + ' .recomendation-category__list';
+      this.cardsListEl = document.querySelector(strCard);
     }
-    this.buttonLike.forEach(el => el.addEventListener('click', this._onClickLike));
+    this.cardsListEl.addEventListener('click', this._onClickCards);
+    this.cardsListEl.addEventListener('touch', this._onClickCards);
   };
 }

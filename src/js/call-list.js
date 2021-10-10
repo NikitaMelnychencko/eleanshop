@@ -211,7 +211,7 @@ export function productRender() {
   const modalFormMarkup = modalFormMarkupOrder + objProductModalAddToCart.getMarkup();
   const backdropMarkup = backdropMarkupTempl(modalFormMarkup);
   const obj = {
-    infoAboutProduct: createFullMarkup,
+    infoAboutProduct: createFullMarkup(),
     recomendationCategory: objRecomendationsCategory.getMarkup(),
     handSewn: objHandSewn.getMarkup(),
     backdrop: backdropMarkup,

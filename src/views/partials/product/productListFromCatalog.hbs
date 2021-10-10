@@ -1,7 +1,7 @@
 <ul class='recomendation-category__list slider'>
   {{#each this}}
-    <li class='recomendation-category__item slider__item'>
-      <a href='./' class='recomendation-category__link' data-id="{{id}}">
+    <li class='recomendation-category__item slider__item' id="{{id}}">
+      <div class='recomendation-category__link' >
         <picture>
           <source srcset="{{img.srcset}}" media='(min-width: 1920px)' />
           {{#if img.srcset-mobile}}
@@ -9,7 +9,7 @@
           {{/if}}
           <img src="{{img.src}}" alt="{{img.alt}}" class='recomendation-category__image' />
         </picture>
-      </a>
+      </div>
       <div class='recomendation-category__card-text'>
         <div class='recomendation-category__block-title'>
           <h3 class='recomendation-category__item-title'>

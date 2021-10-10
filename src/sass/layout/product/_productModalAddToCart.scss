@@ -12,7 +12,7 @@
   z-index: 9999;
   overflow: scroll;
 
-  transform: perspective(600px) translate(-50%, -50%) rotateX(0deg);
+  transform: perspective(600px) translate(-100%, -50%) rotateX(0deg);
   opacity: 1;
   transition: transform $time-cubic, opacity $time-cubic;
 
@@ -29,6 +29,7 @@
     max-width: 914px;
     max-height: 694px;
     overflow: hidden;
+    transform: perspective(600px) translate(-50%, -50%) rotateX(0deg);
 
     & .recomendation-category__item {
       width: calc((100% - 2 * 34px) / 3);
