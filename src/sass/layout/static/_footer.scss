@@ -36,7 +36,7 @@
 .mobile {
   display: block;
   opacity: 1;
-  @media screen and (min-width: $desktop-up) {
+  @media screen and (min-width: $tablet-only) {
     opacity: 0;
     display: none;
     position: absolute;
@@ -261,20 +261,18 @@
 }
 
 //==============desktop=========//
-
-.footer__wite-stile {
-  display: block;
-  color: #ffffff;
+.footer__them-black {
+  color: rgb(252, 249, 249);
 }
 
 .footer__desktop {
   position: absolute;
   opacity: 1;
   display: flex;
-  bottom: 36px;
+  bottom: 0;
   z-index: 200;
 
-  @media screen and (max-width: $desktop-up) {
+  @media screen and (max-width: $tablet-only) {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -485,7 +483,7 @@
   & .footer__desktop-list-contacts-telephon,
   & .footer__desktop-list-contacts-chat,
   & .footer__desktop-list-contacts-email,
-  & .footer__input-text{
+  & .footer__input-text {
     color: #ffffff;
   }
   & .footer__desktop-social-list svg {
@@ -496,17 +494,17 @@
       fill: $accent-color;
     }
   }
-  & .footer__desktop-logo svg{
+  & .footer__desktop-logo svg {
     fill: #ffffff;
   }
-  & .footer__desktop-form-input{
+  & .footer__desktop-form-input {
     background-color: #252831;
-    color: #FFFFFF;
+    color: #ffffff;
   }
-  & .footer__desktop-form-input::placeholder{
-    color: #FFFFFF;
+  & .footer__desktop-form-input::placeholder {
+    color: #ffffff;
   }
-  & .footer__desktop-license-checkbox-text{
+  & .footer__desktop-license-checkbox-text {
     color: #ffffff;
   }
 }
