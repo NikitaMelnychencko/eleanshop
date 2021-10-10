@@ -150,19 +150,20 @@ export function deliveryRender() {
 
 //deliveryRender(); //========================================================call
 
+//=====fitting========//
 import sizeTable_markup from '../views/layouts/fitting.hbs';
-import sizeTableMarcup from './components/sizeTable.js';
+import { sizeTable_tableCreate } from './layout/fitting/sizeTable.js';
 import { informationAboutFitting_informationCreate } from './layout/fitting/informationAboutFitting.js';
 import {
   openVideoSlider,
   fittingVideoSliderPlayer,
   videoSlider_videoSliderCreate,
 } from './layout/fitting/videoSlider.js';
-
+console.log(sizeTable_tableCreate);
 export function fittingRender() {
   classBody()
   const fittingMarkUp = sizeTable_markup({
-    sizeTableMarcup,
+    sizeTable_tableCreate,
     videoSlider_videoSliderCreate,
     informationAboutFitting_informationCreate,
     formBrand,
