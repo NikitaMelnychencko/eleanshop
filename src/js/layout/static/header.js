@@ -1,5 +1,14 @@
 import refs from '../../refs/refs.js';
-import { favoritesRender, showroomRender, contactRender, catalogRender } from '../../call-list.js';
+import {
+  favoritesRender,
+  showroomRender,
+  contactRender,
+  catalogRender,
+  brandRender,
+  deliveryRender,
+  fittingRender,
+  reviewsRender,
+} from '../../call-list.js';
 
 const {
   headerEl,
@@ -17,17 +26,10 @@ const {
   navSublistEl,
   wrapperEl,
   navLinkEl,
-  contactEl,
-  showroomEl,
-  catalogNewEl,
   favoritesEl,
+  favQuantityEl,
+  binQuantityEl,
 } = refs;
-
-//! ---------- ВИКЛИКИ ФУНКЦІЙ З КОЛ-ЛИСТА -----------
-favoritesEl.addEventListener('click', favoritesRender);
-showroomEl.addEventListener('click', showroomRender);
-contactEl.addEventListener('click', contactRender);
-catalogNewEl.addEventListener('click', catalogRender);
 
 //! ---------- МОДАЛКА МОБІЛЬНОЇ ВЕРСІЇ -----------
 buttonMobEl.addEventListener('click', fnMobileMenu);
@@ -70,13 +72,61 @@ function fnMobileList(event) {
       navListEl.innerHTML = '';
       navListEl.insertAdjacentHTML('afterbegin', markup);
     }
+  } else {
+    fnRender(event);
+    fnMobileMenu();
   }
 }
 
-//! ---------- МЕНЮ НАВІГАЦІЇ ДЕКСТОПНОЇ ВЕРСІЇ (ЗАПИС В LOCAL STORAGE) -----------
+//! ---------- РЕНДЕРИ СТОРІНОК -----------
+navigationEl.addEventListener('click', fnRender);
+function fnRender(event) {
+  fnSavelocalStorage(event);
 
-navigationEl.addEventListener('click', fnSavelocalStorage);
+  if (event.target.textContent === 'НОВИНКИ' || event.target.textContent === 'Акции')
+    catalogRender();
+
+  if (event.target.className === 'navigation-sublist__link') {
+    if (
+      event.target.parentNode.parentNode.previousElementSibling.textContent === 'КАТЕГОРИИ' ||
+      event.target.parentNode.parentNode.previousElementSibling.textContent === 'НАШИ КОЛЛЕКЦИИ'
+    ) {
+      catalogRender();
+    }
+  }
+
+  if (event.target.textContent === 'Доставка' || event.target.textContent === 'Возврат')
+    deliveryRender();
+
+  if (event.target.textContent === 'Примерка') fittingRender();
+
+  if (event.target.textContent === 'ШОУРУМ' || event.target.textContent === 'Шоурум')
+    showroomRender();
+
+  if (event.target.textContent === 'КОНТАКТЫ') contactRender();
+
+  if (
+    event.target.textContent === 'О БРЕНДЕ' ||
+    event.target.textContent === 'Статьи' ||
+    event.target.textContent === 'Блог'
+  )
+    brandRender();
+
+  if (event.target.textContent === 'Отзывы') reviewsRender();
+}
+
+favoritesEl.addEventListener('click', favoritesRender);
+
+//! ----------ЗАПИС В LOCAL STORAGE -----------
 function fnSavelocalStorage(event) {
   if (event.target.dataset.atribute)
-    localStorage.setItem(event.target.textContent, event.target.dataset.atribute);
+    localStorage.setItem('catalogFilter', event.target.dataset.atribute);
+}
+
+//! ----------ЗМІНА КОЛЬОРУ ТЕКСТУ КІЛЬКОСТІ В КОРЗИНІ І ОБОРАНОМУ -----------
+if (Number(favQuantityEl.textContent) > 0) fnChangeColor(favQuantityEl);
+if (Number(binQuantityEl.textContent) > 0) fnChangeColor(binQuantityEl);
+
+function fnChangeColor(element) {
+  element.style.color = 'red';
 }

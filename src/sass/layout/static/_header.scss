@@ -1,7 +1,8 @@
 .header {
-  position: sticky;
+  position: fixed;
   top: 0;
-  z-index: 1000;
+  z-index: 10000;
+  width: 100%;
   padding-top: 10px;
   padding-bottom: 10px;
   background-color: $primary-background-color;
@@ -36,7 +37,7 @@
   cursor: pointer;
 
   @media screen and (min-width: $mobile-general) {
-    margin-right: 75px;
+    margin-right: 32px;
   }
 
   @media screen and (min-width: $tablet-general) {
@@ -68,6 +69,11 @@
 }
 
 .social-list-desktop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 48px;
+
   @media screen and (max-width: $mobile-only) {
     position: absolute;
     width: 1px;
@@ -82,15 +88,16 @@
   }
 
   @media screen and (min-width: $desktop-up) {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-right: 485px;
+    margin-right: 213px;
   }
 }
 
 .social-list-desktop__item {
-  margin-right: 10px;
+  @media screen and (min-width: $desktop-up) {
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
 }
 
 .social-list-desktop__link {
@@ -125,11 +132,11 @@
   padding-bottom: 8px;
 
   @media screen and (min-width: $mobile-general) {
+    margin-left: auto;
     margin-right: auto;
   }
 
   @media screen and (min-width: $desktop-up) {
-    width: 225px;
     align-items: flex-start;
   }
 }
@@ -167,7 +174,7 @@
 }
 
 .header-phone {
-  @media screen and (max-width: $mobile-only) {
+  @media screen and (max-width: $tablet-only) {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -201,10 +208,8 @@
 }
 
 .product-list {
-  @media screen and (min-width: $desktop-up) {
-    display: flex;
-    align-items: center;
-  }
+  display: flex;
+  align-items: center;
 }
 
 .product-list__item {
@@ -219,7 +224,9 @@
   }
 
   @media screen and (min-width: $desktop-up) {
-    margin-right: 10px;
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
   }
 }
 
@@ -297,6 +304,10 @@
 }
 
 .navigation {
+  @media screen and (min-width: $tablet-general) and (max-width: $tablet-only) {
+    display: none;
+  }
+
   @media screen and (min-width: $desktop-up) {
     display: flex;
     justify-content: space-between;
@@ -572,7 +583,7 @@ body.mobile-open {
   }
 }
 //!! do not touch
-.header-container{
+.header-container {
   position: relative;
 }
 //!!
