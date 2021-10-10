@@ -31,7 +31,7 @@ const {
   binQuantityEl,
 } = refs;
 
-//! ---------- МОДАЛКА МОБІЛЬНОЇ ВЕРСІЇ -----------
+//! ---------- MODAL OF THE MOBILE VERSION -----------
 buttonMobEl.addEventListener('click', fnMobileMenu);
 
 function fnMobileMenu() {
@@ -58,7 +58,7 @@ function fnMobileMenu() {
   }
 }
 
-//! ---------- МЕНЮ НАВІГАЦІЇ МОБІЛЬНОЇ ВЕРСІЇ -----------
+//! ---------- MOBILE VERSION MENU -----------
 let markup;
 
 function fnMobileList(event) {
@@ -78,7 +78,7 @@ function fnMobileList(event) {
   }
 }
 
-//! ---------- РЕНДЕРИ СТОРІНОК -----------
+//! ---------- PAGE RENDERS -----------
 navigationEl.addEventListener('click', fnRender);
 function fnRender(event) {
   fnSavelocalStorage(event);
@@ -117,13 +117,13 @@ function fnRender(event) {
 
 favoritesEl.addEventListener('click', favoritesRender);
 
-//! ----------ЗАПИС В LOCAL STORAGE -----------
+//! ----------RECORD IN LOCAL STORAGE -----------
 function fnSavelocalStorage(event) {
   if (event.target.dataset.atribute)
     localStorage.setItem('catalogFilter', event.target.dataset.atribute);
 }
 
-//! ----------ЗМІНА КОЛЬОРУ ТЕКСТУ КІЛЬКОСТІ В КОРЗИНІ І ОБОРАНОМУ -----------
+//! ----------CHANGE OF COLOR OF THE TEXT OF QUANTITY IN THE BASKET AND DEFENDED -----------
 if (Number(favQuantityEl.textContent) > 0) fnChangeColor(favQuantityEl);
 if (Number(binQuantityEl.textContent) > 0) fnChangeColor(binQuantityEl);
 

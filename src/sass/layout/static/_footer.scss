@@ -1,4 +1,4 @@
-//==== настройка иконок мобильного меню====//
+//==== setting up mobile menu icons====//
 .footer__mobile-list-item-plus::before,
 .footer__mobile-list-item-plus::after {
   content: '';
@@ -18,7 +18,7 @@
 .block-after.open-menu::after {
   transform: rotate(0deg);
 }
-//==== Конец настройки иконок мобильного меню====//
+//==== End of mobile menu icon settings====//
 
 /* ====== VISUALLY HIDDEN ======*/
 .hiden {
