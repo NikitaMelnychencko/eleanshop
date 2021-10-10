@@ -90,16 +90,23 @@ export function checkoutRender() {
 import Favorites from './layout/favorites/favorites.js';
 // import favorit from './json/favorites.json';
 
+refs.numRef.innerHTML = 0;
+let favoritesData = localStorage.getItem('favorites');
+if (favoritesData !== null) {
+  favoritesData = JSON.parse(favoritesData);
+  refs.numRef.innerHTML = favoritesData['fav'].length;
+}
+
 export function favoritesRender() {
   // let data = {};
   // data['fav'] = [...favorit];
   // localStorage.setItem('favorites', JSON.stringify(data));
 
-  // console.log('!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1');
   const favorites = new Favorites();
-  // favorites.updateCount.bind(favorites);
 
-  refs.mainEL.innerHTML = favorites.markcup;
+  if (favorites.markcup.length > 0) {
+    refs.mainEL.innerHTML = favorites.markcup;
+  }
   favorites.init();
 }
 let data = localStorage.getItem('favorites');
