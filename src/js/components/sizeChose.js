@@ -1,14 +1,13 @@
-import createMarkup from '../../views/components/sizeChose.hbs'; 
+import createMarkup from '../../views/components/sizeChose.hbs';
 import Backdrop from '../components/backdrop.js';
-
-function sizeListener(){
-   const btnSize = document.querySelector('.size-chose__size-list');
-    btnSize.addEventListener('click', value => {
-      if (value.target.nodeName === 'BUTTON') {
-        sendingValue(value.target.textContent);
-      }
-    });
-};
+function sizeListener() {
+  const btnSize = document.querySelector('.size-chose__size-list');
+  btnSize.addEventListener('click', value => {
+    if (value.target.nodeName === 'BUTTON') {
+      sendingValue(value.target.textContent);
+    }
+  });
+}
 //function for creating dice of clothing sizes
 function createBtn(json) {
   const Array = json.size
@@ -30,6 +29,10 @@ function createBtn(json) {
           }</button>`,
         );
       }
+      function sendingValue(value) {
+        save(`sizeClose`, value);
+        const backdrop = new Backdrop().closeModalForm();
+      }
       return array;
     });
   return Array;
@@ -37,8 +40,7 @@ function createBtn(json) {
 //function that returns a string with the size on the card that you selected
 function sendingValue(value) {
   save(`sizeClose`, value);
-  const backdrop = new Backdrop()
-  .closeModalForm();
+  const backdrop = new Backdrop().closeModalForm();
 }
 //function writes the selected size to sizeClose in localStorage
 function save(key, value) {
@@ -49,4 +51,4 @@ function save(key, value) {
     console.error('Set state error: ', err);
   }
 }
-export default {createMarkup, sizeListener, createBtn};
+export default { createMarkup, sizeListener, createBtn };

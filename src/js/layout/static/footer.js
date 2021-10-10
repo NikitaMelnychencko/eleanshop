@@ -204,7 +204,14 @@ dataActionCollectio.forEach((evt) => {
     })
 });
 
-
+export function classBody(value) {
+    const BodyClass = "footer-switch";
+    if (BodyClass === value) {
+        document.body.classList.add(value)
+    } else {
+        document.body.classList.remove(BodyClass)
+    }
+}
 
 
 
