@@ -1,6 +1,6 @@
 import refs from './refs/refs.js';
 import updateBin from './updateBin.js';
-
+import { classBody } from './layout/static/footer.js';
 updateBin();
 
 //======home======//
@@ -20,6 +20,7 @@ import { cardsMarkup, openContent } from './layout/home/content.js';
 import { aboutTheBrand_parsing, openAboutTheBrand } from './layout/home/aboutTheBrand.js';
 export function homeRender() {
   updateBin();
+  classBody()
   const homeMarkup = home({
     pageHeroSliderMarkup,
     cardsMarkup,
@@ -51,7 +52,9 @@ import {
   brandPlayer,
 } from './layout/brand/infoAboutBrand.js';
 
+
 export function brandRender() {
+  classBody("footer-switch")
   const contactPageMarkUp = brand_page({
     formBrand,
     brandOurAdvantages,
@@ -72,6 +75,7 @@ import { backdropMarkup } from './layout/checkout/thanksForOrdering.js';
 import payment_checkout from '../views/layouts/checkout.hbs';
 export function checkoutRender() {
   updateBin();
+  classBody()
   const createCheckout = payment_checkout({ createPayment, ordering, backdropMarkup });
   refs.mainEL.innerHTML = createCheckout;
   //refs.mainEL.insertAdjacentHTML('beforeend', createCheckout);
@@ -114,12 +118,13 @@ if (!data == null) {
   data = JSON.parse(data);
   refs.numRef.innerHTML = data['fav'].length;
 }
-//=====fitting========//
+//=====contact========//
 
 import contact_page from '../views/layouts/contact.hbs';
 import { contactsMap, contactsContact } from './layout/contact/contact.js';
 
 export function contactRender() {
+  classBody()
   const contactPageMarkUp = contact_page({ formBrand, contactsMap, contactsContact });
   refs.mainEL.innerHTML = contactPageMarkUp;
   //refs.mainEL.insertAdjacentHTML('beforeend', contactPageMarkUp);
@@ -139,6 +144,7 @@ import {
 } from './layout/delivery/deliveryTypes.js';
 
 export function deliveryRender() {
+  classBody()
   const deliveryPageMarkUp = deliveryMarkUp({
     buttonsDelivery,
     mainImageDelivery,
@@ -153,25 +159,28 @@ export function deliveryRender() {
 
 //deliveryRender(); //========================================================call
 
+//=====fitting========//
 import sizeTable_markup from '../views/layouts/fitting.hbs';
-import sizeTableMarcup from './components/sizeTable.js';
+import { sizeTable_tableCreate } from './layout/fitting/sizeTable.js';
 import { informationAboutFitting_informationCreate } from './layout/fitting/informationAboutFitting.js';
 import {
   openVideoSlider,
   fittingVideoSliderPlayer,
   videoSlider_videoSliderCreate,
 } from './layout/fitting/videoSlider.js';
-
+console.log(sizeTable_tableCreate);
 export function fittingRender() {
+
+  classBody()
   const fittingMarkUp = sizeTable_markup({
-    sizeTableMarcup,
+    sizeTable_tableCreate,
     videoSlider_videoSliderCreate,
     informationAboutFitting_informationCreate,
     formBrand,
   });
   refs.mainEL.innerHTML = fittingMarkUp;
-  openVideoSlider();
-  // fittingVideoSliderPlayer();
+  //openVideoSlider();
+  //fittingVideoSliderPlayer();
   formFittingInShowroom();
 }
 //fittingRender(); //============================================================call
@@ -188,12 +197,12 @@ import cards from './json/catalog.json';
 import productMarkup from '../views/layouts/product.hbs';
 import HandSewn from './layout/product/productHandSewn.js';
 import backdropMarkupTempl from '../views/components/backdrop.hbs';
-
 import modalFormMarkupTempl from '../views/components/thanksForOrdering.hbs';
 import { preorderMark, setEventPreorder } from './layout/product/preorderModal.js';
 import { tryOnModels, setEventTryOnModels } from './layout/product/tryOnModelsModal.js';
 
 export function productRender() {
+  classBody()
   const objRecomendationsCategory = new RecomendationsCategory({
     data: cards,
   });
@@ -253,6 +262,7 @@ import {
 } from './layout/reviews/videoSet.js';
 
 export function reviewsRender() {
+  classBody()
   const reviewsMarkUp = reviews_page({ setVideoHbs, clientStar, formReviewsMarkUp });
   refs.mainEL.innerHTML = reviewsMarkUp;
   videosetSlickSettings();
@@ -267,6 +277,7 @@ export function reviewsRender() {
 //=====showroom========//
 import showroom_page from '../views/layouts/showroom.hbs';
 export function showroomRender() {
+  classBody()
   const showroomPageMarkUp = showroom_page({ formBrand, pageShowroomSliderMarkup });
   refs.mainEL.innerHTML = showroomPageMarkUp;
   showroomSlider();
@@ -278,6 +289,7 @@ export function showroomRender() {
 import blockHelp_blockHelpTemplate from '../views/components/blockHelp.hbs';
 import { blockHelpRenderOpen } from './components/blockHelp/blockHelp.js';
 function blockHelpRender() {
+  classBody()
   refs.mainEL.insertAdjacentHTML('beforeend', blockHelp_blockHelpTemplate());
   blockHelpRenderOpen();
 }
@@ -288,6 +300,7 @@ import { filterListMakeup, openFilter } from './layout/сatalog/filter.js';
 import { catalogListMarkup, openCategory } from './layout/сatalog/gallery.js';
 
 export function catalogRender() {
+  classBody()
   const filterGalleryCatalogMarkup = catalogMarkUp({ filterListMakeup, catalogListMarkup });
   refs.mainEL.innerHTML = filterGalleryCatalogMarkup;
   openFilter();
