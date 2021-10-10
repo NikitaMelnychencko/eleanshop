@@ -161,6 +161,7 @@ import {
 } from './layout/fitting/videoSlider.js';
 console.log(sizeTable_tableCreate);
 export function fittingRender() {
+
   classBody()
   const fittingMarkUp = sizeTable_markup({
     sizeTable_tableCreate,
@@ -169,8 +170,8 @@ export function fittingRender() {
     formBrand,
   });
   refs.mainEL.innerHTML = fittingMarkUp;
-  openVideoSlider();
-  fittingVideoSliderPlayer();
+  //openVideoSlider();
+  //fittingVideoSliderPlayer();
   formFittingInShowroom();
 }
 //fittingRender(); //============================================================call
@@ -187,7 +188,6 @@ import cards from './json/catalog.json';
 import productMarkup from '../views/layouts/product.hbs';
 import HandSewn from './layout/product/productHandSewn.js';
 import backdropMarkupTempl from '../views/components/backdrop.hbs';
-
 import modalFormMarkupTempl from '../views/components/thanksForOrdering.hbs';
 import { preorderMark, setEventPreorder } from './layout/product/preorderModal.js';
 import { tryOnModels, setEventTryOnModels } from './layout/product/tryOnModelsModal.js';
