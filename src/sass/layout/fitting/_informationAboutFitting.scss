@@ -14,13 +14,13 @@
   margin-left: auto;
   margin-right: auto;
 }
+
 .fitting__minor-title {
   font-size: 18px;
   line-height: 1.1;
   letter-spacing: 0.05em;
   margin:0 auto 22px auto;
   
-
 }
 
 .fitting__product-shipping--description {
@@ -40,7 +40,7 @@
   content: '';
   width: 15px;
   height: 1px;
-  background-color: $primary-background-color;
+  background-color: $secondary-background-color;
   display: block;
 
   position: absolute;
@@ -54,7 +54,7 @@
   border: 1px dashed $form-dashed-color;
   margin-bottom: 50px;
   @media screen and (min-width: $desktop-up) {
-    padding: 0 40px;
+    padding: 0 38px;
     border: none;
     margin-bottom: 0px;
   }

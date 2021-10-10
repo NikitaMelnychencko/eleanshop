@@ -1,8 +1,9 @@
 import refs from '../../refs/refs.js';
 import { scrollTo } from '../../components/blockHelp/blockHelp';
-import {catalogRender, fittingRender, brandRender, productRender, contactRender, reviewsRender, deliveryRender, favoritesRender, showroomRender, checkoutRender } from '../../call-list';
+import { catalogRender, fittingRender, brandRender, productRender, contactRender, reviewsRender, deliveryRender, favoritesRender, showroomRender, checkoutRender } from '../../call-list';
 import { id } from 'postcss-selector-parser';
 import { indexOf } from 'lodash';
+
 const {
     closeOpenPlus,
     inputStorageMobile,
@@ -14,6 +15,8 @@ const {
     desktop,
     linkMenuFooterDesktop,
     linkMenuFooterMobile,
+    dropDownList,
+    dropDown,
 } = refs
 
 checkBoxIcon.addEventListener('click', onAgreeCheckBox)
@@ -31,22 +34,21 @@ desktop.forEach((evt) => {
 
 //=== addEventListener Footer__Desktop on dataAction and LockalStorage===//
 linkMenuFooterDesktop.forEach((evt) => {
-    const idlinkDesktop = evt.textContent
     evt.addEventListener('click', (el) => {
         const selected = el.target.dataset.atribute;
+        console.log(selected)
         if (selected) {
-            localStorage.setItem(idlinkDesktop, selected)
+            localStorage.setItem("footer-filter-desktop", selected)
         }
     });
 });
 
 //=== addEventListener Footer__Mobile on id and LockalStorage===//
 linkMenuFooterMobile.forEach((evt) => {
-    const idlinkMobile = evt.textContent
     evt.addEventListener('click', (el) => {
         const selected = el.target.dataset.atribute;
         if (selected) {
-            localStorage.setItem(idlinkMobile, selected)
+            localStorage.setItem("footer-filter-mobile", selected)
         }
     });
 });
@@ -55,29 +57,24 @@ linkMenuFooterMobile.forEach((evt) => {
 closeOpenPlus.forEach((evt) => {
     evt.addEventListener('click', (el) => {
         const idMuneClickMobile = evt.id;
-        const clickEL = el.currentTarget;
         if (!el.target.nextElementSibling) {
             scrollTo(0, 700);
-
-            localStorage.setItem(idMuneClickMobile, clickEL)
+            localStorage.setItem("footer-filtr-mobile", idMuneClickMobile)
         }
         el.preventDefault()
-        const test = document.querySelector('.dropdown-content')
-        const dropDown = document.querySelector('.open-menu');
         if (el.target.nextElementSibling) {
             if (dropDown) {
                 dropDown.classList.toggle('open-menu')
                 dropDown.nextElementSibling.classList.toggle('js-dropdown-none');
                 if (el.target === dropDown) {
                     return;
-                } else if (el.target === test) {
+                } else if (el.target === dropDownList) {
                     dropDown.parentElement.classList.remove('.js-dropdown-none');
                 }
             }
             el.target.classList.toggle('open-menu');
             el.target.nextElementSibling.classList.toggle('js-dropdown-none');
         } else {
-
             window.location.href = el.target
         }
     });
@@ -109,7 +106,6 @@ function onAgreeCheckBox(evt) {
 
 // Appointment localStorage on input mobile
 inputStorageMobile.forEach((evt) => {
-
     evt.addEventListener('input', (el) => {
         const subscribe = el.currentTarget.value;
         if (subscribe) {
@@ -124,7 +120,6 @@ inputStorageDesktop.forEach((evt) => {
     const idInputDesktop = evt.id
     evt.addEventListener('input', (el) => {
         const subscribe = el.currentTarget.value;
-        console.log(subscribe)
         if (subscribe) {
             localStorage.setItem(idInputDesktop, subscribe)
         }
@@ -154,48 +149,40 @@ const dataActionCollectio = document.querySelectorAll('[data-atribute]')
 
 dataActionCollectio.forEach((evt) => {
     evt.addEventListener('click', (el) => {
-        console.log(el.target.dataset)
         const targetLink = el.target.dataset.atribute
         //==== MobileRender ===//
 
         //==== catalogRender ===//
         if (targetLink === 'autumn-winter' || targetLink === 'evening-sets' || targetLink === 'edding-and-graduation' || targetLink === 'the-tuxedo' || targetLink === 'costumes' || targetLink === 'pants' || targetLink === 'blouses') {
-            console.log('catalog')
             return catalogRender()
         }
 
         //==== brandRender ===//
         if (targetLink === 'about-the-brand' || targetLink === 'about-founders' || targetLink === 'blog') {
-            console.log('brandRender');
             return brandRender();
         }
         //==== showroomRender ===//
         if (targetLink === 'showroom') {
-            console.log('showroomRender');
             return showroomRender();
         }
 
         //==== deliveryRender ===//
         if (targetLink === 'delivery' || targetLink === 'return' || targetLink === 'payment') {
-            console.log('deliveryRender');
             return deliveryRender();
         }
 
         //==== showroomRender ===//
         if (targetLink === 'showroom' || targetLink === 'showroom') {
-            console.log('showroomRender');
             return showroomRender();
         }
 
         //==== formFittingInShowroom ===//
         if (targetLink === 'fitting') {
-            console.log('formFittingInShowroom');
             return fittingRender();
         }
 
         //==== reviewsRender ===//
         if (targetLink === 'reviews') {
-            console.log('reviewsRender');
             return reviewsRender();
         }
 
@@ -203,24 +190,28 @@ dataActionCollectio.forEach((evt) => {
 
         //==== DeliveryRender ===//
         if (targetLink === 'Delivery' || targetLink === 'Payment' || targetLink === 'Return') {
-            console.log('deliveryRender: Desktop')
             return deliveryRender();
         }
 
         //==== FittingRender ===//
         if (targetLink === 'Fitting') {
-            console.log('formFittingInShowroom: Desktop')
             return fittingRender();
         }
         //==== ContactsRender ===//
         if (targetLink === 'Contacts') {
-            console.log('contactRender: Desktop')
             return contactRender();
         }
     })
 });
 
-
+export function classBody(value) {
+    const BodyClass = "footer-switch";
+    if (BodyClass === value) {
+        document.body.classList.add(value)
+    } else {
+        document.body.classList.remove(BodyClass)
+    }
+}
 
 
 

@@ -4,7 +4,6 @@ import set from '../../../../src/js/json/videoSet.json';
 
 // const menuEl = document.querySelector('main');
 export const videoSlider_videoSliderCreate = videoSlider(set);
-
 // export default videoSlider_videoSliderCreate;
 
 export function openVideoSlider() {

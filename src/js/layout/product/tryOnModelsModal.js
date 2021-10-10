@@ -5,6 +5,7 @@ import orderForm from '../../../views/components/orderForm.hbs';
 import refs from '../../refs/refs';
 
 const { mainEL } = refs;
+
 // create content for Try-One Modal which placed at Body (for example)
 
 export const tryOnModels = tryOnModelsModal({ orderForm });
@@ -12,8 +13,6 @@ export const tryOnModels = tryOnModelsModal({ orderForm });
 //const
 
 //open modal
-/* const buttonOpenModal = document.querySelector() */
-/* buttonOpenModal.addEventListener('click', onButtonOpenModalClick) */
 export function setEventTryOnModels() {
   const tryOnBackdrop = document.querySelector('.try-on__backdrop');
   const tryOnModalEl = document.querySelector('.try-on');
@@ -26,16 +25,8 @@ export function setEventTryOnModels() {
   sizeList.addEventListener('click', onSizeListItemClick);
   submitButton.addEventListener('click', onButtonSubmitClick);
 }
-/* function onButtonOpenModalClick(event){
-    tryOnBackdrop.classList.add('is-visible');
-    buttonCloseModal.addEventListener('click', onButtonCloseModalClick);
-sizeList.addEventListener('click', onSizeListItemClick);
-submitButton.addEventListener('click', onButtonSubmitClick);
-
-} */
 
 //close modal
-
 function onButtonCloseModalClick(event) {
   const tryOnBackdrop = document.querySelector('.try-on__backdrop');
   tryOnBackdrop.classList.remove('is-visible');
@@ -45,7 +36,6 @@ function onButtonCloseModalClick(event) {
 }
 
 //on size-list label click, radio-input is checked
-
 function onSizeListItemClick(event) {
   if (event.target.nodeName !== 'LABEL') {
     return;
@@ -55,7 +45,6 @@ function onSizeListItemClick(event) {
 }
 
 //on submit button click, set info into local storage
-
 function onButtonSubmitClick(event) {
   const tryOnModalEl = document.querySelector('.try-on');
   const clientNameInput = tryOnModalEl.querySelector('#client-name');
