@@ -109,7 +109,7 @@ export function favoritesRender() {
 let data = localStorage.getItem('favorites');
 data = JSON.parse(data);
 refs.numRef.innerHTML = data['fav'].length;
-//=====fitting========//
+//=====contact========//
 
 import contact_page from '../views/layouts/contact.hbs';
 import { contactsMap, contactsContact } from './layout/contact/contact.js';
