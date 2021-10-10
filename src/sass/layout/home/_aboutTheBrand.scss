@@ -4,7 +4,7 @@
 
   overflow: hidden;
   @media screen and (min-width: $mobile-first) {
-    background-image: url(./images/aboutBrandMob@1x.jpg);
+    background-image: url(../images/aboutBrandMob@1x.jpg);
     background-size: 414px 255px;
     background-repeat: no-repeat;
     background-position: center;
@@ -13,7 +13,7 @@
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url('./images/aboutBrandMob@2x.jpg');
+      background-image: url('../images/aboutBrandMob@2x.jpg');
     }
   }
   @media screen and (min-width: $mobile-general) {
@@ -32,7 +32,7 @@
     margin-right: auto;
     margin-left: auto;
 
-    background-image: url(./images/aboutBrandDesktop@1x.jpg);
+    background-image: url(../images/aboutBrandDesktop@1x.jpg);
     background-size: 910px 525px;
     background-repeat: no-repeat;
     background-position-x: -100px;
@@ -42,7 +42,7 @@
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url('./images/aboutBrandDesktop@2x.jpg');
+      background-image: url('../images/aboutBrandDesktop@2x.jpg');
     }
   }
 }
