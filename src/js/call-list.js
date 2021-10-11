@@ -292,7 +292,6 @@ export function showroomRender() {
 import blockHelp_blockHelpTemplate from '../views/components/blockHelp.hbs';
 import { blockHelpRenderOpen } from './components/blockHelp/blockHelp.js';
 function blockHelpRender() {
-  classBody();
   refs.mainEL.insertAdjacentHTML('beforeend', blockHelp_blockHelpTemplate());
   blockHelpRenderOpen();
 }

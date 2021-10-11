@@ -224,6 +224,7 @@ dataActionCollectio.forEach(evt => {
 
 export function classBody(value) {
   const BodyClass = 'footer-switch';
+  console.log(BodyClass === value);
   if (BodyClass === value) {
     document.body.classList.add(value);
   } else {
