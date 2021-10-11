@@ -3,4 +3,4 @@ import getRefs from '../refs/refs.js';
 
 const { mainEL } = getRefs;
 
-mainEL.insertAdjacentHTML('beforeend', sizeTableMarkup);
+//mainEL.insertAdjacentHTML('beforeend', sizeTableMarkup);

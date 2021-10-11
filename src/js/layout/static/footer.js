@@ -58,7 +58,7 @@ linkMenuFooterMobile.forEach(evt => {
   evt.addEventListener('click', el => {
     const selected = el.target.dataset.atribute;
     if (selected) {
-      localStorage.setItem('footer-filter-mobile', selected);
+      localStorage.setItem('content', selected);
     }
   });
 });
@@ -162,13 +162,14 @@ dataActionCollectio.forEach(evt => {
     if (
       targetLink === 'autumn-winter' ||
       targetLink === 'evening-sets' ||
-      targetLink === 'edding-and-graduation' ||
-      targetLink === 'the-tuxedo' ||
+      targetLink === 'wedding-and-graduation' ||
+      targetLink === 'tux' ||
       targetLink === 'costumes' ||
       targetLink === 'pants' ||
       targetLink === 'blouses'
-    ) {
-      return catalogRender();
+    )
+    {
+        return catalogRender();
     }
 
     //==== brandRender ===//

@@ -120,7 +120,7 @@ favoritesEl.addEventListener('click', favoritesRender);
 //! ----------RECORD IN LOCAL STORAGE -----------
 function fnSavelocalStorage(event) {
   if (event.target.dataset.atribute)
-    localStorage.setItem('catalogFilter', event.target.dataset.atribute);
+    localStorage.setItem('content', event.target.dataset.atribute);
 }
 
 //! ----------CHANGE OF COLOR OF THE TEXT OF QUANTITY IN THE BASKET AND DEFENDED -----------

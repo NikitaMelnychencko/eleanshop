@@ -20,7 +20,7 @@ import { cardsMarkup, openContent } from './layout/home/content.js';
 import { aboutTheBrand_parsing, openAboutTheBrand } from './layout/home/aboutTheBrand.js';
 export function homeRender() {
   updateBin();
-  classBody()
+  classBody();
   const homeMarkup = home({
     pageHeroSliderMarkup,
     cardsMarkup,
@@ -52,9 +52,8 @@ import {
   brandPlayer,
 } from './layout/brand/infoAboutBrand.js';
 
-
 export function brandRender() {
-  classBody("footer-switch")
+  classBody('footer-switch');
   const contactPageMarkUp = brand_page({
     formBrand,
     brandOurAdvantages,
@@ -65,9 +64,9 @@ export function brandRender() {
   formFittingInShowroom();
   infoAboutBrand();
   brandPlayer();
-  blockHelpRender()
+  blockHelpRender();
 }
-// brandRender(); //========================================================call
+
 
 //=====checkout========//
 import { ModalData, createPayment } from './layout/checkout/payment.js';
@@ -76,7 +75,7 @@ import { backdropMarkup } from './layout/checkout/thanksForOrdering.js';
 import payment_checkout from '../views/layouts/checkout.hbs';
 export function checkoutRender() {
   updateBin();
-  classBody()
+  classBody();
   const createCheckout = payment_checkout({ createPayment, ordering, backdropMarkup });
   refs.mainEL.innerHTML = createCheckout;
   //refs.mainEL.insertAdjacentHTML('beforeend', createCheckout);
@@ -125,13 +124,13 @@ import contact_page from '../views/layouts/contact.hbs';
 import { contactsMap, contactsContact } from './layout/contact/contact.js';
 
 export function contactRender() {
-  classBody()
+  classBody();
   const contactPageMarkUp = contact_page({ formBrand, contactsMap, contactsContact });
   refs.mainEL.innerHTML = contactPageMarkUp;
   formFittingInShowroom();
-  blockHelpRender()
+  blockHelpRender();
 }
-//contactRender(); //========================================================call==================================
+
 
 //=====delivery========//
 import deliveryMarkUp from '../views/layouts/delivery.hbs';
@@ -145,7 +144,7 @@ import {
 } from './layout/delivery/deliveryTypes.js';
 
 export function deliveryRender() {
-  classBody()
+  classBody();
   const deliveryPageMarkUp = deliveryMarkUp({
     buttonsDelivery,
     mainImageDelivery,
@@ -156,10 +155,10 @@ export function deliveryRender() {
   refs.mainEL.innerHTML = deliveryPageMarkUp;
   formDelivery();
   deliveryThreeModal();
-  blockHelpRender()
+  blockHelpRender();
 }
 
-//deliveryRender(); //========================================================call
+
 
 //=====fitting========//
 import sizeTable_markup from '../views/layouts/fitting.hbs';
@@ -171,8 +170,7 @@ import {
   videoSlider_videoSliderCreate,
 } from './layout/fitting/videoSlider.js';
 export function fittingRender() {
-
-  classBody()
+  classBody();
   const fittingMarkUp = sizeTable_markup({
     sizeTable_tableCreate,
     videoSlider_videoSliderCreate,
@@ -183,9 +181,9 @@ export function fittingRender() {
   openVideoSlider();
   //fittingVideoSliderPlayer();
   formFittingInShowroom();
-  blockHelpRender()
+  blockHelpRender();
 }
-//fittingRender(); //============================================================call
+
 
 //=====product========//
 import {
@@ -204,7 +202,7 @@ import { preorderMark, setEventPreorder } from './layout/product/preorderModal.j
 import { tryOnModels, setEventTryOnModels } from './layout/product/tryOnModelsModal.js';
 
 export function productRender() {
-  classBody()
+  classBody();
   const objRecomendationsCategory = new RecomendationsCategory({
     data: cards,
   });
@@ -249,10 +247,10 @@ export function productRender() {
   objProductModalAddToCart.setSlider();
   setEventPreorder();
   setEventTryOnModels();
-  blockHelpRender()
+  blockHelpRender();
 }
 
-// productRender(); //========================================================call
+
 
 //=====reviews========//
 import reviews_page from '../views/layouts/reviews.hbs';
@@ -265,7 +263,7 @@ import {
 } from './layout/reviews/videoSet.js';
 
 export function reviewsRender() {
-  classBody()
+  classBody();
   const reviewsMarkUp = reviews_page({ setVideoHbs, clientStar, formReviewsMarkUp });
   refs.mainEL.innerHTML = reviewsMarkUp;
   videosetSlickSettings();
@@ -273,28 +271,27 @@ export function reviewsRender() {
   starClientsComments();
   formReviews();
   videoSetPlayer();
-  blockHelpRender()
+  blockHelpRender();
 }
 
-// reviewsRender(); //========================================================call
+
 
 //=====showroom========//
 import showroom_page from '../views/layouts/showroom.hbs';
 export function showroomRender() {
-  classBody()
+  classBody();
   const showroomPageMarkUp = showroom_page({ formBrand, pageShowroomSliderMarkup });
   refs.mainEL.innerHTML = showroomPageMarkUp;
   showroomSlider();
   formFittingInShowroom();
-  blockHelpRender()
+  blockHelpRender();
 }
-//showroomRender(); //========================================================call===================
+
 
 //=====blockHelp========//
 import blockHelp_blockHelpTemplate from '../views/components/blockHelp.hbs';
 import { blockHelpRenderOpen } from './components/blockHelp/blockHelp.js';
 function blockHelpRender() {
-  classBody()
   refs.mainEL.insertAdjacentHTML('beforeend', blockHelp_blockHelpTemplate());
   blockHelpRenderOpen();
 }
@@ -302,15 +299,16 @@ function blockHelpRender() {
 //======catalog=========//
 import catalogMarkUp from '../views/layouts/catalog.hbs';
 import { filterListMakeup, openFilter } from './layout/сatalog/filter.js';
-import { catalogListMarkup, openCategory } from './layout/сatalog/gallery.js';
+import { catalogListMarkupF, openCategory } from './layout/сatalog/gallery.js';
 
 export function catalogRender() {
-  classBody()
+  classBody();
+  const catalogListMarkup = catalogListMarkupF();
   const filterGalleryCatalogMarkup = catalogMarkUp({ filterListMakeup, catalogListMarkup });
   refs.mainEL.innerHTML = filterGalleryCatalogMarkup;
   openFilter();
   openCategory();
-  blockHelpRender()
+  blockHelpRender();
   // console.log(filterGalleryCatalogMarkup);
 }
-//catalogRender(); //========================================================call
+
