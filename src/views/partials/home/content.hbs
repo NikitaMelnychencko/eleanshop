@@ -1,19 +1,17 @@
-<section class='content'>
-  <div class='container'>
-    <h2 class='content__title'>Контент</h2>
-    <ul class='content__list'>
-      {{#each this}}
-        <li class='content__item'>
-          <h3 class='content__category'>{{name}}</h3>
-          {{! <a href=""> }}
-          <picture class='content__img'>
-            <source srcset='{{image}} 1x, {{image_2x}} 2x' media='(max-width: 720px)' />
-            <source srcset='{{image-desk}} 1x, {{image-desk_2x}} 2x' media='(min-width: 1378px)' />
-            <img id='{{id}}' src='{{image}}' alt='{{description}}' loading='lazy' />
-          </picture>
-          {{! </a> }}
-        </li>
-      {{/each}}
-    </ul>
-  </div>
-</section>
+<div class='container'>
+  <h2 class='content__title'>Контент</h2>
+  <ul class='content__list'>
+    {{#each this}}
+      <li class='content__item'>
+        <h3 class='content__category'>{{name}}</h3>
+        {{! <a href=""> }}
+        <picture class='content__img'>
+          <source srcset='{{image}} 1x, {{image_2x}} 2x' media='(max-width: 720px)' />
+          <source srcset='{{image-desk}} 1x, {{image-desk_2x}} 2x' media='(min-width: 1378px)' />
+          <img id='{{id}}' src='{{image}}' alt='{{description}}' loading='lazy' />
+        </picture>
+        {{! </a> }}
+      </li>
+    {{/each}}
+  </ul>
+</div>

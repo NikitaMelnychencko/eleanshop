@@ -1,27 +1,25 @@
-<section class='hero'>
-  <div class='hero__wrapper'>
-    <div class='hero__slider'>
-      {{#each this}}
-        <div class='slider__item filter'>
+<div class='hero__wrapper'>
+  <div class='hero__slider'>
+    {{#each this}}
+      <div class='slider__item filter'>
 
-          <picture>
-            <source
-              srcset='
+        <picture>
+          <source
+            srcset='
     {{image-mobile-1x}} 1x,
     {{image-mobile-2x}} 2x'
-              media='(max-width: 1377px)'
-            />
-            <source
-              srcset='
+            media='(max-width: 1377px)'
+          />
+          <source
+            srcset='
   {{image-desktop-1x}} 1x,
   {{image-desktop-2x}} 2x'
-              media='(min-width: 1378px)'
-            />
-            <img src='#' alt='{{name}}' id='{{id}}' loading='lazy' />
-          </picture>
-          <h1>{{text}}</h1>
-        </div>
-      {{/each}}
-    </div>
+            media='(min-width: 1378px)'
+          />
+          <img src='#' alt='{{name}}' id='{{id}}' loading='lazy' />
+        </picture>
+        <h1>{{text}}</h1>
+      </div>
+    {{/each}}
   </div>
-</section>
+</div>

@@ -1,39 +1,37 @@
-<section class='star-clients section'>
-  <div class='container star-clients__container'>
-    <h2 class='star-clients__title'>НАШИ ЗВЕЗДНЫЕ КЛИЕНТЫ И ОТЗЫВЫ</h2>
+<div class='container star-clients__container'>
+  <h2 class='star-clients__title'>НАШИ ЗВЕЗДНЫЕ КЛИЕНТЫ И ОТЗЫВЫ</h2>
 
-    <div class='star-clients__wrapper'>
-      <div class='star-clients__slider'>
-        {{#each pageStarClientsSliderData}}
-          <div class='slider__item'>
-            <picture>
-              <source
-                srcset='
+  <div class='star-clients__wrapper'>
+    <div class='star-clients__slider'>
+      {{#each pageStarClientsSliderData}}
+        <div class='slider__item'>
+          <picture>
+            <source
+              srcset='
     {{image-mobile-1x}} 1x,
     {{image-mobile-2x}} 2x'
-                media='(max-width: 1377px)'
-              />
-              <source
-                srcset='
+              media='(max-width: 1377px)'
+            />
+            <source
+              srcset='
   {{image-desktop-1x}} 1x,
   {{image-desktop-2x}} 2x'
-                media='(min-width: 1378px)'
-              />
-              <img src='#' alt='{{name}}' id='{{id}}' loading='lazy' width='256px' height='370px' />
-            </picture>
-            <h3 class='star-clients__subtitle'>{{name}}</h3>
-          </div>
-        {{/each}}
-      </div>
+              media='(min-width: 1378px)'
+            />
+            <img src='#' alt='{{name}}' id='{{id}}' loading='lazy' width='256px' height='370px' />
+          </picture>
+          <h3 class='star-clients__subtitle'>{{name}}</h3>
+        </div>
+      {{/each}}
     </div>
-
-    <ul class='reviews-chat__list'>
-      <h3 class='reviews-chat__list-title'>Отзывы</h3>
-      {{{cardChatReviewsMarkup}}}
-    </ul>
-    <button class='reviews-button js-watch-all-button' type='button'>СМОТРЕТЬ ВСЕ</button>
-    <button class='button-up' type='button'>
-
-    </button>
   </div>
-</section>
+
+  <ul class='reviews-chat__list'>
+    <h3 class='reviews-chat__list-title'>Отзывы</h3>
+    {{{cardChatReviewsMarkup}}}
+  </ul>
+  <button class='reviews-button js-watch-all-button' type='button'>СМОТРЕТЬ ВСЕ</button>
+  <button class='button-up' type='button'>
+
+  </button>
+</div>
