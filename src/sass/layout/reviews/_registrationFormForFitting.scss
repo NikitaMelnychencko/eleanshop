@@ -264,6 +264,12 @@
     padding-top: 45px;
   }
 }
+.reviews-section-form--home{
+  @media screen and (min-width: $desktop-up) {
+    padding-bottom: 69px;
+    padding-top: 45px;
+  }
+}
 .reviews-formReviews-box {
   border: 1px dashed $form-dashed-color;
   box-sizing: border-box;
