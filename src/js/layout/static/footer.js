@@ -48,7 +48,7 @@ linkMenuFooterDesktop.forEach(evt => {
   evt.addEventListener('click', el => {
     const selected = el.target.dataset.atribute;
     if (selected) {
-      localStorage.setItem('content', selected);
+      localStorage.setItem('footer-filter-desktop', selected);
     }
   });
 });
@@ -69,7 +69,7 @@ closeOpenPlus.forEach(evt => {
     const idMuneClickMobile = evt.id;
     if (!el.target.nextElementSibling) {
       scrollTo(0, 700);
-      localStorage.setItem('content', idMuneClickMobile);
+      localStorage.setItem('footer-filtr-mobile', idMuneClickMobile);
     }
     el.preventDefault();
     if (el.target.nextElementSibling) {
@@ -167,8 +167,9 @@ dataActionCollectio.forEach(evt => {
       targetLink === 'costumes' ||
       targetLink === 'pants' ||
       targetLink === 'blouses'
-    ) {
-      return catalogRender();
+    )
+    {
+        return catalogRender();
     }
 
     //==== brandRender ===//
@@ -224,7 +225,6 @@ dataActionCollectio.forEach(evt => {
 
 export function classBody(value) {
   const BodyClass = 'footer-switch';
-  console.log(BodyClass === value);
   if (BodyClass === value) {
     document.body.classList.add(value);
   } else {

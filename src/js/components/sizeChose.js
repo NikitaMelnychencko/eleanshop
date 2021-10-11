@@ -1,5 +1,6 @@
 import createMarkup from '../../views/components/sizeChose.hbs';
 import Backdrop from '../components/backdrop.js';
+import refs from '../refs/refs';
 function sizeListener() {
   const btnSize = document.querySelector('.size-chose__size-list');
   btnSize.addEventListener('click', value => {

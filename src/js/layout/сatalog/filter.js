@@ -33,8 +33,15 @@ export function openFilter() {
   const categoryName = document.querySelector('.catalog-category-name');
   let ls = localStorage.getItem('content');
   if (ls) {
-    const index = filterLib.filter_category.findIndex(el => el.id === ls);
-    categoryName.textContent = filterLib.filter_category[index].category;
+    let index = filterLib.filter_category.findIndex(el => el.id === ls);
+    if (index > 0) {
+      categoryName.textContent = filterLib.filter_category[index].category;
+    } else {
+      index = filterLib.filter_collection.findIndex(el => el.id === ls);
+      if (index > 0) {
+        categoryName.textContent = filterLib.filter_collection[index].collection;
+      }
+    }
     // localStorage.removeItem('content');
   }
   ls = localStorage.getItem('catalogFilter');

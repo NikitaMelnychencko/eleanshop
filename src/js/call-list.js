@@ -66,7 +66,7 @@ export function brandRender() {
   brandPlayer();
   blockHelpRender();
 }
-// brandRender(); //========================================================call
+
 
 //=====checkout========//
 import { ModalData, createPayment } from './layout/checkout/payment.js';
@@ -130,7 +130,7 @@ export function contactRender() {
   formFittingInShowroom();
   blockHelpRender();
 }
-//contactRender(); //========================================================call==================================
+
 
 //=====delivery========//
 import deliveryMarkUp from '../views/layouts/delivery.hbs';
@@ -158,7 +158,7 @@ export function deliveryRender() {
   blockHelpRender();
 }
 
-//deliveryRender(); //========================================================call
+
 
 //=====fitting========//
 import sizeTable_markup from '../views/layouts/fitting.hbs';
@@ -183,7 +183,7 @@ export function fittingRender() {
   formFittingInShowroom();
   blockHelpRender();
 }
-//fittingRender(); //============================================================call
+
 
 //=====product========//
 import {
@@ -250,7 +250,7 @@ export function productRender() {
   blockHelpRender();
 }
 
-// productRender(); //========================================================call
+
 
 //=====reviews========//
 import reviews_page from '../views/layouts/reviews.hbs';
@@ -274,7 +274,7 @@ export function reviewsRender() {
   blockHelpRender();
 }
 
-// reviewsRender(); //========================================================call
+
 
 //=====showroom========//
 import showroom_page from '../views/layouts/showroom.hbs';
@@ -286,7 +286,7 @@ export function showroomRender() {
   formFittingInShowroom();
   blockHelpRender();
 }
-//showroomRender(); //========================================================call===================
+
 
 //=====blockHelp========//
 import blockHelp_blockHelpTemplate from '../views/components/blockHelp.hbs';
@@ -311,4 +311,4 @@ export function catalogRender() {
   blockHelpRender();
   // console.log(filterGalleryCatalogMarkup);
 }
-//catalogRender(); //========================================================call
+

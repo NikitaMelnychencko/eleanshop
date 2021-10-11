@@ -1,8 +1,10 @@
 .in-instagram {
   padding-top: 25px;
-  padding-bottom: 319px;
+  padding-bottom: 49px;
+  @media screen and (min-width: $desktop-up) {
+    padding-bottom: 319px;
+  }
 }
-
 .in-instagram__container {
   position: relative;
 }

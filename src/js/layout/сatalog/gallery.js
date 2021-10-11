@@ -7,9 +7,16 @@ import { scrollTo } from '../../components/blockHelp/blockHelp.js';
 // import '../../../images/svg/catalog/catalog.svg#icon-gallery-card-heart';
 function selectLS() {
   let ls = localStorage.getItem('content');
+  console.log(ls);
   if (ls) {
-    const index = filterLib.filter_category.findIndex(el => el.id === ls);
+    let index = filterLib.filter_category.findIndex(el => el.id === ls);
+    if(index>0){
     return filterLib.filter_category[index].category;
+    }
+    index = filterLib.filter_collection.findIndex(el => el.id === ls);
+    if(index>0){
+    return filterLib.filter_collection[index].collection;
+    }
   }
   ls = localStorage.getItem('catalogFilter');
   if (ls) {
