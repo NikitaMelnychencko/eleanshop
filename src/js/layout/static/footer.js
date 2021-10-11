@@ -48,7 +48,7 @@ linkMenuFooterDesktop.forEach(evt => {
   evt.addEventListener('click', el => {
     const selected = el.target.dataset.atribute;
     if (selected) {
-      localStorage.setItem('footer-filter-desktop', selected);
+      localStorage.setItem('content', selected);
     }
   });
 });
@@ -58,7 +58,7 @@ linkMenuFooterMobile.forEach(evt => {
   evt.addEventListener('click', el => {
     const selected = el.target.dataset.atribute;
     if (selected) {
-      localStorage.setItem('footer-filter-mobile', selected);
+      localStorage.setItem('content', selected);
     }
   });
 });
@@ -69,7 +69,7 @@ closeOpenPlus.forEach(evt => {
     const idMuneClickMobile = evt.id;
     if (!el.target.nextElementSibling) {
       scrollTo(0, 700);
-      localStorage.setItem('footer-filtr-mobile', idMuneClickMobile);
+      localStorage.setItem('content', idMuneClickMobile);
     }
     el.preventDefault();
     if (el.target.nextElementSibling) {
