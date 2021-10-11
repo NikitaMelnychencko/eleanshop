@@ -79,8 +79,6 @@ export function openOrderingFunction() {
       (totalPrices, counterSpans) => totalPrices + Number(counterSpans.innerText),
       0,
     );
-    console.log(binValue);
-    console.log(binValue.textContent);
     binValue.textContent = countersTotalValue
 
   }
