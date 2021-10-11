@@ -31,15 +31,35 @@ export function openFilter() {
   }
 
   const categoryName = document.querySelector('.catalog-category-name');
-  filterList.addEventListener('click', categoryNameChosing);
-  function categoryNameChosing(e) {
-    categoryName.textContent = e.target.textContent;
+  let ls = localStorage.getItem('content');
+  if (ls) {
+    const index = filterLib.filter_category.findIndex(el => el.id === ls);
+    categoryName.textContent = filterLib.filter_category[index].category;
+    // localStorage.removeItem('content');
   }
+  ls = localStorage.getItem('catalogFilter');
+  if (ls) {
+    const index = filterLib.filter_collection.findIndex(el => el.id === ls);
+    if (index > 0) {
+      categoryName.textContent = filterLib.filter_collection[index].collection;
+    } else {
+      const index = filterLib.filter_category.findIndex(el => el.id === ls);
+      if (index > 0) {
+        categoryName.textContent = filterLib.filter_category[index].category;
+      }
+    }
+    // localStorage.removeItem('catalogFilter');
+  }
+  // filterList.addEventListener('click', categoryNameChosing);
+  // function categoryNameChosing(e) {
+  //   categoryName.textContent = e.target.textContent;
+  // }
 
   catalogArr.forEach(el => {
     el.addEventListener('click', e => {
       const fname = e.target.textContent;
       filteredCatalog(fname);
+      categoryName.textContent = fname;
     });
   });
 
@@ -47,6 +67,7 @@ export function openFilter() {
     el.addEventListener('click', e => {
       const fname = e.target.textContent;
       filteredCatalog(fname);
+      categoryName.textContent = fname;
     });
   });
 }
