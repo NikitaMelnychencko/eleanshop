@@ -162,8 +162,8 @@ dataActionCollectio.forEach(evt => {
     if (
       targetLink === 'autumn-winter' ||
       targetLink === 'evening-sets' ||
-      targetLink === 'edding-and-graduation' ||
-      targetLink === 'the-tuxedo' ||
+      targetLink === 'wedding-and-graduation' ||
+      targetLink === 'tux' ||
       targetLink === 'costumes' ||
       targetLink === 'pants' ||
       targetLink === 'blouses'
