@@ -1,14 +1,53 @@
 import gallery from '../../../views/partials/сatalog/gallery.hbs';
-
 import catalog from '../../json/catalog.json';
-
+import filterLib from '../../json/filterLib.json';
 import { productRender } from '../../call-list.js';
-
 import { scrollTo } from '../../components/blockHelp/blockHelp.js';
 
 // import '../../../images/svg/catalog/catalog.svg#icon-gallery-card-heart';
+function selectLS() {
+  let ls = localStorage.getItem('content');
+  console.log(ls);
+  if (ls) {
+    let index = filterLib.filter_category.findIndex(el => el.id === ls);
+    if(index>0){
+    return filterLib.filter_category[index].category;
+    }
+    index = filterLib.filter_collection.findIndex(el => el.id === ls);
+    if(index>0){
+    return filterLib.filter_collection[index].collection;
+    }
+  }
+  ls = localStorage.getItem('catalogFilter');
+  if (ls) {
+    let index = filterLib.filter_collection.findIndex(el => el.id === ls);
+    if (index > 0) return filterLib.filter_collection[index].collection;
+    index = filterLib.filter_category.findIndex(el => el.id === ls);
+    if (index > 0) return filterLib.filter_category[index].category;
+  }
+}
 
-export const catalogListMarkup = gallery(catalog);
+function filterCatalog() {
+  const ls = selectLS();
+  console.log('local storege', ls);
+  if (ls) {
+    const fcatalog = [];
+    catalog.forEach(el => {
+      if (el.category.indexOf(ls) >= 0 || el.collection.indexOf(ls) >= 0) {
+        fcatalog.push(el);
+      }
+    });
+    console.log(fcatalog);
+    if (fcatalog.length > 0) {
+      return fcatalog;
+    }
+  }
+  return catalog;
+}
+
+export function catalogListMarkupF() {
+  return gallery(filterCatalog());
+}
 export function openCategory() {
   const catalogItems = document.querySelector('.js-catalog');
   const cardHeartIcon = catalogItems.querySelectorAll('.icon-gallery-card-heart');

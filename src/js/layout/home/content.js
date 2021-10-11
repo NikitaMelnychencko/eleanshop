@@ -12,7 +12,7 @@ export function openContent() {
   };
 
   // Target
-  localStorage.removeItem('content');
+  //localStorage.removeItem('content');
   ref.list.addEventListener('click', e => {
     localStorage.setItem('content', `${e.target.id}`);
     catalogRender()

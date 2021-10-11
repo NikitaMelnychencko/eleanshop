@@ -1,42 +1,54 @@
 {
   "filter_category": [
     {
-      "category": "Новинки"
+      "category": "Новинки",
+      "id": "new"
     },
     {
-      "category": "Юбки"
+      "category": "Юбки",
+      "id": "skirts"
     },
     {
-      "category": "Смокинги"
+      "category": "Смокинги",
+      "id": "tux"
     },
     {
-      "category": "Аксессуары"
+      "category": "Аксессуары",
+      "id": "accessory"
     },
     {
-      "category": "Брюки"
+      "category": "Брюки",
+      "id": "pants"
     },
     {
-      "category": "Блузы"
+      "category": "Блузы",
+      "id": "blouses"
     },
     {
-      "category": "Платья"
+      "category": "Платья",
+      "id": "dress"
     },
     {
-      "category": "Топы и жилеты"
+      "category": "Топы и жилеты",
+      "id": "vests"
     }
   ],
   "filter_collection": [
     {
-      "collection": "Осень-зима 20-21"
+      "collection": "Осень-зима 20-21",
+      "id": "autumn-winter"
     },
     {
-      "collection": "Вечерние комплекты"
+      "collection": "Вечерние комплекты",
+      "id": "evening-sets"
     },
     {
-      "collection": "Предзаказ"
+      "collection": "Предзаказ",
+      "id": "preorder"
     },
     {
-      "collection": "Свадьба и выпускной"
+      "collection": "Свадьба и выпускной",
+      "id": "wedding-and-graduation"
     }
   ]
 }
