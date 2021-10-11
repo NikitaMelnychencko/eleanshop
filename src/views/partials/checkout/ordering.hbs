@@ -1,91 +1,105 @@
 <h2 class='ordering__title'>Оформление заказа</h2>
 <div class='ordering__cards'>
-    <!--the card with the chosen item-->
-    {{#each this}}
-    <div class='ordering__card' id="{{label.id}}">
+  <!--the card with the chosen item-->
+  {{#each this}}
+    <div class='ordering__card' id='{{label.id}}'>
 
-        <img class='ordering_image' {{!-- srcset='{{label.img}} 1x, {{label.img2}} 2x' --}} src='{{label.img}}'
-            alt='article' />
-        <div class='ordering__box'>
+      <img
+        class='ordering_image'
+        {{!-- srcset='{{label.img}} 1x, {{label.img2}} 2x' --}}
+        src='{{label.img}}'
+        alt='article'
+      />
+      <div class='ordering__box'>
 
-            <p class='ordering__label'>{{label.name}}</p>
+        <p class='ordering__label'>{{label.name}}</p>
 
-            <div class='ordering__selects'>
+        <div class='ordering__selects'>
 
-                <div class="ordering__item ordering__select--color">
-                    <div class='ordering__select ordering__select--color ordering-input-js'>
-                        <div class="ordering__colorname">{{label.сolorSelected}}
-                            <svg class='ordering__circle' aria-label='circle' width='20' height='20'>
-                                <use class='ordering__circle--color' href='{{label.circleSelected}}'>
-                                </use>
-                            </svg>
-                        </div>
-                        <svg class='ordering__arrow' aria-label='close' width='10' height='10'>
-                            <use class='close' href='./images/exampl.svg#icon-ordering-arrow'>
-                            </use>
-                        </svg>
-                    </div>
-
-                    <ul class="ordering-list ordering-list--hide ordering-list-js ">
-                        {{#each color}}
-                        <li class="ordering-list__item ordering-item-js js-color">{{text}}
-                            <svg class='ordering__circle' aria-label='circle' width='20' height='20'>
-                                <use class='ordering__circle--color' href='./images/exampl.svg#{{circle}}'>
-                                </use>
-                            </svg>
-                        </li>
-                        {{/each}}
-                    </ul>
-                </div>
-
-                <div class="ordering__item">
-                    <div class='ordering__select ordering__select--size ordering-input-js'>
-                        <div class="ordering__colorname ordering__size">{{label.sizeSelected}}
-                        </div>
-                        <svg class='ordering__arrow' aria-label='arrow' width='10' height='10'>
-                            <use class='arrow' href='./images/exampl.svg#icon-ordering-arrow'>
-                            </use>
-                        </svg>
-                    </div>
-
-                    <ul class="ordering-list ordering-list--hide ordering-list-js ">
-                        {{#each size}}
-                        <li class="ordering-list__item ordering-item-js js-size">{{text}}
-                        </li>
-                        {{/each}}
-                    </ul>
-                </div>
-                <div class="ordering__counter">
-                    <button class='ordering__btn--minus ordering__btn' type='button'>-</button>
-                    <span class='ordering__btn ordering__value'>{{label.count}}</span>
-                    <button class='ordering__btn--plus ordering__btn' type='button'>+</button>
-                </div>
-                <span class='ordering__price'>{{label.price}}</span>
-            </div>
-            <button class='ordering__button--close ordering__close' type='button'>
-                <svg class='ordering__icon--close ordering__close' aria-label='close' width='16' height='16'>
-                    <use class='ordering__icon-cross ordering__close' href='./images/exampl.svg#icon-menu_burger_close'>
-                    </use>
+          <div class='ordering__item ordering__select--color'>
+            <div class='ordering__select ordering__select--color ordering-input-js'>
+              <div class='ordering__colorname'>{{label.сolorSelected}}
+                <svg class='ordering__circle' aria-label='circle' width='20' height='20'>
+                  <use class='ordering__circle--color' href='{{label.circleSelected}}'>
+                  </use>
                 </svg>
-            </button>
+              </div>
+              <svg class='ordering__arrow' aria-label='close' width='10' height='10'>
+                <use class='close' href='./images/exampl.svg#icon-ordering-arrow'>
+                </use>
+              </svg>
+            </div>
 
+            <ul class='ordering-list ordering-list--hide ordering-list-js'>
+              {{#each color}}
+                <li class='ordering-list__item ordering-item-js js-color'>{{text}}
+                  <svg class='ordering__circle' aria-label='circle' width='20' height='20'>
+                    <use class='ordering__circle--color' href='./images/exampl.svg#{{circle}}'>
+                    </use>
+                  </svg>
+                </li>
+              {{/each}}
+            </ul>
+          </div>
 
+          <div class='ordering__item'>
+            <div class='ordering__select ordering__select--size ordering-input-js'>
+              <div class='ordering__colorname ordering__size'>{{label.sizeSelected}}
+              </div>
+              <svg class='ordering__arrow' aria-label='arrow' width='10' height='10'>
+                <use class='arrow' href='./images/exampl.svg#icon-ordering-arrow'>
+                </use>
+              </svg>
+            </div>
 
+            <ul class='ordering-list ordering-list--hide ordering-list-js'>
+              {{#each size}}
+                <li class='ordering-list__item ordering-item-js js-size'>{{text}}
+                </li>
+              {{/each}}
+            </ul>
+          </div>
+          <div class='ordering__counter'>
+            <button class='ordering__btn--minus ordering__btn' type='button'>-</button>
+            <span class='ordering__btn ordering__value'>{{label.count}}</span>
+            <button class='ordering__btn--plus ordering__btn' type='button'>+</button>
+          </div>
+          <span class='ordering__price'>{{label.price}}</span>
         </div>
+        <button class='ordering__button--close ordering__close' type='button'>
+          <svg
+            class='ordering__icon--close ordering__close'
+            aria-label='close'
+            width='16'
+            height='16'
+          >
+            <use
+              class='ordering__icon-cross ordering__close'
+              href='./images/exampl.svg#icon-menu_burger_close'
+            >
+            </use>
+          </svg>
+        </button>
+
+      </div>
 
     </div>
-    {{/each}}
-    <!---->
+  {{/each}}
+  <!---->
 
 </div>
 <div class='ordering__promocodebox'>
-    <div class='ordering__promocodethumb'>
-        <input class='ordering__input--promocode' type='text' placeholder='введите промо код (если имеется)' />
-        <button class='ordering__btn--promocode' type='submit'>Применить</button>
-    </div>
-    <span class='ordering__discount'>Скидка <span class='ordering__discount--value'>0</span>%</span>
-    <div class='ordering__totalbox'>
-        <p class='ordering__totalprice'>Итоговая стоимость:</p>
-        <span class='ordering__total'>0</span>
-    </div>
+  <div class='ordering__promocodethumb'>
+    <input
+      class='ordering__input--promocode'
+      type='text'
+      placeholder='введите промо код (если имеется)'
+    />
+    <button class='ordering__btn--promocode' type='submit'>Применить</button>
+  </div>
+  <span class='ordering__discount'>Скидка <span class='ordering__discount--value'>0</span>%</span>
+  <div class='ordering__totalbox'>
+    <p class='ordering__totalprice'>Итоговая стоимость:</p>
+    <span class='ordering__total'>0</span>
+  </div>
 </div>

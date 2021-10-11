@@ -1,43 +1,39 @@
-<section class='showroom section'>
-  <div class='container showroom__container'>
-
-    <div class='showroom__title-wrapper'>
-      <h2 class='showroom__title'>НАШ ШОУРУМ</h2>
-    </div>
-
-    <div class='showroom__wrapper'>
-      <div class='showroom__slider'>
-        {{#each pageShowroomSliderData}}
-          <div class='slider__item'>
-            <picture>
-              <source
-                srcset='
+<div class='container showroom__container'>
+  <div class='showroom__title-wrapper'>
+    <h2 class='showroom__title'>НАШ ШОУРУМ</h2>
+  </div>
+  <div class='showroom__wrapper'>
+    <div class='showroom__slider'>
+      {{#each pageShowroomSliderData}}
+        <div class='slider__item'>
+          <picture>
+            <source
+              srcset='
     {{image-mobile-1x}} 1x,
     {{image-mobile-2x}} 2x'
-                media='(max-width: 1377px)'
-              />
-              <source
-                srcset='
+              media='(max-width: 1377px)'
+            />
+            <source
+              srcset='
   {{image-desktop-1x}} 1x,
   {{image-desktop-2x}} 2x'
-                media='(min-width: 1378px)'
-              />
-              <img
-                class='showroom__title-image animate__animated animate__pulse animate__repeat-1'
-                src='#'
-                alt='{{name-title}}'
-                id='{{id-title-image}}'
-                loading='lazy'
-                width='374px'
-                height='512px'
-                ;
-              />
-            </picture>
+              media='(min-width: 1378px)'
+            />
+            <img
+              class='showroom__title-image animate__animated animate__pulse animate__repeat-1'
+              src='#'
+              alt='{{name-title}}'
+              id='{{id-title-image}}'
+              loading='lazy'
+              width='374px'
+              height='512px'
+              ;
+            />
+          </picture>
 
-          </div>
-        {{/each}}
-      </div>
+        </div>
+      {{/each}}
     </div>
-
   </div>
-</section>
+
+</div>
