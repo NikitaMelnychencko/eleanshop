@@ -207,16 +207,16 @@ dataActionCollectio.forEach(evt => {
     //==== renderDesktop ===//
 
     //==== DeliveryRender ===//
-    if (targetLink === 'Delivery' || targetLink === 'Payment' || targetLink === 'Return') {
+    if (targetLink === 'delivery' || targetLink === 'payment' || targetLink === 'return') {
       return deliveryRender();
     }
 
     //==== FittingRender ===//
-      if (targetLink === 'Fitting') {
+    if (targetLink === 'fitting') {
       return fittingRender();
     }
     //==== ContactsRender ===//
-      if (targetLink === 'Contacts') {
+    if (targetLink === 'contacts') {
       return contactRender();
     }
   });
