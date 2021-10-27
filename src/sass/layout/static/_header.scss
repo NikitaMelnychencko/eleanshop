@@ -587,3 +587,7 @@ body.mobile-open {
   position: relative;
 }
 //!!
+
+h1 {
+  @extend %hide;
+}
