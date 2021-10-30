@@ -33,9 +33,18 @@
     grid-column-start: span 1;
   }
 
-  @media screen and (min-width: $desktop-up) {
-    grid-column-start: span 1;
+  @media screen and (min-width: $tablet-general) {
+  grid-column-start: span 1;
 
+&:nth-child(6) {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 1;
+}
+}
+
+  @media screen and (min-width: $desktop-up) {
     &:nth-child(1) {
       grid-column-start: span 2;
       grid-row-start: span 2;
