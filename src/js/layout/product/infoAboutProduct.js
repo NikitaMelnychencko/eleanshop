@@ -55,11 +55,13 @@ function checkIsProductInFavorites() {
   const addToFavoritesbuttonEl = document.querySelector('.product__name-wrapper .button-add-likes');
   const favoriteProduct = localStorage.getItem('favorites');
   const parsedFavoriteDate = JSON.parse(favoriteProduct);
-  parsedFavoriteDate.fav.forEach(el => {
-    if (el.id === parsedProductInfoData.id) {
-      addToFavoritesbuttonEl.classList.add('active');
-    }
-  });
+  if (parsedFavoriteDate != null) {
+    parsedFavoriteDate.fav.forEach(el => {
+      if (el.id === parsedProductInfoData.id) {
+        addToFavoritesbuttonEl.classList.add('active');
+      }
+    });
+  }
 }
 function insertIntoLSFavorite(id) {
   let ls = JSON.parse(localStorage.getItem('favorites'));
