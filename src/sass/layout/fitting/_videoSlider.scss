@@ -14,6 +14,9 @@
   margin-top: 50px;
   padding-bottom: 10px;
   margin-bottom: 50px;
+  & .slick-dots li + li{
+    margin-left: 20px;
+  }
 }
 
 //SLICK SLIDER STYLES
@@ -26,15 +29,14 @@
   display: flex;
 }
 .splide__track {
-  max-width: 590px;
+  @media screen and (min-width: $desktop-up){
+   max-width: 590px; 
+  }
+  
 }
 
 /* extra */
-.slider {
-  // position: relative;
-  /* padding-left: 15px; */
-  /*  padding-right: 50px; */
-}
+
 .slider .slick-arrow {
   position: absolute;
 
@@ -87,17 +89,10 @@ body > main > section.fitting__section > div > div.fitting__video-slider > h3:be
   background-color: #f9f9f9;
 }
 .slider .slick-dots {
-  // display: flex;
-  // align-items: center;
-  // justify-content: center;
-  // @media screen and (min-width: $mobile-first) and (max-width: $tablet-general) {
-  //   display: absolute;
-  //   top: 107%;
-  // }
   display: flex;
   align-items: center;
   justify-content: center;
-  //   margin-bottom: 46px;
+
 }
 .slider .slick-dots li {
   list-style: none;
@@ -109,18 +104,16 @@ body > main > section.fitting__section > div > div.fitting__video-slider > h3:be
   background-color: $in-instagram-slider-dots;
   border-radius: 70%;
   border: none;
-  margin-top: 15px;
 }
 .slider .slick-dots li.slick-active button {
-  width: 66px;
+  width: 26px;
   border-radius: 20%;
+  @media screen and (min-width: $desktop-up) {
+    width: 66px;
+  }
 }
 .slider__item {
   position: relative;
-
-  // & + & {
-  //   margin-left: 15px;
-  // }
 
   @media screen and (min-width: $mobile-first) {
     margin-left: 0;
@@ -148,21 +141,10 @@ body > main > section.fitting__section > div > div.fitting__video-slider > h3:be
   }
 }
 
-.video-fitting-box {
-  // position: relative;
-  // height: 665px;
-  // width: 100%;
-  // margin-bottom: 23px;
-  @media screen and (min-width: $desktop-up) {
-    // margin-bottom: 19px;
-    // height: 401px;
-  }
-}
 
 .video-fitting-fullscreen {
   display: none;
   fill: $hero-slider-dots;
-  // fill: red;
   position: absolute;
   z-index: 2;
   bottom: 30px;
