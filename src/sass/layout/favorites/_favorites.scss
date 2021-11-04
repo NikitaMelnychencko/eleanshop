@@ -1,6 +1,10 @@
 .favorites {
   padding-top: 70px;
-  padding-bottom: 327px;
+  padding-bottom: 39px;
+   @media screen and (min-width: $desktop-up) {
+    padding-bottom: 327px;
+   }
+  
 
   &__title {
     font-family: $selection-font-family;

@@ -19,7 +19,7 @@
   align-items: center;
   padding-right: 10px;
 
-  @media screen and (max-width: $mobile-only) {
+  @media screen and (max-width: $tablet-only) {
     position: relative;
   }
 
@@ -40,7 +40,7 @@
     margin-right: 32px;
   }
 
-  @media screen and (min-width: $tablet-general) {
+  @media screen and (min-width: $tablet-only) {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -74,7 +74,7 @@
   align-items: center;
   margin-right: 48px;
 
-  @media screen and (max-width: $mobile-only) {
+  @media screen and (max-width: $tablet-only) {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -215,7 +215,7 @@
 .product-list__item {
   position: relative;
 
-  @media screen and (max-width: $mobile-only) {
+  @media screen and (max-width: $tablet-only) {
     &:first-child {
       position: absolute;
       left: 38px;
@@ -304,10 +304,6 @@
 }
 
 .navigation {
-  @media screen and (min-width: $tablet-general) and (max-width: $tablet-only) {
-    display: none;
-  }
-
   @media screen and (min-width: $desktop-up) {
     display: flex;
     justify-content: space-between;
@@ -332,7 +328,7 @@
   font-size: 16px;
   letter-spacing: 0.1em;
 
-  @media screen and (max-width: $mobile-only) {
+  @media screen and (max-width: $tablet-only) {
     border-bottom: 2px solid $fourt-border-color;
 
     .navigation-list:last-child &:last-child {
@@ -350,7 +346,7 @@
   line-height: 4.38;
   color: $selection-text-color;
 
-  @media screen and (max-width: $mobile-only) {
+  @media screen and (max-width: $tablet-only) {
     position: relative;
     width: 100%;
 
@@ -407,7 +403,7 @@
 }
 
 .navigation-sublist__subitem {
-  @media screen and (max-width: $mobile-only) {
+  @media screen and (max-width: $tablet-only) {
     padding-left: 20px;
 
     &:first-child {
@@ -433,7 +429,7 @@
   line-height: 4.38;
   color: $selection-text-color;
 
-  @media screen and (max-width: $mobile-only) {
+  @media screen and (max-width: $tablet-only) {
     width: 100%;
   }
 
@@ -460,7 +456,8 @@
   grid-template-rows: 78px;
   column-gap: 11px;
   padding-bottom: 10px;
-
+  justify-content: center;
+  
   @media screen and (max-width: 413px) {
     grid-template-columns: 85px 85px;
     grid-template-rows: 78px 78px;
@@ -469,7 +466,7 @@
     column-gap: 20px;
   }
 
-  @media screen and (min-width: $tablet-general) {
+  @media screen and (min-width: $tablet-only) {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -540,7 +537,7 @@
 }
 
 .mod-hidden-mob {
-  @media screen and (max-width: $mobile-only) {
+  @media screen and (max-width: $tablet-only) {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -562,7 +559,7 @@
 
 .mobile-menu {
   position: fixed;
-  z-index: 999;
+  z-index: 1001;
   top: 0;
   left: 0;
   width: 100vw;
@@ -575,7 +572,7 @@ body.mobile-open {
 }
 
 .wrapper {
-  @media screen and (max-width: $mobile-only) {
+  @media screen and (max-width: $tablet-only) {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
