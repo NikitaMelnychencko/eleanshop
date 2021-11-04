@@ -33,6 +33,12 @@ export function showroomSlider() {
       mobileFirst: true,
       variableWidth: true,
       responsive: [
+                {
+          breakpoint: 720,
+          settings: {
+            dots: false,
+          },
+        },
         {
           breakpoint: 1377,
           settings: {

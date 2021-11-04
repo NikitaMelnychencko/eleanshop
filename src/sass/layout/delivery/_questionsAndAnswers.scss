@@ -1,98 +1,3 @@
-// .input-name {
-//   width: 374px;
-//   height: 60px;
-//   margin-bottom: 30px;
-//   border: 1px solid $primary-logo-color;
-//   padding: 18px;
-// }
-// .formquestion {
-//   text-align: center;
-// }
-// .input-coment {
-//   width: 374px;
-//   height: 120px;
-//   border: 1px solid $primary-logo-color;
-//   padding-left: 18px;
-//   padding-top: 20px;
-//   resize: none;
-// }
-// .input-button {
-//   padding: 18px 40px;
-//   background-color: #ffff;
-//   outline: none;
-//   vertical-align: top;
-//   border: 1px solid $primary-logo-color;
-//   margin-left: 212px;
-//   margin-top: -6px;
-//   cursor: pointer;
-
-//   &:hover,
-//   &:focus {
-//     background-color: black;
-//     color: white;
-//   }
-// }
-
-// .ask-question {
-//   margin-bottom: 16px;
-// }
-// .input-name::placeholder {
-//   color: $secondary-logo-color;
-//   font-size: 13px;
-//   text-align: left;
-//   line-height: 1.6;
-// }
-// .input-coment::placeholder {
-//   color: $secondary-logo-color;
-//   font-size: 13px;
-//   text-align: left;
-//   line-height: 1.6;
-// }
-// .ask-question__icon {
-//   width: 36px;
-//   height: 35px;
-// }
-
-// @media screen and (min-width: 1378px) {
-//   .formquestion {
-//     padding: 50px 221px;
-//     outline: 1px dotted $secondary-logo-color;
-//     outline-offset: -20px;
-//   }
-//   .formquestion-head {
-//     text-align: center;
-//   }
-//   .input-name {
-//     width: 298px;
-//     height: 60px;
-//     margin-bottom: 30px;
-//     margin-left: -6px;
-//     border: 1px solid $primary-logo-color;
-//   }
-
-//   .ask-question {
-//     margin-bottom: 30px;
-//   }
-
-//   .input-coment {
-//     width: 717px;
-//     height: 130px;
-//     border: 1px solid $primary-logo-color;
-//   }
-
-//   .input-button {
-//     padding: 18px 40px;
-//     background-color: #ffff;
-//     outline: none;
-//     vertical-align: top;
-//     border: 1px solid $primary-logo-color;
-//     margin: 0;
-//     margin-left: -5px;
-//   }
-// }
-
-// .js-question-box {
-// }
 .form-delivery {
   background: $modal-background-color;
   text-align: center;
@@ -142,20 +47,6 @@
   }
 }
 
-// .star-form-delivery::after {
-//   display: none;
-//   content: '*';
-//   position: absolute;
-//   top: 20px;
-//   right: 15px;
-//   font-weight: 500;
-//   font-size: 18px;
-//   line-height: 1.4;
-//   color: $seventh-text-color;
-//   @media screen and (min-width: $desktop-up) {
-//     display: block;
-//   }
-// }
 
 .form-delivery__horiz-block {
   @media screen and (min-width: $desktop-up) {
@@ -244,43 +135,18 @@
     background: $button-hover-background-color;
   }
   @media screen and (min-width: $tablet-general) {
-    // height: 60px;
     width: 180px;
     flex-grow: 0;
 
     border: 1px solid $button-hover-background-color;
     margin-top: 0;
+
+
+  }
+    @media screen and (min-width: $desktop-up) {
     border-left: none;
   }
 }
-
-// .form-delivery__comment-box::before {
-//   display: none;
-//   content: '*';
-//   position: absolute;
-//   top: 20px;
-//   right: 15px;
-//   font-weight: 500;
-//   font-size: 18px;
-//   line-height: 1.4;
-//   color: $seventh-text-color;
-//   @media screen and (min-width: $desktop-up) {
-//     display: block;
-//   }
-// }
-
-// .form-delivery__comment-box::after {
-//   @media screen and (min-width: $desktop-up) {
-//     content: 'Поля отмеченные “*” обязательны для заполнения';
-//     font-weight: 500;
-//     font-size: 14px;
-//     line-height: 1.3;
-//     color: $seventh-text-color;
-//     position: absolute;
-//     bottom: -20px;
-//     right: 0;
-//   }
-// }
 
 .form-delivery__comment {
   resize: none;
@@ -303,9 +169,9 @@
 }
 
 .form-delivery__input-center {
-  @media screen and (min-width: $tablet-general) {
-    border-left: none;
-  }
+  // @media screen and (min-width: $tablet-general) {
+  //   border-left: none;
+  // }
 
   @media screen and (min-width: $desktop-up) {
     border-right: none;
