@@ -84,6 +84,7 @@ export function blockHelpRenderOpen() {
       onPhoneSubmitClick,
       phoneInput,
     );
+    bodyFixPosition();
   }
 
   function onButtonClosePhoneModalClick(event) {

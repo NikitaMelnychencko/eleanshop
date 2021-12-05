@@ -38,6 +38,30 @@ function createButtonDelivery(menu) {
   return menu.map(deliveryButton).join('');
 }
 
+function bodyFixPosition() {
+  if (!document.body.hasAttribute('data-body-scroll-fix')) {
+    let scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+    document.body.setAttribute('data-body-scroll-fix', scrollPosition);
+    document.body.style.overflow = 'hidden';
+    document.body.style.position = 'fixed';
+    document.body.style.top = '-' + scrollPosition + 'px';
+    document.body.style.width = '100%';
+  }
+}
+
+function bodyUnfixPosition() {
+  if (document.body.hasAttribute('data-body-scroll-fix')) {
+    let scrollPosition = document.body.getAttribute('data-body-scroll-fix');
+    document.body.removeAttribute('data-body-scroll-fix');
+    document.body.style.overflow = '';
+    document.body.style.position = '';
+    document.body.style.top = '';
+    document.body.style.width = '';
+    document.body.style.overflowY = '';
+    window.scroll(0, scrollPosition);
+  }
+}
+
 export function deliveryThreeModal() {
   // Modal Blockvar
   const openModal = (triggerSelector, modalDataSelector) => {
@@ -47,9 +71,9 @@ export function deliveryThreeModal() {
     trigger.addEventListener('click', e => {
       e.preventDefault();
       modal.classList.add('modal_active');
+      bodyFixPosition();
     });
   };
-
   openModal('.buttons__button_one', '.modal[data-modal="one"]');
   openModal('.buttons__button_two', '.modal[data-modal="two"]');
   openModal('.buttons__button_third', '.modal[data-modal="third"]');
@@ -64,6 +88,7 @@ export function deliveryThreeModal() {
         if (!e.target.closest('.modal__body')) {
           el.classList.remove('modal_active');
         }
+        bodyUnfixPosition();
       });
     });
   };

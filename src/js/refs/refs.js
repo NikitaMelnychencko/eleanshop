@@ -9,7 +9,6 @@ export default {
   setList: document.querySelector('.js-videoset'),
   numRef: document.querySelector('.product-list__text'),
 
-
   // ----- Footer ------
   closeOpenPlus: document.querySelectorAll('.footer__mobile-list-item-plus'),
   inputStorageMobile: document.querySelectorAll('.footer__mobile-form-input'),
