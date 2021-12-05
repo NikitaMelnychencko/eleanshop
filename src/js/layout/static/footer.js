@@ -29,7 +29,7 @@ const {
   dropDownList,
   dropDown,
 } = refs;
-
+console.log(linkMenuFooterMobile);
 checkBoxIcon.addEventListener('click', onAgreeCheckBox);
 mobileSubmitBtn.addEventListener('submit', onSubmitBtnMobile);
 desktopSubmitBtn.addEventListener('submit', onSubmitBtnDesktop);
@@ -96,14 +96,27 @@ linkMenuFooterMobile.forEach(evt => {
     scrollTo(0, 700);
     el.preventDefault();
     const dropDown = document.querySelector('.js-dropdown-none');
-    const openMenu = document.querySelector('.open-menu');
     if (el.target) {
+      const openMenu = document.querySelector('.open-menu');
       dropDown.classList.remove('js-dropdown-none');
       openMenu.classList.remove('open-menu');
-      window.location.href = el.target;
+      // window.location.href = el.target;
     }
   });
 });
+
+// linkMenuFooterMobile.forEach(evt => {
+//   evt.addEventListener('click', el => {
+//     scrollTo(0, 700);
+//     el.preventDefault();
+//     const dropDown = document.querySelector('.js-dropdown-none');
+//     if (el.target) {
+//       const openMenu = document.querySelector('.open-menu');
+//       dropDown.classList.remove('js-dropdown-none');
+//       openMenu.classList.remove('open-menu');
+//     }
+//   });
+// });
 
 // Activation deactivation checkbox
 function onAgreeCheckBox(evt) {
@@ -167,9 +180,8 @@ dataActionCollectio.forEach(evt => {
       targetLink === 'costumes' ||
       targetLink === 'pants' ||
       targetLink === 'blouses'
-    )
-    {
-        return catalogRender();
+    ) {
+      return catalogRender();
     }
 
     //==== brandRender ===//
