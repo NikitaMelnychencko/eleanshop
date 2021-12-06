@@ -5,17 +5,14 @@ updateBin();
 
 //======home======//
 import home from '../views/layouts/home.hbs';
-import { pageHeroSliderMarkup, heroSlider } from './layout/home/hero.js';
-import { pageShowroomSliderMarkup, showroomSlider } from './layout/home/ourShowRoom.js';
+import {addHeroSlider, addStarClientsSlider, addInstagramSlider, addShowroomSlider} from './slider/slider'
+import { pageHeroSliderMarkup } from './layout/home/hero.js';
+import {pageShowroomSliderMarkup} from './layout/home/ourShowRoom.js';
 import { formFittingInShowroom } from './layout/brand/formFittingInShowroom.js';
 import { formBrand } from './layout/brand/infoAboutBrand.js';
 
-import {
-  pageStarClientsSliderMarkup,
-  starClientsSlider,
-  starClientsComments,
-} from './layout/home/starClients.js';
-import { pageInInstagramSliderMarkup, instagramSlider } from './layout/home/inInstagram.js';
+import {pageStarClientsSliderMarkup, starClientsComments} from './layout/home/starClients.js';
+import {pageInInstagramSliderMarkup} from './layout/home/inInstagram.js';
 import { cardsMarkup, openContent } from './layout/home/content.js';
 import { aboutTheBrand_parsing, openAboutTheBrand } from './layout/home/aboutTheBrand.js';
 export function homeRender() {
@@ -32,12 +29,12 @@ export function homeRender() {
   });
   refs.mainEL.innerHTML = homeMarkup;
 
-  heroSlider();
   openContent();
-  showroomSlider();
-  starClientsSlider();
+  addHeroSlider();
+  addShowroomSlider()
+  addStarClientsSlider();
+  addInstagramSlider();
   starClientsComments();
-  instagramSlider();
   blockHelpRender();
   formFittingInShowroom();
   openAboutTheBrand();
@@ -165,10 +162,11 @@ import sizeTable_markup from '../views/layouts/fitting.hbs';
 import { sizeTable_tableCreate } from './layout/fitting/sizeTable.js';
 import { informationAboutFitting_informationCreate } from './layout/fitting/informationAboutFitting.js';
 import {
-  openVideoSlider,
+  // openVideoSlider,
   fittingVideoSliderPlayer,
   videoSlider_videoSliderCreate,
 } from './layout/fitting/videoSlider.js';
+import {openVideoSlider} from './slider/slider'
 export function fittingRender() {
   classBody();
   const fittingMarkUp = sizeTable_markup({
@@ -186,11 +184,8 @@ export function fittingRender() {
 
 
 //=====product========//
-import {
-  setProductSlider,
-  callProductPageFunctional,
-  createFullMarkup,
-} from './layout/product/infoAboutProduct.js';
+import {callProductPageFunctional,createFullMarkup } from './layout/product/infoAboutProduct.js';
+import {setProductSlider} from './slider/slider'
 import ProductModalAddToCart from './layout/product/productModalAddToCart.js';
 import RecomendationsCategory from './layout/product/recomendationsCategory.js';
 import cards from './json/catalog.json';
@@ -258,16 +253,16 @@ import { formReviews, formReviewsMarkUp } from './layout/reviews/registrationFor
 import {
   setVideoHbs,
   clientStar,
-  videosetSlickSettings,
+  // videosetSlickSettings,
   videoSetPlayer,
 } from './layout/reviews/videoSet.js';
-
+import {videosetSlickSettings} from './slider/slider'
 export function reviewsRender() {
   classBody();
   const reviewsMarkUp = reviews_page({ setVideoHbs, clientStar, formReviewsMarkUp });
   refs.mainEL.innerHTML = reviewsMarkUp;
   videosetSlickSettings();
-  starClientsSlider();
+  addStarClientsSlider();
   starClientsComments();
   formReviews();
   videoSetPlayer();
@@ -282,7 +277,7 @@ export function showroomRender() {
   classBody();
   const showroomPageMarkUp = showroom_page({ formBrand, pageShowroomSliderMarkup });
   refs.mainEL.innerHTML = showroomPageMarkUp;
-  showroomSlider();
+  addShowroomSlider();
   formFittingInShowroom();
   blockHelpRender();
 }

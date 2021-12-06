@@ -168,11 +168,10 @@
 
 .star-clients__slider .slider__item {
   position: relative;
-  padding: 0px 7px;
+  margin-right: 14px;
 }
 .star-clients__slider .slider__item img {
-  width: 256px;
-  height: 370px;
+  background-color: $predownload-background;
 }
 
 .star-clients__slider .star-clients__subtitle {

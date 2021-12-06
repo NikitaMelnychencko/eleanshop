@@ -1,5 +1,5 @@
 const $ = require('jquery');
-require('../../slick/slick.min.js');
+require('../../slider/slick.min.js');
 
 import RecomendationsCategory from './recomendationsCategory.js';
 import modalAddToCartMark from '../../../views/partials/product/productModalAddToCart.hbs';

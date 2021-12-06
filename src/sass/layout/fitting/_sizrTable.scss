@@ -64,7 +64,6 @@
   }
 
   @media screen and (min-width: $tablet-general) {
-
     max-width: 669px;
     padding-left: 15px;
     padding-right: 15px;
@@ -77,8 +76,6 @@
 }
 
 @media screen and (min-width: $desktop-up) {
-
-
   .fitting__heading {
     text-align: center;
   }
@@ -92,13 +89,9 @@
     background-position: center;
     background-size: cover;
     background-color: $primary-background-color;
-
-
   }
 
-  @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .fitting__section {
       background-image: url('../images/elean47390@2x.jpg');
     }
@@ -120,23 +113,5 @@
 
   .fitting__description-item {
     padding: 15px;
-  }
-
-  .fitting__video-slider {
-    background-color: $third-background-color;
-    padding: 35px;
-    overflow: hidden;
-  }
-
-  .fitting__video,
-  .fitting__first-video {
-    width: 183px;
-    display: block;
-  }
-
-  .fitting__video-slider-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
   }
 }

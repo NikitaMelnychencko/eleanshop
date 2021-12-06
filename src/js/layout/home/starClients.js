@@ -13,47 +13,6 @@ export const pageStarClientsSliderMarkup = pageStarClientsMarkupTemplate({
   cardChatReviewsMarkup,
 });
 
-export function starClientsSlider() {
-  window.jQuery = window.$ = require('jquery');
-  require('../../slider/slick.min.js');
-  // Slider options
-  $(document).ready(function () {
-    $('.star-clients__slider').slick({
-      arrows: false,
-      dots: false,
-      adaptiveHeight: true,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      speed: 1000,
-      easing: 'ease',
-      infinite: true,
-      initialSlide: 1,
-      autoplay: true,
-      autoplaySpeed: 2000,
-      pauseOnFocus: true,
-      pauseOnHover: true,
-      pauseOnDotsHover: true,
-      draggable: true,
-      swipe: true,
-      touchThreshold: 4,
-      touchMove: true,
-      waitForAnimate: true,
-      mobileFirst: true,
-      variableWidth: true,
-
-      responsive: [
-        {
-          breakpoint: 1377,
-          settings: {
-            arrows: true,
-            dots: true,
-          },
-        },
-      ],
-    });
-  });
-}
-
 export function starClientsComments() {
   // starClients & comments
 

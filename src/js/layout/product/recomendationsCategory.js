@@ -1,5 +1,5 @@
 const $ = require('jquery');
-require('../../slick/slick.min.js');
+require('../../slider/slick.min.js');
 
 import cardsMarkup from '../../../views/partials/product/recomendationsCategory.hbs';
 import listCards from '../../../views/partials/product/productListFromCatalog.hbs';

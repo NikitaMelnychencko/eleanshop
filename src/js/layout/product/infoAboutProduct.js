@@ -1,48 +1,20 @@
-// have to clear string #2 after getting data from Local Storage
-import productInfo from '../../../js/json/product/productInfo.json';
 import productTemplate from '../../../views/partials/product/infoAboutProduct.hbs';
-window.jQuery = window.$ = require('jquery');
-require('../../slick/slick.min');
 //* way to get a function from Andrew to render a size grid (don't clear)
 // import sizeChose from '../fitting/sizeChose.js';
 // const { createBtn } = sizeChose;
 
 // have to clear string #12 after getting data from Local Storage (data from Ira Maksimova)
 // localStorage.setItem('productInfoData', JSON.stringify(productInfo));
+
 let savedProductInfoData = localStorage.getItem('productInfoData');
 let parsedProductInfoData = JSON.parse(savedProductInfoData);
+console.log(parsedProductInfoData);
 //! ---------------------------------------------------RENDERING A SECTION
-
-export function setProductSlider() {
-  $(document).ready(function () {
-    $('.product-slider-smaller').slick({
-      arrows: false,
-      speed: 500,
-      vertical: true,
-      verticalSwiping: true,
-      slidesToShow: 4,
-      slidesToScroll: 1,
-      lazyLoad: 'progressive',
-      asNavFor: '.product-slider',
-      centerMode: true,
-      focusOnSelect: true,
-      centerPadding: '0px',
-    });
-    $('.product-slider').slick({
-      arrows: false,
-      dots: true,
-      fade: true,
-      speed: 500,
-      slidesToShow: 1,
-      lazyLoad: 'progressive',
-      asNavFor: '.product-slider-smaller',
-    });
-  });
-}
 
 export function createFullMarkup() {
   savedProductInfoData = localStorage.getItem('productInfoData');
   parsedProductInfoData = JSON.parse(savedProductInfoData);
+  console.log(parsedProductInfoData);
 
   return productTemplate({ parsedProductInfoData });
   //* way to get a function to get size grid (don't clear)

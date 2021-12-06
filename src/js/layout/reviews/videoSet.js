@@ -12,41 +12,6 @@ export const clientStar = pageStarClientsMarkupTemplate({
 });
 export const setVideoHbs = setHbs(set);
 
-export function videosetSlickSettings() {
-  window.jQuery = window.$ = require('jquery');
-  require('../../slider/slick.min.js');
-  // Slider options
-  $(document).ready(function () {
-    $('.videoset').slick({
-      infinite: true,
-      centerMode: true,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      arrows: false,
-      mobileFirst: true,
-      dots: true,
-      // centerPadding: '40px',
-      // variableWidth: true,
-      lazyLoad: 'progressive',
-      variableWidth: true,
-      responsive: [
-        {
-          breakpoint: 1377,
-          settings: {
-            slidesToShow: 4,
-            // centerPadding: '40px',
-            infinite: false,
-            dots: false,
-            infinite: false,
-            centerMode: false,
-            variableWidth: false,
-          },
-        },
-      ],
-    });
-  });
-}
-
 export function videoSetPlayer() {
   const reviewsRefs = {
     play: document.querySelectorAll('.video-set-svg'),
