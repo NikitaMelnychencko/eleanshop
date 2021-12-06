@@ -107,7 +107,7 @@ export default class ProductBin {
 
   _onCloseModal = () => {
     this.self.classList.add('hidden');
-    document.body.style.overflow = 'auto';
+    document.body.style.overflow = '';
     this._deleteEvent();
   };
 
