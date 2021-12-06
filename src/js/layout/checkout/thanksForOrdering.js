@@ -4,7 +4,7 @@ import backdropMarkupTempl from '../../../views/components/backdrop.hbs';
 import modalFormMarkupTempl from '../../../views/components/thanksForOrdering.hbs';
 import { homeRender } from '../../call-list.js';
 import { scrollTo } from '../../components/blockHelp/blockHelp.js';
-import { bodyFixPosition } from '../../components/scroll/scroll';
+import { bodyFixPosition, bodyUnfixPosition } from '../../components/scroll/scroll';
 
 let throttle = require('lodash.throttle');
 const modalFormMarkup = modalFormMarkupTempl();
@@ -25,7 +25,7 @@ function onResize(event) {
   btnCloseRef.style.right = `${right}px`;
   +btnСontinueShopping.addEventListener('click', e => {
     homeRender();
+    bodyUnfixPosition();
     scrollTo(0, 700);
-    console.log('object');
   });
 }
