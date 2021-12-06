@@ -95,6 +95,7 @@ export default class ProductModalAddToCart {
 
   _setNextBtnEvent = () => {
     this.buttonNext = document.querySelector('.js-next-modal-to-cart');
+    console.log('object');
 
     if (this.buttonNext) {
       this.buttonNext.addEventListener('click', this._onClickNext);
