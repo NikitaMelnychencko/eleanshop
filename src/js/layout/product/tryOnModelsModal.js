@@ -3,7 +3,7 @@ import Backdrop from '../../components/backdrop';
 import tryOnModelsModal from '../../../views/components/tryOnModelsModal.hbs';
 import orderForm from '../../../views/components/orderForm.hbs';
 import refs from '../../refs/refs';
-import { bodyFixPosition, bodyUnfixPosition } from '../../components/scroll/scroll';
+import { bodyUnfixPosition } from '../../components/scroll/scroll';
 
 const { mainEL } = refs;
 
@@ -24,6 +24,7 @@ export function setEventTryOnModels() {
   buttonCloseModal.addEventListener('click', onButtonCloseModalClick);
   sizeList.addEventListener('click', onSizeListItemClick);
   submitButton.addEventListener('click', onButtonSubmitClick);
+  console.log('object');
 }
 
 //close modal

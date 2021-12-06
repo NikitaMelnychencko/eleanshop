@@ -95,8 +95,6 @@ export default class ProductModalAddToCart {
 
   _setNextBtnEvent = () => {
     this.buttonNext = document.querySelector('.js-next-modal-to-cart');
-    console.log('object');
-
     if (this.buttonNext) {
       this.buttonNext.addEventListener('click', this._onClickNext);
     }
@@ -126,6 +124,5 @@ export default class ProductModalAddToCart {
     document.querySelector('.ordering__form').style.display = 'none';
     this.setEvent();
     bodyFixPosition();
-    console.log('object');
   };
 }
