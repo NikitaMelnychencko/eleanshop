@@ -1,6 +1,7 @@
 // have to clear string #2 after getting data from Local Storage
 import productInfo from '../../../js/json/product/productInfo.json';
 import productTemplate from '../../../views/partials/product/infoAboutProduct.hbs';
+
 window.jQuery = window.$ = require('jquery');
 require('../../slick/slick.min');
 //* way to get a function from Andrew to render a size grid (don't clear)
