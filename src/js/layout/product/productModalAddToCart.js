@@ -5,6 +5,7 @@ import RecomendationsCategory from './recomendationsCategory.js';
 import modalAddToCartMark from '../../../views/partials/product/productModalAddToCart.hbs';
 import { checkoutRender } from '../../call-list.js';
 import { scrollTo } from '../../components/blockHelp/blockHelp.js';
+import { bodyFixPosition, bodyUnfixPosition } from '../../components/scroll/scroll';
 
 export default class ProductModalAddToCart {
   constructor({ root, typeInsert = 'beforeEnd', productName, objectClose }) {
@@ -55,6 +56,7 @@ export default class ProductModalAddToCart {
   };
 
   _onCloseModal = () => {
+    bodyUnfixPosition();
     if (this.self) {
       this.self.classList.add('hidden');
     }
@@ -93,6 +95,7 @@ export default class ProductModalAddToCart {
 
   _setNextBtnEvent = () => {
     this.buttonNext = document.querySelector('.js-next-modal-to-cart');
+
     if (this.buttonNext) {
       this.buttonNext.addEventListener('click', this._onClickNext);
     }
@@ -108,6 +111,7 @@ export default class ProductModalAddToCart {
     if (!this.self) {
       this.self = document.querySelector('.product-modal-add-cart');
     }
+
     document.querySelector('.js-productName').textContent = name;
     this.self.classList.remove('hidden');
     if (this.objectClose) {
@@ -120,5 +124,7 @@ export default class ProductModalAddToCart {
     document.querySelector('.form__button-сlose').style.display = 'none';
     document.querySelector('.ordering__form').style.display = 'none';
     this.setEvent();
+    bodyFixPosition();
+    console.log('object');
   };
 }

@@ -39,6 +39,7 @@ function onButtonCloseModalClick(event) {
   /* buttonCloseModal.removeEventListener('click', onButtonCloseModalClick); */
   /* sizeList.removeEventListener('click', onSizeListItemClick); */
   /* submitButton.removeEventListener('click', onButtonSubmitClick); */
+  console.log('object');
 }
 
 //on size-list label click, radio-input is checked
