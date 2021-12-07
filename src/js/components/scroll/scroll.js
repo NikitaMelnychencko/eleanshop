@@ -14,12 +14,12 @@ export function restoreScroll() {
   document.documentElement.style.cssText = `${styleString}${browserScroll()}`;
 }
 
-const browserScroll = function () {
-  if (getBrowserId() === 1) {
-    return 'overflow: auto;';
-  }
-  return 'overflow: overlay;';
-};
+// const browserScroll = function () {
+//   if (getBrowserId() === 1) {
+//     return 'overflow: auto;';
+//   }
+//   return 'overflow: overlay;';
+// };
 
 export function bodyFixPosition() {
   if (!document.body.hasAttribute('data-body-scroll-fix')) {
@@ -46,7 +46,6 @@ function removeStyle(overflow, position, top, width) {
 }
 
 export function browserCheck() {
-  const browserCheck = document.querySelector('scrollRem');
   if (getBrowserId() === 2) {
     document.documentElement.classList.remove('scrollRem');
   }
