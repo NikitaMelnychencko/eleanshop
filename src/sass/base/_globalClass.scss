@@ -6,7 +6,7 @@
 
 //$tablet-general for modal window implementation
 html, body {
-    scrollbar-color: $primary-border-color;;     /* «цвет ползунка» «цвет полосы скроллбара» */
+    scrollbar-color:  $primary-border-color transparent;     /* «цвет ползунка» «цвет полосы скроллбара» */
     scrollbar-width:  thin ;  /* толщина */
    
     margin-right: 0;
