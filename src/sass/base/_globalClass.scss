@@ -6,11 +6,11 @@
 
 //$tablet-general for modal window implementation
 
-html,
-body {
-  scrollbar-color: $primary-border-color transparent; /* «цвет ползунка» «цвет полосы скроллбара» */
-  scrollbar-width: thin; /* толщина */
-}
+// html,
+// body {
+//   scrollbar-color: $primary-border-color transparent; /* «цвет ползунка» «цвет полосы скроллбара» */
+//   scrollbar-width: thin; /* толщина */
+// }
 
 body {
   position: relative;
@@ -23,29 +23,59 @@ body {
   overflow: overlay;
   @media screen and (min-width: $desktop-up) {
     margin: 128px 0 0 0;
-   
+    // html {
+    //   overflow: overlay;
+    //   scrollbar-color: $scroll-color $background-scroll-color;
+    //   scrollbar-width: thin;
+    // }
+    // ::-webkit-scrollbar-thumb {
+    //   background: $scroll-color;
+    //   border-radius: 10px;
+    // }
+
+    // ::-webkit-scrollbar-track {
+    //   background: transparent;
+    // }
+  }
+}
+@media screen and (min-width: $tablet-general) {
+  html {
+    overflow: overlay;
+    scrollbar-color: $primary-border-color;
+    scrollbar-width: thin;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: $primary-border-color;
+    border-radius: 10px;
   }
 
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
 }
 
-
-::-webkit-scrollbar-thumb {
-  background: $primary-border-color;
-  border-radius: 10px;
-      width: 5px;
-
-}
-html,body,
 .scrollRem {
   ::-webkit-scrollbar {
-    width: 8px;
+    width: 5px;
   }
 }
 
-::-webkit-scrollbar-track {
-  background: transparent;
-}
+// ::-webkit-scrollbar-thumb {
+//   background: $primary-border-color;
+//   border-radius: 10px;
+//       width: 5px;
 
+// }
+// html,body,
+// .scrollRem {
+//   ::-webkit-scrollbar {
+//     width: 8px;
+//   }
+// }
+
+// ::-webkit-scrollbar-track {
+//   background: transparent;
+// }
 
 .container {
   margin-left: auto;
