@@ -27,17 +27,12 @@ body {
   }
 }
 ::-webkit-scrollbar-thumb {
-      background: $primary-border-color;
-      border-radius: 10px;
-    }
-    
-::-webkit-scrollbar {
-    width: 5px; 
-    height: 8px; 
-    background-color: transparent;
+  background: $primary-border-color;
+  border-radius: 10px;
 }
 
 ::-webkit-scrollbar-track {
+  width: 5px;
   background: transparent;
 }
 .scrollRem {
@@ -45,11 +40,11 @@ body {
     width: 5px;
   }
 }
-::-webkit-scrollbar {
-  // width: 5px;
-  height: 8px;
-  background-color: transparent;
-}
+// ::-webkit-scrollbar {
+//   width: 5px;
+//   height: 8px;
+//   background-color: transparent;
+// }
 
 // body.modal-open {
 //   overflow: hidden;
