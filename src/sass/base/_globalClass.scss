@@ -9,7 +9,6 @@
 html {
   scrollbar-color: $primary-border-color; /* «цвет ползунка» «цвет полосы скроллбара» */
   scrollbar-width: thin; /* толщина */
- 
 }
 
 body {
@@ -21,26 +20,26 @@ body {
   font-size: 15px;
   line-height: 1.46;
   overflow: overlay;
+  scrollbar-width: 5px;
   @media screen and (min-width: $desktop-up) {
     margin: 128px 0 0 0;
-  
   }
 }
 
 ::-webkit-scrollbar-thumb {
-      background: $primary-border-color;
-      border-radius: 10px;
-    }
-
-    ::-webkit-scrollbar-track {
-      background: transparent;
-    }
-
-.scrollRem {
-  ::-webkit-scrollbar {
-    width: 5px;
-  }
+  background: $primary-border-color;
+  border-radius: 10px;
 }
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+// .scrollRem {
+//   ::-webkit-scrollbar {
+//     width: 5px;
+//   }
+// }
 
 .container {
   margin-left: auto;
