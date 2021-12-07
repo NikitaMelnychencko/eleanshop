@@ -24,11 +24,11 @@ const browserScroll = function () {
 export function bodyFixPosition() {
   if (getBrowserId() === 2) {
     document.body.classList.remove('scrollRem');
-  }
-  if (!document.body.hasAttribute('data-body-scroll-fix')) {
-    let scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
-    document.body.setAttribute('data-body-scroll-fix', scrollPosition);
-    removeStyle('hidden', 'fixed', `-${scrollPosition}px`, '100%');
+    if (!document.body.hasAttribute('data-body-scroll-fix')) {
+      let scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+      document.body.setAttribute('data-body-scroll-fix', scrollPosition);
+      removeStyle('hidden', 'fixed', `-${scrollPosition}px`, '100%');
+    }
   }
 }
 
