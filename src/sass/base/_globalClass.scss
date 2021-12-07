@@ -6,11 +6,11 @@
 
 //$tablet-general for modal window implementation
 
-// html,
-// body {
-//   scrollbar-color: $primary-border-color transparent; /* «цвет ползунка» «цвет полосы скроллбара» */
-//   scrollbar-width: thin; /* толщина */
-// }
+html,
+body {
+  scrollbar-color: $primary-border-color transparent; /* «цвет ползунка» «цвет полосы скроллбара» */
+  scrollbar-width: thin; /* толщина */
+}
 
 body {
   position: relative;
@@ -20,30 +20,32 @@ body {
   font-family: $primary-font-family, sans-serif;
   font-size: 15px;
   line-height: 1.46;
-  overflow: scroll;
-  scrollbar-color: $primary-border-color transparent; /* «цвет ползунка» «цвет полосы скроллбара» */
-  scrollbar-width: thin; /* толщина */
+  overflow: overlay;
   @media screen and (min-width: $desktop-up) {
     margin: 128px 0 0 0;
+   
   }
+
 }
+
+
 ::-webkit-scrollbar-thumb {
   background: $primary-border-color;
   border-radius: 10px;
-}
+      width: 5px;
 
-::-webkit-scrollbar {
-  // width: 8px;
-  height: 8px; /* высота для горизонтального скролла */
-  background-color: transparent;
-  border-radius: 10px;
 }
-
+html,body,
 .scrollRem {
   ::-webkit-scrollbar {
     width: 8px;
   }
 }
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
 
 .container {
   margin-left: auto;
