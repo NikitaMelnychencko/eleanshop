@@ -25,6 +25,12 @@ body {
    
   }
 }
+html,
+body.scrollRem {
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+}
 ::-webkit-scrollbar-thumb {
   background: $primary-border-color;
   border-radius: 10px;
@@ -33,16 +39,12 @@ body {
 ::-webkit-scrollbar-track {
   background: transparent;
 }
-// .scrollRem {
-//   ::-webkit-scrollbar {
-//     width: 5px;
-//   }
+
+// ::-webkit-scrollbar {
+//   width: 5px;
+//   height: 8px;
+//   background-color: transparent;
 // }
-::-webkit-scrollbar {
-  width: 5px;
-  height: 8px;
-  background-color: transparent;
-}
 
 // body.modal-open {
 //   overflow: hidden;
