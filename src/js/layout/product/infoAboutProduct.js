@@ -161,8 +161,8 @@ function setProductDataToOrdering() {
     orderingDataobj.label.id = parsedProductInfoData.id;
     orderingDataobj.label.name = parsedProductInfoData.productName;
 
-    orderingDataobj.label.img = parsedProductInfoData.image[0].imageMobile;
-    orderingDataobj.label.img2 = parsedProductInfoData.image[0].imageMobileHigherResolution;
+    orderingDataobj.label.img = parsedProductInfoData.img.src;
+    // orderingDataobj.label.img2 = parsedProductInfoData.image[0].imageMobileHigherResolution;
     orderingDataobj.label.price = parsedProductInfoData.productPrice;
     // have to get size from size grid from Andrew's function
     orderingDataobj.label.sizeSelected = '46';
