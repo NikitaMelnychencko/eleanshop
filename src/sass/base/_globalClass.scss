@@ -20,6 +20,7 @@ body {
   font-size: 15px;
   line-height: 1.46;
   overflow: overlay;
+  overflow-x: hidden;
   @media screen and (min-width: $desktop-up) {
     margin: 128px 0 0 0;
   }

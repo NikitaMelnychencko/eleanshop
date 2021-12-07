@@ -23,7 +23,8 @@ const browserScroll = function () {
 
 export function bodyFixPosition() {
   if (getBrowserId() === 2) {
-    document.documentElement.classList.remove('scrollRem');
+    // document.documentElement.classList.remove('scrollRem');
+    document.body.classList.remove('scrollRem');
   }
   if (!document.body.hasAttribute('data-body-scroll-fix')) {
     let scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
@@ -37,7 +38,7 @@ export function bodyUnfixPosition() {
     let scrollPosition = document.body.getAttribute('data-body-scroll-fix');
     document.body.removeAttribute('data-body-scroll-fix');
     removeStyle('', '', '', '');
-    document.documentElement.classList.add('scrollRem');
+    document.body.classList.add('scrollRem');
     window.scroll(0, scrollPosition);
   }
 }
