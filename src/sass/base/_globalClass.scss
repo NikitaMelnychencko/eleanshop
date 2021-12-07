@@ -7,9 +7,8 @@
 //$tablet-general for modal window implementation
 
 html {
-  scrollbar-color: $primary-border-color transparent; /* «цвет ползунка» «цвет полосы скроллбара» */
+  scrollbar-color: $primary-border-color; /* «цвет ползунка» «цвет полосы скроллбара» */
   scrollbar-width: thin; /* толщина */
-
 }
 
 body {
@@ -21,8 +20,7 @@ body {
   font-size: 15px;
   line-height: 1.46;
   overflow: overlay;
-    overflow-x: hidden;
-
+  overflow-x: hidden;
   @media screen and (min-width: $desktop-up) {
     margin: 128px 0 0 0;
   }
@@ -37,8 +35,7 @@ body {
   background: transparent;
 }
 
-html,
-body.scrollRem {
+.scrollRem {
   ::-webkit-scrollbar {
     width: 5px;
   }
