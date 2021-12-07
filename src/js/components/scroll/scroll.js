@@ -22,10 +22,9 @@ const browserScroll = function () {
 };
 
 export function bodyFixPosition() {
-  if (getBrowserId() === 2) {
-    // document.documentElement.classList.remove('scrollRem');
-    document.body.classList.remove('scrollRem');
-  }
+  // if (getBrowserId() === 2) {
+  //   document.body.classList.remove('scrollRem');
+  // }
   if (!document.body.hasAttribute('data-body-scroll-fix')) {
     let scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
     document.body.setAttribute('data-body-scroll-fix', scrollPosition);
@@ -38,7 +37,7 @@ export function bodyUnfixPosition() {
     let scrollPosition = document.body.getAttribute('data-body-scroll-fix');
     document.body.removeAttribute('data-body-scroll-fix');
     removeStyle('', '', '', '');
-    document.body.classList.add('scrollRem');
+    // document.body.classList.add('scrollRem');
     window.scroll(0, scrollPosition);
   }
 }
