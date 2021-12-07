@@ -33,18 +33,18 @@ body {
     }
     
 ::-webkit-scrollbar {
-    width: 5px; 
+
     height: 8px; 
     background-color: transparent;
 }
 ::-webkit-scrollbar-track {
       background: transparent;
     }
-// .scrollRem {
-//   ::-webkit-scrollbar {
-//     width: 5px;
-//   }
-// }
+.scrollRem {
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+}
 
 // body.modal-open {
 //   overflow: hidden;
