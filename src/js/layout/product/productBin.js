@@ -2,6 +2,7 @@ import markupBin from '../../../views/partials/product/productBin.hbs';
 import dataBin from '../../json/orderinginsertion.json';
 import { checkoutRender } from '../../call-list.js';
 import { scrollTo } from '../../components/blockHelp/blockHelp.js';
+import { bodyFixPosition, bodyUnfixPosition } from '../../components/scroll/scroll';
 
 export default class ProductBin {
   constructor({ root, typeInsert, data = dataBin }) {
@@ -106,8 +107,8 @@ export default class ProductBin {
   };
 
   _onCloseModal = () => {
+    bodyUnfixPosition();
     this.self.classList.add('hidden');
-    document.body.style.overflow = '';
     this._deleteEvent();
   };
 
@@ -137,6 +138,7 @@ export default class ProductBin {
     if (this.buttonClose) {
       this.buttonClose.forEach(el => {
         el.addEventListener('click', this._onCloseModal);
+        bodyFixPosition();
       });
     }
 
