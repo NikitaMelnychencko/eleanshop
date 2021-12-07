@@ -9,7 +9,7 @@ import { pageHeroSliderMarkup, heroSlider } from './layout/home/hero.js';
 import { pageShowroomSliderMarkup, showroomSlider } from './layout/home/ourShowRoom.js';
 import { formFittingInShowroom } from './layout/brand/formFittingInShowroom.js';
 import { formBrand } from './layout/brand/infoAboutBrand.js';
-
+import { browserCheck } from './components/scroll/scroll';
 import {
   pageStarClientsSliderMarkup,
   starClientsSlider,
@@ -21,6 +21,7 @@ import { aboutTheBrand_parsing, openAboutTheBrand } from './layout/home/aboutThe
 export function homeRender() {
   updateBin();
   classBody();
+  browserCheck()
   const homeMarkup = home({
     pageHeroSliderMarkup,
     cardsMarkup,

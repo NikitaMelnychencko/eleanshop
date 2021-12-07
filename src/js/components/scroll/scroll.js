@@ -49,3 +49,10 @@ function removeStyle(overflow, position, top, width) {
   document.body.style.top = top;
   document.body.style.width = width;
 }
+
+export function browserCheck() {
+  const browserCheck = document.querySelector('scrollRem');
+  if (getBrowserId() === 2) {
+    document.documentElement.classList.remove('scrollRem');
+  }
+}
