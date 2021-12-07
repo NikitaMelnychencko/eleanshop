@@ -20,7 +20,6 @@ body {
   font-size: 15px;
   line-height: 1.46;
   overflow: overlay;
-  scrollbar-width: 5px;
   @media screen and (min-width: $desktop-up) {
     margin: 128px 0 0 0;
   }
@@ -35,11 +34,11 @@ body {
   background: transparent;
 }
 
-// .scrollRem {
-//   ::-webkit-scrollbar {
-//     width: 5px;
-//   }
-// }
+.scrollRem {
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+}
 
 .container {
   margin-left: auto;
