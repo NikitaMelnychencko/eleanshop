@@ -22,11 +22,10 @@ body {
   overflow: overlay;
   @media screen and (min-width: $desktop-up) {
     margin: 128px 0 0 0;
-   
   }
 }
-html,
-body.scrollRem {
+
+.scrollRem {
   ::-webkit-scrollbar {
     width: 5px;
   }
