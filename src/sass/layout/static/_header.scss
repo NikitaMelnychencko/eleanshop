@@ -159,6 +159,10 @@
   }
 }
 
+.header-logo__title{
+  display: none;
+}
+
 .header-logo__text {
   font-family: $secondary-font-family, sans-serif;
   font-weight: 500;

@@ -58,7 +58,7 @@ function fnMobileMenu() {
   }
 }
 
-//! ---------- MOBILE VERSION MENU -----------
+// ! ---------- MOBILE VERSION MENU -----------
 let markup;
 
 function fnMobileList(event) {
@@ -119,8 +119,7 @@ favoritesEl.addEventListener('click', favoritesRender);
 
 //! ----------RECORD IN LOCAL STORAGE -----------
 function fnSavelocalStorage(event) {
-  if (event.target.dataset.atribute)
-    localStorage.setItem('content', event.target.dataset.atribute);
+  if (event.target.dataset.atribute) localStorage.setItem('content', event.target.dataset.atribute);
 }
 
 //! ----------CHANGE OF COLOR OF THE TEXT OF QUANTITY IN THE BASKET AND DEFENDED -----------
