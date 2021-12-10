@@ -10,6 +10,30 @@ import {
   reviewsRender,
 } from '../../call-list.js';
 
+class Header {
+  constructor(
+    favoritesRender,
+    showroomRender,
+    contactRender,
+    catalogRender,
+    brandRender,
+    deliveryRender,
+    fittingRender,
+    reviewsRender,
+  ) {
+    this.favoritesRender = favoritesRender;
+    this.showroomRender = showroomRender;
+    this.contactRender = contactRender;
+    this.catalogRender = catalogRender;
+    this.brandRender = brandRender;
+    this.deliveryRender = deliveryRender;
+    this.fittingRender = fittingRender;
+    this.reviewsRender = reviewsRender;
+
+    console.log(favoritesRender);
+  }
+}
+
 const {
   headerEl,
   buttonMobEl,
@@ -33,6 +57,8 @@ const {
 
 //! ---------- MODAL OF THE MOBILE VERSION -----------
 buttonMobEl.addEventListener('click', fnMobileMenu);
+
+// const addClass = classList.toggle;
 
 function fnMobileMenu() {
   headerEl.classList.toggle('mod-background-color');
@@ -78,10 +104,25 @@ function fnMobileList(event) {
   }
 }
 
+//! ----------RECORD IN LOCAL STORAGE -----------
+function fnSavelocalStorage(event) {
+  // const atribute = event.target.dataset.atribute;
+  if (event.target.dataset.atribute) localStorage.setItem('content', event.target.dataset.atribute);
+}
+
+//! ----------CHANGE OF COLOR OF THE TEXT OF QUANTITY IN THE BASKET AND DEFENDED -----------
+if (Number(favQuantityEl.textContent) > 0) fnChangeColor(favQuantityEl);
+if (Number(binQuantityEl.textContent) > 0) fnChangeColor(binQuantityEl);
+
+function fnChangeColor(element) {
+  element.style.color = 'red';
+}
+
 //! ---------- PAGE RENDERS -----------
 navigationEl.addEventListener('click', fnRender);
 function fnRender(event) {
   fnSavelocalStorage(event);
+  // const textContent = event.target.textContent;
 
   if (event.target.textContent === 'НОВИНКИ' || event.target.textContent === 'Акции')
     catalogRender();
@@ -116,16 +157,3 @@ function fnRender(event) {
 }
 
 favoritesEl.addEventListener('click', favoritesRender);
-
-//! ----------RECORD IN LOCAL STORAGE -----------
-function fnSavelocalStorage(event) {
-  if (event.target.dataset.atribute) localStorage.setItem('content', event.target.dataset.atribute);
-}
-
-//! ----------CHANGE OF COLOR OF THE TEXT OF QUANTITY IN THE BASKET AND DEFENDED -----------
-if (Number(favQuantityEl.textContent) > 0) fnChangeColor(favQuantityEl);
-if (Number(binQuantityEl.textContent) > 0) fnChangeColor(binQuantityEl);
-
-function fnChangeColor(element) {
-  element.style.color = 'red';
-}
