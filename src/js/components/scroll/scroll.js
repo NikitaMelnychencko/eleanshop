@@ -14,13 +14,6 @@ export function restoreScroll() {
   document.documentElement.style.cssText = `${styleString}${browserScroll()}`;
 }
 
-// const browserScroll = function () {
-//   if (getBrowserId() === 1) {
-//     return 'overflow: auto;';
-//   }
-//   return 'overflow: overlay;';
-// };
-
 export function bodyFixPosition() {
   if (!document.body.hasAttribute('data-body-scroll-fix')) {
     let scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
