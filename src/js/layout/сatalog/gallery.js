@@ -2,7 +2,7 @@ import gallery from '../../../views/partials/сatalog/gallery.hbs';
 import catalog from '../../json/catalog.json';
 import filterLib from '../../json/filterLib.json';
 import { productRender } from '../../call-list.js';
-import { scrollTo } from '../../components/blockHelp/blockHelp.js';
+import { scrollTo } from '../../components/scrollTo';
 
 // import '../../../images/svg/catalog/catalog.svg#icon-gallery-card-heart';
 function selectLS() {

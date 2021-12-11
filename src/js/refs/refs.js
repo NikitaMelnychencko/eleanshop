@@ -9,7 +9,6 @@ export default {
   setList: document.querySelector('.js-videoset'),
   numRef: document.querySelector('.product-list__text'),
 
-
   // ----- Footer ------
   closeOpenPlus: document.querySelectorAll('.footer__mobile-list-item-plus'),
   inputStorageMobile: document.querySelectorAll('.footer__mobile-form-input'),
@@ -51,4 +50,6 @@ export default {
   // overlay: document.querySelector('.videobox__overlay'),
   // videoEl: document.querySelector('.video-set__video'),
   // BtnEl: document.querySelector('[data-action="close-videobox"]')
+  // ----- preloader ------
+  preloader: document.querySelector('.loading'),
 };

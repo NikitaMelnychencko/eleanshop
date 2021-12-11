@@ -8,6 +8,10 @@
   display: inline-flex;
   flex-direction: column;
   align-items: center;
+
+  &.is-hidden {
+    display: none;
+  }
 }
 .help__button {
   border-style: none;
@@ -43,8 +47,7 @@
   }
 }
 .button-phone {
-  background-image: url(../images/helpPhone.svg),
-    url(../images/rectangleWhite.svg);
+  background-image: url(../images/helpPhone.svg), url(../images/rectangleWhite.svg);
   background-size: 26px 26px, 36px 36px;
 }
 .button-chat {
