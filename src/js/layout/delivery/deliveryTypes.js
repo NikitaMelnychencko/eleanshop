@@ -7,7 +7,7 @@ import deliveryPage from '../../../views/layouts/delivery.hbs';
 import deliveryfiljson from '../../../js/json/filter.json';
 import deliveryfilter from '../../../views/partials/delivery/filter.hbs';
 import formsQuestions from '../../../views/partials/delivery/formsQuestion.hbs';
-
+import { bodyFixPosition, bodyUnfixPosition } from '../../components/scroll/scroll';
 import formQuestionsData from '../../../js/json/formsQuestion.json';
 
 export const descriptionDelivery = deliveryfilter(deliveryfiljson);
@@ -47,9 +47,9 @@ export function deliveryThreeModal() {
     trigger.addEventListener('click', e => {
       e.preventDefault();
       modal.classList.add('modal_active');
+      bodyFixPosition();
     });
   };
-
   openModal('.buttons__button_one', '.modal[data-modal="one"]');
   openModal('.buttons__button_two', '.modal[data-modal="two"]');
   openModal('.buttons__button_third', '.modal[data-modal="third"]');
@@ -64,6 +64,7 @@ export function deliveryThreeModal() {
         if (!e.target.closest('.modal__body')) {
           el.classList.remove('modal_active');
         }
+        bodyUnfixPosition();
       });
     });
   };

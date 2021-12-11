@@ -3,6 +3,7 @@ import Backdrop from '../../components/backdrop';
 import tryOnModelsModal from '../../../views/components/tryOnModelsModal.hbs';
 import orderForm from '../../../views/components/orderForm.hbs';
 import refs from '../../refs/refs';
+import { bodyUnfixPosition } from '../../components/scroll/scroll';
 
 const { mainEL } = refs;
 
@@ -20,10 +21,10 @@ export function setEventTryOnModels() {
   const orderFormEl = tryOnModalEl.querySelector('.order-form');
   const submitButton = tryOnModalEl.querySelector('.order-form__button');
   const sizeList = tryOnModalEl.querySelector('.sizes__list');
-
   buttonCloseModal.addEventListener('click', onButtonCloseModalClick);
   sizeList.addEventListener('click', onSizeListItemClick);
   submitButton.addEventListener('click', onButtonSubmitClick);
+  console.log('object');
 }
 
 //close modal
@@ -33,6 +34,7 @@ function onButtonCloseModalClick(event) {
   /* buttonCloseModal.removeEventListener('click', onButtonCloseModalClick); */
   /* sizeList.removeEventListener('click', onSizeListItemClick); */
   /* submitButton.removeEventListener('click', onButtonSubmitClick); */
+  bodyUnfixPosition();
 }
 
 //on size-list label click, radio-input is checked

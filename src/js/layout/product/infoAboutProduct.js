@@ -1,6 +1,8 @@
 // have to clear string #2 after getting data from Local Storage
 import productInfo from '../../../js/json/product/productInfo.json';
 import productTemplate from '../../../views/partials/product/infoAboutProduct.hbs';
+import { bodyFixPosition } from '../../components/scroll/scroll';
+
 window.jQuery = window.$ = require('jquery');
 require('../../slick/slick.min');
 //* way to get a function from Andrew to render a size grid (don't clear)
@@ -202,6 +204,7 @@ function onCharacteristicsListClick(event) {
 function onDetermineSizeButtonElClick() {
   const preorderBackdropEl = document.querySelector('.preoder__backdrop');
   preorderBackdropEl.classList.add('is-visible');
+  bodyFixPosition();
 }
 //!----------------------------------------------------Is size in a stock?
 function onIsSizeInStockButtonElClick() {}
@@ -209,6 +212,7 @@ function onIsSizeInStockButtonElClick() {}
 function onFittingButtonElClick() {
   const tryOnBackdropEl = document.querySelector('.try-on__backdrop');
   tryOnBackdropEl.classList.add('is-visible');
+  bodyFixPosition();
 }
 //!----------------------------------------------------Fixate local storage data
 function fixateDataFromLocalStorage() {
@@ -245,4 +249,5 @@ function createAllListeners(buy) {
 export function callProductPageFunctional(buy) {
   createAllListeners(buy);
   fixateDataFromLocalStorage();
+  console.log('object');
 }

@@ -29,7 +29,6 @@ const {
   dropDownList,
   dropDown,
 } = refs;
-
 checkBoxIcon.addEventListener('click', onAgreeCheckBox);
 mobileSubmitBtn.addEventListener('submit', onSubmitBtnMobile);
 desktopSubmitBtn.addEventListener('submit', onSubmitBtnDesktop);
@@ -64,14 +63,17 @@ linkMenuFooterMobile.forEach(evt => {
 });
 
 // === drop-down menu-list ===
+
 closeOpenPlus.forEach(evt => {
   evt.addEventListener('click', el => {
     const idMuneClickMobile = evt.id;
+    const dropDown = document.querySelector('.open-menu');
     if (!el.target.nextElementSibling) {
       scrollTo(0, 700);
       localStorage.setItem('footer-filtr-mobile', idMuneClickMobile);
+    } else {
+      el.preventDefault();
     }
-    el.preventDefault();
     if (el.target.nextElementSibling) {
       if (dropDown) {
         dropDown.classList.toggle('open-menu');
@@ -84,9 +86,8 @@ closeOpenPlus.forEach(evt => {
       }
       el.target.classList.toggle('open-menu');
       el.target.nextElementSibling.classList.toggle('js-dropdown-none');
-    } else {
-      window.location.href = el.target;
     }
+    return;
   });
 });
 
@@ -96,8 +97,8 @@ linkMenuFooterMobile.forEach(evt => {
     scrollTo(0, 700);
     el.preventDefault();
     const dropDown = document.querySelector('.js-dropdown-none');
-    const openMenu = document.querySelector('.open-menu');
     if (el.target) {
+      const openMenu = document.querySelector('.open-menu');
       dropDown.classList.remove('js-dropdown-none');
       openMenu.classList.remove('open-menu');
       window.location.href = el.target;
@@ -123,7 +124,7 @@ inputStorageMobile.forEach(evt => {
   });
 });
 
-// Appointment localStorage на input desktop
+// Appointment localStorage on input desktop
 inputStorageDesktop.forEach(evt => {
   const idInputDesktop = evt.id;
   evt.addEventListener('input', el => {
@@ -134,14 +135,14 @@ inputStorageDesktop.forEach(evt => {
   });
 });
 
-//   Remuve localStorage on input mobile
+//   Remove localStorage on input mobile
 function onSubmitBtnMobile(evt) {
   evt.preventDefault();
   evt.currentTarget.reset();
   localStorage.removeItem('user_subscribe');
 }
 
-//   Remuve localStorage on input desktop
+//   Remove localStorage on input desktop
 function onSubmitBtnDesktop(evt) {
   evt.preventDefault();
   evt.currentTarget.reset();
@@ -167,9 +168,8 @@ dataActionCollectio.forEach(evt => {
       targetLink === 'costumes' ||
       targetLink === 'pants' ||
       targetLink === 'blouses'
-    )
-    {
-        return catalogRender();
+    ) {
+      return catalogRender();
     }
 
     //==== brandRender ===//

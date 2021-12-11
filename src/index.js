@@ -80,3 +80,7 @@ import './js/layout/static/footer.js';
 import './js/layout/preloader/preloader_bar.js';
 //update viewport
 import './js/updateViewport/updateViewport';
+
+// skroll
+
+import './js/components/scroll/scroll';

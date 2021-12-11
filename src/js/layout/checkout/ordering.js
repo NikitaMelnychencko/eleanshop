@@ -18,18 +18,18 @@ export function openOrderingFunction() {
   const orderingDiscount = document.querySelector('.ordering__discount--value');
   const orderingTotal = document.querySelector('.ordering__total');
   const cards = document.querySelector('.ordering__cards');
-  const priceSpans = document.querySelectorAll('.ordering__price')
-  const counterSpans = document.querySelectorAll('.ordering__value')
-  const binValue = document.querySelector('.js-counter')
+  const priceSpans = document.querySelectorAll('.ordering__price');
+  const counterSpans = document.querySelectorAll('.ordering__value');
+  const binValue = document.querySelector('.js-counter');
 
   window.onload = updatePriceSpans();
   window.onload = renewTotalPriceWithDiscount();
 
   function updatePriceSpans() {
     [...priceSpans].forEach(price => {
-      let counterValue = price.parentElement.querySelector('.ordering__value').innerText
-      price.textContent = Number(counterValue) * Number(price.innerText)
-    })
+      let counterValue = price.parentElement.querySelector('.ordering__value').innerText;
+      price.textContent = Number(counterValue) * Number(price.innerText);
+    });
   }
 
   cards.addEventListener('click', setQuantityOrRemove);
@@ -47,7 +47,6 @@ export function openOrderingFunction() {
 
       priceSpan.textContent = totalPricePerItem;
       renewTotalPriceWithDiscount();
-
     } else if (e.target.classList.contains('ordering__btn--minus')) {
       let checker = orderingDecrement(e);
       let priceSpan = e.target.parentElement.nextElementSibling;
@@ -68,9 +67,9 @@ export function openOrderingFunction() {
   function orderingIncrement(e) {
     let value = e.target.previousElementSibling.textContent;
     e.target.previousElementSibling.textContent = Number(value) + 1;
-    value = Number(value) + 1
+    value = Number(value) + 1;
 
-    setValueInLocalStorage(e, value)
+    setValueInLocalStorage(e, value);
     updateTotalValueInBin();
   }
 
@@ -79,8 +78,7 @@ export function openOrderingFunction() {
       (totalPrices, counterSpans) => totalPrices + Number(counterSpans.innerText),
       0,
     );
-    binValue.textContent = countersTotalValue
-
+    binValue.textContent = countersTotalValue;
   }
 
   function orderingDecrement(e) {
@@ -88,9 +86,9 @@ export function openOrderingFunction() {
     if (Number(value) > 1) {
       e.target.nextElementSibling.textContent = Number(value) - 1;
 
-      value = Number(value) - 1
+      value = Number(value) - 1;
 
-      setValueInLocalStorage(e, value)
+      setValueInLocalStorage(e, value);
       updateTotalValueInBin();
 
       return true;
@@ -101,9 +99,9 @@ export function openOrderingFunction() {
 
   function setValueInLocalStorage(e, value) {
     const articleId = e.target.closest('.ordering__card').getAttribute('id');
-    const article = parsedData.find(obj => obj.label.id === articleId)
+    const article = parsedData.find(obj => obj.label.id === articleId);
 
-    article.label.count = value
+    article.label.count = value;
     localStorage.setItem('orderingData', JSON.stringify(parsedData));
   }
 
@@ -177,10 +175,10 @@ export function openOrderingFunction() {
     if (e.target.classList.contains('js-size')) {
       article.label.sizeSelected = colorItemValue;
     } else if (e.target.classList.contains('js-color')) {
-        let circleLink = colorInput.querySelector('.ordering__circle--color').getAttribute('href');
+      let circleLink = colorInput.querySelector('.ordering__circle--color').getAttribute('href');
       article.label.сolorSelected = this.innerText;
       article.label.circleSelected = circleLink;
-    }  
+    }
     localStorage.setItem('orderingData', JSON.stringify(parsedData));
     e.target.parentElement.classList.toggle('ordering-list--hide');
   }
