@@ -1,6 +1,7 @@
 import markupBin from '../../../views/partials/product/productBin.hbs';
 import dataBin from '../../json/orderinginsertion.json';
 import { checkoutRender } from '../../call-list.js';
+import { bodyFixPosition, bodyUnfixPosition } from '../../components/scroll/scroll';
 import { scrollTo } from '../../components/scrollTo';
 
 export default class ProductBin {
