@@ -5,6 +5,7 @@ import RecomendationsCategory from './recomendationsCategory.js';
 import modalAddToCartMark from '../../../views/partials/product/productModalAddToCart.hbs';
 import { checkoutRender } from '../../call-list.js';
 import { scrollTo } from '../../components/scrollTo';
+import { bodyFixPosition, bodyUnfixPosition } from '../../components/scroll/scroll';
 
 export default class ProductModalAddToCart {
   constructor({ root, typeInsert = 'beforeEnd', productName, objectClose }) {

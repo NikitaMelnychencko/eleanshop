@@ -4,6 +4,7 @@ import backdropMarkupTempl from '../../../views/components/backdrop.hbs';
 import modalFormMarkupTempl from '../../../views/components/thanksForOrdering.hbs';
 import { homeRender } from '../../call-list.js';
 import { scrollTo } from '../../components/scrollTo';
+import { bodyFixPosition, bodyUnfixPosition } from '../../components/scroll/scroll';
 let throttle = require('lodash.throttle');
 const modalFormMarkup = modalFormMarkupTempl();
 export const backdropMarkup = backdropMarkupTempl(modalFormMarkup);
