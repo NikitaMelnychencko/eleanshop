@@ -3,9 +3,7 @@ import Backdrop from '../../components/backdrop.js';
 import backdropMarkupTempl from '../../../views/components/backdrop.hbs';
 import modalFormMarkupTempl from '../../../views/components/thanksForOrdering.hbs';
 import { homeRender } from '../../call-list.js';
-import { scrollTo } from '../../components/blockHelp/blockHelp.js';
-import { bodyFixPosition, bodyUnfixPosition } from '../../components/scroll/scroll';
-
+import { scrollTo } from '../../components/scrollTo';
 let throttle = require('lodash.throttle');
 const modalFormMarkup = modalFormMarkupTempl();
 export const backdropMarkup = backdropMarkupTempl(modalFormMarkup);

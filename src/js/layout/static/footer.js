@@ -1,5 +1,5 @@
 import refs from '../../refs/refs.js';
-import { scrollTo } from '../../components/blockHelp/blockHelp';
+import { scrollTo } from '../../components/scrollTo';
 import {
   catalogRender,
   fittingRender,
