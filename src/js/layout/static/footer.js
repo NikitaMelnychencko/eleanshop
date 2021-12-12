@@ -44,7 +44,10 @@ desktop.forEach(evt => {
 });
 
 class FooterLocalStorage {
-  constructor() {}
+  constructor() {
+    this.linkMenuFooterMobile();
+    this.linkMenuFooterMobile();
+  }
   //=== addEventListener Footer__Desktop on dataAction and LockalStorage===//
   linkMenuFooterDesktop() {
     linkMenuFooterDesktop.forEach(evt => {
@@ -70,13 +73,13 @@ class FooterLocalStorage {
   }
 }
 const footerLocalStorage = new FooterLocalStorage();
-footerLocalStorage.linkMenuFooterDesktop();
-footerLocalStorage.linkMenuFooterMobile();
 
 // === drop-down menu-list ===
 
 class DropdownMenu {
-  constructor() {}
+  constructor() {
+    this.iconMenu();
+  }
   iconMenu() {
     closeOpenPlus.forEach(evt => {
       evt.addEventListener('click', el => {
@@ -107,7 +110,6 @@ class DropdownMenu {
   }
 }
 const dropdownMenu = new DropdownMenu();
-dropdownMenu.iconMenu();
 
 //==== Hiding the menu when switching to another block
 
