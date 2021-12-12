@@ -12,6 +12,9 @@
   overflow: scroll;
   transition: $time-cubic;
   opacity: 1;
+  overflow-x: hidden;
+  scrollbar-color: $primary-border-color; /* «цвет ползунка» «цвет полосы скроллбара» */
+  scrollbar-width: thin; /* толщина */
 
   &.hidden {
     // @extend %hide;
