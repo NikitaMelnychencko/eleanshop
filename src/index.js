@@ -1,4 +1,5 @@
 import './sass/main.scss';
+import './js/data/firebase_Servise';
 import './js/importImages/importImages.js';
 import './js/call-list.js';
 import './js/updateBin.js';
@@ -77,7 +78,7 @@ import './js/components/blockHelp/blockHelp';
 //static
 import './js/layout/static/header.js';
 import './js/layout/static/footer.js';
-import './js/layout/preloader/preloader_bar.js';
+import './js/layout/static/preloader/preloader_bar.js';
 //update viewport
 import './js/updateViewport/updateViewport';
 
