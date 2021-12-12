@@ -1,7 +1,7 @@
 import markupBin from '../../../views/partials/product/productBin.hbs';
 import dataBin from '../../json/orderinginsertion.json';
 import { checkoutRender } from '../../call-list.js';
-import { scrollTo } from '../../components/blockHelp/blockHelp.js';
+import { scrollTo } from '../../components/scrollTo';
 
 export default class ProductBin {
   constructor({ root, typeInsert, data = dataBin }) {
