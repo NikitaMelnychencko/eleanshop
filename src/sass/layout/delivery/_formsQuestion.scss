@@ -17,12 +17,12 @@
   justify-content: space-between;
   position: relative;
   padding-bottom: 13px;
+  border-bottom: 1px dotted $third-text-color;
 }
 
 .question-block::after {
   content: '';
   position: absolute;
-  width: 112%;
   height: 1px;
   left: -20px;
   top: 93%;
