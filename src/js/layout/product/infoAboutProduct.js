@@ -15,28 +15,24 @@ let parsedProductInfoData = JSON.parse(savedProductInfoData);
 
 export function setProductSlider() {
   $(document).ready(function () {
-    $('.product-slider-smaller').slick({
+    $('.product-slider-smaller').not('.slick-initialized').slick({
       arrows: false,
       speed: 500,
       vertical: true,
-      verticalSwiping: true,
       slidesToShow: 4,
-      slidesToScroll: 1,
-      lazyLoad: 'progressive',
       asNavFor: '.product-slider',
-      centerMode: true,
       focusOnSelect: true,
-      centerPadding: '0px',
     });
-    $('.product-slider').slick({
+    $('.product-slider').not('.slick-initialized').slick({
       arrows: false,
-      dots: true,
+      dots: false,
       fade: true,
       speed: 500,
       slidesToShow: 1,
       lazyLoad: 'progressive',
       asNavFor: '.product-slider-smaller',
     });
+    $('.product-slider-smaller').slick('setPosition');
   });
 }
 

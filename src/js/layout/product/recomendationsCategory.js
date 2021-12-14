@@ -80,18 +80,32 @@ export default class RecomendationsCategory {
   };
 
   setSlider = () => {
-    if (window.innerWidth <= 720) {
+    if (window.innerWidth <= 1377) {
       this._addSlider();
     }
   };
 
   _addSlider = () => {
-    $('.recomendation-category .slider').slick({
-      arrows: false,
-      dots: this.buttonPagination,
-      infinite: true,
-      slidesToShow: 2.5,
-      focusOnSelect: true,
+    $(document).ready(function () {
+      $('.recomendation-category .slider').slick({
+        arrows: false,
+        dots: this.buttonPagination,
+        infinite: true,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        speed: 1000,
+        easing: 'ease',
+        initialSlide: 0,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        focusOnSelect: true,
+        pauseOnFocus: true,
+        pauseOnHover: true,
+        pauseOnDotsHover: true,
+        draggable: true,
+        swipe: true,
+        centerMode: true,
+      });
     });
   };
 
@@ -167,7 +181,7 @@ export default class RecomendationsCategory {
       let id = '';
       if (!e.target.getAttribute('id')) {
         let el = e.target.parentElement;
-        while (!id) {
+        while (!id && el) {
           if (el.getAttribute('id')) {
             id = el.getAttribute('id');
           } else {
