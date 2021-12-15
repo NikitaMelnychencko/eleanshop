@@ -47,11 +47,11 @@
   }
 }
 
-
 .form-delivery__horiz-block {
   @media screen and (min-width: $desktop-up) {
     display: flex;
     flex-wrap: wrap;
+    justify-items: center;
   }
 }
 
@@ -97,7 +97,7 @@
 
 .form-delivery__send-btn-text {
   transition: color 200ms cubic-bezier(0.4, 0, 0.2, 1);
-
+  margin-top: 10px;
   font-weight: 500;
   font-size: 13px;
   line-height: 1.9;
@@ -108,7 +108,7 @@
   color: $button-hover-background-color;
   text-transform: uppercase;
   background-color: transparent;
-  border: none;
+  border: 1px solid $button-hover-background-color;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -119,11 +119,14 @@
   &:hover {
     color: $accent-btn-color;
   }
+  @media screen and (min-width: $tablet-general) {
+    border: none;
+  }
 }
 
 .form-delivery__button {
   transition: background $time-cubic;
-  border: 1px solid $button-hover-background-color;
+  // border: 1px solid $button-hover-background-color;
   box-sizing: border-box;
   height: 60px;
   width: 221px;
@@ -140,10 +143,8 @@
 
     border: 1px solid $button-hover-background-color;
     margin-top: 0;
-
-
   }
-    @media screen and (min-width: $desktop-up) {
+  @media screen and (min-width: $desktop-up) {
     border-left: none;
   }
 }
@@ -169,10 +170,6 @@
 }
 
 .form-delivery__input-center {
-  // @media screen and (min-width: $tablet-general) {
-  //   border-left: none;
-  // }
-
   @media screen and (min-width: $desktop-up) {
     border-right: none;
     border-left: none;
