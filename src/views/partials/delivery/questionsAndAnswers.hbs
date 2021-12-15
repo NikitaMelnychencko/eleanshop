@@ -1,4 +1,6 @@
-<h2 class='head-delivery'>Доставка</h2>
+<h2 class='head-delivery'>
+  Доставка
+</h2>
 <section class='nav-product'>
   <div class='js-nav-product container'></div>
 </section>
@@ -24,36 +26,62 @@
     <svg class='message__icon' role='img' width='36px' height='28px' aria-label='Иконка солнца'>
       <use href='./images/sprite.svg#sun'></use>
     </svg>
-    <h3 class='ask-question'>ЗАДАТЬ ВОПРОС</h3>
+    <h3 class='ask-question'>
+      ЗАДАТЬ ВОПРОС
+    </h3>
   </div>
   <form class='js-question-form' autocomplete='off'>
     <div class='form-input'>
       <lable>
-        <input type='text' class='input-name' name='name' placeholder='ВВЕДИТЕ ИМЯ' />
-      </lable>
-      <lable>
-        <input name='number' class='input-name' type='number' placeholder='ВВЕДИТЕ ТЕЛЕФОН' />
+        <input
+          id={{id}}
+          type='text'
+          class='input-name'
+          name='name'
+          placeholder='ВВЕДИТЕ ИМЯ'
+          value={{value}}
+          {{checked}}
+        />
       </lable>
       <lable>
         <input
+          id={{id}}
+          name='number'
+          class='input-name'
+          type='number'
+          placeholder='ВВЕДИТЕ ТЕЛЕФОН'
+          value={{value}}
+          {{checked}}
+        />
+      </lable>
+      <lable>
+        <input
+          id={{id}}
           name='input-time'
           class='input-name'
           type='text'
           placeholder='ВВЕДИТЕ УДОБНОЕ ВРЕМЯ'
+          value={{value}}
+          {{checked}}
         />
       </lable>
     </div>
     <!-- <div class="form-coment"> -->
     <lable>
       <textarea
+        id={{id}}
         name='coment'
         class='input-coment'
         type='submit'
         rows='6'
         placeholder='ДОБАВИТЬ КОММЕНТАРИЙ'
+        value={{value}}
+        {{checked}}
       ></textarea>
     </lable>
-    <button class='input-button' type='submit'>ЗАПИСАТЬСЯ</button>
+    <button class='input-button' type='submit'>
+      ЗАПИСАТЬСЯ
+    </button>
     <!-- </div> -->
   </form>
 </section>

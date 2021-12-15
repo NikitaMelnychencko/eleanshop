@@ -13,7 +13,8 @@ module.exports = {
     path: paths.dist,
     filename: 'bundle.js',
     publicPath: '/',
-    //assetModuleFilename: 'images/[name][ext]'
+    hashFunction: 'xxhash64',
+    // assetModuleFilename: 'images/[name][ext]',
   },
   module: {
     rules: [

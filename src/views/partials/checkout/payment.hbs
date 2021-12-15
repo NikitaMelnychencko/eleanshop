@@ -39,26 +39,37 @@
     <div class='basic-information' role='group'>
       <h3 class='basic-information__title'>ОСНОВНАЯ ИНФОРМАЦИЯ</h3>
       <label class="basic-information__field">
-        <input type='text' name='name'  minlength='2' placeholder='ВВЕДИТЕ ФИО' minlength="2" required/>
+        <input id={{id}}
+ type='text' name='name'  minlength='2' placeholder='ВВЕДИТЕ ФИО' minlength="2" required  value={{value}}
+          {{checked}}/>
       </label>
       <label class="basic-information__field">
         <input
+          id={{id}}
           type="tel"
           name='tel'
           required
           pattern='[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}'
           title='067-000-00-00'
           placeholder='ВВЕДИТЕ ТЕЛЕФОН'
+             value={{value}}
+          {{checked}}
         />
       </label>
       <label class="basic-information__field">
-        <input type='email' name='email' placeholder='ВВЕДИТЕ E-MAIL' required/>
+        <input           id={{id}}
+ type='email' name='email' placeholder='ВВЕДИТЕ E-MAIL'   value={{value}}
+          {{checked}} required/>
       </label>
       <label class="basic-information__field">
-        <textarea name='feedback' placeholder='ДОБАВИТЬ КОММЕНТАРИЙ'></textarea>
+        <textarea           id={{id}}
+ name='feedback' placeholder='ДОБАВИТЬ КОММЕНТАРИЙ' value={{value}}
+          {{checked}}></textarea>
       </label>
       <label class="basic-information__field">
-        <input class="basic-information__checkbox" type="checkbox" name='agreement-conditions' value="I agree" required/>
+        <input           id={{id}}
+ class="basic-information__checkbox" type="checkbox" name='agreement-conditions' value="I agree" required  value={{value}}
+          {{checked}}/>
         <span class="basic-information__text">Я принимаю договор публичной оферты</span>
       </label>
     </div>

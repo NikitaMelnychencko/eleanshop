@@ -8,50 +8,65 @@
   <form class='form-fitting-showroom__form' action='#' id='contactFormInputs'>
     <div class='form-fitting-showroom__horiz-block'>
       <label class='form-fitting-showroom__input-box'>
+        <input
+          id={{id}}
+          type='text'
+          name='name'
+          class='form-fitting-showroom__input'
+          minlength='2'
+          required
+          placeholder='Введите имя'
+          value={{value}}
+          {{checked}}
+        />
         <span class='form-fitting-showroom__input-wrapper star-form'>
-          <input
-            type='text'
-            name='name'
-            class='form-fitting-showroom__input'
-            minlength='2'
-            required
-            placeholder='Введите имя'
-          />
+          {{text}}
         </span>
       </label>
       <label class='form-fitting-showroom__input-box'>
+        <input
+          id={{id}}
+          type='tel'
+          name='tel'
+          class='form-fitting-showroom__input form-fitting-showroom__input-center'
+          required
+          pattern='[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}'
+          placeholder='Введите телефон'
+          value={{value}}
+          {{checked}}
+        />
         <span class='form-fitting-showroom__input-wrapper star-form'>
-          <input
-            type='tel'
-            name='tel'
-            class='form-fitting-showroom__input form-fitting-showroom__input-center'
-            required
-            pattern='[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}'
-            placeholder='Введите телефон'
-          />
+          {{text}}
         </span>
       </label>
       <label class='form-fitting-showroom__input-box'>
+        <input
+          id={{id}}
+          type='text'
+          name='date'
+          class='form-fitting-showroom__input'
+          required
+          placeholder='Введите удобное время'
+          value={{value}}
+          {{checked}}
+        />
         <span class='form-fitting-showroom__input-wrapper'>
-          <input
-            type='text'
-            name='date'
-            class='form-fitting-showroom__input'
-            required
-            placeholder='Введите удобное время'
-          />
+          {{text}}
         </span>
       </label>
     </div>
     <div class='form-fitting-showroom__horiz-block'>
       <label class='form-fitting-showroom__comment-box'>
         <textarea
+          id={{id}}
           type='text'
           name='comment'
           class='form-fitting-showroom__comment'
           minlength='2'
           required
           placeholder='Добавить комментарий'
+          value={{value}}
+          {{checked}}
         ></textarea>
       </label>
       <div class='form-fitting-showroom__button'>

@@ -2,54 +2,71 @@
   <svg class='form-delivery__icon'>
     <use href='./images/exampl.svg#icon-delivery-ask-question'></use>
   </svg>
-  <h4 class='form-delivery__title'>Задать вопрос</h4>
+  <h4 class='form-delivery__title'>
+    Задать вопрос
+  </h4>
   <form class='form-delivery__form' action='#' id='contactFormInputs'>
     <div class='form-delivery__horiz-block'>
       <label class='form-delivery__input-box'>
+        <input
+          id={{id}}
+          type='text'
+          name='name'
+          class='form-delivery__input'
+          minlength='2'
+          required
+          placeholder='Введите имя'
+          value={{value}}
+          {{checked}}
+        />
         <span class='form-delivery__input-wrapper star-form-delivery'>
-          <input
-            type='text'
-            name='name'
-            class='form-delivery__input'
-            minlength='2'
-            required
-            placeholder='Введите имя'
-          />
+          {{text}}
         </span>
       </label>
       <label class='form-delivery__input-box'>
+        <input
+          id={{id}}
+          type='tel'
+          name='tel'
+          class='form-delivery__input form-delivery__input-center'
+          required
+          pattern='[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}'
+          placeholder='Введите телефон'
+          value={{value}}
+          {{checked}}
+        />
         <span class='form-delivery__input-wrapper star-form-delivery'>
-          <input
-            type='tel'
-            name='tel'
-            class='form-delivery__input form-delivery__input-center'
-            required
-            pattern='[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}'
-            placeholder='Введите телефон'
-          />
+          {{text}}
         </span>
       </label>
       <label class='form-delivery__input-box'>
+        <input
+          id={{id}}
+          type='text'
+          name='time'
+          class='form-delivery__input'
+          required
+          placeholder='Введите удобное время'
+          value={{value}}
+          {{checked}}
+        />
         <span class='form-delivery__input-wrapper star-form-delivery'>
-          <input
-            type='text'
-            name='time'
-            class='form-delivery__input'
-            required
-            placeholder='Введите удобное время'
-          />
+          {{text}}
         </span>
       </label>
     </div>
     <div class='form-delivery__horiz-block'>
       <label class='form-delivery__comment-box'>
         <textarea
+          id={{id}}
           type='text'
           name='comment'
           class='form-delivery__comment'
           minlength='2'
           required
           placeholder='Добавить комментарий'
+          value={{value}}
+          {{checked}}
         ></textarea>
       </label>
       <div class='form-delivery__button'>

@@ -2,54 +2,71 @@
   <svg class='form-reviews__icon'>
     <use href='./images/exampl.svg#icon-ask-question-form'></use>
   </svg>
-  <h3 class='form-reviews__title'>Оставить отзыв</h3>
+  <h3 class='form-reviews__title'>
+    Оставить отзыв
+  </h3>
   <form class='form-reviews__form' action='#' id='contactFormInputs'>
     <div class='form-reviews__horiz-block'>
       <label class='form-reviews__input-box'>
+        <input
+          id={{id}}
+          type='text'
+          name='name'
+          class='form-reviews__input'
+          minlength='2'
+          required
+          placeholder='Введите имя'
+          value={{value}}
+          {{checked}}
+        />
         <span class='form-reviews__input-wrapper star-form-reviews'>
-          <input
-            type='text'
-            name='name'
-            class='form-reviews__input'
-            minlength='2'
-            required
-            placeholder='Введите имя'
-          />
+          {{text}}
         </span>
       </label>
       <label class='form-reviews__input-box'>
+        <input
+          id={{id}}
+          type='tel'
+          name='tel'
+          class='form-reviews__input form-reviews__input-center'
+          required
+          pattern='[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}'
+          placeholder='Введите телефон'
+          value={{value}}
+          {{checked}}
+        />
         <span class='form-reviews__input-wrapper star-form-reviews'>
-          <input
-            type='tel'
-            name='tel'
-            class='form-reviews__input form-reviews__input-center'
-            required
-            pattern='[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}'
-            placeholder='Введите телефон'
-          />
+          {{text}}
         </span>
       </label>
       <label class='form-reviews__input-box'>
+        <input
+          id={{id}}
+          type='text'
+          name='email'
+          class='form-reviews__input'
+          required
+          placeholder='Введите e-mail'
+          value={{value}}
+          {{checked}}
+        />
         <span class='form-reviews__input-wrapper star-form-reviews'>
-          <input
-            type='text'
-            name='email'
-            class='form-reviews__input'
-            required
-            placeholder='Введите e-mail'
-          />
+          {{text}}
         </span>
       </label>
     </div>
     <div class='form-reviews__horiz-block'>
       <label class='form-reviews__comment-box'>
         <textarea
+          id={{id}}
           type='text'
           name='comment'
           class='form-reviews__comment'
           minlength='2'
           required
           placeholder='Добавить комментарий'
+          value={{value}}
+          {{checked}}
         ></textarea>
       </label>
       <div class='form-reviews__button'>
