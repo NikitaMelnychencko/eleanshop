@@ -22,7 +22,11 @@ export default class ProductBin {
     if (dataLS) {
       this.data = JSON.parse(dataLS);
     } else {
-      this.data = this.dataBin;
+      this.data = [];
+    }
+    if(this.data.length === 0) {
+      localStorage.setItem('orderingData', JSON.stringify(this.data))
+      return
     }
     this.data.forEach(el => {
       const arr = String(el.label.price).split('');

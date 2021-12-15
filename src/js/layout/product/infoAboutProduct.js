@@ -152,6 +152,9 @@ function onColorpickerListClick(event) {
 }
 function setProductDataToOrdering() {
   const orderingDataArray = localStorage.getItem('orderingData');
+  if (orderingDataArray.length === 0) {
+    return
+  }
   const orderingDataParsed = JSON.parse(orderingDataArray);
   const elementId = orderingDataParsed.findIndex(element => {
     element.label.id === parsedProductInfoData.id;
