@@ -55,8 +55,7 @@ export class Forms {
         formData.forEach(function (value, key) {
           object[key] = value;
         });
-        let json = JSON.stringify(object);
-        localStorage.setItem(`${this.nameData}`, json);
+        localStorage.setItem(`${this.nameData}`, object); //----------send this object
       };
     }
   }
