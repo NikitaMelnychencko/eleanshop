@@ -3,12 +3,19 @@ import updateBin from './updateBin.js';
 import { classBody } from './layout/static/footer.js';
 updateBin();
 
+import { Forms } from './components/forms';
+
+const formsForm = new Forms('fittingForm');
+const formsPage = new Forms('fittingPage');
+const formBrand = {
+  page: formsPage.insertForm(),
+  form: formsForm.insertForm(),
+};
+
 //======home======//
 import home from '../views/layouts/home.hbs';
 import { pageHeroSliderMarkup, heroSlider } from './layout/home/hero.js';
 import { pageShowroomSliderMarkup, showroomSlider } from './layout/home/ourShowRoom.js';
-import { formFittingInShowroom } from './layout/brand/formFittingInShowroom.js';
-import { formBrand } from './layout/brand/infoAboutBrand.js';
 
 import {
   pageStarClientsSliderMarkup,
@@ -31,7 +38,7 @@ export function homeRender() {
     aboutTheBrand_parsing,
   });
   refs.mainEL.innerHTML = homeMarkup;
-
+  formsForm;
   heroSlider();
   openContent();
   showroomSlider();
@@ -39,8 +46,8 @@ export function homeRender() {
   starClientsComments();
   instagramSlider();
   blockHelpRender();
-  formFittingInShowroom();
   openAboutTheBrand();
+  formsForm.init();
 }
 homeRender(); //========================================================call
 //=====brand========//
@@ -61,12 +68,11 @@ export function brandRender() {
     videoBrand,
   });
   refs.mainEL.innerHTML = contactPageMarkUp;
-  formFittingInShowroom();
   infoAboutBrand();
   brandPlayer();
   blockHelpRender();
+  formsForm.init();
 }
-
 
 //=====checkout========//
 import { ModalData, createPayment } from './layout/checkout/payment.js';
@@ -127,14 +133,16 @@ export function contactRender() {
   classBody();
   const contactPageMarkUp = contact_page({ formBrand, contactsMap, contactsContact });
   refs.mainEL.innerHTML = contactPageMarkUp;
-  formFittingInShowroom();
   blockHelpRender();
+  formsPage.init();
 }
 
-
 //=====delivery========//
+
+const formDelivery = new Forms('delivery');
+const formDeliveryMarkUp = formDelivery.insertForm();
+
 import deliveryMarkUp from '../views/layouts/delivery.hbs';
-import { formDeliveryMarkUp, formDelivery } from './layout/delivery/formsQuestion.js';
 import { deliveryThreeModal } from './layout/delivery/deliveryTypes.js';
 import {
   buttonsDelivery,
@@ -153,12 +161,10 @@ export function deliveryRender() {
     formDeliveryMarkUp,
   });
   refs.mainEL.innerHTML = deliveryPageMarkUp;
-  formDelivery();
   deliveryThreeModal();
   blockHelpRender();
+  formDelivery.init();
 }
-
-
 
 //=====fitting========//
 import sizeTable_markup from '../views/layouts/fitting.hbs';
@@ -180,10 +186,9 @@ export function fittingRender() {
   refs.mainEL.innerHTML = fittingMarkUp;
   openVideoSlider();
   //fittingVideoSliderPlayer();
-  formFittingInShowroom();
   blockHelpRender();
+  formsPage.init();
 }
-
 
 //=====product========//
 import {
@@ -250,11 +255,10 @@ export function productRender() {
   blockHelpRender();
 }
 
-
-
 //=====reviews========//
+const formReviews = new Forms('reviews');
+const formReviewsMarkUp = formReviews.insertForm();
 import reviews_page from '../views/layouts/reviews.hbs';
-import { formReviews, formReviewsMarkUp } from './layout/reviews/registrationFormForFitting.js';
 import {
   setVideoHbs,
   clientStar,
@@ -269,12 +273,10 @@ export function reviewsRender() {
   videosetSlickSettings();
   starClientsSlider();
   starClientsComments();
-  formReviews();
   videoSetPlayer();
   blockHelpRender();
+  formReviews.init();
 }
-
-
 
 //=====showroom========//
 import showroom_page from '../views/layouts/showroom.hbs';
@@ -283,10 +285,9 @@ export function showroomRender() {
   const showroomPageMarkUp = showroom_page({ formBrand, pageShowroomSliderMarkup });
   refs.mainEL.innerHTML = showroomPageMarkUp;
   showroomSlider();
-  formFittingInShowroom();
   blockHelpRender();
+  formsForm.init();
 }
-
 
 //=====blockHelp========//
 import blockHelp_blockHelpTemplate from '../views/components/blockHelp.hbs';
@@ -311,4 +312,3 @@ export function catalogRender() {
   blockHelpRender();
   // console.log(filterGalleryCatalogMarkup);
 }
-
