@@ -228,9 +228,8 @@
 
 .return__title--arrow {
   position: absolute;
-  background: url('./images/header-arrow.svg') no-repeat;
-  fill: black;
-  width: 8px;
+  background: url('../images/murkup_arow.svg') 0 0 /100% no-repeat;
+  width: 15px;
   height: 15px;
   font-size: 80%;
   margin: 0 10px;
@@ -251,7 +250,6 @@
 
 .return__title:hover .return__title--arrow {
   top: 10%;
-  background-size: cover;
   transform: rotate(90deg);
 }
 
