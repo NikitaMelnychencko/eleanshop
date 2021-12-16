@@ -4,7 +4,6 @@ import { classBody } from './layout/static/footer.js';
 updateBin();
 
 import { Forms } from './components/forms';
-
 const formsForm = new Forms('fittingForm');
 const formsPage = new Forms('fittingPage');
 const formBrand = {
@@ -141,7 +140,6 @@ export function contactRender() {
 
 const formDelivery = new Forms('delivery');
 const formDeliveryMarkUp = formDelivery.insertForm();
-
 import deliveryMarkUp from '../views/layouts/delivery.hbs';
 import { deliveryThreeModal } from './layout/delivery/deliveryTypes.js';
 import {

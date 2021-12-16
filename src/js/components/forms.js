@@ -1,5 +1,7 @@
 import formsMarkUp from '../../views/components/forms.hbs';
 import forms from '../json/forms.json';
+import { postUserData, userId } from '../data/firebase_Servise';
+import { nanoid } from 'nanoid';
 
 export class Forms {
   constructor(option) {
@@ -55,7 +57,7 @@ export class Forms {
         formData.forEach(function (value, key) {
           object[key] = value;
         });
-        localStorage.setItem(`${this.nameData}`, object); //----------send this object
+        postUserData(userId, `${this.nameData}`, nanoid(), object);
       };
     }
   }
