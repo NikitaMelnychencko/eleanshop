@@ -152,12 +152,36 @@ const newOnAgreeCheckBox = new onAgreeCheckBox();
 // Appointment localStorage on input mobile
 
 const arrAll = [...inputStorageDesktop, ...inputStorageMobile];
-const arrAllBtn = [...mobileSubmitBtn, ...desktopSubmitBtn];
+const arrAllBtn = [mobileSubmitBtn, desktopSubmitBtn];
 console.log(arrAllBtn);
-console.log(arrAll);
+// function clearlocalStorage() {
+
+// arrAllBtn.forEach(el => {
+//   console.log(el);
+//   el.addEventListener('submit', e => {
+//     e.preventDefault();
+//     console.log(e.target);
+//     let test = e.target;
+//     console.log(test);
+//     // localStorage.removeItem('user_subscribe');
+//     // if (e.target.id === 'name' || e.target.id === 'email') {
+//     //   localStorage.removeItem('name');
+//     //   localStorage.removeItem('email');
+//     // }
+//   });
+// });
+// }
+
+mobileSubmitBtn.addEventListener('submit' , e=>{
+      e.preventDefault();
+      console.log( e.target);
+
+})
+
 class inputStorage {
   constructor() {
     this.forInput();
+    // this.clearlocalStorage();
   }
 
   forInput() {
@@ -172,12 +196,18 @@ class inputStorage {
   }
 
   //   Remove localStorage on input
-  onSubmitBtnDesktop(evt) {
-    evt.preventDefault();
-    evt.currentTarget.reset();
-    localStorage.removeItem('user_subscribe');
-    localStorage.removeItem('name');
-    localStorage.removeItem('email');
+  clearlocalStorage() {
+    // arrAllBtn.forEach(el => {
+    //   el.addEventListener('submit', e => {
+    //     e.preventDefault();
+    //     console.log(e.target);
+    //     localStorage.removeItem('user_subscribe');
+    //     if (e.target.id === 'name' || e.target.id === 'email') {
+    //       localStorage.removeItem('name');
+    //       localStorage.removeItem('email');
+    //     }
+    //   });
+    // });
   }
 }
 const newInputStorage = new inputStorage();
