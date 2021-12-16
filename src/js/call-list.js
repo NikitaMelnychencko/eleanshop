@@ -20,8 +20,9 @@ import { cardsMarkup, openContent } from './layout/home/content.js';
 import { aboutTheBrand_parsing, openAboutTheBrand } from './layout/home/aboutTheBrand.js';
 export function homeRender() {
   updateBin();
-  classBody();
-  browserCheck()
+  const newClassBody = new classBody();
+
+  browserCheck();
   const homeMarkup = home({
     pageHeroSliderMarkup,
     cardsMarkup,
@@ -54,7 +55,7 @@ import {
 } from './layout/brand/infoAboutBrand.js';
 
 export function brandRender() {
-  classBody('footer-switch');
+  const newClassBody = new classBody('footer-switch');
   const contactPageMarkUp = brand_page({
     formBrand,
     brandOurAdvantages,
@@ -75,7 +76,8 @@ import { backdropMarkup } from './layout/checkout/thanksForOrdering.js';
 import payment_checkout from '../views/layouts/checkout.hbs';
 export function checkoutRender() {
   updateBin();
-  classBody();
+  const newClassBody = new classBody();
+
   const createCheckout = payment_checkout({ createPayment, ordering, backdropMarkup });
   refs.mainEL.innerHTML = createCheckout;
   //refs.mainEL.insertAdjacentHTML('beforeend', createCheckout);
@@ -124,7 +126,8 @@ import contact_page from '../views/layouts/contact.hbs';
 import { contactsMap, contactsContact } from './layout/contact/contact.js';
 
 export function contactRender() {
-  classBody();
+  const newClassBody = new classBody();
+
   const contactPageMarkUp = contact_page({ formBrand, contactsMap, contactsContact });
   refs.mainEL.innerHTML = contactPageMarkUp;
   formFittingInShowroom();
@@ -143,7 +146,8 @@ import {
 } from './layout/delivery/deliveryTypes.js';
 
 export function deliveryRender() {
-  classBody();
+  const newClassBody = new classBody();
+
   const deliveryPageMarkUp = deliveryMarkUp({
     buttonsDelivery,
     mainImageDelivery,
@@ -167,7 +171,8 @@ import {
   videoSlider_videoSliderCreate,
 } from './layout/fitting/videoSlider.js';
 export function fittingRender() {
-  classBody();
+  const newClassBody = new classBody();
+
   const fittingMarkUp = sizeTable_markup({
     sizeTable_tableCreate,
     videoSlider_videoSliderCreate,
@@ -198,7 +203,8 @@ import { preorderMark, setEventPreorder } from './layout/product/preorderModal.j
 import { tryOnModels, setEventTryOnModels } from './layout/product/tryOnModelsModal.js';
 
 export function productRender() {
-  classBody();
+  const newClassBody = new classBody();
+
   const objRecomendationsCategory = new RecomendationsCategory({
     data: cards,
   });
@@ -257,7 +263,8 @@ import {
 } from './layout/reviews/videoSet.js';
 
 export function reviewsRender() {
-  classBody();
+  const newClassBody = new classBody();
+
   const reviewsMarkUp = reviews_page({ setVideoHbs, clientStar, formReviewsMarkUp });
   refs.mainEL.innerHTML = reviewsMarkUp;
   videosetSlickSettings();
@@ -271,7 +278,8 @@ export function reviewsRender() {
 //=====showroom========//
 import showroom_page from '../views/layouts/showroom.hbs';
 export function showroomRender() {
-  classBody();
+  const newClassBody = new classBody();
+
   const showroomPageMarkUp = showroom_page({ formBrand, pageShowroomSliderMarkup });
   refs.mainEL.innerHTML = showroomPageMarkUp;
   showroomSlider();
@@ -293,7 +301,8 @@ import { filterListMakeup, openFilter } from './layout/сatalog/filter.js';
 import { catalogListMarkupF, openCategory } from './layout/сatalog/gallery.js';
 
 export function catalogRender() {
-  classBody();
+  const newClassBody = new classBody();
+
   const catalogListMarkup = catalogListMarkupF();
   const filterGalleryCatalogMarkup = catalogMarkUp({ filterListMakeup, catalogListMarkup });
   refs.mainEL.innerHTML = filterGalleryCatalogMarkup;

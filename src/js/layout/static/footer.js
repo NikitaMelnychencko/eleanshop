@@ -30,8 +30,6 @@ const {
 } = refs;
 
 checkBoxIcon.addEventListener('click', onAgreeCheckBox);
-mobileSubmitBtn.addEventListener('submit', onSubmitBtnMobile);
-desktopSubmitBtn.addEventListener('submit', onSubmitBtnDesktop);
 
 //=== smooth scrolling on  desktop
 
@@ -113,19 +111,28 @@ const dropdownMenu = new DropdownMenu();
 
 //==== Hiding the menu when switching to another block
 
-linkMenuFooterMobile.forEach(evt => {
-  evt.addEventListener('click', el => {
-    scrollTo(0, 700);
-    el.preventDefault();
-    const dropDown = document.querySelector('.js-dropdown-none');
-    if (el.target) {
-      const openMenu = document.querySelector('.open-menu');
-      dropDown.classList.remove('js-dropdown-none');
-      openMenu.classList.remove('open-menu');
-      window.location.href = el.target;
-    }
-  });
-});
+class menuFooter {
+  constructor() {
+    this.MenuFooterMobile();
+  }
+
+  MenuFooterMobile() {
+    linkMenuFooterMobile.forEach(evt => {
+      evt.addEventListener('click', el => {
+        scrollTo(0, 700);
+        el.preventDefault();
+        const dropDown = document.querySelector('.js-dropdown-none');
+        if (el.target) {
+          const openMenu = document.querySelector('.open-menu');
+          dropDown.classList.remove('js-dropdown-none');
+          openMenu.classList.remove('open-menu');
+          window.location.href = el.target;
+        }
+      });
+    });
+  }
+}
+const newMenuFooter = new menuFooter();
 
 // Activation deactivation checkbox
 function onAgreeCheckBox(evt) {
@@ -136,119 +143,124 @@ function onAgreeCheckBox(evt) {
 }
 
 // Appointment localStorage on input mobile
-inputStorageMobile.forEach(evt => {
-  evt.addEventListener('input', el => {
-    const subscribe = el.currentTarget.value;
-    if (subscribe) {
-      localStorage.setItem(idInputMobile, subscribe);
-    }
-  });
-});
 
-// Appointment localStorage on input desktop
-inputStorageDesktop.forEach(evt => {
-  const idInputDesktop = evt.id;
-  evt.addEventListener('input', el => {
-    const subscribe = el.currentTarget.value;
-    if (subscribe) {
-      localStorage.setItem(idInputDesktop, subscribe);
-    }
-  });
-});
+class inputStorage {
+  constructor() {
+    this.StorageMobile();
+    this.StorageDesktop();
+  }
 
-//   Remove localStorage on input mobile
-function onSubmitBtnMobile(evt) {
-  evt.preventDefault();
-  evt.currentTarget.reset();
-  localStorage.removeItem('user_subscribe');
+  StorageMobile() {
+    inputStorageMobile.forEach(evt => {
+      evt.addEventListener('input', el => {
+        const subscribe = el.currentTarget.value;
+        const idInputMobile = el.target.id;
+        if (subscribe) {
+          localStorage.setItem(idInputMobile, subscribe);
+        }
+      });
+    });
+  }
+  // Appointment localStorage on input desktop
+  StorageDesktop() {
+    inputStorageDesktop.forEach(evt => {
+      const idInputDesktop = evt.id;
+      evt.addEventListener('input', el => {
+        const subscribe = el.currentTarget.value;
+        if (subscribe) {
+          localStorage.setItem(idInputDesktop, subscribe);
+        }
+      });
+    });
+  }
+  //   Remove localStorage on input mobile
+  onSubmitBtnMobile(evt) {
+    evt.preventDefault();
+    evt.currentTarget.reset();
+    localStorage.removeItem('user_subscribe');
+  }
+
+  //   Remove localStorage on input desktop
+  onSubmitBtnDesktop(evt) {
+    evt.preventDefault();
+    evt.currentTarget.reset();
+    localStorage.removeItem('name');
+    localStorage.removeItem('email');
+  }
 }
-
-//   Remove localStorage on input desktop
-function onSubmitBtnDesktop(evt) {
-  evt.preventDefault();
-  evt.currentTarget.reset();
-  localStorage.removeItem('name');
-  localStorage.removeItem('email');
-}
+const newInputStorage = new inputStorage();
 
 //=== RENDER ===//
+const dataActionCollection = document.querySelectorAll('[data-atribute]');
 
-const dataActionCollectio = document.querySelectorAll('[data-atribute]');
+class renderIsFooter {
+  constructor() {
+    this.render();
+  }
+  render() {
+    dataActionCollection.forEach(evt => {
+      evt.addEventListener('click', el => {
+        const targetLink = el.target.dataset.atribute;
 
-dataActionCollectio.forEach(evt => {
-  evt.addEventListener('click', el => {
-    const targetLink = el.target.dataset.atribute;
-    //==== MobileRender ===//
+        //     //==== catalogRender ===//
+        if (
+          targetLink === 'autumn-winter' ||
+          targetLink === 'evening-sets' ||
+          targetLink === 'wedding-and-graduation' ||
+          targetLink === 'tux' ||
+          targetLink === 'costumes' ||
+          targetLink === 'pants' ||
+          targetLink === 'blouses'
+        ) {
+          return catalogRender();
+        }
+        //     //==== brandRender ===//
+        if (
+          targetLink === 'about-the-brand' ||
+          targetLink === 'about-founders' ||
+          targetLink === 'blog'
+        ) {
+          return brandRender();
+        }
+        //     //==== showroomRender ===//
+        if (targetLink === 'showroom') {
+          return showroomRender();
+        }
+        //     //==== deliveryRender ===//
+        if (targetLink === 'delivery' || targetLink === 'return' || targetLink === 'payment') {
+          return deliveryRender();
+        }
 
-    //==== catalogRender ===//
-    if (
-      targetLink === 'autumn-winter' ||
-      targetLink === 'evening-sets' ||
-      targetLink === 'wedding-and-graduation' ||
-      targetLink === 'tux' ||
-      targetLink === 'costumes' ||
-      targetLink === 'pants' ||
-      targetLink === 'blouses'
-    ) {
-      return catalogRender();
+        //     //==== formFittingInShowroom ===//
+        if (targetLink === 'fitting') {
+          return fittingRender();
+        }
+        //     //==== reviewsRender ===//
+        if (targetLink === 'reviews') {
+          return reviewsRender();
+        }
+
+        //     //==== ContactsRender ===//
+        if (targetLink === 'contacts') {
+          return contactRender();
+        }
+      });
+    });
+  }
+}
+const newFooter = new renderIsFooter();
+
+export class classBody {
+  constructor(value) {
+    this.value = value;
+    this.handValue();
+  }
+  handValue() {
+    const BodyClass = 'footer-switch';
+    if (BodyClass === this.value) {
+      document.body.classList.add(this.value);
+    } else {
+      document.body.classList.remove(BodyClass);
     }
-
-    //==== brandRender ===//
-    if (
-      targetLink === 'about-the-brand' ||
-      targetLink === 'about-founders' ||
-      targetLink === 'blog'
-    ) {
-      return brandRender();
-    }
-    //==== showroomRender ===//
-    if (targetLink === 'showroom') {
-      return showroomRender();
-    }
-
-    //==== deliveryRender ===//
-    if (targetLink === 'delivery' || targetLink === 'return' || targetLink === 'payment') {
-      return deliveryRender();
-    }
-
-    //==== showroomRender ===//
-    if (targetLink === 'showroom' || targetLink === 'showroom') {
-      return showroomRender();
-    }
-
-    //==== formFittingInShowroom ===//
-    if (targetLink === 'fitting') {
-      return fittingRender();
-    }
-
-    //==== reviewsRender ===//
-    if (targetLink === 'reviews') {
-      return reviewsRender();
-    }
-
-    //==== renderDesktop ===//
-
-    //==== DeliveryRender ===//
-    if (targetLink === 'delivery' || targetLink === 'payment' || targetLink === 'return') {
-      return deliveryRender();
-    }
-
-    //==== FittingRender ===//
-    if (targetLink === 'fitting') {
-      return fittingRender();
-    }
-    //==== ContactsRender ===//
-    if (targetLink === 'contacts') {
-      return contactRender();
-    }
-  });
-});
-
-export function classBody(value) {
-  const BodyClass = 'footer-switch';
-  if (BodyClass === value) {
-    document.body.classList.add(value);
-  } else {
-    document.body.classList.remove(BodyClass);
   }
 }
