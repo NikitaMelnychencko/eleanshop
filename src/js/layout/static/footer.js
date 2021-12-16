@@ -28,7 +28,9 @@ const {
   linkMenuFooterMobile,
   dropDownList,
 } = refs;
-
+checkBoxIcon.addEventListener('click', onAgreeCheckBox);
+mobileSubmitBtn.addEventListener('submit', onSubmitBtnMobile);
+desktopSubmitBtn.addEventListener('submit', onSubmitBtnDesktop);
 //=== smooth scrolling on  desktop
 
 desktop.forEach(evt => {
@@ -41,12 +43,12 @@ desktop.forEach(evt => {
 
 class FooterLocalStorage {
   constructor() {
-    this.onSubmitBtnDesktop();
     this.linkMenuFooterMobile();
     this.linkMenuFooterMobile();
     this.StorageMobile();
     this.StorageDesktop();
-    // this.onSubmitBtnMobile();
+    this.onSubmitBtnDesktop();
+    this.onSubmitBtnMobile();
     this.check();
   }
   //=== addEventListener Footer__Desktop on dataAction and LockalStorage===//
@@ -107,9 +109,9 @@ class FooterLocalStorage {
   // //   Remove localStorage on input desktop
   onSubmitBtnDesktop(evt) {
     evt.preventDefault();
-    //   evt.currentTarget.reset();
-    //   localStorage.removeItem('name');
-    //   localStorage.removeItem('email');
+    evt.currentTarget.reset();
+    localStorage.removeItem('name');
+    localStorage.removeItem('email');
   }
 
   check() {
