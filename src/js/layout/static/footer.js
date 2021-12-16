@@ -172,11 +172,12 @@ console.log(arrAllBtn);
 // });
 // }
 
-mobileSubmitBtn.addEventListener('submit' , e=>{
-      e.preventDefault();
-      console.log( e.target);
+mobileSubmitBtn.addEventListener('submit', onSubmit);
 
-})
+function onSubmit(evt) {
+  e.preventDefault();
+  console.log(e.target);
+}
 
 class inputStorage {
   constructor() {

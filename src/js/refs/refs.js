@@ -19,8 +19,8 @@ export default {
   dropDownList: document.querySelector('.dropdown-content'),
   linkMenuFooterDesktop: document.querySelectorAll('.footer__desktop-list-link'),
   linkMenuFooterMobile: document.querySelectorAll('.footer__mobile-submenu'),
-  mobileSubmitBtn: document.querySelector('.footer__mobile-subscribe-button'),
-  desktopSubmitBtn: document.querySelector('.footer__desktop-subscribe-button'),
+  mobileSubmitBtn: document.querySelector('.footer__mobile-form'),
+  desktopSubmitBtn: document.querySelector('.footer__desktop-form'),
   desktop: document.querySelectorAll('.footer__desktop-list'),
 
   // ----- Container ------
