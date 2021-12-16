@@ -28,7 +28,6 @@ const {
   linkMenuFooterMobile,
   dropDownList,
 } = refs;
-console.log(dropDown);
 
 checkBoxIcon.addEventListener('click', onAgreeCheckBox);
 
@@ -194,7 +193,6 @@ const newInputStorage = new inputStorage();
 //=== RENDER ===//
 const dataActionCollection = document.querySelectorAll('[data-atribute]');
 
-<<<<<<< Updated upstream
 class renderIsFooter {
   constructor() {
     this.render();
@@ -203,55 +201,6 @@ class renderIsFooter {
     dataActionCollection.forEach(evt => {
       evt.addEventListener('click', el => {
         const targetLink = el.target.dataset.atribute;
-=======
-const dataActionCollectio = document.querySelectorAll('[data-atribute]');
-
-dataActionCollectio.forEach(evt => {
-  evt.addEventListener('click', el => {
-    const targetLink = el.target.dataset.atribute;
-    //==== MobileRender ===//
-
-    //==== catalogRender ===//
-    if (
-      targetLink === 'autumn-winter' ||
-      targetLink === 'evening-sets' ||
-      targetLink === 'wedding-and-graduation' ||
-      targetLink === 'tux' ||
-      targetLink === 'costumes' ||
-      targetLink === 'pants' ||
-      targetLink === 'blouses'
-    ) {
-      return catalogRender();
-    }
-
-    //==== brandRender ===//
-    if (
-      targetLink === 'about-the-brand' ||
-      targetLink === 'about-founders' ||
-      targetLink === 'blog'
-    ) {
-      return brandRender();
-    }
-    //==== showroomRender ===//
-    if (targetLink === 'showroom') {
-      return showroomRender();
-    }
-
-    //==== deliveryRender ===//
-    if (targetLink === 'delivery' || targetLink === 'return' || targetLink === 'payment') {
-      return deliveryRender();
-    }
-
-    //==== showroomRender ===//
-    if (targetLink === 'showroom' || targetLink === 'showroom') {
-      return showroomRender();
-    }
-
-    //==== formFittingInShowroom ===//
-    if (targetLink === 'fitting') {
-      return fittingRender();
-    }
->>>>>>> Stashed changes
 
         //     //==== catalogRender ===//
         if (
