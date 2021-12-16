@@ -197,19 +197,19 @@ class inputStorage {
   }
 
   //   Remove localStorage on input
-  clearlocalStorage() {
-    // arrAllBtn.forEach(el => {
-    //   el.addEventListener('submit', e => {
-    //     e.preventDefault();
-    //     console.log(e.target);
-    //     localStorage.removeItem('user_subscribe');
-    //     if (e.target.id === 'name' || e.target.id === 'email') {
-    //       localStorage.removeItem('name');
-    //       localStorage.removeItem('email');
-    //     }
-    //   });
-    // });
-  }
+  // clearlocalStorage() {
+  // arrAllBtn.forEach(el => {
+  //   el.addEventListener('submit', e => {
+  //     e.preventDefault();
+  //     console.log(e.target);
+  //     localStorage.removeItem('user_subscribe');
+  //     if (e.target.id === 'name' || e.target.id === 'email') {
+  //       localStorage.removeItem('name');
+  //       localStorage.removeItem('email');
+  //     }
+  //   });
+  // });
+  // }
 }
 const newInputStorage = new inputStorage();
 
