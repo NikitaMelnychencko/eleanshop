@@ -4,7 +4,6 @@ import refs from '../../refs/refs.js';
 import '../../../images/img/white-suit.jpg';
 import '../../../images/img/red-suit.jpg';
 import promocodes from '../../json/promocode.json';
-import orderingInsertion from '../../json/orderinginsertion.json';
 
 // localStorage.setItem('orderingData', JSON.stringify(orderingInsertion));
 const savedData = localStorage.getItem('orderingData');

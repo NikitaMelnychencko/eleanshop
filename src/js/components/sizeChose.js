@@ -1,6 +1,9 @@
 import createMarkup from '../../views/components/sizeChose.hbs';
 import Backdrop from '../components/backdrop.js';
 import refs from '../refs/refs';
+
+
+
 function sizeListener() {
   const btnSize = document.querySelector('.size-chose__size-list');
   btnSize.addEventListener('click', value => {
@@ -11,22 +14,22 @@ function sizeListener() {
 }
 //function for creating dice of clothing sizes
 function createBtn(json) {
-  const Array = json.size
-    //sort sizes in order
-    .sort((a, b) => Number(Object.keys(a)) - Number(Object.keys(b)))
-    //create an array of dice sizes that are and are not
+  const incomeArray = json.productAviable[3].aviableSize
+  const sizeArray = ["40", "42", "44", "46", "48", "50"]
+
+  const newArray = [];
+  sizeArray.sort((a, b) => Number(a) - Number(b))
     .map(value => {
-      const array = [];
-      if (Object.values(value)[0]) {
-        array.push(
+      if (incomeArray.includes(value)) {
+        newArray.push(
           `<button class="size-chose__size-list-btn" type="button">${
-            Object.keys(value)[0]
+            value
           }</button>`,
         );
       } else {
-        array.push(
+        newArray.push(
           `<button disabled class="size-chose__size-list-btn size-chose__disabled" type="button">${
-            Object.keys(value)[0]
+            value
           }</button>`,
         );
       }
@@ -34,9 +37,8 @@ function createBtn(json) {
         save(`sizeClose`, value);
         const backdrop = new Backdrop().closeModalForm();
       }
-      return array;
     });
-  return Array;
+  return newArray;
 }
 //function that returns a string with the size on the card that you selected
 function sendingValue(value) {

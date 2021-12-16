@@ -54,19 +54,23 @@
     border-style: none;
     border-radius: 0;
     cursor: pointer;
+    color: $size-item-border-color;
     transition: background-color $time-cubic;
-    border: 1px solid $secondary-text-color;
+    border: 1px solid $size-item-border-color;
 
     &:hover,
     &:focus {
       background-color: $secondary-text-color;
       color: $selection-text-color;
+      border-color: $secondary-text-color;
     }
   }
   &__disabled {
-    cursor: not-allowed;
+    pointer-events: none;
     opacity: 0.6;
     position: relative;
+    border-color: $secondary-border-color;
+    color: $secondary-border-color;
 
     &::before {
       position: absolute;
@@ -76,7 +80,7 @@
       height: 69px;
       width: 1px;
 
-      background: $secondary-text-color;
+      background: $secondary-border-color;
 
       opacity: 0.6;
       transform: rotateZ(45deg);

@@ -87,7 +87,6 @@
   width: 50px;
   height: 50px;
 
-  border: 1px solid $size-item-border-color;
   color: $size-item-border-color;
 }
 //!----------------------------------------------------end of size list
@@ -212,7 +211,7 @@
   background-image: url('../images/circle-white.svg'), url('../images/circle-red.svg');
 }
 
-.button__colorpicker--grey {
+.button__colorpicker--white {
   background-image: url('../images/circle-white.svg'), url('../images/circle-grey.svg');
 }
 

@@ -1,16 +1,14 @@
-// have to clear string #2 after getting data from Local Storage
 import productInfo from '../../../js/json/product/productInfo.json';
+import productTEST from '../../../js/json/product/productTEST.json';
 import productTemplate from '../../../views/partials/product/infoAboutProduct.hbs';
 window.jQuery = window.$ = require('jquery');
 require('../../slick/slick.min');
-//* way to get a function from Andrew to render a size grid (don't clear)
-// import sizeChose from '../fitting/sizeChose.js';
-// const { createBtn } = sizeChose;
 
-// have to clear string #12 after getting data from Local Storage (data from Ira Maksimova)
-// localStorage.setItem('productInfoData', JSON.stringify(productInfo));
-let savedProductInfoData = localStorage.getItem('productInfoData');
-let parsedProductInfoData = JSON.parse(savedProductInfoData);
+import sizeChose from '../../components/sizeChose';
+const { createBtn } = sizeChose;
+
+
+let productInfoData = JSON.parse(localStorage.getItem('productInfoData'));
 //! ---------------------------------------------------RENDERING A SECTION
 
 export function setProductSlider() {
@@ -41,24 +39,22 @@ export function setProductSlider() {
 }
 
 export function createFullMarkup() {
-  savedProductInfoData = localStorage.getItem('productInfoData');
-  parsedProductInfoData = JSON.parse(savedProductInfoData);
+  productInfoData = JSON.parse(localStorage.getItem('productInfoData'));
 
-  return productTemplate({ parsedProductInfoData });
-  //* way to get a function to get size grid (don't clear)
-  // const btn = createBtn(parsedProductInfoData);
-  // return productTemplate({parsedProductInfoData, btn});
+  //* TEST************
+  const btn = createBtn(productTEST);
+  return productTemplate({productTEST, btn});
 }
 
 //! ---------------------------------------------------Add to favorites
 function checkIsProductInFavorites() {
-  const addToFavoritesbuttonEl = document.querySelector('.product__name-wrapper .button-add-likes');
+  const favBtn = document.querySelector('.product__name-wrapper .button-add-likes');
   const favoriteProduct = localStorage.getItem('favorites');
   const parsedFavoriteDate = JSON.parse(favoriteProduct);
   if (parsedFavoriteDate != null) {
     parsedFavoriteDate.fav.forEach(el => {
-      if (el.id === parsedProductInfoData.id) {
-        addToFavoritesbuttonEl.classList.add('active');
+      if (el.id === productInfoData.id) {
+        favBtn.classList.add('active');
       }
     });
   }
@@ -79,15 +75,15 @@ function insertIntoLSFavorite(id) {
     const isColorChose = localStorage.getItem('productColor');
 
     const elem = {
-      id: parsedProductInfoData.id,
-      name: parsedProductInfoData.name,
+      id: productInfoData.id,
+      name: productInfoData.name,
       image: {
-        srcset: `${parsedProductInfoData.image[0].imageMobile} 1x, ${parsedProductInfoData.image[0].imageMobileHigherResolution} 2x`,
-        'srcset-mobile': `${parsedProductInfoData.image[0].imageMobile} 1x, ${parsedProductInfoData.image[0].imageMobileHigherResolution} 2x`,
-        src: parsedProductInfoData.image[0].imageMobile,
-        alt: parsedProductInfoData.image[0].imageDescriprion,
+        srcset: `${productInfoData.image[0].imageMobile} 1x, ${productInfoData.image[0].imageMobileHigherResolution} 2x`,
+        'srcset-mobile': `${productInfoData.image[0].imageMobile} 1x, ${productInfoData.image[0].imageMobileHigherResolution} 2x`,
+        src: productInfoData.image[0].imageMobile,
+        alt: productInfoData.image[0].imageDescriprion,
       },
-      price: parsedProductInfoData.productPrice,
+      price: productInfoData.productPrice,
       // have to get size from size grid from Andrew's function
       size: '46',
       description: '',
@@ -105,7 +101,7 @@ function removeFromFavorite(id) {
   localStorage.setItem('favorites', JSON.stringify(ls));
 }
 function onAddToFavoritesClick(event) {
-  const id = parsedProductInfoData.id;
+  const id = productInfoData.id;
   if (event.currentTarget.classList.contains('active')) {
     removeFromFavorite(id);
   } else {
@@ -138,7 +134,7 @@ function fixateCurrentClass(buttonArray, productColor) {
     }
   }
 }
-function onColorpickerListClick(event) {
+function onColorListClick(event) {
   const colorpickerButton = event.target;
   const isColorpickerButton = colorpickerButton.classList.contains('button__colorpicker');
 
@@ -157,16 +153,16 @@ function setProductDataToOrdering() {
   }
   const orderingDataParsed = JSON.parse(orderingDataArray);
   const elementId = orderingDataParsed.findIndex(element => {
-    element.label.id === parsedProductInfoData.id;
+    element.label.id === productInfoData.id;
   });
   if (elementId === -1) {
     let orderingDataobj = { label: {} };
-    orderingDataobj.label.id = parsedProductInfoData.id;
-    orderingDataobj.label.name = parsedProductInfoData.productName;
+    orderingDataobj.label.id = productInfoData.id;
+    orderingDataobj.label.name = productInfoData.productName;
 
-    orderingDataobj.label.img = parsedProductInfoData.img.src;
-    // orderingDataobj.label.img2 = parsedProductInfoData.image[0].imageMobileHigherResolution;
-    orderingDataobj.label.price = parsedProductInfoData.productPrice;
+    orderingDataobj.label.img = productInfoData.img.src;
+    // orderingDataobj.label.img2 = productInfoData.image[0].imageMobileHigherResolution;
+    orderingDataobj.label.price = productInfoData.productPrice;
     // have to get size from size grid from Andrew's function
     orderingDataobj.label.sizeSelected = '46';
     orderingDataobj.label.colorSelected = localStorage.getItem('productColor');
@@ -185,7 +181,7 @@ function toggleIsOpenClass(menu) {
 function transformPlusToMinus(button) {
   button.classList.toggle('button__minus');
 }
-function onCharacteristicsListClick(event) {
+function onCharListClick(event) {
   const paramsMenuEl = document.querySelector('[data-params-menu]');
   const aditionalMenuEl = document.querySelector('[data-aditional-menu]');
   const buttonParamsEl = document.querySelector('.button__plus--params');
@@ -202,14 +198,14 @@ function onCharacteristicsListClick(event) {
   }
 }
 //!----------------------------------------------------Determine Size
-function onDetermineSizeButtonElClick() {
+function onNotYourSizeBtnClick() {
   const preorderBackdropEl = document.querySelector('.preoder__backdrop');
   preorderBackdropEl.classList.add('is-visible');
 }
 //!----------------------------------------------------Is size in a stock?
-function onIsSizeInStockButtonElClick() {}
+function onDefineSizeBtnClick() {}
 //!----------------------------------------------------Fitting
-function onFittingButtonElClick() {
+function onFittingBtnClick() {
   const tryOnBackdropEl = document.querySelector('.try-on__backdrop');
   tryOnBackdropEl.classList.add('is-visible');
 }
@@ -224,22 +220,24 @@ function fixateDataFromLocalStorage() {
 
 //!----------------------------------------------------LISTENERS
 function createAllListeners(buy) {
-  const characteristicListEl = document.querySelector('.product__characteristics');
-  const colorpickerListEl = document.querySelector('.colorpicker__list');
-  const purchaseBuyButtonEl = document.querySelector('.button__purchase--buy');
-  const addToFavoritesButtonEl = document.querySelector('.product__name-wrapper .button-add-likes');
-  const determineSizeButtonEl = document.querySelector('.button__size-option--available-size');
-  const isSizeInStockButtonEl = document.querySelector('.button__size-option--find-size');
-  const fittingButtonEl = document.querySelector('.button__purchase--fit');
+  const charList = document.querySelector('.product__characteristics');
+  const colorList = document.querySelector('.colorpicker__list');
+  const buyBtn = document.querySelector('.button__purchase--buy');
+  const favBtn = document.querySelector('.product__name-wrapper .button-add-likes');
+  const notYourSizeBtn = document.querySelector('.button__size-option--available-size');
+  const defineSizeBtn = document.querySelector('.button__size-option--find-size');
+  const fittingBtn = document.querySelector('.button__purchase--fit');
 
-  determineSizeButtonEl.addEventListener('click', onDetermineSizeButtonElClick);
-  isSizeInStockButtonEl.addEventListener('click', onIsSizeInStockButtonElClick);
-  addToFavoritesButtonEl.addEventListener('click', onAddToFavoritesClick);
-  fittingButtonEl.addEventListener('click', onFittingButtonElClick);
-  colorpickerListEl.addEventListener('click', onColorpickerListClick);
-  characteristicListEl.addEventListener('click', onCharacteristicsListClick);
-  purchaseBuyButtonEl.addEventListener('click', () => {
-    buy(parsedProductInfoData.productName);
+  notYourSizeBtn.addEventListener('click', onNotYourSizeBtnClick);
+  defineSizeBtn.addEventListener('click', onDefineSizeBtnClick);
+  favBtn.addEventListener('click', onAddToFavoritesClick);
+  fittingBtn.addEventListener('click', onFittingBtnClick);
+  colorList.addEventListener('click', onColorListClick);
+  charList.addEventListener('click', onCharListClick);
+
+
+  buyBtn.addEventListener('click', () => {
+    buy(productInfoData.productName);
     setProductDataToOrdering();
   });
 }

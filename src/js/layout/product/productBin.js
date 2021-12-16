@@ -1,11 +1,10 @@
 import markupBin from '../../../views/partials/product/productBin.hbs';
-import dataBin from '../../json/orderinginsertion.json';
 import { checkoutRender } from '../../call-list.js';
 import { scrollTo } from '../../components/scrollTo';
 
 export default class ProductBin {
-  constructor({ root, typeInsert, data = dataBin }) {
-    this.dataBin = data;
+  constructor({ root, typeInsert, data}) {
+    this.data = data;
     this._getData();
     if (root) {
       this.root = document.querySelector(root);
