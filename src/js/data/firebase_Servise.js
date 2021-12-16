@@ -57,8 +57,8 @@ window.onload = function () {
   AuthState(user);
 };
 
-//getId
-export async function getIdUser(nextFolder) {
+//getSection
+export async function getSection(nextFolder) {
   return await get(child(dbRef, 'database/' + nextFolder))
     .then(snapshot => {
       if (snapshot.exists()) {

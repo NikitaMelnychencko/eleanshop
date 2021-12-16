@@ -1,10 +1,11 @@
 import './sass/main.scss';
-import './js/data/firebase_Servise';
 import './js/importImages/importImages.js';
 import './js/call-list.js';
 import './js/updateBin.js';
 //=========layout===============
-
+//firebase
+import './js/data/firebase_Servise';
+import './js/data/fetch_section';
 //main
 import './js/layout/home/hero.js';
 import './js/layout/home/content.js';
@@ -79,5 +80,3 @@ import './js/components/blockHelp/blockHelp';
 import './js/layout/static/header.js';
 import './js/layout/static/footer.js';
 import './js/layout/static/preloader/preloader_bar.js';
-//update viewport
-import './js/updateViewport/updateViewport';

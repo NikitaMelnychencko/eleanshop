@@ -67,7 +67,6 @@ export function brandRender() {
   blockHelpRender();
 }
 
-
 //=====checkout========//
 import { ModalData, createPayment } from './layout/checkout/payment.js';
 import { ordering, openOrderingFunction } from './layout/checkout/ordering.js';
@@ -131,7 +130,6 @@ export function contactRender() {
   blockHelpRender();
 }
 
-
 //=====delivery========//
 import deliveryMarkUp from '../views/layouts/delivery.hbs';
 import { formDeliveryMarkUp, formDelivery } from './layout/delivery/formsQuestion.js';
@@ -158,8 +156,6 @@ export function deliveryRender() {
   blockHelpRender();
 }
 
-
-
 //=====fitting========//
 import sizeTable_markup from '../views/layouts/fitting.hbs';
 import { sizeTable_tableCreate } from './layout/fitting/sizeTable.js';
@@ -183,7 +179,6 @@ export function fittingRender() {
   formFittingInShowroom();
   blockHelpRender();
 }
-
 
 //=====product========//
 import {
@@ -250,8 +245,6 @@ export function productRender() {
   blockHelpRender();
 }
 
-
-
 //=====reviews========//
 import reviews_page from '../views/layouts/reviews.hbs';
 import { formReviews, formReviewsMarkUp } from './layout/reviews/registrationFormForFitting.js';
@@ -274,8 +267,6 @@ export function reviewsRender() {
   blockHelpRender();
 }
 
-
-
 //=====showroom========//
 import showroom_page from '../views/layouts/showroom.hbs';
 export function showroomRender() {
@@ -286,7 +277,6 @@ export function showroomRender() {
   formFittingInShowroom();
   blockHelpRender();
 }
-
 
 //=====blockHelp========//
 import blockHelp_blockHelpTemplate from '../views/components/blockHelp.hbs';
@@ -311,4 +301,3 @@ export function catalogRender() {
   blockHelpRender();
   // console.log(filterGalleryCatalogMarkup);
 }
-
