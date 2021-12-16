@@ -29,8 +29,6 @@ const {
   dropDownList,
 } = refs;
 
-checkBoxIcon.addEventListener('click', onAgreeCheckBox);
-
 //=== smooth scrolling on  desktop
 
 desktop.forEach(evt => {
@@ -135,12 +133,21 @@ class menuFooter {
 const newMenuFooter = new menuFooter();
 
 // Activation deactivation checkbox
-function onAgreeCheckBox(evt) {
-  const iconCheck = evt.currentTarget;
-  if (iconCheck) {
-    agreeActive.classList.toggle('js-show-and-remove');
+
+class onAgreeCheckBox {
+  constructor() {
+    this.check();
+  }
+  check() {
+    checkBoxIcon.addEventListener('click', el => {
+      const iconCheck = el.currentTarget;
+      if (iconCheck) {
+        agreeActive.classList.toggle('js-show-and-remove');
+      }
+    });
   }
 }
+const newOnAgreeCheckBox = new onAgreeCheckBox();
 
 // Appointment localStorage on input mobile
 
