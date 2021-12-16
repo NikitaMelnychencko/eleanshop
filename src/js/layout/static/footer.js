@@ -28,9 +28,7 @@ const {
   linkMenuFooterMobile,
   dropDownList,
 } = refs;
-checkBoxIcon.addEventListener('click', onAgreeCheckBox);
-mobileSubmitBtn.addEventListener('submit', onSubmitBtnMobile);
-desktopSubmitBtn.addEventListener('submit', onSubmitBtnDesktop);
+
 //=== smooth scrolling on  desktop
 
 desktop.forEach(evt => {
@@ -45,11 +43,6 @@ class FooterLocalStorage {
   constructor() {
     this.linkMenuFooterMobile();
     this.linkMenuFooterMobile();
-    this.StorageMobile();
-    this.StorageDesktop();
-    this.onSubmitBtnDesktop();
-    this.onSubmitBtnMobile();
-    this.check();
   }
   //=== addEventListener Footer__Desktop on dataAction and LockalStorage===//
   linkMenuFooterDesktop() {
@@ -72,54 +65,6 @@ class FooterLocalStorage {
           localStorage.setItem('content', selected);
         }
       });
-    });
-  }
-  // Appointment localStorage on input mobile
-
-  StorageMobile() {
-    inputStorageMobile.forEach(evt => {
-      evt.addEventListener('input', el => {
-        const subscribe = el.currentTarget.value;
-        const idInputMobile = el.target.id;
-        if (subscribe) {
-          localStorage.setItem(idInputMobile, subscribe);
-        }
-      });
-    });
-  }
-  // // Appointment localStorage on input desktop
-  StorageDesktop() {
-    inputStorageDesktop.forEach(evt => {
-      const idInputDesktop = evt.id;
-      evt.addEventListener('input', el => {
-        const subscribe = el.currentTarget.value;
-        if (subscribe) {
-          localStorage.setItem(idInputDesktop, subscribe);
-        }
-      });
-    });
-  }
-  // //   Remove localStorage on input mobile
-  onSubmitBtnMobile(evt) {
-    evt.preventDefault();
-    evt.currentTarget.reset();
-    localStorage.removeItem('user_subscribe');
-  }
-
-  // //   Remove localStorage on input desktop
-  onSubmitBtnDesktop(evt) {
-    evt.preventDefault();
-    evt.currentTarget.reset();
-    localStorage.removeItem('name');
-    localStorage.removeItem('email');
-  }
-
-  check() {
-    checkBoxIcon.addEventListener('click', el => {
-      const iconCheck = el.currentTarget;
-      if (iconCheck) {
-        agreeActive.classList.toggle('js-show-and-remove');
-      }
     });
   }
 }
@@ -188,6 +133,54 @@ class menuFooter {
 const newMenuFooter = new menuFooter();
 
 // Activation deactivation checkbox
+
+class onAgreeCheckBox {
+  constructor() {
+    this.check();
+  }
+  check() {
+    checkBoxIcon.addEventListener('click', el => {
+      const iconCheck = el.currentTarget;
+      if (iconCheck) {
+        agreeActive.classList.toggle('js-show-and-remove');
+      }
+    });
+  }
+}
+const newOnAgreeCheckBox = new onAgreeCheckBox();
+
+// Appointment localStorage on input mobile
+
+const arrAll = [...inputStorageDesktop, ...inputStorageMobile];
+const arrAllBtn = [...mobileSubmitBtn, ...desktopSubmitBtn];
+console.log(arrAllBtn);
+console.log(arrAll);
+class inputStorage {
+  constructor() {
+    this.forInput();
+  }
+
+  forInput() {
+    arrAll.forEach(el => {
+      el.addEventListener('input', e => {
+        const subscribe = e.currentTarget.value;
+        let idInputValue;
+        idInputValue = e.target.id;
+        localStorage.setItem(idInputValue, subscribe);
+      });
+    });
+  }
+
+  //   Remove localStorage on input
+  onSubmitBtnDesktop(evt) {
+    evt.preventDefault();
+    evt.currentTarget.reset();
+    localStorage.removeItem('user_subscribe');
+    localStorage.removeItem('name');
+    localStorage.removeItem('email');
+  }
+}
+const newInputStorage = new inputStorage();
 
 //=== RENDER ===//
 const dataActionCollection = document.querySelectorAll('[data-atribute]');
