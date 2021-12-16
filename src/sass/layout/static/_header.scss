@@ -447,10 +447,9 @@
     transition-property: color;
     transition: $time-cubic;
 
-    &:hover,
-    &:focus {
-      color: $selection-text-color;
-    }
+      &:hover {
+        color: $selection-text-color;
+      }
   }
 }
 
