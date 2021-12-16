@@ -201,15 +201,18 @@
   }
 }
 // * modal inner*
-.return .return__title {
-  position: relative;
-  margin: 0;
-  padding: 20px;
-}
+// .return .return__title {
+//   position: relative;
+//   margin: 0;
+//   padding: 20px;
+// }
 .return {
   padding: 7px;
 }
 .return__title {
+  position: relative;
+  margin: 0 auto;
+  padding: 20px;
   font-size: 26px;
   cursor: pointer;
   box-shadow: 0 3px 10px rgb(0, 0, 0, 0.15);
