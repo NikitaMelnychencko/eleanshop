@@ -338,7 +338,7 @@
               </ul>
           </ul>
           <h2 class="footer__mobile-title-subscribe border">ПОДПИСАТЬСЯ НА НОВОСТИ</h2>
-          <form action="footer__mobileform" id="footer-form-desktop" method="GET" class="footer__mobile-form">
+          <form action="footer__mobileform" id="footer-form-mobile" method="GET" class="footer__mobile-form">
             <label for="user_subscribe" class="footer__mobile-form-subscribe">
             </label>
             <div class="footer__mobile-form-container">
@@ -487,7 +487,7 @@
             </li>
           </ul>
         </div>
-        <form name="signup_form" method="GET" autocomplete="off" class="footer__desktop-form">
+        <form name="signup_form" method="GET" autocomplete="off" class="footer__desktop-form" id="footer-form-desktop">
           <label for="name" class="form__user"></label>
           <input type="text" name="footer_user-name" id="name" placeholder="ИМЯ"
             class="footer__desktop-form-input js-footer-input" required />
@@ -511,7 +511,7 @@
             </p>
           </div>
           <div class="footer__desktop-form-container">
-            <button type="submit" class="footer__desktop-subscribe-button" id="desktop-button">
+            <button type="submit" class="footer__desktop-subscribe-button" >
               <span class="footer__input-text">ПОДПИСАТЬСЯ</span>
               <svg class="footer__desktop-icon-subscribe">
                 <use href="./images/exampl.svg#icon-arrow-pc">

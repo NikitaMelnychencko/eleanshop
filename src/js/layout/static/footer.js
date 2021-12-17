@@ -113,7 +113,6 @@ class menuFooter {
   constructor() {
     this.MenuFooterMobile();
   }
-
   MenuFooterMobile() {
     linkMenuFooterMobile.forEach(evt => {
       evt.addEventListener('click', el => {
@@ -153,36 +152,11 @@ const newOnAgreeCheckBox = new onAgreeCheckBox();
 
 const arrAll = [...inputStorageDesktop, ...inputStorageMobile];
 const arrAllBtn = [mobileSubmitBtn, desktopSubmitBtn];
-console.log(arrAllBtn);
-// function clearlocalStorage() {
-
-// arrAllBtn.forEach(el => {
-//   console.log(el);
-//   el.addEventListener('submit', e => {
-//     e.preventDefault();
-//     console.log(e.target);
-//     let test = e.target;
-//     console.log(test);
-//     // localStorage.removeItem('user_subscribe');
-//     // if (e.target.id === 'name' || e.target.id === 'email') {
-//     //   localStorage.removeItem('name');
-//     //   localStorage.removeItem('email');
-//     // }
-//   });
-// });
-// }
-
-mobileSubmitBtn.addEventListener('submit', onSubmit);
-
-function onSubmit(evt) {
-  e.preventDefault();
-  console.log(e.target);
-}
 
 class inputStorage {
-  constructor() {
+  constructor(mobileSubmitBtn) {
     this.forInput();
-    // this.clearlocalStorage();
+    this.clearFormSubmit();
   }
 
   forInput() {
@@ -195,21 +169,19 @@ class inputStorage {
       });
     });
   }
-
   //   Remove localStorage on input
-  // clearlocalStorage() {
-  // arrAllBtn.forEach(el => {
-  //   el.addEventListener('submit', e => {
-  //     e.preventDefault();
-  //     console.log(e.target);
-  //     localStorage.removeItem('user_subscribe');
-  //     if (e.target.id === 'name' || e.target.id === 'email') {
-  //       localStorage.removeItem('name');
-  //       localStorage.removeItem('email');
-  //     }
-  //   });
-  // });
-  // }
+
+  clearFormSubmit() {
+    arrAllBtn.forEach(el => {
+      el.addEventListener('submit', e => {
+        e.preventDefault();
+        e.currentTarget.reset();
+        localStorage.removeItem('name');
+        localStorage.removeItem('email');
+        localStorage.removeItem('user_subscribe');
+      });
+    });
+  }
 }
 const newInputStorage = new inputStorage();
 
