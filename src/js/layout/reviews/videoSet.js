@@ -86,7 +86,7 @@ export function videosetSlickSettings() {
 //   });
 // }
 
-export class videoSetPlayer {
+export class VideoSetPlayer {
   constructor() {
     this.reviewsRefs = {
       videoset: document.querySelector('.videoset'),
@@ -98,6 +98,8 @@ export class videoSetPlayer {
     this.clickListener();
   }
   clickListener() {
-    this.reviewsRefs.videoset.onclick;
+    this.reviewsRefs.videoset.onclick = e => {
+      console.dir(e);
+    };
   }
 }
