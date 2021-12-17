@@ -101,7 +101,8 @@
     z-index: -1;
     background-image: url('../images/elean47390.jpg');
     @media screen and (min-width: 2000px) {
-      background-image: url('../images/elean47390@2x.jpg');
+      background-image: linear-gradient(to right, $background-fitting, rgba(0, 0, 0, 0) 20%),
+        url('../images/elean47390@2x.jpg');
     }
   }
 
@@ -116,7 +117,7 @@
     left: 0;
     top: 0;
     z-index: -2;
-    background-image: url('../images/fon.jpg'), linear-gradient();
+    background-image: url('../images/fon.jpg');
   }
 
   .fitting__size-table {
