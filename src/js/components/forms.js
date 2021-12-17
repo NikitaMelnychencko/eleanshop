@@ -44,7 +44,6 @@ export class Forms {
 
   querySelector(option) {
     this.box = document.querySelector(`.${option}__form`);
-    console.log(this.box);
   }
 
   listenerSubmit() {
