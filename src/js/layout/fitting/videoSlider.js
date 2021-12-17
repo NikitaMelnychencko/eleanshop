@@ -36,69 +36,6 @@ export function openVideoSlider() {
           },
         },
       ],
-      //   dots: true,
-      //   slidesToShow: 3,
-      //   slidesToScroll: 3,
-      //   variableWidth: true,
-      //   autoPlaySpeed: 2000,
-      //   pauseFocus: true,
-      //   pauseHover: true,
-      //   pauseOnDotsHover: true,
-      //   swipe: true,
-
-      //   //  mobileFirst: true,
-      //   responsive: [
-      //     {
-      //       breakpoint: 320,
-      //       settings: {
-      //         slidesToShow: 1,
-      //         slidesToScroll: 1,
-      //         swipe: true,
-      //       },
-      //     },
-      //   ],
-    });
-  });
-}
-
-export function fittingVideoSliderPlayer() {
-  const fittingRefs = {
-    play: document.querySelectorAll('.video-fitting-svg'),
-    video: document.querySelectorAll('.video-fitting__image'),
-    fullscreen: document.querySelectorAll('.video-fitting-fullscreen'),
-    link: document.querySelector('.slider'),
-  };
-
-  fittingRefs.play.forEach((element, index) => {
-    element.addEventListener('click', el => {
-      fittingRefs.video[index].play();
-    });
-    fittingRefs.video[index].addEventListener('click', ez => {
-      fittingRefs.video[index].pause();
-    });
-    fittingRefs.fullscreen[index].addEventListener('click', ez => {
-      if (fittingRefs.video[index].requestFullscreen) {
-        fittingRefs.video[index].requestFullscreen();
-      } else if (fittingRefs.video[index].mozRequestFullScreen) {
-        /* Firefox */
-        fittingRefs.video[index].mozRequestFullScreen();
-      } else if (fittingRefs.video[index].webkitRequestFullscreen) {
-        /* Chrome, Safari and Opera */
-        fittingRefs.video[index].webkitRequestFullscreen();
-      } else if (fittingRefs.video[index].msRequestFullscreen) {
-        /* IE/Edge */
-        fittingRefs.video[index].msRequestFullscreen();
-      }
-    });
-  });
-  fittingRefs.video.forEach((videos, index) => {
-    videos.addEventListener('play', ez => {
-      fittingRefs.play[index].style.display = 'none';
-      fittingRefs.fullscreen[index].style.display = 'block';
-    });
-    videos.addEventListener('pause', ez => {
-      fittingRefs.play[index].style.display = 'block';
-      fittingRefs.fullscreen[index].style.display = 'none';
     });
   });
 }
