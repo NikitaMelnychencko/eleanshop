@@ -4,7 +4,6 @@ export class VideoSetPlayer {
   clickListener() {
     this.box = document.querySelector('.video-set-js');
     this.box.onclick = e => {
-      console.dir(e.target.attributes);
       if (e.target.nodeName === 'svg' || e.target.nodeName === 'VIDEO') {
         if (e.target.attributes.name.nodeValue === 'play') {
           this.playVideo(e.target.previousElementSibling);
