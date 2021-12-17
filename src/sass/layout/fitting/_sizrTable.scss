@@ -92,8 +92,7 @@
     background-position: center;
     background-size: cover;
     background-color: $primary-background-color;
-
-
+    min-height: calc(100vh - 130px);
   }
 
   @media (min-device-pixel-ratio: 2),
