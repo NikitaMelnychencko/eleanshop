@@ -1,20 +1,24 @@
 [
     {
+        "id": "45435245",
         "video": "http://techslides.com/demos/sample-videos/small.webm",
         "poster": "./images/Black2V.jpg",
         "description": "Образ со смокингом"
     },
     {
+        "id": "462626",
         "video": "http://techslides.com/demos/sample-videos/small.webm",
         "poster": "./images/55.jpg",
         "description": "Образ с красным смокингом и черным топом"
     },
     {
+        "id": "6752457",
         "video": "http://techslides.com/demos/sample-videos/small.webm",
         "poster": "./images/23.jpg",
         "description": "Синий костюм с брюками"
     },
     {
+        "id": "45272899",
         "video": "http://techslides.com/demos/sample-videos/small.webm",
         "poster": "./images/78.jpg",
         "description": "Образ с костюмом"
