@@ -1,6 +1,7 @@
 // have to clear string #2 after getting data from Local Storage
 import productInfo from '../../../js/json/product/productInfo.json';
 import productTemplate from '../../../views/partials/product/infoAboutProduct.hbs';
+import refs from '../../refs/refs.js';
 window.jQuery = window.$ = require('jquery');
 require('../../slick/slick.min');
 //* way to get a function from Andrew to render a size grid (don't clear)
@@ -92,6 +93,7 @@ function insertIntoLSFavorite(id) {
 
     ls.fav.push(elem);
     localStorage.setItem('favorites', JSON.stringify(ls));
+    refs.favQuantityEl.innerHTML = ls.fav.length;
   }
 }
 function removeFromFavorite(id) {
@@ -99,6 +101,7 @@ function removeFromFavorite(id) {
   const lsid = ls.fav.findIndex(el => el.id === id);
   ls.fav.splice(lsid, 1);
   localStorage.setItem('favorites', JSON.stringify(ls));
+  refs.favQuantityEl.innerHTML = ls.fav.length;
 }
 function onAddToFavoritesClick(event) {
   const id = parsedProductInfoData.id;

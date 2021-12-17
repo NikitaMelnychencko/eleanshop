@@ -6,6 +6,7 @@ import listCards from '../../../views/partials/product/productListFromCatalog.hb
 import cards from '../../json/catalog.json';
 import { productRender } from '../../call-list.js';
 import { scrollTo } from '../../components/scrollTo';
+import refs from '../../refs/refs.js';
 
 export default class RecomendationsCategory {
   constructor({ root, typeInsert, data = cards, countsCard = 4, buttonPagination = true }) {
@@ -138,6 +139,7 @@ export default class RecomendationsCategory {
       };
       ls.fav.push(elem);
       localStorage.setItem('favorites', JSON.stringify(ls));
+      refs.favQuantityEl.innerHTML = ls.fav.length;
     }
   };
 
@@ -146,6 +148,7 @@ export default class RecomendationsCategory {
     const lsid = ls.fav.findIndex(el => el.id === id);
     ls.fav.splice(lsid, 1);
     localStorage.setItem('favorites', JSON.stringify(ls));
+    refs.favQuantityEl.innerHTML = ls.fav.length;
   };
 
   _onClickLike = e => {

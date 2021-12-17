@@ -4,6 +4,9 @@ import filterLib from '../../json/filterLib.json';
 import { productRender } from '../../call-list.js';
 import { scrollTo } from '../../components/scrollTo';
 
+import refs from '../../refs/refs.js';
+const { favQuantityEl } = refs;
+
 function selectLS() {
   let ls = localStorage.getItem('content');
   if (ls) {
@@ -72,6 +75,7 @@ export function openCategory() {
           data.fav.push(elem);
         }
         localStorage.setItem('favorites', JSON.stringify(data));
+        favQuantityEl.innerHTML = data.fav.length;
       }
     }
   }
