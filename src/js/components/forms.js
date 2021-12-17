@@ -12,7 +12,6 @@ export class Forms {
     this.nameData = null;
     this.classInit();
     this.listenerSubmit();
-    this.error = 'unkown type form';
   }
 
   insertForm() {
@@ -25,23 +24,20 @@ export class Forms {
     } else if (this.option === 'fittingPage') {
       return formsMarkUp(forms.fittingPage);
     }
-    console.error(this.error);
   }
 
   classInit() {
     if (this.option === 'reviews') {
-      this.querySelector('form-reviews');
-      this.nameData = 'formReviews';
+      this.moreString('formReviews');
     } else if (this.option === 'delivery') {
-      this.querySelector('form-delivery');
-      this.nameData = 'formDelivery';
-    } else if (this.option === 'fittingForm') {
-      this.querySelector('form-fitting-showroom');
-      this.nameData = 'formFitting';
-    } else if (this.option === 'fittingPage') {
-      this.querySelector('form-fitting-showroom');
-      this.nameData = 'formFitting';
+      this.moreString('formDelivery');
+    } else if (this.option === 'fittingForm' || this.option === 'fittingPage') {
+      this.moreString('formFitting');
     }
+  }
+
+  moreString(name) {
+    this.nameData = `${name}`;
   }
 
   querySelector(option) {
@@ -52,12 +48,17 @@ export class Forms {
     if (this.box) {
       let object = {};
       this.box.onsubmit = e => {
-        let formData = new FormData(this.box);
         e.preventDefault();
+        let formData = new FormData(this.box);
         formData.forEach(function (value, key) {
           object[key] = value;
         });
-        postUserData(userId, `${this.nameData}`, nanoid(), object);
+        if (this.option === 'reviews') {
+          postUserData(userId, `userReviews`, '', object);
+          return;
+        } else {
+          postUserData(userId, `${this.nameData}`, nanoid(), object);
+        }
       };
     }
   }

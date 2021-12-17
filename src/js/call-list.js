@@ -37,7 +37,6 @@ export function homeRender() {
     aboutTheBrand_parsing,
   });
   refs.mainEL.innerHTML = homeMarkup;
-  formsForm;
   heroSlider();
   openContent();
   showroomSlider();

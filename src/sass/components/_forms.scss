@@ -360,7 +360,7 @@
   display: none;
   @media screen and (min-width: $desktop-up) {
     display: flex;
-    border: 1px dashed #c5c5d2;
+    border: 1px dashed $button-add-photo-color;
     box-sizing: border-box;
     height: 40px;
     padding-left: 12px;
@@ -387,7 +387,7 @@
     display: block;
     width: 22px;
     height: 23px;
-    stroke: #afafbf;
+    stroke: $button-add-photo-icon-color;
     margin-right: 13px;
     transition: stroke $time-cubic;
     .form-reviews__button-add-photo:hover & {
