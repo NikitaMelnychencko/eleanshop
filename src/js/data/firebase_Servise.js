@@ -73,9 +73,9 @@ export async function getIdUser(nextFolder) {
 }
 
 //Post;
-export async function postUserData(userId, folder, messageId, data) {
+export async function postUserData(userId, folder, messageId, data, baseFolder) {
   if (userId === null) {
     return;
   }
-  return await set(ref(db, 'formData/' + folder + '/' + messageId), data);
+  return await set(ref(db, `baseFolder/` + folder + '/' + messageId), data);
 }

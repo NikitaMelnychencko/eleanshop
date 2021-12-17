@@ -5,11 +5,12 @@ import { nanoid } from 'nanoid';
 
 export class Forms {
   constructor(option) {
+    this.box = null;
     this.option = option;
   }
 
   init() {
-    this.nameData = null;
+    this.box = null;
     this.classInit();
     this.listenerSubmit();
   }
@@ -19,19 +20,20 @@ export class Forms {
       return formsMarkUp(forms.reviews);
     } else if (this.option === 'delivery') {
       return formsMarkUp(forms.delivery);
-    } else if (this.option === 'fittingForm') {
+    } else if (this.option === 'fittingForm' || this.option === 'fittingPage') {
       return formsMarkUp(forms.fittingForm);
-    } else if (this.option === 'fittingPage') {
-      return formsMarkUp(forms.fittingPage);
     }
   }
 
   classInit() {
     if (this.option === 'reviews') {
+      this.querySelector('form-reviews');
       this.moreString('formReviews');
     } else if (this.option === 'delivery') {
+      this.querySelector('form-delivery');
       this.moreString('formDelivery');
     } else if (this.option === 'fittingForm' || this.option === 'fittingPage') {
+      this.querySelector('form-fitting-showroom');
       this.moreString('formFitting');
     }
   }
@@ -42,6 +44,7 @@ export class Forms {
 
   querySelector(option) {
     this.box = document.querySelector(`.${option}__form`);
+    console.log(this.box);
   }
 
   listenerSubmit() {
@@ -54,10 +57,10 @@ export class Forms {
           object[key] = value;
         });
         if (this.option === 'reviews') {
-          postUserData(userId, `userReviews`, '', object);
+          postUserData(userId, `userReviews`, nanoid(), object, 'database/formData/');
           return;
         } else {
-          postUserData(userId, `${this.nameData}`, nanoid(), object);
+          postUserData(userId, `${this.nameData}`, nanoid(), object, 'formData/');
         }
       };
     }
