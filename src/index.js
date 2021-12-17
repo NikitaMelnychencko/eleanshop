@@ -69,7 +69,6 @@ import './js/components/backdrop.js';
 //test
 import './js/test/test_productHandSewn.js';
 import './js/test/backdropTest.js';
-import './js/test/testSizeTable.js';
 import './js/test/testSizeChose';
 import './js/test/test_infoAboutProduct.js';
 

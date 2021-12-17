@@ -1,4 +1,3 @@
-import productInfo from '../../../js/json/product/productInfo.json';
 import productTEST from '../../../js/json/product/productTEST.json';
 import productTemplate from '../../../views/partials/product/infoAboutProduct.hbs';
 window.jQuery = window.$ = require('jquery');
