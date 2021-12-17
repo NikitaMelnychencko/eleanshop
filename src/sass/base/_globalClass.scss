@@ -21,8 +21,10 @@ body {
   line-height: 1.46;
   overflow: overlay;
   overflow-x: hidden;
+  // min-height: calc(100vh - 230px - -80px);
   @media screen and (min-width: $desktop-up) {
     margin: 128px 0 0 0;
+    min-height: calc(100vh - 130px);
   }
 }
 
@@ -39,7 +41,6 @@ body {
   ::-webkit-scrollbar {
     width: 5px;
   }
-  
 }
 
 .container {
