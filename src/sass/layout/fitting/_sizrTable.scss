@@ -58,17 +58,18 @@
 /*   DESKTOP */
 
 .fitting__product-shipping--container {
-  @media screen and (min-width: $mobile-first) {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
+  padding-left: 20px;
+  padding-right: 20px;
 
   @media screen and (min-width: $tablet-general) {
-
     max-width: 669px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
+  }
+  @media screen and (min-width: $desktop-up) {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -77,31 +78,42 @@
 }
 
 @media screen and (min-width: $desktop-up) {
-
-
   .fitting__heading {
     text-align: center;
   }
 
   .fitting__section {
+    position: relatiave;
     padding-top: 68px;
     padding-bottom: 451px;
-    background-image: url('../images/elean47390.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-color: $primary-background-color;
-
-
   }
 
-  @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-    .fitting__section {
-      background-image: url('../images/elean47390@2x.jpg');
-    }
+  .fitting__section::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-image: url('../images/elean47390@2x.jpg');
+    background-size: auto 100%;
+    background-position: center;
+    left: -170px;
+    top: 0;
+    z-index: -1;
+  }
+
+  .fitting__section::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #f4f8f9;
+    background-repeat: no-repeat;
+    background-image: url('../images/fon.jpg');
+    background-size: 50vw 100%;
+    left: 0;
+    top: 0;
+    z-index: -2;
   }
 
   .fitting__size-table {
@@ -119,7 +131,7 @@
   }
 
   .fitting__description-item {
-    padding: 15px;
+    padding: 15px 40px;
   }
 
   .fitting__video-slider {
