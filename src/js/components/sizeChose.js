@@ -3,18 +3,19 @@ import Backdrop from '../components/backdrop.js';
 import refs from '../refs/refs';
 
 
-
-function sizeListener() {
-  const btnSize = document.querySelector('.size-chose__size-list');
-  btnSize.addEventListener('click', value => {
-    if (value.target.nodeName === 'BUTTON') {
-      sendingValue(value.target.textContent);
+function onSizeElClick(evt) {
+  const isLabel = event.target.classList.contains('size-chose__label');
+    if (!isLabel) {
+      return
     }
-  });
+    const inputSize = event.target.previousElementSibling.value;
+    sendingValue(Number(inputSize));
 }
+
+
 //function for creating dice of clothing sizes
 function createBtn(json) {
-  const incomeArray = json.productAviable[3].aviableSize
+  const incomeArray = json.productAviable[0].aviableSize
   const sizeArray = ["40", "42", "44", "46", "48", "50"]
 
   const newArray = [];
@@ -22,19 +23,19 @@ function createBtn(json) {
     .map(value => {
       if (incomeArray.includes(value)) {
         newArray.push(
-          `<button class="size-chose__size-list-btn" type="button">${
-            value
-          }</button>`,
+          `<input class="size-chose__input" type="radio" id="sizeChoice${value}" name="sizeChoice" value=${value} required="">
+          <label class="size-chose__label" for="sizeChoice${value}">${value}</label>`
+          ,
         );
       } else {
         newArray.push(
-          `<button disabled class="size-chose__size-list-btn size-chose__disabled" type="button">${
-            value
-          }</button>`,
+          `<input disabled class="size-chose__input" type="radio" id="sizeChoice${value}" name="sizeChoice" value=${value} required="">
+          <label class="size-chose__label size-chose__label--disabled" for="sizeChoice${value}">${value}</label>
+          `,
         );
       }
       function sendingValue(value) {
-        save(`sizeClose`, value);
+        save(`productSize`, value);
         const backdrop = new Backdrop().closeModalForm();
       }
     });
@@ -42,10 +43,10 @@ function createBtn(json) {
 }
 //function that returns a string with the size on the card that you selected
 function sendingValue(value) {
-  save(`sizeClose`, value);
+  save(`productSize`, value);
   const backdrop = new Backdrop().closeModalForm();
 }
-//function writes the selected size to sizeClose in localStorage
+//function writes the selected size to productSize in localStorage
 function save(key, value) {
   try {
     const serializedState = JSON.stringify(value);
@@ -54,4 +55,4 @@ function save(key, value) {
     console.error('Set state error: ', err);
   }
 }
-export default { createMarkup, sizeListener, createBtn };
+export default { createMarkup, onSizeElClick, createBtn};
