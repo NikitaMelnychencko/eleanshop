@@ -5,7 +5,9 @@ window.jQuery = window.$ = require('jquery');
 require('../../slick/slick.min');
 
 import sizeChose from '../../components/sizeChose';
-const { createBtn } = sizeChose;
+const { createBtn, onSizeElClick } = sizeChose;
+import {onBtnClick} from '../../components/sizeTable'
+
 
 
 let productInfoData = JSON.parse(localStorage.getItem('productInfoData'));
@@ -73,6 +75,8 @@ function insertIntoLSFavorite(id) {
   }
   if (newEl) {
     const isColorChose = localStorage.getItem('productColor');
+    const isSizeChose = localStorage.getItem('productSize');
+
 
     const elem = {
       id: productInfoData.id,
@@ -85,7 +89,7 @@ function insertIntoLSFavorite(id) {
       },
       price: productInfoData.productPrice,
       // have to get size from size grid from Andrew's function
-      size: '46',
+      size: isSizeChose ? isSizeChose : '',
       description: '',
       color: isColorChose ? isColorChose : '',
     };
@@ -111,9 +115,13 @@ function onAddToFavoritesClick(event) {
 }
 
 //!----------------------------------------------------Colorpicker
+function setProductColor(color) {
+  localStorage.setItem('productColor', color);
+}
 function addCurrentClass(button) {
   button.classList.add('button__colorpicker--current');
 }
+
 function removeCurrentClass() {
   const currentClass = document.querySelector('.button__colorpicker--current');
 
@@ -121,12 +129,10 @@ function removeCurrentClass() {
     currentClass.classList.remove('button__colorpicker--current');
   }
 }
-function setProductColor(color) {
-  localStorage.setItem('productColor', color);
-}
-function fixateCurrentClass(buttonArray, productColor) {
-  for (let index = 0; index < buttonArray.length; index++) {
-    const element = buttonArray[index];
+
+function fixateCurrentClass(colorArray, productColor) {
+  for (let index = 0; index < colorArray.length; index++) {
+    const element = colorArray[index];
 
     if (productColor === element.id) {
       addCurrentClass(element);
@@ -134,7 +140,10 @@ function fixateCurrentClass(buttonArray, productColor) {
     }
   }
 }
+
+
 function onColorListClick(event) {
+  // let x = []
   const colorpickerButton = event.target;
   const isColorpickerButton = colorpickerButton.classList.contains('button__colorpicker');
 
@@ -142,10 +151,18 @@ function onColorListClick(event) {
     return;
   }
 
+  // productTEST.productAviable.find(size => {
+  //   if(size.colorId === colorpickerButton.id) {
+  //     x.push(size.aviableSize)
+  //     console.log(x);
+  //   }
+  // } )
+
   removeCurrentClass();
   addCurrentClass(colorpickerButton);
   setProductColor(colorpickerButton.id);
 }
+
 function setProductDataToOrdering() {
   const orderingDataArray = localStorage.getItem('orderingData');
   if (orderingDataArray.length === 0) {
@@ -164,7 +181,7 @@ function setProductDataToOrdering() {
     // orderingDataobj.label.img2 = productInfoData.image[0].imageMobileHigherResolution;
     orderingDataobj.label.price = productInfoData.productPrice;
     // have to get size from size grid from Andrew's function
-    orderingDataobj.label.sizeSelected = '46';
+    orderingDataobj.label.sizeSelected = localStorage.getItem('productSize');
     orderingDataobj.label.colorSelected = localStorage.getItem('productColor');
     orderingDataobj.label.circleSelected = '';
     orderingDataobj.label.description = '';
@@ -203,7 +220,9 @@ function onNotYourSizeBtnClick() {
   preorderBackdropEl.classList.add('is-visible');
 }
 //!----------------------------------------------------Is size in a stock?
-function onDefineSizeBtnClick() {}
+function onDefineSizeBtnClick() {
+  onBtnClick()
+}
 //!----------------------------------------------------Fitting
 function onFittingBtnClick() {
   const tryOnBackdropEl = document.querySelector('.try-on__backdrop');
@@ -211,12 +230,13 @@ function onFittingBtnClick() {
 }
 //!----------------------------------------------------Fixate local storage data
 function fixateDataFromLocalStorage() {
-  const colorpickerButtonsEl = document.querySelectorAll('.button__colorpicker');
+  const colorBtn = document.querySelectorAll('.button__colorpicker');
   let productColor = localStorage.getItem('productColor');
 
-  fixateCurrentClass(colorpickerButtonsEl, productColor);
+  fixateCurrentClass(colorBtn, productColor);
   checkIsProductInFavorites();
 }
+
 
 //!----------------------------------------------------LISTENERS
 function createAllListeners(buy) {
@@ -227,6 +247,7 @@ function createAllListeners(buy) {
   const notYourSizeBtn = document.querySelector('.button__size-option--available-size');
   const defineSizeBtn = document.querySelector('.button__size-option--find-size');
   const fittingBtn = document.querySelector('.button__purchase--fit');
+  const sizeList = document.querySelector('.size__list');
 
   notYourSizeBtn.addEventListener('click', onNotYourSizeBtnClick);
   defineSizeBtn.addEventListener('click', onDefineSizeBtnClick);
@@ -234,8 +255,9 @@ function createAllListeners(buy) {
   fittingBtn.addEventListener('click', onFittingBtnClick);
   colorList.addEventListener('click', onColorListClick);
   charList.addEventListener('click', onCharListClick);
+  sizeList.addEventListener('click', onSizeElClick);
 
-
+  
   buyBtn.addEventListener('click', () => {
     buy(productInfoData.productName);
     setProductDataToOrdering();
