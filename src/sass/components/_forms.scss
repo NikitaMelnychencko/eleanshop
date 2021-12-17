@@ -103,7 +103,6 @@
   border: 1px solid $button-hover-background-color;
   box-sizing: border-box;
   width: 100%;
-  margin-bottom: 13px;
   padding: 18px;
   &::placeholder {
     text-transform: uppercase;
@@ -126,10 +125,6 @@
   @media screen and (min-width: $mobile-general) {
     min-width: 230px;
   }
-
-  @media screen and (min-width: $desktop-up) {
-    margin-bottom: 20px;
-  }
 }
 
 .form-fitting-showroom__input.in-page {
@@ -137,8 +132,13 @@
 }
 
 .form__input-box {
+  display: block;
   position: relative;
   flex-grow: 1;
+  margin-bottom: 13px;
+  @media screen and (min-width: $desktop-up) {
+    margin-bottom: 20px;
+  }
 }
 
 .form__send-btn-text {

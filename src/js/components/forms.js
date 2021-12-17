@@ -20,8 +20,10 @@ export class Forms {
       return formsMarkUp(forms.reviews);
     } else if (this.option === 'delivery') {
       return formsMarkUp(forms.delivery);
-    } else if (this.option === 'fittingForm' || this.option === 'fittingPage') {
+    } else if (this.option === 'fittingForm') {
       return formsMarkUp(forms.fittingForm);
+    } else if (this.option === 'fittingPage') {
+      return formsMarkUp(forms.fittingPage);
     }
   }
 
