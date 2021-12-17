@@ -51,7 +51,7 @@ function checkIsProductInFavorites() {
   const addToFavoritesbuttonEl = document.querySelector('.product__name-wrapper .button-add-likes');
   const favoriteProduct = localStorage.getItem('favorites');
   const parsedFavoriteDate = JSON.parse(favoriteProduct);
-  if (parsedFavoriteDate != null) {
+  if (parsedFavoriteDate) {
     parsedFavoriteDate.fav.forEach(el => {
       if (el.id === parsedProductInfoData.id) {
         addToFavoritesbuttonEl.classList.add('active');
