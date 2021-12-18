@@ -71,7 +71,7 @@ function fnMobileMenu() {
   logoTextEl.classList.toggle('mod-color');
   listTextEl.forEach(element => element.classList.toggle('mod-color'));
   svgFavoritesEl.classList.toggle('mod-stroke');
-  navigationEl.classList.toggle('mod-hidden-mob');
+  navigationEl.classList.toggle('js-hidden-mobile');
   wrapperEl.classList.toggle('wrapper');
   bodyEl.classList.toggle('mobile-open');
 
@@ -91,7 +91,7 @@ function fnMobileList(event) {
   if (event.target.parentElement.children.length !== 1) {
     if (navListEl.children.length > 1) {
       markup = navListEl.innerHTML;
-      [...navSublistEl].forEach(element => element.classList.toggle('mod-hidden-mob'));
+      [...navSublistEl].forEach(element => element.classList.toggle('js-hidden-mobile'));
       [...navLinkEl].forEach(element => element.classList.toggle('mod-rotate-navigation'));
       navListEl.innerHTML = event.target.parentNode.outerHTML;
     } else {

@@ -7,8 +7,7 @@ export default {
   inputname: document.querySelector('.input-name'),
   delheadnav: document.querySelector('.js-nav-product'),
   setList: document.querySelector('.js-videoset'),
-  numRef: document.querySelector('.product-list__text'),
-
+  numRef: document.querySelector('.header__product-text'),
 
   // ----- Footer ------
   closeOpenPlus: document.querySelectorAll('.footer__mobile-list-item-plus'),
