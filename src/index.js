@@ -83,3 +83,7 @@ import './js/layout/static/preloader/preloader_bar.js';
 import './js/updateViewport/updateViewport';
 //modal
 import './js/components/modal/modal.js';
+
+// skroll
+
+import './js/components/scroll/scroll';

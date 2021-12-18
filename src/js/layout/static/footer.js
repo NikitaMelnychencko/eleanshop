@@ -27,7 +27,6 @@ const {
   linkMenuFooterDesktop,
   linkMenuFooterMobile,
   dropDownList,
-  dropDown,
 } = refs;
 
 checkBoxIcon.addEventListener('click', onAgreeCheckBox);
@@ -35,6 +34,7 @@ mobileSubmitBtn.addEventListener('submit', onSubmitBtnMobile);
 desktopSubmitBtn.addEventListener('submit', onSubmitBtnDesktop);
 
 //=== smooth scrolling on  desktop
+
 desktop.forEach(evt => {
   evt.addEventListener('click', el => {
     scrollTo(0, 700);
@@ -43,61 +43,81 @@ desktop.forEach(evt => {
   });
 });
 
-//=== addEventListener Footer__Desktop on dataAction and LockalStorage===//
-linkMenuFooterDesktop.forEach(evt => {
-  evt.addEventListener('click', el => {
-    const selected = el.target.dataset.atribute;
-    if (selected) {
-      localStorage.setItem('footer-filter-desktop', selected);
-    }
-  });
-});
+class FooterLocalStorage {
+  constructor() {}
+  //=== addEventListener Footer__Desktop on dataAction and LockalStorage===//
+  linkMenuFooterDesktop() {
+    linkMenuFooterDesktop.forEach(evt => {
+      evt.addEventListener('click', el => {
+        const selected = el.target.dataset.atribute;
+        if (selected) {
+          localStorage.setItem('footer-filter-desktop', selected);
+        }
+      });
+    });
+  }
 
-//=== addEventListener Footer__Mobile on id and LockalStorage===//
-linkMenuFooterMobile.forEach(evt => {
-  evt.addEventListener('click', el => {
-    const selected = el.target.dataset.atribute;
-    if (selected) {
-      localStorage.setItem('content', selected);
-    }
-  });
-});
+  linkMenuFooterMobile() {
+    //=== addEventListener Footer__Mobile on id and LockalStorage===//
+    linkMenuFooterMobile.forEach(evt => {
+      evt.addEventListener('click', el => {
+        const selected = el.target.dataset.atribute;
+        if (selected) {
+          localStorage.setItem('content', selected);
+        }
+      });
+    });
+  }
+}
+const footerLocalStorage = new FooterLocalStorage();
+footerLocalStorage.linkMenuFooterDesktop();
+footerLocalStorage.linkMenuFooterMobile();
 
 // === drop-down menu-list ===
-closeOpenPlus.forEach(evt => {
-  evt.addEventListener('click', el => {
-    const idMuneClickMobile = evt.id;
-    if (!el.target.nextElementSibling) {
-      scrollTo(0, 700);
-      localStorage.setItem('footer-filtr-mobile', idMuneClickMobile);
-    }
-    el.preventDefault();
-    if (el.target.nextElementSibling) {
-      if (dropDown) {
-        dropDown.classList.toggle('open-menu');
-        dropDown.nextElementSibling.classList.toggle('js-dropdown-none');
-        if (el.target === dropDown) {
-          return;
-        } else if (el.target === dropDownList) {
-          dropDown.parentElement.classList.remove('.js-dropdown-none');
+
+class DropdownMenu {
+  constructor() {}
+  iconMenu() {
+    closeOpenPlus.forEach(evt => {
+      evt.addEventListener('click', el => {
+        const idMenuClickMobile = evt.id;
+        const dropDown = document.querySelector('.open-menu');
+        if (!el.target.nextElementSibling) {
+          scrollTo(0, 700);
+          localStorage.setItem('footer-filtr-mobile', idMenuClickMobile);
+        } else {
+          el.preventDefault();
         }
-      }
-      el.target.classList.toggle('open-menu');
-      el.target.nextElementSibling.classList.toggle('js-dropdown-none');
-    } else {
-      window.location.href = el.target;
-    }
-  });
-});
+        if (el.target.nextElementSibling) {
+          if (dropDown) {
+            dropDown.classList.toggle('open-menu');
+            dropDown.nextElementSibling.classList.toggle('js-dropdown-none');
+            if (el.target === dropDown) {
+              return;
+            } else if (el.target === dropDownList) {
+              dropDown.parentElement.classList.remove('.js-dropdown-none');
+            }
+          }
+          el.target.classList.toggle('open-menu');
+          el.target.nextElementSibling.classList.toggle('js-dropdown-none');
+        }
+        return;
+      });
+    });
+  }
+}
+const dropdownMenu = new DropdownMenu();
+dropdownMenu.iconMenu();
 
 //==== Hiding the menu when switching to another block
+
 linkMenuFooterMobile.forEach(evt => {
   evt.addEventListener('click', el => {
     scrollTo(0, 700);
     el.preventDefault();
     const dropDown = document.querySelector('.js-dropdown-none');
-    const openMenu = document.querySelector('.open-menu');
     if (el.target) {
+      const openMenu = document.querySelector('.open-menu');
       dropDown.classList.remove('js-dropdown-none');
       openMenu.classList.remove('open-menu');
       window.location.href = el.target;
@@ -123,7 +143,7 @@ inputStorageMobile.forEach(evt => {
   });
 });
 
-// Appointment localStorage на input desktop
+// Appointment localStorage on input desktop
 inputStorageDesktop.forEach(evt => {
   const idInputDesktop = evt.id;
   evt.addEventListener('input', el => {
@@ -134,14 +154,14 @@ inputStorageDesktop.forEach(evt => {
   });
 });
 
-//   Remuve localStorage on input mobile
+//   Remove localStorage on input mobile
 function onSubmitBtnMobile(evt) {
   evt.preventDefault();
   evt.currentTarget.reset();
   localStorage.removeItem('user_subscribe');
 }
 
-//   Remuve localStorage on input desktop
+//   Remove localStorage on input desktop
 function onSubmitBtnDesktop(evt) {
   evt.preventDefault();
   evt.currentTarget.reset();
@@ -167,9 +187,8 @@ dataActionCollectio.forEach(evt => {
       targetLink === 'costumes' ||
       targetLink === 'pants' ||
       targetLink === 'blouses'
-    )
-    {
-        return catalogRender();
+    ) {
+      return catalogRender();
     }
 
     //==== brandRender ===//

@@ -3,6 +3,7 @@ import Backdrop from '../../components/backdrop';
 import preorderModal from '../../../views/components/preorderModal.hbs';
 import orderForm from '../../../views/components/orderForm.hbs';
 import refs from '../../refs/refs';
+import { bodyUnfixPosition } from '../../components/scroll/scroll';
 
 const { mainEL } = refs;
 // create content for Pre-order Modal which placed at Body (for example)
@@ -39,6 +40,7 @@ function onButtonCloseModalClick(event) {
   /* buttonCloseModal.removeEventListener('click', onButtonCloseModalClick); */
   /* sizeList.removeEventListener('click', onSizeListItemClick); */
   /* submitButton.removeEventListener('click', onButtonSubmitClick); */
+  bodyUnfixPosition();
 }
 
 //on size-list label click, radio-input is checked

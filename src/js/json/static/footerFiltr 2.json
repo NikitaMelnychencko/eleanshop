@@ -1,0 +1,73 @@
+[
+    {
+        "key": "footer-filtr-mobile",
+        "name": "collection",
+        "value": [
+            "autumn-winter",
+            "evening-sets",
+            "wedding-and-graduation",
+            "the-tuxedo",
+            "costumes",
+            "pants",
+            "blouses"
+        ]
+    },
+    {
+        "key": "footer-filtr-mobile",
+        "name": "showroom",
+        "value": [
+            "footer-mobile-showroom"
+        ]
+    },
+    {
+        "key": "footer-filtr-mobile",
+        "name": "buyer",
+        "value": [
+            "delivery",
+            "fitting",
+            "payment",
+            "return"
+        ]
+    },
+    {
+        "key": "footer-filtr-mobile",
+        "name": "company",
+        "value": [
+            "about-the-brand",
+            "about-founders",
+            "blog"
+        ]
+    },
+    {
+        "key": "footer-filtr-mobile",
+        "name": "reviews",
+        "value": [
+            "reviews"
+        ]
+    },
+    {
+        "key": "footer-filtr-desktop",
+        "name": "delivery",
+        "value": "delivery"
+    },
+    {
+        "key": "footer-filtr-desktop",
+        "name": "payment",
+        "value": "payment"
+    },
+    {
+        "key": "footer-filtr-desktop",
+        "name": "return",
+        "value": "return"
+    },
+    {
+        "key": "footer-filtr-desktop",
+        "name": "fitting",
+        "value": "fitting"
+    },
+    {
+        "key": "footer-filtr-desktop",
+        "name": "contacts",
+        "value": "contacts"
+    }
+]
