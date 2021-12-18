@@ -6,23 +6,21 @@ import { homeRender } from '../../call-list.js';
 import { scrollTo } from '../../components/scrollTo';
 import { bodyFixPosition, bodyUnfixPosition } from '../../components/scroll/scroll';
 let throttle = require('lodash.throttle');
-const modalFormMarkup = modalFormMarkupTempl();
-export const backdropMarkup = backdropMarkupTempl(modalFormMarkup);
-export function onBtnClick() {
-  const backdropRef = document.querySelector('[data-modal]');
-  window.addEventListener('resize', throttle(onResize, 50));
-  const backdrop = new Backdrop();
-  onResize();
-  bodyFixPosition();
-}
+export const modalFormMarkup = modalFormMarkupTempl();
+// export const backdropMarkup = backdropMarkupTempl(modalFormMarkup);
 
-function onResize(event) {
-  let backdropRef = document.querySelector('[data-modal]');
-  const right = (backdropRef.clientWidth - backdropRef.children[0].children[1].clientWidth) / 2;
+// export function onBtnClick() {
+//   const backdropRef = document.querySelector('[data-modal]');
+//   window.addEventListener('resize', throttle(onResize, 50));
+//   const backdrop = new Backdrop();
+
+//   onResize();
+// }
+
+export function onResize(event) {
   const btnCloseRef = document.querySelector('.form__button-сlose');
   const btnСontinueShopping = document.querySelector('.ordering__btn-continue');
-  btnCloseRef.style.right = `${right}px`;
-  +btnСontinueShopping.addEventListener('click', e => {
+  btnСontinueShopping.addEventListener('click', e => {
     homeRender();
     bodyUnfixPosition();
     scrollTo(0, 700);

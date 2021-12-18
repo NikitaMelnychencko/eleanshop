@@ -77,11 +77,11 @@ import { ModalData, createPayment } from './layout/checkout/payment.js';
 import { ordering, openOrderingFunction } from './layout/checkout/ordering.js';
 import { backdropMarkup } from './layout/checkout/thanksForOrdering.js';
 import payment_checkout from '../views/layouts/checkout.hbs';
+import { mainModal } from '../js/components/modal/modal';
 export function checkoutRender() {
   updateBin();
-  const newClassBody = new classBody();
-
-  const createCheckout = payment_checkout({ createPayment, ordering, backdropMarkup });
+  classBody();
+  const createCheckout = payment_checkout({ createPayment, ordering, mainModal });
   refs.mainEL.innerHTML = createCheckout;
   //refs.mainEL.insertAdjacentHTML('beforeend', createCheckout);
   openOrderingFunction();

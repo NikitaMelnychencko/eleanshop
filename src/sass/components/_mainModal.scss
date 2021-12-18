@@ -1,0 +1,21 @@
+.mainModal {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transition: all $time-cubic;
+  transform: translate(-50%, 0) scale(0.9);
+  background-color: $modal-background-color;
+  z-index: 2000;
+  @media screen and (min-width: $tablet-general) {
+    transform: translate(-50%, -50%);
+    top: 50%;
+  }
+  @media screen and (min-width: $desktop-up) {
+    transform: translate(-50%, -50%);
+  }
+}
+
+.modal__container {
+  min-width: 320px;
+  min-height: 150px;
+}
