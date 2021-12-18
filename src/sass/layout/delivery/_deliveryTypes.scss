@@ -205,7 +205,6 @@
   padding: 7px;
 }
 .return__title {
-  position: relative;
   margin: 0 auto;
   padding: 20px;
   font-size: 26px;
@@ -221,17 +220,18 @@
   }
 }
 
-.return__title--arrow {
-  position: absolute;
-  background: url('../images/murkup_arow.svg') 0 0 /50% no-repeat;
+.return__title::after {
+  content: '  ';
+  background: url('../images/murkup_arow.svg') 0 0 /100% no-repeat;
   width: 15px;
   height: 15px;
   font-size: 80%;
   margin: 0 10px;
   top: 45%;
   right: 0%;
+  fill: black;
   @media screen and(min-width: $tablet-general) {
-    right: 25%;
+    right: 10%;
   }
 
   @media screen and(min-width: $desktop-up) {
@@ -243,7 +243,7 @@
   font-size: 28px;
 }
 
-.return__title:hover .return__title--arrow {
+.return__title:hover::after {
   top: 10%;
   transform: rotate(90deg);
 }
@@ -278,6 +278,6 @@
   font-size: 16px;
 }
 
-.return__title--item {
+.return__title--content {
   margin: 5px;
 }
