@@ -50,4 +50,6 @@ export default {
   // overlay: document.querySelector('.videobox__overlay'),
   // videoEl: document.querySelector('.video-set__video'),
   // BtnEl: document.querySelector('[data-action="close-videobox"]')
+  // ----- preloader ------
+  preloader: document.querySelector('.loading'),
 };
