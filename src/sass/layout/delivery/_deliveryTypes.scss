@@ -260,15 +260,7 @@
   display: block;
   cursor: pointer;
 }
-.return__box {
-  width: 320px;
-  @media screen and(min-width: $tablet-general) {
-    min-width: 720px;
-  }
-  @media screen and(min-width: $desktop-up) {
-    width: 1378px;
-  }
-}
+
 .return__disc {
   font-size: 20px;
   padding: 10px 20px;
