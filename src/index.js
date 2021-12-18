@@ -81,3 +81,5 @@ import './js/layout/static/footer.js';
 import './js/layout/static/preloader/preloader_bar.js';
 //update viewport
 import './js/updateViewport/updateViewport';
+//modal
+import './js/components/modal/modal.js';
