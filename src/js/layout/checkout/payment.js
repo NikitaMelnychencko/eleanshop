@@ -4,9 +4,7 @@ import { onBtnClick } from './thanksForOrdering';
 require('geteventlisteners');
 export const createPayment = payment_payment({ method });
 import renderModal from '../../components/modal/modal';
-import { onResize } from './thanksForOrdering';
-import { mainModal } from '../../components/modal/modal';
-import modalFormMarkupTempl from '../../../views/components/thanksForOrdering.hbs';
+import { modalFormMarkup, onResize } from './thanksForOrdering';
 export class ModalData {
   constructor({ idInputDay, idListDay, idInputTime, idListTime }) {
     this._refs = this._getRefs(idInputDay, idListDay, idInputTime, idListTime);
@@ -122,7 +120,7 @@ export class ModalData {
     this._refs.orderingForm.addEventListener('submit', e => {
       e.preventDefault();
       // onBtnClick();
-      renderModal(modalFormMarkupTempl, onResize);
+      renderModal(modalFormMarkup, onResize);
 
       this._refs.arrInputInf.forEach(el => {
         (el.value = ''), (el.checked = false);

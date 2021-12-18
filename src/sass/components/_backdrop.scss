@@ -15,17 +15,17 @@
     @extend %hide;
   }
 
-  @media screen and (min-width: $desktop-up) {
-    &.is-hidden .modal {
-      transform: translate(-50%, -50%) scale(0.8);
-    }
-  }
+  // @media screen and (min-width: $desktop-up) {
+  //   &.is-hidden .modal {
+  //     // transform: translate(-50%, -50%) scale(0.8);
+  //   }
+  // }
 }
 
 .form__wrapper {
-  position: relative;
-  top: 50%;
-  left: 50%;
+  // position: relative;
+  // top: 50%;
+  // left: 50%;
 
   @media screen and (min-width: $desktop-up) {
     transform: translate(-50%, -50%) scale(1);

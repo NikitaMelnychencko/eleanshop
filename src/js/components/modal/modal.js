@@ -1,14 +1,11 @@
 import modal from '../../../views/components/modal.hbs';
 import Backdrop from '../backdrop';
-import { backdropMarkup } from '../../layout/checkout/thanksForOrdering';
-
-export const mainModal = modal(backdropMarkup);
-console.log(mainModal);
-export default function renderModal(markup, callback) {
-  const modalContainer = document.querySelector('.modal-container');
-  modalContainer.innerHTML = markup;
-  console.log(markup);
-  console.log(modalContainer);
+import backdropMarkup from '../../../views/components/backdrop.hbs';
+export const mainModal = backdropMarkup(modal);
+export default function renderModal(component, callback) {
+  const modalContainer = document.querySelector('.modal__container');
+  modalContainer.innerHTML = component;
   const newBackdrop = new Backdrop();
+  console.log(modalContainer);
   callback();
 }
