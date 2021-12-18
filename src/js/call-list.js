@@ -86,7 +86,7 @@ export function checkoutRender() {
   const createCheckout = payment_checkout({ createPayment, ordering, backdropMarkup });
   refs.mainEL.innerHTML = createCheckout;
   //refs.mainEL.insertAdjacentHTML('beforeend', createCheckout);
-  /* openOrderingFunction(); */
+  
   const orderingPrice = new OrderingPrice({
     parsedData: parsedData,
   });
@@ -125,6 +125,7 @@ export function favoritesRender() {
     refs.mainEL.innerHTML = favorites.markcup;
   }
   favorites.init();
+   blockHelpRender();
 }
 let data = localStorage.getItem('favorites');
 if (!data == null) {
