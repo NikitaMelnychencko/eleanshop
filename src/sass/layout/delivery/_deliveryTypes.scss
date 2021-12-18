@@ -205,15 +205,17 @@
   padding: 7px;
 }
 .return__title {
+  position: relative;
   margin: 0 auto;
   padding: 20px;
-  font-size: 26px;
+  font-size: 18px;
   cursor: pointer;
   box-shadow: 0 3px 10px rgb(0, 0, 0, 0.15);
   border-radius: 4px;
   width: 300px;
   @media screen and(min-width: $tablet-general) {
     width: 700px;
+    font-size: 26px;
   }
   @media screen and(min-width: $desktop-up) {
     min-width: 1200px;
@@ -221,15 +223,16 @@
 }
 
 .return__title::after {
+  position: absolute;
   content: '  ';
   background: url('../images/murkup_arow.svg') 0 0 /100% no-repeat;
   width: 15px;
   height: 15px;
-  font-size: 80%;
+  padding: 10px;
   margin: 0 10px;
   top: 45%;
   right: 0%;
-  fill: black;
+
   @media screen and(min-width: $tablet-general) {
     right: 10%;
   }
