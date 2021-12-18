@@ -44,38 +44,51 @@ export function openCategory() {
   const cardHeartIcon = catalogItems.querySelectorAll('.icon-gallery-card-heart');
   const cardHeartIconArray = Array.from(cardHeartIcon);
 
-  for (let i = 0; i < cardHeartIconArray.length; i += 1) {
-    cardHeartIconArray[i].addEventListener('click', heartColorizing);
+  for (const cardHeartItem of cardHeartIconArray) {
+    cardHeartItem.addEventListener('click', heartColorizing);
+
     function heartColorizing(e) {
-      e.target.classList.toggle('heart-click');
-      e.target.classList.add('active');
       let data = localStorage.getItem('favorites');
       data = data ? JSON.parse(data) : { fav: [] };
 
       if (catalog) {
-        const itemData = catalog.find(
-          item => item.id === e.target.parentElement.parentElement.parentElement.id,
-        );
+        let obj = null;
+        let elemn = null;
+        if (e.target.tagName === 'svg') {
+          obj = e.target.parentElement.parentElement.parentElement;
+          elemn = e.target;
+        } else if (e.target.tagName === 'use') {
+          elemn = e.target.parentElement;
+          obj = e.target.parentElement.parentElement.parentElement.parentElement;
+        }
+
+        elemn.classList.toggle('heart-click');
+        elemn.classList.toggle('active');
+        const itemData = catalog.find(item => item.id === obj.id);
 
         if (itemData) {
-          let elem = {
-            label: {
-              id: itemData.id,
-              name: itemData.productName,
-              img: itemData.image[0].imageMobile,
-              img2: itemData.image[3].imageMobile,
-              price: itemData.productPrice,
-              sizeSelected: '',
-              colorSelected: '',
-              circleSelected: '',
-              description: itemData.description,
-              count: 1,
-            },
-          };
-          data.fav.push(elem);
+          if (cardHeartItem.classList.contains('active')) {
+            let elem = {
+              label: {
+                id: itemData.id,
+                name: itemData.productName,
+                img: itemData.image[0].imageMobile,
+                img2: itemData.image[3].imageMobile,
+                price: itemData.productPrice,
+                sizeSelected: '',
+                colorSelected: '',
+                circleSelected: '',
+                description: itemData.description,
+                count: 1,
+              },
+            };
+            data.fav.push(elem);
+            localStorage.setItem('favorites', JSON.stringify(data));
+            favQuantityEl.innerHTML = data.fav.length;
+          } else {
+            removeFromFavorite(itemData.id);
+          }
         }
-        localStorage.setItem('favorites', JSON.stringify(data));
-        favQuantityEl.innerHTML = data.fav.length;
       }
     }
   }
@@ -120,4 +133,11 @@ export function filteredCatalog(filterName) {
     document.querySelector('.catalog-list').innerHTML = gallery(fcatalog);
     openCategory();
   }
+}
+function removeFromFavorite(id) {
+  let ls = JSON.parse(localStorage.getItem('favorites'));
+  const lsid = ls.fav.findIndex(el => el.id === id);
+  ls.fav.splice(lsid, 1);
+  localStorage.setItem('favorites', JSON.stringify(ls));
+  refs.favQuantityEl.innerHTML = ls.fav.length;
 }
