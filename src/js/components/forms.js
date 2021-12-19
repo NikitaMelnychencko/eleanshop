@@ -1,7 +1,6 @@
 import formsMarkUp from '../../views/components/forms.hbs';
 import forms from '../json/forms.json';
 import { postUserData, userId } from '../data/firebase_Servise';
-import { nanoid } from 'nanoid';
 
 export class Forms {
   constructor(option) {
@@ -58,10 +57,10 @@ export class Forms {
           object[key] = value;
         });
         if (this.option === 'reviews') {
-          postUserData(userId, `userReviews`, nanoid(), object, 'database/formData/');
+          postUserData(userId, `userReviews`, object, 'database/formData/');
           return;
         } else {
-          postUserData(userId, `${this.nameData}`, nanoid(), object, 'formData/');
+          postUserData(userId, `${this.nameData}`, object, 'formData/');
         }
       };
     }
