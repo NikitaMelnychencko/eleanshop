@@ -104,6 +104,7 @@ class Favorites {
         data['fav'] = done;
       }
       localStorage.setItem('favorites', JSON.stringify(data));
+      refs.favQuantityEl.innerHTML = data.fav.length;
       favoritesRender();
     }
     refs.numRef.innerHTML = data['fav'].length;
@@ -143,6 +144,7 @@ class Favorites {
     }
     data['fav'] = done;
     localStorage.setItem('favorites', JSON.stringify(data));
+    refs.favQuantityEl.innerHTML = data.fav.length;
   }
 }
 

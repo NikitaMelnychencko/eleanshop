@@ -1,6 +1,7 @@
 // have to clear string #2 after getting data from Local Storage
 import productInfo from '../../../js/json/product/productInfo.json';
 import productTemplate from '../../../views/partials/product/infoAboutProduct.hbs';
+import refs from '../../refs/refs.js';
 window.jQuery = window.$ = require('jquery');
 require('../../slider/slick.min.js');
 //* way to get a function from Andrew to render a size grid (don't clear)
@@ -15,28 +16,24 @@ let parsedProductInfoData = JSON.parse(savedProductInfoData);
 
 export function setProductSlider() {
   $(document).ready(function () {
-    $('.product-slider-smaller').slick({
+    $('.product-slider-smaller').not('.slick-initialized').slick({
       arrows: false,
       speed: 500,
       vertical: true,
-      verticalSwiping: true,
       slidesToShow: 4,
-      slidesToScroll: 1,
-      lazyLoad: 'progressive',
       asNavFor: '.product-slider',
-      centerMode: true,
       focusOnSelect: true,
-      centerPadding: '0px',
     });
-    $('.product-slider').slick({
+    $('.product-slider').not('.slick-initialized').slick({
       arrows: false,
-      dots: true,
+      dots: false,
       fade: true,
       speed: 500,
       slidesToShow: 1,
       lazyLoad: 'progressive',
       asNavFor: '.product-slider-smaller',
     });
+    $('.product-slider-smaller').slick('setPosition');
   });
 }
 
@@ -55,7 +52,7 @@ function checkIsProductInFavorites() {
   const addToFavoritesbuttonEl = document.querySelector('.product__name-wrapper .button-add-likes');
   const favoriteProduct = localStorage.getItem('favorites');
   const parsedFavoriteDate = JSON.parse(favoriteProduct);
-  if (parsedFavoriteDate != null) {
+  if (parsedFavoriteDate) {
     parsedFavoriteDate.fav.forEach(el => {
       if (el.id === parsedProductInfoData.id) {
         addToFavoritesbuttonEl.classList.add('active');
@@ -96,6 +93,7 @@ function insertIntoLSFavorite(id) {
 
     ls.fav.push(elem);
     localStorage.setItem('favorites', JSON.stringify(ls));
+    refs.favQuantityEl.innerHTML = ls.fav.length;
   }
 }
 function removeFromFavorite(id) {
@@ -103,6 +101,7 @@ function removeFromFavorite(id) {
   const lsid = ls.fav.findIndex(el => el.id === id);
   ls.fav.splice(lsid, 1);
   localStorage.setItem('favorites', JSON.stringify(ls));
+  refs.favQuantityEl.innerHTML = ls.fav.length;
 }
 function onAddToFavoritesClick(event) {
   const id = parsedProductInfoData.id;
