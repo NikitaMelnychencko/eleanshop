@@ -4,7 +4,7 @@ import productTemplate from '../../../views/partials/product/infoAboutProduct.hb
 import { bodyFixPosition } from '../../components/scroll/scroll';
 
 window.jQuery = window.$ = require('jquery');
-require('../../slick/slick.min');
+require('../../slider/slick.min.js');
 //* way to get a function from Andrew to render a size grid (don't clear)
 // import sizeChose from '../fitting/sizeChose.js';
 // const { createBtn } = sizeChose;

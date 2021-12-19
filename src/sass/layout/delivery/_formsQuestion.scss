@@ -28,15 +28,6 @@
   border-bottom: 1px dotted $third-text-color;
 }
 
-.question-block::after {
-  content: '';
-  position: absolute;
-  height: 1px;
-  left: -20px;
-  top: 93%;
-  transform: translateY(-50%);
-  border-bottom: 1px dotted $third-text-color;
-}
 .answers-body {
   padding-top: 20px;
   font-size: 15px;
