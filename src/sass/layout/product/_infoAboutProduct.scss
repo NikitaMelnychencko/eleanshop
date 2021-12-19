@@ -57,6 +57,15 @@
   color: $accent-currency-color;
 }
 //!----------------------------------------------------end of prod main info
+
+//!----------------------------------------------------prod form
+.product__form {
+  margin-bottom: 35px;
+  @media screen and (min-width: $desktop-up) {
+    margin-bottom: 46px;
+  }
+}
+//!----------------------------------------------------end of prod form
 //!----------------------------------------------------size list
 .size__title {
   margin-bottom: 20px;
@@ -72,13 +81,15 @@
   }
 }
 
-.size__list {
-  display: flex;
+.product__size {
   margin-bottom: 21px;
 
   @media screen and (min-width: $desktop-up) {
     margin-bottom: 17px;
   }
+}
+.size__list {
+  display: flex;
 }
 
 .size__item {
@@ -91,13 +102,15 @@
 }
 //!----------------------------------------------------end of size list
 //!----------------------------------------------------size options
-.options {
-  display: flex;
+.product__size-options {
   margin-bottom: 21px;
 
   @media screen and (min-width: $desktop-up) {
     margin-bottom: 37px;
   }
+}
+.options {
+  display: flex;
 }
 
 .options__item {
@@ -107,6 +120,7 @@
     }
   }
 }
+
 
 .button__size-option {
   @extend %button;
@@ -154,7 +168,7 @@
 }
 //!----------------------------------------------------end of size options
 //!----------------------------------------------------colorpicker
-.colorpicker {
+.product__color {
   @include flex($main: start);
 
   margin-bottom: 30px;
@@ -187,7 +201,10 @@
   }
 }
 
-.button__colorpicker {
+.colorpicker__input {
+  @extend %hide;
+}
+.colorpicker__label {
   padding: 0;
   border: 1px solid $colorpicker-icon-border-color;
   border-radius: 50%;
@@ -201,29 +218,33 @@
   background-size: 20px, 32px;
 
   transition: border-color $time-cubic;
+
+  &:not(:last-child) {
+    margin-right: 14px;
+  }
 }
 
-.button__colorpicker--black {
+.colorpicker__label--black {
   background-image: url('../images/circle-white.svg'), url('../images/circle-black.svg');
 }
 
-.button__colorpicker--red {
+.colorpicker__label--red {
   background-image: url('../images/circle-white.svg'), url('../images/circle-red.svg');
 }
 
-.button__colorpicker--white {
+.colorpicker__label--white {
   background-image: url('../images/circle-white.svg'), url('../images/circle-grey.svg');
 }
 
-.button__colorpicker--blue {
+.colorpicker__label--blue {
   background-image: url('../images/circle-white.svg'), url('../images/circle-blue.svg');
 }
 
-.button__colorpicker--green {
+.colorpicker__label--green {
   background-image: url('../images/circle-white.svg'), url('../images/circle-green.svg');
 }
 
-.button__colorpicker--current {
+.colorpicker__label--current {
   border: 1px solid $colorpicker-icon-border-hover;
 }
 //!----------------------------------------------------end of colorpicker
@@ -232,14 +253,10 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin-bottom: 35px;
+ 
 
   @media screen and (min-width: $tablet-general) and (max-width: $tablet-only) {
     width: 400px;
-  }
-
-  @media screen and (min-width: $desktop-up) {
-    margin-bottom: 46px;
   }
 }
 
@@ -344,10 +361,6 @@
 
 //!----------------------------------------------------end of prod info
 //!----------------------------------------------------prod characteristics
-.product__characteristics {
-  margin-bottom: 19px;
-}
-
 .product__characteristic-item {
   @include flex($main: space-between);
 

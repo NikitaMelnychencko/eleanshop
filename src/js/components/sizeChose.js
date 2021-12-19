@@ -23,13 +23,13 @@ function createBtn(json) {
     .map(value => {
       if (incomeArray.includes(value)) {
         newArray.push(
-          `<input class="size-chose__input" type="radio" id="sizeChoice${value}" name="sizeChoice" value=${value} required="">
+          `<input class="size-chose__input" type="radio" id="sizeChoice${value}" name="sizeChoice" value=${value} required>
           <label class="size-chose__label" for="sizeChoice${value}">${value}</label>`
           ,
         );
       } else {
         newArray.push(
-          `<input disabled class="size-chose__input" type="radio" id="sizeChoice${value}" name="sizeChoice" value=${value} required="">
+          `<input disabled class="size-chose__input" type="radio" id="sizeChoice${value}" name="sizeChoice" value=${value} required>
           <label class="size-chose__label size-chose__label--disabled" for="sizeChoice${value}">${value}</label>
           `,
         );

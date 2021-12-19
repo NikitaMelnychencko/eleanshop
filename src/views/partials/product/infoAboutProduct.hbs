@@ -14,50 +14,56 @@
             <p class="product__price">{{productTEST.productPrice}} <span class="product__currency">&#8372;</span></p>
         </div>    
 
-        <h3 class="product__size size__title">размер</h3>
-        <ul class="size__list">
-          {{#each this.btn}}
-          {{{this}}}
-          {{/each}}
-        </ul>
-
-        <ul class="size__options options">
-          <li class="options__item">
-            <button class="button__size-option button__size-option--available-size">
-              <svg class="options__icon" width="21" height="21">
-                <use href="./images/sprite.svg#icon-sign"></use>
-              </svg>
-              нет вашего размера?
-            </button>
-          </li>
-          <li class="options__item">
-            <button class="button__size-option button__size-option--find-size">
-              <svg class="options__icon" width="21" height="21">
-                <use href="./images/sprite.svg#icon-hanger"></use>
-              </svg>
-              определите свой размер
-            </button>
-          </li>
-        </ul>
-
-        <div class="colorpicker">
-          <h3 class="colorpicker__title">цвет</h3>
-          <ul class="colorpicker__list">
-            {{#each productTEST.productAviable}}
-            <li class="colorpicker__item">
-              <button class="button__colorpicker button__colorpicker--{{this.colorName}}" id="{{this.colorId}}" type="button">
-              </button>
-            </li>
-            {{/each}}
-          </ul>
-        </div>
-
-        <ul class="button__list">
-          <li><button class="button__purchase button__purchase--buy" type="button">купить</button></li>
-          <li><button class="button__purchase button__purchase--fit" type="button">примерка</button></li>
-          <li><button class="button__purchase button__purchase--installment" type="button" disabled="disabled">купить в расстрочку</button>
-          </li>
-        </ul>
+        <form class="product__form">
+          <div class="product__size">
+            <h3 class="product__size size__title">размер</h3>
+            <ul class="size__list">
+              {{#each this.btn}}
+              {{{this}}}
+              {{/each}}
+            </ul>
+          </div>
+          
+          <div class="product__size-options">
+            <ul class=" options">
+              <li class="options__item">
+                <button class="button__size-option button__size-option--available-size">
+                  <svg class="options__icon" width="21" height="21">
+                    <use href="./images/sprite.svg#icon-sign"></use>
+                  </svg>
+                  нет вашего размера?
+                </button>
+              </li>
+              <li class="options__item">
+                <button class="button__size-option button__size-option--find-size">
+                  <svg class="options__icon" width="21" height="21">
+                    <use href="./images/sprite.svg#icon-hanger"></use>
+                  </svg>
+                  определите свой размер
+                </button>
+              </li>
+            </ul>
+          </div>
+  
+          <div class="product__color">
+            <h3 class="colorpicker__title">цвет</h3>
+            <ul class="colorpicker__list">
+              {{#each productTEST.productAviable}}
+                <input class="colorpicker__input" type="radio" id="{{this.colorId}}" name="colorChoice" value={{this.colorId}} required>
+                <label class="colorpicker__label colorpicker__label--{{this.colorName}}" for="{{this.colorId}}"></label>
+              {{/each}}
+            </ul>
+          </div>
+  
+          <div class="product__buttons-block">
+            <ul class="button__list">
+              <li><button class="button__purchase button__purchase--buy" type="submit">купить</button></li>
+              <li><button class="button__purchase button__purchase--fit" type="button">примерка</button></li>
+              <li><button class="button__purchase button__purchase--installment" type="button" disabled="disabled">купить в расстрочку</button>
+              </li>
+            </ul>
+          </div>
+        </form>
 
         <div class="product__info">
           <p class="product__description">{{productTEST.productDescription}}</p>
@@ -94,102 +100,3 @@
       
   </div>
 </section>
-
-
-
-{{!-- <section class="product">
-  <div class="container product__container">
-
-    {{#each this}}
-    {{> productSlider}}
-    {{/each}}
-
-      <article class="product__content">
-        <div class="product__main-info">
-          <div class="product__name-wrapper">
-            <h2 class="product__name">{{parsedProductInfoData.productName}}</h2>
-            {{> ../../components/buttonAddLike}}
-          </div>
-            <p class="product__price">{{parsedProductInfoData.productPrice}} <span class="product__currency">&#8372;</span></p>
-        </div>    
-
-        <h3 class="product__size size__title">размер</h3>
-        <ul class="size__list">
-          {{#each this.btn}}
-          <li class="size__item">{{{this}}}</li>
-          {{/each}}
-        </ul>
-
-        <ul class="size__options options">
-          <li class="options__item">
-            <button class="button__size-option button__size-option--available-size">
-              <svg class="options__icon" width="21" height="21">
-                <use href="./images/sprite.svg#icon-sign"></use>
-              </svg>
-              нет вашего размера?
-            </button>
-          </li>
-          <li class="options__item">
-            <button class="button__size-option button__size-option--find-size">
-              <svg class="options__icon" width="21" height="21">
-                <use href="./images/sprite.svg#icon-hanger"></use>
-              </svg>
-              определите свой размер
-            </button>
-          </li>
-        </ul>
-
-        <div class="colorpicker">
-          <h3 class="colorpicker__title">цвет</h3>
-          <ul class="colorpicker__list">
-            {{#each parsedProductInfoData.color}}
-            <li class="colorpicker__item">
-              <button class="button__colorpicker button__colorpicker--{{this.colorName}}" id="{{this.colorHex}}" type="button">
-              </button>
-            </li>
-            {{/each}}
-          </ul>
-        </div>
-
-        <ul class="button__list">
-          <li><button class="button__purchase button__purchase--buy" type="button">купить</button></li>
-          <li><button class="button__purchase button__purchase--fit" type="button">примерка</button></li>
-          <li><button class="button__purchase button__purchase--installment" type="button" disabled="disabled">купить в расстрочку</button>
-          </li>
-        </ul>
-
-        <div class="product__info">
-          <p class="product__description">{{parsedProductInfoData.productDescription}}</p>
-          <p class="product__composition"><span class="product__composition--bold">Состав:</span> {{parsedProductInfoData.productComposition}}
-          </p>
-        </div>
-
-        <div class="product__characteristics">
-          <ul class="product__characteristics-list">
-            <li class="product__characteristic-item product__characteristic-item--params">
-              <p class="product__characteristics-name">параметры</p>
-              <button class="button__plus button__plus--params" type="button"></button>
-              <ul class="params__grid" data-params-menu>
-                {{#each parsedProductInfoData.productParams}}
-                  <li class="params__item">{{this.params}}</li>
-                  <li class="params__item">{{this.value}}</li>
-                {{/each}}
-              </ul>
-            </li>
-            <li>
-
-            </li>
-            <li class="product__characteristic-item">
-              <p class="product__characteristics-name">дополнительно</p>
-              <button class="button__plus button__plus--aditional" type="button"></button>
-              <p class="aditional__grid" data-aditional-menu>
-                {{parsedProductInfoData.productAdditional}}
-              </p>
-            </li>
-          </ul>
-
-        </div>
-      </article>
-      
-  </div>
-</section> --}}

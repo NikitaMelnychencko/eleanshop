@@ -1,3 +1,4 @@
+import { event } from 'jquery';
 import productTEST from '../../../js/json/product/productTEST.json';
 import productTemplate from '../../../views/partials/product/infoAboutProduct.hbs';
 window.jQuery = window.$ = require('jquery');
@@ -45,6 +46,9 @@ export function createFullMarkup() {
   //* TEST************
   const btn = createBtn(productTEST);
   return productTemplate({productTEST, btn});
+
+  // const btn = createBtn(productTEST);
+  // return productTemplate({productTEST});
 }
 
 //! ---------------------------------------------------Add to favorites
@@ -118,14 +122,14 @@ function setProductColor(color) {
   localStorage.setItem('productColor', color);
 }
 function addCurrentClass(button) {
-  button.classList.add('button__colorpicker--current');
+  button.classList.add('colorpicker__label--current');
 }
 
 function removeCurrentClass() {
-  const currentClass = document.querySelector('.button__colorpicker--current');
+  const currentClass = document.querySelector('.colorpicker__label--current');
 
   if (currentClass) {
-    currentClass.classList.remove('button__colorpicker--current');
+    currentClass.classList.remove('colorpicker__label--current');
   }
 }
 
@@ -142,24 +146,30 @@ function fixateCurrentClass(colorArray, productColor) {
 
 
 function onColorListClick(event) {
-  // let x = []
+  let x = []
   const colorpickerButton = event.target;
-  const isColorpickerButton = colorpickerButton.classList.contains('button__colorpicker');
+  const isColorpickerButton = colorpickerButton.classList.contains('colorpicker__label');
 
   if (!isColorpickerButton) {
     return;
   }
+  const inputColor = event.target.previousElementSibling.value
+  console.log(inputColor);
 
-  // productTEST.productAviable.find(size => {
-  //   if(size.colorId === colorpickerButton.id) {
-  //     x.push(size.aviableSize)
-  //     console.log(x);
-  //   }
-  // } )
+  productTEST.productAviable.find(size => {
+    if(size.colorId === inputColor) {
+      x.push(size.aviableSize)
+    }
+  } )
 
   removeCurrentClass();
   addCurrentClass(colorpickerButton);
-  setProductColor(colorpickerButton.id);
+  setProductColor(inputColor);
+
+  console.log(x);
+  // const btn = createBtn(x);
+  // productTemplate({btn});
+  // createFullMarkup(x)
 }
 
 function setProductDataToOrdering() {
@@ -229,7 +239,7 @@ function onFittingBtnClick() {
 }
 //!----------------------------------------------------Fixate local storage data
 function fixateDataFromLocalStorage() {
-  const colorBtn = document.querySelectorAll('.button__colorpicker');
+  const colorBtn = document.querySelectorAll('.colorpicker__label');
   let productColor = localStorage.getItem('productColor');
 
   fixateCurrentClass(colorBtn, productColor);
@@ -241,12 +251,12 @@ function fixateDataFromLocalStorage() {
 function createAllListeners(buy) {
   const charList = document.querySelector('.product__characteristics');
   const colorList = document.querySelector('.colorpicker__list');
-  const buyBtn = document.querySelector('.button__purchase--buy');
   const favBtn = document.querySelector('.product__name-wrapper .button-add-likes');
   const notYourSizeBtn = document.querySelector('.button__size-option--available-size');
   const defineSizeBtn = document.querySelector('.button__size-option--find-size');
   const fittingBtn = document.querySelector('.button__purchase--fit');
   const sizeList = document.querySelector('.size__list');
+  const form = document.querySelector('.product__form')
 
   notYourSizeBtn.addEventListener('click', onNotYourSizeBtnClick);
   defineSizeBtn.addEventListener('click', onDefineSizeBtnClick);
@@ -256,11 +266,11 @@ function createAllListeners(buy) {
   charList.addEventListener('click', onCharListClick);
   sizeList.addEventListener('click', onSizeElClick);
 
-  
-  buyBtn.addEventListener('click', () => {
-    buy(productInfoData.productName);
-    setProductDataToOrdering();
-  });
+  form.addEventListener('submit', (event) => {
+      event.preventDefault()
+      buy(productInfoData.productName);
+      setProductDataToOrdering();
+    });
 }
 
 //!----------------------------------------------------EXPORT TO MAIN FILE
