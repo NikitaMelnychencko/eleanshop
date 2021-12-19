@@ -63,10 +63,10 @@ buttonMobEl.addEventListener('click', fnMobileMenu);
 function fnMobileMenu() {
   headerEl.classList.toggle('mod-background-color');
   headerEl.classList.toggle('mobile-menu');
-  svgMobEl.forEach(element => element.classList.toggle('mod-hidden'));
+  svgMobEl.forEach(element => element.classList.toggle('js-mod-hidden'));
   svgBinEl.classList.toggle('mod-stroke');
   svgBinEl.classList.toggle('mod-fill-transp');
-  socialMobEl.classList.toggle('mod-hidden');
+  socialMobEl.classList.toggle('js-mod-hidden');
   logoSvgEl.classList.toggle('mod-fill');
   logoTextEl.classList.toggle('mod-color');
   listTextEl.forEach(element => element.classList.toggle('mod-color'));
@@ -75,11 +75,11 @@ function fnMobileMenu() {
   wrapperEl.classList.toggle('wrapper');
   bodyEl.classList.toggle('mobile-open');
 
-  if (!buttonMobEl.children[1].classList.contains('mod-hidden')) {
+  if (!buttonMobEl.children[1].classList.contains('js-mod-hidden')) {
     navigationEl.addEventListener('click', fnMobileList);
   }
 
-  if (buttonMobEl.children[1].classList.contains('mod-hidden')) {
+  if (buttonMobEl.children[1].classList.contains('js-mod-hidden')) {
     navigationEl.removeEventListener('click', fnMobileList);
   }
 }
