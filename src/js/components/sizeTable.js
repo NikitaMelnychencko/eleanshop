@@ -15,6 +15,8 @@ export function onBtnClick() {
   backdrop.classList.remove('is-hidden');
   
   const buttonClose = document.querySelector('[data-modal-close]')
+  buttonClose.style.display = 'block'
+
   buttonClose.addEventListener('click', onButtonCloseModalClick)
 
 }
