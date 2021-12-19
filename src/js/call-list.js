@@ -3,6 +3,13 @@ import updateBin from './updateBin.js';
 import { classBody } from './layout/static/footer.js';
 updateBin();
 
+import { Forms } from './components/forms';
+const formsForm = new Forms('fittingForm');
+const formsPage = new Forms('fittingPage');
+const formBrand = {
+  page: formsPage.insertForm(),
+  form: formsForm.insertForm(),
+};
 import { VideoSetPlayer } from './components/videoSetPlayer.js';
 const videoSetPlayer = new VideoSetPlayer();
 
@@ -10,8 +17,6 @@ const videoSetPlayer = new VideoSetPlayer();
 import home from '../views/layouts/home.hbs';
 import { pageHeroSliderMarkup, heroSlider } from './layout/home/hero.js';
 import { pageShowroomSliderMarkup, showroomSlider } from './layout/home/ourShowRoom.js';
-import { formFittingInShowroom } from './layout/brand/formFittingInShowroom.js';
-import { formBrand } from './layout/brand/infoAboutBrand.js';
 
 import {
   pageStarClientsSliderMarkup,
@@ -34,7 +39,6 @@ export function homeRender() {
     aboutTheBrand_parsing,
   });
   refs.mainEL.innerHTML = homeMarkup;
-
   heroSlider();
   openContent();
   showroomSlider();
@@ -42,8 +46,8 @@ export function homeRender() {
   starClientsComments();
   instagramSlider();
   blockHelpRender();
-  formFittingInShowroom();
   openAboutTheBrand();
+  formsForm.init();
 }
 homeRender(); //========================================================call
 //=====brand========//
@@ -64,24 +68,34 @@ export function brandRender() {
     videoBrand,
   });
   refs.mainEL.innerHTML = contactPageMarkUp;
-  formFittingInShowroom();
   infoAboutBrand();
   brandPlayer();
   blockHelpRender();
+  formsForm.init();
 }
 
 //=====checkout========//
 import { ModalData, createPayment } from './layout/checkout/payment.js';
-import { ordering, openOrderingFunction } from './layout/checkout/ordering.js';
+import { OrderingPrice, OrderingSizeAndColor } from './layout/checkout/ordering.js';
+import ordering_ordering from '../views/partials/checkout/ordering.hbs';
 import { backdropMarkup } from './layout/checkout/thanksForOrdering.js';
 import payment_checkout from '../views/layouts/checkout.hbs';
 export function checkoutRender() {
   updateBin();
   classBody();
+  const savedData = localStorage.getItem('orderingData');
+  const parsedData = JSON.parse(savedData);
+  const ordering = ordering_ordering(parsedData);
   const createCheckout = payment_checkout({ createPayment, ordering, backdropMarkup });
   refs.mainEL.innerHTML = createCheckout;
   //refs.mainEL.insertAdjacentHTML('beforeend', createCheckout);
-  openOrderingFunction();
+
+  const orderingPrice = new OrderingPrice({
+    parsedData: parsedData,
+  });
+  const orderingSizeColor = new OrderingSizeAndColor({
+    parsedData: parsedData,
+  });
   const modalOpen = new ModalData({
     idInputDay: 'js-day',
     idListDay: 'day-list',
@@ -114,6 +128,7 @@ export function favoritesRender() {
     refs.mainEL.innerHTML = favorites.markcup;
   }
   favorites.init();
+  blockHelpRender();
 }
 let data = localStorage.getItem('favorites');
 if (!data == null) {
@@ -129,13 +144,15 @@ export function contactRender() {
   classBody();
   const contactPageMarkUp = contact_page({ formBrand, contactsMap, contactsContact });
   refs.mainEL.innerHTML = contactPageMarkUp;
-  formFittingInShowroom();
   blockHelpRender();
+  formsPage.init();
 }
 
 //=====delivery========//
+
+const formDelivery = new Forms('delivery');
+const formDeliveryMarkUp = formDelivery.insertForm();
 import deliveryMarkUp from '../views/layouts/delivery.hbs';
-import { formDeliveryMarkUp, formDelivery } from './layout/delivery/formsQuestion.js';
 import { deliveryThreeModal } from './layout/delivery/deliveryTypes.js';
 import {
   buttonsDelivery,
@@ -154,9 +171,9 @@ export function deliveryRender() {
     formDeliveryMarkUp,
   });
   refs.mainEL.innerHTML = deliveryPageMarkUp;
-  formDelivery();
   deliveryThreeModal();
   blockHelpRender();
+  formDelivery.init();
 }
 
 //=====fitting========//
@@ -177,6 +194,7 @@ export function fittingRender() {
   videoSetPlayer.clickListener();
   formFittingInShowroom();
   blockHelpRender();
+  formsPage.init();
 }
 
 //=====product========//
@@ -245,8 +263,9 @@ export function productRender() {
 }
 
 //=====reviews========//
+const formReviews = new Forms('reviews');
+const formReviewsMarkUp = formReviews.insertForm();
 import reviews_page from '../views/layouts/reviews.hbs';
-import { formReviews, formReviewsMarkUp } from './layout/reviews/registrationFormForFitting.js';
 import { setVideoHbs, clientStar, videosetSlickSettings } from './layout/reviews/videoSet.js';
 
 export function reviewsRender() {
@@ -259,6 +278,7 @@ export function reviewsRender() {
   formReviews();
   videoSetPlayer.clickListener();
   blockHelpRender();
+  formReviews.init();
 }
 
 //=====showroom========//
@@ -268,8 +288,8 @@ export function showroomRender() {
   const showroomPageMarkUp = showroom_page({ formBrand, pageShowroomSliderMarkup });
   refs.mainEL.innerHTML = showroomPageMarkUp;
   showroomSlider();
-  formFittingInShowroom();
   blockHelpRender();
+  formsForm.init();
 }
 
 //=====blockHelp========//
