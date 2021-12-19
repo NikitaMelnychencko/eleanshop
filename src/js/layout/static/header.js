@@ -10,29 +10,29 @@ import {
   reviewsRender,
 } from '../../call-list.js';
 
-class Header {
-  constructor(
-    favoritesRender,
-    showroomRender,
-    contactRender,
-    catalogRender,
-    brandRender,
-    deliveryRender,
-    fittingRender,
-    reviewsRender,
-  ) {
-    this.favoritesRender = favoritesRender;
-    this.showroomRender = showroomRender;
-    this.contactRender = contactRender;
-    this.catalogRender = catalogRender;
-    this.brandRender = brandRender;
-    this.deliveryRender = deliveryRender;
-    this.fittingRender = fittingRender;
-    this.reviewsRender = reviewsRender;
+// class Header {
+//   constructor(
+//     favoritesRender,
+//     showroomRender,
+//     contactRender,
+//     catalogRender,
+//     brandRender,
+//     deliveryRender,
+//     fittingRender,
+//     reviewsRender,
+//   ) {
+//     this.favoritesRender = favoritesRender;
+//     this.showroomRender = showroomRender;
+//     this.contactRender = contactRender;
+//     this.catalogRender = catalogRender;
+//     this.brandRender = brandRender;
+//     this.deliveryRender = deliveryRender;
+//     this.fittingRender = fittingRender;
+//     this.reviewsRender = reviewsRender;
 
-    console.log(favoritesRender);
-  }
-}
+//     console.log(favoritesRender);
+//   }
+// }
 
 const {
   headerEl,
