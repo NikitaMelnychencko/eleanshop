@@ -1,0 +1,196 @@
+.form-delivery {
+  background: $modal-background-color;
+  text-align: center;
+  padding-top: 42px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 40px;
+
+  @media screen and (min-width: $desktop-up) and (max-width: $tablet-general) {
+    position: relative;
+    padding-top: 38px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  @media screen and (min-width: $desktop-up) {
+    padding-top: 37px;
+    padding-left: 221px;
+    padding-right: 221px;
+    padding-bottom: 79px;
+  }
+}
+
+.form-delivery__title {
+  font-size: 20px;
+  line-height: 1.25;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: $button-hover-background-color;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  @media screen and (min-width: $desktop-up) and (max-width: $tablet-general) {
+    margin-bottom: 24px;
+    text-align: left;
+    font-size: 18px;
+    line-height: 1.1;
+    letter-spacing: 0.05em;
+    color: $button-hover-background-color;
+  }
+
+  @media screen and (min-width: $desktop-up) {
+    font-size: 21px;
+    line-height: 0.95;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: $button-hover-background-color;
+    margin-bottom: 30px;
+  }
+}
+
+.form-delivery__horiz-block {
+  @media screen and (min-width: $desktop-up) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: center;
+  }
+}
+
+.form-delivery__input,
+.form-delivery__comment {
+  height: 60px;
+  border: 1px solid $button-hover-background-color;
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 13px;
+  padding: 18px;
+  &::placeholder {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 1.9;
+    letter-spacing: 0.06em;
+    color: $fourth-text-color;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+.form-delivery__comment {
+  margin-bottom: 0;
+}
+
+.form-delivery__input {
+  @media screen and (min-width: $mobile-general) {
+    min-width: 230px;
+  }
+
+  @media screen and (min-width: $desktop-up) {
+    margin-bottom: 20px;
+  }
+}
+
+.form-delivery__input-box {
+  position: relative;
+  flex-grow: 1;
+}
+
+.form-delivery__send-btn-text {
+  transition: color 200ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-top: 10px;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.9;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: $button-hover-background-color;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 1px solid $button-hover-background-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  &:focus,
+  &:hover {
+    color: $accent-btn-color;
+  }
+  @media screen and (min-width: $tablet-general) {
+    border: none;
+  }
+}
+
+.form-delivery__button {
+  transition: background $time-cubic;
+  box-sizing: border-box;
+  height: 60px;
+  width: 221px;
+  margin-left: auto;
+  margin-top: -5px;
+  border-top: none;
+  &:focus,
+  &:hover {
+    background: $button-hover-background-color;
+  }
+  @media screen and (min-width: $tablet-general) {
+    width: 180px;
+    flex-grow: 0;
+
+    border: 1px solid $button-hover-background-color;
+    margin-top: 0;
+  }
+  @media screen and (min-width: $desktop-up) {
+    border-left: none;
+  }
+}
+
+.form-delivery__comment {
+  resize: none;
+  height: 120px;
+  width: 100%;
+
+  @media screen and (min-width: $desktop-up) and (max-width: $tablet-general) {
+    height: 130px;
+  }
+  @media screen and (min-width: $desktop-up) {
+    height: 100px;
+  }
+}
+
+.form-delivery__comment-box {
+  position: relative;
+  @media screen and (min-width: $mobile-general) {
+    flex-grow: 1;
+  }
+}
+
+.form-delivery__input-center {
+  @media screen and (min-width: $desktop-up) {
+    border-right: none;
+    border-left: none;
+  }
+}
+
+.form-delivery__icon {
+  height: 34px;
+  width: 31px;
+  stroke: $third-accent-color;
+  margin-bottom: 23px;
+}
+
+.delivery-section-form {
+  padding-top: 23px;
+  padding-bottom: 60px;
+  @media screen and (min-width: $desktop-up) {
+    padding-bottom: 105px;
+    padding-top: 45px;
+  }
+}
+.delivery-formReviews-box {
+  border: 1px dashed $form-dashed-color;
+  box-sizing: border-box;
+}

@@ -192,7 +192,6 @@ export function fittingRender() {
   refs.mainEL.innerHTML = fittingMarkUp;
   openVideoSlider();
   videoSetPlayer.clickListener();
-  formFittingInShowroom();
   blockHelpRender();
   formsPage.init();
 }
@@ -275,7 +274,6 @@ export function reviewsRender() {
   videosetSlickSettings();
   starClientsSlider();
   starClientsComments();
-  formReviews();
   videoSetPlayer.clickListener();
   blockHelpRender();
   formReviews.init();

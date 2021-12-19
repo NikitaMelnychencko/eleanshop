@@ -1,8 +1,7 @@
-import { event } from 'jquery';
 import productTEST from '../../../js/json/product/productTEST.json';
 import productTemplate from '../../../views/partials/product/infoAboutProduct.hbs';
 window.jQuery = window.$ = require('jquery');
-require('../../slick/slick.min');
+require('../../slider/slick.min.js');
 
 import sizeChose from '../../components/sizeChose';
 const { createBtn, onSizeElClick } = sizeChose;

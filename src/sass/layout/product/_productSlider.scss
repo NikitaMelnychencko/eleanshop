@@ -57,6 +57,7 @@
   width: 47px;
   height: 71px;
   cursor: pointer;
+  background-color: $predownload-background;
 }
 // !--------------------------------------------- END OF SMALLER SLIDER//
 // !--------------------------------------------- MAIN SLIDER//
@@ -119,14 +120,8 @@
 }
 
 .product-slider__image {
-  @media screen and (min-width: $tablet-general) {
-    min-width: 500px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  @media screen and (min-width: $desktop-up) {
-    min-width: 700px;
-  }
+  background-color: $predownload-background;
+  margin-left: auto;
+  margin-right: auto;
 }
 // !--------------------------------------------- END OF MAIN SLIDER//
