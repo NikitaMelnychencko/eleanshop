@@ -22,7 +22,7 @@
   margin: 0 auto 22px auto;
 }
 
-.fitting__product-shipping--list {
+.fitting__shipping-list {
   font-size: 15px;
   line-height: 20px;
   letter-spacing: 0.05em;
@@ -30,12 +30,12 @@
   display: inline-block;
   padding-left: 30px;
   position: relative;
-  & + .fitting__product-shipping--list {
+  & + .fitting__shipping-list {
     margin-top: 45px;
   }
 }
 
-.fitting__product-shipping--list::before {
+.fitting__shipping-list::before {
   content: '';
   width: 15px;
   height: 1px;
