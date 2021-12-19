@@ -85,7 +85,7 @@ import payment_checkout from '../views/layouts/checkout.hbs';
 import { mainModal } from '../js/components/modal/modal';
 export function checkoutRender() {
   updateBin();
-  classBody();
+  const newClassBody = new classBody();
   const savedData = localStorage.getItem('orderingData');
   const parsedData = JSON.parse(savedData);
   const ordering = ordering_ordering(parsedData);
