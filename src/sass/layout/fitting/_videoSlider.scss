@@ -4,6 +4,7 @@
   object-fit: cover;
   width: 374px;
   height: 665px;
+  background-color: $predownload-background;
   @media screen and (min-width: $mobile-only) {
     width: 323px;
     height: 400px;

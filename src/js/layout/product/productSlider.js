@@ -1,6 +1,6 @@
 //!----------------------------------------------- -----Product sliders/
 window.jQuery = window.$ = require('jquery');
-require('../../slick/slick.min');
+require('../../slider/slick.min.js');
 
 $(document).ready(function () {
   $('.product-slider-smaller').slick({
