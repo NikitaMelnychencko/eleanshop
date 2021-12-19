@@ -7,15 +7,15 @@ import { scrollTo } from '../../components/scrollTo';
 import { bodyFixPosition, bodyUnfixPosition } from '../../components/scroll/scroll';
 let throttle = require('lodash.throttle');
 export const modalFormMarkup = modalFormMarkupTempl();
-// export const backdropMarkup = backdropMarkupTempl(modalFormMarkup);
+export const backdropMarkup = backdropMarkupTempl(modalFormMarkup);
 
-// export function onBtnClick() {
-//   const backdropRef = document.querySelector('[data-modal]');
-//   window.addEventListener('resize', throttle(onResize, 50));
-//   const backdrop = new Backdrop();
+export function onBtnClick() {
+  const backdropRef = document.querySelector('[data-modal]');
+  window.addEventListener('resize', throttle(onResize, 50));
+  const backdrop = new Backdrop();
 
-//   onResize();
-// }
+  onResize();
+}
 
 export function onResize(event) {
   const btnCloseRef = document.querySelector('.form__button-сlose');

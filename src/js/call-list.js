@@ -25,6 +25,7 @@ import {
 import { pageInInstagramSliderMarkup, instagramSlider } from './layout/home/inInstagram.js';
 import { cardsMarkup, openContent } from './layout/home/content.js';
 import { aboutTheBrand_parsing, openAboutTheBrand } from './layout/home/aboutTheBrand.js';
+import { browserCheck } from './components/scroll/scroll.js';
 export function homeRender() {
   updateBin();
   const newClassBody = new classBody();
@@ -282,7 +283,6 @@ export function reviewsRender() {
   videosetSlickSettings();
   starClientsSlider();
   starClientsComments();
-  formReviews();
   videoSetPlayer.clickListener();
   blockHelpRender();
   formReviews.init();
