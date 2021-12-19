@@ -18,33 +18,34 @@
 
 <body class="">
   <header class="js-header header">
-    <div class="container header-container">
+    <div class="container container__header">
       <!-- //! HAT-BEGINNING -->
-      <div class="head">
+      <div class="header__social">
         <!-- Mob menu start button -->
         <button class="js-header-button button" type="button">
-          <svg class="js-header-button__svg button__svg-open">
+          <svg class="js-header-button__svg button__svg button__svg--open">
             <use href="./images/header.svg#header-mobile-burger"></use>
           </svg>
-          <svg class="js-header-button__svg button__svg-close mod-hidden">
+          <svg class="js-header-button__svg button__svg button__svg--close mod-hidden">
             <use href="./images/header.svg#header-mobile-close"></use>
           </svg>
         </button>
         <!-- Mob menu end button -->
         <!-- Social networks Desktop-beginning -->
-        <ul class="social-list-desktop">
-          <li class="social-list-desktop__item">
-            <a class="social-list-desktop__link" href="https://www.instagram.com/" target="_blank"
+        
+        <ul class="header__social-list">
+          <li class="header__social-item">
+            <a class="header__social-link" href="https://www.instagram.com/" target="_blank"
               rel="noreferrer noopener">
-              <svg class="social-list-desktop__svg" width="18" height="18">
+              <svg class="header__social-svg" width="18" height="18">
                 <use href="./images/header.svg#header-instagram"></use>
               </svg>
             </a>
           </li>
-          <li class="social-list-desktop__item">
-            <a class="social-list-desktop__link" href="https://uk-ua.facebook.com/" target="_blank"
+          <li class="header__social-item">
+            <a class="header__social-link" href="https://uk-ua.facebook.com/" target="_blank"
               rel="noreferrer noopener">
-              <svg class="social-list-desktop__svg" width="8" height="18">
+              <svg class="header__social-svg" width="8" height="18">
                 <use href="./images/header.svg#header-facebook1"></use>
               </svg>
             </a>
@@ -52,33 +53,34 @@
         </ul>
         <!-- Social networks_Dextop-end -->
         <!-- Start logo -->
-        <a class="header-logo" href="./index.html">
-          <svg class="js-header-logo__svg header-logo__svg-elean">
+        <a class="header__logo" href="./index.html">
+          <h1 class="header__logo--title">ELEANSHOP женский смокинг</h1>
+          <svg class="js-header-logo__svg header__svg-elean">
             <use href="./images/header.svg#header-logo"></use>
           </svg>
-          <p class="js-header-logo__text header-logo__text">ЖЕНСКИЙ<br>СМОКИНГ</p>
+          <p class="js-header-logo__text header__logo--text">ЖЕНСКИЙ<br>СМОКИНГ</p>
         </a>
         <!-- End logo -->
         <!-- Phone-start -->
-        <a class="header-phone" href="tel:+380990000000">+38(099)-000-00-00</a>
+        <a class="header__phone" href="tel:+380990000000">+38(099)-000-00-00</a>
         <!-- Phone-end-->
         <!-- Selected Cart-start -->
-        <ul class="js-product-list product-list">
-          <li class="product-list__item">
-            <a class="product-list__link" href="#" id="header-favorites">
-              <svg class="js-header-svg-favorites product-list__svg-favorites">
+        <ul class="js-product-list header__product-list">
+          <li class="header__product-item">
+            <a class="header__product-link" href="#" id="header-favorites">
+              <svg class="js-header-svg-favorites header__product-svg--favorites">
                 <use href="./images/header.svg#header-favorites"></use>
               </svg>
-              <p class="js-header-list__text product-list__text" id="js-text-fav">0</p>
+              <p class="js-header-list__text header__product-text" id="js-text-fav">0</p>
             </a>
           </li>
-          <li class="product-list__item">
-            <a class="product-list__link js-bin" href="#">
-              <svg class="js-header-svg-bin product-list__svg-bin">
+          <li class="header__product-item">
+            <a class="header__product-link js-bin" href="#">
+              <svg class="js-header-svg-bin header__product-svg--bin">
                 <use href="./images/header.svg#header-bin">
                 </use>
               </svg>
-              <p class="js-header-list__text product-list__text" id="js-text-bin">0</p>
+              <p class="js-header-list__text header__product-text" id="js-text-bin">0</p>
             </a>
           </li>
         </ul>
@@ -88,109 +90,112 @@
 
       <!--//! NAVIGATION-BEGINNING -->
       <div class="js-header-wrapper">
-        <nav class="js-header-navigation navigation mod-hidden-mob">
-          <ul class="js-header-navigation-list navigation-list">
-            <li class="navigation-list__item">
-              <a class="js-header-navigation-link navigation-list__link" href="#" data-atribute="new">НОВИНКИ</a>
+        <nav class="js-header-navigation header__nav js-hidden-mobile" >
+          <ul class="js-header-navigation-list header__nav-list">
+            <li class="header__nav-item">
+              <a class="js-header-navigation-link header__nav-link" href="#" data-atribute="new">НОВИНКИ</a>
             </li>
-            <li class="navigation-list__item">
-              <a class="js-header-navigation-link navigation-list__link" href="#">КАТЕГОРИИ</a>
-              <ul class="js-header-navigation-sublist navigation-sublist mod-hidden-mob">
-                <li class="navigation-sublist__subitem"><a class="navigation-sublist__link" href="#"
-                    data-atribute="skirts">Юбки</a></li>
-                <li class="navigation-sublist__subitem"><a class="navigation-sublist__link" href="#"
+            <li class="header__nav-item">
+              <a class="js-header-navigation-link header__nav-link" href="#">КАТЕГОРИИ</a>
+              <ul class="js-header-navigation-sublist header__nav-sublist js-hidden-mobile">
+                <li class="header__nav-subitem">
+                  <a class="header__nav-sublink" href="#"
+                    data-atribute="skirts">Юбки</a>
+                  </li>
+                <li class="header__nav-subitem"><a class="header__nav-sublink" href="#"
                     data-atribute="tux">Смокинг</a></li>
-                <li class="navigation-sublist__subitem"><a class="navigation-sublist__link" href="#"
+                <li class="header__nav-subitem"><a class="header__nav-sublink" href="#"
                     data-atribute="costumes">Костюмы</a></li>
-                <li class="navigation-sublist__subitem"><a class="navigation-sublist__link" href="#"
+                <li class="header__nav-subitem"><a class="header__nav-sublink" href="#"
                     data-atribute="accessory">Аксессуары</a></li>
-                <li class="navigation-sublist__subitem"><a class="navigation-sublist__link" href="#"
+                <li class="header__nav-subitem"><a class="header__nav-sublink" href="#"
                     data-atribute="pants">Брюки</a></li>
-                <li class="navigation-sublist__subitem"><a class="navigation-sublist__link" href="#"
+                <li class="header__nav-subitem"><a class="header__nav-sublink" href="#"
                     data-atribute="blouses">Блузы</a></li>
-                <li class="navigation-sublist__subitem"><a class="navigation-sublist__link" href="#"
+                <li class="header__nav-subitem"><a class="header__nav-sublink" href="#"
                     data-atribute="dress">Платья</a></li>
-                <li class="navigation-sublist__subitem"><a class="navigation-sublist__link" href="#"
+                <li class="header__nav-subitem"><a class="header__nav-sublink" href="#"
                     data-atribute="vests">Топы и жилеты</a>
                 </li>
               </ul>
             </li>
-            <li class="navigation-list__item">
-              <a class="js-header-navigation-link navigation-list__link" href="#">НАШИ КОЛЛЕКЦИИ</a>
-              <ul class="js-header-navigation-sublist navigation-sublist mod-hidden-mob">
-                <li class="navigation-sublist__subitem"><a class="navigation-sublist__link" href="#"
+            <li class="header__nav-item">
+              <a class="js-header-navigation-link header__nav-link" href="#">НАШИ КОЛЛЕКЦИИ</a>
+              <ul class="js-header-navigation-sublist header__nav-sublist js-hidden-mobile">
+                <li class="header__nav-subitem"><a class="header__nav-sublink" href="#"
                     data-atribute="autumn-winter">Осень-зима
                     20-21</a>
                 </li>
-                <li class="navigation-sublist__subitem"><a class="navigation-sublist__link" href="#"
+                <li class="header__nav-subitem"><a class="header__nav-sublink" href="#"
                     data-atribute="evening-sets">Вечерние
                     комплекты</a></li>
-                <li class="navigation-sublist__subitem"><a class="navigation-sublist__link" href="#"
+                <li class="header__nav-subitem"><a class="header__nav-sublink" href="#"
                     data-atribute="preorder">Предзаказ</a></li>
-                <li class="navigation-sublist__subitem"><a class="navigation-sublist__link" href="#"
+                <li class="header__nav-subitem"><a class="header__nav-sublink" href="#"
                     data-atribute="wedding-and-graduation">Свадьба и
                     выпускной</a></li>
               </ul>
             </li>
-            <li class="navigation-list__item"><a class="js-header-navigation-link navigation-list__link"
+            <li class="header__nav-item">
+              <a class="js-header-navigation-link header__nav-link"
                 href="#">ПОКУПАТЕЛЯМ</a>
-              <ul class="js-header-navigation-sublist navigation-sublist mod-hidden-mob">
-                <li class="navigation-sublist__subitem"><a class="navigation-sublist__link" href="#">Доставка</a></li>
-                <li class="navigation-sublist__subitem"><a class="navigation-sublist__link" href="#">Акции</a></li>
-                <li class="navigation-sublist__subitem"><a class="navigation-sublist__link" href="#">Возврат</a></li>
-                <li class="navigation-sublist__subitem"><a class="navigation-sublist__link" href="#">Размерная
+              <ul class="js-header-navigation-sublist header__nav-sublist js-hidden-mobile">
+                <li class="header__nav-subitem"><a class="header__nav-sublink" href="#">Доставка</a></li>
+                <li class="header__nav-subitem"><a class="header__nav-sublink" href="#">Акции</a></li>
+                <li class="header__nav-subitem"><a class="header__nav-sublink" href="#">Возврат</a></li>
+                <li class="header__nav-subitem"><a class="header__nav-sublink" href="#">Размерная
                     таблица</a>
                 </li>
-                <li class="navigation-sublist__subitem"><a class="navigation-sublist__link" href="#">Примерка</a></li>
-                <li class="navigation-sublist__subitem"><a class="navigation-sublist__link" href="#">Оптовым
+                <li class="header__nav-subitem"><a class="header__nav-sublink" href="#">Примерка</a></li>
+                <li class="header__nav-subitem"><a class="header__nav-sublink" href="#">Оптовым
                     покупателям</a></li>
               </ul>
             </li>
-            <li class="navigation-list__item">
-              <a class="js-header-navigation-link navigation-list__link" href="#">О БРЕНДЕ</a>
-              <ul class="js-header-navigation-sublist navigation-sublist mod-hidden-mob">
-                <li class="navigation-sublist__subitem"><a class="navigation-sublist__link" href="#">Шоурум</a></li>
-                <li class="navigation-sublist__subitem"><a class="navigation-sublist__link" href="#">Отзывы</a></li>
-                <li class="navigation-sublist__subitem"><a class="navigation-sublist__link" href="#">Статьи</a></li>
-                <li class="navigation-sublist__subitem"><a class="navigation-sublist__link" href="#">Блог</a></li>
+            <li class="header__nav-item">
+              <a class="js-header-navigation-link header__nav-link" href="#">О БРЕНДЕ</a>
+              <ul class="js-header-navigation-sublist header__nav-sublist js-hidden-mobile">
+                <li class="header__nav-subitem"><a class="header__nav-sublink" href="#">Шоурум</a></li>
+                <li class="header__nav-subitem"><a class="header__nav-sublink" href="#">Отзывы</a></li>
+                <li class="header__nav-subitem"><a class="header__nav-sublink" href="#">Статьи</a></li>
+                <li class="header__nav-subitem"><a class="header__nav-sublink" href="#">Блог</a></li>
               </ul>
             </li>
-            <li class="navigation-list__item">
-              <a class="js-header-navigation-link navigation-list__link" href="#">ШОУРУМ</a>
+            <li class="header__nav-item">
+              <a class="js-header-navigation-link header__nav-link" href="#">ШОУРУМ</a>
             </li>
-            <li class="navigation-list__item">
-              <a class="js-header-navigation-link navigation-list__link" href="#">КОНТАКТЫ</a>
+            <li class="header__nav-item">
+              <a class="js-header-navigation-link header__nav-link" href="#">КОНТАКТЫ</a>
             </li>
           </ul>
         </nav>
         <!--//! NAVIGATION-END -->
 
         <!-- //! SOCIAL NETWORKS_MOBILE-BEGINNING -->
-        <ul class="js-header-social-list-mobile social-list-mobile mod-hidden">
-          <li class="social-list-mobile__item">
-            <a class="social-list-mobile__link" href="https://web.whatsapp.com/" target="_blank"
+        <ul class="js-header-social-list-mobile header__list--mobile">
+          <li class="header__item--mobile">
+            <a class="header__link--mobile" href="https://web.whatsapp.com/" target="_blank"
               rel="noreferrer noopener">
-              <svg class="social-list-mobile__svg" width="16" height="16">
+              <svg class="header__svg-mobile" width="16" height="16">
                 <use href="./images/header.svg#header-whatsapp"></use>
               </svg>WhatsApp</a>
           </li>
-          <li class="social-list-mobile__item">
-            <a class="social-list-mobile__link" href="https://uk-ua.facebook.com/" target="_blank"
+          <li class="header__item--mobile">
+            <a class="header__link--mobile" href="https://uk-ua.facebook.com/" target="_blank"
               rel="noreferrer noopener">
-              <svg class="social-list-mobile__svg" width="16" height="16">
+              <svg class="header__svg-mobile" width="16" height="16">
                 <use href="./images/header.svg#header-facebook"></use>
               </svg>Facebook</a>
           </li>
-          <li class="social-list-mobile__item">
-            <a class="social-list-mobile__link" href="https://web.telegram.org/k/" target="_blank"
+          <li class="header__item--mobile">
+            <a class="header__link--mobile" href="https://web.telegram.org/k/" target="_blank"
               rel="noreferrer noopener">
-              <svg class="social-list-mobile__svg" width=" 18" height="16">
+              <svg class="header__svg-mobile" width=" 18" height="16">
                 <use href="./images/header.svg#header-telegram"></use>
               </svg>Telegram</a>
           </li>
-          <li class="social-list-mobile__item">
-            <a class="social-list-mobile__link" href="mailto:info@eleanboutique.ua">
-              <svg class="social-list-mobile__svg" width="18" height="16">
+          <li class="header__item--mobile">
+            <a class="header__link--mobile" href="mailto:info@eleanboutique.ua">
+              <svg class="header__svg-mobile" width="18" height="16">
                 <use href="./images/header.svg#header-email"></use>
               </svg>E-mail</a>
           </li>

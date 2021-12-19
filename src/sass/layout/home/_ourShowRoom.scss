@@ -46,6 +46,9 @@
   justify-content: center;
   align-items: center;
 
+  @media screen and (max-width: $tablet-only) {
+    margin-bottom: 50px;
+  }
 }
 
 /* Basic styles */
