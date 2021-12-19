@@ -255,7 +255,6 @@ export function productRender() {
 const formReviews = new Forms('reviews');
 const formReviewsMarkUp = formReviews.insertForm();
 import reviews_page from '../views/layouts/reviews.hbs';
-import { formReviews, formReviewsMarkUp } from './layout/reviews/registrationFormForFitting.js';
 import { setVideoHbs, clientStar, videosetSlickSettings } from './layout/reviews/videoSet.js';
 
 export function reviewsRender() {
