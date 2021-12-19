@@ -7,6 +7,6 @@ export default function updateBin() {
       return (total += Number(el.label.count));
     }, 0);
   }
-  document.querySelector('.js-bin .product-list__text').textContent = count;
+  document.querySelector('.js-bin .header__product-text').textContent = count;
 }
 // updateBin();

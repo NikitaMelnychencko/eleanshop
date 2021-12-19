@@ -1,0 +1,80 @@
+<div class='form {{classname}} {{type}}'>
+  <svg class='form__icon {{classname}}__icon {{type}}'>
+    <use href={{svg}}></use>
+  </svg>
+  <h3 class='form__title {{classname}}__title {{type}}'>{{title}}</h3>
+  <form class='form__form {{classname}}__form' action='#' id='contactFormInputs'>
+    <div class='form__horiz-block {{classname}}__horiz-block {{type}}'>
+      <label class='form__input-box {{classname}}__input-box'>
+        <span class='form__input-wrapper {{classname}}__input-wrapper star-{{classname}}'>
+          <input
+            type='text'
+            name={{nameInputFirst}}
+            class='form__input {{classname}}__input {{type}}'
+            minlength='2'
+            required
+            placeholder='{{inputFirst}}'
+          />
+        </span>
+      </label>
+      <label class='form__input-box {{classname}}__input-box'>
+        <span class='form__input-wrapper {{classname}}__input-wrapper star-{{classname}}'>
+          <input
+            type='tel'
+            name={{nameInputSecond}}
+            class='form__input form__input-center
+              {{classname}}__input
+              {{classname}}__input-center
+              {{type}}'
+            required
+
+{{#if telPattern}}
+            pattern='[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}'
+{{/if}}
+
+
+            placeholder='{{inputSecond}}'
+          />
+        </span>
+      </label>
+      <label class='form__input-box {{classname}}__input-box'>
+        <span class='form__input-wrapper {{classname}}__input-wrapper star-{{classname}}'>
+          <input
+            type='text'
+            name={{nameInputThird}}
+            class='form__input {{classname}}__input {{type}}'
+            required
+            placeholder='{{inputThird}}'
+          />
+        </span>
+      </label>
+    </div>
+    <div class='form__horiz-block {{classname}}__horiz-block {{type}}'>
+      <label class='form__comment-box {{classname}}__comment-box {{type}}'>
+        <textarea
+          type='text'
+          name={{nameTextArea}}
+          class='form__comment {{classname}}__comment {{type}}'
+          minlength='2'
+          required
+          placeholder='{{textArea}}'
+        ></textarea>
+      </label>
+      <div class='form__button {{classname}}__button {{type}}'>
+        <button class='form__send-btn-text {{classname}}__send-btn-text' type='submit'>
+          {{buttonText}}
+        </button>
+      </div>
+    </div>
+    {{#if addPhoto}}
+      <div>
+        <button class='{{classname}}__button-add-photo' name='add-photo'>
+          <svg class='{{classname}}__icon-add-photo'>
+            <use href='./images/exampl.svg#icon-{{classname}}-add-photo'></use>
+          </svg>
+          Добавить фотографию
+        </button>
+      </div>
+    {{/if}}
+  </form>
+</div>
