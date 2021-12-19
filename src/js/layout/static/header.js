@@ -10,6 +10,30 @@ import {
   reviewsRender,
 } from '../../call-list.js';
 
+// class Header {
+//   constructor(
+//     favoritesRender,
+//     showroomRender,
+//     contactRender,
+//     catalogRender,
+//     brandRender,
+//     deliveryRender,
+//     fittingRender,
+//     reviewsRender,
+//   ) {
+//     this.favoritesRender = favoritesRender;
+//     this.showroomRender = showroomRender;
+//     this.contactRender = contactRender;
+//     this.catalogRender = catalogRender;
+//     this.brandRender = brandRender;
+//     this.deliveryRender = deliveryRender;
+//     this.fittingRender = fittingRender;
+//     this.reviewsRender = reviewsRender;
+
+//     console.log(favoritesRender);
+//   }
+// }
+
 const {
   headerEl,
   buttonMobEl,
@@ -34,6 +58,8 @@ const {
 //! ---------- MODAL OF THE MOBILE VERSION -----------
 buttonMobEl.addEventListener('click', fnMobileMenu);
 
+// const addClass = classList.toggle;
+
 function fnMobileMenu() {
   headerEl.classList.toggle('mod-background-color');
   headerEl.classList.toggle('mobile-menu');
@@ -45,7 +71,7 @@ function fnMobileMenu() {
   logoTextEl.classList.toggle('mod-color');
   listTextEl.forEach(element => element.classList.toggle('mod-color'));
   svgFavoritesEl.classList.toggle('mod-stroke');
-  navigationEl.classList.toggle('mod-hidden-mob');
+  navigationEl.classList.toggle('js-hidden-mobile');
   wrapperEl.classList.toggle('wrapper');
   bodyEl.classList.toggle('mobile-open');
 
@@ -58,14 +84,14 @@ function fnMobileMenu() {
   }
 }
 
-//! ---------- MOBILE VERSION MENU -----------
+// ! ---------- MOBILE VERSION MENU -----------
 let markup;
 
 function fnMobileList(event) {
   if (event.target.parentElement.children.length !== 1) {
     if (navListEl.children.length > 1) {
       markup = navListEl.innerHTML;
-      [...navSublistEl].forEach(element => element.classList.toggle('mod-hidden-mob'));
+      [...navSublistEl].forEach(element => element.classList.toggle('js-hidden-mobile'));
       [...navLinkEl].forEach(element => element.classList.toggle('mod-rotate-navigation'));
       navListEl.innerHTML = event.target.parentNode.outerHTML;
     } else {
@@ -78,10 +104,25 @@ function fnMobileList(event) {
   }
 }
 
+//! ----------RECORD IN LOCAL STORAGE -----------
+function fnSavelocalStorage(event) {
+  // const atribute = event.target.dataset.atribute;
+  if (event.target.dataset.atribute) localStorage.setItem('content', event.target.dataset.atribute);
+}
+
+//! ----------CHANGE OF COLOR OF THE TEXT OF QUANTITY IN THE BASKET AND DEFENDED -----------
+if (Number(favQuantityEl.textContent) > 0) fnChangeColor(favQuantityEl);
+if (Number(binQuantityEl.textContent) > 0) fnChangeColor(binQuantityEl);
+
+function fnChangeColor(element) {
+  element.style.color = 'red';
+}
+
 //! ---------- PAGE RENDERS -----------
 navigationEl.addEventListener('click', fnRender);
 function fnRender(event) {
   fnSavelocalStorage(event);
+  // const textContent = event.target.textContent;
 
   if (event.target.textContent === 'НОВИНКИ' || event.target.textContent === 'Акции')
     catalogRender();
@@ -116,17 +157,3 @@ function fnRender(event) {
 }
 
 favoritesEl.addEventListener('click', favoritesRender);
-
-//! ----------RECORD IN LOCAL STORAGE -----------
-function fnSavelocalStorage(event) {
-  if (event.target.dataset.atribute)
-    localStorage.setItem('content', event.target.dataset.atribute);
-}
-
-//! ----------CHANGE OF COLOR OF THE TEXT OF QUANTITY IN THE BASKET AND DEFENDED -----------
-if (Number(favQuantityEl.textContent) > 0) fnChangeColor(favQuantityEl);
-if (Number(binQuantityEl.textContent) > 0) fnChangeColor(binQuantityEl);
-
-function fnChangeColor(element) {
-  element.style.color = 'red';
-}

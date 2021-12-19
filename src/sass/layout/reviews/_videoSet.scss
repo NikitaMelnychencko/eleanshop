@@ -26,12 +26,6 @@
   }
 }
 
-// .videoset {
-// overflow: hidden;
-// margin: 0;
-// padding-top: 10px;
-// }
-
 .video-set__item {
   position: relative;
   list-style: none;
@@ -43,8 +37,6 @@
 }
 
 .video-set__image {
-  // position: relative;
-  // height: 100%;
   height: 665px;
   width: 374px;
   object-fit: cover;
