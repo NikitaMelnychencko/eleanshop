@@ -275,7 +275,6 @@ export function reviewsRender() {
   videosetSlickSettings();
   starClientsSlider();
   starClientsComments();
-  formReviews();
   videoSetPlayer.clickListener();
   blockHelpRender();
   formReviews.init();
