@@ -1,5 +1,5 @@
 .size-table {
-  &__modal-container {
+  .size-table__modal-container {
     padding: 66px 20px 66px 20px;
     width: 100%;
     margin-left: auto;
@@ -16,7 +16,8 @@
       padding: 66px 120px 66px 107px;
     }
   }
-  &__standart {
+
+  .size-table__standart {
     margin-bottom: 32px;
     font-family: $third-font-family;
     font-size: 20px;
@@ -33,7 +34,8 @@
       letter-spacing: 0.03em;
     }
   }
-  &__table {
+
+  .size-table__table {
     display: grid;
     border-collapse: collapse;
     min-width: 100%;
@@ -41,7 +43,7 @@
       minmax(85px, 1fr) minmax(55px, 1fr) minmax(55px, 1fr)
       minmax(55px, 1fr) minmax(55px, 1fr);
 
-    &:nth(:first-child) {
+    .size-table__table:nth(:first-child) {
       grid-auto-rows: 59px;
     }
 
@@ -50,18 +52,19 @@
         minmax(85px, 1fr) minmax(85px, 1fr) minmax(85px, 1fr)
         minmax(85px, 1fr) minmax(85px, 1fr);
     }
-    & > thead,
+    .size-table__table > thead,
     tbody,
     tr {
       display: contents;
     }
-    & > thead > tr > th,
+    &.size-table__table > thead > tr > th,
     td {
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap;
     }
-    & > thead > tr > th {
+
+    .size-table__table > thead > tr > th {
       position: sticky;
       top: 0;
       padding-bottom: 12px;
@@ -72,7 +75,8 @@
       font-size: 18px;
       line-height: 1.11;
     }
-    & > tbody > tr > td {
+
+    .size-table__table > tbody > tr > td {
       padding-top: 19px;
       padding-bottom: 21px;
 
@@ -85,7 +89,7 @@
       line-height: 1.47;
 
       letter-spacing: 0.05em;
-      & > span {
+      .size-table__table > span {
         display: inline-block;
         background: #000000;
         color: $table-border-color;

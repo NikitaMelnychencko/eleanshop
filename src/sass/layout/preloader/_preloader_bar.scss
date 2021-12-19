@@ -8,7 +8,7 @@
   z-index: 9999;
   opacity: 1;
   transition: all $time-cubic;
-  &--hiden {
+  .loading--hiden {
     opacity: 0;
   }
 }
@@ -22,7 +22,7 @@
 
 .loading__text-after {
   top: -77px;
-  & span {
+  .loading__text-after span {
     display: inline-block;
     margin: 0 5px;
     color: #fff;

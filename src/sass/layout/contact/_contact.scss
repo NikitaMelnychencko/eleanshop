@@ -1,6 +1,7 @@
 .contacts-section {
   padding-top: 39px;
   padding-bottom: 20px;
+
   @media screen and (min-width: $desktop-up) {
     padding-top: 69px;
     padding-bottom: 386px;
@@ -10,6 +11,7 @@
 .contacts-container {
   padding-right: 0;
   padding-left: 0;
+
   @media screen and (min-width: $desktop-up) {
     display: grid;
     padding-left: 20px;
@@ -27,7 +29,7 @@
   letter-spacing: 0.05em;
   color: $secondary-text-color;
   margin-bottom: 21px;
-  margin-bottom: 21px;
+
   @media screen and (min-width: $desktop-up) {
     margin-bottom: 40px;
   }
@@ -36,6 +38,7 @@
 .contacts__contacts {
   padding-left: 40px;
   padding-right: 40px;
+
   @media screen and (min-width: $desktop-up) {
     grid-column-start: 2;
     grid-column-end: 3;
@@ -50,6 +53,7 @@
 .contacts__map {
   height: 700px;
   margin-bottom: 50px;
+
   @media screen and (min-width: $desktop-up) {
     grid-column-start: 1;
     grid-column-end: 2;
@@ -63,6 +67,7 @@
 .contacts__form {
   padding-left: 20px;
   padding-right: 20px;
+
   @media screen and (min-width: $desktop-up) {
     padding-right: 0;
     padding-left: 0;
@@ -74,12 +79,10 @@
   }
 }
 
-
 .contacts__link {
   font-size: 15px;
   line-height: 1.47;
   letter-spacing: 0.05em;
-
   color: $secondary-text-color;
 }
 
@@ -90,10 +93,12 @@
   color: $secondary-text-color;
   display: flex;
   align-items: center;
-  & + .contacts__item{
+
+  .contacts__item + .contacts__item {
     margin-top: 21px;
   }
 }
+
 .contacts__icons {
   width: 24px;
   height: 24px;
@@ -113,8 +118,6 @@
 .contacts-item-first-ul {
   margin-bottom: 37px;
 }
-
-
 
 .contacts-map {
   border: none;

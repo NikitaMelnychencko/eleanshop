@@ -10,6 +10,7 @@
   margin-bottom: 20px;
   text-transform: uppercase;
 }
+
 .catalog-collection-header {
   margin-top: 30px;
 }
@@ -17,6 +18,7 @@
 .catalog-collection-header:current {
   color: #ae9177;
 }
+
 .category-item,
 .collection-item {
   font-family: var($third-font-family);
@@ -32,6 +34,7 @@
   animation-iteration-count: 1;
   animation-direction: alternate;
 }
+
 @keyframes slidein {
   from {
     margin-bottom: 100%;

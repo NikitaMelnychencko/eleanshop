@@ -3,24 +3,24 @@
   overflow: hidden;
 
   @media screen and (max-width: $mobile-only) {
-    & .container {
+    .hand-sewn .container {
       width: auto;
     }
   }
 
   @media screen and (min-width: $desktop-up) {
     padding-bottom: 326px;
-    & .container {
+    .hand-sewn .container {
       display: flex;
       padding-left: 42px;
     }
   }
 
-  &__title {
+  .hand-sewn__title {
     @extend %hide;
   }
 
-  &__item {
+  .hand-sewn__item {
     position: relative;
     background-repeat: no-repeat;
     background-size: auto 100%;
@@ -28,7 +28,7 @@
     &:nth-child(2n-1) {
       background-image: url('../images/handSewn-bg-right.png');
       color: $third-text-color;
-      & .hand-sewn__item-title {
+      .hand-sewn .hand-sewn__item-title {
         color: $selection-text-color;
         font-weight: normal;
       }
@@ -36,12 +36,12 @@
         background-position-x: calc(50% + 500px);
       }
 
-      & .container {
+      .hand-sewn .container {
         flex-direction: row-reverse;
         align-items: end;
       }
 
-      & .hand-sewn__block-text {
+      .hand-sewn .hand-sewn__block-text {
         @media screen and (min-width: $desktop-up) {
           padding-bottom: 62px; //48px
         }
@@ -55,37 +55,37 @@
         padding-bottom: 0;
         background-position-x: calc(50% - 438px);
       }
-      & .hand-sewn__block-text {
+      .hand-sewn .hand-sewn__block-text {
         @media screen and (min-width: $desktop-up) {
           padding-bottom: 48px; //48px
         }
       }
     }
 
-    &_biggest-bottom {
+    .hand-sewn_biggest-bottom {
       padding-bottom: 224px;
       padding-top: 60px;
     }
 
-    &_biggest-top {
+    .hand-sewn_biggest-top {
       padding-top: 224px;
     }
 
     @media screen and (min-width: $desktop-up) {
       color: $third-text-color;
-      &_biggest-bottom {
+      .hand-sewn_biggest-bottom {
         padding-bottom: 0;
         padding-top: 0;
       }
 
-      &_biggest-top {
+      .hand-sewn_biggest-top {
         padding-top: 0;
         padding-bottom: 0;
       }
     }
   }
 
-  &__block-text {
+  .hand-sewn__block-text {
     @media screen and (min-width: $desktop-up) {
       width: 50%;
       padding-left: 42px;
@@ -94,7 +94,7 @@
     }
   }
 
-  &__list-info {
+  .hand-sewn__list-info {
     counter-reset: section;
     padding-left: 34px;
     padding-right: 34px;
@@ -103,16 +103,16 @@
       column-count: 2;
       column-gap: 60px;
       padding-right: 42px;
-      .hand-sewn__item_biggest-top & {
+      .hand-sewn__item_biggest-top .hand-sewn__list-info {
         height: 60%;
       }
     }
   }
 
-  &__item-info {
+  .hand-sewn__item-info {
     position: relative;
 
-    &_counters::before {
+    .hand-sewn_counters::before {
       counter-increment: section;
       content: counter(section);
       position: absolute;
@@ -130,7 +130,7 @@
     }
   }
 
-  &__item-title {
+  .hand-sewn__item-title {
     margin-bottom: 17px;
     font-family: $selection-font-family;
     font-size: 21px;
@@ -143,26 +143,26 @@
     }
   }
 
-  &__item-text {
+  .hand-sewn__item-text {
     padding-bottom: 28px;
   }
 
-  &__item-info {
+  .hand-sewn__item-info {
     margin-bottom: 26px;
   }
 
-  &__image {
+  .hand-sewn__image {
     position: absolute;
     width: 352px;
     height: 292px;
 
     @media screen and (max-width: $mobile-only) {
-      &_right {
+      .hand-sewn__image_right {
         bottom: 0;
         left: 86px;
         transform: translateY(50%);
       }
-      &_left {
+      .hand-sewn__image_left {
         top: 100%;
         right: 44px;
       }

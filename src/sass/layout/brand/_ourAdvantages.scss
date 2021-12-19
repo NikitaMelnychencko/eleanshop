@@ -4,12 +4,14 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 40px;
+
   @media screen and (min-width: $tablet-general) {
     min-block-size: 100%;
     margin-top: 20px;
     margin-left: 20px;
     flex-basis: calc((100% - 40px) / 2);
   }
+
   @media screen and (min-width: $desktop-up) {
     flex-basis: calc((100% - 60px) / 3);
   }
@@ -35,6 +37,7 @@
   background-color: $secondary-background-color;
   padding-top: 47px;
   padding-bottom: 50px;
+
   @media screen and (min-width: $desktop-up) {
     padding-top: 67px;
     padding-bottom: 300px;
@@ -50,6 +53,7 @@
   color: #ffffff;
   text-transform: uppercase;
   margin-bottom: 108px;
+
   @media screen and (min-width: $desktop-up) {
     margin-bottom: 67px;
   }

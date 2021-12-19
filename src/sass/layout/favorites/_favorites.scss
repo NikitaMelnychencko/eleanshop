@@ -1,12 +1,12 @@
 .favorites {
   padding-top: 70px;
   padding-bottom: 39px;
-   @media screen and (min-width: $desktop-up) {
-    padding-bottom: 327px;
-   }
-  
 
-  &__title {
+  @media screen and (min-width: $desktop-up) {
+    padding-bottom: 327px;
+  }
+
+  .favorites__title {
     font-family: $selection-font-family;
     font-size: 21px;
     line-height: 20 / 21 * 100%;
@@ -18,12 +18,13 @@
     margin-bottom: 55px;
   }
 
-  &__data {
+  .favorites__data {
     margin-bottom: 80px;
 
-    &-item {
+    .favorites__data-item {
       position: relative;
       margin-bottom: 285px;
+
       @media screen and (min-width: $desktop-up) {
         display: flex;
         flex-wrap: nowrap;
@@ -37,6 +38,7 @@
         }
       }
     }
+
     &::before {
       @include line($favorites-after-color, -40px);
     }
@@ -46,17 +48,17 @@
     }
   }
 
-  &__product {
+  .favorites__product {
     display: flex;
 
-    &--image {
+    .favorites__product--image {
       display: block;
       width: 110px;
       height: 130px;
       margin-right: 16px;
     }
 
-    &--info {
+    .favorites__product--info {
       display: block;
       font-family: $primary-font-family;
       font-size: 15px;
@@ -72,7 +74,7 @@
         width: 200px;
       }
 
-      &-text {
+      .favorites__product-text {
         display: block;
         margin-bottom: 6px;
         @media screen and (min-width: $desktop-up) {
@@ -82,7 +84,7 @@
     }
   }
 
-  &__description {
+  .favorites__description {
     position: absolute;
     top: 200px;
     width: 100%;
@@ -100,11 +102,11 @@
     }
   }
 
-  &__button-group {
+  .favorites__button-group {
     width: 200px;
   }
 
-  &__button-buy {
+  .favorites__button-buy {
     position: absolute;
     right: 0;
     top: 140px;
@@ -144,7 +146,7 @@
     }
   }
 
-  &__button-delete {
+  .favorites__button-delete {
     position: absolute;
     right: 0;
     top: 0;
@@ -177,7 +179,7 @@
       stroke: $selection-text-color;
     }
 
-    &--text {
+    .favorites__button-delete--text {
       display: none;
 
       @media screen and (min-width: $desktop-up) {
@@ -185,7 +187,7 @@
       }
     }
 
-    &--icon {
+    .favorites__button-delete--icon {
       width: 13px;
       height: 13px;
       stroke: $btn-text-color;
@@ -198,13 +200,13 @@
     }
   }
 
-  &__sand-on-email {
+  .favorites__sand-on-email {
     @media screen and (min-width: $desktop-up) {
       display: flex;
       justify-content: flex-start;
     }
 
-    &--title {
+    .favorites__sand-on-email--title {
       font-family: $third-font-family;
       font-style: normal;
       font-weight: 500;
@@ -219,7 +221,7 @@
       }
     }
 
-    &--button {
+    .favorites__sand-on-email--button {
       font-family: $third-font-family;
       font-weight: 500;
       font-size: 15px;
@@ -249,7 +251,7 @@
       }
     }
 
-    &--text {
+    .favorites__sand-on-email--text {
       font-family: $primary-font-family;
       font-size: 14px;
       line-height: 23 / 14 * 100%;

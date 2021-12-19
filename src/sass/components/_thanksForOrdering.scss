@@ -1,5 +1,5 @@
 .ordering {
-  &__form {
+  .ordering__form {
     margin: 0 auto;
     padding: 100px 120px 63px 120px;
     width: 780px;
@@ -7,7 +7,7 @@
     background-color: $primary-background-color;
   }
 
-  &__image {
+  .ordering__image {
     display: block;
     margin: 0 auto;
     margin-bottom: 35px;
@@ -15,7 +15,7 @@
     height: 110px;
   }
 
-  &__title {
+  .ordering__title {
     display: block;
     font-family: $selection-font-family;
     font-style: normal;
@@ -30,7 +30,7 @@
     margin-bottom: 20px;
   }
 
-  &__context {
+  .ordering__context {
     font-family: $selection-font-family;
     font-style: normal;
     font-weight: normal;
@@ -44,7 +44,7 @@
     margin-bottom: 50px;
   }
 
-  &__btn-continue {
+  .ordering__btn-continue {
     display: block;
     margin: 0 auto;
     @extend %button;

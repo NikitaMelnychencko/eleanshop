@@ -1,10 +1,12 @@
 .catalog-category-filter-gallery {
   background-color: var($modal-background-color);
+
   @media screen and (min-width: $desktop-up) {
     display: flex;
     justify-content: space-between;
   }
 }
+
 .catalog-list {
   display: grid;
   width: 100%;
@@ -12,6 +14,7 @@
   grid-auto-rows: minmax(100px, auto);
   grid-gap: 16px;
   margin-bottom: 20px;
+
   @media screen and (min-width: $desktop-up) {
     grid-template-columns: repeat(4, 260px);
     grid-gap: 16px;
@@ -66,6 +69,7 @@
 .card-content {
   position: relative;
 }
+
 .card-name {
   width: 140px;
   font-weight: 500;
@@ -82,12 +86,14 @@
     margin-bottom: 15px;
   }
 }
+
 .card-price {
   font-weight: 500;
   font-size: 15px;
   line-height: 1.4;
   color: var($third-logo-color);
 }
+
 .card-image {
   width: 100%;
   object-fit: cover;
@@ -100,6 +106,7 @@
     box-shadow: 0 0 20px #afafaf;
   }
 }
+
 .icon-gallery-card-heart {
   position: absolute;
   width: 16px;
@@ -119,6 +126,7 @@
 .heart-click {
   fill: #c4c4c4;
 }
+
 .card-descr {
   font-family: var($third-font-family);
   font-weight: 500;
@@ -127,6 +135,7 @@
   color: #afafaf;
   margin-bottom: 0;
 }
+
 .catalog-icon-raws-round {
   display: block;
   margin: 0 auto;
@@ -155,6 +164,7 @@
     text-transform: uppercase;
   }
 }
+
 .catalog-category-filter {
   display: none;
 
@@ -165,6 +175,7 @@
     width: 100%;
   }
 }
+
 .catalog-card {
   height: 100%;
   width: 100%;

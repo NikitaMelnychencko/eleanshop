@@ -1,6 +1,6 @@
 .help__button-thumb {
   position: fixed;
-  z-index: 5;
+  // z-index: 5;
   top: 40vh;
   right: 0;
   z-index: 1000;
@@ -9,21 +9,22 @@
   flex-direction: column;
   align-items: center;
 
-  &.is-hidden {
+  .is-hidden {
     display: none;
   }
 }
+
 .help__button {
   border-style: none;
   cursor: pointer;
   background-repeat: no-repeat;
   background-position: center;
 
-  &:not(:last-child) {
+  .help__button:not(:last-child) {
     margin-bottom: 8px;
   }
 
-  &--orange {
+  .help__button--orange {
     width: 60px;
     height: 60px;
     background-color: $accent-color;
@@ -41,21 +42,24 @@
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  &.isVisible {
+  .isVisible {
     visibility: visible;
     opacity: 1;
   }
 }
+
 .button-phone {
   background-image: url(../images/helpPhone.svg), url(../images/rectangleWhite.svg);
   background-size: 26px 26px, 36px 36px;
 }
+
 .button-chat {
   position: relative;
   background-image: url(../images/helpChat.svg);
 
   background-size: 36px 36px;
 }
+
 .button-chat__messages-amount-thumb {
   position: absolute;
   top: -5px;
@@ -65,6 +69,7 @@
   border-radius: 50%;
   background-color: $message-amount-thumb-color;
 }
+
 .button-chat__messages-amount {
   font-weight: 600;
   font-size: 12px;
@@ -73,6 +78,7 @@
 
   color: $selection-text-color;
 }
+
 //modals
 .help__modal {
   position: fixed;
@@ -91,13 +97,16 @@
   visibility: hidden;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   @media screen and (max-width: $tablet-only) {
     transform: translateY(100%);
   }
+
   @media screen and (min-width: $desktop-up) {
     transform: translateX(100%);
   }
-  &.isActive {
+
+  .help__modal.isActive {
     transform: translateY(0%);
     opacity: 1;
     visibility: visible;
@@ -120,8 +129,8 @@
     border: 1px solid $accent-color;
   }
 }
-//phone modal
 
+//phone modal
 .help__button-close-modal {
   position: absolute;
   top: 5px;
@@ -137,9 +146,11 @@
   background-position: center;
   cursor: pointer;
 }
+
 .client-number__timer {
   margin-bottom: 10px;
 }
+
 .client-number__timer-text {
   font-size: 16px;
   display: flex;
@@ -148,26 +159,31 @@
   opacity: 0;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  &.visible {
+  .visible {
     opacity: 1;
   }
 }
+
 .client-number__timer-number {
   font-size: 26px;
 }
+
 .client-number__form {
   margin: 0;
 }
+
 .client-number__text {
   font-size: 13px;
   margin-bottom: 30px;
   text-align: center;
   color: $accent-color;
 }
+
 .client-number__label {
   margin-bottom: 20px;
   display: block;
 }
+
 .client-number__input {
   width: 100%;
   height: 35px;
@@ -176,25 +192,26 @@
   border: 2px solid $accent-color;
   border-radius: 5px;
 
-  &::placeholder {
+  .client-number__input::placeholder {
     color: $accent-color;
   }
 }
 
 //chat modal
-
 .help__chat-messages-thumb {
   height: 250px;
   overflow: auto;
   padding: 20px;
 }
+
 .help__chat-message {
   border: 1px solid $accent-color;
   padding: 3px;
   border-radius: 5px;
   position: relative;
   margin-bottom: 10px;
-  &::before {
+
+  .help__chat-message::before {
     content: '';
     width: 10px;
     height: 10px;
@@ -202,21 +219,23 @@
     background-color: $accent-color;
   }
 }
+
 .adviser-message {
   background-color: $accent-color;
 
-  &::before {
+  .adviser-message::before {
     position: absolute;
     left: -20px;
     top: 50%;
   }
 }
+
 .client-message {
   overflow: hidden;
   background-color: $primary-background-color;
   border: 2px solid $accent-color;
 
-  &::before {
+  .client-message::before {
     position: absolute;
     right: -20px;
     top: 50%;
@@ -226,11 +245,12 @@
 .client-messadge__form {
   margin: 0;
 }
+
 .client-message__label {
   display: block;
-
   margin-bottom: 20px;
 }
+
 .client-message__textarea {
   width: 100%;
   height: 80px;
@@ -239,7 +259,7 @@
   border: 2px solid $accent-color;
   border-radius: 5px;
 
-  &::placeholder {
+  .client-message__textarea::placeholder {
     color: $accent-color;
   }
 }

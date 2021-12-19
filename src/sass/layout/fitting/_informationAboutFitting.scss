@@ -1,6 +1,6 @@
 .fitting {
   max-width: 100vh;
-  font-family: $secondary-font-family,sans-serif;
+  font-family: $secondary-font-family, sans-serif;
 }
 
 /* fitting shipping */
@@ -19,20 +19,19 @@
   font-size: 18px;
   line-height: 1.1;
   letter-spacing: 0.05em;
-  margin:0 auto 22px auto;
-  
+  margin: 0 auto 22px auto;
 }
 
 .fitting__product-shipping--description {
   font-size: 15px;
   line-height: 20px;
   letter-spacing: 0.05em;
-  
+
   display: inline-block;
   padding-left: 30px;
   position: relative;
-  & + .fitting__product-shipping--description{
-    margin-top: 45px;  
+  .fitting__product-shipping--description + .fitting__product-shipping--description {
+    margin-top: 45px;
   }
 }
 

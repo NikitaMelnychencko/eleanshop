@@ -19,27 +19,20 @@
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  // width: 100% !important;
+
   @media screen and (min-width: $desktop-up) {
     justify-content: space-between;
     width: 100% !important;
   }
 }
 
-// .videoset {
-// overflow: hidden;
-// margin: 0;
-// padding-top: 10px;
-// }
-
 .video-set__item {
   position: relative;
   list-style: none;
-  // @media screen and (min-width: $desktop-up) {
-  & + .video-set__item {
+
+  .video-set__item + .video-set__item {
     margin-left: 14px;
   }
-  // }
 }
 
 .video-set__image {
@@ -70,12 +63,6 @@
   font-size: 21px;
   font-style: normal;
   font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0.05em;
-  text-align: center;
-
-  font-weight: 400;
-  font-size: 20px;
   line-height: 1;
   letter-spacing: 0.05em;
   text-align: center;
@@ -92,14 +79,9 @@
   font-size: 15px;
   color: $selection-title-text-color;
   font-weight: 400;
-  line-height: 19px;
   letter-spacing: 0.05em;
   text-align: left;
-  font-weight: 400;
   line-height: 1.27;
-  letter-spacing: 0.05em;
-  text-align: left;
-  // padding: 19px 0;
 
   @media screen and (min-width: $desktop-up) {
     color: $primary-title-text-color;
@@ -110,7 +92,6 @@
   }
 }
 .video-subtitle {
-  // min-height: 60px;
   flex-grow: 1;
 }
 
@@ -118,7 +99,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  //   margin-bottom: 46px;
 }
 
 .videoset .slick-dots li {
@@ -153,7 +133,7 @@
   cursor: pointer;
 
   @media screen and (min-width: $desktop-up) {
-    .video-set-box:hover & {
+    .video-set-box:hover .video-set-svg {
       filter: drop-shadow(0px 0px 5px $selection-text-color);
     }
     transform: translate(0, 0);
@@ -175,15 +155,13 @@
 .video-set-fullscreen {
   display: none;
   fill: $hero-slider-dots;
-  // fill: red;
   position: absolute;
   z-index: 2;
   bottom: 30px;
   right: 30px;
   width: 50px;
   height: 50px;
-  transition: filter $time-cubic;
-  transition: fill $time-cubic;
+  transition: filter $time-cubic, fill $time-cubic;
   cursor: pointer;
   @media screen and (min-width: $desktop-up) {
     &:hover {

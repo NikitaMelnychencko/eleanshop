@@ -109,8 +109,6 @@
   text-transform: uppercase;
   background-color: transparent;
   border: 1px solid $button-hover-background-color;
-  display: flex;
-  align-items: center;
   justify-content: center;
   height: 100%;
   width: 100%;
@@ -126,7 +124,6 @@
 
 .form-delivery__button {
   transition: background $time-cubic;
-  // border: 1px solid $button-hover-background-color;
   box-sizing: border-box;
   height: 60px;
   width: 221px;

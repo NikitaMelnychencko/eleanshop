@@ -1,3 +1,8 @@
+.hidden {
+  // @extend %hide;
+  transform: translateY(-100%);
+  opacity: 0;
+}
 .product-bin {
   position: absolute;
   top: 0;
@@ -13,18 +18,12 @@
   transition: $time-cubic;
   opacity: 1;
 
-  &.hidden {
-    // @extend %hide;
-    transform: translateY(-100%);
-    opacity: 0;
-  }
-
   @media screen and (min-width: $desktop-up) {
     max-width: 640px;
     padding: 46px 46px 50px;
   }
 
-  &__block-title {
+  .product-bin__block-title {
     margin-bottom: 26px;
     @media screen and (min-width: $desktop-up) {
       display: flex;
@@ -32,7 +31,7 @@
     }
   }
 
-  &__title {
+  .product-bin__title {
     margin-right: 16px;
     text-transform: uppercase;
     font-style: normal;
@@ -42,7 +41,7 @@
     line-height: 1.4;
   }
 
-  &__title-line {
+  .product-bin__title-line {
     display: block;
     @media screen and (min-width: $desktop-up) {
       display: block;
@@ -51,27 +50,27 @@
       background-color: $button-counter-color;
     }
   }
-  &__list {
+  .product-bin__list {
     border-bottom: 1px solid $primery-border-color;
   }
 
-  &__item {
+  .product-bin__item {
     display: flex;
   }
 
-  &__block-image {
+  .product-bin__block-image {
     margin-right: 16px;
     @media screen and (min-width: $desktop-up) {
       margin-right: 18px;
     }
   }
 
-  &__image {
+  .product-bin__image {
     min-width: 148px;
     min-height: 220px;
   }
 
-  &__block-character {
+  .product-bin__block-character {
     width: 100%;
     margin-bottom: 20px;
 
@@ -80,7 +79,7 @@
     }
   }
 
-  &__block-title {
+  .product-bin__block-title {
     font-family: $third-font-family;
     font-weight: 500;
     font-size: 18px;
@@ -93,7 +92,7 @@
     }
   }
 
-  &__product-size {
+  .product-bin__product-size {
     font-weight: 400;
     font-size: 17px;
     line-height: 1.35;
@@ -103,7 +102,7 @@
     }
   }
 
-  &__text {
+  .product-bin__text {
     font-weight: 400;
     font-size: 17px;
     line-height: 1.35;
@@ -113,12 +112,12 @@
     }
   }
 
-  &__block-counter {
+  .product-bin__block-counter {
     display: flex;
     margin-bottom: 18px;
   }
 
-  &__button-del {
+  .product-bin__button-del {
     color: $secondary-text-color;
     padding: 10px 14px;
     border: transparent;
@@ -139,7 +138,7 @@
     }
   }
 
-  &__delete-icon {
+  .product-bin__delete-icon {
     display: block;
     @media screen and (min-width: $desktop-up) {
       display: inline-block;
@@ -150,7 +149,7 @@
     height: 14px;
   }
 
-  &__block-total {
+  .product-bin__block-total {
     padding-top: 26px;
     padding-bottom: 26px;
     display: flex;
@@ -161,10 +160,10 @@
     line-height: 1.35;
   }
 
-  &__ordered {
+  .product-bin__ordered {
     width: 100%;
   }
-  &__product-price {
+  .product-bin__product-price {
     white-space: nowrap;
   }
 }

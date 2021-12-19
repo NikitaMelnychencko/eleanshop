@@ -20,6 +20,7 @@
     padding-left: 40px;
     padding-right: 40px;
   }
+
   @media screen and (min-width: $desktop-up) {
     padding-top: 37px;
     padding-left: 221px;
@@ -46,6 +47,7 @@
   color: $button-hover-background-color;
   text-transform: uppercase;
   margin-bottom: 15px;
+
   @media screen and (min-width: $desktop-up) and (max-width: $tablet-general) {
     margin-bottom: 24px;
     text-align: left;
@@ -75,6 +77,7 @@
   font-size: 18px;
   line-height: 1.4;
   color: $seventh-text-color;
+
   @media screen and (min-width: $desktop-up) {
     display: block;
   }
@@ -84,6 +87,7 @@
   display: flex;
   flex-wrap: wrap;
 }
+
 .form-fitting-showroom__horiz-block.in-form {
   @media screen and (min-width: $desktop-up) {
     display: flex;
@@ -145,8 +149,6 @@
   text-transform: uppercase;
   background-color: transparent;
   border: none;
-  display: flex;
-  align-items: center;
   justify-content: center;
   height: 100%;
   width: 100%;
@@ -158,19 +160,20 @@
 }
 
 .form-fitting-showroom__button.in-page {
-  transition: background $time-cubic;
   border: 1px solid $button-hover-background-color;
   box-sizing: border-box;
-  height: 45px;
-  width: 221px;
+  // height: 45px;
+  // width: 221px;
   margin-left: auto;
+  height: 60px;
+  width: 180px;
+  flex-grow: 0;
+
   &:focus,
   &:hover {
     background: $button-hover-background-color;
   }
-  height: 60px;
-  width: 180px;
-  flex-grow: 0;
+
   @media screen and (min-width: $desktop-up) {
     border-left: none;
   }
@@ -183,16 +186,19 @@
   height: 45px;
   width: 221px;
   margin-left: auto;
+
   &:focus,
   &:hover {
     background: $button-hover-background-color;
   }
+
   @media screen and (min-width: $tablet-general) {
     height: 60px;
     width: 180px;
     flex-grow: 0;
   }
-    @media screen and (min-width: $desktop-up) {
+
+  @media screen and (min-width: $desktop-up) {
     border-left: none;
   }
 }
@@ -224,6 +230,7 @@
   @media screen and (min-width: 500px) and (max-width: $tablet-general) {
     height: 130px;
   }
+
   @media screen and (min-width: $desktop-up) {
     height: 100px;
   }
@@ -248,8 +255,6 @@
 }
 
 .form-fitting-showroom__input-center.in-form {
-
-
   @media screen and (min-width: $desktop-up) {
     border-right: none;
     border-left: none;

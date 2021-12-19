@@ -1,5 +1,4 @@
 //product
-
 %button-pad {
   font-weight: 500;
   font-size: 15px;
@@ -24,11 +23,11 @@
   border: transparent;
   padding-bottom: 15px;
   cursor: pointer;
-  &.active &__icon {
+  .button-add-likes__icon {
     fill: $accent-favorite-btn-color;
   }
 
-  &__icon {
+  .button-add-likes__icon {
     fill: transparent;
     stroke: $accent-favorite-btn-color;
     width: 16px;
@@ -56,14 +55,15 @@
   line-height: 1.15;
   text-align: center;
   cursor: pointer;
-  &_active:hover,
-  &_active:focus {
+
+  .button-counter_active:hover,
+  .button-counter_active:focus {
     color: $selection-text-color;
     background-color: $button-counter-color;
     border: 1px solid $button-counter-color;
   }
 
-  &__button-icon {
+  .button-counter__button-icon {
     width: 15px;
     height: 15px;
   }
@@ -86,14 +86,14 @@
     border: 1px solid $secondary-text-color;
   }
 
-  &:not(:last-child) {
+  .product-button-modal:not(:last-child) {
     margin-bottom: 20px;
   }
 
   @media screen and (min-width: $desktop-up) {
     padding: 18px;
     width: 330px;
-    &:not(:last-child) {
+    .product-button-modal:not(:last-child) {
       margin-bottom: 0;
       margin-right: 14px;
     }
@@ -109,12 +109,14 @@
   background-color: $primary-logo-color;
   width: 40px;
   height: 40px;
+
   @media screen and (max-width: $mobile-only) {
     top: 0;
   }
 
-  &__button-text {
+  .product-close-modal__button-text {
     display: none;
+
     @media screen and (min-width: $desktop-up) {
       margin-right: 36px;
       text-transform: uppercase;
@@ -123,7 +125,7 @@
     }
   }
 
-  &__close-icon {
+  .product-close-modal__close-icon {
     width: 12px;
     height: 12px;
     stroke: $btn-background-color;
@@ -134,7 +136,7 @@
     padding: 6px 12px;
     width: auto;
 
-    &_small {
+    .product-close-modal_small {
       bottom: calc(100% - 40px);
       padding: 14px;
       width: 40px;
@@ -144,6 +146,7 @@
 
 .delivery-button {
   display: none;
+
   @media screen and (min-width: $desktop-up) {
     display: block;
     padding: 16px 13px;
@@ -168,6 +171,7 @@
   top: 50%;
   background-color: $accent-favorite-btn-color;
 }
+
 .reviews-button {
   position: relative;
   width: 100%;
@@ -194,17 +198,19 @@
     margin-left: auto;
   }
 
-  &::before {
+  .reviews-button::before {
     content: '';
     @extend %button-line;
     left: -15px;
   }
-  &::after {
+
+  .reviews-button::after {
     content: '';
     @extend %button-line;
     right: -15px;
   }
 }
+
 //home-reviews button-show-less
 .button-up {
   display: none;
@@ -227,22 +233,6 @@
     right: 470px;
   }
 }
-
-// .ordering__btn--promocode {
-//   padding: 13px 29px;
-//   height: 50px;
-//   border: none;
-
-//   background-color: $btn-background-color;
-//   font-family: $selection-font-family;
-//   font-size: 17px;
-//   line-height: 1.35;
-//   color: $btn-text-color;
-
-//   @media screen and (min-width: $desktop-up) {
-//     border-radius: 3px;
-//   }
-// }
 
 .ordering__button--close {
   width: 40px;
@@ -295,7 +285,7 @@
     border-radius: 3px;
   }
   &:hover,
-  &:focus{
+  &:focus {
     background-color: $button-checkout-color;
     color: $selection-text-color;
   }

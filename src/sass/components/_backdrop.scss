@@ -4,22 +4,20 @@
   left: 0;
   opacity: 1;
   z-index: 1100;
+  overflow-y: scroll;
   background-color: $backdrop-color;
   width: 100vw;
   height: 100vh;
-  overflow-y: scroll;
 
   transition: opacity $time-cubic, visibility $time-cubic;
 
-  &.is-hidden {
-    @extend %hide;
+  .modal {
+    transform: translate(-50%, -50%) scale(0.8);
   }
+}
 
-  @media screen and (min-width: $desktop-up) {
-    &.is-hidden .modal {
-      transform: translate(-50%, -50%) scale(0.8);
-    }
-  }
+.is-hidden {
+  @extend %hide;
 }
 
 .form__wrapper {
@@ -74,10 +72,11 @@
     padding-right: 12px;
   }
 
-  &-text {
-    @media screen and (max-width: $desktop-up - 1px) {
+  .form__button-сlose-text {
+    @media screen and (max-width: calc($desktop-up - 1px)) {
       display: none;
     }
+
     @media screen and (min-width: $desktop-up) {
       display: block;
       position: absolute;
@@ -93,12 +92,13 @@
     }
   }
 
-  &-icon {
+  .form__button-сlose-icon {
     width: 20px;
     height: 20px;
     fill: $selection-text-color;
-    .form__button-сlose:hover &,
-    .form__button-сlose:focus & {
+
+    &:hover .form__button-сlose,
+    &:focus .form__button-сlose {
       fill: $secondary-text-color;
     }
   }

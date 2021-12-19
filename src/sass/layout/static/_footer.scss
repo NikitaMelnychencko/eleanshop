@@ -74,7 +74,7 @@
   padding-top: 36px;
   padding-bottom: 26px;
 
-  &__list-item {
+  .footer__mobile__list-item {
     font-size: 15px;
     font-style: normal;
     line-height: 1.4;
@@ -129,7 +129,7 @@
 }
 
 .footer__mobile-list-item {
-  &-plus {
+  .footer__mobile-list-item-plus {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -477,16 +477,16 @@
 }
 //======switch=====///
 .footer-switch {
-  & .footer__address,
-  & .footer__desktop-item,
-  & .footer__desktop-list-link,
-  & .footer__desktop-list-contacts-telephon,
-  & .footer__desktop-list-contacts-chat,
-  & .footer__desktop-list-contacts-email,
-  & .footer__input-text {
+  .footer-switch .footer__address,
+  .footer-switch .footer__desktop-item,
+  .footer-switch .footer__desktop-list-link,
+  .footer-switch .footer__desktop-list-contacts-telephon,
+  .footer-switch .footer__desktop-list-contacts-chat,
+  .footer-switch .footer__desktop-list-contacts-email,
+  .footer-switch .footer__input-text {
     color: $selection-text-color;
   }
-  & .footer__desktop-social-list svg {
+  .footer-switch .footer__desktop-social-list svg {
     fill: $selection-text-color;
     transition: fill $time-cubic;
     &:hover,
@@ -494,17 +494,17 @@
       fill: $accent-color;
     }
   }
-  & .footer__desktop-logo svg {
+  .footer-switch .footer__desktop-logo svg {
     fill: $selection-text-color;
   }
-  & .footer__desktop-form-input {
+  .footer-switch .footer__desktop-form-input {
     background-color: $secondary-background-color;
     color: $selection-text-color;
   }
-  & .footer__desktop-form-input::placeholder {
+  .footer-switch .footer__desktop-form-input::placeholder {
     color: $selection-text-color;
   }
-  & .footer__desktop-license-checkbox-text {
+  .footer-switch .footer__desktop-license-checkbox-text {
     color: $selection-text-color;
   }
 }

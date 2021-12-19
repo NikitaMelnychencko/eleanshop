@@ -28,6 +28,7 @@
   color: $button-hover-background-color;
   text-transform: uppercase;
   margin-bottom: 15px;
+
   @media screen and (min-width: $desktop-up) and (max-width: $tablet-general) {
     margin-bottom: 24px;
     text-align: left;
@@ -119,8 +120,6 @@
   text-transform: uppercase;
   background-color: transparent;
   border: none;
-  display: flex;
-  align-items: center;
   justify-content: center;
   height: 100%;
   width: 100%;
@@ -250,7 +249,7 @@
     stroke: #afafbf;
     margin-right: 13px;
     transition: stroke $time-cubic;
-    .form-reviews__button-add-photo:hover & {
+    .form-reviews__button-add-photo:hover .form-reviews__icon-add-photo {
       stroke: $button-hover-background-color;
     }
   }
@@ -264,7 +263,7 @@
     padding-top: 45px;
   }
 }
-.reviews-section-form--home{
+.reviews-section-form--home {
   @media screen and (min-width: $desktop-up) {
     padding-bottom: 69px;
     padding-top: 45px;

@@ -56,10 +56,10 @@
   color: $third-text-color;
   width: 126px;
   height: 50px;
-  transition: background $time-cubic;
-  transition: color $time-cubic;
+  transition: background $time-cubic, color $time-cubic;
   margin-left: 1px;
   cursor: pointer;
+
   @media screen and (min-width: $desktop-up) {
     top: 180px;
   }

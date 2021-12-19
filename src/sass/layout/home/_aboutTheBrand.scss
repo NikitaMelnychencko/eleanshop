@@ -136,17 +136,17 @@
 .aboutBrand__text {
   letter-spacing: 0.05em;
 
-  &--first {
+  .aboutBrand__text--first {
     margin-bottom: 20px;
   }
-  &--second {
+  .aboutBrand__text--second {
     margin-bottom: 300px;
 
     @media screen and (min-width: $desktop-up) {
       margin-bottom: 20px;
     }
   }
-  &--third {
+  .aboutBrand__text--third {
     margin-bottom: 15px;
     @media screen and (min-width: $desktop-up) {
       margin-bottom: 30px;

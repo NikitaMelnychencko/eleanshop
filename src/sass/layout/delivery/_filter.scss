@@ -5,7 +5,7 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
-  & + .description-main{
+  .description-main + .description-main {
     margin-top: 20px;
   }
 }
@@ -21,7 +21,7 @@
 .maindescrption {
   padding-top: 26px;
 }
-.description-title{
+.description-title {
   &:last-child {
     padding-top: 31px;
     display: flex;
@@ -33,22 +33,19 @@
     align-items: flex-start;
     flex-direction: column;
   }
-  &:nth-child(2){
+  &:nth-child(2) {
     margin-top: 35px;
     margin-bottom: 20px;
   }
 }
 
-
-
 .navara {
   width: 100%;
 }
+
 .time__icon {
   margin-top: 10px;
 }
-
-
 
 .delivery__icon {
   width: 40px;

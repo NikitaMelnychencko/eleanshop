@@ -1,5 +1,6 @@
 .ordering {
   background-color: $modal-background-color;
+
   @media screen and (min-width: $mobile-first) {
     padding-top: 39px;
     padding-bottom: 50px;
@@ -13,7 +14,6 @@
 
 .ordering__title {
   border-bottom: 1px solid $border-color;
-
   font-family: $selection-font-family;
   font-size: 21px;
   line-height: 0.95;
@@ -80,6 +80,7 @@
     margin-right: 45px;
     height: 50px;
   }
+
   @media screen and (min-width: $desktop-up) {
     margin-right: 10px;
   }
@@ -94,6 +95,7 @@
   @media screen and (min-width: $mobile-first) and (max-width: 415px) {
     display: inline-block;
   }
+
   @media screen and (min-width: $mobile-general) {
     display: flex;
     align-items: center;
@@ -123,13 +125,13 @@
     width: 135px;
   }
 }
+
 .ordering__select {
   display: flex;
   align-items: center;
   justify-content: space-between;
   cursor: pointer;
   border: 1px solid $secondary-border-color;
-
   height: 40px;
   padding-left: 9px;
   padding-right: 9px;
@@ -138,11 +140,13 @@
   font-size: 17px;
   line-height: 1.35;
 }
+
 .ordering__select--color {
   @media screen and (min-width: $mobile-general) and (max-width: $tablet-only) {
     display: none;
   }
 }
+
 .ordering__colorname {
   display: flex;
   align-items: center;
@@ -159,19 +163,22 @@
   max-height: 115px;
   overflow-y: auto;
   z-index: 500;
-
   box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.15);
 }
+
 .ordering-list::-webkit-scrollbar {
   width: 6px;
 }
+
 .ordering-list::-webkit-scrollbar-thumb {
   background-color: $border-color;
   border-radius: 5px;
 }
+
 .ordering-list::-webkit-scrollbar-track {
   border-radius: 10px;
 }
+
 .ordering-list--hide {
   display: none;
 }
@@ -189,7 +196,6 @@
   border-bottom: 1px solid $secondary-border-color;
   padding-left: 9px;
   padding-right: 9px;
-
   color: $input-text-color;
   font-family: $selection-font-family;
   font-size: 17px;
@@ -225,20 +231,6 @@
   border: 0;
 }
 
-// .ordering__btn {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   height: 40px;
-//   width: 40px;
-//   border: 1px solid $secondary-border-color;
-
-//   font-size: 20px;
-//   line-height: 1.14;
-//   background-color: $modal-background-color;
-//   color: $input-text-color;
-// }
-
 .ordering__price {
   font-family: $third-font-family;
   font-weight: 500;
@@ -271,36 +263,16 @@
     min-width: 82px;
   }
 }
+
 .ordering__price:after,
 .ordering__total:after {
   content: '\20B4';
   margin-left: 5px;
 }
 
-// .ordering__button--close {
-//   width: 40px;
-//   height: 40px;
-
-//   background-color: $modal-background-color;
-
-//   @media screen and (min-width: $mobile-first) and (max-width: $tablet-only) {
-//     position: absolute;
-//     top: 0;
-//     right: 0;
-//     margin-left: auto;
-//     margin-right: 0;
-//     border: 1px solid $primary-border-color;
-//     fill: $primary-border-color;
-//   }
-
-//   @media screen and (min-width: $desktop-up) {
-//     border: 0;
-//     fill: $input-text-color;
-//   }
-// }
-
 .ordering__box {
   flex: 1;
+
   @media screen and (min-width: $mobile-first) and (max-width: $tablet-only) {
     position: relative;
 
@@ -344,6 +316,7 @@
     display: inline-block;
     margin-bottom: 14px;
   }
+
   @media screen and (min-width: $mobile-general) and (max-width: $mobile-only) {
     flex-grow: 1;
     max-width: 264px;
@@ -372,22 +345,6 @@
   }
 }
 
-// .ordering__btn--promocode {
-//   padding: 13px 29px;
-//   height: 50px;
-//   border: none;
-
-//   background-color: $btn-background-color;
-//   font-family: $selection-font-family;
-//   font-size: 17px;
-//   line-height: 1.35;
-//   color: $btn-text-color;
-
-//   @media screen and (min-width: $desktop-up) {
-//     border-radius: 3px;
-//   }
-// }
-
 .ordering__discount {
   font-family: $third-font-family;
   font-size: 18px;
@@ -401,6 +358,7 @@
     margin-bottom: 28px;
     border-bottom: 1px solid $border-color;
   }
+
   @media screen and (min-width: $desktop-up) {
     border: none;
   }
@@ -426,6 +384,7 @@
   font-weight: 500;
   color: $secondary-text-color;
 }
+
 .ordering__totalbox {
   @media screen and (min-width: $mobile-first) {
     display: flex;
