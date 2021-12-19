@@ -198,10 +198,10 @@ export function fittingRender() {
 
 //=====product========//
 import {
-  setProductSlider,
   callProductPageFunctional,
   createFullMarkup,
 } from './layout/product/infoAboutProduct.js';
+import {setProductSlider} from './layout/product/productSlider'
 import ProductModalAddToCart from './layout/product/productModalAddToCart.js';
 import RecomendationsCategory from './layout/product/recomendationsCategory.js';
 import cards from './json/catalog.json';

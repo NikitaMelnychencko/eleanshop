@@ -295,6 +295,11 @@
   color: $accent-btn-color;
 }
 
+.button__purchase--buy[disabled] {
+  opacity: 0.2;
+  pointer-events: none;
+}
+
 .button__purchase--buy:hover {
   border: 1px solid $button-purchase-border-color;
   background: $accent-btn-color;

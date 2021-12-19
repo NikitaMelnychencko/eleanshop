@@ -1,7 +1,5 @@
 import productTEST from '../../../js/json/product/productTEST.json';
 import productTemplate from '../../../views/partials/product/infoAboutProduct.hbs';
-window.jQuery = window.$ = require('jquery');
-require('../../slider/slick.min.js');
 
 import sizeChose from '../../components/sizeChose';
 const { createBtn, onSizeElClick } = sizeChose;
@@ -12,42 +10,14 @@ import {onBtnClick} from '../../components/sizeTable'
 let productInfoData = JSON.parse(localStorage.getItem('productInfoData'));
 //! ---------------------------------------------------RENDERING A SECTION
 
-export function setProductSlider() {
-  $(document).ready(function () {
-    $('.product-slider-smaller').slick({
-      arrows: false,
-      speed: 500,
-      vertical: true,
-      verticalSwiping: true,
-      slidesToShow: 4,
-      slidesToScroll: 1,
-      lazyLoad: 'progressive',
-      asNavFor: '.product-slider',
-      centerMode: true,
-      focusOnSelect: true,
-      centerPadding: '0px',
-    });
-    $('.product-slider').slick({
-      arrows: false,
-      dots: true,
-      fade: true,
-      speed: 500,
-      slidesToShow: 1,
-      lazyLoad: 'progressive',
-      asNavFor: '.product-slider-smaller',
-    });
-  });
-}
-
 export function createFullMarkup() {
   productInfoData = JSON.parse(localStorage.getItem('productInfoData'));
 
-  //* TEST************
-  const btn = createBtn(productTEST);
-  return productTemplate({productTEST, btn});
+  
+  const btn = createBtn();
 
-  // const btn = createBtn(productTEST);
-  // return productTemplate({productTEST});
+  //* ЗДЕСЬ ВМЕСТО productTEST нужно заливать правильный JSON***********
+  return productTemplate({productTEST, btn});
 }
 
 //! ---------------------------------------------------Add to favorites
@@ -90,7 +60,6 @@ function insertIntoLSFavorite(id) {
         alt: productInfoData.image[0].imageDescriprion,
       },
       price: productInfoData.productPrice,
-      // have to get size from size grid from Andrew's function
       size: isSizeChose ? isSizeChose : '',
       description: '',
       color: isColorChose ? isColorChose : '',
@@ -143,32 +112,68 @@ function fixateCurrentClass(colorArray, productColor) {
   }
 }
 
-
 function onColorListClick(event) {
-  let x = []
+  let availableSizes = []
   const colorpickerButton = event.target;
   const isColorpickerButton = colorpickerButton.classList.contains('colorpicker__label');
-
+  
   if (!isColorpickerButton) {
     return;
   }
+
   const inputColor = event.target.previousElementSibling.value
-  console.log(inputColor);
 
   productTEST.productAviable.find(size => {
     if(size.colorId === inputColor) {
-      x.push(size.aviableSize)
+      availableSizes.push(size.aviableSize)
     }
   } )
 
   removeCurrentClass();
   addCurrentClass(colorpickerButton);
+  showAvailableSizes(availableSizes)
   setProductColor(inputColor);
+  
+}
 
-  console.log(x);
-  // const btn = createBtn(x);
-  // productTemplate({btn});
-  // createFullMarkup(x)
+function showAvailableSizes(sizes) {
+  const sizeBtnLabel = document.querySelectorAll('.size-chose__label')
+  const sizeBtnInput = document.querySelectorAll('.size-chose__input')
+  const buyBtn = document.querySelector('.button__purchase--buy')
+  const inputs = [...sizeBtnInput]
+  const labels = [...sizeBtnLabel]
+
+  labels
+    .map(value => {
+      if (!sizes[0].includes(value.textContent)) {
+        value.classList.add('size-chose__label--disabled')
+      } 
+      else {
+        value.classList.remove('size-chose__label--disabled')
+      }
+    });
+
+    inputs
+    .map(value => {
+      if(value.checked) {
+        value.checked = false
+      }
+      if (!sizes[0].includes(value.value)) {
+        value.setAttribute("disabled", "disabled")
+      } else {
+        value.removeAttribute("disabled", "disabled")
+      }
+    });
+
+    const disabledInputs = inputs.every(value => value.disabled)
+    if(disabledInputs) {
+      buyBtn.setAttribute("disabled", "disabled")
+      buyBtn.innerHTML="НЕТ РАЗМЕРОВ В НАЛИЧИИ"
+    } else {
+      buyBtn.removeAttribute("disabled", "disabled")
+      buyBtn.innerHTML="КУПИТЬ"
+    }
+    
 }
 
 function setProductDataToOrdering() {
@@ -186,9 +191,7 @@ function setProductDataToOrdering() {
     orderingDataobj.label.name = productInfoData.productName;
 
     orderingDataobj.label.img = productInfoData.img.src;
-    // orderingDataobj.label.img2 = productInfoData.image[0].imageMobileHigherResolution;
     orderingDataobj.label.price = productInfoData.productPrice;
-    // have to get size from size grid from Andrew's function
     orderingDataobj.label.sizeSelected = localStorage.getItem('productSize');
     orderingDataobj.label.colorSelected = localStorage.getItem('productColor');
     orderingDataobj.label.circleSelected = '';
@@ -266,9 +269,15 @@ function createAllListeners(buy) {
   sizeList.addEventListener('click', onSizeElClick);
 
   form.addEventListener('submit', (event) => {
+    console.dir(form)
+    const sizeBtnLabel = document.querySelectorAll('.size-chose__label')
+    const sizeBtnInput = document.querySelectorAll('.size-chose__input')
+    const inputs = [...sizeBtnInput]
+    const labels = [...sizeBtnLabel]
+    
       event.preventDefault()
-      buy(productInfoData.productName);
       setProductDataToOrdering();
+      buy(productInfoData.productName);
     });
 }
 
