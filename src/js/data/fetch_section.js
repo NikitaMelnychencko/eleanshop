@@ -8,4 +8,13 @@ function sectionHome() {
   });
   return state;
 }
-console.log(sectionHome());
+
+function sectionProduct() {
+  const state = {};
+  const category = getSection('category');
+  const products = getSection('products');
+  Promise.all([home, components]).then(values => {
+    state.value = values;
+  });
+  return state;
+}
