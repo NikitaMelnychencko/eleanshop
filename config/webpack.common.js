@@ -10,6 +10,8 @@ const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 module.exports = {
   entry: [paths.src + '/index.js'],
   output: {
+    hashFunction: 'xxhash64',
+
     path: paths.dist,
     filename: 'bundle.js',
     publicPath: '/',
