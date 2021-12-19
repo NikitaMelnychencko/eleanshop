@@ -178,12 +178,12 @@
   cursor: pointer;
   font-size: 14px;
 }
-.modal__title {
-  font-size: 24px;
-  font-weight: 200;
-  line-height: 1;
-  margin-bottom: 24px;
-}
+// .modal__title {
+//   font-size: 24px;
+//   font-weight: 200;
+//   line-height: 1;
+//   margin-bottom: 24px;
+// }
 .modal__text {
   font-weight: 200;
   font-size: 16px;
@@ -201,7 +201,7 @@
   }
 }
 
-.return {
+.return__list {
   padding: 7px;
 }
 .return__title {
@@ -251,12 +251,12 @@
   transform: rotate(90deg);
 }
 
-.return__title--text {
+.return-content {
   display: none;
   font-size: 14px;
   text-align: start;
 }
-.return__title:hover .return__title--text {
+.return__title:hover .return-content {
   display: block;
   cursor: pointer;
 }
@@ -267,13 +267,13 @@
   font-family: var($third-font-family);
   color: var($secondary-title-text-color);
 }
-.return__title--text ul {
+.return-content ul {
   list-style: square outside;
   padding: 20px;
   text-align: left;
   font-size: 16px;
 }
 
-.return__title--content {
+.return-content__item {
   margin: 5px;
 }
