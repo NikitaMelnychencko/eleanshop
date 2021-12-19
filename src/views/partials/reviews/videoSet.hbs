@@ -2,7 +2,14 @@
   <div class='video-set__item'>
     <div class='video-set__link'>
       <div class='video-set-box'>
-        <video class='video-set__image' src='{{video}}' poster='{{poster}}' preload='none'>
+        <video
+          class='video-set__image'
+          id='{{id}}'
+          src='{{video}}'
+          poster='{{poster}}'
+          preload='none'
+          name='video'
+        >
         </video>
         <svg class='video-set-svg' name='play'>
           <use href='./images/exampl.svg#icon-play-video'> </use>

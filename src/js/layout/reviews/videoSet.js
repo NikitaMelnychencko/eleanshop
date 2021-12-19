@@ -4,7 +4,6 @@ import starClients_cardChatReviewsTempl from '../../../views/components/cardChat
 import starClients_reviewsChat from '../../json/homeRewiesChat/homeReviewsChat.json';
 import pageStarClientsSliderData from '../../json/starClients.json';
 import pageStarClientsMarkupTemplate from '../../../views/partials/home/starClients.hbs';
-// 1. Содание разметки сета
 const cardChatReviewsMarkup = starClients_cardChatReviewsTempl(starClients_reviewsChat);
 export const clientStar = pageStarClientsMarkupTemplate({
   pageStarClientsSliderData,

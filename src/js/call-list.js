@@ -3,6 +3,16 @@ import updateBin from './updateBin.js';
 import { classBody } from './layout/static/footer.js';
 updateBin();
 
+import { Forms } from './components/forms';
+const formsForm = new Forms('fittingForm');
+const formsPage = new Forms('fittingPage');
+const formBrand = {
+  page: formsPage.insertForm(),
+  form: formsForm.insertForm(),
+};
+import { VideoSetPlayer } from './components/videoSetPlayer.js';
+const videoSetPlayer = new VideoSetPlayer();
+
 //======home======//
 import home from '../views/layouts/home.hbs';
 import {addHeroSlider, addStarClientsSlider, addInstagramSlider, addShowroomSlider} from './slider/slider'
@@ -28,7 +38,6 @@ export function homeRender() {
     aboutTheBrand_parsing,
   });
   refs.mainEL.innerHTML = homeMarkup;
-
   openContent();
   addHeroSlider();
   addShowroomSlider()
@@ -36,8 +45,8 @@ export function homeRender() {
   addInstagramSlider();
   starClientsComments();
   blockHelpRender();
-  formFittingInShowroom();
   openAboutTheBrand();
+  formsForm.init();
 }
 homeRender(); //========================================================call
 //=====brand========//
@@ -58,25 +67,34 @@ export function brandRender() {
     videoBrand,
   });
   refs.mainEL.innerHTML = contactPageMarkUp;
-  formFittingInShowroom();
   infoAboutBrand();
   brandPlayer();
   blockHelpRender();
+  formsForm.init();
 }
-
 
 //=====checkout========//
 import { ModalData, createPayment } from './layout/checkout/payment.js';
-import { ordering, openOrderingFunction } from './layout/checkout/ordering.js';
+import { OrderingPrice, OrderingSizeAndColor } from './layout/checkout/ordering.js';
+import ordering_ordering from '../views/partials/checkout/ordering.hbs';
 import { backdropMarkup } from './layout/checkout/thanksForOrdering.js';
 import payment_checkout from '../views/layouts/checkout.hbs';
 export function checkoutRender() {
   updateBin();
   classBody();
+  const savedData = localStorage.getItem('orderingData');
+  const parsedData = JSON.parse(savedData);
+  const ordering = ordering_ordering(parsedData);
   const createCheckout = payment_checkout({ createPayment, ordering, backdropMarkup });
   refs.mainEL.innerHTML = createCheckout;
   //refs.mainEL.insertAdjacentHTML('beforeend', createCheckout);
-  openOrderingFunction();
+
+  const orderingPrice = new OrderingPrice({
+    parsedData: parsedData,
+  });
+  const orderingSizeColor = new OrderingSizeAndColor({
+    parsedData: parsedData,
+  });
   const modalOpen = new ModalData({
     idInputDay: 'js-day',
     idListDay: 'day-list',
@@ -109,6 +127,7 @@ export function favoritesRender() {
     refs.mainEL.innerHTML = favorites.markcup;
   }
   favorites.init();
+  blockHelpRender();
 }
 let data = localStorage.getItem('favorites');
 if (!data == null) {
@@ -124,14 +143,15 @@ export function contactRender() {
   classBody();
   const contactPageMarkUp = contact_page({ formBrand, contactsMap, contactsContact });
   refs.mainEL.innerHTML = contactPageMarkUp;
-  formFittingInShowroom();
   blockHelpRender();
+  formsPage.init();
 }
 
-
 //=====delivery========//
+
+const formDelivery = new Forms('delivery');
+const formDeliveryMarkUp = formDelivery.insertForm();
 import deliveryMarkUp from '../views/layouts/delivery.hbs';
-import { formDeliveryMarkUp, formDelivery } from './layout/delivery/formsQuestion.js';
 import { deliveryThreeModal } from './layout/delivery/deliveryTypes.js';
 import {
   buttonsDelivery,
@@ -150,20 +170,16 @@ export function deliveryRender() {
     formDeliveryMarkUp,
   });
   refs.mainEL.innerHTML = deliveryPageMarkUp;
-  formDelivery();
   deliveryThreeModal();
   blockHelpRender();
+  formDelivery.init();
 }
-
-
 
 //=====fitting========//
 import sizeTable_markup from '../views/layouts/fitting.hbs';
 import { sizeTable_tableCreate } from './layout/fitting/sizeTable.js';
 import { informationAboutFitting_informationCreate } from './layout/fitting/informationAboutFitting.js';
 import {
-  // openVideoSlider,
-  fittingVideoSliderPlayer,
   videoSlider_videoSliderCreate,
 } from './layout/fitting/videoSlider.js';
 import {openVideoSlider} from './slider/slider'
@@ -177,11 +193,11 @@ export function fittingRender() {
   });
   refs.mainEL.innerHTML = fittingMarkUp;
   openVideoSlider();
-  //fittingVideoSliderPlayer();
+  videoSetPlayer.clickListener();
   formFittingInShowroom();
   blockHelpRender();
+  formsPage.init();
 }
-
 
 //=====product========//
 import {callProductPageFunctional,createFullMarkup } from './layout/product/infoAboutProduct.js';
@@ -229,7 +245,6 @@ export function productRender() {
     modalPreorder: preorderMark,
     tryOnModels: tryOnModels,
   };
-  // refs.mainEL.insertAdjacentHTML('beforeend', productMarkup(obj));
   refs.mainEL.innerHTML = productMarkup(obj);
   setProductSlider();
   callProductPageFunctional(objProductModalAddToCart.show);
@@ -245,15 +260,14 @@ export function productRender() {
   blockHelpRender();
 }
 
-
-
 //=====reviews========//
+const formReviews = new Forms('reviews');
+const formReviewsMarkUp = formReviews.insertForm();
 import reviews_page from '../views/layouts/reviews.hbs';
 import { formReviews, formReviewsMarkUp } from './layout/reviews/registrationFormForFitting.js';
 import {
   setVideoHbs,
   clientStar,
-  // videosetSlickSettings,
   videoSetPlayer,
 } from './layout/reviews/videoSet.js';
 import {videosetSlickSettings} from './slider/slider'
@@ -265,11 +279,10 @@ export function reviewsRender() {
   addStarClientsSlider();
   starClientsComments();
   formReviews();
-  videoSetPlayer();
+  videoSetPlayer.clickListener();
   blockHelpRender();
+  formReviews.init();
 }
-
-
 
 //=====showroom========//
 import showroom_page from '../views/layouts/showroom.hbs';
@@ -280,8 +293,8 @@ export function showroomRender() {
   addShowroomSlider();
   formFittingInShowroom();
   blockHelpRender();
+  formsForm.init();
 }
-
 
 //=====blockHelp========//
 import blockHelp_blockHelpTemplate from '../views/components/blockHelp.hbs';
@@ -304,6 +317,4 @@ export function catalogRender() {
   openFilter();
   openCategory();
   blockHelpRender();
-  // console.log(filterGalleryCatalogMarkup);
 }
-
