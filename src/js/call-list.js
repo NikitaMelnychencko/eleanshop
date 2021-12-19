@@ -81,16 +81,15 @@ import ordering_ordering from '../views/partials/checkout/ordering.hbs';
 import { backdropMarkup } from './layout/checkout/thanksForOrdering.js';
 import payment_checkout from '../views/layouts/checkout.hbs';
 export function checkoutRender() {
-
   updateBin();
   classBody();
-   const savedData = localStorage.getItem('orderingData');
+  const savedData = localStorage.getItem('orderingData');
   const parsedData = JSON.parse(savedData);
   const ordering = ordering_ordering(parsedData);
   const createCheckout = payment_checkout({ createPayment, ordering, backdropMarkup });
   refs.mainEL.innerHTML = createCheckout;
   //refs.mainEL.insertAdjacentHTML('beforeend', createCheckout);
-  
+
   const orderingPrice = new OrderingPrice({
     parsedData: parsedData,
   });
@@ -129,7 +128,7 @@ export function favoritesRender() {
     refs.mainEL.innerHTML = favorites.markcup;
   }
   favorites.init();
-   blockHelpRender();
+  blockHelpRender();
 }
 let data = localStorage.getItem('favorites');
 if (!data == null) {
@@ -267,7 +266,6 @@ export function productRender() {
 const formReviews = new Forms('reviews');
 const formReviewsMarkUp = formReviews.insertForm();
 import reviews_page from '../views/layouts/reviews.hbs';
-import { formReviews, formReviewsMarkUp } from './layout/reviews/registrationFormForFitting.js';
 import { setVideoHbs, clientStar, videosetSlickSettings } from './layout/reviews/videoSet.js';
 
 export function reviewsRender() {
