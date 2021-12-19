@@ -1,10 +1,12 @@
-import form_brand from '../../..//views/partials/brand/formFittingInShowroom.hbs';
+import { Forms } from '../../components/forms';
+const forms = new Forms('fittingForm');
 import brand_our_advantages from '../../..//views/partials/brand/ourAdvantages.hbs';
 import card_brand_our_advantages from '../../..//views/partials/brand/cardBrandOurAdvantages.hbs';
 import video_brand from '../../..//views/partials/brand/videoBrand.hbs';
 import brandOurAdvantagesCard from '../../json/brandOurAdvantagesCard.json';
 const cardBrandOurAdvantages = card_brand_our_advantages(brandOurAdvantagesCard);
-export const formBrand = form_brand();
+export const formBrand = forms.insertForm();
+
 export const videoBrand = video_brand();
 export const brandOurAdvantages = brand_our_advantages({ formBrand, cardBrandOurAdvantages });
 
