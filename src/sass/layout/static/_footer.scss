@@ -150,11 +150,14 @@
 .footer__mobile-list-contacts-email,
 .footer__address {
   font-style: normal;
-
   line-height: 1.5;
   color: $secondary-text-color;
   margin-bottom: 5px;
   padding-left: 5px;
+  animation-duration: 2s;
+  animation-name: slidein;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
 }
 
 .footer__mobile-social {
@@ -279,6 +282,7 @@
     margin: -1px;
     border: 0;
     padding: 0;
+    width: 100%;
     white-space: nowrap;
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
@@ -309,6 +313,25 @@
 .footer__desktop-list-contacts-email {
   line-height: 25px;
   color: $secondary-text-color;
+}
+
+.dropdown-content {
+  animation-duration: 1.5s;
+  animation-name: slidein;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+}
+
+@keyframes slidein {
+  from {
+    margin-bottom: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-bottom: 0%;
+    width: 100%;
+  }
 }
 
 .footer__desktop-item,
