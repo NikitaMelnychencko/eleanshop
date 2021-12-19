@@ -35,12 +35,9 @@ import './js/layout/product/tryOnModelsModal';
 //delivery
 import './js/layout/delivery/filter.js';
 import './js/layout/delivery/deliveryTypes.js';
-import './js/layout/delivery/formsQuestion.js';
-import './js/layout/delivery/questionsAndAnswers.js';
 //reviews
 import './js/layout/reviews/videoSet.js';
 import './js/layout/reviews/starsClients.js';
-import './js/layout/reviews/registrationFormForFitting.js';
 //showroom
 import './js/layout/showroom/showroom.js';
 //contact
@@ -49,14 +46,12 @@ import './js/layout/contact/contact.js';
 import './js/layout/fitting/informationAboutFitting.js';
 import './js/layout/fitting/sizeTable.js';
 import './js/layout/fitting/videoSlider.js';
-import './js/layout/fitting/formFittingInShowroom.js';
 //! ?????????
 import './js/components/sizeTable.js';
 import './js/components/sizeChose.js';
 //brand
 import './js/layout/brand/infoAboutBrand.js';
 import './js/layout/brand/ourAdvantages.js';
-import './js/layout/brand/formFittingInShowroom.js';
 //checkout
 import './js/layout/checkout/ordering.js';
 import './js/layout/checkout/payment.js';

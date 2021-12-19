@@ -1,8 +1,8 @@
 import { initializeApp } from 'firebase/app';
 import { getAuth, signInWithEmailAndPassword, onAuthStateChanged } from 'firebase/auth';
-import { getDatabase, ref, set, get, child } from 'firebase/database';
+import { getDatabase, ref, set, get, child, push } from 'firebase/database';
 import { preloaderIsHided, preloaderDisable } from '../layout/static/preloader/preloader_bar.js';
-
+import all from '../json/all.json';
 const firebaseConfig = {
   apiKey: 'AIzaSyC1qUSZYYp9JGXkqmhapdC3qhIxtQY25m0',
   authDomain: 'eleanshop-e03b5.firebaseapp.com',
@@ -73,9 +73,18 @@ export async function getSection(nextFolder) {
 }
 
 //Post;
-export async function postUserData(userId, folder, data) {
+export async function postUserData(userId, folder, data, baseFolder) {
   if (userId === null) {
     return;
   }
-  return await set(ref(db, 'formData/' + folder), data);
+  const postListRef = ref(db, baseFolder + folder);
+  const newPostRef = push(postListRef);
+  return await set(newPostRef, {
+    data,
+  });
+  //return await set(ref(db, `baseFolder/` + folder + '/' + messageId), data);
 }
+// export async function post(data) {
+//   return await set(ref(db, 'database'), data);
+// }
+// post(all);

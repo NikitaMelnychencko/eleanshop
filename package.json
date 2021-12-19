@@ -63,10 +63,11 @@
     "webpackbar": "^5.0.0-3"
   },
   "dependencies": {
+    "geteventlisteners": "^1.1.0",
+    "handlebars-helpers": "^0.10.0",
     "lodash.debounce": "^4.0.8",
     "lodash.throttle": "^4.1.1",
     "throttle-debounce": "^3.0.1",
-    "geteventlisteners": "^1.1.0",
     "yt-player": "^3.5.0"
   }
 }

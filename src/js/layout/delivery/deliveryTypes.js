@@ -7,7 +7,6 @@ import deliveryPage from '../../../views/layouts/delivery.hbs';
 import deliveryfiljson from '../../../js/json/filter.json';
 import deliveryfilter from '../../../views/partials/delivery/filter.hbs';
 import formsQuestions from '../../../views/partials/delivery/formsQuestion.hbs';
-
 import formQuestionsData from '../../../js/json/formsQuestion.json';
 
 export const descriptionDelivery = deliveryfilter(deliveryfiljson);
