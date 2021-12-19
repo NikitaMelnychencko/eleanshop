@@ -25,7 +25,7 @@ function checkIsProductInFavorites() {
   const favBtn = document.querySelector('.product__name-wrapper .button-add-likes');
   const favoriteProduct = localStorage.getItem('favorites');
   const parsedFavoriteDate = JSON.parse(favoriteProduct);
-  if (parsedFavoriteDate != null) {
+  if (parsedFavoriteDate) {
     parsedFavoriteDate.fav.forEach(el => {
       if (el.id === productInfoData.id) {
         favBtn.classList.add('active');
@@ -67,6 +67,7 @@ function insertIntoLSFavorite(id) {
 
     ls.fav.push(elem);
     localStorage.setItem('favorites', JSON.stringify(ls));
+    refs.favQuantityEl.innerHTML = ls.fav.length;
   }
 }
 function removeFromFavorite(id) {
@@ -74,6 +75,7 @@ function removeFromFavorite(id) {
   const lsid = ls.fav.findIndex(el => el.id === id);
   ls.fav.splice(lsid, 1);
   localStorage.setItem('favorites', JSON.stringify(ls));
+  refs.favQuantityEl.innerHTML = ls.fav.length;
 }
 function onAddToFavoritesClick(event) {
   const id = productInfoData.id;
