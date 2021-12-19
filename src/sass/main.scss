@@ -48,11 +48,10 @@
 @import './layout/delivery/filter';
 @import './layout/delivery/deliveryTypes';
 @import './layout/delivery/formsQuestion';
-@import './layout/delivery/questionsAndAnswers';
 //reviews
 @import './layout/reviews/videoSet';
 @import './layout/reviews/starsClients';
-@import './layout/reviews/registrationFormForFitting';
+// @import './layout/reviews/registrationFormForFitting';
 //showroom
 @import './layout/showroom/showroom';
 //contact
@@ -67,7 +66,6 @@
 //brand
 @import './layout/brand/infoAboutBrand';
 @import './layout/brand/ourAdvantages';
-@import './layout/brand/formFittingInShowroom';
 //checkout
 @import './layout/checkout/ordering';
 @import './layout/checkout/payment';
@@ -77,5 +75,3 @@
 @import './components/blockHelp';
 //preloader
 @import './layout/preloader/preloader_bar';
-
-@import './components/mainModal';
