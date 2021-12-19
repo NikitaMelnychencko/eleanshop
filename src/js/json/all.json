@@ -192,8 +192,12 @@
       "productName": "Классический комплект со смокингом и желетом",
       "productPrice": "63500",
       "productAbout": "Подчеркнёт линию талии",
-      "category": ["Смокинги"],
-      "collection": ["Осень-зима 20-21"],
+      "category": [
+        "Смокинги"
+      ],
+      "collection": [
+        "Осень-зима 20-21"
+      ],
       "image": [
         {
           "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
@@ -255,7 +259,11 @@
       "productAviable": [
         {
           "colorId": "bl1",
-          "aviableSize": ["42", "44", "50"],
+          "aviableSize": [
+            "42",
+            "44",
+            "50"
+          ],
           "colorName": "Чёрный",
           "colorHex": "#000000"
         },
@@ -267,13 +275,23 @@
         },
         {
           "colorId": "g1",
-          "aviableSize": ["40", "42", "44", "46", "48", "50"],
+          "aviableSize": [
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50"
+          ],
           "colorName": "Белый",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
-          "aviableSize": ["46", "48"],
+          "aviableSize": [
+            "46",
+            "48"
+          ],
           "colorName": "Синий",
           "colorHex": "#38548A"
         }
@@ -286,7 +304,10 @@
       "productName": "Классический комплект со смокингом и желетом",
       "productPrice": "41400",
       "productAbout": "Подчеркнёт линию талии",
-      "category": ["Смокинги", "Новинки"],
+      "category": [
+        "Смокинги",
+        "Новинки"
+      ],
       "collection": [],
       "image": [
         {
@@ -349,7 +370,11 @@
       "productAviable": [
         {
           "colorId": "bl1",
-          "aviableSize": ["42", "44", "50"],
+          "aviableSize": [
+            "42",
+            "44",
+            "50"
+          ],
           "colorName": "Чёрный",
           "colorHex": "#000000"
         },
@@ -361,13 +386,23 @@
         },
         {
           "colorId": "g1",
-          "aviableSize": ["40", "42", "44", "46", "48", "50"],
+          "aviableSize": [
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50"
+          ],
           "colorName": "Белый",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
-          "aviableSize": ["46", "48"],
+          "aviableSize": [
+            "46",
+            "48"
+          ],
           "colorName": "Синий",
           "colorHex": "#38548A"
         }
@@ -380,8 +415,12 @@
       "productName": "Классический комплект со смокингом и желетом",
       "productPrice": "25000",
       "productAbout": "Подчеркнёт линию талии",
-      "category": ["Смокинги"],
-      "collection": ["Осень-зима 20-21"],
+      "category": [
+        "Смокинги"
+      ],
+      "collection": [
+        "Осень-зима 20-21"
+      ],
       "image": [
         {
           "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
@@ -443,7 +482,11 @@
       "productAviable": [
         {
           "colorId": "bl1",
-          "aviableSize": ["42", "44", "50"],
+          "aviableSize": [
+            "42",
+            "44",
+            "50"
+          ],
           "colorName": "Чёрный",
           "colorHex": "#000000"
         },
@@ -455,13 +498,23 @@
         },
         {
           "colorId": "g1",
-          "aviableSize": ["40", "42", "44", "46", "48", "50"],
+          "aviableSize": [
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50"
+          ],
           "colorName": "Белый",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
-          "aviableSize": ["46", "48"],
+          "aviableSize": [
+            "46",
+            "48"
+          ],
           "colorName": "Синий",
           "colorHex": "#38548A"
         }
@@ -474,8 +527,12 @@
       "productName": "Классический комплект со смокингом и желетом",
       "productPrice": "64700",
       "productAbout": "Подчеркнёт линию талии",
-      "category": ["Смокинги"],
-      "collection": ["Осень-зима 20-21"],
+      "category": [
+        "Смокинги"
+      ],
+      "collection": [
+        "Осень-зима 20-21"
+      ],
       "image": [
         {
           "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
@@ -537,7 +594,11 @@
       "productAviable": [
         {
           "colorId": "bl1",
-          "aviableSize": ["42", "44", "50"],
+          "aviableSize": [
+            "42",
+            "44",
+            "50"
+          ],
           "colorName": "Чёрный",
           "colorHex": "#000000"
         },
@@ -549,13 +610,23 @@
         },
         {
           "colorId": "g1",
-          "aviableSize": ["40", "42", "44", "46", "48", "50"],
+          "aviableSize": [
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50"
+          ],
           "colorName": "Белый",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
-          "aviableSize": ["46", "48"],
+          "aviableSize": [
+            "46",
+            "48"
+          ],
           "colorName": "Синий",
           "colorHex": "#38548A"
         }
@@ -568,8 +639,13 @@
       "productName": "Классический комплект со смокингом и желетом",
       "productPrice": "60000",
       "productAbout": "Подчеркнёт линию талии",
-      "category": ["Смокинги", "Новинки"],
-      "collection": ["Осень-зима 20-21"],
+      "category": [
+        "Смокинги",
+        "Новинки"
+      ],
+      "collection": [
+        "Осень-зима 20-21"
+      ],
       "image": [
         {
           "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
@@ -631,7 +707,11 @@
       "productAviable": [
         {
           "colorId": "bl1",
-          "aviableSize": ["42", "44", "50"],
+          "aviableSize": [
+            "42",
+            "44",
+            "50"
+          ],
           "colorName": "Чёрный",
           "colorHex": "#000000"
         },
@@ -643,13 +723,23 @@
         },
         {
           "colorId": "g1",
-          "aviableSize": ["40", "42", "44", "46", "48", "50"],
+          "aviableSize": [
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50"
+          ],
           "colorName": "Белый",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
-          "aviableSize": ["46", "48"],
+          "aviableSize": [
+            "46",
+            "48"
+          ],
           "colorName": "Синий",
           "colorHex": "#38548A"
         }
@@ -662,7 +752,10 @@
       "productName": "Классический комплект со смокингом и желетом",
       "productPrice": "30450",
       "productAbout": "Подчеркнёт линию талии",
-      "category": ["Смокинги", "Новинки"],
+      "category": [
+        "Смокинги",
+        "Новинки"
+      ],
       "collection": [],
       "image": [
         {
@@ -725,7 +818,11 @@
       "productAviable": [
         {
           "colorId": "bl1",
-          "aviableSize": ["42", "44", "50"],
+          "aviableSize": [
+            "42",
+            "44",
+            "50"
+          ],
           "colorName": "Чёрный",
           "colorHex": "#000000"
         },
@@ -737,13 +834,23 @@
         },
         {
           "colorId": "g1",
-          "aviableSize": ["40", "42", "44", "46", "48", "50"],
+          "aviableSize": [
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50"
+          ],
           "colorName": "Белый",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
-          "aviableSize": ["46", "48"],
+          "aviableSize": [
+            "46",
+            "48"
+          ],
           "colorName": "Синий",
           "colorHex": "#38548A"
         }
@@ -756,8 +863,13 @@
       "productName": "Классический комплект со смокингом и желетом",
       "productPrice": "21000",
       "productAbout": "Подчеркнёт линию талии",
-      "category": ["Смокинги", "Новинки"],
-      "collection": ["Свадьба и выпускной"],
+      "category": [
+        "Смокинги",
+        "Новинки"
+      ],
+      "collection": [
+        "Свадьба и выпускной"
+      ],
       "image": [
         {
           "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
@@ -819,7 +931,11 @@
       "productAviable": [
         {
           "colorId": "bl1",
-          "aviableSize": ["42", "44", "50"],
+          "aviableSize": [
+            "42",
+            "44",
+            "50"
+          ],
           "colorName": "Чёрный",
           "colorHex": "#000000"
         },
@@ -831,13 +947,23 @@
         },
         {
           "colorId": "g1",
-          "aviableSize": ["40", "42", "44", "46", "48", "50"],
+          "aviableSize": [
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50"
+          ],
           "colorName": "Белый",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
-          "aviableSize": ["46", "48"],
+          "aviableSize": [
+            "46",
+            "48"
+          ],
           "colorName": "Синий",
           "colorHex": "#38548A"
         }
@@ -850,7 +976,9 @@
       "productName": "Классический комплект со смокингом и желетом",
       "productPrice": "105000",
       "productAbout": "Подчеркнёт линию талии",
-      "category": ["Смокинги"],
+      "category": [
+        "Смокинги"
+      ],
       "collection": [],
       "image": [
         {
@@ -913,7 +1041,11 @@
       "productAviable": [
         {
           "colorId": "bl1",
-          "aviableSize": ["42", "44", "50"],
+          "aviableSize": [
+            "42",
+            "44",
+            "50"
+          ],
           "colorName": "Чёрный",
           "colorHex": "#000000"
         },
@@ -925,13 +1057,23 @@
         },
         {
           "colorId": "g1",
-          "aviableSize": ["40", "42", "44", "46", "48", "50"],
+          "aviableSize": [
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50"
+          ],
           "colorName": "Белый",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
-          "aviableSize": ["46", "48"],
+          "aviableSize": [
+            "46",
+            "48"
+          ],
           "colorName": "Синий",
           "colorHex": "#38548A"
         }
@@ -944,7 +1086,11 @@
       "productName": "Классический комплект со смокингом и желетом",
       "productPrice": "64400",
       "productAbout": "Подчеркнёт линию талии",
-      "category": ["Смокинги", "Новинки", "Осень-зима 20-21"],
+      "category": [
+        "Смокинги",
+        "Новинки",
+        "Осень-зима 20-21"
+      ],
       "collection": [],
       "image": [
         {
@@ -1007,7 +1153,11 @@
       "productAviable": [
         {
           "colorId": "bl1",
-          "aviableSize": ["42", "44", "50"],
+          "aviableSize": [
+            "42",
+            "44",
+            "50"
+          ],
           "colorName": "Чёрный",
           "colorHex": "#000000"
         },
@@ -1019,13 +1169,23 @@
         },
         {
           "colorId": "g1",
-          "aviableSize": ["40", "42", "44", "46", "48", "50"],
+          "aviableSize": [
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50"
+          ],
           "colorName": "Белый",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
-          "aviableSize": ["46", "48"],
+          "aviableSize": [
+            "46",
+            "48"
+          ],
           "colorName": "Синий",
           "colorHex": "#38548A"
         }
@@ -1038,7 +1198,9 @@
       "productName": "Классический комплект со смокингом и желетом",
       "productPrice": "30500",
       "productAbout": "Подчеркнёт линию талии",
-      "category": ["Смокинги"],
+      "category": [
+        "Смокинги"
+      ],
       "collection": [],
       "image": [
         {
@@ -1101,7 +1263,11 @@
       "productAviable": [
         {
           "colorId": "bl1",
-          "aviableSize": ["42", "44", "50"],
+          "aviableSize": [
+            "42",
+            "44",
+            "50"
+          ],
           "colorName": "Чёрный",
           "colorHex": "#000000"
         },
@@ -1113,13 +1279,23 @@
         },
         {
           "colorId": "g1",
-          "aviableSize": ["40", "42", "44", "46", "48", "50"],
+          "aviableSize": [
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50"
+          ],
           "colorName": "Белый",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
-          "aviableSize": ["46", "48"],
+          "aviableSize": [
+            "46",
+            "48"
+          ],
           "colorName": "Синий",
           "colorHex": "#38548A"
         }
@@ -1132,8 +1308,15 @@
       "productName": "Классический комплект со смокингом и желетом",
       "productPrice": "41000",
       "productAbout": "Подчеркнёт линию талии",
-      "category": ["Смокинги", "Новинки", "Платья"],
-      "collection": ["Свадьба и выпускной", "Вечерние комплекты"],
+      "category": [
+        "Смокинги",
+        "Новинки",
+        "Платья"
+      ],
+      "collection": [
+        "Свадьба и выпускной",
+        "Вечерние комплекты"
+      ],
       "image": [
         {
           "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
@@ -1195,7 +1378,11 @@
       "productAviable": [
         {
           "colorId": "bl1",
-          "aviableSize": ["42", "44", "50"],
+          "aviableSize": [
+            "42",
+            "44",
+            "50"
+          ],
           "colorName": "Чёрный",
           "colorHex": "#000000"
         },
@@ -1207,13 +1394,23 @@
         },
         {
           "colorId": "g1",
-          "aviableSize": ["40", "42", "44", "46", "48", "50"],
+          "aviableSize": [
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50"
+          ],
           "colorName": "Белый",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
-          "aviableSize": ["46", "48"],
+          "aviableSize": [
+            "46",
+            "48"
+          ],
           "colorName": "Синий",
           "colorHex": "#38548A"
         }
@@ -1226,7 +1423,10 @@
       "productName": "Классический комплект со смокингом и желетом",
       "productPrice": "12400",
       "productAbout": "Подчеркнёт линию талии",
-      "category": ["Новинки", "Топы и жилеты"],
+      "category": [
+        "Новинки",
+        "Топы и жилеты"
+      ],
       "collection": [],
       "image": [
         {
@@ -1289,7 +1489,11 @@
       "productAviable": [
         {
           "colorId": "bl1",
-          "aviableSize": ["42", "44", "50"],
+          "aviableSize": [
+            "42",
+            "44",
+            "50"
+          ],
           "colorName": "Чёрный",
           "colorHex": "#000000"
         },
@@ -1301,13 +1505,23 @@
         },
         {
           "colorId": "g1",
-          "aviableSize": ["40", "42", "44", "46", "48", "50"],
+          "aviableSize": [
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50"
+          ],
           "colorName": "Белый",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
-          "aviableSize": ["46", "48"],
+          "aviableSize": [
+            "46",
+            "48"
+          ],
           "colorName": "Синий",
           "colorHex": "#38548A"
         }
@@ -1320,7 +1534,10 @@
       "productName": "Классический комплект со смокингом и желетом",
       "productPrice": "34000",
       "productAbout": "Подчеркнёт линию талии",
-      "category": ["Новинки", "Топы и жилеты"],
+      "category": [
+        "Новинки",
+        "Топы и жилеты"
+      ],
       "collection": [],
       "image": [
         {
@@ -1383,7 +1600,11 @@
       "productAviable": [
         {
           "colorId": "bl1",
-          "aviableSize": ["42", "44", "50"],
+          "aviableSize": [
+            "42",
+            "44",
+            "50"
+          ],
           "colorName": "Чёрный",
           "colorHex": "#000000"
         },
@@ -1395,13 +1616,23 @@
         },
         {
           "colorId": "g1",
-          "aviableSize": ["40", "42", "44", "46", "48", "50"],
+          "aviableSize": [
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50"
+          ],
           "colorName": "Белый",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
-          "aviableSize": ["46", "48"],
+          "aviableSize": [
+            "46",
+            "48"
+          ],
           "colorName": "Синий",
           "colorHex": "#38548A"
         }
@@ -1414,8 +1645,13 @@
       "productName": "Классический комплект со смокингом и желетом",
       "productPrice": "42400",
       "productAbout": "Подчеркнёт линию талии",
-      "category": ["Новинки", "Юбки"],
-      "collection": ["Вечерние комплекты"],
+      "category": [
+        "Новинки",
+        "Юбки"
+      ],
+      "collection": [
+        "Вечерние комплекты"
+      ],
       "image": [
         {
           "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
@@ -1477,7 +1713,11 @@
       "productAviable": [
         {
           "colorId": "bl1",
-          "aviableSize": ["42", "44", "50"],
+          "aviableSize": [
+            "42",
+            "44",
+            "50"
+          ],
           "colorName": "Чёрный",
           "colorHex": "#000000"
         },
@@ -1489,13 +1729,23 @@
         },
         {
           "colorId": "g1",
-          "aviableSize": ["40", "42", "44", "46", "48", "50"],
+          "aviableSize": [
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50"
+          ],
           "colorName": "Белый",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
-          "aviableSize": ["46", "48"],
+          "aviableSize": [
+            "46",
+            "48"
+          ],
           "colorName": "Синий",
           "colorHex": "#38548A"
         }
@@ -1508,8 +1758,13 @@
       "productName": "Классический комплект со смокингом и желетом",
       "productPrice": "15000",
       "productAbout": "Подчеркнёт линию талии",
-      "category": ["Блузы", "Свадьба и выпускной"],
-      "collection": ["Свадьба и выпускной"],
+      "category": [
+        "Блузы",
+        "Свадьба и выпускной"
+      ],
+      "collection": [
+        "Свадьба и выпускной"
+      ],
       "image": [
         {
           "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
@@ -1571,7 +1826,11 @@
       "productAviable": [
         {
           "colorId": "bl1",
-          "aviableSize": ["42", "44", "50"],
+          "aviableSize": [
+            "42",
+            "44",
+            "50"
+          ],
           "colorName": "Чёрный",
           "colorHex": "#000000"
         },
@@ -1583,13 +1842,23 @@
         },
         {
           "colorId": "g1",
-          "aviableSize": ["40", "42", "44", "46", "48", "50"],
+          "aviableSize": [
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50"
+          ],
           "colorName": "Белый",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
-          "aviableSize": ["46", "48"],
+          "aviableSize": [
+            "46",
+            "48"
+          ],
           "colorName": "Синий",
           "colorHex": "#38548A"
         }
@@ -1602,7 +1871,9 @@
       "productName": "Классический комплект со смокингом и желетом",
       "productPrice": "67500",
       "productAbout": "Подчеркнёт линию талии",
-      "category": ["Брюки"],
+      "category": [
+        "Брюки"
+      ],
       "collection": [],
       "image": [
         {
@@ -1665,7 +1936,11 @@
       "productAviable": [
         {
           "colorId": "bl1",
-          "aviableSize": ["42", "44", "50"],
+          "aviableSize": [
+            "42",
+            "44",
+            "50"
+          ],
           "colorName": "Чёрный",
           "colorHex": "#000000"
         },
@@ -1677,13 +1952,23 @@
         },
         {
           "colorId": "g1",
-          "aviableSize": ["40", "42", "44", "46", "48", "50"],
+          "aviableSize": [
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50"
+          ],
           "colorName": "Белый",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
-          "aviableSize": ["46", "48"],
+          "aviableSize": [
+            "46",
+            "48"
+          ],
           "colorName": "Синий",
           "colorHex": "#38548A"
         }
@@ -1696,7 +1981,10 @@
       "productName": "Классический комплект со смокингом и желетом",
       "productPrice": "17700",
       "productAbout": "Подчеркнёт линию талии",
-      "category": ["Брюки", "Новинки"],
+      "category": [
+        "Брюки",
+        "Новинки"
+      ],
       "collection": [],
       "image": [
         {
@@ -1759,7 +2047,11 @@
       "productAviable": [
         {
           "colorId": "bl1",
-          "aviableSize": ["42", "44", "50"],
+          "aviableSize": [
+            "42",
+            "44",
+            "50"
+          ],
           "colorName": "Чёрный",
           "colorHex": "#000000"
         },
@@ -1771,13 +2063,23 @@
         },
         {
           "colorId": "g1",
-          "aviableSize": ["40", "42", "44", "46", "48", "50"],
+          "aviableSize": [
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50"
+          ],
           "colorName": "Белый",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
-          "aviableSize": ["46", "48"],
+          "aviableSize": [
+            "46",
+            "48"
+          ],
           "colorName": "Синий",
           "colorHex": "#38548A"
         }
@@ -1790,7 +2092,10 @@
       "productName": "Классический комплект со смокингом и желетом",
       "productPrice": "18000",
       "productAbout": "Подчеркнёт линию талии",
-      "category": ["Смокинг", "Новинки"],
+      "category": [
+        "Смокинг",
+        "Новинки"
+      ],
       "collection": [],
       "image": [
         {
@@ -1853,7 +2158,11 @@
       "productAviable": [
         {
           "colorId": "bl1",
-          "aviableSize": ["42", "44", "50"],
+          "aviableSize": [
+            "42",
+            "44",
+            "50"
+          ],
           "colorName": "Чёрный",
           "colorHex": "#000000"
         },
@@ -1865,13 +2174,23 @@
         },
         {
           "colorId": "g1",
-          "aviableSize": ["40", "42", "44", "46", "48", "50"],
+          "aviableSize": [
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50"
+          ],
           "colorName": "Белый",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
-          "aviableSize": ["46", "48"],
+          "aviableSize": [
+            "46",
+            "48"
+          ],
           "colorName": "Синий",
           "colorHex": "#38548A"
         }
@@ -1884,8 +2203,12 @@
       "productName": "Классический комплект со смокингом и желетом",
       "productPrice": "141100",
       "productAbout": "Подчеркнёт линию талии",
-      "category": ["Костюмы"],
-      "collection": ["Осень-зима 20-21"],
+      "category": [
+        "Костюмы"
+      ],
+      "collection": [
+        "Осень-зима 20-21"
+      ],
       "image": [
         {
           "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
@@ -1947,7 +2270,11 @@
       "productAviable": [
         {
           "colorId": "bl1",
-          "aviableSize": ["42", "44", "50"],
+          "aviableSize": [
+            "42",
+            "44",
+            "50"
+          ],
           "colorName": "Чёрный",
           "colorHex": "#000000"
         },
@@ -1959,13 +2286,23 @@
         },
         {
           "colorId": "g1",
-          "aviableSize": ["40", "42", "44", "46", "48", "50"],
+          "aviableSize": [
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50"
+          ],
           "colorName": "Белый",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
-          "aviableSize": ["46", "48"],
+          "aviableSize": [
+            "46",
+            "48"
+          ],
           "colorName": "Синий",
           "colorHex": "#38548A"
         }
@@ -1978,7 +2315,10 @@
       "productName": "Классический комплект со смокингом и желетом",
       "productPrice": "8000",
       "productAbout": "Подчеркнёт линию талии",
-      "category": ["Смокинги", "Новинки"],
+      "category": [
+        "Смокинги",
+        "Новинки"
+      ],
       "collection": [],
       "image": [
         {
@@ -2041,7 +2381,11 @@
       "productAviable": [
         {
           "colorId": "bl1",
-          "aviableSize": ["42", "44", "50"],
+          "aviableSize": [
+            "42",
+            "44",
+            "50"
+          ],
           "colorName": "Чёрный",
           "colorHex": "#000000"
         },
@@ -2053,13 +2397,23 @@
         },
         {
           "colorId": "g1",
-          "aviableSize": ["40", "42", "44", "46", "48", "50"],
+          "aviableSize": [
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50"
+          ],
           "colorName": "Белый",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
-          "aviableSize": ["46", "48"],
+          "aviableSize": [
+            "46",
+            "48"
+          ],
           "colorName": "Синий",
           "colorHex": "#38548A"
         }
@@ -2072,8 +2426,12 @@
       "productName": "Классический комплект со смокингом и желетом",
       "productPrice": "14100",
       "productAbout": "Подчеркнёт линию талии",
-      "category": ["Смокинги"],
-      "collection": ["Осень-зима 20-21"],
+      "category": [
+        "Смокинги"
+      ],
+      "collection": [
+        "Осень-зима 20-21"
+      ],
       "image": [
         {
           "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
@@ -2135,7 +2493,11 @@
       "productAviable": [
         {
           "colorId": "bl1",
-          "aviableSize": ["42", "44", "50"],
+          "aviableSize": [
+            "42",
+            "44",
+            "50"
+          ],
           "colorName": "Чёрный",
           "colorHex": "#000000"
         },
@@ -2147,13 +2509,23 @@
         },
         {
           "colorId": "g1",
-          "aviableSize": ["40", "42", "44", "46", "48", "50"],
+          "aviableSize": [
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50"
+          ],
           "colorName": "Белый",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
-          "aviableSize": ["46", "48"],
+          "aviableSize": [
+            "46",
+            "48"
+          ],
           "colorName": "Синий",
           "colorHex": "#38548A"
         }
@@ -2166,7 +2538,10 @@
       "productName": "Классический комплект со смокингом и желетом",
       "productPrice": "22200",
       "productAbout": "Подчеркнёт линию талии",
-      "category": ["Смокинги", "Новинки"],
+      "category": [
+        "Смокинги",
+        "Новинки"
+      ],
       "collection": [],
       "image": [
         {
@@ -2229,7 +2604,11 @@
       "productAviable": [
         {
           "colorId": "bl1",
-          "aviableSize": ["42", "44", "50"],
+          "aviableSize": [
+            "42",
+            "44",
+            "50"
+          ],
           "colorName": "Чёрный",
           "colorHex": "#000000"
         },
@@ -2241,13 +2620,23 @@
         },
         {
           "colorId": "g1",
-          "aviableSize": ["40", "42", "44", "46", "48", "50"],
+          "aviableSize": [
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50"
+          ],
           "colorName": "Белый",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
-          "aviableSize": ["46", "48"],
+          "aviableSize": [
+            "46",
+            "48"
+          ],
           "colorName": "Синий",
           "colorHex": "#38548A"
         }
@@ -2260,8 +2649,12 @@
       "productName": "Классический комплект со смокингом и желетом",
       "productPrice": "47200",
       "productAbout": "Подчеркнёт линию талии",
-      "category": ["Смокинги"],
-      "collection": ["Осень-зима 20-21"],
+      "category": [
+        "Смокинги"
+      ],
+      "collection": [
+        "Осень-зима 20-21"
+      ],
       "image": [
         {
           "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
@@ -2323,7 +2716,11 @@
       "productAviable": [
         {
           "colorId": "bl1",
-          "aviableSize": ["42", "44", "50"],
+          "aviableSize": [
+            "42",
+            "44",
+            "50"
+          ],
           "colorName": "Чёрный",
           "colorHex": "#000000"
         },
@@ -2335,13 +2732,23 @@
         },
         {
           "colorId": "g1",
-          "aviableSize": ["40", "42", "44", "46", "48", "50"],
+          "aviableSize": [
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50"
+          ],
           "colorName": "Белый",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
-          "aviableSize": ["46", "48"],
+          "aviableSize": [
+            "46",
+            "48"
+          ],
           "colorName": "Синий",
           "colorHex": "#38548A"
         }
@@ -2354,7 +2761,9 @@
       "productName": "Классический комплект со смокингом и желетом",
       "productPrice": "74400",
       "productAbout": "Подчеркнёт линию талии",
-      "category": ["Смокинги"],
+      "category": [
+        "Смокинги"
+      ],
       "collection": [],
       "image": [
         {
@@ -2417,7 +2826,11 @@
       "productAviable": [
         {
           "colorId": "bl1",
-          "aviableSize": ["42", "44", "50"],
+          "aviableSize": [
+            "42",
+            "44",
+            "50"
+          ],
           "colorName": "Чёрный",
           "colorHex": "#000000"
         },
@@ -2429,13 +2842,23 @@
         },
         {
           "colorId": "g1",
-          "aviableSize": ["40", "42", "44", "46", "48", "50"],
+          "aviableSize": [
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50"
+          ],
           "colorName": "Белый",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
-          "aviableSize": ["46", "48"],
+          "aviableSize": [
+            "46",
+            "48"
+          ],
           "colorName": "Синий",
           "colorHex": "#38548A"
         }
@@ -2448,8 +2871,13 @@
       "productName": "Классический комплект со смокингом и желетом",
       "productPrice": "62555",
       "productAbout": "Подчеркнёт линию талии",
-      "category": ["Смокинги", "Новинки"],
-      "collection": ["Осень-зима 20-21"],
+      "category": [
+        "Смокинги",
+        "Новинки"
+      ],
+      "collection": [
+        "Осень-зима 20-21"
+      ],
       "image": [
         {
           "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
@@ -2511,7 +2939,11 @@
       "productAviable": [
         {
           "colorId": "bl1",
-          "aviableSize": ["42", "44", "50"],
+          "aviableSize": [
+            "42",
+            "44",
+            "50"
+          ],
           "colorName": "Чёрный",
           "colorHex": "#000000"
         },
@@ -2523,13 +2955,23 @@
         },
         {
           "colorId": "g1",
-          "aviableSize": ["40", "42", "44", "46", "48", "50"],
+          "aviableSize": [
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50"
+          ],
           "colorName": "Белый",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
-          "aviableSize": ["46", "48"],
+          "aviableSize": [
+            "46",
+            "48"
+          ],
           "colorName": "Синий",
           "colorHex": "#38548A"
         }
@@ -2542,7 +2984,10 @@
       "productName": "Классический комплект со смокингом и желетом",
       "productPrice": "69990",
       "productAbout": "Подчеркнёт линию талии",
-      "category": ["Смокинги", "Новинки"],
+      "category": [
+        "Смокинги",
+        "Новинки"
+      ],
       "collection": [],
       "image": [
         {
@@ -2605,7 +3050,11 @@
       "productAviable": [
         {
           "colorId": "bl1",
-          "aviableSize": ["42", "44", "50"],
+          "aviableSize": [
+            "42",
+            "44",
+            "50"
+          ],
           "colorName": "Чёрный",
           "colorHex": "#000000"
         },
@@ -2617,13 +3066,23 @@
         },
         {
           "colorId": "g1",
-          "aviableSize": ["40", "42", "44", "46", "48", "50"],
+          "aviableSize": [
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50"
+          ],
           "colorName": "Белый",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
-          "aviableSize": ["46", "48"],
+          "aviableSize": [
+            "46",
+            "48"
+          ],
           "colorName": "Синий",
           "colorHex": "#38548A"
         }
@@ -2636,8 +3095,13 @@
       "productName": "Классический комплект со смокингом и желетом",
       "productPrice": "65400",
       "productAbout": "Подчеркнёт линию талии",
-      "category": ["Смокинги", "Новинки"],
-      "collection": ["Свадьба и выпускной"],
+      "category": [
+        "Смокинги",
+        "Новинки"
+      ],
+      "collection": [
+        "Свадьба и выпускной"
+      ],
       "image": [
         {
           "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
@@ -2699,7 +3163,11 @@
       "productAviable": [
         {
           "colorId": "bl1",
-          "aviableSize": ["42", "44", "50"],
+          "aviableSize": [
+            "42",
+            "44",
+            "50"
+          ],
           "colorName": "Чёрный",
           "colorHex": "#000000"
         },
@@ -2711,13 +3179,23 @@
         },
         {
           "colorId": "g1",
-          "aviableSize": ["40", "42", "44", "46", "48", "50"],
+          "aviableSize": [
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50"
+          ],
           "colorName": "Белый",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
-          "aviableSize": ["46", "48"],
+          "aviableSize": [
+            "46",
+            "48"
+          ],
           "colorName": "Синий",
           "colorHex": "#38548A"
         }
@@ -2730,7 +3208,9 @@
       "productName": "Классический комплект со смокингом и желетом",
       "productPrice": "77770",
       "productAbout": "Подчеркнёт линию талии",
-      "category": ["Смокинги"],
+      "category": [
+        "Смокинги"
+      ],
       "collection": [],
       "image": [
         {
@@ -2793,7 +3273,11 @@
       "productAviable": [
         {
           "colorId": "bl1",
-          "aviableSize": ["42", "44", "50"],
+          "aviableSize": [
+            "42",
+            "44",
+            "50"
+          ],
           "colorName": "Чёрный",
           "colorHex": "#000000"
         },
@@ -2805,13 +3289,23 @@
         },
         {
           "colorId": "g1",
-          "aviableSize": ["40", "42", "44", "46", "48", "50"],
+          "aviableSize": [
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50"
+          ],
           "colorName": "Белый",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
-          "aviableSize": ["46", "48"],
+          "aviableSize": [
+            "46",
+            "48"
+          ],
           "colorName": "Синий",
           "colorHex": "#38548A"
         }
@@ -2824,8 +3318,13 @@
       "productName": "Классический комплект со смокингом и желетом",
       "productPrice": "29500",
       "productAbout": "Подчеркнёт линию талии",
-      "category": ["Смокинги", "Новинки"],
-      "collection": ["Осень-зима 20-21"],
+      "category": [
+        "Смокинги",
+        "Новинки"
+      ],
+      "collection": [
+        "Осень-зима 20-21"
+      ],
       "image": [
         {
           "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
@@ -2887,7 +3386,11 @@
       "productAviable": [
         {
           "colorId": "bl1",
-          "aviableSize": ["42", "44", "50"],
+          "aviableSize": [
+            "42",
+            "44",
+            "50"
+          ],
           "colorName": "Чёрный",
           "colorHex": "#000000"
         },
@@ -2899,13 +3402,23 @@
         },
         {
           "colorId": "g1",
-          "aviableSize": ["40", "42", "44", "46", "48", "50"],
+          "aviableSize": [
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50"
+          ],
           "colorName": "Белый",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
-          "aviableSize": ["46", "48"],
+          "aviableSize": [
+            "46",
+            "48"
+          ],
           "colorName": "Синий",
           "colorHex": "#38548A"
         }
@@ -2918,7 +3431,9 @@
       "productName": "Классический комплект со смокингом и желетом",
       "productPrice": "12400",
       "productAbout": "Подчеркнёт линию талии",
-      "category": ["Смокинги"],
+      "category": [
+        "Смокинги"
+      ],
       "collection": [],
       "image": [
         {
@@ -2981,7 +3496,11 @@
       "productAviable": [
         {
           "colorId": "bl1",
-          "aviableSize": ["42", "44", "50"],
+          "aviableSize": [
+            "42",
+            "44",
+            "50"
+          ],
           "colorName": "Чёрный",
           "colorHex": "#000000"
         },
@@ -2993,13 +3512,23 @@
         },
         {
           "colorId": "g1",
-          "aviableSize": ["40", "42", "44", "46", "48", "50"],
+          "aviableSize": [
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50"
+          ],
           "colorName": "Белый",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
-          "aviableSize": ["46", "48"],
+          "aviableSize": [
+            "46",
+            "48"
+          ],
           "colorName": "Синий",
           "colorHex": "#38548A"
         }
@@ -3012,8 +3541,15 @@
       "productName": "Классический комплект со смокингом и желетом",
       "productPrice": "64470",
       "productAbout": "Подчеркнёт линию талии",
-      "category": ["Смокинги", "Новинки", "Платья"],
-      "collection": ["Свадьба и выпускной", "Вечерние комплекты"],
+      "category": [
+        "Смокинги",
+        "Новинки",
+        "Платья"
+      ],
+      "collection": [
+        "Свадьба и выпускной",
+        "Вечерние комплекты"
+      ],
       "image": [
         {
           "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
@@ -3075,7 +3611,11 @@
       "productAviable": [
         {
           "colorId": "bl1",
-          "aviableSize": ["42", "44", "50"],
+          "aviableSize": [
+            "42",
+            "44",
+            "50"
+          ],
           "colorName": "Чёрный",
           "colorHex": "#000000"
         },
@@ -3087,13 +3627,23 @@
         },
         {
           "colorId": "g1",
-          "aviableSize": ["40", "42", "44", "46", "48", "50"],
+          "aviableSize": [
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50"
+          ],
           "colorName": "Белый",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
-          "aviableSize": ["46", "48"],
+          "aviableSize": [
+            "46",
+            "48"
+          ],
           "colorName": "Синий",
           "colorHex": "#38548A"
         }
@@ -3106,7 +3656,10 @@
       "productName": "Классический комплект со смокингом и желетом",
       "productPrice": "64540",
       "productAbout": "Подчеркнёт линию талии",
-      "category": ["Новинки", "Топы и жилеты"],
+      "category": [
+        "Новинки",
+        "Топы и жилеты"
+      ],
       "collection": [],
       "image": [
         {
@@ -3169,7 +3722,11 @@
       "productAviable": [
         {
           "colorId": "bl1",
-          "aviableSize": ["42", "44", "50"],
+          "aviableSize": [
+            "42",
+            "44",
+            "50"
+          ],
           "colorName": "Чёрный",
           "colorHex": "#000000"
         },
@@ -3181,13 +3738,23 @@
         },
         {
           "colorId": "g1",
-          "aviableSize": ["40", "42", "44", "46", "48", "50"],
+          "aviableSize": [
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50"
+          ],
           "colorName": "Белый",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
-          "aviableSize": ["46", "48"],
+          "aviableSize": [
+            "46",
+            "48"
+          ],
           "colorName": "Синий",
           "colorHex": "#38548A"
         }
@@ -3200,8 +3767,13 @@
       "productName": "Классический комплект со смокингом и желетом",
       "productPrice": "68200",
       "productAbout": "Подчеркнёт линию талии",
-      "category": ["Новинки", "Юбки"],
-      "collection": ["Вечерние комплекты"],
+      "category": [
+        "Новинки",
+        "Юбки"
+      ],
+      "collection": [
+        "Вечерние комплекты"
+      ],
       "image": [
         {
           "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
@@ -3263,7 +3835,11 @@
       "productAviable": [
         {
           "colorId": "bl1",
-          "aviableSize": ["42", "44", "50"],
+          "aviableSize": [
+            "42",
+            "44",
+            "50"
+          ],
           "colorName": "Чёрный",
           "colorHex": "#000000"
         },
@@ -3275,13 +3851,23 @@
         },
         {
           "colorId": "g1",
-          "aviableSize": ["40", "42", "44", "46", "48", "50"],
+          "aviableSize": [
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50"
+          ],
           "colorName": "Белый",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
-          "aviableSize": ["46", "48"],
+          "aviableSize": [
+            "46",
+            "48"
+          ],
           "colorName": "Синий",
           "colorHex": "#38548A"
         }
@@ -3294,8 +3880,13 @@
       "productName": "Классический комплект со смокингом и желетом",
       "productPrice": "24540",
       "productAbout": "Подчеркнёт линию талии",
-      "category": ["Блузы", "Свадьба и выпускной"],
-      "collection": ["Свадьба и выпускной"],
+      "category": [
+        "Блузы",
+        "Свадьба и выпускной"
+      ],
+      "collection": [
+        "Свадьба и выпускной"
+      ],
       "image": [
         {
           "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
@@ -3357,7 +3948,11 @@
       "productAviable": [
         {
           "colorId": "bl1",
-          "aviableSize": ["42", "44", "50"],
+          "aviableSize": [
+            "42",
+            "44",
+            "50"
+          ],
           "colorName": "Чёрный",
           "colorHex": "#000000"
         },
@@ -3369,13 +3964,23 @@
         },
         {
           "colorId": "g1",
-          "aviableSize": ["40", "42", "44", "46", "48", "50"],
+          "aviableSize": [
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50"
+          ],
           "colorName": "Белый",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
-          "aviableSize": ["46", "48"],
+          "aviableSize": [
+            "46",
+            "48"
+          ],
           "colorName": "Синий",
           "colorHex": "#38548A"
         }
@@ -3388,7 +3993,9 @@
       "productName": "Классический комплект со смокингом и желетом",
       "productPrice": "42444",
       "productAbout": "Подчеркнёт линию талии",
-      "category": ["Брюки"],
+      "category": [
+        "Брюки"
+      ],
       "collection": [],
       "image": [
         {
@@ -3451,7 +4058,11 @@
       "productAviable": [
         {
           "colorId": "bl1",
-          "aviableSize": ["42", "44", "50"],
+          "aviableSize": [
+            "42",
+            "44",
+            "50"
+          ],
           "colorName": "Чёрный",
           "colorHex": "#000000"
         },
@@ -3463,13 +4074,23 @@
         },
         {
           "colorId": "g1",
-          "aviableSize": ["40", "42", "44", "46", "48", "50"],
+          "aviableSize": [
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50"
+          ],
           "colorName": "Белый",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
-          "aviableSize": ["46", "48"],
+          "aviableSize": [
+            "46",
+            "48"
+          ],
           "colorName": "Синий",
           "colorHex": "#38548A"
         }
@@ -3482,7 +4103,10 @@
       "productName": "Классический комплект со смокингом и желетом",
       "productPrice": "63700",
       "productAbout": "Подчеркнёт линию талии",
-      "category": ["Брюки", "Новинки"],
+      "category": [
+        "Брюки",
+        "Новинки"
+      ],
       "collection": [],
       "image": [
         {
@@ -3545,7 +4169,11 @@
       "productAviable": [
         {
           "colorId": "bl1",
-          "aviableSize": ["42", "44", "50"],
+          "aviableSize": [
+            "42",
+            "44",
+            "50"
+          ],
           "colorName": "Чёрный",
           "colorHex": "#000000"
         },
@@ -3557,13 +4185,23 @@
         },
         {
           "colorId": "g1",
-          "aviableSize": ["40", "42", "44", "46", "48", "50"],
+          "aviableSize": [
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50"
+          ],
           "colorName": "Белый",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
-          "aviableSize": ["46", "48"],
+          "aviableSize": [
+            "46",
+            "48"
+          ],
           "colorName": "Синий",
           "colorHex": "#38548A"
         }
@@ -3576,7 +4214,10 @@
       "productName": "Классический комплект со смокингом и желетом",
       "productPrice": "44700",
       "productAbout": "Подчеркнёт линию талии",
-      "category": ["Смокинг", "Новинки"],
+      "category": [
+        "Смокинг",
+        "Новинки"
+      ],
       "collection": [],
       "image": [
         {
@@ -3639,7 +4280,11 @@
       "productAviable": [
         {
           "colorId": "bl1",
-          "aviableSize": ["42", "44", "50"],
+          "aviableSize": [
+            "42",
+            "44",
+            "50"
+          ],
           "colorName": "Чёрный",
           "colorHex": "#000000"
         },
@@ -3651,13 +4296,23 @@
         },
         {
           "colorId": "g1",
-          "aviableSize": ["40", "42", "44", "46", "48", "50"],
+          "aviableSize": [
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50"
+          ],
           "colorName": "Белый",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
-          "aviableSize": ["46", "48"],
+          "aviableSize": [
+            "46",
+            "48"
+          ],
           "colorName": "Синий",
           "colorHex": "#38548A"
         }
@@ -3670,8 +4325,12 @@
       "productName": "Классический комплект со смокингом и желетом",
       "productPrice": "13900",
       "productAbout": "Подчеркнёт линию талии",
-      "category": ["Костюмы"],
-      "collection": ["Осень-зима 20-21"],
+      "category": [
+        "Костюмы"
+      ],
+      "collection": [
+        "Осень-зима 20-21"
+      ],
       "image": [
         {
           "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
@@ -3733,7 +4392,11 @@
       "productAviable": [
         {
           "colorId": "bl1",
-          "aviableSize": ["42", "44", "50"],
+          "aviableSize": [
+            "42",
+            "44",
+            "50"
+          ],
           "colorName": "Чёрный",
           "colorHex": "#000000"
         },
@@ -3745,13 +4408,23 @@
         },
         {
           "colorId": "g1",
-          "aviableSize": ["40", "42", "44", "46", "48", "50"],
+          "aviableSize": [
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50"
+          ],
           "colorName": "Белый",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
-          "aviableSize": ["46", "48"],
+          "aviableSize": [
+            "46",
+            "48"
+          ],
           "colorName": "Синий",
           "colorHex": "#38548A"
         }
@@ -3764,8 +4437,12 @@
       "productName": "Классический комплект со смокингом и желетом",
       "productPrice": "40000",
       "productAbout": "Подчеркнёт линию талии",
-      "category": ["Костюмы"],
-      "collection": ["Предзаказ"],
+      "category": [
+        "Костюмы"
+      ],
+      "collection": [
+        "Предзаказ"
+      ],
       "image": [
         {
           "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
@@ -3827,7 +4504,11 @@
       "productAviable": [
         {
           "colorId": "bl1",
-          "aviableSize": ["42", "44", "50"],
+          "aviableSize": [
+            "42",
+            "44",
+            "50"
+          ],
           "colorName": "Чёрный",
           "colorHex": "#000000"
         },
@@ -3839,13 +4520,23 @@
         },
         {
           "colorId": "g1",
-          "aviableSize": ["40", "42", "44", "46", "48", "50"],
+          "aviableSize": [
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50"
+          ],
           "colorName": "Белый",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
-          "aviableSize": ["46", "48"],
+          "aviableSize": [
+            "46",
+            "48"
+          ],
           "colorName": "Синий",
           "colorHex": "#38548A"
         }
@@ -3858,8 +4549,13 @@
       "productName": "Классический комплект со смокингом и желетом",
       "productPrice": "41100",
       "productAbout": "Подчеркнёт линию талии",
-      "category": ["Смокинги", "Новинки"],
-      "collection": ["Свадьба и выпускной"],
+      "category": [
+        "Смокинги",
+        "Новинки"
+      ],
+      "collection": [
+        "Свадьба и выпускной"
+      ],
       "image": [
         {
           "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
@@ -3921,7 +4617,11 @@
       "productAviable": [
         {
           "colorId": "bl1",
-          "aviableSize": ["42", "44", "50"],
+          "aviableSize": [
+            "42",
+            "44",
+            "50"
+          ],
           "colorName": "Чёрный",
           "colorHex": "#000000"
         },
@@ -3933,13 +4633,23 @@
         },
         {
           "colorId": "g1",
-          "aviableSize": ["40", "42", "44", "46", "48", "50"],
+          "aviableSize": [
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50"
+          ],
           "colorName": "Белый",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
-          "aviableSize": ["46", "48"],
+          "aviableSize": [
+            "46",
+            "48"
+          ],
           "colorName": "Синий",
           "colorHex": "#38548A"
         }
@@ -4203,21 +4913,25 @@
     ],
     "videoFitting": [
       {
+        "id": "45435245",
         "video": "http://techslides.com/demos/sample-videos/small.webm",
         "poster": "./images/Black2V.jpg",
         "description": "Образ со смокингом"
       },
       {
+        "id": "462626",
         "video": "http://techslides.com/demos/sample-videos/small.webm",
         "poster": "./images/55.jpg",
         "description": "Образ с красным смокингом и черным топом"
       },
       {
+        "id": "6752457",
         "video": "http://techslides.com/demos/sample-videos/small.webm",
         "poster": "./images/23.jpg",
         "description": "Синий костюм с брюками"
       },
       {
+        "id": "45272899",
         "video": "http://techslides.com/demos/sample-videos/small.webm",
         "poster": "./images/78.jpg",
         "description": "Образ с костюмом"

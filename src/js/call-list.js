@@ -10,6 +10,8 @@ const formBrand = {
   page: formsPage.insertForm(),
   form: formsForm.insertForm(),
 };
+import { VideoSetPlayer } from './components/videoSetPlayer.js';
+const videoSetPlayer = new VideoSetPlayer();
 
 //======home======//
 import home from '../views/layouts/home.hbs';
@@ -167,11 +169,7 @@ export function deliveryRender() {
 import sizeTable_markup from '../views/layouts/fitting.hbs';
 import { sizeTable_tableCreate } from './layout/fitting/sizeTable.js';
 import { informationAboutFitting_informationCreate } from './layout/fitting/informationAboutFitting.js';
-import {
-  openVideoSlider,
-  fittingVideoSliderPlayer,
-  videoSlider_videoSliderCreate,
-} from './layout/fitting/videoSlider.js';
+import { openVideoSlider, videoSlider_videoSliderCreate } from './layout/fitting/videoSlider.js';
 export function fittingRender() {
   classBody();
   const fittingMarkUp = sizeTable_markup({
@@ -182,7 +180,8 @@ export function fittingRender() {
   });
   refs.mainEL.innerHTML = fittingMarkUp;
   openVideoSlider();
-  //fittingVideoSliderPlayer();
+  videoSetPlayer.clickListener();
+  formFittingInShowroom();
   blockHelpRender();
   formsPage.init();
 }
@@ -256,12 +255,8 @@ export function productRender() {
 const formReviews = new Forms('reviews');
 const formReviewsMarkUp = formReviews.insertForm();
 import reviews_page from '../views/layouts/reviews.hbs';
-import {
-  setVideoHbs,
-  clientStar,
-  videosetSlickSettings,
-  videoSetPlayer,
-} from './layout/reviews/videoSet.js';
+import { formReviews, formReviewsMarkUp } from './layout/reviews/registrationFormForFitting.js';
+import { setVideoHbs, clientStar, videosetSlickSettings } from './layout/reviews/videoSet.js';
 
 export function reviewsRender() {
   classBody();
@@ -270,7 +265,8 @@ export function reviewsRender() {
   videosetSlickSettings();
   starClientsSlider();
   starClientsComments();
-  videoSetPlayer();
+  formReviews();
+  videoSetPlayer.clickListener();
   blockHelpRender();
   formReviews.init();
 }

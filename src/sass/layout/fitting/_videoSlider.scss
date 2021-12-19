@@ -1,20 +1,23 @@
 .fitting__first-video,
 .fitting__video {
   margin-right: 15px;
+  object-fit: cover;
+  width: 374px;
+  height: 665px;
+  @media screen and (min-width: $mobile-only) {
+    width: 323px;
+    height: 400px;
+  }
   @media screen and (min-width: $desktop-up) {
     width: 185px;
-    height: auto;
-  }
-  @media screen and (min-width: $mobile-first) and (max-width: $tablet-general) {
-    width: 374px;
-    height: auto;
+    height: 230px;
   }
 }
 .fitting__video-slider {
   margin-top: 50px;
   padding-bottom: 10px;
   margin-bottom: 50px;
-  & .slick-dots li + li{
+  & .slick-dots li + li {
     margin-left: 20px;
   }
 }
@@ -29,10 +32,9 @@
   display: flex;
 }
 .splide__track {
-  @media screen and (min-width: $desktop-up){
-   max-width: 590px; 
+  @media screen and (min-width: $desktop-up) {
+    max-width: 590px;
   }
-  
 }
 
 /* extra */
@@ -92,7 +94,6 @@ body > main > section.fitting__section > div > div.fitting__video-slider > h3:be
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
 .slider .slick-dots li {
   list-style: none;
@@ -140,7 +141,6 @@ body > main > section.fitting__section > div > div.fitting__video-slider > h3:be
     right: 18px;
   }
 }
-
 
 .video-fitting-fullscreen {
   display: none;
