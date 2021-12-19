@@ -51,7 +51,7 @@ import './js/components/sizeTable.js';
 import './js/components/sizeChose.js';
 //brand
 import './js/layout/brand/infoAboutBrand.js';
-import './js/layout/brand/ourAdvantages.js';
+
 //checkout
 import './js/layout/checkout/ordering.js';
 import './js/layout/checkout/payment.js';
