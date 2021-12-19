@@ -3,7 +3,7 @@ import productInfo from '../../../js/json/product/productInfo.json';
 import productTemplate from '../../../views/partials/product/infoAboutProduct.hbs';
 import refs from '../../refs/refs.js';
 window.jQuery = window.$ = require('jquery');
-require('../../slick/slick.min');
+require('../../slider/slick.min.js');
 //* way to get a function from Andrew to render a size grid (don't clear)
 // import sizeChose from '../fitting/sizeChose.js';
 // const { createBtn } = sizeChose;
