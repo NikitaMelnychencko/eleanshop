@@ -221,7 +221,6 @@ export default class RecomendationsCategory {
   };
 
   setEvent = selector => {
-    console.log(selector);
     if (!selector) {
       this.cardsListEl = document.querySelector(
         '.recomendation-category .recomendation-category__list',

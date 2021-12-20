@@ -237,7 +237,7 @@ export function productRender() {
     recomendationCategory: objRecomendationsCategory.getMarkup(),
     handSewn: objHandSewn.getMarkup(),
     // backdrop: backdropMarkup,
-    modalPreorder: preorderMark,
+    // modalPreorder: preorderMark,
     // tryOnModels: tryOnModels,
     mainModal: mainModal,
   };
