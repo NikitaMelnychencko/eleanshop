@@ -109,6 +109,10 @@ function fixateCurrentClass(colorArray, productColor) {
   }
 }
 
+function selectFirstColor() {
+  document.querySelector('.colorpicker__label').click();
+}
+
 function onColorListClick(event) {
   let availableSizes = [];
   const colorpickerButton = event.target;
@@ -129,7 +133,6 @@ function onColorListClick(event) {
   removeCurrentClass();
   addCurrentClass(colorpickerButton);
   showAvailableSizes(availableSizes);
-  setProductColor(inputColor);
 }
 
 function showAvailableSizes(sizes) {
@@ -169,7 +172,6 @@ function showAvailableSizes(sizes) {
 }
 
 function setProductDataToOrdering() {
-  console.log(productInfoData.image[0].imageProduct);
   const orderingDataArray = localStorage.getItem('orderingData');
   if (orderingDataArray.length === 0) {
     return;
@@ -266,6 +268,7 @@ function createAllListeners(buy) {
   charList.addEventListener('click', onCharListClick);
   sizeList.addEventListener('click', onSizeElClick);
   form.addEventListener('submit', onFormSubmit(buy));
+  selectFirstColor();
 }
 
 //!----------------------------------------------------EXPORT TO MAIN FILE
