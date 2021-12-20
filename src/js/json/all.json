@@ -192,27 +192,31 @@
       "productName": "Классический комплект со смокингом и желетом",
       "productPrice": "63500",
       "productAbout": "Подчеркнёт линию талии",
-      "category": ["Смокинги"],
-      "collection": ["Осень-зима 20-21"],
+      "category": [
+        "Смокинги"
+      ],
+      "collection": [
+        "Осень-зима 20-21"
+      ],
       "image": [
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
-          "imageMobile": "./images/card-1.jpg",
+          "imageDesctopMini": "./images/card-1-desktop@2x.jpg ",
+          "imageMobile": "./images/card-1@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-2.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-2.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-1@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-3.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-3.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-2@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-4.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-4.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-3@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         }
       ],
@@ -255,7 +259,11 @@
       "productAviable": [
         {
           "colorId": "bl1",
-          "aviableSize": ["42", "44", "50"],
+          "aviableSize": [
+            "42",
+            "44",
+            "50"
+          ],
           "colorName": "black",
           "colorHex": "#000000"
         },
@@ -267,13 +275,23 @@
         },
         {
           "colorId": "g1",
-          "aviableSize": ["40", "42", "44", "46", "48", "50"],
+          "aviableSize": [
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50"
+          ],
           "colorName": "white",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
-          "aviableSize": ["46", "48"],
+          "aviableSize": [
+            "46",
+            "48"
+          ],
           "colorName": "blue",
           "colorHex": "#38548A"
         }
@@ -286,27 +304,30 @@
       "productName": "Классический комплект со смокингом и желетом",
       "productPrice": "41400",
       "productAbout": "Подчеркнёт линию талии",
-      "category": ["Смокинги", "Новинки"],
+      "category": [
+        "Смокинги",
+        "Новинки"
+      ],
       "collection": [],
       "image": [
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-1.jpg",
+          "imageDesctopMini": "./images/card-2-desktop@2x.jpg ",
+          "imageMobile": "./images/card-2@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-2.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-2.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-1@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-3.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-3.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-2@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-4.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-4.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-3@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         }
       ],
@@ -349,7 +370,11 @@
       "productAviable": [
         {
           "colorId": "bl1",
-          "aviableSize": ["42", "44", "50"],
+          "aviableSize": [
+            "42",
+            "44",
+            "50"
+          ],
           "colorName": "black",
           "colorHex": "#000000"
         },
@@ -361,13 +386,23 @@
         },
         {
           "colorId": "g1",
-          "aviableSize": ["40", "42", "44", "46", "48", "50"],
+          "aviableSize": [
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50"
+          ],
           "colorName": "white",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
-          "aviableSize": ["46", "48"],
+          "aviableSize": [
+            "46",
+            "48"
+          ],
           "colorName": "blue",
           "colorHex": "#38548A"
         }
@@ -380,27 +415,31 @@
       "productName": "Классический комплект со смокингом и желетом",
       "productPrice": "25000",
       "productAbout": "Подчеркнёт линию талии",
-      "category": ["Смокинги"],
-      "collection": ["Осень-зима 20-21"],
+      "category": [
+        "Смокинги"
+      ],
+      "collection": [
+        "Осень-зима 20-21"
+      ],
       "image": [
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-1.jpg",
+          "imageDesctopMini": "./images/card-3-desktop@2x.jpg ",
+          "imageMobile": "./images/card-3@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-2.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-2.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-1@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-3.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-3.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-2@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-4.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-4.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-3@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         }
       ],
@@ -443,7 +482,11 @@
       "productAviable": [
         {
           "colorId": "bl1",
-          "aviableSize": ["42", "44", "50"],
+          "aviableSize": [
+            "42",
+            "44",
+            "50"
+          ],
           "colorName": "black",
           "colorHex": "#000000"
         },
@@ -455,13 +498,23 @@
         },
         {
           "colorId": "g1",
-          "aviableSize": ["40", "42", "44", "46", "48", "50"],
+          "aviableSize": [
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50"
+          ],
           "colorName": "white",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
-          "aviableSize": ["46", "48"],
+          "aviableSize": [
+            "46",
+            "48"
+          ],
           "colorName": "blue",
           "colorHex": "#38548A"
         }
@@ -474,27 +527,31 @@
       "productName": "Классический комплект со смокингом и желетом",
       "productPrice": "64700",
       "productAbout": "Подчеркнёт линию талии",
-      "category": ["Смокинги"],
-      "collection": ["Осень-зима 20-21"],
+      "category": [
+        "Смокинги"
+      ],
+      "collection": [
+        "Осень-зима 20-21"
+      ],
       "image": [
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-1.jpg",
+          "imageDesctopMini": "./images/card-4-desktop@2x.jpg ",
+          "imageMobile": "./images/card-4@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-2.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-2.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-1@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-3.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-3.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-2@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-4.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-4.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-3@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         }
       ],
@@ -537,7 +594,11 @@
       "productAviable": [
         {
           "colorId": "bl1",
-          "aviableSize": ["42", "44", "50"],
+          "aviableSize": [
+            "42",
+            "44",
+            "50"
+          ],
           "colorName": "black",
           "colorHex": "#000000"
         },
@@ -549,13 +610,23 @@
         },
         {
           "colorId": "g1",
-          "aviableSize": ["40", "42", "44", "46", "48", "50"],
+          "aviableSize": [
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50"
+          ],
           "colorName": "white",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
-          "aviableSize": ["46", "48"],
+          "aviableSize": [
+            "46",
+            "48"
+          ],
           "colorName": "blue",
           "colorHex": "#38548A"
         }
@@ -568,27 +639,32 @@
       "productName": "Классический комплект со смокингом и желетом",
       "productPrice": "60000",
       "productAbout": "Подчеркнёт линию талии",
-      "category": ["Смокинги", "Новинки"],
-      "collection": ["Осень-зима 20-21"],
+      "category": [
+        "Смокинги",
+        "Новинки"
+      ],
+      "collection": [
+        "Осень-зима 20-21"
+      ],
       "image": [
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-1.jpg",
+          "imageDesctopMini": "./images/card-5-desktop@2x.jpg ",
+          "imageMobile": "./images/card-5@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-2.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-2.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-1@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-3.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-3.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-2@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-4.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-4.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-3@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         }
       ],
@@ -631,7 +707,11 @@
       "productAviable": [
         {
           "colorId": "bl1",
-          "aviableSize": ["42", "44", "50"],
+          "aviableSize": [
+            "42",
+            "44",
+            "50"
+          ],
           "colorName": "black",
           "colorHex": "#000000"
         },
@@ -643,13 +723,23 @@
         },
         {
           "colorId": "g1",
-          "aviableSize": ["40", "42", "44", "46", "48", "50"],
+          "aviableSize": [
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50"
+          ],
           "colorName": "white",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
-          "aviableSize": ["46", "48"],
+          "aviableSize": [
+            "46",
+            "48"
+          ],
           "colorName": "blue",
           "colorHex": "#38548A"
         }
@@ -662,27 +752,30 @@
       "productName": "Классический комплект со смокингом и желетом",
       "productPrice": "30450",
       "productAbout": "Подчеркнёт линию талии",
-      "category": ["Смокинги", "Новинки"],
+      "category": [
+        "Смокинги",
+        "Новинки"
+      ],
       "collection": [],
       "image": [
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-1.jpg",
+          "imageDesctopMini": "./images/card-6-desktop@2x.jpg ",
+          "imageMobile": "./images/card-6@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-2.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-2.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-1@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-3.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-3.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-2@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-4.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-4.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-3@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         }
       ],
@@ -725,7 +818,11 @@
       "productAviable": [
         {
           "colorId": "bl1",
-          "aviableSize": ["42", "44", "50"],
+          "aviableSize": [
+            "42",
+            "44",
+            "50"
+          ],
           "colorName": "black",
           "colorHex": "#000000"
         },
@@ -737,13 +834,23 @@
         },
         {
           "colorId": "g1",
-          "aviableSize": ["40", "42", "44", "46", "48", "50"],
+          "aviableSize": [
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50"
+          ],
           "colorName": "white",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
-          "aviableSize": ["46", "48"],
+          "aviableSize": [
+            "46",
+            "48"
+          ],
           "colorName": "blue",
           "colorHex": "#38548A"
         }
@@ -756,27 +863,32 @@
       "productName": "Классический комплект со смокингом и желетом",
       "productPrice": "21000",
       "productAbout": "Подчеркнёт линию талии",
-      "category": ["Смокинги", "Новинки"],
-      "collection": ["Свадьба и выпускной"],
+      "category": [
+        "Смокинги",
+        "Новинки"
+      ],
+      "collection": [
+        "Свадьба и выпускной"
+      ],
       "image": [
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-1.jpg",
+          "imageDesctopMini": "./images/card-7-desktop@2x.jpg ",
+          "imageMobile": "./images/card-7@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-2.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-2.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-1@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-3.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-3.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-2@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-4.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-4.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-3@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         }
       ],
@@ -819,7 +931,11 @@
       "productAviable": [
         {
           "colorId": "bl1",
-          "aviableSize": ["42", "44", "50"],
+          "aviableSize": [
+            "42",
+            "44",
+            "50"
+          ],
           "colorName": "black",
           "colorHex": "#000000"
         },
@@ -831,13 +947,23 @@
         },
         {
           "colorId": "g1",
-          "aviableSize": ["40", "42", "44", "46", "48", "50"],
+          "aviableSize": [
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50"
+          ],
           "colorName": "white",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
-          "aviableSize": ["46", "48"],
+          "aviableSize": [
+            "46",
+            "48"
+          ],
           "colorName": "blue",
           "colorHex": "#38548A"
         }
@@ -850,27 +976,29 @@
       "productName": "Классический комплект со смокингом и желетом",
       "productPrice": "105000",
       "productAbout": "Подчеркнёт линию талии",
-      "category": ["Смокинги"],
+      "category": [
+        "Смокинги"
+      ],
       "collection": [],
       "image": [
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-1.jpg",
+          "imageDesctopMini": "./images/card-8-desktop@2x.jpg ",
+          "imageMobile": "./images/card-8@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-2.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-2.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-1@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-3.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-3.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-2@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-4.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-4.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-3@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         }
       ],
@@ -913,7 +1041,11 @@
       "productAviable": [
         {
           "colorId": "bl1",
-          "aviableSize": ["42", "44", "50"],
+          "aviableSize": [
+            "42",
+            "44",
+            "50"
+          ],
           "colorName": "black",
           "colorHex": "#000000"
         },
@@ -925,13 +1057,23 @@
         },
         {
           "colorId": "g1",
-          "aviableSize": ["40", "42", "44", "46", "48", "50"],
+          "aviableSize": [
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50"
+          ],
           "colorName": "white",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
-          "aviableSize": ["46", "48"],
+          "aviableSize": [
+            "46",
+            "48"
+          ],
           "colorName": "blue",
           "colorHex": "#38548A"
         }
@@ -944,27 +1086,31 @@
       "productName": "Классический комплект со смокингом и желетом",
       "productPrice": "64400",
       "productAbout": "Подчеркнёт линию талии",
-      "category": ["Смокинги", "Новинки", "Осень-зима 20-21"],
+      "category": [
+        "Смокинги",
+        "Новинки",
+        "Осень-зима 20-21"
+      ],
       "collection": [],
       "image": [
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-1.jpg",
+          "imageDesctopMini": "./images/card-9-desktop@2x.jpg ",
+          "imageMobile": "./images/card-9@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-2.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-2.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-1@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-3.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-3.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-2@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-4.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-4.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-3@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         }
       ],
@@ -1007,7 +1153,11 @@
       "productAviable": [
         {
           "colorId": "bl1",
-          "aviableSize": ["42", "44", "50"],
+          "aviableSize": [
+            "42",
+            "44",
+            "50"
+          ],
           "colorName": "black",
           "colorHex": "#000000"
         },
@@ -1019,13 +1169,23 @@
         },
         {
           "colorId": "g1",
-          "aviableSize": ["40", "42", "44", "46", "48", "50"],
+          "aviableSize": [
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50"
+          ],
           "colorName": "white",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
-          "aviableSize": ["46", "48"],
+          "aviableSize": [
+            "46",
+            "48"
+          ],
           "colorName": "blue",
           "colorHex": "#38548A"
         }
@@ -1038,27 +1198,29 @@
       "productName": "Классический комплект со смокингом и желетом",
       "productPrice": "30500",
       "productAbout": "Подчеркнёт линию талии",
-      "category": ["Смокинги"],
+      "category": [
+        "Смокинги"
+      ],
       "collection": [],
       "image": [
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-1.jpg",
+          "imageDesctopMini": "./images/card-10-desktop@2x.jpg ",
+          "imageMobile": "./images/card-10@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-2.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-2.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-1@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-3.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-3.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-2@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-4.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-4.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-3@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         }
       ],
@@ -1101,7 +1263,11 @@
       "productAviable": [
         {
           "colorId": "bl1",
-          "aviableSize": ["42", "44", "50"],
+          "aviableSize": [
+            "42",
+            "44",
+            "50"
+          ],
           "colorName": "black",
           "colorHex": "#000000"
         },
@@ -1113,13 +1279,23 @@
         },
         {
           "colorId": "g1",
-          "aviableSize": ["40", "42", "44", "46", "48", "50"],
+          "aviableSize": [
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50"
+          ],
           "colorName": "white",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
-          "aviableSize": ["46", "48"],
+          "aviableSize": [
+            "46",
+            "48"
+          ],
           "colorName": "blue",
           "colorHex": "#38548A"
         }
@@ -1132,27 +1308,34 @@
       "productName": "Классический комплект со смокингом и желетом",
       "productPrice": "41000",
       "productAbout": "Подчеркнёт линию талии",
-      "category": ["Смокинги", "Новинки", "Платья"],
-      "collection": ["Свадьба и выпускной", "Вечерние комплекты"],
+      "category": [
+        "Смокинги",
+        "Новинки",
+        "Платья"
+      ],
+      "collection": [
+        "Свадьба и выпускной",
+        "Вечерние комплекты"
+      ],
       "image": [
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-1.jpg",
+          "imageDesctopMini": "./images/card-11-desktop@2x.jpg ",
+          "imageMobile": "./images/card-11@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-2.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-2.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-1@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-3.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-3.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-2@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-4.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-4.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-3@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         }
       ],
@@ -1195,7 +1378,11 @@
       "productAviable": [
         {
           "colorId": "bl1",
-          "aviableSize": ["42", "44", "50"],
+          "aviableSize": [
+            "42",
+            "44",
+            "50"
+          ],
           "colorName": "black",
           "colorHex": "#000000"
         },
@@ -1207,13 +1394,23 @@
         },
         {
           "colorId": "g1",
-          "aviableSize": ["40", "42", "44", "46", "48", "50"],
+          "aviableSize": [
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50"
+          ],
           "colorName": "white",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
-          "aviableSize": ["46", "48"],
+          "aviableSize": [
+            "46",
+            "48"
+          ],
           "colorName": "blue",
           "colorHex": "#38548A"
         }
@@ -1226,27 +1423,30 @@
       "productName": "Классический комплект со смокингом и желетом",
       "productPrice": "12400",
       "productAbout": "Подчеркнёт линию талии",
-      "category": ["Новинки", "Топы и жилеты"],
+      "category": [
+        "Новинки",
+        "Топы и жилеты"
+      ],
       "collection": [],
       "image": [
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-1.jpg",
+          "imageDesctopMini": "./images/card-12-desktop@2x.jpg ",
+          "imageMobile": "./images/card-12@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-2.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-2.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-1@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-3.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-3.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-2@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-4.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-4.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-3@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         }
       ],
@@ -1289,7 +1489,11 @@
       "productAviable": [
         {
           "colorId": "bl1",
-          "aviableSize": ["42", "44", "50"],
+          "aviableSize": [
+            "42",
+            "44",
+            "50"
+          ],
           "colorName": "black",
           "colorHex": "#000000"
         },
@@ -1301,13 +1505,23 @@
         },
         {
           "colorId": "g1",
-          "aviableSize": ["40", "42", "44", "46", "48", "50"],
+          "aviableSize": [
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50"
+          ],
           "colorName": "white",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
-          "aviableSize": ["46", "48"],
+          "aviableSize": [
+            "46",
+            "48"
+          ],
           "colorName": "blue",
           "colorHex": "#38548A"
         }
@@ -1320,27 +1534,30 @@
       "productName": "Классический комплект со смокингом и желетом",
       "productPrice": "34000",
       "productAbout": "Подчеркнёт линию талии",
-      "category": ["Новинки", "Топы и жилеты"],
+      "category": [
+        "Новинки",
+        "Топы и жилеты"
+      ],
       "collection": [],
       "image": [
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-1.jpg",
+          "imageDesctopMini": "./images/card-13-desktop@2x.jpg ",
+          "imageMobile": "./images/card-13@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-2.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-2.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-1@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-3.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-3.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-2@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-4.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-4.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-3@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         }
       ],
@@ -1383,7 +1600,11 @@
       "productAviable": [
         {
           "colorId": "bl1",
-          "aviableSize": ["42", "44", "50"],
+          "aviableSize": [
+            "42",
+            "44",
+            "50"
+          ],
           "colorName": "black",
           "colorHex": "#000000"
         },
@@ -1395,13 +1616,23 @@
         },
         {
           "colorId": "g1",
-          "aviableSize": ["40", "42", "44", "46", "48", "50"],
+          "aviableSize": [
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50"
+          ],
           "colorName": "white",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
-          "aviableSize": ["46", "48"],
+          "aviableSize": [
+            "46",
+            "48"
+          ],
           "colorName": "blue",
           "colorHex": "#38548A"
         }
@@ -1414,27 +1645,32 @@
       "productName": "Классический комплект со смокингом и желетом",
       "productPrice": "42400",
       "productAbout": "Подчеркнёт линию талии",
-      "category": ["Новинки", "Юбки"],
-      "collection": ["Вечерние комплекты"],
+      "category": [
+        "Новинки",
+        "Юбки"
+      ],
+      "collection": [
+        "Вечерние комплекты"
+      ],
       "image": [
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-1.jpg",
+          "imageDesctopMini": "./images/card-14-desktop@2x.jpg ",
+          "imageMobile": "./images/card-14@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-2.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-2.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-1@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-3.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-3.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-2@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-4.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-4.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-3@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         }
       ],
@@ -1477,7 +1713,11 @@
       "productAviable": [
         {
           "colorId": "bl1",
-          "aviableSize": ["42", "44", "50"],
+          "aviableSize": [
+            "42",
+            "44",
+            "50"
+          ],
           "colorName": "black",
           "colorHex": "#000000"
         },
@@ -1489,13 +1729,23 @@
         },
         {
           "colorId": "g1",
-          "aviableSize": ["40", "42", "44", "46", "48", "50"],
+          "aviableSize": [
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50"
+          ],
           "colorName": "white",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
-          "aviableSize": ["46", "48"],
+          "aviableSize": [
+            "46",
+            "48"
+          ],
           "colorName": "blue",
           "colorHex": "#38548A"
         }
@@ -1508,27 +1758,32 @@
       "productName": "Классический комплект со смокингом и желетом",
       "productPrice": "15000",
       "productAbout": "Подчеркнёт линию талии",
-      "category": ["Блузы", "Свадьба и выпускной"],
-      "collection": ["Свадьба и выпускной"],
+      "category": [
+        "Блузы",
+        "Свадьба и выпускной"
+      ],
+      "collection": [
+        "Свадьба и выпускной"
+      ],
       "image": [
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-1.jpg",
+          "imageDesctopMini": "./images/card-15-desktop@2x.jpg ",
+          "imageMobile": "./images/card-15@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-2.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-2.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-1@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-3.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-3.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-2@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-4.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-4.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-3@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         }
       ],
@@ -1571,7 +1826,11 @@
       "productAviable": [
         {
           "colorId": "bl1",
-          "aviableSize": ["42", "44", "50"],
+          "aviableSize": [
+            "42",
+            "44",
+            "50"
+          ],
           "colorName": "black",
           "colorHex": "#000000"
         },
@@ -1583,13 +1842,23 @@
         },
         {
           "colorId": "g1",
-          "aviableSize": ["40", "42", "44", "46", "48", "50"],
+          "aviableSize": [
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50"
+          ],
           "colorName": "white",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
-          "aviableSize": ["46", "48"],
+          "aviableSize": [
+            "46",
+            "48"
+          ],
           "colorName": "blue",
           "colorHex": "#38548A"
         }
@@ -1602,27 +1871,29 @@
       "productName": "Классический комплект со смокингом и желетом",
       "productPrice": "67500",
       "productAbout": "Подчеркнёт линию талии",
-      "category": ["Брюки"],
+      "category": [
+        "Брюки"
+      ],
       "collection": [],
       "image": [
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-1.jpg",
+          "imageDesctopMini": "./images/card-16-desktop@2x.jpg ",
+          "imageMobile": "./images/card-16@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-2.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-2.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-1@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-3.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-3.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-2@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-4.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-4.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-3@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         }
       ],
@@ -1665,7 +1936,11 @@
       "productAviable": [
         {
           "colorId": "bl1",
-          "aviableSize": ["42", "44", "50"],
+          "aviableSize": [
+            "42",
+            "44",
+            "50"
+          ],
           "colorName": "black",
           "colorHex": "#000000"
         },
@@ -1677,13 +1952,23 @@
         },
         {
           "colorId": "g1",
-          "aviableSize": ["40", "42", "44", "46", "48", "50"],
+          "aviableSize": [
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50"
+          ],
           "colorName": "white",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
-          "aviableSize": ["46", "48"],
+          "aviableSize": [
+            "46",
+            "48"
+          ],
           "colorName": "blue",
           "colorHex": "#38548A"
         }
@@ -1696,27 +1981,30 @@
       "productName": "Классический комплект со смокингом и желетом",
       "productPrice": "17700",
       "productAbout": "Подчеркнёт линию талии",
-      "category": ["Брюки", "Новинки"],
+      "category": [
+        "Брюки",
+        "Новинки"
+      ],
       "collection": [],
       "image": [
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-1.jpg",
+          "imageDesctopMini": "./images/card-17-desktop@2x.jpg ",
+          "imageMobile": "./images/card-17@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-2.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-2.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-1@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-3.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-3.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-2@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-4.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-4.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-3@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         }
       ],
@@ -1759,7 +2047,11 @@
       "productAviable": [
         {
           "colorId": "bl1",
-          "aviableSize": ["42", "44", "50"],
+          "aviableSize": [
+            "42",
+            "44",
+            "50"
+          ],
           "colorName": "black",
           "colorHex": "#000000"
         },
@@ -1771,13 +2063,23 @@
         },
         {
           "colorId": "g1",
-          "aviableSize": ["40", "42", "44", "46", "48", "50"],
+          "aviableSize": [
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50"
+          ],
           "colorName": "white",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
-          "aviableSize": ["46", "48"],
+          "aviableSize": [
+            "46",
+            "48"
+          ],
           "colorName": "blue",
           "colorHex": "#38548A"
         }
@@ -1790,27 +2092,30 @@
       "productName": "Классический комплект со смокингом и желетом",
       "productPrice": "18000",
       "productAbout": "Подчеркнёт линию талии",
-      "category": ["Смокинг", "Новинки"],
+      "category": [
+        "Смокинг",
+        "Новинки"
+      ],
       "collection": [],
       "image": [
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-1.jpg",
+          "imageDesctopMini": "./images/card-1-desktop@2x.jpg ",
+          "imageMobile": "./images/card-1@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-2.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-2.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-1@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-3.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-3.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-2@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-4.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-4.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-3@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         }
       ],
@@ -1853,7 +2158,11 @@
       "productAviable": [
         {
           "colorId": "bl1",
-          "aviableSize": ["42", "44", "50"],
+          "aviableSize": [
+            "42",
+            "44",
+            "50"
+          ],
           "colorName": "black",
           "colorHex": "#000000"
         },
@@ -1865,13 +2174,23 @@
         },
         {
           "colorId": "g1",
-          "aviableSize": ["40", "42", "44", "46", "48", "50"],
+          "aviableSize": [
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50"
+          ],
           "colorName": "white",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
-          "aviableSize": ["46", "48"],
+          "aviableSize": [
+            "46",
+            "48"
+          ],
           "colorName": "blue",
           "colorHex": "#38548A"
         }
@@ -1884,27 +2203,31 @@
       "productName": "Классический комплект со смокингом и желетом",
       "productPrice": "141100",
       "productAbout": "Подчеркнёт линию талии",
-      "category": ["Костюмы"],
-      "collection": ["Осень-зима 20-21"],
+      "category": [
+        "Костюмы"
+      ],
+      "collection": [
+        "Осень-зима 20-21"
+      ],
       "image": [
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-1.jpg",
+          "imageDesctopMini": "./images/card-1-desktop@2x.jpg ",
+          "imageMobile": "./images/card-1@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-2.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-2.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-1@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-3.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-3.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-2@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-4.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-4.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-3@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         }
       ],
@@ -1947,7 +2270,11 @@
       "productAviable": [
         {
           "colorId": "bl1",
-          "aviableSize": ["42", "44", "50"],
+          "aviableSize": [
+            "42",
+            "44",
+            "50"
+          ],
           "colorName": "black",
           "colorHex": "#000000"
         },
@@ -1959,13 +2286,23 @@
         },
         {
           "colorId": "g1",
-          "aviableSize": ["40", "42", "44", "46", "48", "50"],
+          "aviableSize": [
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50"
+          ],
           "colorName": "white",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
-          "aviableSize": ["46", "48"],
+          "aviableSize": [
+            "46",
+            "48"
+          ],
           "colorName": "blue",
           "colorHex": "#38548A"
         }
@@ -1978,27 +2315,30 @@
       "productName": "Классический комплект со смокингом и желетом",
       "productPrice": "8000",
       "productAbout": "Подчеркнёт линию талии",
-      "category": ["Смокинги", "Новинки"],
+      "category": [
+        "Смокинги",
+        "Новинки"
+      ],
       "collection": [],
       "image": [
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-1.jpg",
+          "imageDesctopMini": "./images/card-1-desktop@2x.jpg ",
+          "imageMobile": "./images/card-1@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-2.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-2.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-1@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-3.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-3.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-2@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-4.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-4.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-3@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         }
       ],
@@ -2041,7 +2381,11 @@
       "productAviable": [
         {
           "colorId": "bl1",
-          "aviableSize": ["42", "44", "50"],
+          "aviableSize": [
+            "42",
+            "44",
+            "50"
+          ],
           "colorName": "black",
           "colorHex": "#000000"
         },
@@ -2053,13 +2397,23 @@
         },
         {
           "colorId": "g1",
-          "aviableSize": ["40", "42", "44", "46", "48", "50"],
+          "aviableSize": [
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50"
+          ],
           "colorName": "white",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
-          "aviableSize": ["46", "48"],
+          "aviableSize": [
+            "46",
+            "48"
+          ],
           "colorName": "blue",
           "colorHex": "#38548A"
         }
@@ -2072,27 +2426,31 @@
       "productName": "Классический комплект со смокингом и желетом",
       "productPrice": "14100",
       "productAbout": "Подчеркнёт линию талии",
-      "category": ["Смокинги"],
-      "collection": ["Осень-зима 20-21"],
+      "category": [
+        "Смокинги"
+      ],
+      "collection": [
+        "Осень-зима 20-21"
+      ],
       "image": [
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-1.jpg",
+          "imageDesctopMini": "./images/card-1-desktop@2x.jpg ",
+          "imageMobile": "./images/card-1@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-2.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-2.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-1@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-3.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-3.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-2@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-4.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-4.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-3@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         }
       ],
@@ -2135,7 +2493,11 @@
       "productAviable": [
         {
           "colorId": "bl1",
-          "aviableSize": ["42", "44", "50"],
+          "aviableSize": [
+            "42",
+            "44",
+            "50"
+          ],
           "colorName": "black",
           "colorHex": "#000000"
         },
@@ -2147,13 +2509,23 @@
         },
         {
           "colorId": "g1",
-          "aviableSize": ["40", "42", "44", "46", "48", "50"],
+          "aviableSize": [
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50"
+          ],
           "colorName": "white",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
-          "aviableSize": ["46", "48"],
+          "aviableSize": [
+            "46",
+            "48"
+          ],
           "colorName": "blue",
           "colorHex": "#38548A"
         }
@@ -2166,27 +2538,30 @@
       "productName": "Классический комплект со смокингом и желетом",
       "productPrice": "22200",
       "productAbout": "Подчеркнёт линию талии",
-      "category": ["Смокинги", "Новинки"],
+      "category": [
+        "Смокинги",
+        "Новинки"
+      ],
       "collection": [],
       "image": [
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-1.jpg",
+          "imageDesctopMini": "./images/card-1-desktop@2x.jpg ",
+          "imageMobile": "./images/card-1@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-2.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-2.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-1@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-3.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-3.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-2@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-4.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-4.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-3@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         }
       ],
@@ -2229,7 +2604,11 @@
       "productAviable": [
         {
           "colorId": "bl1",
-          "aviableSize": ["42", "44", "50"],
+          "aviableSize": [
+            "42",
+            "44",
+            "50"
+          ],
           "colorName": "black",
           "colorHex": "#000000"
         },
@@ -2241,13 +2620,23 @@
         },
         {
           "colorId": "g1",
-          "aviableSize": ["40", "42", "44", "46", "48", "50"],
+          "aviableSize": [
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50"
+          ],
           "colorName": "white",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
-          "aviableSize": ["46", "48"],
+          "aviableSize": [
+            "46",
+            "48"
+          ],
           "colorName": "blue",
           "colorHex": "#38548A"
         }
@@ -2260,27 +2649,31 @@
       "productName": "Классический комплект со смокингом и желетом",
       "productPrice": "47200",
       "productAbout": "Подчеркнёт линию талии",
-      "category": ["Смокинги"],
-      "collection": ["Осень-зима 20-21"],
+      "category": [
+        "Смокинги"
+      ],
+      "collection": [
+        "Осень-зима 20-21"
+      ],
       "image": [
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-1.jpg",
+          "imageDesctopMini": "./images/card-1-desktop@2x.jpg ",
+          "imageMobile": "./images/card-1@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-2.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-2.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-1@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-3.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-3.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-2@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-4.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-4.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-3@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         }
       ],
@@ -2323,7 +2716,11 @@
       "productAviable": [
         {
           "colorId": "bl1",
-          "aviableSize": ["42", "44", "50"],
+          "aviableSize": [
+            "42",
+            "44",
+            "50"
+          ],
           "colorName": "black",
           "colorHex": "#000000"
         },
@@ -2335,13 +2732,23 @@
         },
         {
           "colorId": "g1",
-          "aviableSize": ["40", "42", "44", "46", "48", "50"],
+          "aviableSize": [
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50"
+          ],
           "colorName": "white",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
-          "aviableSize": ["46", "48"],
+          "aviableSize": [
+            "46",
+            "48"
+          ],
           "colorName": "blue",
           "colorHex": "#38548A"
         }
@@ -2354,27 +2761,29 @@
       "productName": "Классический комплект со смокингом и желетом",
       "productPrice": "74400",
       "productAbout": "Подчеркнёт линию талии",
-      "category": ["Смокинги"],
+      "category": [
+        "Смокинги"
+      ],
       "collection": [],
       "image": [
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-1.jpg",
+          "imageDesctopMini": "./images/card-1-desktop@2x.jpg ",
+          "imageMobile": "./images/card-1@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-2.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-2.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-1@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-3.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-3.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-2@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-4.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-4.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-3@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         }
       ],
@@ -2417,7 +2826,11 @@
       "productAviable": [
         {
           "colorId": "bl1",
-          "aviableSize": ["42", "44", "50"],
+          "aviableSize": [
+            "42",
+            "44",
+            "50"
+          ],
           "colorName": "black",
           "colorHex": "#000000"
         },
@@ -2429,13 +2842,23 @@
         },
         {
           "colorId": "g1",
-          "aviableSize": ["40", "42", "44", "46", "48", "50"],
+          "aviableSize": [
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50"
+          ],
           "colorName": "white",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
-          "aviableSize": ["46", "48"],
+          "aviableSize": [
+            "46",
+            "48"
+          ],
           "colorName": "blue",
           "colorHex": "#38548A"
         }
@@ -2448,27 +2871,32 @@
       "productName": "Классический комплект со смокингом и желетом",
       "productPrice": "62555",
       "productAbout": "Подчеркнёт линию талии",
-      "category": ["Смокинги", "Новинки"],
-      "collection": ["Осень-зима 20-21"],
+      "category": [
+        "Смокинги",
+        "Новинки"
+      ],
+      "collection": [
+        "Осень-зима 20-21"
+      ],
       "image": [
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-1.jpg",
+          "imageDesctopMini": "./images/card-1-desktop@2x.jpg ",
+          "imageMobile": "./images/card-1@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-2.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-2.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-1@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-3.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-3.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-2@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-4.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-4.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-3@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         }
       ],
@@ -2511,7 +2939,11 @@
       "productAviable": [
         {
           "colorId": "bl1",
-          "aviableSize": ["42", "44", "50"],
+          "aviableSize": [
+            "42",
+            "44",
+            "50"
+          ],
           "colorName": "black",
           "colorHex": "#000000"
         },
@@ -2523,13 +2955,23 @@
         },
         {
           "colorId": "g1",
-          "aviableSize": ["40", "42", "44", "46", "48", "50"],
+          "aviableSize": [
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50"
+          ],
           "colorName": "white",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
-          "aviableSize": ["46", "48"],
+          "aviableSize": [
+            "46",
+            "48"
+          ],
           "colorName": "blue",
           "colorHex": "#38548A"
         }
@@ -2542,27 +2984,30 @@
       "productName": "Классический комплект со смокингом и желетом",
       "productPrice": "69990",
       "productAbout": "Подчеркнёт линию талии",
-      "category": ["Смокинги", "Новинки"],
+      "category": [
+        "Смокинги",
+        "Новинки"
+      ],
       "collection": [],
       "image": [
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-1.jpg",
+          "imageDesctopMini": "./images/card-1-desktop@2x.jpg ",
+          "imageMobile": "./images/card-1@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-2.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-2.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-1@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-3.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-3.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-2@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-4.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-4.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-3@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         }
       ],
@@ -2605,7 +3050,11 @@
       "productAviable": [
         {
           "colorId": "bl1",
-          "aviableSize": ["42", "44", "50"],
+          "aviableSize": [
+            "42",
+            "44",
+            "50"
+          ],
           "colorName": "black",
           "colorHex": "#000000"
         },
@@ -2617,13 +3066,23 @@
         },
         {
           "colorId": "g1",
-          "aviableSize": ["40", "42", "44", "46", "48", "50"],
+          "aviableSize": [
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50"
+          ],
           "colorName": "white",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
-          "aviableSize": ["46", "48"],
+          "aviableSize": [
+            "46",
+            "48"
+          ],
           "colorName": "blue",
           "colorHex": "#38548A"
         }
@@ -2636,27 +3095,32 @@
       "productName": "Классический комплект со смокингом и желетом",
       "productPrice": "65400",
       "productAbout": "Подчеркнёт линию талии",
-      "category": ["Смокинги", "Новинки"],
-      "collection": ["Свадьба и выпускной"],
+      "category": [
+        "Смокинги",
+        "Новинки"
+      ],
+      "collection": [
+        "Свадьба и выпускной"
+      ],
       "image": [
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-1.jpg",
+          "imageDesctopMini": "./images/card-1-desktop@2x.jpg ",
+          "imageMobile": "./images/card-1@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-2.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-2.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-1@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-3.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-3.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-2@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-4.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-4.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-3@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         }
       ],
@@ -2699,7 +3163,11 @@
       "productAviable": [
         {
           "colorId": "bl1",
-          "aviableSize": ["42", "44", "50"],
+          "aviableSize": [
+            "42",
+            "44",
+            "50"
+          ],
           "colorName": "black",
           "colorHex": "#000000"
         },
@@ -2711,13 +3179,23 @@
         },
         {
           "colorId": "g1",
-          "aviableSize": ["40", "42", "44", "46", "48", "50"],
+          "aviableSize": [
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50"
+          ],
           "colorName": "white",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
-          "aviableSize": ["46", "48"],
+          "aviableSize": [
+            "46",
+            "48"
+          ],
           "colorName": "blue",
           "colorHex": "#38548A"
         }
@@ -2730,27 +3208,29 @@
       "productName": "Классический комплект со смокингом и желетом",
       "productPrice": "77770",
       "productAbout": "Подчеркнёт линию талии",
-      "category": ["Смокинги"],
+      "category": [
+        "Смокинги"
+      ],
       "collection": [],
       "image": [
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-1.jpg",
+          "imageDesctopMini": "./images/card-1-desktop@2x.jpg ",
+          "imageMobile": "./images/card-1@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-2.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-2.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-1@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-3.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-3.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-2@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-4.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-4.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-3@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         }
       ],
@@ -2793,7 +3273,11 @@
       "productAviable": [
         {
           "colorId": "bl1",
-          "aviableSize": ["42", "44", "50"],
+          "aviableSize": [
+            "42",
+            "44",
+            "50"
+          ],
           "colorName": "black",
           "colorHex": "#000000"
         },
@@ -2805,13 +3289,23 @@
         },
         {
           "colorId": "g1",
-          "aviableSize": ["40", "42", "44", "46", "48", "50"],
+          "aviableSize": [
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50"
+          ],
           "colorName": "white",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
-          "aviableSize": ["46", "48"],
+          "aviableSize": [
+            "46",
+            "48"
+          ],
           "colorName": "blue",
           "colorHex": "#38548A"
         }
@@ -2824,27 +3318,32 @@
       "productName": "Классический комплект со смокингом и желетом",
       "productPrice": "29500",
       "productAbout": "Подчеркнёт линию талии",
-      "category": ["Смокинги", "Новинки"],
-      "collection": ["Осень-зима 20-21"],
+      "category": [
+        "Смокинги",
+        "Новинки"
+      ],
+      "collection": [
+        "Осень-зима 20-21"
+      ],
       "image": [
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-1.jpg",
+          "imageDesctopMini": "./images/card-1-desktop@2x.jpg ",
+          "imageMobile": "./images/card-1@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-2.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-2.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-1@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-3.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-3.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-2@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-4.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-4.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-3@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         }
       ],
@@ -2887,7 +3386,11 @@
       "productAviable": [
         {
           "colorId": "bl1",
-          "aviableSize": ["42", "44", "50"],
+          "aviableSize": [
+            "42",
+            "44",
+            "50"
+          ],
           "colorName": "black",
           "colorHex": "#000000"
         },
@@ -2899,13 +3402,23 @@
         },
         {
           "colorId": "g1",
-          "aviableSize": ["40", "42", "44", "46", "48", "50"],
+          "aviableSize": [
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50"
+          ],
           "colorName": "white",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
-          "aviableSize": ["46", "48"],
+          "aviableSize": [
+            "46",
+            "48"
+          ],
           "colorName": "blue",
           "colorHex": "#38548A"
         }
@@ -2918,27 +3431,29 @@
       "productName": "Классический комплект со смокингом и желетом",
       "productPrice": "12400",
       "productAbout": "Подчеркнёт линию талии",
-      "category": ["Смокинги"],
+      "category": [
+        "Смокинги"
+      ],
       "collection": [],
       "image": [
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-1.jpg",
+          "imageDesctopMini": "./images/card-1-desktop@2x.jpg ",
+          "imageMobile": "./images/card-1@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-2.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-2.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-1@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-3.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-3.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-2@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-4.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-4.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-3@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         }
       ],
@@ -2981,7 +3496,11 @@
       "productAviable": [
         {
           "colorId": "bl1",
-          "aviableSize": ["42", "44", "50"],
+          "aviableSize": [
+            "42",
+            "44",
+            "50"
+          ],
           "colorName": "black",
           "colorHex": "#000000"
         },
@@ -2993,13 +3512,23 @@
         },
         {
           "colorId": "g1",
-          "aviableSize": ["40", "42", "44", "46", "48", "50"],
+          "aviableSize": [
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50"
+          ],
           "colorName": "white",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
-          "aviableSize": ["46", "48"],
+          "aviableSize": [
+            "46",
+            "48"
+          ],
           "colorName": "blue",
           "colorHex": "#38548A"
         }
@@ -3012,27 +3541,34 @@
       "productName": "Классический комплект со смокингом и желетом",
       "productPrice": "64470",
       "productAbout": "Подчеркнёт линию талии",
-      "category": ["Смокинги", "Новинки", "Платья"],
-      "collection": ["Свадьба и выпускной", "Вечерние комплекты"],
+      "category": [
+        "Смокинги",
+        "Новинки",
+        "Платья"
+      ],
+      "collection": [
+        "Свадьба и выпускной",
+        "Вечерние комплекты"
+      ],
       "image": [
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-1.jpg",
+          "imageDesctopMini": "./images/card-1-desktop@2x.jpg ",
+          "imageMobile": "./images/card-1@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-2.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-2.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-1@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-3.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-3.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-2@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-4.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-4.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-3@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         }
       ],
@@ -3075,7 +3611,11 @@
       "productAviable": [
         {
           "colorId": "bl1",
-          "aviableSize": ["42", "44", "50"],
+          "aviableSize": [
+            "42",
+            "44",
+            "50"
+          ],
           "colorName": "black",
           "colorHex": "#000000"
         },
@@ -3087,13 +3627,23 @@
         },
         {
           "colorId": "g1",
-          "aviableSize": ["40", "42", "44", "46", "48", "50"],
+          "aviableSize": [
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50"
+          ],
           "colorName": "white",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
-          "aviableSize": ["46", "48"],
+          "aviableSize": [
+            "46",
+            "48"
+          ],
           "colorName": "blue",
           "colorHex": "#38548A"
         }
@@ -3106,27 +3656,30 @@
       "productName": "Классический комплект со смокингом и желетом",
       "productPrice": "64540",
       "productAbout": "Подчеркнёт линию талии",
-      "category": ["Новинки", "Топы и жилеты"],
+      "category": [
+        "Новинки",
+        "Топы и жилеты"
+      ],
       "collection": [],
       "image": [
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-1.jpg",
+          "imageDesctopMini": "./images/card-1-desktop@2x.jpg ",
+          "imageMobile": "./images/card-1@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-2.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-2.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-1@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-3.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-3.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-2@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-4.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-4.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-3@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         }
       ],
@@ -3169,7 +3722,11 @@
       "productAviable": [
         {
           "colorId": "bl1",
-          "aviableSize": ["42", "44", "50"],
+          "aviableSize": [
+            "42",
+            "44",
+            "50"
+          ],
           "colorName": "black",
           "colorHex": "#000000"
         },
@@ -3181,13 +3738,23 @@
         },
         {
           "colorId": "g1",
-          "aviableSize": ["40", "42", "44", "46", "48", "50"],
+          "aviableSize": [
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50"
+          ],
           "colorName": "white",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
-          "aviableSize": ["46", "48"],
+          "aviableSize": [
+            "46",
+            "48"
+          ],
           "colorName": "blue",
           "colorHex": "#38548A"
         }
@@ -3200,27 +3767,32 @@
       "productName": "Классический комплект со смокингом и желетом",
       "productPrice": "68200",
       "productAbout": "Подчеркнёт линию талии",
-      "category": ["Новинки", "Юбки"],
-      "collection": ["Вечерние комплекты"],
+      "category": [
+        "Новинки",
+        "Юбки"
+      ],
+      "collection": [
+        "Вечерние комплекты"
+      ],
       "image": [
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-1.jpg",
+          "imageDesctopMini": "./images/card-1-desktop@2x.jpg ",
+          "imageMobile": "./images/card-1@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-2.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-2.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-1@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-3.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-3.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-2@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-4.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-4.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-3@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         }
       ],
@@ -3263,7 +3835,11 @@
       "productAviable": [
         {
           "colorId": "bl1",
-          "aviableSize": ["42", "44", "50"],
+          "aviableSize": [
+            "42",
+            "44",
+            "50"
+          ],
           "colorName": "black",
           "colorHex": "#000000"
         },
@@ -3275,13 +3851,23 @@
         },
         {
           "colorId": "g1",
-          "aviableSize": ["40", "42", "44", "46", "48", "50"],
+          "aviableSize": [
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50"
+          ],
           "colorName": "white",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
-          "aviableSize": ["46", "48"],
+          "aviableSize": [
+            "46",
+            "48"
+          ],
           "colorName": "blue",
           "colorHex": "#38548A"
         }
@@ -3294,27 +3880,32 @@
       "productName": "Классический комплект со смокингом и желетом",
       "productPrice": "24540",
       "productAbout": "Подчеркнёт линию талии",
-      "category": ["Блузы", "Свадьба и выпускной"],
-      "collection": ["Свадьба и выпускной"],
+      "category": [
+        "Блузы",
+        "Свадьба и выпускной"
+      ],
+      "collection": [
+        "Свадьба и выпускной"
+      ],
       "image": [
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-1.jpg",
+          "imageDesctopMini": "./images/card-1-desktop@2x.jpg ",
+          "imageMobile": "./images/card-1@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-2.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-2.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-1@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-3.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-3.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-2@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-4.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-4.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-3@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         }
       ],
@@ -3357,7 +3948,11 @@
       "productAviable": [
         {
           "colorId": "bl1",
-          "aviableSize": ["42", "44", "50"],
+          "aviableSize": [
+            "42",
+            "44",
+            "50"
+          ],
           "colorName": "black",
           "colorHex": "#000000"
         },
@@ -3369,13 +3964,23 @@
         },
         {
           "colorId": "g1",
-          "aviableSize": ["40", "42", "44", "46", "48", "50"],
+          "aviableSize": [
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50"
+          ],
           "colorName": "white",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
-          "aviableSize": ["46", "48"],
+          "aviableSize": [
+            "46",
+            "48"
+          ],
           "colorName": "blue",
           "colorHex": "#38548A"
         }
@@ -3388,27 +3993,29 @@
       "productName": "Классический комплект со смокингом и желетом",
       "productPrice": "42444",
       "productAbout": "Подчеркнёт линию талии",
-      "category": ["Брюки"],
+      "category": [
+        "Брюки"
+      ],
       "collection": [],
       "image": [
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-1.jpg",
+          "imageDesctopMini": "./images/card-1-desktop@2x.jpg ",
+          "imageMobile": "./images/card-1@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-2.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-2.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-1@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-3.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-3.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-2@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-4.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-4.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-3@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         }
       ],
@@ -3451,7 +4058,11 @@
       "productAviable": [
         {
           "colorId": "bl1",
-          "aviableSize": ["42", "44", "50"],
+          "aviableSize": [
+            "42",
+            "44",
+            "50"
+          ],
           "colorName": "black",
           "colorHex": "#000000"
         },
@@ -3463,13 +4074,23 @@
         },
         {
           "colorId": "g1",
-          "aviableSize": ["40", "42", "44", "46", "48", "50"],
+          "aviableSize": [
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50"
+          ],
           "colorName": "white",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
-          "aviableSize": ["46", "48"],
+          "aviableSize": [
+            "46",
+            "48"
+          ],
           "colorName": "blue",
           "colorHex": "#38548A"
         }
@@ -3482,27 +4103,30 @@
       "productName": "Классический комплект со смокингом и желетом",
       "productPrice": "63700",
       "productAbout": "Подчеркнёт линию талии",
-      "category": ["Брюки", "Новинки"],
+      "category": [
+        "Брюки",
+        "Новинки"
+      ],
       "collection": [],
       "image": [
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-1.jpg",
+          "imageDesctopMini": "./images/card-1-desktop@2x.jpg ",
+          "imageMobile": "./images/card-1@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-2.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-2.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-1@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-3.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-3.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-2@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-4.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-4.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-3@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         }
       ],
@@ -3545,7 +4169,11 @@
       "productAviable": [
         {
           "colorId": "bl1",
-          "aviableSize": ["42", "44", "50"],
+          "aviableSize": [
+            "42",
+            "44",
+            "50"
+          ],
           "colorName": "black",
           "colorHex": "#000000"
         },
@@ -3557,13 +4185,23 @@
         },
         {
           "colorId": "g1",
-          "aviableSize": ["40", "42", "44", "46", "48", "50"],
+          "aviableSize": [
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50"
+          ],
           "colorName": "white",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
-          "aviableSize": ["46", "48"],
+          "aviableSize": [
+            "46",
+            "48"
+          ],
           "colorName": "blue",
           "colorHex": "#38548A"
         }
@@ -3576,27 +4214,30 @@
       "productName": "Классический комплект со смокингом и желетом",
       "productPrice": "44700",
       "productAbout": "Подчеркнёт линию талии",
-      "category": ["Смокинг", "Новинки"],
+      "category": [
+        "Смокинг",
+        "Новинки"
+      ],
       "collection": [],
       "image": [
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-1.jpg",
+          "imageDesctopMini": "./images/card-1-desktop@2x.jpg ",
+          "imageMobile": "./images/card-1@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-2.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-2.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-1@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-3.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-3.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-2@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-4.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-4.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-3@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         }
       ],
@@ -3639,7 +4280,11 @@
       "productAviable": [
         {
           "colorId": "bl1",
-          "aviableSize": ["42", "44", "50"],
+          "aviableSize": [
+            "42",
+            "44",
+            "50"
+          ],
           "colorName": "black",
           "colorHex": "#000000"
         },
@@ -3651,13 +4296,23 @@
         },
         {
           "colorId": "g1",
-          "aviableSize": ["40", "42", "44", "46", "48", "50"],
+          "aviableSize": [
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50"
+          ],
           "colorName": "white",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
-          "aviableSize": ["46", "48"],
+          "aviableSize": [
+            "46",
+            "48"
+          ],
           "colorName": "blue",
           "colorHex": "#38548A"
         }
@@ -3670,27 +4325,31 @@
       "productName": "Классический комплект со смокингом и желетом",
       "productPrice": "13900",
       "productAbout": "Подчеркнёт линию талии",
-      "category": ["Костюмы"],
-      "collection": ["Осень-зима 20-21"],
+      "category": [
+        "Костюмы"
+      ],
+      "collection": [
+        "Осень-зима 20-21"
+      ],
       "image": [
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-1.jpg",
+          "imageDesctopMini": "./images/card-1-desktop@2x.jpg ",
+          "imageMobile": "./images/card-1@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-2.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-2.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-1@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-3.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-3.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-2@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-4.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-4.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-3@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         }
       ],
@@ -3733,7 +4392,11 @@
       "productAviable": [
         {
           "colorId": "bl1",
-          "aviableSize": ["42", "44", "50"],
+          "aviableSize": [
+            "42",
+            "44",
+            "50"
+          ],
           "colorName": "black",
           "colorHex": "#000000"
         },
@@ -3745,13 +4408,23 @@
         },
         {
           "colorId": "g1",
-          "aviableSize": ["40", "42", "44", "46", "48", "50"],
+          "aviableSize": [
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50"
+          ],
           "colorName": "white",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
-          "aviableSize": ["46", "48"],
+          "aviableSize": [
+            "46",
+            "48"
+          ],
           "colorName": "blue",
           "colorHex": "#38548A"
         }
@@ -3764,27 +4437,31 @@
       "productName": "Классический комплект со смокингом и желетом",
       "productPrice": "40000",
       "productAbout": "Подчеркнёт линию талии",
-      "category": ["Костюмы"],
-      "collection": ["Предзаказ"],
+      "category": [
+        "Костюмы"
+      ],
+      "collection": [
+        "Предзаказ"
+      ],
       "image": [
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-1.jpg",
+          "imageDesctopMini": "./images/card-1-desktop@2x.jpg ",
+          "imageMobile": "./images/card-1@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-2.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-2.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-1@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-3.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-3.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-2@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-4.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-4.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-3@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         }
       ],
@@ -3827,7 +4504,11 @@
       "productAviable": [
         {
           "colorId": "bl1",
-          "aviableSize": ["42", "44", "50"],
+          "aviableSize": [
+            "42",
+            "44",
+            "50"
+          ],
           "colorName": "black",
           "colorHex": "#000000"
         },
@@ -3839,13 +4520,23 @@
         },
         {
           "colorId": "g1",
-          "aviableSize": ["40", "42", "44", "46", "48", "50"],
+          "aviableSize": [
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50"
+          ],
           "colorName": "white",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
-          "aviableSize": ["46", "48"],
+          "aviableSize": [
+            "46",
+            "48"
+          ],
           "colorName": "blue",
           "colorHex": "#38548A"
         }
@@ -3858,27 +4549,32 @@
       "productName": "Классический комплект со смокингом и желетом",
       "productPrice": "41100",
       "productAbout": "Подчеркнёт линию талии",
-      "category": ["Смокинги", "Новинки"],
-      "collection": ["Свадьба и выпускной"],
+      "category": [
+        "Смокинги",
+        "Новинки"
+      ],
+      "collection": [
+        "Свадьба и выпускной"
+      ],
       "image": [
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-1.jpg",
+          "imageDesctopMini": "./images/card-1-desktop@2x.jpg ",
+          "imageMobile": "./images/card-1@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-2.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-2.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-1@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-3.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-3.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-2@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         },
         {
-          "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-4.jpg ",
-          "imageMobile": "./images/tuxedo-and-vest-mobile-4.jpg",
+          "imageDesctopMini": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
+          "imageMobile": "./images/tuxedo-and-vest-mini-desktop-3@2x.jpg",
           "imageDescriprion": "девушка в белом смокинге с желеткой"
         }
       ],
@@ -3921,7 +4617,11 @@
       "productAviable": [
         {
           "colorId": "bl1",
-          "aviableSize": ["42", "44", "50"],
+          "aviableSize": [
+            "42",
+            "44",
+            "50"
+          ],
           "colorName": "black",
           "colorHex": "#000000"
         },
@@ -3933,13 +4633,23 @@
         },
         {
           "colorId": "g1",
-          "aviableSize": ["40", "42", "44", "46", "48", "50"],
+          "aviableSize": [
+            "40",
+            "42",
+            "44",
+            "46",
+            "48",
+            "50"
+          ],
           "colorName": "white",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
-          "aviableSize": ["46", "48"],
+          "aviableSize": [
+            "46",
+            "48"
+          ],
           "colorName": "blue",
           "colorHex": "#38548A"
         }

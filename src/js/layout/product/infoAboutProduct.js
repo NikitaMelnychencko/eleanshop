@@ -1,4 +1,3 @@
-import productTEST from '../../../js/json/product/productTEST.json';
 import productTemplate from '../../../views/partials/product/infoAboutProduct.hbs';
 
 import sizeChose from '../../components/sizeChose';
@@ -13,8 +12,8 @@ export function createFullMarkup() {
 
   const btn = createBtn();
 
-  //* ЗДЕСЬ ВМЕСТО productTEST нужно заливать правильный JSON***********
-  return productTemplate({ productTEST, btn });
+  // * ЗДЕСЬ ВМЕСТО productTEST нужно заливать правильный JSON***********
+  return productTemplate({ productInfoData, btn });
 }
 
 //! ---------------------------------------------------Add to favorites
@@ -121,7 +120,7 @@ function onColorListClick(event) {
 
   const inputColor = event.target.previousElementSibling.value;
 
-  productTEST.productAviable.find(size => {
+  productInfoData.productAviable.find(size => {
     if (size.colorId === inputColor) {
       availableSizes.push(size.aviableSize);
     }
@@ -182,14 +181,14 @@ function setProductDataToOrdering() {
     let orderingDataobj = { label: {} };
     orderingDataobj.label.id = productInfoData.id;
     orderingDataobj.label.name = productInfoData.productName;
-
-    orderingDataobj.label.img = productInfoData.img.src;
+    orderingDataobj.label.img = productInfoData.image[0].imageMobile;
     orderingDataobj.label.price = productInfoData.productPrice;
     orderingDataobj.label.sizeSelected = localStorage.getItem('productSize');
     orderingDataobj.label.colorSelected = localStorage.getItem('productColor');
     orderingDataobj.label.circleSelected = '';
     orderingDataobj.label.description = '';
     orderingDataobj.label.count = 1;
+    orderingDataobj.label.productAviable = productInfoData.productAviable;
     orderingDataParsed.push(orderingDataobj);
     localStorage.setItem('orderingData', JSON.stringify(orderingDataParsed));
   }

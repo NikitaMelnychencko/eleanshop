@@ -1,17 +1,17 @@
 <section class="product">
   <div class="container product__container">
 
-    {{#with productTEST.image}}
+    {{#with productInfoData.image}}
     {{> ./productSlider}}
     {{/with}}
 
       <article class="product__content">
         <div class="product__main-info">
           <div class="product__name-wrapper">
-            <h2 class="product__name">{{productTEST.productName}}</h2>
+            <h2 class="product__name">{{productInfoData.productName}}</h2>
             {{> ../../components/buttonAddLike}}
           </div>
-            <p class="product__price">{{productTEST.productPrice}} <span class="product__currency">&#8372;</span></p>
+            <p class="product__price">{{productInfoData.productPrice}} <span class="product__currency">&#8372;</span></p>
         </div>    
 
         <form class="product__form">
@@ -48,7 +48,7 @@
           <div class="product__color">
             <h3 class="colorpicker__title">цвет</h3>
             <ul class="colorpicker__list">
-              {{#each productTEST.productAviable}}
+              {{#each productInfoData.productAviable}}
                 <input class="colorpicker__input" type="radio" id="{{this.colorId}}" name="colorChoice" value={{this.colorId}} required>
                 <label class="colorpicker__label colorpicker__label--{{this.colorName}}" for="{{this.colorId}}"></label>
               {{/each}}
@@ -66,8 +66,8 @@
         </form>
 
         <div class="product__info">
-          <p class="product__description">{{productTEST.productDescription}}</p>
-          <p class="product__composition"><span class="product__composition--bold">Состав:</span> {{productTEST.productComposition}}
+          <p class="product__description">{{productInfoData.productDescription}}</p>
+          <p class="product__composition"><span class="product__composition--bold">Состав:</span> {{productInfoData.productComposition}}
           </p>
         </div>
 
@@ -77,7 +77,7 @@
               <p class="product__characteristics-name">параметры</p>
               <button class="button__plus button__plus--params" type="button"></button>
               <ul class="params__grid" data-params-menu>
-                {{#each productTEST.productParams}}
+                {{#each productInfoData.productParams}}
                   <li class="params__item">{{this.params}}</li>
                   <li class="params__item">{{this.value}}</li>
                 {{/each}}
@@ -90,7 +90,7 @@
               <p class="product__characteristics-name">дополнительно</p>
               <button class="button__plus button__plus--aditional" type="button"></button>
               <p class="aditional__grid" data-aditional-menu>
-                {{productTEST.productAdditional}}
+                {{productInfoData.productAdditional}}
               </p>
             </li>
           </ul>
