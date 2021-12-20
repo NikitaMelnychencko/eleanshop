@@ -8,7 +8,6 @@ export default function renderModal(component, callback) {
   const modalContainer = document.querySelector('.modal__container');
   modalContainer.innerHTML = component;
   const newBackdrop = new Backdrop();
-  console.log(modalContainer);
   bodyFixPosition();
   callback();
 }
