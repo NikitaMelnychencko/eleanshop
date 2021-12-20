@@ -5,7 +5,10 @@ import { bodyFixPosition } from '../../components/scroll/scroll';
 import renderModal from '../../components/modal/modal';
 import { preorderMark, setEventPreorder } from '../../layout/product/preorderModal';
 import tryOnModelsModal from '../../../views/components/tryOnModelsModal.hbs';
-
+import sizeChose from '../../components/sizeChose';
+const { createBtn, onSizeElClick } = sizeChose;
+import sizeChos from '../../../views/components/sizeTable.hbs';
+import { onBtnClick } from '../../components/sizeTable';
 import refs from '../../refs/refs.js';
 // const newProductTemplate = productTemplate();
 window.jQuery = window.$ = require('jquery');
@@ -212,7 +215,9 @@ function onDetermineSizeButtonElClick() {
   bodyFixPosition();
 }
 //!----------------------------------------------------Is size in a stock?
-function onIsSizeInStockButtonElClick() {}
+function onIsSizeInStockButtonElClick() {
+  renderModal(sizeChos(), '');
+}
 //!----------------------------------------------------Fitting
 function onFittingButtonElClick() {
   // const tryOnBackdropEl = document.querySelector('.try-on__backdrop');
@@ -237,17 +242,19 @@ function createAllListeners(buy) {
   const purchaseBuyButtonEl = document.querySelector('.button__purchase--buy');
   const addToFavoritesButtonEl = document.querySelector('.product__name-wrapper .button-add-likes');
   const determineSizeButtonEl = document.querySelector('.button__size-option--available-size');
-  // const isSizeInStockButtonEl = document.querySelector('.button__size-option--find-size');
+  const isSizeInStockButtonEl = document.querySelector('.button__size-option--find-size');
   const fittingButtonEl = document.querySelector('.button__purchase--fit');
 
   determineSizeButtonEl.addEventListener('click', onDetermineSizeButtonElClick);
-  // isSizeInStockButtonEl.addEventListener('click', onIsSizeInStockButtonElClick);
+  isSizeInStockButtonEl.addEventListener('click', onIsSizeInStockButtonElClick);
   addToFavoritesButtonEl.addEventListener('click', onAddToFavoritesClick);
   fittingButtonEl.addEventListener('click', onFittingButtonElClick);
   colorpickerListEl.addEventListener('click', onColorpickerListClick);
   characteristicListEl.addEventListener('click', onCharacteristicsListClick);
-  purchaseBuyButtonEl.addEventListener('click', () => {
+  purchaseBuyButtonEl.addEventListener('click', e => {
+    e.preventDefault();
     buy(parsedProductInfoData.productName);
+    console.log('object');
     setProductDataToOrdering();
   });
 }

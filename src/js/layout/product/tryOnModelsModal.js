@@ -85,6 +85,7 @@ function onButtonSubmitClick(event) {
     const btnCloseRef = document.querySelector('.form__button-сlose');
     btnCloseRef.style.display = 'block';
     btnCloseRef.style.right = `${right}px`;
+    
     const backdrop = new Backdrop();
   }
 }

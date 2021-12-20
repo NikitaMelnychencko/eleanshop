@@ -247,7 +247,7 @@ export function productRender() {
   setProductSlider();
   callProductPageFunctional(objProductModalAddToCart.show);
   // document.querySelector('.form__button-сlose').style.display = 'none';
-  document.querySelector('.ordering__form').style.display = 'none';
+  // document.querySelector('.ordering__form').style.display = 'none';
   objRecomendationsCategory.setSlider();
   objRecomendationsCategory.setEvent();
   objHandSewn.setEvent();

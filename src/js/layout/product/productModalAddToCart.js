@@ -91,7 +91,7 @@ export default class ProductModalAddToCart {
     if (!this.self) {
       this.self = document.querySelector('.product-modal-add-cart');
     }
-    document.querySelector('.js-productName').textContent = name;
+    // document.querySelector('.js-productName').textContent = name;
     this.self.classList.remove('hidden');
     if (this.objectClose) {
       this.objectClose.forEach(el => {

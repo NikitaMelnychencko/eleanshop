@@ -1,3 +1,5 @@
+import { bodyUnfixPosition } from './scroll/scroll';
+
 class Backdrop {
   constructor() {
     this.backdropRef = document.querySelector('[data-modal]');
@@ -22,6 +24,7 @@ class Backdrop {
 
   onClickButton() {
     this.closeModalForm();
+    bodyUnfixPosition();
   }
 
   onClickBackdrop(event) {
