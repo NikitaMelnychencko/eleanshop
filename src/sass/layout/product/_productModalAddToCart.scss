@@ -80,20 +80,20 @@
 
 .modal__box {
   display: none; 
-    @media screen and (min-width: $desktop-up) {
-      display: block;
+  @media screen and (min-width: $desktop-up) {
+    display: block;
+  }
+
+  & .recomendation-category__list {
+    padding: 0;
+    display: flex;
+  }
+  & .recomendation-category__item {
+    width: 200px;
+
+    &:not(:last-child) {
+      margin-right: 15px;
     }
-
- & > ul {
-   display: flex;
- }   
-
- & .recomendation-category__item {
-   width: 200px;
-
-   &:not(:last-child) {
-    margin-right: 15px;
-   }
-   
- }
+    
+  }
 }

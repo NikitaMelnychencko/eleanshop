@@ -81,14 +81,7 @@ export default class RecomendationsCategory {
   };
 
   setSlider = () => {
-    // console.dir(window)
-    // const mediaQuery = window.matchMedia('(max-width: 1377px)')
-    // if (mediaQuery.matches) {
       this._addSlider();
-    // }
-    // if (window.innerWidth <= 1377) {
-    // }
-
   };
 
   _addSlider = () => {
