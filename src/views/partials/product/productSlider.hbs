@@ -18,9 +18,9 @@
     {{#each image}}
     <li class="product-slider__item">
       <picture>
-        <source srcset="
-                  {{imageMobile}} 1x,
-                  {{imageMobileHigherResolution}} 2x," media="">
+        <source srcset="{{imageMobile}} 1x, {{imageMobileHigherResolution}} 2x," media="(min-width: 1378px)" width="700" height="1221">
+        <source srcset="{{imageMobile}} 1x, {{imageMobileHigherResolution}} 2x," media="(min-width: 721px)" width="500" height="872">
+        <source srcset="{{imageMobile}} 1x, {{imageMobileHigherResolution}} 2x," media="(min-width: 320px)" width="280" height="488">
         <img class="product-slider__image" src="{{imageMobile}}" alt="{{imageDescriprion}}">
       </picture>
     </li>

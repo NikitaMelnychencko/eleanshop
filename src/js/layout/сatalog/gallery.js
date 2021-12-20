@@ -4,19 +4,16 @@ import filterLib from '../../json/filterLib.json';
 import { productRender } from '../../call-list.js';
 import { scrollTo } from '../../components/scrollTo';
 
-// import '../../../images/svg/catalog/catalog.svg#icon-gallery-card-heart';
+import refs from '../../refs/refs.js';
+const { favQuantityEl } = refs;
+
 function selectLS() {
   let ls = localStorage.getItem('content');
-  console.log(ls);
   if (ls) {
     let index = filterLib.filter_category.findIndex(el => el.id === ls);
-    if(index>0){
-    return filterLib.filter_category[index].category;
-    }
+    if (index > 0) return filterLib.filter_category[index].category;
     index = filterLib.filter_collection.findIndex(el => el.id === ls);
-    if(index>0){
-    return filterLib.filter_collection[index].collection;
-    }
+    if (index > 0) return filterLib.filter_collection[index].collection;
   }
   ls = localStorage.getItem('catalogFilter');
   if (ls) {
@@ -29,18 +26,12 @@ function selectLS() {
 
 function filterCatalog() {
   const ls = selectLS();
-  console.log('local storege', ls);
   if (ls) {
     const fcatalog = [];
     catalog.forEach(el => {
-      if (el.category.indexOf(ls) >= 0 || el.collection.indexOf(ls) >= 0) {
-        fcatalog.push(el);
-      }
+      if (el.category.indexOf(ls) >= 0 || el.collection.indexOf(ls) >= 0) fcatalog.push(el);
     });
-    console.log(fcatalog);
-    if (fcatalog.length > 0) {
-      return fcatalog;
-    }
+    if (fcatalog.length > 0) return fcatalog;
   }
   return catalog;
 }
@@ -51,40 +42,64 @@ export function catalogListMarkupF() {
 export function openCategory() {
   const catalogItems = document.querySelector('.js-catalog');
   const cardHeartIcon = catalogItems.querySelectorAll('.icon-gallery-card-heart');
-
   const cardHeartIconArray = Array.from(cardHeartIcon);
 
-  for (let i = 0; i < cardHeartIconArray.length; i += 1) {
-    cardHeartIconArray[i].addEventListener('click', heartColorizing);
+  for (const cardHeartItem of cardHeartIconArray) {
+    cardHeartItem.addEventListener('click', heartColorizing);
+
     function heartColorizing(e) {
-      e.target.classList.toggle('heart-click');
+      let data = localStorage.getItem('favorites');
+      data = data ? JSON.parse(data) : { fav: [] };
+
+      if (catalog) {
+        let obj = null;
+        let elemn = null;
+        if (e.target.tagName === 'svg') {
+          obj = e.target.parentElement.parentElement.parentElement;
+          elemn = e.target;
+        } else if (e.target.tagName === 'use') {
+          elemn = e.target.parentElement;
+          obj = e.target.parentElement.parentElement.parentElement.parentElement;
+        }
+
+        elemn.classList.toggle('heart-click');
+        elemn.classList.toggle('active');
+        const itemData = catalog.find(item => item.id === obj.id);
+
+        if (itemData) {
+          if (cardHeartItem.classList.contains('active')) {
+            let elem = {
+              label: {
+                id: itemData.id,
+                name: itemData.productName,
+                img: itemData.image[0].imageMobile,
+                img2: itemData.image[3].imageMobile,
+                price: itemData.productPrice,
+                sizeSelected: '',
+                colorSelected: '',
+                circleSelected: '',
+                description: itemData.description,
+                count: 1,
+              },
+            };
+            data.fav.push(elem);
+            localStorage.setItem('favorites', JSON.stringify(data));
+            favQuantityEl.innerHTML = data.fav.length;
+          } else {
+            removeFromFavorite(itemData.id);
+          }
+        }
+      }
     }
   }
 
   const catalogSeeMoreIcon = document.querySelector('.catalog-icon-raws-round');
-
   catalogSeeMoreIcon.addEventListener('click', seeMoreCards);
   function seeMoreCards(elem) {}
 
   const cardsList = document.querySelector('.catalog-list');
   cardsList.addEventListener('click', cardToProduct);
   cardsList.addEventListener('touchend', cardToProduct);
-
-  // function myFunction() {
-  //   var dots = document.getElementById('dots');
-  //   var moreText = document.getElementById('more');
-  //   var btnText = document.getElementById('myBtn');
-
-  //   if (dots.style.display === 'none') {
-  //     dots.style.display = 'inline';
-  //     btnText.innerHTML = 'Read more';
-  //     moreText.style.display = 'none';
-  //   } else {
-  //     dots.style.display = 'none';
-  //     btnText.innerHTML = '&nbspRead less';
-  //     moreText.style.display = 'inline';
-  //   }
-  // }
 }
 
 function cardToProduct(e) {
@@ -103,9 +118,7 @@ function cardToProduct(e) {
       id = e.currentTarget.getAttribute('id');
     }
     catalog.forEach(el => {
-      if (el.id === id) {
-        localStorage.setItem('productInfoData', JSON.stringify(el));
-      }
+      if (el.id === id) localStorage.setItem('productInfoData', JSON.stringify(el));
     });
     productRender();
     scrollTo(0, 700);
@@ -117,8 +130,14 @@ export function filteredCatalog(filterName) {
     el => el.category.indexOf(filterName) >= 0 || el.collection.indexOf(filterName) >= 0,
   );
   if (fcatalog.length > 0) {
-    const catalogLM = gallery(fcatalog);
-    document.querySelector('.catalog-list').innerHTML = catalogLM;
+    document.querySelector('.catalog-list').innerHTML = gallery(fcatalog);
     openCategory();
   }
+}
+function removeFromFavorite(id) {
+  let ls = JSON.parse(localStorage.getItem('favorites'));
+  const lsid = ls.fav.findIndex(el => el.id === id);
+  ls.fav.splice(lsid, 1);
+  localStorage.setItem('favorites', JSON.stringify(ls));
+  refs.favQuantityEl.innerHTML = ls.fav.length;
 }

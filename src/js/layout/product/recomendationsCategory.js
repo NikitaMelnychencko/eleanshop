@@ -1,11 +1,12 @@
 const $ = require('jquery');
-require('../../slick/slick.min.js');
+require('../../slider/slick.min.js');
 
 import cardsMarkup from '../../../views/partials/product/recomendationsCategory.hbs';
 import listCards from '../../../views/partials/product/productListFromCatalog.hbs';
 import cards from '../../json/catalog.json';
 import { productRender } from '../../call-list.js';
 import { scrollTo } from '../../components/scrollTo';
+import refs from '../../refs/refs.js';
 
 export default class RecomendationsCategory {
   constructor({ root, typeInsert, data = cards, countsCard = 4, buttonPagination = true }) {
@@ -80,18 +81,32 @@ export default class RecomendationsCategory {
   };
 
   setSlider = () => {
-    if (window.innerWidth <= 720) {
+    if (window.innerWidth <= 1377) {
       this._addSlider();
     }
   };
 
   _addSlider = () => {
-    $('.recomendation-category .slider').slick({
-      arrows: false,
-      dots: this.buttonPagination,
-      infinite: true,
-      slidesToShow: 2.5,
-      focusOnSelect: true,
+    $(document).ready(function () {
+      $('.recomendation-category .slider').slick({
+        arrows: false,
+        dots: this.buttonPagination,
+        infinite: true,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        speed: 1000,
+        easing: 'ease',
+        initialSlide: 0,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        focusOnSelect: true,
+        pauseOnFocus: true,
+        pauseOnHover: true,
+        pauseOnDotsHover: true,
+        draggable: true,
+        swipe: true,
+        centerMode: true,
+      });
     });
   };
 
@@ -124,6 +139,7 @@ export default class RecomendationsCategory {
       };
       ls.fav.push(elem);
       localStorage.setItem('favorites', JSON.stringify(ls));
+      refs.favQuantityEl.innerHTML = ls.fav.length;
     }
   };
 
@@ -132,6 +148,7 @@ export default class RecomendationsCategory {
     const lsid = ls.fav.findIndex(el => el.id === id);
     ls.fav.splice(lsid, 1);
     localStorage.setItem('favorites', JSON.stringify(ls));
+    refs.favQuantityEl.innerHTML = ls.fav.length;
   };
 
   _onClickLike = e => {
@@ -167,7 +184,7 @@ export default class RecomendationsCategory {
       let id = '';
       if (!e.target.getAttribute('id')) {
         let el = e.target.parentElement;
-        while (!id) {
+        while (!id && el) {
           if (el.getAttribute('id')) {
             id = el.getAttribute('id');
           } else {

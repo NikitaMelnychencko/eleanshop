@@ -110,15 +110,9 @@
 
 .in-instagram__slider .slider__item {
   position: relative;
-  padding-right: 10px;
+  margin-right: 10px;
 }
 
 .in-instagram__slider .slider__item img {
-  width: 290px;
-  height: 410px;
-
-  @media screen and (min-width: $desktop-up) {
-    width: 260px;
-    height: 370px;
-  }
+  background-color: $predownload-background;
 }

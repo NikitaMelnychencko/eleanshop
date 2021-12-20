@@ -40,6 +40,7 @@
   height: 665px;
   width: 374px;
   object-fit: cover;
+  background-color: $predownload-background;
   @media screen and (min-width: $desktop-up) {
     height: 401px;
     width: 100%;

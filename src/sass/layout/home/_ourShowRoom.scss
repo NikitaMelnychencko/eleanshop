@@ -45,10 +45,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
-  @media screen and (max-width: $tablet-only) {
-    margin-bottom: 50px;
-  }
 }
 
 /* Basic styles */
@@ -164,7 +160,7 @@
 
 .showroom__slider .slider__item {
   position: relative;
-  padding-right: 10px;
+  margin-right: 10px;
 
   @media screen and (min-width: $desktop-up) {
     padding-right: 0px;
@@ -172,15 +168,11 @@
 }
 
 .showroom__slider .slider__item img {
-  width: 374px;
-  height: 512px;
+  background-color: $predownload-background;
 
   --animate-repeat: 0;
 
   @media screen and (min-width: $desktop-up) {
-    min-width: 426px;
-    min-height: 502px;
-
     --animate-repeat: infinite;
     --animate-duration: 2s;
   }
