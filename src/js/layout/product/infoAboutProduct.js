@@ -1,4 +1,3 @@
-import productTEST from '../../../js/json/product/productTEST.json';
 import productTemplate from '../../../views/partials/product/infoAboutProduct.hbs';
 
 import sizeChose from '../../components/sizeChose';
@@ -13,8 +12,9 @@ export function createFullMarkup() {
 
   const btn = createBtn();
 
-  //* ЗДЕСЬ ВМЕСТО productTEST нужно заливать правильный JSON***********
-  return productTemplate({ productTEST, btn });
+  // * ЗДЕСЬ ВМЕСТО productTEST нужно заливать правильный JSON***********
+  // console.log(productInfoData);
+  return productTemplate({ productInfoData, btn });
 }
 
 //! ---------------------------------------------------Add to favorites
@@ -121,7 +121,7 @@ function onColorListClick(event) {
 
   const inputColor = event.target.previousElementSibling.value;
 
-  productTEST.productAviable.find(size => {
+  productInfoData.productAviable.find(size => {
     if (size.colorId === inputColor) {
       availableSizes.push(size.aviableSize);
     }

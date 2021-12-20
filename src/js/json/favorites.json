@@ -2,7 +2,30 @@
   {
     "id": "Card-1",
     "name": "Жакет-смокинг с лацканами",
-    "image": {
+    "image": [
+      {
+        "imageDesctopMiniHigherResolution": "./images/card-1-desktop.jpg ",
+        "imageMobile": "./images/card-1.jpg",
+        "imageMobileHigherResolution": "./images/card-1@2x.jpg",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-1@2x.jpg ",
+        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-1.jpg",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
+        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-2.jpg",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
+        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-3.jpg",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      }
+    ],
+    {
       "srcset": "./images/img_1jpg 1x, ./images/img_1@2x.jpg 2x",
       "srcset-mobile": "./images/img-mob_1.jpg 1x, ./images/img-mob_1@2x.jpg 2x",
       "src": "./images/img-mob_1.jpg",
@@ -16,7 +39,30 @@
   {
     "id": "Card-2",
     "name": "Классический комплект с смокингом и жилетом",
-    "image": {
+    "image": [
+      {
+        "imageDesctopMiniHigherResolution": "./images/card-1-desktop.jpg ",
+        "imageMobile": "./images/card-1.jpg",
+        "imageMobileHigherResolution": "./images/card-1@2x.jpg",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-1@2x.jpg ",
+        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-1.jpg",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
+        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-2.jpg",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
+        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-3.jpg",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      }
+    ],
+    {
       "srcset": "./images/img_2jpg 1x, ./images/img_2@2x.jpg 2x",
       "srcset-mobile": "./images/img-mob_2.jpg 1x, ./images/img-mob_2@2x.jpg 2x",
       "src": "./images/img-mob_2.jpg",
@@ -30,7 +76,30 @@
   {
     "id": "Card-3",
     "name": "Белый жакет смокинг",
-    "image": {
+    "image": [
+      {
+        "imageDesctopMiniHigherResolution": "./images/card-1-desktop.jpg ",
+        "imageMobile": "./images/card-1.jpg",
+        "imageMobileHigherResolution": "./images/card-1@2x.jpg",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-1@2x.jpg ",
+        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-1.jpg",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
+        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-2.jpg",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
+        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-3.jpg",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      }
+    ],
+    {
       "srcset": "./images/img_3jpg 1x, ./images/img_3@2x.jpg 2x",
       "srcset-mobile": "./images/img-mob_3.jpg 1x, ./images/img-mob_3@2x.jpg 2x",
       "src": "./images/img-mob_3.jpg",
@@ -44,7 +113,30 @@
   {
     "id": "Card-4",
     "name": "Жакет-смокинг бархатный",
-    "image": {
+    "image": [
+      {
+        "imageDesctopMiniHigherResolution": "./images/card-1-desktop.jpg ",
+        "imageMobile": "./images/card-1.jpg",
+        "imageMobileHigherResolution": "./images/card-1@2x.jpg",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-1@2x.jpg ",
+        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-1.jpg",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
+        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-2.jpg",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      },
+      {
+        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
+        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-3.jpg",
+        "imageDescriprion": "девушка в белом смокинге с желеткой"
+      }
+    ],
+    {
       "srcset": "./images/img_4jpg 1x, ./images/img_4@2x.jpg 2x",
       "srcset-mobile": "./images/img-mob_4.jpg 1x, ./images/img-mob_4@2x.jpg 2x",
       "src": "./images/img-mob_4.jpg",

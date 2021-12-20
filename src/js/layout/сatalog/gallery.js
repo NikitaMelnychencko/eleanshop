@@ -1,5 +1,6 @@
 import gallery from '../../../views/partials/сatalog/gallery.hbs';
-import catalog from '../../json/catalog.json';
+import catalogz from '../../json/all.json';
+let catalog = catalogz.products;
 import filterLib from '../../json/filterLib.json';
 import { productRender } from '../../call-list.js';
 import { scrollTo } from '../../components/scrollTo';
