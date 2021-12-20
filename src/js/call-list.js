@@ -86,7 +86,7 @@ export function checkoutRender() {
   const savedData = localStorage.getItem('orderingData');
   const parsedData = JSON.parse(savedData);
   const ordering = ordering_ordering(parsedData);
-  const createCheckout = payment_checkout({ createPayment, ordering, backdropMarkup });
+  const createCheckout = payment_checkout({ createPayment, ordering,mainModal });
   refs.mainEL.innerHTML = createCheckout;
   //refs.mainEL.insertAdjacentHTML('beforeend', createCheckout);
 
@@ -205,9 +205,9 @@ import productMarkup from '../views/layouts/product.hbs';
 import HandSewn from './layout/product/productHandSewn.js';
 import backdropMarkupTempl from '../views/components/backdrop.hbs';
 import modalFormMarkupTempl from '../views/components/thanksForOrdering.hbs';
-import { preorderMark, setEventPreorder } from './layout/product/preorderModal.js';
-import { tryOnModels, setEventTryOnModels } from './layout/product/tryOnModelsModal.js';
-
+import { preorderMark } from './layout/product/preorderModal.js';
+import { setEventTryOnModels } from './layout/product/tryOnModelsModal.js';
+import { mainModal } from './components/modal/modal';
 export function productRender() {
   const initFooter = new classBody();
   const objRecomendationsCategory = new RecomendationsCategory({
@@ -237,9 +237,10 @@ export function productRender() {
     infoAboutProduct: createFullMarkup(),
     recomendationCategory: objRecomendationsCategory.getMarkup(),
     handSewn: objHandSewn.getMarkup(),
-    backdrop: backdropMarkup,
+    // backdrop: backdropMarkup,
     modalPreorder: preorderMark,
-    tryOnModels: tryOnModels,
+    // tryOnModels: tryOnModels,
+    mainModal: mainModal,
   };
   // refs.mainEL.insertAdjacentHTML('beforeend', productMarkup(obj));
   refs.mainEL.innerHTML = productMarkup(obj);

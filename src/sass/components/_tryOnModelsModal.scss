@@ -25,20 +25,20 @@
 }
 
 .try-on {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100%;
+  // position: absolute;
+  // left: 50%;
+  // transform: translateX(-50%);
+  // width: 100%;
 
   @media screen and (min-width: $mobile-general) {
-    width: 395px;
+    // width: 395px;
     top: 10%;
-  } 
-  background-color: $primary-background-color;
+  }
+  // background-color: $primary-background-color;
   padding: 70px 20px;
 
   @media screen and (min-width: $desktop-up) {
-    width: 1017px;
+    // width: 1017px;
     padding: 70px 120px;
   }
 }
@@ -87,7 +87,7 @@
   margin-bottom: 32px;
 
   text-transform: uppercase;
-  font-family: $third-font-family,sans-serif;
+  font-family: $third-font-family, sans-serif;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.15;
@@ -104,7 +104,7 @@
 .try-on__text {
   margin-bottom: 22px;
 
-  font-family: $third-font-family,sans-serif;
+  font-family: $third-font-family, sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.25;
@@ -134,7 +134,7 @@
 .try-on__list-item {
   display: flex;
   align-items: center;
-  font-family: $selection-font-family,sans-serif;
+  font-family: $selection-font-family, sans-serif;
   font-size: 18px;
   line-height: 1.06;
   letter-spacing: 0.03em;
