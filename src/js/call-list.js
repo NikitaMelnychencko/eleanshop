@@ -255,7 +255,6 @@ export function productRender() {
   objRecomendationsCategory.setEvent();
   objHandSewn.setEvent();
   objProductModalAddToCart.setEvent();
-  objProductModalAddToCart.setSlider();
   setEventPreorder();
   setEventTryOnModels();
   blockHelpRender();
