@@ -1,5 +1,3 @@
-// have to clear string #2 after getting data from Local Storage
-// import productInfo from '../../../js/json/product/productInfo.json';
 import productTemplate from '../../../views/partials/product/infoAboutProduct.hbs';
 import { bodyFixPosition } from '../../components/scroll/scroll';
 import renderModal from '../../components/modal/modal';
@@ -50,10 +48,8 @@ export function createFullMarkup() {
   savedProductInfoData = localStorage.getItem('productInfoData');
   parsedProductInfoData = JSON.parse(savedProductInfoData);
 
-  return productTemplate({ parsedProductInfoData });
-  //* way to get a function to get size grid (don't clear)
-  // const btn = createBtn(parsedProductInfoData);
-  // return productTemplate({parsedProductInfoData, btn});
+  // * ЗДЕСЬ ВМЕСТО productTEST нужно заливать правильный JSON***********
+  return productTemplate({ productInfoData, btn });
 }
 
 //! ---------------------------------------------------Add to favorites
@@ -154,6 +150,14 @@ function onColorpickerListClick(event) {
     return;
   }
 
+  const inputColor = event.target.previousElementSibling.value;
+
+  productInfoData.productAviable.find(size => {
+    if (size.colorId === inputColor) {
+      availableSizes.push(size.aviableSize);
+    }
+  });
+
   removeCurrentClass();
   addCurrentClass(colorpickerButton);
   setProductColor(colorpickerButton.id);
@@ -166,18 +170,16 @@ function setProductDataToOrdering() {
   });
   if (elementId === -1) {
     let orderingDataobj = { label: {} };
-    orderingDataobj.label.id = parsedProductInfoData.id;
-    orderingDataobj.label.name = parsedProductInfoData.productName;
-
-    orderingDataobj.label.img = parsedProductInfoData.image[0].imageMobile;
-    orderingDataobj.label.img2 = parsedProductInfoData.image[0].imageMobileHigherResolution;
-    orderingDataobj.label.price = parsedProductInfoData.productPrice;
-    // have to get size from size grid from Andrew's function
-    orderingDataobj.label.sizeSelected = '46';
+    orderingDataobj.label.id = productInfoData.id;
+    orderingDataobj.label.name = productInfoData.productName;
+    orderingDataobj.label.img = productInfoData.image[0].imageMobile;
+    orderingDataobj.label.price = productInfoData.productPrice;
+    orderingDataobj.label.sizeSelected = localStorage.getItem('productSize');
     orderingDataobj.label.colorSelected = localStorage.getItem('productColor');
     orderingDataobj.label.circleSelected = '';
     orderingDataobj.label.description = '';
     orderingDataobj.label.count = 1;
+    orderingDataobj.label.productAviable = productInfoData.productAviable;
     orderingDataParsed.push(orderingDataobj);
     localStorage.setItem('orderingData', JSON.stringify(orderingDataParsed));
   }
