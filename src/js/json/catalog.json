@@ -4,29 +4,6 @@
     "id": "Card-1",
     "image": [
       {
-        "imageDesctopMiniHigherResolution": "./images/card-1-desktop.jpg ",
-        "imageMobile": "./images/card-1.jpg",
-        "imageMobileHigherResolution": "./images/card-1@2x.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-1@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-1.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-2.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-3.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      }
-    ],
-    [
-      {
         "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
         "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
         "imageMobile": "./images/tuxedo-and-vest-mobile-1.jpg",
@@ -150,29 +127,6 @@
     "added": "2",
     "id": "Card-2",
     "image": [
-      {
-        "imageDesctopMiniHigherResolution": "./images/card-1-desktop.jpg ",
-        "imageMobile": "./images/card-1.jpg",
-        "imageMobileHigherResolution": "./images/card-1@2x.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-1@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-1.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-2.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-3.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      }
-    ],
-    [
       {
         "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
         "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
@@ -298,29 +252,6 @@
     "id": "Card-3",
     "image": [
       {
-        "imageDesctopMiniHigherResolution": "./images/card-1-desktop.jpg ",
-        "imageMobile": "./images/card-1.jpg",
-        "imageMobileHigherResolution": "./images/card-1@2x.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-1@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-1.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-2.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-3.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      }
-    ],
-    [
-      {
         "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
         "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
         "imageMobile": "./images/tuxedo-and-vest-mobile-1.jpg",
@@ -443,29 +374,6 @@
     "added": "4",
     "id": "Card-4",
     "image": [
-      {
-        "imageDesctopMiniHigherResolution": "./images/card-1-desktop.jpg ",
-        "imageMobile": "./images/card-1.jpg",
-        "imageMobileHigherResolution": "./images/card-1@2x.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-1@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-1.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-2.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-3.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      }
-    ],
-    [
       {
         "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
         "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
@@ -591,29 +499,6 @@
     "id": "Card-5",
     "image": [
       {
-        "imageDesctopMiniHigherResolution": "./images/card-1-desktop.jpg ",
-        "imageMobile": "./images/card-1.jpg",
-        "imageMobileHigherResolution": "./images/card-1@2x.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-1@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-1.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-2.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-3.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      }
-    ],
-    [
-      {
         "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
         "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
         "imageMobile": "./images/tuxedo-and-vest-mobile-1.jpg",
@@ -737,29 +622,6 @@
     "added": "6",
     "id": "Card-6",
     "image": [
-      {
-        "imageDesctopMiniHigherResolution": "./images/card-1-desktop.jpg ",
-        "imageMobile": "./images/card-1.jpg",
-        "imageMobileHigherResolution": "./images/card-1@2x.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-1@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-1.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-2.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-3.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      }
-    ],
-    [
       {
         "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
         "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
@@ -886,29 +748,6 @@
     "id": "Card-7",
     "image": [
       {
-        "imageDesctopMiniHigherResolution": "./images/card-1-desktop.jpg ",
-        "imageMobile": "./images/card-1.jpg",
-        "imageMobileHigherResolution": "./images/card-1@2x.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-1@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-1.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-2.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-3.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      }
-    ],
-    [
-      {
         "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
         "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
         "imageMobile": "./images/tuxedo-and-vest-mobile-1.jpg",
@@ -1031,29 +870,6 @@
     "added": "8",
     "id": "Card-8",
     "image": [
-      {
-        "imageDesctopMiniHigherResolution": "./images/card-1-desktop.jpg ",
-        "imageMobile": "./images/card-1.jpg",
-        "imageMobileHigherResolution": "./images/card-1@2x.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-1@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-1.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-2.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-3.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      }
-    ],
-    [
       {
         "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
         "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
@@ -1180,29 +996,6 @@
     "id": "Card-9",
     "image": [
       {
-        "imageDesctopMiniHigherResolution": "./images/card-1-desktop.jpg ",
-        "imageMobile": "./images/card-1.jpg",
-        "imageMobileHigherResolution": "./images/card-1@2x.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-1@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-1.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-2.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-3.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      }
-    ],
-    [
-      {
         "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
         "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
         "imageMobile": "./images/tuxedo-and-vest-mobile-1.jpg",
@@ -1324,29 +1117,6 @@
     "added": "10",
     "id": "Card-10",
     "image": [
-      {
-        "imageDesctopMiniHigherResolution": "./images/card-1-desktop.jpg ",
-        "imageMobile": "./images/card-1.jpg",
-        "imageMobileHigherResolution": "./images/card-1@2x.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-1@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-1.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-2.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-3.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      }
-    ],
-    [
       {
         "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
         "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
@@ -1472,29 +1242,6 @@
     "id": "Card-11",
     "image": [
       {
-        "imageDesctopMiniHigherResolution": "./images/card-1-desktop.jpg ",
-        "imageMobile": "./images/card-1.jpg",
-        "imageMobileHigherResolution": "./images/card-1@2x.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-1@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-1.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-2.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-3.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      }
-    ],
-    [
-      {
         "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
         "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
         "imageMobile": "./images/tuxedo-and-vest-mobile-1.jpg",
@@ -1616,29 +1363,6 @@
     "added": "12",
     "id": "Card-12",
     "image": [
-      {
-        "imageDesctopMiniHigherResolution": "./images/card-1-desktop.jpg ",
-        "imageMobile": "./images/card-1.jpg",
-        "imageMobileHigherResolution": "./images/card-1@2x.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-1@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-1.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-2.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-3.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      }
-    ],
-    [
       {
         "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
         "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
@@ -1767,29 +1491,6 @@
     "id": "Card-13",
     "image": [
       {
-        "imageDesctopMiniHigherResolution": "./images/card-1-desktop.jpg ",
-        "imageMobile": "./images/card-1.jpg",
-        "imageMobileHigherResolution": "./images/card-1@2x.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-1@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-1.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-2.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-3.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      }
-    ],
-    [
-      {
         "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
         "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
         "imageMobile": "./images/tuxedo-and-vest-mobile-1.jpg",
@@ -1912,29 +1613,6 @@
     "added": "14",
     "id": "Card-14",
     "image": [
-      {
-        "imageDesctopMiniHigherResolution": "./images/card-1-desktop.jpg ",
-        "imageMobile": "./images/card-1.jpg",
-        "imageMobileHigherResolution": "./images/card-1@2x.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-1@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-1.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-2.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-3.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      }
-    ],
-    [
       {
         "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
         "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
@@ -2061,29 +1739,6 @@
     "id": "Card-15",
     "image": [
       {
-        "imageDesctopMiniHigherResolution": "./images/card-1-desktop.jpg ",
-        "imageMobile": "./images/card-1.jpg",
-        "imageMobileHigherResolution": "./images/card-1@2x.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-1@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-1.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-2.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-3.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      }
-    ],
-    [
-      {
         "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
         "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
         "imageMobile": "./images/tuxedo-and-vest-mobile-1.jpg",
@@ -2209,29 +1864,6 @@
     "id": "Card-16",
     "image": [
       {
-        "imageDesctopMiniHigherResolution": "./images/card-1-desktop.jpg ",
-        "imageMobile": "./images/card-1.jpg",
-        "imageMobileHigherResolution": "./images/card-1@2x.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-1@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-1.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-2.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-3.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      }
-    ],
-    [
-      {
         "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
         "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
         "imageMobile": "./images/tuxedo-and-vest-mobile-1.jpg",
@@ -2353,29 +1985,6 @@
     "added": "17",
     "id": "Card-17",
     "image": [
-      {
-        "imageDesctopMiniHigherResolution": "./images/card-1-desktop.jpg ",
-        "imageMobile": "./images/card-1.jpg",
-        "imageMobileHigherResolution": "./images/card-1@2x.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-1@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-1.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-2.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-3.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      }
-    ],
-    [
       {
         "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
         "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
@@ -2500,29 +2109,6 @@
     "id": "Card-18",
     "image": [
       {
-        "imageDesctopMiniHigherResolution": "./images/card-1-desktop.jpg ",
-        "imageMobile": "./images/card-1.jpg",
-        "imageMobileHigherResolution": "./images/card-1@2x.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-1@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-1.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-2.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-3.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      }
-    ],
-    [
-      {
         "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
         "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
         "imageMobile": "./images/tuxedo-and-vest-mobile-1.jpg",
@@ -2645,29 +2231,6 @@
     "added": "19",
     "id": "Card-19",
     "image": [
-      {
-        "imageDesctopMiniHigherResolution": "./images/card-1-desktop.jpg ",
-        "imageMobile": "./images/card-1.jpg",
-        "imageMobileHigherResolution": "./images/card-1@2x.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-1@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-1.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-2.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-3.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      }
-    ],
-    [
       {
         "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
         "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
@@ -2793,29 +2356,6 @@
     "id": "Card-1-desktop",
     "image": [
       {
-        "imageDesctopMiniHigherResolution": "./images/card-1-desktop.jpg ",
-        "imageMobile": "./images/card-1.jpg",
-        "imageMobileHigherResolution": "./images/card-1@2x.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-1@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-1.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-2.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-3.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      }
-    ],
-    [
-      {
         "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
         "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
         "imageMobile": "./images/tuxedo-and-vest-mobile-1.jpg",
@@ -2938,29 +2478,6 @@
     "added": "21",
     "id": "Card-2-desktop",
     "image": [
-      {
-        "imageDesctopMiniHigherResolution": "./images/card-1-desktop.jpg ",
-        "imageMobile": "./images/card-1.jpg",
-        "imageMobileHigherResolution": "./images/card-1@2x.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-1@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-1.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-2.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-3.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      }
-    ],
-    [
       {
         "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
         "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
@@ -3086,29 +2603,6 @@
     "id": "Card-3-desktop",
     "image": [
       {
-        "imageDesctopMiniHigherResolution": "./images/card-1-desktop.jpg ",
-        "imageMobile": "./images/card-1.jpg",
-        "imageMobileHigherResolution": "./images/card-1@2x.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-1@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-1.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-2.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-3.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      }
-    ],
-    [
-      {
         "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
         "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
         "imageMobile": "./images/tuxedo-and-vest-mobile-1.jpg",
@@ -3231,29 +2725,6 @@
     "added": "23",
     "id": "Card-4-desktop",
     "image": [
-      {
-        "imageDesctopMiniHigherResolution": "./images/card-1-desktop.jpg ",
-        "imageMobile": "./images/card-1.jpg",
-        "imageMobileHigherResolution": "./images/card-1@2x.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-1@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-1.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-2.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-3.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      }
-    ],
-    [
       {
         "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
         "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
@@ -3379,29 +2850,6 @@
     "id": "Card-5-desktop",
     "image": [
       {
-        "imageDesctopMiniHigherResolution": "./images/card-1-desktop.jpg ",
-        "imageMobile": "./images/card-1.jpg",
-        "imageMobileHigherResolution": "./images/card-1@2x.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-1@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-1.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-2.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-3.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      }
-    ],
-    [
-      {
         "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
         "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
         "imageMobile": "./images/tuxedo-and-vest-mobile-1.jpg",
@@ -3523,29 +2971,6 @@
     "added": "25",
     "id": "Card-6-desktop",
     "image": [
-      {
-        "imageDesctopMiniHigherResolution": "./images/card-1-desktop.jpg ",
-        "imageMobile": "./images/card-1.jpg",
-        "imageMobileHigherResolution": "./images/card-1@2x.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-1@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-1.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-2.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-3.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      }
-    ],
-    [
       {
         "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
         "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
@@ -3672,29 +3097,6 @@
     "id": "Card-7-desktop",
     "image": [
       {
-        "imageDesctopMiniHigherResolution": "./images/card-1-desktop.jpg ",
-        "imageMobile": "./images/card-1.jpg",
-        "imageMobileHigherResolution": "./images/card-1@2x.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-1@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-1.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-2.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-3.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      }
-    ],
-    [
-      {
         "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
         "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
         "imageMobile": "./images/tuxedo-and-vest-mobile-1.jpg",
@@ -3817,29 +3219,6 @@
     "added": "27",
     "id": "Card-8-desktop",
     "image": [
-      {
-        "imageDesctopMiniHigherResolution": "./images/card-1-desktop.jpg ",
-        "imageMobile": "./images/card-1.jpg",
-        "imageMobileHigherResolution": "./images/card-1@2x.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-1@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-1.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-2.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-3.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      }
-    ],
-    [
       {
         "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
         "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
@@ -3966,29 +3345,6 @@
     "id": "Card-9-desktop",
     "image": [
       {
-        "imageDesctopMiniHigherResolution": "./images/card-1-desktop.jpg ",
-        "imageMobile": "./images/card-1.jpg",
-        "imageMobileHigherResolution": "./images/card-1@2x.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-1@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-1.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-2.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-3.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      }
-    ],
-    [
-      {
         "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
         "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
         "imageMobile": "./images/tuxedo-and-vest-mobile-1.jpg",
@@ -4110,29 +3466,6 @@
     "added": "29",
     "id": "Card-10-desktop",
     "image": [
-      {
-        "imageDesctopMiniHigherResolution": "./images/card-1-desktop.jpg ",
-        "imageMobile": "./images/card-1.jpg",
-        "imageMobileHigherResolution": "./images/card-1@2x.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-1@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-1.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-2.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-3.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      }
-    ],
-    [
       {
         "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
         "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
@@ -4258,29 +3591,6 @@
     "id": "Card-11-desktop",
     "image": [
       {
-        "imageDesctopMiniHigherResolution": "./images/card-1-desktop.jpg ",
-        "imageMobile": "./images/card-1.jpg",
-        "imageMobileHigherResolution": "./images/card-1@2x.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-1@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-1.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-2.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-3.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      }
-    ],
-    [
-      {
         "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
         "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
         "imageMobile": "./images/tuxedo-and-vest-mobile-1.jpg",
@@ -4402,29 +3712,6 @@
     "added": "31",
     "id": "Card-12-desktop",
     "image": [
-      {
-        "imageDesctopMiniHigherResolution": "./images/card-1-desktop.jpg ",
-        "imageMobile": "./images/card-1.jpg",
-        "imageMobileHigherResolution": "./images/card-1@2x.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-1@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-1.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-2.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-3.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      }
-    ],
-    [
       {
         "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
         "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
@@ -4553,29 +3840,6 @@
     "id": "Card-13-desktop",
     "image": [
       {
-        "imageDesctopMiniHigherResolution": "./images/card-1-desktop.jpg ",
-        "imageMobile": "./images/card-1.jpg",
-        "imageMobileHigherResolution": "./images/card-1@2x.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-1@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-1.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-2.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-3.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      }
-    ],
-    [
-      {
         "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
         "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
         "imageMobile": "./images/tuxedo-and-vest-mobile-1.jpg",
@@ -4698,29 +3962,6 @@
     "added": "33",
     "id": "Card-14-desktop",
     "image": [
-      {
-        "imageDesctopMiniHigherResolution": "./images/card-1-desktop.jpg ",
-        "imageMobile": "./images/card-1.jpg",
-        "imageMobileHigherResolution": "./images/card-1@2x.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-1@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-1.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-2.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-3.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      }
-    ],
-    [
       {
         "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
         "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
@@ -4847,29 +4088,6 @@
     "id": "Card-15-desktop",
     "image": [
       {
-        "imageDesctopMiniHigherResolution": "./images/card-1-desktop.jpg ",
-        "imageMobile": "./images/card-1.jpg",
-        "imageMobileHigherResolution": "./images/card-1@2x.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-1@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-1.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-2.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-3.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      }
-    ],
-    [
-      {
         "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
         "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
         "imageMobile": "./images/tuxedo-and-vest-mobile-1.jpg",
@@ -4995,29 +4213,6 @@
     "id": "Card-16-desktop",
     "image": [
       {
-        "imageDesctopMiniHigherResolution": "./images/card-1-desktop.jpg ",
-        "imageMobile": "./images/card-1.jpg",
-        "imageMobileHigherResolution": "./images/card-1@2x.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-1@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-1.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-2.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-3.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      }
-    ],
-    [
-      {
         "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
         "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
         "imageMobile": "./images/tuxedo-and-vest-mobile-1.jpg",
@@ -5139,29 +4334,6 @@
     "added": "36",
     "id": "Card-17",
     "image": [
-      {
-        "imageDesctopMiniHigherResolution": "./images/card-1-desktop.jpg ",
-        "imageMobile": "./images/card-1.jpg",
-        "imageMobileHigherResolution": "./images/card-1@2x.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-1@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-1.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-2.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-3.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      }
-    ],
-    [
       {
         "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
         "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
@@ -5286,29 +4458,6 @@
     "id": "Card-18",
     "image": [
       {
-        "imageDesctopMiniHigherResolution": "./images/card-1-desktop.jpg ",
-        "imageMobile": "./images/card-1.jpg",
-        "imageMobileHigherResolution": "./images/card-1@2x.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-1@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-1.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-2.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-3.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      }
-    ],
-    [
-      {
         "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
         "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
         "imageMobile": "./images/tuxedo-and-vest-mobile-1.jpg",
@@ -5431,29 +4580,6 @@
     "added": "38",
     "id": "Card-19-desktop",
     "image": [
-      {
-        "imageDesctopMiniHigherResolution": "./images/card-1-desktop.jpg ",
-        "imageMobile": "./images/card-1.jpg",
-        "imageMobileHigherResolution": "./images/card-1@2x.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-1@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-1.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-2.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-3.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      }
-    ],
-    [
       {
         "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
         "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",
@@ -5578,29 +4704,6 @@
     "added": "39",
     "id": "Card-20-desktop",
     "image": [
-      {
-        "imageDesctopMiniHigherResolution": "./images/card-1-desktop.jpg ",
-        "imageMobile": "./images/card-1.jpg",
-        "imageMobileHigherResolution": "./images/card-1@2x.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-1@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-1.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-2.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-3.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      }
-    ],
-    [
       {
         "imageDesctopMini": "./images/tuxedo-and-vest-mini-desktop-1.jpg ",
         "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mini-desktop-1@2x.jpg",

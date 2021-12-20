@@ -2,30 +2,7 @@
   {
     "id": "image-delivery",
     "alt": "фото доставки",
-    "image": [
-      {
-        "imageDesctopMiniHigherResolution": "./images/card-1-desktop.jpg ",
-        "imageMobile": "./images/card-1.jpg",
-        "imageMobileHigherResolution": "./images/card-1@2x.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-1@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-1.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-2@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-2.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      },
-      {
-        "imageDesctopMiniHigherResolution": "./images/tuxedo-and-vest-mobile-3@2x.jpg ",
-        "imageMobile": "./images/tuxedo-and-vest-mini-desktop-3.jpg",
-        "imageDescriprion": "девушка в белом смокинге с желеткой"
-      }
-    ],
-    "./images/elean62862_1.jpg",
+    "image": "./images/elean62862_1.jpg",
     "name": "Фото Деливери",
     "width": "748",
     "height": "570"

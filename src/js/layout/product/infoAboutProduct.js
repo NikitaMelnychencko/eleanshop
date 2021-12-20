@@ -13,7 +13,6 @@ export function createFullMarkup() {
   const btn = createBtn();
 
   // * ЗДЕСЬ ВМЕСТО productTEST нужно заливать правильный JSON***********
-  // console.log(productInfoData);
   return productTemplate({ productInfoData, btn });
 }
 
@@ -182,14 +181,14 @@ function setProductDataToOrdering() {
     let orderingDataobj = { label: {} };
     orderingDataobj.label.id = productInfoData.id;
     orderingDataobj.label.name = productInfoData.productName;
-
-    orderingDataobj.label.img = productInfoData.img.src;
+    orderingDataobj.label.img = productInfoData.image[0].imageMobile;
     orderingDataobj.label.price = productInfoData.productPrice;
     orderingDataobj.label.sizeSelected = localStorage.getItem('productSize');
     orderingDataobj.label.colorSelected = localStorage.getItem('productColor');
     orderingDataobj.label.circleSelected = '';
     orderingDataobj.label.description = '';
     orderingDataobj.label.count = 1;
+    orderingDataobj.label.productAviable = productInfoData.productAviable;
     orderingDataParsed.push(orderingDataobj);
     localStorage.setItem('orderingData', JSON.stringify(orderingDataParsed));
   }
