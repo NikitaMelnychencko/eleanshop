@@ -42,7 +42,7 @@ export function catalogListMarkupF() {
 }
 export function openCategory() {
   const catalogItems = document.querySelector('.js-catalog');
-  const cardHeartIcon = catalogItems.querySelectorAll('.icon-gallery-card-heart');
+  const cardHeartIcon = catalogItems.querySelectorAll('.catalog__product-card-heart');
   const cardHeartIconArray = Array.from(cardHeartIcon);
 
   for (const cardHeartItem of cardHeartIconArray) {
@@ -94,11 +94,11 @@ export function openCategory() {
     }
   }
 
-  const catalogSeeMoreIcon = document.querySelector('.catalog-icon-raws-round');
+  const catalogSeeMoreIcon = document.querySelector('.catalog__gallery-raws-icon');
   catalogSeeMoreIcon.addEventListener('click', seeMoreCards);
   function seeMoreCards(elem) {}
 
-  const cardsList = document.querySelector('.catalog-list');
+  const cardsList = document.querySelector('.catalog__gallery-list');
   cardsList.addEventListener('click', cardToProduct);
   cardsList.addEventListener('touchend', cardToProduct);
 }
@@ -131,7 +131,7 @@ export function filteredCatalog(filterName) {
     el => el.category.indexOf(filterName) >= 0 || el.collection.indexOf(filterName) >= 0,
   );
   if (fcatalog.length > 0) {
-    document.querySelector('.catalog-list').innerHTML = gallery(fcatalog);
+    document.querySelector('.catalog__gallery-list').innerHTML = gallery(fcatalog);
     openCategory();
   }
 }
