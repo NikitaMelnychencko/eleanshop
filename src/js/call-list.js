@@ -199,7 +199,8 @@ import { callProductPageFunctional, createFullMarkup } from './layout/product/in
 import { setProductSlider } from './layout/product/productSlider';
 import ProductModalAddToCart from './layout/product/productModalAddToCart.js';
 import RecomendationsCategory from './layout/product/recomendationsCategory.js';
-import cards from './json/catalog.json';
+import allJSON from './json/all.json';
+const cards = allJSON.products;
 import productMarkup from '../views/layouts/product.hbs';
 import HandSewn from './layout/product/productHandSewn.js';
 import backdropMarkupTempl from '../views/components/backdrop.hbs';

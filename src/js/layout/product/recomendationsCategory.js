@@ -3,7 +3,8 @@ require('../../slider/slick.min.js');
 
 import cardsMarkup from '../../../views/partials/product/recomendationsCategory.hbs';
 import listCards from '../../../views/partials/product/productListFromCatalog.hbs';
-import cards from '../../json/catalog.json';
+import allJSON from '../../json/all.json';
+const cards = allJSON.products;
 import { productRender } from '../../call-list.js';
 import { scrollTo } from '../../components/scrollTo';
 import refs from '../../refs/refs.js';
@@ -184,17 +185,17 @@ export default class RecomendationsCategory {
   _cardToProduct = e => {
     if (e.target.nodeName !== 'use' && e.target.nodeName !== 'svg') {
       let id = '';
-      if (!e.target.getAttribute('id')) {
+      if (!e.target.getAttribute('product-id')) {
         let el = e.target.parentElement;
         while (!id && el) {
-          if (el.getAttribute('id')) {
-            id = el.getAttribute('id');
+          if (el.getAttribute('product-id')) {
+            id = el.getAttribute('product-id');
           } else {
             el = el.parentElement;
           }
         }
       } else {
-        id = e.currentTarget.getAttribute('id');
+        id = e.currentTarget.getAttribute('product-id');
       }
       cards.forEach(el => {
         if (el.id === id) {
