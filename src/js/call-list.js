@@ -221,39 +221,30 @@ export function productRender() {
       },
     ],
   });
-  const objProductModalAddToCart = new ProductModalAddToCart({
-    productName: 'ЖАКЕТ-СМОКИНГ С ЛАЦКАНМИ',
-    objectClose: [
-      {
-        name: '[data-modal]', // a backdrop selector that is called when the button is clicked
-        className: 'is-hidden', // the class that hides the backdrop
-      },
-    ],
-  });
-  const modalFormMarkupOrder = modalFormMarkupTempl();
-  const modalFormMarkup = modalFormMarkupOrder + objProductModalAddToCart.getMarkup();
-  const backdropMarkup = backdropMarkupTempl(modalFormMarkup);
+  // const objProductModalAddToCart = new ProductModalAddToCart({
+  //   productName: 'ЖАКЕТ-СМОКИНГ С ЛАЦКАНМИ',
+  //   objectClose: [
+  //     {
+  //       name: '[data-modal]', // a backdrop selector that is called when the button is clicked
+  //       className: 'is-hidden', // the class that hides the backdrop
+  //     },
+  //   ],
+  // });
+  // const modalFormMarkupOrder = modalFormMarkupTempl();
+  // const modalFormMarkup = modalFormMarkupOrder + objProductModalAddToCart.getMarkup();
+  // const backdropMarkup = backdropMarkupTempl(modalFormMarkup);
   const obj = {
     infoAboutProduct: createFullMarkup(),
     recomendationCategory: objRecomendationsCategory.getMarkup(),
     handSewn: objHandSewn.getMarkup(),
-    // backdrop: backdropMarkup,
-    // modalPreorder: preorderMark,
-    // tryOnModels: tryOnModels,
     mainModal: mainModal,
   };
-  // refs.mainEL.insertAdjacentHTML('beforeend', productMarkup(obj));
   refs.mainEL.innerHTML = productMarkup(obj);
   setProductSlider();
-  callProductPageFunctional(objProductModalAddToCart.show);
-  // document.querySelector('.form__button-сlose').style.display = 'none';
-  // document.querySelector('.ordering__form').style.display = 'none';
+  callProductPageFunctional();
   objRecomendationsCategory.setSlider();
   objRecomendationsCategory.setEvent();
   objHandSewn.setEvent();
-  objProductModalAddToCart.setEvent();
-  setEventPreorder();
-  setEventTryOnModels();
   blockHelpRender();
 }
 

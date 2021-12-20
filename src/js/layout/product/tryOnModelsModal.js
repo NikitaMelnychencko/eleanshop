@@ -17,7 +17,7 @@ export const tryOnModels = tryOnModelsModal({ orderForm });
 export function setEventTryOnModels() {
   const tryOnBackdrop = document.querySelector('.try-on__backdrop');
   const tryOnModalEl = document.querySelector('.try-on');
-  const buttonCloseModal = tryOnModalEl.querySelector('.try-on__close-button');
+  // const buttonCloseModal = tryOnModalEl.querySelector('.try-on__close-button');
   const orderFormEl = tryOnModalEl.querySelector('.order-form');
   const submitButton = tryOnModalEl.querySelector('.order-form__button');
   const sizeList = tryOnModalEl.querySelector('.sizes__list');
@@ -85,7 +85,7 @@ function onButtonSubmitClick(event) {
     const btnCloseRef = document.querySelector('.form__button-сlose');
     btnCloseRef.style.display = 'block';
     btnCloseRef.style.right = `${right}px`;
-    
+
     const backdrop = new Backdrop();
   }
 }

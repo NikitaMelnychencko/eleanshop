@@ -5,7 +5,8 @@ import sizeChose from '../../components/sizeChose';
 import { preorderMark, setEventPreorder } from '../../layout/product/preorderModal';
 import tryOnModelsModal from '../../../views/components/tryOnModelsModal.hbs';
 import sizeTable from '../../../views/components/sizeTable.hbs';
-
+import productModalAddToCart from '../../../views/partials/product/productModalAddToCart.hbs';
+import newProductModalAddToCart from './productModalAddToCart';
 const { createBtn, onSizeElClick } = sizeChose;
 
 let productInfoData;
@@ -253,10 +254,20 @@ function fixateDataFromLocalStorage() {
   checkIsProductInFavorites();
 }
 //!----------------------------------------------------FORM
+// renderModal(productModalAddToCart(), '');
+
 const onFormSubmit = buy => event => {
   event.preventDefault();
   setProductDataToOrdering();
-  buy(productInfoData.productName);
+  // buy(productInfoData.productName);
+
+  const objProductModalAddToCart = new newProductModalAddToCart({
+    productName: 'ЖАКЕТ-СМОКИНГ С ЛАЦКАНМИ',
+    objectClose: {
+      name: '[data-modal]', // a backdrop selector that is called when the button is clicked
+      className: 'is-hidden', // the class that hides the backdrop
+    },
+  });
 };
 
 //!----------------------------------------------------LISTENERS
