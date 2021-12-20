@@ -6,6 +6,7 @@ import modalAddToCartMark from '../../../views/partials/product/productModalAddT
 import { checkoutRender } from '../../call-list.js';
 import { scrollTo } from '../../components/scrollTo';
 import renderModal from '../../components/modal/modal';
+import { bodyUnfixPosition } from '../../components/scroll/scroll';
 export default class ProductModalAddToCart {
   constructor({ typeInsert = 'beforeEnd', productName, objectClose }) {
     this.typeInsert = typeInsert;
@@ -31,11 +32,11 @@ export default class ProductModalAddToCart {
     document.body.classList.remove('modal-open');
     this.backdropRef = document.querySelector(`${this.objectClose.name}`);
     this.backdropRef.classList.add('is-hidden');
+    bodyUnfixPosition();
   };
 
   _setCloseEvent = () => {
     this.buttonClose = document.querySelector('.js-close-product-modal');
-    console.log(this.buttonClose);
     this.buttonClose.addEventListener('click', this._onCloseModal);
   };
 
