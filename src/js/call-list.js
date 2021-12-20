@@ -12,7 +12,6 @@ const formBrand = {
 };
 import { VideoSetPlayer } from './components/videoSetPlayer.js';
 const videoSetPlayer = new VideoSetPlayer();
-
 //======home======//
 import home from '../views/layouts/home.hbs';
 import { pageHeroSliderMarkup, heroSlider } from './layout/home/hero.js';
@@ -252,7 +251,7 @@ export function productRender() {
   objRecomendationsCategory.setEvent();
   objHandSewn.setEvent();
   objProductModalAddToCart.setEvent();
-  // setEventPreorder();
+  setEventPreorder();
   setEventTryOnModels();
   blockHelpRender();
 }

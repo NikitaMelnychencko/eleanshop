@@ -8,7 +8,6 @@ import { bodyUnfixPosition } from '../../components/scroll/scroll';
 const { mainEL } = refs;
 // create content for Pre-order Modal which placed at Body (for example)
 export const preorderMark = preorderModal({ orderForm });
-console.log(preorderMark);
 //const
 
 //open modal
