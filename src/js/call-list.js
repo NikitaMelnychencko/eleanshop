@@ -86,7 +86,7 @@ export function checkoutRender() {
   const savedData = localStorage.getItem('orderingData');
   const parsedData = JSON.parse(savedData);
   const ordering = ordering_ordering(parsedData);
-  const createCheckout = payment_checkout({ createPayment, ordering,mainModal });
+  const createCheckout = payment_checkout({ createPayment, ordering, mainModal });
   refs.mainEL.innerHTML = createCheckout;
   //refs.mainEL.insertAdjacentHTML('beforeend', createCheckout);
 
@@ -246,13 +246,13 @@ export function productRender() {
   refs.mainEL.innerHTML = productMarkup(obj);
   setProductSlider();
   callProductPageFunctional(objProductModalAddToCart.show);
-  document.querySelector('.form__button-сlose').style.display = 'none';
+  // document.querySelector('.form__button-сlose').style.display = 'none';
   document.querySelector('.ordering__form').style.display = 'none';
   objRecomendationsCategory.setSlider();
   objRecomendationsCategory.setEvent();
   objHandSewn.setEvent();
   objProductModalAddToCart.setEvent();
-  setEventPreorder();
+  // setEventPreorder();
   setEventTryOnModels();
   blockHelpRender();
 }

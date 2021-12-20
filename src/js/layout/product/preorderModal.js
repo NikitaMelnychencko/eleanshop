@@ -3,11 +3,12 @@ import Backdrop from '../../components/backdrop';
 import preorderModal from '../../../views/components/preorderModal.hbs';
 import orderForm from '../../../views/components/orderForm.hbs';
 import refs from '../../refs/refs';
+import { bodyUnfixPosition } from '../../components/scroll/scroll';
 
 const { mainEL } = refs;
 // create content for Pre-order Modal which placed at Body (for example)
 export const preorderMark = preorderModal({ orderForm });
-
+console.log(preorderMark);
 //const
 
 //open modal
@@ -15,12 +16,13 @@ export const preorderMark = preorderModal({ orderForm });
 /* buttonOpenModal.addEventListener('click', onButtonOpenModalClick) */
 
 export function setEventPreorder() {
-  const buttonCloseModal = document.querySelector('.preoder__close-button');
+  // const buttonCloseModal = document.querySelector('.preoder__close-button');
   const preoderModal = document.querySelector('.preorder');
   const submitButton = preoderModal.querySelector('.order-form__button');
-  const sizeList = preoderModal.querySelector('.sizes__list');
 
-  buttonCloseModal.addEventListener('click', onButtonCloseModalClick);
+  console.log(buttonCloseModal);
+  const sizeList = preoderModal.querySelector('.sizes__list');
+  // buttonCloseModal.addEventListener('click', onButtonCloseModalClick);
   sizeList.addEventListener('click', onSizeListItemClick);
   submitButton.addEventListener('click', onButtonSubmitClick);
 }
@@ -39,6 +41,7 @@ function onButtonCloseModalClick(event) {
   /* buttonCloseModal.removeEventListener('click', onButtonCloseModalClick); */
   /* sizeList.removeEventListener('click', onSizeListItemClick); */
   /* submitButton.removeEventListener('click', onButtonSubmitClick); */
+  bodyUnfixPosition();
 }
 
 //on size-list label click, radio-input is checked
