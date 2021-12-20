@@ -50,12 +50,8 @@ function onSizeListItemClick(event) {
   if (event.target.nodeName !== 'LABEL') {
     return;
   }
-  console.log('it is label');
   const sizeInput = event.target.previousElementSibling;
-  console.log(sizeInput.value);
   sizeInput.click();
-
-  console.log(sizeInput.checked);
 }
 
 //on submit button click, set info into local storage
