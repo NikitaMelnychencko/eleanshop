@@ -5,18 +5,19 @@
             {{#each this}}
             <li class="favorites__data-item" id="{{id}}">
                 <div class="favorites__product">
-                <picture>
-                    <source srcset='{{image.srcset}}' media='(min-width: 1920px)' />
-                    <source srcset='{{image.srcset-mobile}}' media='(max-width: 414px)' />
-                    <img class='favorites__product--image' src='{{image.src}}' alt='{{image.alt}}' />
-                </picture>
-                <div class="favorites__product--info">
-                    <p class="favorites__product--info-text">{{name}}</p>
-                    <p class="favorites__product--info-text">Размер {{size}}</p>
-                    <p>{{price}} &#8372;</p>
+                    <picture>
+                        <source srcset='{{image.srcset}}' media='(min-width: 1920px)' />
+                        <source srcset='{{image.srcset-mobile}}' media='(max-width: 414px)' />
+                        <img class='favorites__product--image' src='{{image.src}}' alt='{{image.alt}}' />
+                    </picture>
+                    <div class="favorites__product--info">
+                        <p class="favorites__product--info-text">{{name}}</p>
+                        <p class="favorites__product--info-text">Размер {{size}}</p>
+                        <p>{{price}} &#8372;</p>
+                    </div>
                 </div>
-                </div>
-                <textarea class='favorites__description' name="{{id}}" cols="30" rows="10" maxlength="400" placeholder="ДОБАВИТЬ КОММЕНТАРИЙ">{{description}}</textarea>
+                <textarea class='favorites__description' name="{{id}}" cols="30" rows="10" maxlength="400"
+                    placeholder="ДОБАВИТЬ КОММЕНТАРИЙ">{{description}}</textarea>
                 <div class="favorites__button-group">
                     <button class='favorites__button-buy'>КУПИТЬ</button>
                     <button class='favorites__button-delete'>
@@ -34,8 +35,9 @@
             <p class="favorites__sand-on-email--title">ДЕЙСТВИЯ НАД ЛИСТОМ ПОЖЕЛАНИЙ</p__sand-on-email>
             <div class="favorites__sand-on-email">
                 <button class="favorites__sand-on-email--button">ОТПРАВИТЬ НА ПОЧТУ</button>
-                <p class="favorites__sand-on-email--text">Список товаров находящихся в “избронном”, будет отправлен на ваш электронный адрес, и вы в любой момент сможете получить
-                к нему доступ.</p>
+                <p class="favorites__sand-on-email--text">Список товаров находящихся в “избронном”, будет отправлен на
+                    ваш электронный адрес, и вы в любой момент сможете получить
+                    к нему доступ.</p>
             </div>
         </div>
     </div>
