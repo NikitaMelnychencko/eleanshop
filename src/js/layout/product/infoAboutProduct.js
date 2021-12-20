@@ -249,7 +249,12 @@ function fixateDataFromLocalStorage() {
   fixateCurrentClass(colorBtn, productColor);
   checkIsProductInFavorites();
 }
-
+//!----------------------------------------------------FORM
+const onFormSubmit = (buy) => (event) =>{
+    event.preventDefault()
+    setProductDataToOrdering();
+    buy(productInfoData.productName);
+}
 
 //!----------------------------------------------------LISTENERS
 function createAllListeners(buy) {
@@ -269,18 +274,7 @@ function createAllListeners(buy) {
   colorList.addEventListener('click', onColorListClick);
   charList.addEventListener('click', onCharListClick);
   sizeList.addEventListener('click', onSizeElClick);
-
-  form.addEventListener('submit', (event) => {
-    console.dir(form)
-    const sizeBtnLabel = document.querySelectorAll('.size-chose__label')
-    const sizeBtnInput = document.querySelectorAll('.size-chose__input')
-    const inputs = [...sizeBtnInput]
-    const labels = [...sizeBtnLabel]
-    
-      event.preventDefault()
-      setProductDataToOrdering();
-      buy(productInfoData.productName);
-    });
+  form.addEventListener('submit', onFormSubmit(buy));
 }
 
 //!----------------------------------------------------EXPORT TO MAIN FILE
