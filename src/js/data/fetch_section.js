@@ -1,71 +1,47 @@
 import { getSection } from './firebase_Servise.js';
+class FetchSection {
+  constructor({ firstParam, secondParam }) {
+    this._state = {};
+    this._getSection(firstParam, secondParam);
+  }
+  _getSection(firstParam, secondParam) {
+    if (firstParam && secondParam) {
+      const firstPromis = getSection(firstParam);
+      const secondPromis = getSection(secondParam);
+      Promise.all([firstPromis, secondPromis]).then(values => {
+        this._state.value = values;
+      });
+      return this._state;
+    } else {
+      getSection(firstParam).then(values => {
+        this._state.value = values;
+      });
+      return this._state;
+    }
+  }
+}
 
+//const test = new FetchSection({ firstParam: 'aboutBrand' });
+//console.log(test._state);
 //======home======//
-function sectionHome() {
-  const state = {};
-  const home = getSection('home');
-  const components = getSection('components'); // разбить на разные файлы
-  Promise.all([home, components]).then(values => {
-    state.value = values;
-  });
-  return state;
-}
-
+//const home = getSection('home');
+//const components = getSection('components'); // разбить на разные файлы
 //======catalog=========//
-function sectionСatalog() {
-  const state = {};
-  const category = getSection('category');
-  const products = getSection('products');
-  Promise.all([category, products]).then(values => {
-    state.value = values;
-  });
-  return state;
-}
+//const category = getSection('category');
+//const products = getSection('products');
 //=====product========//
-//????
+//переиспользованая относитеьно home
 //=====brand========//
-function sectionBrand() {
-  const state = {};
-  getSection('aboutBrand').then(values => {
-    state.value = values;
-  });
-  return state;
-}
+//getSection('aboutBrand').then(values => {
 //=====checkout========//
-function sectionCheckout() {
-  const state = {};
-  getSection('ordering').then(values => {
-    state.value = values;
-  });
-  return state;
-}
+//getSection('ordering').then(values => {
 //=====contact========//
-function sectionContact() {
-  const state = {};
-  getSection('contact').then(values => {
-    state.value = values;
-  });
-  return state;
-}
+//getSection('contact').then(values => {
 //=====delivery========//
-function sectionDelivery() {
-  const state = {};
-  getSection('delivery/questionsAnswers').then(values => {
-    state.value = values;
-  });
-  return state;
-}
+//getSection('delivery/questionsAnswers').then(values => {
 //=====fitting========//
-function sectionFitting() {
-  const state = {};
-  getSection('components/videoFitting').then(values => {
-    state.value = values;
-  });
-  return state;
-}
-
+//переиспользованая относитеьно home
 //=====reviews========//
 //переиспользованая относитеьно home
-
 //=====showroom========//
 //переиспользованая относитеьно home
