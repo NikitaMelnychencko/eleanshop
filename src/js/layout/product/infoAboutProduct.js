@@ -7,7 +7,7 @@ import {onBtnClick} from '../../components/sizeTable'
 
 
 
-let productInfoData = JSON.parse(localStorage.getItem('productInfoData'));
+let productInfoData
 //! ---------------------------------------------------RENDERING A SECTION
 
 export function createFullMarkup() {

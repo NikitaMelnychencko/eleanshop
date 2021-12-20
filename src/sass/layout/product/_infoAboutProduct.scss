@@ -49,7 +49,6 @@
 
   @media screen and (min-width: $desktop-up) {
     color: $secondary-title-black-color;
-    margin-bottom: 24px;
   }
 }
 
@@ -260,6 +259,22 @@
   }
 }
 
+.button__item-buy {
+  margin-bottom: 20px;
+}
+
+.button__item-fit {
+  margin-bottom: 8px;
+  @media screen and (min-width: $mobile-general) {
+    margin-right: 8px;
+  }
+
+  @media screen and (min-width: $tablet-general) {
+    margin-right: 9px;
+    margin-bottom: 0;
+  }
+}
+
 .button__purchase {
   @extend %button;
 
@@ -289,8 +304,6 @@
 }
 
 .button__purchase--buy {
-  margin-bottom: 20px;
-
   background: $button-background-black-color;
   color: $accent-btn-color;
 }
@@ -307,19 +320,12 @@
 }
 
 .button__purchase--fit {
-  margin-bottom: 8px;
-
   @media screen and (min-width: $mobile-general) {
     width: 136px;
-    margin-right: 8px;
   }
 
   @media screen and (min-width: $tablet-general) {
     width: 144px;
-  }
-
-  @media screen and (min-width: $tablet-general) {
-    margin-right: 9px;
   }
 }
 
@@ -439,7 +445,7 @@
   display: none;
   grid-template-columns: repeat(2, 1fr);
   width: 100%;
-  padding-top: 15px;
+  margin-top: 15px;
   overflow: auto;
   opacity: 0;
   visibility: hidden;
@@ -480,7 +486,7 @@
 
 .aditional__grid {
   display: none;
-  padding-top: 15px;
+  margin-top: 15px;
 }
 
 .aditional__grid.is-open {
