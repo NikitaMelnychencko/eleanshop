@@ -1,28 +1,41 @@
 //!----------------------------------------------- -----Product sliders/
 window.jQuery = window.$ = require('jquery');
-require('../../slick/slick.min');
+require('../../slider/slick.min.js');
 
-$(document).ready(function () {
-  $('.product-slider-smaller').slick({
-    arrows: false,
-    speed: 500,
-    vertical: true,
-    verticalSwiping: true,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    lazyLoad: 'progressive',
-    asNavFor: '.product-slider',
-    centerMode: true,
-    focusOnSelect: true,
-    centerPadding: '0px',
+export function setProductSlider() {
+  $(document).ready(function () {
+    $('.product-slider-smaller').slick({
+      arrows: false,
+      speed: 0,
+      vertical: true,
+      verticalSwiping: true,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      lazyLoad: 'progressive',
+      asNavFor: '.product-slider',
+      centerMode: true,
+      focusOnSelect: true,
+      centerPadding: '0px',
+    });
+    $('.product-slider').slick({
+      arrows: false,
+      dots: true,
+      fade: true,
+      speed: 0,
+      slidesToShow: 1,
+      lazyLoad: 'progressive',
+      asNavFor: '.product-slider-smaller',
+      zIndex: 1,
+      swipe: false,
+      responsive: [
+        {
+          breakpoint: 1378,
+          settings: {
+            swipe: true,
+            speed: 300,
+          }
+        },
+      ]
+    });
   });
-  $('.product-slider').slick({
-    arrows: false,
-    dots: true,
-    fade: true,
-    speed: 500,
-    slidesToShow: 1,
-    lazyLoad: 'progressive',
-    asNavFor: '.product-slider-smaller',
-  });
-});
+}

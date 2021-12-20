@@ -1,5 +1,5 @@
 const $ = require('jquery');
-require('../../slick/slick.min.js');
+require('../../slider/slick.min.js');
 
 import RecomendationsCategory from './recomendationsCategory.js';
 import modalAddToCartMark from '../../../views/partials/product/productModalAddToCart.hbs';
@@ -16,7 +16,6 @@ export default class ProductModalAddToCart {
       this.root = document.querySelector(root);
       this._addMarkup();
       this.self = document.querySelector('.product-modal-add-cart');
-      this.setSlider();
     }
   }
 
@@ -36,22 +35,6 @@ export default class ProductModalAddToCart {
 
   getMarkup = () => {
     return this._createMarkup();
-  };
-
-  setSlider = () => {
-    if (window.innerWidth <= 720) {
-      this._addSlider();
-    }
-  };
-
-  _addSlider = () => {
-    $('.product-modal-add-cart .slider').slick({
-      arrows: false,
-      dots: this.buttonPagination,
-      infinite: true,
-      slidesToShow: 2.5,
-      focusOnSelect: true,
-    });
   };
 
   _onCloseModal = () => {

@@ -1,5 +1,4 @@
 import sizeChose from '../components/sizeChose.js';
-import size from '../json/sizeChose.json';
 
 const {createMarkup, sizeListener, createBtn} = sizeChose;
 

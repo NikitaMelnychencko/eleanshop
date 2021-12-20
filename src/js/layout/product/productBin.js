@@ -1,11 +1,10 @@
 import markupBin from '../../../views/partials/product/productBin.hbs';
-import dataBin from '../../json/orderinginsertion.json';
 import { checkoutRender } from '../../call-list.js';
 import { scrollTo } from '../../components/scrollTo';
 
 export default class ProductBin {
-  constructor({ root, typeInsert, data = dataBin }) {
-    this.dataBin = data;
+  constructor({ root, typeInsert, data}) {
+    this.data = data;
     this._getData();
     if (root) {
       this.root = document.querySelector(root);
@@ -22,7 +21,11 @@ export default class ProductBin {
     if (dataLS) {
       this.data = JSON.parse(dataLS);
     } else {
-      this.data = this.dataBin;
+      this.data = [];
+    }
+    if(this.data.length === 0) {
+      localStorage.setItem('orderingData', JSON.stringify(this.data))
+      return
     }
     this.data.forEach(el => {
       const arr = String(el.label.price).split('');
