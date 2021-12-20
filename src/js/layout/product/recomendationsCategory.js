@@ -185,7 +185,6 @@ export default class RecomendationsCategory {
   _cardToProduct = e => {
     if (e.target.nodeName !== 'use' && e.target.nodeName !== 'svg') {
       let id = '';
-      console.dir(e.target);
       if (!e.target.getAttribute('product-id')) {
         let el = e.target.parentElement;
         while (!id && el) {
@@ -199,9 +198,7 @@ export default class RecomendationsCategory {
         id = e.currentTarget.getAttribute('product-id');
       }
       cards.forEach(el => {
-        console.log(id);
         if (el.id === id) {
-          console.log(JSON.stringify(el));
           localStorage.setItem('productInfoData', JSON.stringify(el));
         }
       });
