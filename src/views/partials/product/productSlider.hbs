@@ -1,11 +1,9 @@
 <div class="product-slider-smaller__wrapper">
   <ul class="product-slider-smaller">
-    {{#each image}}
+    {{#each []}}
     <li class="product-slider-smaller__item">
       <picture>
-        <source srcset="
-                  {{imageDesctopMini}} 1x,
-                  {{imageDesctopMiniHigherResolution}} 2x," media="(min-width: 1378px)">
+        <source srcset="{{imageDesctopMini}} 1x, {{imageDesctopMiniHigherResolution}} 2x," media="(min-width: 1378px)">
         <img class="product-slider-smaller__image" src="{{imageDesctopMini}}" alt="{{imageDescriprion}}">
       </picture>
     </li>
@@ -15,7 +13,7 @@
 
 <div class="product-slider__wrapper">
   <ul class="product-slider">
-    {{#each image}}
+    {{#each []}}
     <li class="product-slider__item">
       <picture>
         <source srcset="{{imageMobile}} 1x, {{imageMobileHigherResolution}} 2x," media="(min-width: 1378px)" width="700" height="1221">

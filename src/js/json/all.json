@@ -256,25 +256,25 @@
         {
           "colorId": "bl1",
           "aviableSize": ["42", "44", "50"],
-          "colorName": "Чёрный",
+          "colorName": "black",
           "colorHex": "#000000"
         },
         {
           "colorId": "r1",
           "aviableSize": [],
-          "colorName": "Красный",
+          "colorName": "red",
           "colorHex": "#F2404A"
         },
         {
           "colorId": "g1",
           "aviableSize": ["40", "42", "44", "46", "48", "50"],
-          "colorName": "Белый",
+          "colorName": "white",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
           "aviableSize": ["46", "48"],
-          "colorName": "Синий",
+          "colorName": "blue",
           "colorHex": "#38548A"
         }
       ],
@@ -350,25 +350,25 @@
         {
           "colorId": "bl1",
           "aviableSize": ["42", "44", "50"],
-          "colorName": "Чёрный",
+          "colorName": "black",
           "colorHex": "#000000"
         },
         {
           "colorId": "r1",
           "aviableSize": [],
-          "colorName": "Красный",
+          "colorName": "red",
           "colorHex": "#F2404A"
         },
         {
           "colorId": "g1",
           "aviableSize": ["40", "42", "44", "46", "48", "50"],
-          "colorName": "Белый",
+          "colorName": "white",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
           "aviableSize": ["46", "48"],
-          "colorName": "Синий",
+          "colorName": "blue",
           "colorHex": "#38548A"
         }
       ],
@@ -444,25 +444,25 @@
         {
           "colorId": "bl1",
           "aviableSize": ["42", "44", "50"],
-          "colorName": "Чёрный",
+          "colorName": "black",
           "colorHex": "#000000"
         },
         {
           "colorId": "r1",
           "aviableSize": [],
-          "colorName": "Красный",
+          "colorName": "red",
           "colorHex": "#F2404A"
         },
         {
           "colorId": "g1",
           "aviableSize": ["40", "42", "44", "46", "48", "50"],
-          "colorName": "Белый",
+          "colorName": "white",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
           "aviableSize": ["46", "48"],
-          "colorName": "Синий",
+          "colorName": "blue",
           "colorHex": "#38548A"
         }
       ],
@@ -538,25 +538,25 @@
         {
           "colorId": "bl1",
           "aviableSize": ["42", "44", "50"],
-          "colorName": "Чёрный",
+          "colorName": "black",
           "colorHex": "#000000"
         },
         {
           "colorId": "r1",
           "aviableSize": [],
-          "colorName": "Красный",
+          "colorName": "red",
           "colorHex": "#F2404A"
         },
         {
           "colorId": "g1",
           "aviableSize": ["40", "42", "44", "46", "48", "50"],
-          "colorName": "Белый",
+          "colorName": "white",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
           "aviableSize": ["46", "48"],
-          "colorName": "Синий",
+          "colorName": "blue",
           "colorHex": "#38548A"
         }
       ],
@@ -632,25 +632,25 @@
         {
           "colorId": "bl1",
           "aviableSize": ["42", "44", "50"],
-          "colorName": "Чёрный",
+          "colorName": "black",
           "colorHex": "#000000"
         },
         {
           "colorId": "r1",
           "aviableSize": [],
-          "colorName": "Красный",
+          "colorName": "red",
           "colorHex": "#F2404A"
         },
         {
           "colorId": "g1",
           "aviableSize": ["40", "42", "44", "46", "48", "50"],
-          "colorName": "Белый",
+          "colorName": "white",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
           "aviableSize": ["46", "48"],
-          "colorName": "Синий",
+          "colorName": "blue",
           "colorHex": "#38548A"
         }
       ],
@@ -726,25 +726,25 @@
         {
           "colorId": "bl1",
           "aviableSize": ["42", "44", "50"],
-          "colorName": "Чёрный",
+          "colorName": "black",
           "colorHex": "#000000"
         },
         {
           "colorId": "r1",
           "aviableSize": [],
-          "colorName": "Красный",
+          "colorName": "red",
           "colorHex": "#F2404A"
         },
         {
           "colorId": "g1",
           "aviableSize": ["40", "42", "44", "46", "48", "50"],
-          "colorName": "Белый",
+          "colorName": "white",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
           "aviableSize": ["46", "48"],
-          "colorName": "Синий",
+          "colorName": "blue",
           "colorHex": "#38548A"
         }
       ],
@@ -820,25 +820,25 @@
         {
           "colorId": "bl1",
           "aviableSize": ["42", "44", "50"],
-          "colorName": "Чёрный",
+          "colorName": "black",
           "colorHex": "#000000"
         },
         {
           "colorId": "r1",
           "aviableSize": [],
-          "colorName": "Красный",
+          "colorName": "red",
           "colorHex": "#F2404A"
         },
         {
           "colorId": "g1",
           "aviableSize": ["40", "42", "44", "46", "48", "50"],
-          "colorName": "Белый",
+          "colorName": "white",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
           "aviableSize": ["46", "48"],
-          "colorName": "Синий",
+          "colorName": "blue",
           "colorHex": "#38548A"
         }
       ],
@@ -914,25 +914,25 @@
         {
           "colorId": "bl1",
           "aviableSize": ["42", "44", "50"],
-          "colorName": "Чёрный",
+          "colorName": "black",
           "colorHex": "#000000"
         },
         {
           "colorId": "r1",
           "aviableSize": [],
-          "colorName": "Красный",
+          "colorName": "red",
           "colorHex": "#F2404A"
         },
         {
           "colorId": "g1",
           "aviableSize": ["40", "42", "44", "46", "48", "50"],
-          "colorName": "Белый",
+          "colorName": "white",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
           "aviableSize": ["46", "48"],
-          "colorName": "Синий",
+          "colorName": "blue",
           "colorHex": "#38548A"
         }
       ],
@@ -1008,25 +1008,25 @@
         {
           "colorId": "bl1",
           "aviableSize": ["42", "44", "50"],
-          "colorName": "Чёрный",
+          "colorName": "black",
           "colorHex": "#000000"
         },
         {
           "colorId": "r1",
           "aviableSize": [],
-          "colorName": "Красный",
+          "colorName": "red",
           "colorHex": "#F2404A"
         },
         {
           "colorId": "g1",
           "aviableSize": ["40", "42", "44", "46", "48", "50"],
-          "colorName": "Белый",
+          "colorName": "white",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
           "aviableSize": ["46", "48"],
-          "colorName": "Синий",
+          "colorName": "blue",
           "colorHex": "#38548A"
         }
       ],
@@ -1102,25 +1102,25 @@
         {
           "colorId": "bl1",
           "aviableSize": ["42", "44", "50"],
-          "colorName": "Чёрный",
+          "colorName": "black",
           "colorHex": "#000000"
         },
         {
           "colorId": "r1",
           "aviableSize": [],
-          "colorName": "Красный",
+          "colorName": "red",
           "colorHex": "#F2404A"
         },
         {
           "colorId": "g1",
           "aviableSize": ["40", "42", "44", "46", "48", "50"],
-          "colorName": "Белый",
+          "colorName": "white",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
           "aviableSize": ["46", "48"],
-          "colorName": "Синий",
+          "colorName": "blue",
           "colorHex": "#38548A"
         }
       ],
@@ -1196,25 +1196,25 @@
         {
           "colorId": "bl1",
           "aviableSize": ["42", "44", "50"],
-          "colorName": "Чёрный",
+          "colorName": "black",
           "colorHex": "#000000"
         },
         {
           "colorId": "r1",
           "aviableSize": [],
-          "colorName": "Красный",
+          "colorName": "red",
           "colorHex": "#F2404A"
         },
         {
           "colorId": "g1",
           "aviableSize": ["40", "42", "44", "46", "48", "50"],
-          "colorName": "Белый",
+          "colorName": "white",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
           "aviableSize": ["46", "48"],
-          "colorName": "Синий",
+          "colorName": "blue",
           "colorHex": "#38548A"
         }
       ],
@@ -1290,25 +1290,25 @@
         {
           "colorId": "bl1",
           "aviableSize": ["42", "44", "50"],
-          "colorName": "Чёрный",
+          "colorName": "black",
           "colorHex": "#000000"
         },
         {
           "colorId": "r1",
           "aviableSize": [],
-          "colorName": "Красный",
+          "colorName": "red",
           "colorHex": "#F2404A"
         },
         {
           "colorId": "g1",
           "aviableSize": ["40", "42", "44", "46", "48", "50"],
-          "colorName": "Белый",
+          "colorName": "white",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
           "aviableSize": ["46", "48"],
-          "colorName": "Синий",
+          "colorName": "blue",
           "colorHex": "#38548A"
         }
       ],
@@ -1384,25 +1384,25 @@
         {
           "colorId": "bl1",
           "aviableSize": ["42", "44", "50"],
-          "colorName": "Чёрный",
+          "colorName": "black",
           "colorHex": "#000000"
         },
         {
           "colorId": "r1",
           "aviableSize": [],
-          "colorName": "Красный",
+          "colorName": "red",
           "colorHex": "#F2404A"
         },
         {
           "colorId": "g1",
           "aviableSize": ["40", "42", "44", "46", "48", "50"],
-          "colorName": "Белый",
+          "colorName": "white",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
           "aviableSize": ["46", "48"],
-          "colorName": "Синий",
+          "colorName": "blue",
           "colorHex": "#38548A"
         }
       ],
@@ -1478,25 +1478,25 @@
         {
           "colorId": "bl1",
           "aviableSize": ["42", "44", "50"],
-          "colorName": "Чёрный",
+          "colorName": "black",
           "colorHex": "#000000"
         },
         {
           "colorId": "r1",
           "aviableSize": [],
-          "colorName": "Красный",
+          "colorName": "red",
           "colorHex": "#F2404A"
         },
         {
           "colorId": "g1",
           "aviableSize": ["40", "42", "44", "46", "48", "50"],
-          "colorName": "Белый",
+          "colorName": "white",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
           "aviableSize": ["46", "48"],
-          "colorName": "Синий",
+          "colorName": "blue",
           "colorHex": "#38548A"
         }
       ],
@@ -1572,25 +1572,25 @@
         {
           "colorId": "bl1",
           "aviableSize": ["42", "44", "50"],
-          "colorName": "Чёрный",
+          "colorName": "black",
           "colorHex": "#000000"
         },
         {
           "colorId": "r1",
           "aviableSize": [],
-          "colorName": "Красный",
+          "colorName": "red",
           "colorHex": "#F2404A"
         },
         {
           "colorId": "g1",
           "aviableSize": ["40", "42", "44", "46", "48", "50"],
-          "colorName": "Белый",
+          "colorName": "white",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
           "aviableSize": ["46", "48"],
-          "colorName": "Синий",
+          "colorName": "blue",
           "colorHex": "#38548A"
         }
       ],
@@ -1666,25 +1666,25 @@
         {
           "colorId": "bl1",
           "aviableSize": ["42", "44", "50"],
-          "colorName": "Чёрный",
+          "colorName": "black",
           "colorHex": "#000000"
         },
         {
           "colorId": "r1",
           "aviableSize": [],
-          "colorName": "Красный",
+          "colorName": "red",
           "colorHex": "#F2404A"
         },
         {
           "colorId": "g1",
           "aviableSize": ["40", "42", "44", "46", "48", "50"],
-          "colorName": "Белый",
+          "colorName": "white",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
           "aviableSize": ["46", "48"],
-          "colorName": "Синий",
+          "colorName": "blue",
           "colorHex": "#38548A"
         }
       ],
@@ -1760,25 +1760,25 @@
         {
           "colorId": "bl1",
           "aviableSize": ["42", "44", "50"],
-          "colorName": "Чёрный",
+          "colorName": "black",
           "colorHex": "#000000"
         },
         {
           "colorId": "r1",
           "aviableSize": [],
-          "colorName": "Красный",
+          "colorName": "red",
           "colorHex": "#F2404A"
         },
         {
           "colorId": "g1",
           "aviableSize": ["40", "42", "44", "46", "48", "50"],
-          "colorName": "Белый",
+          "colorName": "white",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
           "aviableSize": ["46", "48"],
-          "colorName": "Синий",
+          "colorName": "blue",
           "colorHex": "#38548A"
         }
       ],
@@ -1854,25 +1854,25 @@
         {
           "colorId": "bl1",
           "aviableSize": ["42", "44", "50"],
-          "colorName": "Чёрный",
+          "colorName": "black",
           "colorHex": "#000000"
         },
         {
           "colorId": "r1",
           "aviableSize": [],
-          "colorName": "Красный",
+          "colorName": "red",
           "colorHex": "#F2404A"
         },
         {
           "colorId": "g1",
           "aviableSize": ["40", "42", "44", "46", "48", "50"],
-          "colorName": "Белый",
+          "colorName": "white",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
           "aviableSize": ["46", "48"],
-          "colorName": "Синий",
+          "colorName": "blue",
           "colorHex": "#38548A"
         }
       ],
@@ -1948,25 +1948,25 @@
         {
           "colorId": "bl1",
           "aviableSize": ["42", "44", "50"],
-          "colorName": "Чёрный",
+          "colorName": "black",
           "colorHex": "#000000"
         },
         {
           "colorId": "r1",
           "aviableSize": [],
-          "colorName": "Красный",
+          "colorName": "red",
           "colorHex": "#F2404A"
         },
         {
           "colorId": "g1",
           "aviableSize": ["40", "42", "44", "46", "48", "50"],
-          "colorName": "Белый",
+          "colorName": "white",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
           "aviableSize": ["46", "48"],
-          "colorName": "Синий",
+          "colorName": "blue",
           "colorHex": "#38548A"
         }
       ],
@@ -2042,25 +2042,25 @@
         {
           "colorId": "bl1",
           "aviableSize": ["42", "44", "50"],
-          "colorName": "Чёрный",
+          "colorName": "black",
           "colorHex": "#000000"
         },
         {
           "colorId": "r1",
           "aviableSize": [],
-          "colorName": "Красный",
+          "colorName": "red",
           "colorHex": "#F2404A"
         },
         {
           "colorId": "g1",
           "aviableSize": ["40", "42", "44", "46", "48", "50"],
-          "colorName": "Белый",
+          "colorName": "white",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
           "aviableSize": ["46", "48"],
-          "colorName": "Синий",
+          "colorName": "blue",
           "colorHex": "#38548A"
         }
       ],
@@ -2136,25 +2136,25 @@
         {
           "colorId": "bl1",
           "aviableSize": ["42", "44", "50"],
-          "colorName": "Чёрный",
+          "colorName": "black",
           "colorHex": "#000000"
         },
         {
           "colorId": "r1",
           "aviableSize": [],
-          "colorName": "Красный",
+          "colorName": "red",
           "colorHex": "#F2404A"
         },
         {
           "colorId": "g1",
           "aviableSize": ["40", "42", "44", "46", "48", "50"],
-          "colorName": "Белый",
+          "colorName": "white",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
           "aviableSize": ["46", "48"],
-          "colorName": "Синий",
+          "colorName": "blue",
           "colorHex": "#38548A"
         }
       ],
@@ -2230,25 +2230,25 @@
         {
           "colorId": "bl1",
           "aviableSize": ["42", "44", "50"],
-          "colorName": "Чёрный",
+          "colorName": "black",
           "colorHex": "#000000"
         },
         {
           "colorId": "r1",
           "aviableSize": [],
-          "colorName": "Красный",
+          "colorName": "red",
           "colorHex": "#F2404A"
         },
         {
           "colorId": "g1",
           "aviableSize": ["40", "42", "44", "46", "48", "50"],
-          "colorName": "Белый",
+          "colorName": "white",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
           "aviableSize": ["46", "48"],
-          "colorName": "Синий",
+          "colorName": "blue",
           "colorHex": "#38548A"
         }
       ],
@@ -2324,25 +2324,25 @@
         {
           "colorId": "bl1",
           "aviableSize": ["42", "44", "50"],
-          "colorName": "Чёрный",
+          "colorName": "black",
           "colorHex": "#000000"
         },
         {
           "colorId": "r1",
           "aviableSize": [],
-          "colorName": "Красный",
+          "colorName": "red",
           "colorHex": "#F2404A"
         },
         {
           "colorId": "g1",
           "aviableSize": ["40", "42", "44", "46", "48", "50"],
-          "colorName": "Белый",
+          "colorName": "white",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
           "aviableSize": ["46", "48"],
-          "colorName": "Синий",
+          "colorName": "blue",
           "colorHex": "#38548A"
         }
       ],
@@ -2418,25 +2418,25 @@
         {
           "colorId": "bl1",
           "aviableSize": ["42", "44", "50"],
-          "colorName": "Чёрный",
+          "colorName": "black",
           "colorHex": "#000000"
         },
         {
           "colorId": "r1",
           "aviableSize": [],
-          "colorName": "Красный",
+          "colorName": "red",
           "colorHex": "#F2404A"
         },
         {
           "colorId": "g1",
           "aviableSize": ["40", "42", "44", "46", "48", "50"],
-          "colorName": "Белый",
+          "colorName": "white",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
           "aviableSize": ["46", "48"],
-          "colorName": "Синий",
+          "colorName": "blue",
           "colorHex": "#38548A"
         }
       ],
@@ -2512,25 +2512,25 @@
         {
           "colorId": "bl1",
           "aviableSize": ["42", "44", "50"],
-          "colorName": "Чёрный",
+          "colorName": "black",
           "colorHex": "#000000"
         },
         {
           "colorId": "r1",
           "aviableSize": [],
-          "colorName": "Красный",
+          "colorName": "red",
           "colorHex": "#F2404A"
         },
         {
           "colorId": "g1",
           "aviableSize": ["40", "42", "44", "46", "48", "50"],
-          "colorName": "Белый",
+          "colorName": "white",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
           "aviableSize": ["46", "48"],
-          "colorName": "Синий",
+          "colorName": "blue",
           "colorHex": "#38548A"
         }
       ],
@@ -2606,25 +2606,25 @@
         {
           "colorId": "bl1",
           "aviableSize": ["42", "44", "50"],
-          "colorName": "Чёрный",
+          "colorName": "black",
           "colorHex": "#000000"
         },
         {
           "colorId": "r1",
           "aviableSize": [],
-          "colorName": "Красный",
+          "colorName": "red",
           "colorHex": "#F2404A"
         },
         {
           "colorId": "g1",
           "aviableSize": ["40", "42", "44", "46", "48", "50"],
-          "colorName": "Белый",
+          "colorName": "white",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
           "aviableSize": ["46", "48"],
-          "colorName": "Синий",
+          "colorName": "blue",
           "colorHex": "#38548A"
         }
       ],
@@ -2700,25 +2700,25 @@
         {
           "colorId": "bl1",
           "aviableSize": ["42", "44", "50"],
-          "colorName": "Чёрный",
+          "colorName": "black",
           "colorHex": "#000000"
         },
         {
           "colorId": "r1",
           "aviableSize": [],
-          "colorName": "Красный",
+          "colorName": "red",
           "colorHex": "#F2404A"
         },
         {
           "colorId": "g1",
           "aviableSize": ["40", "42", "44", "46", "48", "50"],
-          "colorName": "Белый",
+          "colorName": "white",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
           "aviableSize": ["46", "48"],
-          "colorName": "Синий",
+          "colorName": "blue",
           "colorHex": "#38548A"
         }
       ],
@@ -2794,25 +2794,25 @@
         {
           "colorId": "bl1",
           "aviableSize": ["42", "44", "50"],
-          "colorName": "Чёрный",
+          "colorName": "black",
           "colorHex": "#000000"
         },
         {
           "colorId": "r1",
           "aviableSize": [],
-          "colorName": "Красный",
+          "colorName": "red",
           "colorHex": "#F2404A"
         },
         {
           "colorId": "g1",
           "aviableSize": ["40", "42", "44", "46", "48", "50"],
-          "colorName": "Белый",
+          "colorName": "white",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
           "aviableSize": ["46", "48"],
-          "colorName": "Синий",
+          "colorName": "blue",
           "colorHex": "#38548A"
         }
       ],
@@ -2888,25 +2888,25 @@
         {
           "colorId": "bl1",
           "aviableSize": ["42", "44", "50"],
-          "colorName": "Чёрный",
+          "colorName": "black",
           "colorHex": "#000000"
         },
         {
           "colorId": "r1",
           "aviableSize": [],
-          "colorName": "Красный",
+          "colorName": "red",
           "colorHex": "#F2404A"
         },
         {
           "colorId": "g1",
           "aviableSize": ["40", "42", "44", "46", "48", "50"],
-          "colorName": "Белый",
+          "colorName": "white",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
           "aviableSize": ["46", "48"],
-          "colorName": "Синий",
+          "colorName": "blue",
           "colorHex": "#38548A"
         }
       ],
@@ -2982,25 +2982,25 @@
         {
           "colorId": "bl1",
           "aviableSize": ["42", "44", "50"],
-          "colorName": "Чёрный",
+          "colorName": "black",
           "colorHex": "#000000"
         },
         {
           "colorId": "r1",
           "aviableSize": [],
-          "colorName": "Красный",
+          "colorName": "red",
           "colorHex": "#F2404A"
         },
         {
           "colorId": "g1",
           "aviableSize": ["40", "42", "44", "46", "48", "50"],
-          "colorName": "Белый",
+          "colorName": "white",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
           "aviableSize": ["46", "48"],
-          "colorName": "Синий",
+          "colorName": "blue",
           "colorHex": "#38548A"
         }
       ],
@@ -3076,25 +3076,25 @@
         {
           "colorId": "bl1",
           "aviableSize": ["42", "44", "50"],
-          "colorName": "Чёрный",
+          "colorName": "black",
           "colorHex": "#000000"
         },
         {
           "colorId": "r1",
           "aviableSize": [],
-          "colorName": "Красный",
+          "colorName": "red",
           "colorHex": "#F2404A"
         },
         {
           "colorId": "g1",
           "aviableSize": ["40", "42", "44", "46", "48", "50"],
-          "colorName": "Белый",
+          "colorName": "white",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
           "aviableSize": ["46", "48"],
-          "colorName": "Синий",
+          "colorName": "blue",
           "colorHex": "#38548A"
         }
       ],
@@ -3170,25 +3170,25 @@
         {
           "colorId": "bl1",
           "aviableSize": ["42", "44", "50"],
-          "colorName": "Чёрный",
+          "colorName": "black",
           "colorHex": "#000000"
         },
         {
           "colorId": "r1",
           "aviableSize": [],
-          "colorName": "Красный",
+          "colorName": "red",
           "colorHex": "#F2404A"
         },
         {
           "colorId": "g1",
           "aviableSize": ["40", "42", "44", "46", "48", "50"],
-          "colorName": "Белый",
+          "colorName": "white",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
           "aviableSize": ["46", "48"],
-          "colorName": "Синий",
+          "colorName": "blue",
           "colorHex": "#38548A"
         }
       ],
@@ -3264,25 +3264,25 @@
         {
           "colorId": "bl1",
           "aviableSize": ["42", "44", "50"],
-          "colorName": "Чёрный",
+          "colorName": "black",
           "colorHex": "#000000"
         },
         {
           "colorId": "r1",
           "aviableSize": [],
-          "colorName": "Красный",
+          "colorName": "red",
           "colorHex": "#F2404A"
         },
         {
           "colorId": "g1",
           "aviableSize": ["40", "42", "44", "46", "48", "50"],
-          "colorName": "Белый",
+          "colorName": "white",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
           "aviableSize": ["46", "48"],
-          "colorName": "Синий",
+          "colorName": "blue",
           "colorHex": "#38548A"
         }
       ],
@@ -3358,25 +3358,25 @@
         {
           "colorId": "bl1",
           "aviableSize": ["42", "44", "50"],
-          "colorName": "Чёрный",
+          "colorName": "black",
           "colorHex": "#000000"
         },
         {
           "colorId": "r1",
           "aviableSize": [],
-          "colorName": "Красный",
+          "colorName": "red",
           "colorHex": "#F2404A"
         },
         {
           "colorId": "g1",
           "aviableSize": ["40", "42", "44", "46", "48", "50"],
-          "colorName": "Белый",
+          "colorName": "white",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
           "aviableSize": ["46", "48"],
-          "colorName": "Синий",
+          "colorName": "blue",
           "colorHex": "#38548A"
         }
       ],
@@ -3452,25 +3452,25 @@
         {
           "colorId": "bl1",
           "aviableSize": ["42", "44", "50"],
-          "colorName": "Чёрный",
+          "colorName": "black",
           "colorHex": "#000000"
         },
         {
           "colorId": "r1",
           "aviableSize": [],
-          "colorName": "Красный",
+          "colorName": "red",
           "colorHex": "#F2404A"
         },
         {
           "colorId": "g1",
           "aviableSize": ["40", "42", "44", "46", "48", "50"],
-          "colorName": "Белый",
+          "colorName": "white",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
           "aviableSize": ["46", "48"],
-          "colorName": "Синий",
+          "colorName": "blue",
           "colorHex": "#38548A"
         }
       ],
@@ -3546,25 +3546,25 @@
         {
           "colorId": "bl1",
           "aviableSize": ["42", "44", "50"],
-          "colorName": "Чёрный",
+          "colorName": "black",
           "colorHex": "#000000"
         },
         {
           "colorId": "r1",
           "aviableSize": [],
-          "colorName": "Красный",
+          "colorName": "red",
           "colorHex": "#F2404A"
         },
         {
           "colorId": "g1",
           "aviableSize": ["40", "42", "44", "46", "48", "50"],
-          "colorName": "Белый",
+          "colorName": "white",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
           "aviableSize": ["46", "48"],
-          "colorName": "Синий",
+          "colorName": "blue",
           "colorHex": "#38548A"
         }
       ],
@@ -3640,25 +3640,25 @@
         {
           "colorId": "bl1",
           "aviableSize": ["42", "44", "50"],
-          "colorName": "Чёрный",
+          "colorName": "black",
           "colorHex": "#000000"
         },
         {
           "colorId": "r1",
           "aviableSize": [],
-          "colorName": "Красный",
+          "colorName": "red",
           "colorHex": "#F2404A"
         },
         {
           "colorId": "g1",
           "aviableSize": ["40", "42", "44", "46", "48", "50"],
-          "colorName": "Белый",
+          "colorName": "white",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
           "aviableSize": ["46", "48"],
-          "colorName": "Синий",
+          "colorName": "blue",
           "colorHex": "#38548A"
         }
       ],
@@ -3734,25 +3734,25 @@
         {
           "colorId": "bl1",
           "aviableSize": ["42", "44", "50"],
-          "colorName": "Чёрный",
+          "colorName": "black",
           "colorHex": "#000000"
         },
         {
           "colorId": "r1",
           "aviableSize": [],
-          "colorName": "Красный",
+          "colorName": "red",
           "colorHex": "#F2404A"
         },
         {
           "colorId": "g1",
           "aviableSize": ["40", "42", "44", "46", "48", "50"],
-          "colorName": "Белый",
+          "colorName": "white",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
           "aviableSize": ["46", "48"],
-          "colorName": "Синий",
+          "colorName": "blue",
           "colorHex": "#38548A"
         }
       ],
@@ -3828,25 +3828,25 @@
         {
           "colorId": "bl1",
           "aviableSize": ["42", "44", "50"],
-          "colorName": "Чёрный",
+          "colorName": "black",
           "colorHex": "#000000"
         },
         {
           "colorId": "r1",
           "aviableSize": [],
-          "colorName": "Красный",
+          "colorName": "red",
           "colorHex": "#F2404A"
         },
         {
           "colorId": "g1",
           "aviableSize": ["40", "42", "44", "46", "48", "50"],
-          "colorName": "Белый",
+          "colorName": "white",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
           "aviableSize": ["46", "48"],
-          "colorName": "Синий",
+          "colorName": "blue",
           "colorHex": "#38548A"
         }
       ],
@@ -3922,25 +3922,25 @@
         {
           "colorId": "bl1",
           "aviableSize": ["42", "44", "50"],
-          "colorName": "Чёрный",
+          "colorName": "black",
           "colorHex": "#000000"
         },
         {
           "colorId": "r1",
           "aviableSize": [],
-          "colorName": "Красный",
+          "colorName": "red",
           "colorHex": "#F2404A"
         },
         {
           "colorId": "g1",
           "aviableSize": ["40", "42", "44", "46", "48", "50"],
-          "colorName": "Белый",
+          "colorName": "white",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
           "aviableSize": ["46", "48"],
-          "colorName": "Синий",
+          "colorName": "blue",
           "colorHex": "#38548A"
         }
       ],

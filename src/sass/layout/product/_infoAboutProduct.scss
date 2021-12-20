@@ -49,7 +49,6 @@
 
   @media screen and (min-width: $desktop-up) {
     color: $secondary-title-black-color;
-    margin-bottom: 24px;
   }
 }
 
@@ -57,6 +56,15 @@
   color: $accent-currency-color;
 }
 //!----------------------------------------------------end of prod main info
+
+//!----------------------------------------------------prod form
+.product__form {
+  margin-bottom: 35px;
+  @media screen and (min-width: $desktop-up) {
+    margin-bottom: 46px;
+  }
+}
+//!----------------------------------------------------end of prod form
 //!----------------------------------------------------size list
 .size__title {
   margin-bottom: 20px;
@@ -72,13 +80,15 @@
   }
 }
 
-.size__list {
-  display: flex;
+.product__size {
   margin-bottom: 21px;
 
   @media screen and (min-width: $desktop-up) {
     margin-bottom: 17px;
   }
+}
+.size__list {
+  display: flex;
 }
 
 .size__item {
@@ -87,18 +97,19 @@
   width: 50px;
   height: 50px;
 
-  border: 1px solid $size-item-border-color;
   color: $size-item-border-color;
 }
 //!----------------------------------------------------end of size list
 //!----------------------------------------------------size options
-.options {
-  display: flex;
+.product__size-options {
   margin-bottom: 21px;
 
   @media screen and (min-width: $desktop-up) {
     margin-bottom: 37px;
   }
+}
+.options {
+  display: flex;
 }
 
 .options__item {
@@ -108,6 +119,7 @@
     }
   }
 }
+
 
 .button__size-option {
   @extend %button;
@@ -155,7 +167,7 @@
 }
 //!----------------------------------------------------end of size options
 //!----------------------------------------------------colorpicker
-.colorpicker {
+.product__color {
   @include flex($main: start);
 
   margin-bottom: 30px;
@@ -188,7 +200,10 @@
   }
 }
 
-.button__colorpicker {
+.colorpicker__input {
+  @extend %hide;
+}
+.colorpicker__label {
   padding: 0;
   border: 1px solid $colorpicker-icon-border-color;
   border-radius: 50%;
@@ -202,44 +217,61 @@
   background-size: 20px, 32px;
 
   transition: border-color $time-cubic;
+
+  &:not(:last-child) {
+    margin-right: 14px;
+  }
 }
 
-.button__colorpicker--black {
+.colorpicker__label--black {
   background-image: url('../images/circle-white.svg'), url('../images/circle-black.svg');
 }
 
-.button__colorpicker--red {
+.colorpicker__label--red {
   background-image: url('../images/circle-white.svg'), url('../images/circle-red.svg');
 }
 
-.button__colorpicker--grey {
+.colorpicker__label--white {
   background-image: url('../images/circle-white.svg'), url('../images/circle-grey.svg');
 }
 
-.button__colorpicker--blue {
+.colorpicker__label--blue {
   background-image: url('../images/circle-white.svg'), url('../images/circle-blue.svg');
 }
 
-.button__colorpicker--green {
+.colorpicker__label--green {
   background-image: url('../images/circle-white.svg'), url('../images/circle-green.svg');
 }
 
-.button__colorpicker--current {
+.colorpicker__label--current {
   border: 1px solid $colorpicker-icon-border-hover;
 }
 //!----------------------------------------------------end of colorpicker
 //!----------------------------------------------------button list
 .button__list {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
-  margin-bottom: 35px;
+ 
 
   @media screen and (min-width: $tablet-general) and (max-width: $tablet-only) {
     width: 400px;
   }
+}
 
-  @media screen and (min-width: $desktop-up) {
-    margin-bottom: 46px;
+.button__item-buy {
+  margin-bottom: 20px;
+}
+
+.button__item-fit {
+  margin-bottom: 8px;
+  @media screen and (min-width: $mobile-general) {
+    margin-right: 8px;
+  }
+
+  @media screen and (min-width: $tablet-general) {
+    margin-right: 9px;
+    margin-bottom: 0;
   }
 }
 
@@ -272,10 +304,13 @@
 }
 
 .button__purchase--buy {
-  margin-bottom: 20px;
-
   background: $button-background-black-color;
   color: $accent-btn-color;
+}
+
+.button__purchase--buy[disabled] {
+  opacity: 0.2;
+  pointer-events: none;
 }
 
 .button__purchase--buy:hover {
@@ -285,19 +320,12 @@
 }
 
 .button__purchase--fit {
-  margin-bottom: 8px;
-
   @media screen and (min-width: $mobile-general) {
     width: 136px;
-    margin-right: 8px;
   }
 
   @media screen and (min-width: $tablet-general) {
     width: 144px;
-  }
-
-  @media screen and (min-width: $tablet-general) {
-    margin-right: 9px;
   }
 }
 
@@ -344,10 +372,6 @@
 
 //!----------------------------------------------------end of prod info
 //!----------------------------------------------------prod characteristics
-.product__characteristics {
-  margin-bottom: 19px;
-}
-
 .product__characteristic-item {
   @include flex($main: space-between);
 
@@ -421,7 +445,7 @@
   display: none;
   grid-template-columns: repeat(2, 1fr);
   width: 100%;
-  padding-top: 15px;
+  margin-top: 15px;
   overflow: auto;
   opacity: 0;
   visibility: hidden;
@@ -462,7 +486,7 @@
 
 .aditional__grid {
   display: none;
-  padding-top: 15px;
+  margin-top: 15px;
 }
 
 .aditional__grid.is-open {

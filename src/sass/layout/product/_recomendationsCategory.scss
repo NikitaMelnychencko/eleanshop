@@ -22,18 +22,27 @@
     @media screen and (min-width: $desktop-up) {
       line-height: 0.95;
       margin-bottom: 22px;
+      padding-left: 152px;
     }
   }
 
   &__list {
     padding-top: 30px;
     overflow: hidden;
-    // max-height: 373px;
+    @media screen and (min-width: $desktop-up) {
+      padding-left: 110px;
+    }
 
     & .slider {
       min-width: 0;
     }
 
+    & .slick-list {
+      @media screen and (min-width: $desktop-up) {
+        width: 1142px;
+        margin: 0 auto;
+      }
+    }
     & .slick-track {
       display: flex;
     }
@@ -67,23 +76,19 @@
       border-radius: 10px;
     }
 
-    @media screen and (min-width: $desktop-up) {
-      display: flex;
-    }
   }
 
   &__item {
-    min-width: 0;
-    display: flex;
-    flex-direction: column;
-
+    width: 150px;
     &:not(:last-child) {
       margin-right: 10px;
     }
 
+    @media screen and (min-width: $tablet-general) {
+      width: 200px;
+    }
     @media screen and (min-width: $desktop-up) {
-      width: calc((100% - 3 * 34px) / 4);
-
+      width: 260px;
       &:not(:last-child) {
         margin-right: 34px;
       }
@@ -100,11 +105,20 @@
 
   &__image {
     display: block;
-    width: 100%;
-    height: 100%;
+    width: 151px;
+    height: 203px;
     object-fit: cover;
     object-position: 50% 50%;
     max-height: 500px;
+    background-color: $predownload-background;
+    @media screen and (min-width: $tablet-general) {
+      width: 200px;
+      height: 329px;
+    }
+    @media screen and (min-width: $desktop-up) {
+      width: 260px;
+      height: 373px;
+    }
     .product-modal-add-cart & {
       max-height: 200px;
       max-width: 150px;
@@ -117,7 +131,6 @@
 
   &__block-characters {
     display: flex;
-    padding-bottom: 24px;
     .product-modal-add-cart & {
       @media screen and (min-width: $desktop-up) {
         padding-bottom: 0;
@@ -130,9 +143,10 @@
     font-weight: 500;
     font-size: 15px;
     line-height: 1.2;
-
+    width: 150px;
     @media screen and (min-width: $desktop-up) {
       line-height: 1.07;
+      width: 260px;
     }
   }
 

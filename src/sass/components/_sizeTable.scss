@@ -10,10 +10,13 @@
     @media screen and (min-width: $mobile-general) {
       min-width: 400px;
       max-width: 792px;
-      max-height: 562px;
     }
     @media screen and (min-width: $mobile-only) {
       padding: 66px 120px 66px 107px;
+    }
+
+    @media screen and (min-width: $desktop-up) {
+      width: 792px;
     }
   }
   &__standart {

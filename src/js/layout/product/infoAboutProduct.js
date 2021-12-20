@@ -1,61 +1,31 @@
-// have to clear string #2 after getting data from Local Storage
-import productInfo from '../../../js/json/product/productInfo.json';
+import productTEST from '../../../js/json/product/productTEST.json';
 import productTemplate from '../../../views/partials/product/infoAboutProduct.hbs';
-import refs from '../../refs/refs.js';
-window.jQuery = window.$ = require('jquery');
-require('../../slider/slick.min.js');
-//* way to get a function from Andrew to render a size grid (don't clear)
-// import sizeChose from '../fitting/sizeChose.js';
-// const { createBtn } = sizeChose;
 
-// have to clear string #12 after getting data from Local Storage (data from Ira Maksimova)
-// localStorage.setItem('productInfoData', JSON.stringify(productInfo));
-let savedProductInfoData = localStorage.getItem('productInfoData');
-let parsedProductInfoData = JSON.parse(savedProductInfoData);
+import sizeChose from '../../components/sizeChose';
+const { createBtn, onSizeElClick } = sizeChose;
+import { onBtnClick } from '../../components/sizeTable';
+
+let productInfoData;
 //! ---------------------------------------------------RENDERING A SECTION
 
-export function setProductSlider() {
-  $(document).ready(function () {
-    $('.product-slider-smaller').not('.slick-initialized').slick({
-      arrows: false,
-      speed: 500,
-      vertical: true,
-      slidesToShow: 4,
-      asNavFor: '.product-slider',
-      focusOnSelect: true,
-    });
-    $('.product-slider').not('.slick-initialized').slick({
-      arrows: false,
-      dots: false,
-      fade: true,
-      speed: 500,
-      slidesToShow: 1,
-      lazyLoad: 'progressive',
-      asNavFor: '.product-slider-smaller',
-    });
-    $('.product-slider-smaller').slick('setPosition');
-  });
-}
-
 export function createFullMarkup() {
-  savedProductInfoData = localStorage.getItem('productInfoData');
-  parsedProductInfoData = JSON.parse(savedProductInfoData);
+  productInfoData = JSON.parse(localStorage.getItem('productInfoData'));
 
-  return productTemplate({ parsedProductInfoData });
-  //* way to get a function to get size grid (don't clear)
-  // const btn = createBtn(parsedProductInfoData);
-  // return productTemplate({parsedProductInfoData, btn});
+  const btn = createBtn();
+
+  //* ЗДЕСЬ ВМЕСТО productTEST нужно заливать правильный JSON***********
+  return productTemplate({ productTEST, btn });
 }
 
 //! ---------------------------------------------------Add to favorites
 function checkIsProductInFavorites() {
-  const addToFavoritesbuttonEl = document.querySelector('.product__name-wrapper .button-add-likes');
+  const favBtn = document.querySelector('.product__name-wrapper .button-add-likes');
   const favoriteProduct = localStorage.getItem('favorites');
   const parsedFavoriteDate = JSON.parse(favoriteProduct);
   if (parsedFavoriteDate) {
     parsedFavoriteDate.fav.forEach(el => {
-      if (el.id === parsedProductInfoData.id) {
-        addToFavoritesbuttonEl.classList.add('active');
+      if (el.id === productInfoData.id) {
+        favBtn.classList.add('active');
       }
     });
   }
@@ -74,19 +44,19 @@ function insertIntoLSFavorite(id) {
   }
   if (newEl) {
     const isColorChose = localStorage.getItem('productColor');
+    const isSizeChose = localStorage.getItem('productSize');
 
     const elem = {
-      id: parsedProductInfoData.id,
-      name: parsedProductInfoData.name,
+      id: productInfoData.id,
+      name: productInfoData.name,
       image: {
-        srcset: `${parsedProductInfoData.image[0].imageMobile} 1x, ${parsedProductInfoData.image[0].imageMobileHigherResolution} 2x`,
-        'srcset-mobile': `${parsedProductInfoData.image[0].imageMobile} 1x, ${parsedProductInfoData.image[0].imageMobileHigherResolution} 2x`,
-        src: parsedProductInfoData.image[0].imageMobile,
-        alt: parsedProductInfoData.image[0].imageDescriprion,
+        srcset: `${productInfoData.image[0].imageMobile} 1x, ${productInfoData.image[0].imageMobileHigherResolution} 2x`,
+        'srcset-mobile': `${productInfoData.image[0].imageMobile} 1x, ${productInfoData.image[0].imageMobileHigherResolution} 2x`,
+        src: productInfoData.image[0].imageMobile,
+        alt: productInfoData.image[0].imageDescriprion,
       },
-      price: parsedProductInfoData.productPrice,
-      // have to get size from size grid from Andrew's function
-      size: '46',
+      price: productInfoData.productPrice,
+      size: isSizeChose ? isSizeChose : '',
       description: '',
       color: isColorChose ? isColorChose : '',
     };
@@ -104,7 +74,7 @@ function removeFromFavorite(id) {
   refs.favQuantityEl.innerHTML = ls.fav.length;
 }
 function onAddToFavoritesClick(event) {
-  const id = parsedProductInfoData.id;
+  const id = productInfoData.id;
   if (event.currentTarget.classList.contains('active')) {
     removeFromFavorite(id);
   } else {
@@ -114,22 +84,24 @@ function onAddToFavoritesClick(event) {
 }
 
 //!----------------------------------------------------Colorpicker
-function addCurrentClass(button) {
-  button.classList.add('button__colorpicker--current');
-}
-function removeCurrentClass() {
-  const currentClass = document.querySelector('.button__colorpicker--current');
-
-  if (currentClass) {
-    currentClass.classList.remove('button__colorpicker--current');
-  }
-}
 function setProductColor(color) {
   localStorage.setItem('productColor', color);
 }
-function fixateCurrentClass(buttonArray, productColor) {
-  for (let index = 0; index < buttonArray.length; index++) {
-    const element = buttonArray[index];
+function addCurrentClass(button) {
+  button.classList.add('colorpicker__label--current');
+}
+
+function removeCurrentClass() {
+  const currentClass = document.querySelector('.colorpicker__label--current');
+
+  if (currentClass) {
+    currentClass.classList.remove('colorpicker__label--current');
+  }
+}
+
+function fixateCurrentClass(colorArray, productColor) {
+  for (let index = 0; index < colorArray.length; index++) {
+    const element = colorArray[index];
 
     if (productColor === element.id) {
       addCurrentClass(element);
@@ -137,34 +109,83 @@ function fixateCurrentClass(buttonArray, productColor) {
     }
   }
 }
-function onColorpickerListClick(event) {
+
+function onColorListClick(event) {
+  let availableSizes = [];
   const colorpickerButton = event.target;
-  const isColorpickerButton = colorpickerButton.classList.contains('button__colorpicker');
+  const isColorpickerButton = colorpickerButton.classList.contains('colorpicker__label');
 
   if (!isColorpickerButton) {
     return;
   }
 
+  const inputColor = event.target.previousElementSibling.value;
+
+  productTEST.productAviable.find(size => {
+    if (size.colorId === inputColor) {
+      availableSizes.push(size.aviableSize);
+    }
+  });
+
   removeCurrentClass();
   addCurrentClass(colorpickerButton);
-  setProductColor(colorpickerButton.id);
+  showAvailableSizes(availableSizes);
+  setProductColor(inputColor);
 }
+
+function showAvailableSizes(sizes) {
+  const sizeBtnLabel = document.querySelectorAll('.size-chose__label');
+  const sizeBtnInput = document.querySelectorAll('.size-chose__input');
+  const buyBtn = document.querySelector('.button__purchase--buy');
+  const inputs = [...sizeBtnInput];
+  const labels = [...sizeBtnLabel];
+
+  labels.map(value => {
+    if (!sizes[0].includes(value.textContent)) {
+      value.classList.add('size-chose__label--disabled');
+    } else {
+      value.classList.remove('size-chose__label--disabled');
+    }
+  });
+
+  inputs.map(value => {
+    if (value.checked) {
+      value.checked = false;
+    }
+    if (!sizes[0].includes(value.value)) {
+      value.setAttribute('disabled', 'disabled');
+    } else {
+      value.removeAttribute('disabled', 'disabled');
+    }
+  });
+
+  const disabledInputs = inputs.every(value => value.disabled);
+  if (disabledInputs) {
+    buyBtn.setAttribute('disabled', 'disabled');
+    buyBtn.innerHTML = 'НЕТ РАЗМЕРОВ В НАЛИЧИИ';
+  } else {
+    buyBtn.removeAttribute('disabled', 'disabled');
+    buyBtn.innerHTML = 'КУПИТЬ';
+  }
+}
+
 function setProductDataToOrdering() {
   const orderingDataArray = localStorage.getItem('orderingData');
+  if (orderingDataArray.length === 0) {
+    return;
+  }
   const orderingDataParsed = JSON.parse(orderingDataArray);
   const elementId = orderingDataParsed.findIndex(element => {
-    element.label.id === parsedProductInfoData.id;
+    element.label.id === productInfoData.id;
   });
   if (elementId === -1) {
     let orderingDataobj = { label: {} };
-    orderingDataobj.label.id = parsedProductInfoData.id;
-    orderingDataobj.label.name = parsedProductInfoData.productName;
+    orderingDataobj.label.id = productInfoData.id;
+    orderingDataobj.label.name = productInfoData.productName;
 
-    orderingDataobj.label.img = parsedProductInfoData.image[0].imageMobile;
-    orderingDataobj.label.img2 = parsedProductInfoData.image[0].imageMobileHigherResolution;
-    orderingDataobj.label.price = parsedProductInfoData.productPrice;
-    // have to get size from size grid from Andrew's function
-    orderingDataobj.label.sizeSelected = '46';
+    orderingDataobj.label.img = productInfoData.img.src;
+    orderingDataobj.label.price = productInfoData.productPrice;
+    orderingDataobj.label.sizeSelected = localStorage.getItem('productSize');
     orderingDataobj.label.colorSelected = localStorage.getItem('productColor');
     orderingDataobj.label.circleSelected = '';
     orderingDataobj.label.description = '';
@@ -181,7 +202,7 @@ function toggleIsOpenClass(menu) {
 function transformPlusToMinus(button) {
   button.classList.toggle('button__minus');
 }
-function onCharacteristicsListClick(event) {
+function onCharListClick(event) {
   const paramsMenuEl = document.querySelector('[data-params-menu]');
   const aditionalMenuEl = document.querySelector('[data-aditional-menu]');
   const buttonParamsEl = document.querySelector('.button__plus--params');
@@ -198,46 +219,53 @@ function onCharacteristicsListClick(event) {
   }
 }
 //!----------------------------------------------------Determine Size
-function onDetermineSizeButtonElClick() {
+function onNotYourSizeBtnClick() {
   const preorderBackdropEl = document.querySelector('.preoder__backdrop');
   preorderBackdropEl.classList.add('is-visible');
 }
 //!----------------------------------------------------Is size in a stock?
-function onIsSizeInStockButtonElClick() {}
+function onDefineSizeBtnClick() {
+  onBtnClick();
+}
 //!----------------------------------------------------Fitting
-function onFittingButtonElClick() {
+function onFittingBtnClick() {
   const tryOnBackdropEl = document.querySelector('.try-on__backdrop');
   tryOnBackdropEl.classList.add('is-visible');
 }
 //!----------------------------------------------------Fixate local storage data
 function fixateDataFromLocalStorage() {
-  const colorpickerButtonsEl = document.querySelectorAll('.button__colorpicker');
+  const colorBtn = document.querySelectorAll('.colorpicker__label');
   let productColor = localStorage.getItem('productColor');
 
-  fixateCurrentClass(colorpickerButtonsEl, productColor);
+  fixateCurrentClass(colorBtn, productColor);
   checkIsProductInFavorites();
 }
+//!----------------------------------------------------FORM
+const onFormSubmit = buy => event => {
+  event.preventDefault();
+  setProductDataToOrdering();
+  buy(productInfoData.productName);
+};
 
 //!----------------------------------------------------LISTENERS
 function createAllListeners(buy) {
-  const characteristicListEl = document.querySelector('.product__characteristics');
-  const colorpickerListEl = document.querySelector('.colorpicker__list');
-  const purchaseBuyButtonEl = document.querySelector('.button__purchase--buy');
-  const addToFavoritesButtonEl = document.querySelector('.product__name-wrapper .button-add-likes');
-  const determineSizeButtonEl = document.querySelector('.button__size-option--available-size');
-  const isSizeInStockButtonEl = document.querySelector('.button__size-option--find-size');
-  const fittingButtonEl = document.querySelector('.button__purchase--fit');
+  const charList = document.querySelector('.product__characteristics');
+  const colorList = document.querySelector('.colorpicker__list');
+  const favBtn = document.querySelector('.product__name-wrapper .button-add-likes');
+  const notYourSizeBtn = document.querySelector('.button__size-option--available-size');
+  const defineSizeBtn = document.querySelector('.button__size-option--find-size');
+  const fittingBtn = document.querySelector('.button__purchase--fit');
+  const sizeList = document.querySelector('.size__list');
+  const form = document.querySelector('.product__form');
 
-  determineSizeButtonEl.addEventListener('click', onDetermineSizeButtonElClick);
-  isSizeInStockButtonEl.addEventListener('click', onIsSizeInStockButtonElClick);
-  addToFavoritesButtonEl.addEventListener('click', onAddToFavoritesClick);
-  fittingButtonEl.addEventListener('click', onFittingButtonElClick);
-  colorpickerListEl.addEventListener('click', onColorpickerListClick);
-  characteristicListEl.addEventListener('click', onCharacteristicsListClick);
-  purchaseBuyButtonEl.addEventListener('click', () => {
-    buy(parsedProductInfoData.productName);
-    setProductDataToOrdering();
-  });
+  notYourSizeBtn.addEventListener('click', onNotYourSizeBtnClick);
+  defineSizeBtn.addEventListener('click', onDefineSizeBtnClick);
+  favBtn.addEventListener('click', onAddToFavoritesClick);
+  fittingBtn.addEventListener('click', onFittingBtnClick);
+  colorList.addEventListener('click', onColorListClick);
+  charList.addEventListener('click', onCharListClick);
+  sizeList.addEventListener('click', onSizeElClick);
+  form.addEventListener('submit', onFormSubmit(buy));
 }
 
 //!----------------------------------------------------EXPORT TO MAIN FILE
