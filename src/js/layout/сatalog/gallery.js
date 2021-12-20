@@ -73,8 +73,8 @@ export function openCategory() {
               label: {
                 id: itemData.id,
                 name: itemData.productName,
-                img: itemData.image[0].imageMobile,
-                img2: itemData.image[3].imageMobile,
+                img: itemData.image[0].imageProduct,
+                img2: itemData.image[3].imageProduct,
                 price: itemData.productPrice,
                 sizeSelected: '',
                 colorSelected: '',

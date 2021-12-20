@@ -49,9 +49,9 @@ function insertIntoLSFavorite(id) {
       id: productInfoData.id,
       name: productInfoData.name,
       image: {
-        srcset: `${productInfoData.image[0].imageMobile} 1x, ${productInfoData.image[0].imageMobileHigherResolution} 2x`,
-        'srcset-mobile': `${productInfoData.image[0].imageMobile} 1x, ${productInfoData.image[0].imageMobileHigherResolution} 2x`,
-        src: productInfoData.image[0].imageMobile,
+        srcset: `${productInfoData.image[0].imageProduct} 1x, ${productInfoData.image[0].imageProductHigherResolution} 2x`,
+        'srcset-mobile': `${productInfoData.image[0].imageProduct} 1x, ${productInfoData.image[0].imageProductHigherResolution} 2x`,
+        src: productInfoData.image[0].imageProduct,
         alt: productInfoData.image[0].imageDescriprion,
       },
       price: productInfoData.productPrice,
@@ -169,6 +169,7 @@ function showAvailableSizes(sizes) {
 }
 
 function setProductDataToOrdering() {
+  console.log(productInfoData.image[0].imageProduct);
   const orderingDataArray = localStorage.getItem('orderingData');
   if (orderingDataArray.length === 0) {
     return;
@@ -181,7 +182,7 @@ function setProductDataToOrdering() {
     let orderingDataobj = { label: {} };
     orderingDataobj.label.id = productInfoData.id;
     orderingDataobj.label.name = productInfoData.productName;
-    orderingDataobj.label.img = productInfoData.image[0].imageMobile;
+    orderingDataobj.label.img = productInfoData.image[0].imageProduct;
     orderingDataobj.label.price = productInfoData.productPrice;
     orderingDataobj.label.sizeSelected = localStorage.getItem('productSize');
     orderingDataobj.label.colorSelected = localStorage.getItem('productColor');

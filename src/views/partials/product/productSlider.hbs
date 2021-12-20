@@ -3,8 +3,8 @@
     {{#each []}}
     <li class="product-slider-smaller__item">
       <picture>
-        <source srcset="{{imageMobile}} 1x, {{imageMobileHigherResolution}} 2x," media="(min-width: 1378px)">
-        <img class="product-slider-smaller__image" src="{{imageMobile}}" alt="{{imageDescriprion}}">
+        <source srcset="{{imageSliderSmall}} 1x, {{imageSliderSmall2x}} 2x," media="(min-width: 1378px)">
+        <img class="product-slider-smaller__image" src="{{imageSliderSmall}}" alt="{{imageDescriprion}}">
       </picture>
     </li>
     {{/each}}
@@ -16,13 +16,13 @@
     {{#each []}}
     <li class="product-slider__item">
       <picture>
-        <source srcset="{{imageDesctopMini}} 1x, {{imageDesctopMiniHigherResolution}} 2x," media="(min-width: 1378px)"
-          width="700" height="1221">
-        <source srcset="{{imageDesctopMini}} 1x, {{imageDesctopMiniHigherResolution}} 2x," media="(min-width: 721px)"
-          width="500" height="872">
-        <source srcset="{{imageDesctopMini}} 1x, {{imageDesctopMiniHigherResolution}} 2x," media="(min-width: 320px)"
-          width="280" height="488">
-        <img class="product-slider__image" src="{{imageDesctopMini}}" alt="{{imageDescriprion}}">
+        <source srcset="{{imageSliderBig}} 1x, {{imageSliderBig2x}} 2x," media="(min-width: 1378px)" width="700"
+          height="1221">
+        <source srcset="{{imageSliderBig}} 1x, {{imageSliderBig2x}} 2x," media="(min-width: 721px)" width="500"
+          height="872">
+        <source srcset="{{imageSliderBig}} 1x, {{imageSliderBig2x}} 2x," media="(min-width: 320px)" width="280"
+          height="488">
+        <img class="product-slider__image" src="{{imageSliderBig}}" alt="{{imageDescriprion}}">
       </picture>
     </li>
     {{/each}}
