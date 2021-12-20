@@ -1,6 +1,6 @@
 // Суда буду вносить функционал
 import refs from '../../refs/refs';
-import deliveryfoto from '../../../js/json/deliveryImage.json';
+
 import delivery from '../../../views/partials/delivery/deliveryTypes.hbs';
 import deliveryButton from '../../../views/partials/delivery/buttonDelivProct.hbs';
 import deliveryPage from '../../../views/layouts/delivery.hbs';
@@ -10,8 +10,7 @@ import formsQuestions from '../../../views/partials/delivery/formsQuestion.hbs';
 import formQuestionsData from '../../../js/json/formsQuestion.json';
 
 export const descriptionDelivery = deliveryfilter(deliveryfiljson);
-
-export const mainImageDelivery = delivery(deliveryfoto);
+export const mainImageDelivery = delivery();
 export const buttonsDelivery = deliveryButton();
 export const questionDelivery = formsQuestions(formQuestionsData);
 export const deliveryPageMarkUp = deliveryPage();

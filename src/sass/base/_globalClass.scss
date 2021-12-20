@@ -42,7 +42,28 @@ body.modal-open {
     width: $desktop-up;
   }
 }
+.container-hero{
+  margin-left: auto;
+  margin-right: auto;
 
+  @media screen and (min-width: $mobile-first) {
+    min-width: $mobile-first;
+  }
+
+  @media screen and (min-width: $mobile-general) {
+    width: $mobile-general;
+  }
+
+  @media screen and (min-width: $tablet-general) {
+    width: $tablet-general;
+  }
+  @media screen and (min-width: $desktop-up) {
+    width: $desktop-up;
+  }
+  @media screen and (min-width: 1920px) {
+    width: 1920px;
+  }
+}
 .container__header {
   position: relative;
 }
