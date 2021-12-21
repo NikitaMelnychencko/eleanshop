@@ -174,41 +174,49 @@ export class OrderingSizeAndColor {
     colorInput.innerHTML = colorItemValue;
     const articleId = colorInput.closest('.ordering__card').getAttribute('id');
     const article = this.parsedData.find(obj => obj.label.id === articleId);
-    this._chooseSizeDueToColor(e, article);
+    
     if (e.target.classList.contains('js-size')) {
+      
       article.label.sizeSelected = colorItemValue;
     } else if (e.target.classList.contains('js-color')) {
+      this._chooseSizeDueToColor(e, article)
       let circleLink = colorInput.querySelector('.ordering__circle--color').getAttribute('href');
-      article.label.colorSelected = e.currentTarget.id;
+      article.label.colorSelected = e.currentTarget.querySelector('span').innerText;
       article.label.circleSelected = circleLink;
     }
     localStorage.setItem('orderingData', JSON.stringify(this.parsedData));
     e.target.parentElement.classList.toggle('ordering-list--hide');
   }
+
   _chooseSizeDueToColor(event, article) {
     const parentEl = event.currentTarget.parentElement.parentElement.parentElement;
     const sizesList = parentEl.querySelector('.ordering-sizelist-js');
-    const staticSizesItems = sizesList.querySelectorAll('.js-size');
-    // console.log('staticSizes', staticSizesItems);
+    const sizeInput = parentEl.querySelector('.ordering__size');
 
-    let availableSizes = [];
-    const inputColor = article.label.colorSelected;
-
-    article.label.productAviable.filter(product => {
-      if (product.colorId === inputColor) {
-        // console.log('product.colorId', product.colorId);
-        availableSizes = product.aviableSize;
-      }
-    });
-    // console.log('availableSizes', availableSizes);
-    staticSizesItems.forEach(item => {
-      item.style.display = 'none';
-      availableSizes.some(size => {
-        if (item.textContent === size) {
-          item.style.display = 'flex';
-          // console.log(item);
+    article.label.productAviable.map(product => { 
+    if (event.currentTarget.querySelector('span').innerText === product.colorName) {
+      console.log('product.colorName', product.colorName)
+      article.label.sizeAvailable = product.aviableSize;
         }
-      });
-    });
+        })
+    
+    this. _makeListMarkup(sizesList, article.label.sizeAvailable)
+    sizeInput.innerHTML = sizesList.firstElementChild.innerHTML;
+    article.label.sizeSelected = sizeInput.innerHTML
+  }
+  _makeListMarkup(list, sizesArr) { 
+list.innerHTML = '';    
+    const listItemsMarkup = sizesArr.map(size => this._makeListItemMarkup(size)).join('');
+    console.log(listItemsMarkup)
+    if (sizesArr.length === 0) {
+      list.innerHTML = this._makeListItemMarkup('Нет в наличии')
+      
+     }else{list.innerHTML = listItemsMarkup}
+  }
+  _makeListItemMarkup(size) { 
+return `
+    <li class='ordering-list__item ordering-item-js js-size'>${size}
+                </li>
+    `;
   }
 }
