@@ -169,16 +169,19 @@ export class OrderingSizeAndColor {
     const colorItemValue = e.currentTarget.innerHTML;
     const colorInput =
       e.currentTarget.parentElement.parentElement.firstElementChild.firstElementChild;
+    console.log('colorInput', colorInput)
     const item = e.currentTarget;
     colorInput.innerHTML = colorItemValue;
     const articleId = colorInput.closest('.ordering__card').getAttribute('id');
     const article = this.parsedData.find(obj => obj.label.id === articleId);
+    console.log('article.label.сolorSelected', article.label.сolorSelected)
+     console.log('parsedData',parsedData)
      this._chooseSizeDueToColor(e, article)
     if (e.target.classList.contains('js-size')) {
       article.label.sizeSelected = colorItemValue;
     } else if (e.target.classList.contains('js-color')) {
       let circleLink = colorInput.querySelector('.ordering__circle--color').getAttribute('href');
-      article.label.сolorSelected = e.currentTarget.innerText;
+      article.label.сolorSelected = e.currentTarget.id;/*   */
       article.label.circleSelected = circleLink;
      
     }
@@ -186,20 +189,18 @@ export class OrderingSizeAndColor {
     e.target.parentElement.classList.toggle('ordering-list--hide');
   }
   _chooseSizeDueToColor(event, article) {
-    const staticSizesItems = document.querySelectorAll('.js-size');
-    /* let staticSizes = [];
-    staticSizesItems.forEach(item => { 
-     staticSizes.push(item.textContent) 
-    })
-    console.log('staticSizes', staticSizes)
- */
+    const parentEl = event.currentTarget.parentElement.parentElement.parentElement
+    const sizesList = parentEl.querySelector('.ordering-sizelist-js')
+    const staticSizesItems = sizesList.querySelectorAll('.js-size');
+    console.log('staticSizes', staticSizesItems)
+    
     let availableSizes = []
     const inputColor = article.label.colorSelected
     console.log('inputColor',inputColor)
     console.log('article', article)
     console.log('article.productAviable',article.label.productAviable)
     article.label.productAviable.filter(product => {
-      if (product.colorId === inputColor || product.colorName === inputColor) {
+      if (product.colorId === inputColor ) {
       console.log('product.colorId', product.colorId)
       availableSizes = product.aviableSize;     
       }

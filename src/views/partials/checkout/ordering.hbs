@@ -32,7 +32,7 @@
 
             <ul class='ordering-list ordering-list--hide ordering-list-js'>
               {{#each label.productAviable}}
-                <li class='ordering-list__item ordering-item-js js-color'>{{colorName}}
+                <li class='ordering-list__item ordering-item-js js-color' id={{colorId}}>{{colorName}}
                   <svg class='ordering__circle' aria-label='circle' width='20' height='20'>
                     <use class='ordering__circle--color' href='./images/exampl.svg#icon-circle-{{colorName}}'>
                     </use>
@@ -52,7 +52,7 @@
               </svg>
             </div>
 
-            <ul class='ordering-list ordering-list--hide ordering-list-js'>
+            <ul class='ordering-list ordering-list--hide ordering-list-js ordering-sizelist-js'>
               {{!-- {{#each label.productAviable}}
                 <li class='ordering-list__item ordering-item-js js-size'>{{text}}
                 </li>
