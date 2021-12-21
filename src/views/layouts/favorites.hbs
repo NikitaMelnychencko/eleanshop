@@ -12,7 +12,9 @@
                     </picture>
                     <div class="favorites__product--info">
                         <p class="favorites__product--info-text">{{name}}</p>
+                        {{#if size}}
                         <p class="favorites__product--info-text">Размер {{size}}</p>
+                        {{/if}}
                         <p>{{price}} &#8372;</p>
                     </div>
                 </div>

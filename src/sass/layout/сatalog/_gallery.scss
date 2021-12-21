@@ -20,7 +20,7 @@
   }
 }
 
-.catalog__product-card {
+.catalog-product-card {
   box-sizing: border-box;
   grid-row-start: span 1;
   height: 390px;
@@ -39,27 +39,27 @@
   }
 }
 
-.catalog__product-card:nth-child(5n + 5) {
+.catalog-product-card:nth-child(5n + 5) {
   @media screen and (max-width: $mobile-only) {
     grid-row-start: span 2;
     grid-column-start: span 2;
     height: 630px;
   }
 }
-.catalog__product-card:nth-child(10n + 3),
-.catalog__product-card:nth-child(10n + 4),
-.catalog__product-card:nth-child(10n + 6),
-.catalog__product-card:nth-child(10n + 8) {
+.catalog-product-card:nth-child(10n + 3),
+.catalog-product-card:nth-child(10n + 4),
+.catalog-product-card:nth-child(10n + 6),
+.catalog-product-card:nth-child(10n + 8) {
   @media screen and (min-width: $tablet-general) and (max-width: $tablet-only) {
     grid-row-start: span 3;
     height: 640px;
   }
 }
 
-.catalog__product-card:nth-child(22n + 4),
-.catalog__product-card:nth-child(22n + 8),
-.catalog__product-card:nth-child(22n + 12),
-.catalog__product-card:nth-child(22n + 19) {
+.catalog-product-card:nth-child(22n + 4),
+.catalog-product-card:nth-child(22n + 8),
+.catalog-product-card:nth-child(22n + 12),
+.catalog-product-card:nth-child(22n + 19) {
   @media screen and (min-width: $desktop-up) {
     grid-row-start: span 3;
     height: 715px;
@@ -67,22 +67,22 @@
 }
 
 //==<<<<<<<<<<<<<<<<=== hides more cards than maket (скрывает больше карточек. Для открытия дополнительных, менять этот параметр в сторону увеличения цифры)
-.catalog__product-card:nth-child(n + 23) {
+.catalog-product-card:nth-child(n + 23) {
   display: none;
 }
 //==<<<<<<<<<<<<<<<<=== hides more cards than maket (скрывает больше карточек. Для открытия дополнительных, менять этот параметр в сторону увеличения цифры)
 
-.catalog__product-catalog__product-card-aboutiption-box {
+.catalog-product-card__about-box {
   @media screen and (min-width: $desktop-up) {
     display: flex;
     justify-content: space-between;
   }
 }
 
-.catalog__product-card-content {
+.catalog-product-card__content {
   position: relative;
 }
-.catalog__product-card-name {
+.catalog-product-card__title {
   width: 100%;
   font-weight: 500;
   font-size: 15px;
@@ -99,14 +99,14 @@
     margin-bottom: 15px;
   }
 }
-.catalog__product-card-price {
+.catalog-product-card__price {
   font-weight: 500;
   font-size: 15px;
   line-height: 1.4;
   color: var($third-logo-color);
 }
 
-.catalog__product-catalog__product-card-image-box {
+.catalog-product-card__image-box {
   height: 100%;
   width: 100%;
   // object-fit: cover;
@@ -117,7 +117,7 @@
   }
 }
 
-.catalog__product-card-image {
+.catalog-product-card__image {
   cursor: pointer;
   object-fit: cover;
   width: 100%;
@@ -130,7 +130,7 @@
   }
 }
 
-.catalog__product-card-heart {
+.catalog-product-card__heart {
   position: absolute;
   width: 16px;
   height: 13px;
@@ -149,7 +149,7 @@
 .heart-click {
   fill: #d7bca3;
 }
-.catalog__product-card-about {
+.catalog-product-card__about {
   font-family: var($third-font-family);
   font-weight: 500;
   font-size: 12px;
@@ -164,7 +164,9 @@
   height: 20px;
   z-index: 1;
   transition: fill $time-cubic;
-  fill: #c7c7c7;
+  // fill: #c7c7c7;
+  fill: transparent;
+  stroke: rebeccapurple;
   &:hover,
   &:focus {
     fill: #afafaf;
@@ -185,7 +187,7 @@
     text-transform: uppercase;
   }
 }
-.catalog__filter {
+.catalog-filter {
   display: none;
 
   @media screen and (min-width: $desktop-up) {
@@ -195,7 +197,7 @@
     width: 100%;
   }
 }
-.catalog__product-card--wrapper {
+.catalog-product-card--wrapper {
   height: 100%;
   width: 100%;
 }

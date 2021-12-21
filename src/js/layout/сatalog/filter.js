@@ -6,11 +6,11 @@ export const filterListMakeup = filter({ filterLib });
 
 export function openFilter() {
   const filterList = document.querySelector('#filter');
-  const catalogColHeader = document.querySelector('.catalog__filter-collection');
-  const catalogCatHeader = document.querySelector('.catalog__filter-category');
+  const catalogColHeader = document.querySelector('.catalog-collection__title');
+  const catalogCatHeader = document.querySelector('.catalog-category__title');
 
-  const filterCollectionList = document.querySelector('.catalog__filter-collection-list');
-  const filterCatalogList = document.querySelector('.catalog__filter-category-list');
+  const filterCollectionList = document.querySelector('.catalog-collection__list');
+  const filterCatalogList = document.querySelector('.catalog-category__list');
 
   const collectionItems = filterCollectionList.getElementsByTagName('li');
   const collectionArr = Array.from(collectionItems);

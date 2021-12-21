@@ -1,28 +1,28 @@
 {{#each this}}
-<div class='catalog__product-card' id='{{id}}'>
-  <div class='catalog__product-card--wrapper'>
-    <div class="catalog__product-catalog__product-card-image-box">
-      <img class='catalog__product-card-image' {{#each image}} srcset='{{imageProduct}}' src='{{imageProduct}}'
+<li class='catalog-product-card' id='{{id}}'>
+  <div class='catalog-product-card--wrapper'>
+    <div class="catalog-product-card__image-box">
+      <img class='catalog-product-card__image' {{#each image}} srcset='{{imageProduct}}' src='{{imageProduct}}'
         alt='{{imageDescriprion}}' {{/each}} />
     </div>
 
 
-    <div class='catalog__product-card-content'>
-      <h2 class='catalog__product-card-name'>
+    <div class='catalog-product-card__content'>
+      <h3 class='catalog-product-card__title'>
         {{productName}}
-      </h2>
-      <svg class='catalog__product-card-heart'>
-        <use href='{{icon}}'></use>
+      </h3>
+      <svg class='catalog-product-card__heart'>
+        <use href='../images/catalog.svg#icon-gallery-card-heart'></use>
       </svg>
-      <div class='catalog__product-catalog__product-card-aboutiption-box'>
-        <p class='catalog__product-card-price'>
+      <div class='catalog-product-card__about-box'>
+        <p class='catalog-product-card__price'>
           {{productPrice}}UAH
         </p>
-        <p class='catalog__product-card-about'>
+        <p class='catalog-product-card__about'>
           {{productAbout}}
         </p>
       </div>
     </div>
   </div>
-</div>
+</li>
 {{/each}}

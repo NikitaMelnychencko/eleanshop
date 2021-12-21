@@ -126,17 +126,18 @@ export default class RecomendationsCategory {
       ls = { fav: [] };
     }
     if (newEl) {
+      console.log(this.data[dataId]);
       const elem = {
         id: this.data[dataId].id,
-        name: this.data[dataId].name,
+        name: this.data[dataId].productName,
         image: {
-          srcset: this.data[dataId].image.srcset,
-          'srcset-mobile': '',
-          src: this.data[dataId].image.src,
-          alt: this.data[dataId].image.alt,
+          srcset: `${this.data[dataId].image[0].imageProduct} 1x, ${this.data[dataId].image[0].imageProductHigherResolution} 2x`,
+          'srcset-mobile': `${this.data[dataId].image[0].imageProduct} 1x, ${this.data[dataId].image[0].imageProductHigherResolution} 2x`,
+          src: this.data[dataId].image[0].imageProduct,
+          alt: this.data[dataId].image[0].imageDescriprion,
         },
-        price: this.data[dataId].price,
-        size: 0,
+        price: this.data[dataId].productPrice,
+        size: '',
         description: this.data[dataId].description,
         color: '',
       };
@@ -157,6 +158,7 @@ export default class RecomendationsCategory {
   _onClickLike = e => {
     let id = '';
     let elemLike = null;
+    console.dir(e.target);
     if (!e.target.dataset.id) {
       let el = e.target.parentElement;
       while (!id) {

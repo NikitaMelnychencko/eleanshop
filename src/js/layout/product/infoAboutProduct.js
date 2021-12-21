@@ -4,6 +4,12 @@ import sizeChose from '../../components/sizeChose';
 const { createBtn, onSizeElClick } = sizeChose;
 import { onBtnClick } from '../../components/sizeTable';
 
+function refs() {
+  return {
+    favQuantityEl: document.getElementById('js-text-fav'),
+  };
+}
+
 let productInfoData;
 //! ---------------------------------------------------RENDERING A SECTION
 
@@ -29,7 +35,7 @@ function checkIsProductInFavorites() {
     });
   }
 }
-function insertIntoLSFavorite(id) {
+export function insertIntoLSFavorite(id) {
   let ls = JSON.parse(localStorage.getItem('favorites'));
   let newEl = true;
   if (ls) {
@@ -47,7 +53,7 @@ function insertIntoLSFavorite(id) {
 
     const elem = {
       id: productInfoData.id,
-      name: productInfoData.name,
+      name: productInfoData.productName,
       image: {
         srcset: `${productInfoData.image[0].imageProduct} 1x, ${productInfoData.image[0].imageProductHigherResolution} 2x`,
         'srcset-mobile': `${productInfoData.image[0].imageProduct} 1x, ${productInfoData.image[0].imageProductHigherResolution} 2x`,
@@ -62,17 +68,18 @@ function insertIntoLSFavorite(id) {
 
     ls.fav.push(elem);
     localStorage.setItem('favorites', JSON.stringify(ls));
-    refs.favQuantityEl.innerHTML = ls.fav.length;
+    refs().favQuantityEl.innerHTML = ls.fav.length;
   }
 }
 function removeFromFavorite(id) {
   let ls = JSON.parse(localStorage.getItem('favorites'));
+  console.log(ls);
   const lsid = ls.fav.findIndex(el => el.id === id);
   ls.fav.splice(lsid, 1);
   localStorage.setItem('favorites', JSON.stringify(ls));
-  refs.favQuantityEl.innerHTML = ls.fav.length;
+  refs().favQuantityEl.innerHTML = ls.fav.length;
 }
-function onAddToFavoritesClick(event) {
+export function onAddToFavoritesClick(event) {
   const id = productInfoData.id;
   if (event.currentTarget.classList.contains('active')) {
     removeFromFavorite(id);

@@ -42,7 +42,7 @@ export function catalogListMarkupF() {
 }
 export function openCategory() {
   const catalogItems = document.querySelector('.js-catalog');
-  const cardHeartIcon = catalogItems.querySelectorAll('.catalog__product-card-heart');
+  const cardHeartIcon = catalogItems.querySelectorAll('.catalog-product-card__heart');
   const cardHeartIconArray = Array.from(cardHeartIcon);
 
   for (const cardHeartItem of cardHeartIconArray) {
@@ -70,18 +70,20 @@ export function openCategory() {
         if (itemData) {
           if (cardHeartItem.classList.contains('active')) {
             let elem = {
-              label: {
-                id: itemData.id,
-                name: itemData.productName,
-                img: itemData.image[0].imageProduct,
-                img2: itemData.image[3].imageProduct,
-                price: itemData.productPrice,
-                sizeSelected: '',
-                colorSelected: '',
-                circleSelected: '',
-                description: itemData.description,
-                count: 1,
+              id: itemData.id,
+              name: itemData.productName,
+              image: {
+                srcset: `${itemData.image[0].imageProduct} 1x, ${itemData.image[0].imageProductHigherResolution} 2x`,
+                'srcset-mobile': `${itemData.image[0].imageProduct} 1x, ${itemData.image[0].imageProductHigherResolution} 2x`,
+                src: itemData.image[0].imageProduct,
+                alt: itemData.image[0].imageDescriprion,
               },
+              price: itemData.productPrice,
+              size: '',
+              color: '',
+              circleSelected: '',
+              description: itemData.description,
+              count: 1,
             };
             data.fav.push(elem);
             localStorage.setItem('favorites', JSON.stringify(data));

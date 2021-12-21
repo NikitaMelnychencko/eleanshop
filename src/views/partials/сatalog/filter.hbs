@@ -1,12 +1,16 @@
-<h3 class='catalog__filter-category'>Категории</h3>
-<ul class='catalog__filter-category-list'>
-  {{#each filterLib.filter_category}}
-  <li class='catalog__filter-category-item'>{{category}}</li>
-  {{/each}}
-</ul>
-<h2 class='catalog__filter-collection'>Коллекции</h2>
-<ul class='catalog__filter-collection-list'>
-  {{#each filterLib.filter_collection}}
-  <li class='catalog__filter-collection-item'>{{collection}}</li>
-  {{/each}}
-</ul>
+<li class="catalog-category">
+  <h3 class='catalog-category__title'>Категории</h3>
+  <ul class='catalog-category__list'>
+    {{#each filterLib.filter_category}}
+    <li class='catalog-category__item'>{{category}}</li>
+    {{/each}}
+  </ul>
+</li>
+<li class="catalog-collection">
+  <h2 class='catalog-collection__title'>Коллекции</h2>
+  <ul class='catalog-collection__list'>
+    {{#each filterLib.filter_collection}}
+    <li class='catalog-collection__item'>{{collection}}</li>
+    {{/each}}
+  </ul>
+</li>
