@@ -169,7 +169,6 @@ export class OrderingSizeAndColor {
     const colorItemValue = e.currentTarget.innerHTML;
     const colorInput =
       e.currentTarget.parentElement.parentElement.firstElementChild.firstElementChild;
-    console.log('colorInput', colorInput);
     const item = e.currentTarget;
     colorInput.innerHTML = colorItemValue;
     const articleId = colorInput.closest('.ordering__card').getAttribute('id');
@@ -195,7 +194,6 @@ export class OrderingSizeAndColor {
 
     article.label.productAviable.map(product => { 
     if (event.currentTarget.querySelector('span').innerText === product.colorName) {
-      console.log('product.colorName', product.colorName)
       article.label.sizeAvailable = product.aviableSize;
         }
         })
@@ -205,18 +203,17 @@ export class OrderingSizeAndColor {
     article.label.sizeSelected = sizeInput.innerHTML
   }
   _makeListMarkup(list, sizesArr) { 
-list.innerHTML = '';    
+    list.innerHTML = '';    
     const listItemsMarkup = sizesArr.map(size => this._makeListItemMarkup(size)).join('');
-    console.log(listItemsMarkup)
     if (sizesArr.length === 0) {
       list.innerHTML = this._makeListItemMarkup('Нет в наличии')
       
      }else{list.innerHTML = listItemsMarkup}
   }
   _makeListItemMarkup(size) { 
-return `
-    <li class='ordering-list__item ordering-item-js js-size'>${size}
-                </li>
-    `;
-  }
+    return `
+        <li class='ordering-list__item ordering-item-js js-size'>${size}
+                    </li>
+        `;
+      }
 }
