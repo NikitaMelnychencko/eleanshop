@@ -49,7 +49,7 @@
             <h3 class="colorpicker__title">цвет</h3>
             <ul class="colorpicker__list">
               {{#each productInfoData.productAviable}}
-                <input class="colorpicker__input" type="radio" id="{{this.colorId}}" name="colorChoice" value={{this.colorId}} required>
+                <input class="colorpicker__input" type="radio" id="{{this.colorId}}" name="colorChoice" data-value={{this.colorName}} value={{this.colorId}} required>
                 <label class="colorpicker__label colorpicker__label--{{this.colorName}}" for="{{this.colorId}}"></label>
               {{/each}}
             </ul>

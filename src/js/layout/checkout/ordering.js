@@ -169,52 +169,46 @@ export class OrderingSizeAndColor {
     const colorItemValue = e.currentTarget.innerHTML;
     const colorInput =
       e.currentTarget.parentElement.parentElement.firstElementChild.firstElementChild;
-    console.log('colorInput', colorInput)
+    console.log('colorInput', colorInput);
     const item = e.currentTarget;
     colorInput.innerHTML = colorItemValue;
     const articleId = colorInput.closest('.ordering__card').getAttribute('id');
     const article = this.parsedData.find(obj => obj.label.id === articleId);
-    console.log('article.label.сolorSelected', article.label.сolorSelected)
-     console.log('parsedData',parsedData)
-     this._chooseSizeDueToColor(e, article)
+    this._chooseSizeDueToColor(e, article);
     if (e.target.classList.contains('js-size')) {
       article.label.sizeSelected = colorItemValue;
     } else if (e.target.classList.contains('js-color')) {
       let circleLink = colorInput.querySelector('.ordering__circle--color').getAttribute('href');
-      article.label.сolorSelected = e.currentTarget.id;/*   */
+      article.label.colorSelected = e.currentTarget.id;
       article.label.circleSelected = circleLink;
-     
     }
     localStorage.setItem('orderingData', JSON.stringify(this.parsedData));
     e.target.parentElement.classList.toggle('ordering-list--hide');
   }
   _chooseSizeDueToColor(event, article) {
-    const parentEl = event.currentTarget.parentElement.parentElement.parentElement
-    const sizesList = parentEl.querySelector('.ordering-sizelist-js')
+    const parentEl = event.currentTarget.parentElement.parentElement.parentElement;
+    const sizesList = parentEl.querySelector('.ordering-sizelist-js');
     const staticSizesItems = sizesList.querySelectorAll('.js-size');
-    console.log('staticSizes', staticSizesItems)
-    
-    let availableSizes = []
-    const inputColor = article.label.colorSelected
-    console.log('inputColor',inputColor)
-    console.log('article', article)
-    console.log('article.productAviable',article.label.productAviable)
+    // console.log('staticSizes', staticSizesItems);
+
+    let availableSizes = [];
+    const inputColor = article.label.colorSelected;
+
     article.label.productAviable.filter(product => {
-      if (product.colorId === inputColor ) {
-      console.log('product.colorId', product.colorId)
-      availableSizes = product.aviableSize;     
+      if (product.colorId === inputColor) {
+        // console.log('product.colorId', product.colorId);
+        availableSizes = product.aviableSize;
       }
-    })
-    console.log('availableSizes', availableSizes)
-    staticSizesItems.forEach(item => { 
-       item.style.display='none'
-      availableSizes.some(size => { 
+    });
+    // console.log('availableSizes', availableSizes);
+    staticSizesItems.forEach(item => {
+      item.style.display = 'none';
+      availableSizes.some(size => {
         if (item.textContent === size) {
-              item.style.display='flex'
-              console.log(item)
-            }       
-      })           
-          })
-    
+          item.style.display = 'flex';
+          // console.log(item);
+        }
+      });
+    });
   }
 }
