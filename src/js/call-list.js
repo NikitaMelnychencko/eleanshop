@@ -1,6 +1,7 @@
 import refs from './refs/refs.js';
 import updateBin from './updateBin.js';
 import { classBody } from './layout/static/footer.js';
+import { FetchSection } from './data/fetch_section';
 updateBin();
 
 import { Forms } from './components/forms';
@@ -17,7 +18,6 @@ const videoSetPlayer = new VideoSetPlayer();
 import home from '../views/layouts/home.hbs';
 import { pageHeroSliderMarkup, heroSlider } from './layout/home/hero.js';
 import { pageShowroomSliderMarkup, showroomSlider } from './layout/home/ourShowRoom.js';
-
 import {
   pageStarClientsSliderMarkup,
   starClientsSlider,
@@ -26,6 +26,7 @@ import {
 import { pageInInstagramSliderMarkup, instagramSlider } from './layout/home/inInstagram.js';
 import { cardsMarkup, openContent } from './layout/home/content.js';
 import { aboutTheBrand_parsing, openAboutTheBrand } from './layout/home/aboutTheBrand.js';
+
 export function homeRender() {
   updateBin();
   const initFooter = new classBody();

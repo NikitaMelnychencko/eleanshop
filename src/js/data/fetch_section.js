@@ -1,5 +1,5 @@
 import { getSection } from './firebase_Servise.js';
-class FetchSection {
+export class FetchSection {
   constructor({ firstParam, secondParam }) {
     this._state = {};
     this._getSection(firstParam, secondParam);
