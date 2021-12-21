@@ -50,7 +50,7 @@
 .catalog__product-card:nth-child(10n + 4),
 .catalog__product-card:nth-child(10n + 6),
 .catalog__product-card:nth-child(10n + 8) {
-  @media screen and (min-width: $tablet-general) {
+  @media screen and (min-width: $tablet-general) and (max-width: $tablet-only) {
     grid-row-start: span 3;
     height: 640px;
   }
