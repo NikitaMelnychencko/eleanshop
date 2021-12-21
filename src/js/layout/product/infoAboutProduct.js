@@ -133,6 +133,7 @@ function onColorListClick(event) {
   removeCurrentClass();
   addCurrentClass(colorpickerButton);
   showAvailableSizes(availableSizes);
+  setProductColor(inputColor);
 }
 
 function showAvailableSizes(sizes) {
@@ -172,11 +173,10 @@ function showAvailableSizes(sizes) {
 }
 
 function setProductDataToOrdering() {
-  const orderingDataArray = localStorage.getItem('orderingData');
-  if (orderingDataArray.length === 0) {
-    return;
+  if (!localStorage.getItem('orderingData')) {
+    localStorage.setItem('orderingData', JSON.stringify([]));
   }
-  const orderingDataParsed = JSON.parse(orderingDataArray);
+  const orderingDataParsed = JSON.parse(localStorage.getItem('orderingData'));
   const elementId = orderingDataParsed.findIndex(element => {
     element.label.id === productInfoData.id;
   });
