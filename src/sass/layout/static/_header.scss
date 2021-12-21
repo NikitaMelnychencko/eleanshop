@@ -418,6 +418,9 @@
       background-color: $button-hover-background-color;
     }
   }
+  &:hover .header__nav-sublink{
+    color: $selection-text-color;
+  }
 }
 
 .header__nav-sublink {
@@ -438,9 +441,9 @@
     transition-property: color;
     transition: $time-cubic;
 
-      &:hover {
-        color: $selection-text-color;
-      }
+      // &:hover .header__nav-sublink{
+      //   color: $selection-text-color;
+      // }
   }
 }
 
