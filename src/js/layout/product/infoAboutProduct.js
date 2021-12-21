@@ -1,3 +1,4 @@
+import { limitToFirst } from 'firebase/database';
 import productTemplate from '../../../views/partials/product/infoAboutProduct.hbs';
 
 import sizeChose from '../../components/sizeChose';
@@ -122,10 +123,10 @@ function onColorListClick(event) {
     return;
   }
 
-  const inputColor = event.target.previousElementSibling.value;
+  const inputColor = event.target.previousElementSibling.dataset.value;
 
   productInfoData.productAviable.find(size => {
-    if (size.colorId === inputColor) {
+    if (size.colorId === event.target.previousElementSibling.value) {
       availableSizes.push(size.aviableSize);
     }
   });
@@ -191,6 +192,10 @@ function setProductDataToOrdering() {
     orderingDataobj.label.circleSelected = '';
     orderingDataobj.label.description = '';
     orderingDataobj.label.count = 1;
+    orderingDataobj.label.sizeAvailable = productInfoData.productAviable.find(el => {
+      console.log(el.aviableSize);
+      if (orderingDataobj.label.colorSelected === el.colorName) return el.aviableSize;
+    });
     orderingDataobj.label.productAviable = productInfoData.productAviable;
     orderingDataParsed.push(orderingDataobj);
     localStorage.setItem('orderingData', JSON.stringify(orderingDataParsed));
