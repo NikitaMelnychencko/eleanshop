@@ -26,9 +26,15 @@ import {
 import { pageInInstagramSliderMarkup, instagramSlider } from './layout/home/inInstagram.js';
 import { cardsMarkup, openContent } from './layout/home/content.js';
 import { aboutTheBrand_parsing, openAboutTheBrand } from './layout/home/aboutTheBrand.js';
-
+let homeData;
 export function homeRender() {
   updateBin();
+  const initFetchSection = new FetchSection({
+    firstParam: 'home',
+    secondParam: 'components',
+  });
+  homeData = initFetchSection._state;
+
   const initFooter = new classBody();
   const homeMarkup = home({
     pageHeroSliderMarkup,
