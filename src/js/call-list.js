@@ -1,7 +1,7 @@
 import refs from './refs/refs.js';
 import updateBin from './updateBin.js';
 import { classBody } from './layout/static/footer.js';
-import { FetchSection } from './data/fetch_section';
+import { blockHelpRender } from './call-list/help.js';
 updateBin();
 
 import { Forms } from './components/forms';
@@ -248,14 +248,6 @@ export function showroomRender() {
   showroomSlider();
   blockHelpRender();
   formsForm.init();
-}
-
-//=====blockHelp========//
-import blockHelp_blockHelpTemplate from '../views/components/blockHelp.hbs';
-import { blockHelpRenderOpen } from './components/blockHelp/blockHelp.js';
-function blockHelpRender() {
-  refs.mainEL.insertAdjacentHTML('beforeend', blockHelp_blockHelpTemplate());
-  blockHelpRenderOpen();
 }
 
 //======catalog=========//

@@ -1,9 +1,5 @@
 // Import
-import model from '../../../views/partials/home/content.hbs';
-import content from '../../json/home/content.json';
 import { catalogRender } from '../../call-list.js';
-// Cards Insert
-export const cardsMarkup = model(content);
 
 export function openContent() {
   // Links

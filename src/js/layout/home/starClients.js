@@ -1,17 +1,6 @@
-import starClients_starClientsTempl from '../../../views/partials/home/starClients.hbs';
 import starClients_cardChatReviewsTempl from '../../../views/components/cardChatReviews.hbs';
 import starClients_reviewsChat from '../../json/homeRewiesChat/homeReviewsChat.json';
 import starClients_reviewsChatOthers from '../../json/homeRewiesChat/homeReviewsChatOthers.json';
-import pageStarClientsSliderData from '../../json/starClients.json';
-import pageStarClientsMarkupTemplate from '../../../views/partials/home/starClients.hbs';
-
-// Create markup and render in html
-const cardChatReviewsMarkup = starClients_cardChatReviewsTempl(starClients_reviewsChat);
-const starClientsSectionMarkup = starClients_starClientsTempl({ cardChatReviewsMarkup });
-export const pageStarClientsSliderMarkup = pageStarClientsMarkupTemplate({
-  pageStarClientsSliderData,
-  cardChatReviewsMarkup,
-});
 
 export function starClientsSlider() {
   window.jQuery = window.$ = require('jquery');

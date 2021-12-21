@@ -57,7 +57,7 @@ export class Forms {
           object[key] = value;
         });
         if (this.option === 'reviews') {
-          postUserData(userId, `userReviews`, object, 'database/formData/');
+          postUserData(userId, `userReviews`, object, 'database/components/');
           return;
         } else {
           postUserData(userId, `${this.nameData}`, object, 'formData/');
