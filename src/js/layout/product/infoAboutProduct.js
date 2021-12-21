@@ -90,8 +90,9 @@ export function onAddToFavoritesClick(event) {
 }
 
 //!----------------------------------------------------Colorpicker
-function setProductColor(color) {
+function setProductColor(color, colorName) {
   localStorage.setItem('productColor', color);
+  localStorage.setItem('productColorName', colorName);
 }
 function addCurrentClass(button) {
   button.classList.add('colorpicker__label--current');
@@ -130,7 +131,7 @@ function onColorListClick(event) {
   }
 
   const inputColor = event.target.previousElementSibling.value;
-
+  console.dir(event.target.previousElementSibling);
   productInfoData.productAviable.find(size => {
     if (size.colorId === inputColor) {
       availableSizes.push(size.aviableSize);
@@ -140,7 +141,8 @@ function onColorListClick(event) {
   removeCurrentClass();
   addCurrentClass(colorpickerButton);
   showAvailableSizes(availableSizes);
-  setProductColor(inputColor);
+
+  setProductColor(inputColor, colorName);
 }
 
 function showAvailableSizes(sizes) {

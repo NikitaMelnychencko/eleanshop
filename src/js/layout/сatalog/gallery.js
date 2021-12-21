@@ -10,17 +10,20 @@ let catalog = catalogz.products;
 export function activateFavorites() {
   const favArray = [];
   let favorites = JSON.parse(localStorage.getItem('favorites'));
-  favorites.fav.forEach(num => {
-    favArray.push(num.id);
-  });
-  let allHeart = document.querySelectorAll('.catalog-product-card__heart');
-  allHeart.forEach(el => {
-    if (favArray.includes(el.dataset.id)) {
-      el.classList.add('heart-click');
-      el.classList.add('active');
-    }
-    return;
-  });
+  if (favorites) {
+    favorites.fav.forEach(num => {
+      favArray.push(num.id);
+    });
+    let allHeart = document.querySelectorAll('.catalog-product-card__heart');
+
+    allHeart.forEach(el => {
+      if (favArray.includes(el.dataset.id)) {
+        el.classList.add('heart-click');
+        el.classList.add('active');
+      }
+      return;
+    });
+  }
 }
 
 function selectLS() {

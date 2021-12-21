@@ -37,60 +37,78 @@ class Favorites {
     refs.numRef.innerHTML = data.length;
     if (event.target.classList[0] === 'favorites__button-buy') {
       let id = event.target.parentNode.parentNode.id;
-      catalog.forEach(el => {
-        if (el.id === id) localStorage.setItem('productInfoData', JSON.stringify(el));
-      });
-      productRender();
-      scrollTo(0, 700);
+      function dataIncludesColorSize(id) {
+        let includes;
+        data.fav.forEach(el => {
+          if (el.id === id) {
+            if ((!el.color && el.color === '') || (!el.size && el.size === '')) {
+              includes = false;
+              return;
+            }
+            includes = true;
+          }
+        });
+        return includes;
+      }
 
-      // const ulRef = document.querySelector('.favorites__data');
-      // let i = 0;
-      // for (const el of ulRef.children) {
-      //   if (el.id === id) {
-      //     break;
-      //   }
-      //   i += 1;
-      // }
+      if (dataIncludesColorSize(id) === false) {
+        catalog.forEach(el => {
+          if (el.id === id) localStorage.setItem('productInfoData', JSON.stringify(el));
+        });
+        productRender();
+        scrollTo(0, 700);
+        return;
+      } else if (dataIncludesColorSize(id) === true) {
+        const ulRef = document.querySelector('.favorites__data');
+        let i = 0;
+        for (const el of ulRef.children) {
+          if (el.id === id) {
+            break;
+          }
+          i += 1;
+        }
 
-      // if (data !== null) {
-      //   let dataBin = localStorage.getItem('orderingData');
-      //   if (dataBin !== null) {
-      //     dataBin = JSON.parse(dataBin);
-      //   } else {
-      //     dataBin = [];
-      //   }
-      //   let isCont = true;
-      //   for (const obj of dataBin) {
-      //     if (obj.label.id === data['fav'][i].id) {
-      //       isCont = false;
-      //     }
-      //   }
-      //   if (!isCont) {
-      //     return;
-      //   }
-      //   let elem = { label: {} };
-      //   elem.label.id = data['fav'][i].id;
-      //   elem.label.name = data['fav'][i].name;
-      //   let imgs = [];
-      //   if (window.screen.size < 1379) {
-      //     imgs = data['fav'][i].image['srcset-mobile'].split(',');
-      //   } else {
-      //     imgs = data['fav'][i].image.srcset.split(',');
-      //   }
+        if (data !== null) {
+          console.dir(data);
+          let dataBin = localStorage.getItem('orderingData');
+          if (dataBin !== null) {
+            dataBin = JSON.parse(dataBin);
+          } else {
+            dataBin = [];
+          }
+          let isCont = true;
+          for (const obj of dataBin) {
+            if (obj.label.id === data['fav'][i].id) {
+              isCont = false;
+            }
+          }
+          if (!isCont) {
+            return;
+          }
+          let elem = { label: {} };
+          elem.label.id = data['fav'][i].id;
+          elem.label.name = data['fav'][i].name;
+          let imgs = [];
+          if (window.screen.size < 1379) {
+            imgs = data['fav'][i].image['srcset-mobile'].split(',');
+          } else {
+            imgs = data['fav'][i].image.srcset.split(',');
+          }
 
-      //   imgs[1] = imgs[1].trim();
-      //   elem.label.img = imgs[0].split(' ')[0];
-      //   elem.label.img2 = imgs[1].split(' ')[0];
-      //   elem.label.price = data['fav'][i].price;
-      //   elem.label.sizeSelected = data['fav'][i].size;
-      //   elem.label.colorSelected = data['fav'][i].color;
-      //   elem.label.circleSelected = '';
-      //   elem.label.description = '';
-      //   elem.label.count = 1;
+          imgs[1] = imgs[1].trim();
+          elem.label.img = imgs[0].split(' ')[0];
+          elem.label.img2 = imgs[1].split(' ')[0];
+          elem.label.price = data['fav'][i].price;
+          elem.label.sizeSelected = data['fav'][i].size;
+          elem.label.colorSelected = data['fav'][i].color;
+          elem.label.circleSelected = '';
+          elem.label.description = '';
+          elem.label.count = 1;
 
-      //   dataBin = [...dataBin, elem];
-      //   localStorage.setItem('orderingData', JSON.stringify(dataBin));
-      // }
+          dataBin = [...dataBin, elem];
+          localStorage.setItem('orderingData', JSON.stringify(dataBin));
+        }
+      }
     } else if (
       event.target.classList[0] === 'favorites__button-delete' ||
       event.target.classList[0] === 'favorites__button-delete--icon' ||
