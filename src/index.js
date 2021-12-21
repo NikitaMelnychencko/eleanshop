@@ -1,11 +1,15 @@
 import './sass/main.scss';
 import './js/importImages/importImages.js';
-import './js/call-list.js';
+
 import './js/updateBin.js';
-//=========layout===============
+//=========Service===============
 //firebase
 import './js/data/firebase_Servise';
 import './js/data/fetch_section';
+//====call-list====
+import './js/call-list.js';
+
+//=========layout================
 //main
 import './js/layout/home/hero.js';
 import './js/layout/home/content.js';
