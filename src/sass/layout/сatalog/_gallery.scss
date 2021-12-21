@@ -109,7 +109,6 @@
 .catalog-product-card__image-box {
   height: 100%;
   width: 100%;
-  // object-fit: cover;
   overflow: hidden;
   &:hover,
   &:focus {
@@ -125,7 +124,6 @@
   transition: box-shadow $time-cubic;
   @media screen and (min-width: $desktop-up) {
     object-fit: cover;
-    // width: auto;
     height: 100%;
   }
 }
