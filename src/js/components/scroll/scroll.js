@@ -5,14 +5,6 @@ function getBrowserId() {
   for (nIdx; nIdx > -1 && sUsrAg.indexOf(aKeys[nIdx]) === -1; nIdx--);
   return nIdx;
 }
-console.log(getBrowserId());
-
-export function restoreScroll() {
-  const styleArray = style().split(';');
-  styleArray.splice(indexOfNeedStyle(styleArray), 1);
-  const styleString = styleArray.join(';');
-  document.documentElement.style.cssText = `${styleString}${browserScroll()}`;
-}
 
 export function bodyFixPosition() {
   if (!document.body.hasAttribute('data-body-scroll-fix')) {

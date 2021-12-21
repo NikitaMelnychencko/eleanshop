@@ -227,8 +227,6 @@ function onCharListClick(event) {
 }
 //!----------------------------------------------------Determine Size
 function onNotYourSizeBtnClick() {
-  // const preorderBackdropEl = document.querySelector('.preoder__backdrop');
-  // preorderBackdropEl.classList.add('is-visible');
   renderModal(preorderMark, '');
   bodyFixPosition();
 }
@@ -239,8 +237,6 @@ function onDefineSizeBtnClick() {
 }
 //!----------------------------------------------------Fitting
 function onFittingBtnClick() {
-  // const tryOnBackdropEl = document.querySelector('.try-on__backdrop');
-  // tryOnBackdropEl.classList.add('is-visible');
   renderModal(tryOnModelsModal(), '');
 
   bodyFixPosition();
