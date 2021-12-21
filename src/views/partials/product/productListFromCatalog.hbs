@@ -1,21 +1,22 @@
 <ul class='recomendation-category__list slider'>
   {{#each this}}
-    <li class='recomendation-category__item slider__item' id="{{id}}">
-      <div class='recomendation-category__link' >
-        <picture>
-          <source srcset="{{img.srcset}}" media='(min-width: 1920px)' />
-          {{#if img.srcset-mobile}}
-            <source srcset="{{img.srcset-mobile}}" media='(max-width: 414px)' />
-          {{/if}}
-          <img src="{{img.src}}" alt="{{img.alt}}" class='recomendation-category__image' />
-        </picture>
-      </div>
+  <li class='recomendation-category__item slider__item' product-id="{{id}}">
+    <div class='recomendation-category__link'>
+
+      <picture>
+        <source srcset="{{imageProduct}}" media='(min-width: 1920px)' />
+        <source srcset="{{imageProduct}}" media='(max-width: 414px)' />
+        <img {{#each image}} src="{{imageProduct}}" alt="{{imageDescriprion}}"
+          {{/each}}class='recomendation-category__image' loading='lazy' />
+      </picture>
+
+
       <div class='recomendation-category__card-text'>
         <div class='recomendation-category__block-title'>
           <h3 class='recomendation-category__item-title'>
-            {{name}}
+            {{productName}}
           </h3>
-          <button class='button-add-likes {{#if likes}} active{{/if}} js-btn-like' data-id="{{id}}">
+          <button class='button-add-likes {{#if likes}} active{{/if}} js-btn-like' data-id="{{ihd}}">
             <svg class='button-add-likes__icon'>
               <use href='./images/icon-product-delivery.svg#icon-heart'></use>
             </svg>
@@ -29,10 +30,10 @@
             </span>
           </span>
           <span class='recomendation-category__characters'>
-            {{description}}
+            {{productAbout}}
           </span>
         </div>
       </div>
-    </li>
+  </li>
   {{/each}}
 </ul>

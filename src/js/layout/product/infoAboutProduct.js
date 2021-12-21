@@ -49,9 +49,9 @@ function insertIntoLSFavorite(id) {
       id: productInfoData.id,
       name: productInfoData.name,
       image: {
-        srcset: `${productInfoData.image[0].imageMobile} 1x, ${productInfoData.image[0].imageMobileHigherResolution} 2x`,
-        'srcset-mobile': `${productInfoData.image[0].imageMobile} 1x, ${productInfoData.image[0].imageMobileHigherResolution} 2x`,
-        src: productInfoData.image[0].imageMobile,
+        srcset: `${productInfoData.image[0].imageProduct} 1x, ${productInfoData.image[0].imageProductHigherResolution} 2x`,
+        'srcset-mobile': `${productInfoData.image[0].imageProduct} 1x, ${productInfoData.image[0].imageProductHigherResolution} 2x`,
+        src: productInfoData.image[0].imageProduct,
         alt: productInfoData.image[0].imageDescriprion,
       },
       price: productInfoData.productPrice,
@@ -107,6 +107,10 @@ function fixateCurrentClass(colorArray, productColor) {
       break;
     }
   }
+}
+
+function selectFirstColor() {
+  document.querySelector('.colorpicker__label').click();
 }
 
 function onColorListClick(event) {
@@ -169,11 +173,10 @@ function showAvailableSizes(sizes) {
 }
 
 function setProductDataToOrdering() {
-  const orderingDataArray = localStorage.getItem('orderingData');
-  if (orderingDataArray.length === 0) {
-    return;
+  if (!localStorage.getItem('orderingData')) {
+    localStorage.setItem('orderingData', JSON.stringify([]));
   }
-  const orderingDataParsed = JSON.parse(orderingDataArray);
+  const orderingDataParsed = JSON.parse(localStorage.getItem('orderingData'));
   const elementId = orderingDataParsed.findIndex(element => {
     element.label.id === productInfoData.id;
   });
@@ -181,7 +184,7 @@ function setProductDataToOrdering() {
     let orderingDataobj = { label: {} };
     orderingDataobj.label.id = productInfoData.id;
     orderingDataobj.label.name = productInfoData.productName;
-    orderingDataobj.label.img = productInfoData.image[0].imageMobile;
+    orderingDataobj.label.img = productInfoData.image[0].imageProduct;
     orderingDataobj.label.price = productInfoData.productPrice;
     orderingDataobj.label.sizeSelected = localStorage.getItem('productSize');
     orderingDataobj.label.colorSelected = localStorage.getItem('productColor');
@@ -265,6 +268,7 @@ function createAllListeners(buy) {
   charList.addEventListener('click', onCharListClick);
   sizeList.addEventListener('click', onSizeElClick);
   form.addEventListener('submit', onFormSubmit(buy));
+  selectFirstColor();
 }
 
 //!----------------------------------------------------EXPORT TO MAIN FILE
