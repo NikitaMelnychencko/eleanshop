@@ -1,12 +1,27 @@
 import gallery from '../../../views/partials/сatalog/gallery.hbs';
 import catalogz from '../../json/all.json';
-let catalog = catalogz.products;
 import filterLib from '../../json/filterLib.json';
 import { productRender } from '../../call-list.js';
 import { scrollTo } from '../../components/scrollTo';
-
 import refs from '../../refs/refs.js';
 const { favQuantityEl } = refs;
+let catalog = catalogz.products;
+
+export function activateFavorites() {
+  const favArray = [];
+  let favorites = JSON.parse(localStorage.getItem('favorites'));
+  favorites.fav.forEach(num => {
+    favArray.push(num.id);
+  });
+  let allHeart = document.querySelectorAll('.catalog-product-card__heart');
+  allHeart.forEach(el => {
+    if (favArray.includes(el.dataset.id)) {
+      el.classList.add('heart-click');
+      el.classList.add('active');
+    }
+    return;
+  });
+}
 
 function selectLS() {
   let ls = localStorage.getItem('content');
@@ -135,6 +150,7 @@ export function filteredCatalog(filterName) {
   if (fcatalog.length > 0) {
     document.querySelector('.catalog__gallery-list').innerHTML = gallery(fcatalog);
     openCategory();
+    activateFavorites();
   }
 }
 function removeFromFavorite(id) {

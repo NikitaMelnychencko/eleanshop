@@ -297,7 +297,7 @@ function blockHelpRender() {
 //======catalog=========//
 import catalogMarkUp from '../views/layouts/catalog.hbs';
 import { filterListMakeup, openFilter } from './layout/сatalog/filter.js';
-import { catalogListMarkupF, openCategory } from './layout/сatalog/gallery.js';
+import { catalogListMarkupF, openCategory, activateFavorites } from './layout/сatalog/gallery.js';
 
 export function catalogRender() {
   const initFooter = new classBody();
@@ -307,5 +307,6 @@ export function catalogRender() {
   openFilter();
   openCategory();
   blockHelpRender();
+  activateFavorites();
   // console.log(filterGalleryCatalogMarkup);
 }
