@@ -31,10 +31,10 @@
             </div>
 
             <ul class='ordering-list ordering-list--hide ordering-list-js'>
-              {{#each color}}
-                <li class='ordering-list__item ordering-item-js js-color'>{{text}}
+              {{#each label.productAviable}}
+                <li class='ordering-list__item ordering-item-js js-color'>{{colorName}}
                   <svg class='ordering__circle' aria-label='circle' width='20' height='20'>
-                    <use class='ordering__circle--color' href='./images/exampl.svg#{{circle}}'>
+                    <use class='ordering__circle--color' href='./images/exampl.svg#icon-circle-{{colorName}}'>
                     </use>
                   </svg>
                 </li>
@@ -53,10 +53,16 @@
             </div>
 
             <ul class='ordering-list ordering-list--hide ordering-list-js'>
-              {{#each size}}
+              {{!-- {{#each label.productAviable}}
                 <li class='ordering-list__item ordering-item-js js-size'>{{text}}
                 </li>
-              {{/each}}
+              {{/each}} --}}
+              <li class='ordering-list__item ordering-item-js js-size' >40</li>
+              <li class='ordering-list__item ordering-item-js js-size' >42</li>
+              <li class='ordering-list__item ordering-item-js js-size' >44</li>
+              <li class='ordering-list__item ordering-item-js js-size' >46</li>
+              <li class='ordering-list__item ordering-item-js js-size' >48</li>
+              <li class='ordering-list__item ordering-item-js js-size' >50</li>
             </ul>
           </div>
           <div class='ordering__counter'>

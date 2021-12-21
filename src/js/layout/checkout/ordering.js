@@ -173,14 +173,47 @@ export class OrderingSizeAndColor {
     colorInput.innerHTML = colorItemValue;
     const articleId = colorInput.closest('.ordering__card').getAttribute('id');
     const article = this.parsedData.find(obj => obj.label.id === articleId);
+     this._chooseSizeDueToColor(e, article)
     if (e.target.classList.contains('js-size')) {
       article.label.sizeSelected = colorItemValue;
     } else if (e.target.classList.contains('js-color')) {
       let circleLink = colorInput.querySelector('.ordering__circle--color').getAttribute('href');
       article.label.сolorSelected = e.currentTarget.innerText;
       article.label.circleSelected = circleLink;
+     
     }
     localStorage.setItem('orderingData', JSON.stringify(this.parsedData));
     e.target.parentElement.classList.toggle('ordering-list--hide');
+  }
+  _chooseSizeDueToColor(event, article) {
+    const staticSizesItems = document.querySelectorAll('.js-size');
+    /* let staticSizes = [];
+    staticSizesItems.forEach(item => { 
+     staticSizes.push(item.textContent) 
+    })
+    console.log('staticSizes', staticSizes)
+ */
+    let availableSizes = []
+    const inputColor = article.label.colorSelected
+    console.log('inputColor',inputColor)
+    console.log('article', article)
+    console.log('article.productAviable',article.label.productAviable)
+    article.label.productAviable.filter(product => {
+      if (product.colorId === inputColor || product.colorName === inputColor) {
+      console.log('product.colorId', product.colorId)
+      availableSizes = product.aviableSize;     
+      }
+    })
+    console.log('availableSizes', availableSizes)
+    staticSizesItems.forEach(item => { 
+       item.style.display='none'
+      availableSizes.some(size => { 
+        if (item.textContent === size) {
+              item.style.display='flex'
+              console.log(item)
+            }       
+      })           
+          })
+    
   }
 }
