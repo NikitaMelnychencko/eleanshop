@@ -167,6 +167,7 @@ export function deliveryRender() {
     descriptionDelivery,
     questionDelivery,
     formDeliveryMarkUp,
+    mainModal,
   });
   refs.mainEL.innerHTML = deliveryPageMarkUp;
   deliveryThreeModal();
