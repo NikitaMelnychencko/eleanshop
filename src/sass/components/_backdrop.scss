@@ -71,9 +71,6 @@
   }
 
   &-text {
-    // @media screen and (max-width: $desktop-up - 1px) {
-    //   display: none;
-    // }
     @media screen and (min-width: $desktop-up) {
       display: block;
       position: absolute;
