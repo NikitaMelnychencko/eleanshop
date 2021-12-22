@@ -83,7 +83,7 @@
   position: relative;
 }
 .catalog-product-card__title {
-  width: 100%;
+  width: 90%;
   font-weight: 500;
   font-size: 15px;
   line-height: 1.2;
@@ -93,7 +93,6 @@
   margin-bottom: 15px;
 
   @media screen and (min-width: $desktop-up) {
-    width: 100%;
     min-height: 35px;
     margin-top: 19px;
     margin-bottom: 15px;

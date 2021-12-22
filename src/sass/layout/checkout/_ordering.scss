@@ -50,14 +50,25 @@
     align-items: center;
   }
 }
+.ordering__image-box {
+  height: 140px;
+  width: 100px;
+  overflow: hidden;
+  @media screen and (min-width: $desktop-up) {
+    height: 100px;
+    width: 80px;
+  }
+}
 
-.ordering_image {
+.ordering__image {
   @media screen and (min-width: $mobile-first) {
-    width: 100px;
+    object-fit: cover;
+    height: 100%;
   }
 
   @media screen and (min-width: $desktop-up) {
-    width: 80px;
+    object-fit: cover;
+    height: 100%;
   }
 }
 
