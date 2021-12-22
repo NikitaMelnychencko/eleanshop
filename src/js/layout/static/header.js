@@ -1,5 +1,5 @@
 import refs from '../../refs/refs.js';
-import { favoritesRender } from '../../call-list.js';
+import { favoritesRender } from '../../call-list/favorites.js';
 import { contactRender } from '../../call-list/contact.js';
 import { showroomRender } from '../../call-list/showroom.js';
 import { catalogRender } from '../../call-list/catalog.js';

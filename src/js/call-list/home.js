@@ -66,8 +66,6 @@ export function homeRender() {
     formsForm.init();
     blockHelpRender();
   });
-
-  //const pageHeroSliderMarkup = pageHeroMarkupTemplate();
 }
 homeRender(); //========================================================call
 updateBin();

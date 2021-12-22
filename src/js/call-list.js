@@ -1,18 +1,18 @@
-import refs from './refs/refs.js';
-import updateBin from './updateBin.js';
-import { classBody } from './layout/static/footer.js';
-import { blockHelpRender } from './call-list/help.js';
-updateBin();
+// import refs from './refs/refs.js';
+// import updateBin from './updateBin.js';
+// import { classBody } from './layout/static/footer.js';
+// import { blockHelpRender } from './call-list/help.js';
+// updateBin();
 
-import { Forms } from './components/forms';
-const formsForm = new Forms('fittingForm');
-const formsPage = new Forms('fittingPage');
-const formBrand = {
-  page: formsPage.insertForm(),
-  form: formsForm.insertForm(),
-};
-import { VideoSetPlayer } from './components/videoSetPlayer.js';
-const videoSetPlayer = new VideoSetPlayer();
+// import { Forms } from './components/forms';
+// const formsForm = new Forms('fittingForm');
+// const formsPage = new Forms('fittingPage');
+// const formBrand = {
+//   page: formsPage.insertForm(),
+//   form: formsForm.insertForm(),
+// };
+// import { VideoSetPlayer } from './components/videoSetPlayer.js';
+// const videoSetPlayer = new VideoSetPlayer();
 //=====brand========//
 // import brand_page from '../views/layouts/brand.hbs';
 // import { brandOurAdvantages, videoBrand, brandPlayer } from './layout/brand/infoAboutBrand.js';
@@ -43,7 +43,7 @@ const videoSetPlayer = new VideoSetPlayer();
 //   const savedData = localStorage.getItem('orderingData');
 //   const parsedData = JSON.parse(savedData);
 //   const ordering = ordering_ordering(parsedData);
-//   const createCheckout = payment_checkout({ createPayment, ordering, mainModal }); //!поправить
+//   const createCheckout = payment_checkout({ createPayment, ordering, mainModal });
 //   refs.mainEL.innerHTML = createCheckout;
 //refs.mainEL.insertAdjacentHTML('beforeend', createCheckout);
 
@@ -63,34 +63,34 @@ const videoSetPlayer = new VideoSetPlayer();
 // }
 
 //=====favorites========//
-import Favorites from './layout/favorites/favorites.js';
-// import favorit from './json/favorites.json';
+// import Favorites from './layout/favorites/favorites.js';
+// // import favorit from './json/favorites.json';
 
-refs.numRef.innerHTML = 0;
-let favoritesData = localStorage.getItem('favorites');
-if (favoritesData !== null) {
-  favoritesData = JSON.parse(favoritesData);
-  refs.numRef.innerHTML = favoritesData['fav'].length;
-}
+// refs.numRef.innerHTML = 0;
+// let favoritesData = localStorage.getItem('favorites');
+// if (favoritesData !== null) {
+//   favoritesData = JSON.parse(favoritesData);
+//   refs.numRef.innerHTML = favoritesData['fav'].length;
+// }
 
-export function favoritesRender() {
-  // let data = {};
-  // data['fav'] = [...favorit];
-  // localStorage.setItem('favorites', JSON.stringify(data));
+// export function favoritesRender() {
+//   // let data = {};
+//   // data['fav'] = [...favorit];
+//   // localStorage.setItem('favorites', JSON.stringify(data));
 
-  const favorites = new Favorites();
+//   const favorites = new Favorites();
 
-  if (favorites.markcup.length > 0) {
-    refs.mainEL.innerHTML = favorites.markcup;
-  }
-  favorites.init();
-  blockHelpRender();
-}
-let data = localStorage.getItem('favorites');
-if (!data == null) {
-  data = JSON.parse(data);
-  refs.numRef.innerHTML = data['fav'].length;
-}
+//   if (favorites.markcup.length > 0) {
+//     refs.mainEL.innerHTML = favorites.markcup;
+//   }
+//   favorites.init();
+//   blockHelpRender();
+// }
+// let data = localStorage.getItem('favorites');
+// if (!data == null) {
+//   data = JSON.parse(data);
+//   refs.numRef.innerHTML = data['fav'].length;
+// }
 //=====contact========//
 
 // import contact_page from '../views/layouts/contact.hbs';
