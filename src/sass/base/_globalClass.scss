@@ -41,7 +41,6 @@ body {
 .container-hero {
   margin-left: auto;
   margin-right: auto;
-
   @media screen and (min-width: $mobile-first) {
     min-width: $mobile-first;
   }

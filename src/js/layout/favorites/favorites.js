@@ -35,7 +35,6 @@ class Favorites {
   onButtonsClick(event) {
     let data = localStorage.getItem('favorites');
     data = JSON.parse(data);
-    refs.numRef.innerHTML = data.length;
     if (event.target.classList[0] === 'favorites__button-buy') {
       let id = event.target.parentNode.parentNode.id;
       function dataIncludesColorSize(id) {
