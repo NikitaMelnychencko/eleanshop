@@ -294,5 +294,4 @@ export function catalogRender() {
   openCategory();
   blockHelpRender();
   activateFavorites();
-  // console.log(filterGalleryCatalogMarkup);
 }

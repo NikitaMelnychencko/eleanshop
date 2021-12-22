@@ -16,7 +16,8 @@
           <h3 class='recomendation-category__item-title'>
             {{productName}}
           </h3>
-          <button class='button-add-likes {{#if likes}} active{{/if}} js-btn-like' data-id="{{id}}">
+          <button class='button-add-likes {{#if likes}} active{{/if}} js-btn-like' data-id="{{id}}"
+            aria-label="add to favorites">
             <svg class='button-add-likes__icon'>
               <use href='./images/icon-product-delivery.svg#icon-heart'></use>
             </svg>

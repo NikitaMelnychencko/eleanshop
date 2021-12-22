@@ -4,18 +4,25 @@ import { favoritesRender } from '../../call-list.js';
 import catalogz from '../../json/all.json';
 import { productRender } from '../../call-list.js';
 import { scrollTo } from '../../components/scrollTo';
-import refs from '../../refs/refs.js';
 let catalog = catalogz.products;
 let debounce = require('lodash.debounce');
 import updateBin from '../../updateBin';
+
+function refs() {
+  return {
+    favQuantityEl: document.getElementById('js-text-fav'),
+    numRef: document.querySelector('.header__product-text'),
+  };
+}
+
 class Favorites {
   constructor() {
     this.markcup = '';
-    refs.numRef.innerHTML = 0;
+    refs().numRef.innerHTML = 0;
     this.data = localStorage.getItem('favorites');
     if (this.data !== null) {
       this.data = JSON.parse(this.data);
-      refs.numRef.innerHTML = this.data['fav'].length;
+      refs().numRef.innerHTML = this.data['fav'].length;
       this.markcup = markupTempl(this.data['fav']);
     }
   }
@@ -134,10 +141,10 @@ class Favorites {
         animateHeader('js-text-fav');
       }
       localStorage.setItem('favorites', JSON.stringify(data));
-      refs.favQuantityEl.innerHTML = data.fav.length;
+      refs().favQuantityEl.innerHTML = data.fav.length;
       favoritesRender();
     }
-    refs.numRef.innerHTML = data['fav'].length;
+    refs().numRef.innerHTML = data['fav'].length;
   }
 
   onButtonSendEMailClick() {
@@ -174,7 +181,7 @@ class Favorites {
     }
     data['fav'] = done;
     localStorage.setItem('favorites', JSON.stringify(data));
-    refs.favQuantityEl.innerHTML = data.fav.length;
+    refs().favQuantityEl.innerHTML = data.fav.length;
   }
 }
 

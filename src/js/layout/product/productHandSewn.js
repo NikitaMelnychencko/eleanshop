@@ -43,7 +43,6 @@ export default class HandSewn {
     //     }
     //   });
     // }
-    console.log('object');
     renderModal(tryOnModels, setEventTryOnModels);
   };
 
