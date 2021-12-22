@@ -18,9 +18,12 @@
 
           <div class='ordering__item ordering__select--color'>
             <div class='ordering__select ordering__select--color ordering-input-js'>
-              <div class='ordering__colorname'>{{label.сolorSelected}}
+              <div class='ordering__colorname'>{{label.colorSelected}}
                 <svg class='ordering__circle' aria-label='circle' width='20' height='20'>
-                  <use class='ordering__circle--color' href='{{label.circleSelected}}'>
+                  <use
+                    class='ordering__circle--color'
+                    href='./images/exampl.svg#icon-circle-{{label.colorSelected}}'
+                  >
                   </use>
                 </svg>
               </div>
@@ -31,10 +34,16 @@
             </div>
 
             <ul class='ordering-list ordering-list--hide ordering-list-js'>
-              {{#each color}}
-                <li class='ordering-list__item ordering-item-js js-color'>{{text}}
+              {{#each label.productAviable}}
+                <li
+                  class='ordering-list__item ordering-item-js js-color'
+                  id={{colorId}}
+                ><span>{{colorName}}</span>
                   <svg class='ordering__circle' aria-label='circle' width='20' height='20'>
-                    <use class='ordering__circle--color' href='./images/exampl.svg#{{circle}}'>
+                    <use
+                      class='ordering__circle--color'
+                      href='./images/exampl.svg#icon-circle-{{colorName}}'
+                    >
                     </use>
                   </svg>
                 </li>
@@ -52,11 +61,12 @@
               </svg>
             </div>
 
-            <ul class='ordering-list ordering-list--hide ordering-list-js'>
-              {{#each size}}
-                <li class='ordering-list__item ordering-item-js js-size'>{{text}}
+            <ul class='ordering-list ordering-list--hide ordering-list-js ordering-sizelist-js'>
+              {{#each label.sizeAvailable.aviableSize}}
+                <li class='ordering-list__item ordering-item-js js-size'>{{this}}
                 </li>
               {{/each}}
+              
             </ul>
           </div>
           <div class='ordering__counter'>
