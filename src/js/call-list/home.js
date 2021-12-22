@@ -32,7 +32,6 @@ export function homeRender() {
   const homeData = initFetchSection._state;
 
   homeData.then(el => {
-    console.log(el[1].ourShowroom);
     const pageHeroSliderMarkup = pageHeroMarkupTemplate(el[0].hero);
     const pageShowroomSliderMarkup = pageShowroomMarkupTemplate(el[1].ourShowroom);
     const cardsMarkup = model(el[0].content);

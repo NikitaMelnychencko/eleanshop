@@ -1,5 +1,5 @@
 // Import
-import { catalogRender } from '../../call-list.js';
+import { catalogRender } from '../../call-list/catalog.js';
 
 export function openContent() {
   // Links

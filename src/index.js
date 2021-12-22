@@ -8,6 +8,17 @@ import './js/data/fetch_section';
 //====call-list====
 import './js/call-list.js';
 import './js/call-list/home.js';
+import './js/call-list/product.js';
+import './js/call-list/reviews.js';
+import './js/call-list/showroom.js';
+import './js/call-list/brand.js';
+import './js/call-list/catalog.js';
+import './js/call-list/checkout.js';
+import './js/call-list/contact.js';
+import './js/call-list/delivery.js';
+import './js/call-list/favorites.js';
+import './js/call-list/fitting.js';
+
 //=========layout================
 //main
 import './js/layout/home/hero.js';

@@ -1,6 +1,6 @@
 import gallery from '../../../views/partials/сatalog/gallery.hbs';
 import catalogz from '../../json/all.json';
-let catalog = catalogz.products;
+let catalog = null;
 import filterLib from '../../json/filterLib.json';
 import { productRender } from '../../call-list.js';
 import { scrollTo } from '../../components/scrollTo';
@@ -30,14 +30,18 @@ function filterCatalog() {
   if (ls) {
     const fcatalog = [];
     catalog.forEach(el => {
+      if (!el.collection) el.collection = [];
       if (el.category.indexOf(ls) >= 0 || el.collection.indexOf(ls) >= 0) fcatalog.push(el);
     });
+
     if (fcatalog.length > 0) return fcatalog;
   }
   return catalog;
 }
 
 export function catalogListMarkupF() {
+  const value = sessionStorage.getItem('galleryData');
+  catalog = JSON.parse(value);
   return gallery(filterCatalog());
 }
 export function openCategory() {

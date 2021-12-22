@@ -251,17 +251,17 @@ export function showroomRender() {
 }
 
 //======catalog=========//
-import catalogMarkUp from '../views/layouts/catalog.hbs';
-import { filterListMakeup, openFilter } from './layout/сatalog/filter.js';
-import { catalogListMarkupF, openCategory } from './layout/сatalog/gallery.js';
+// import catalogMarkUp from '../views/layouts/catalog.hbs';
+// import { filterListMakeup, openFilter } from './layout/сatalog/filter.js';
+// import { catalogListMarkupF, openCategory } from './layout/сatalog/gallery.js';
 
-export function catalogRender() {
-  const initFooter = new classBody();
-  const catalogListMarkup = catalogListMarkupF();
-  const filterGalleryCatalogMarkup = catalogMarkUp({ filterListMakeup, catalogListMarkup });
-  refs.mainEL.innerHTML = filterGalleryCatalogMarkup;
-  openFilter();
-  openCategory();
-  blockHelpRender();
-  // console.log(filterGalleryCatalogMarkup);
-}
+// export function catalogRender() {
+//   const initFooter = new classBody();
+//   const catalogListMarkup = catalogListMarkupF();
+//   const filterGalleryCatalogMarkup = catalogMarkUp({ filterListMakeup, catalogListMarkup });
+//   refs.mainEL.innerHTML = filterGalleryCatalogMarkup;
+//   openFilter();
+//   openCategory();
+//   blockHelpRender();
+//   // console.log(filterGalleryCatalogMarkup);
+// }

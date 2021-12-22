@@ -1,7 +1,6 @@
 import refs from '../../refs/refs.js';
 import { scrollTo } from '../../components/scrollTo';
 import {
-  catalogRender,
   fittingRender,
   brandRender,
   productRender,
@@ -12,6 +11,7 @@ import {
   showroomRender,
   checkoutRender,
 } from '../../call-list';
+import { catalogRender } from '../../call-list/catalog.js';
 import { id } from 'postcss-selector-parser';
 import { indexOf } from 'lodash';
 

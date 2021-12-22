@@ -1,6 +1,4 @@
 import starClients_cardChatReviewsTempl from '../../../views/components/cardChatReviews.hbs';
-import starClients_reviewsChat from '../../json/homeRewiesChat/homeReviewsChat.json';
-import starClients_reviewsChatOthers from '../../json/homeRewiesChat/homeReviewsChatOthers.json';
 import { getSection } from '../../data/firebase_Servise';
 export function starClientsSlider() {
   window.jQuery = window.$ = require('jquery');
