@@ -1,3 +1,10 @@
+.product-container {
+  @media screen and (min-width: $desktop-up) {
+    width: 1017px;
+    // padding: 70px 120px;
+  }
+}
+
 .product-modal-add-cart {
   background-color: $modal-background-color;
   position: absolute;
@@ -41,6 +48,7 @@
     padding: 20px 20px 66px;
     @media screen and (min-width: $desktop-up) {
       display: flex;
+      justify-content: center;
     }
   }
 
@@ -64,7 +72,7 @@
       font-size: 30px;
       line-height: 1.1;
       letter-spacing: 0.03em;
-      text-align: left;
+      // text-align: left;
       &_second {
         margin-bottom: 20px;
         font-size: 18px;
@@ -84,13 +92,13 @@
   & .recomendation-category__list {
     padding: 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
   }
-  & .recomendation-category__item {
-    width: 200px;
+  // & .recomendation-category__item {
+  //   // width: 200px;
 
-    &:not(:last-child) {
-      margin-right: 15px;
-    }
-  }
+  //   // &:not(:last-child) {
+  //   //   margin-right: 15px;
+  //   // }
+  // }
 }
