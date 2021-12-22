@@ -50,7 +50,6 @@
     "mini-css-extract-plugin": "^2.3.0",
     "multi-loader": "^0.1.0",
     "node-sass": "^6.0.1",
-    "pnotify": "^5.2.0",
     "postcss": "^8.3.8",
     "postcss-loader": "^6.1.1",
     "postcss-preset-env": "^6.7.0",

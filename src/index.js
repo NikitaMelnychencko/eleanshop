@@ -7,7 +7,6 @@ import './js/updateBin.js';
 import './js/data/firebase_Servise';
 import './js/data/fetch_section';
 //====call-list====
-import './js/call-list.js';
 import './js/call-list/home.js';
 import './js/call-list/product.js';
 import './js/call-list/reviews.js';

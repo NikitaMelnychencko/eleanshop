@@ -82,7 +82,6 @@ export async function postUserData(userId, folder, data, baseFolder) {
   return await set(newPostRef, {
     data,
   });
-  //return await set(ref(db, `baseFolder/` + folder + '/' + messageId), data);
 }
 // export async function post(data) {
 //   return await set(ref(db, 'database'), data);

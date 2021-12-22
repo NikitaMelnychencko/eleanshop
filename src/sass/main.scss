@@ -12,9 +12,6 @@
 //==========components===========
 @import './components/button';
 @import './components/forms';
-@import './components/logo';
-@import './components/reviewsBord';
-@import './components/showroomGallery';
 @import './components/slider';
 @import './components/backdrop';
 @import './components/thanksForOrdering';
@@ -27,7 +24,7 @@
 @import './layout/home/content';
 @import './layout/home/aboutTheBrand';
 @import './layout/home/ourShowRoom';
-@import './layout/home/registrationFormForFitting';
+
 @import './layout/home/starClients';
 @import './layout/home/inInstgram';
 //catalog
@@ -49,8 +46,7 @@
 @import './layout/delivery/formsQuestion';
 //reviews
 @import './layout/reviews/videoSet';
-@import './layout/reviews/starsClients';
-// @import './layout/reviews/registrationFormForFitting';
+
 //showroom
 @import './layout/showroom/showroom';
 //contact
@@ -61,7 +57,7 @@
 @import './components/sizeChose';
 @import './components/sizeTable';
 @import './layout/fitting/videoSlider';
-@import './layout/fitting/formFittingInShowroom';
+
 //brand
 @import './layout/brand/infoAboutBrand';
 @import './layout/brand/ourAdvantages';
