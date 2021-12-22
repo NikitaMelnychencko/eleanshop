@@ -6,7 +6,6 @@ import { scrollTo } from '../../components/scrollTo';
 import refs from '../../refs/refs.js';
 const { favQuantityEl } = refs;
 let catalog = null;
-let catalog = catalogz.products;
 
 export function activateFavorites() {
   const favArray = [];
