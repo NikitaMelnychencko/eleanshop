@@ -1,18 +1,6 @@
-import starClients_starClientsTempl from '../../../views/partials/home/starClients.hbs';
 import starClients_cardChatReviewsTempl from '../../../views/components/cardChatReviews.hbs';
-import starClients_reviewsChat from '../../json/homeRewiesChat/homeReviewsChat.json';
-import starClients_reviewsChatOthers from '../../json/homeRewiesChat/homeReviewsChatOthers.json';
-import pageStarClientsSliderData from '../../json/starClients.json';
-import pageStarClientsMarkupTemplate from '../../../views/partials/home/starClients.hbs';
-
-// Create markup and render in html
-const cardChatReviewsMarkup = starClients_cardChatReviewsTempl(starClients_reviewsChat);
-const starClientsSectionMarkup = starClients_starClientsTempl({ cardChatReviewsMarkup });
-export const pageStarClientsSliderMarkup = pageStarClientsMarkupTemplate({
-  pageStarClientsSliderData,
-  cardChatReviewsMarkup,
-});
-
+import { getArr } from '../../call-list/home';
+import { getSection } from '../../data/firebase_Servise';
 export function starClientsSlider() {
   window.jQuery = window.$ = require('jquery');
   require('../../slider/slick.min.js');
@@ -64,9 +52,19 @@ export function starClientsComments() {
 
   //button show more
   showMoreButtonEl.addEventListener('click', onButtonShowMoreClick);
-
+  let factor = 1;
   function onButtonShowMoreClick(event) {
-    renderNewMarkup(starClients_reviewsChatOthers);
+    getSection('components/userReviews').then(vel => {
+      const arr = getArr(vel);
+      const value = arr.slice(4 + factor, 14 + factor);
+      if (value.length > 0) {
+        renderNewMarkup(value);
+      } else {
+        renderNewMarkup(arr.slice(4 + factor, arr.length));
+      }
+      factor = factor + 10;
+    });
+
     btnShowLessChangeDisplay('block');
     showLessButtonEl.addEventListener('click', onButtonShowLess);
   }
@@ -75,7 +73,12 @@ export function starClientsComments() {
     reviewsChatList.insertAdjacentHTML('beforeend', chatReviewsNewListMarkup);
   }
   function deleteMarkup(parentElement) {
+    const arr = [];
+    for (let index = 0; index < 4; index++) {
+      arr.push(parentElement.children[index]);
+    }
     parentElement.innerHTML = '';
+    arr.forEach(el => reviewsChatList.insertAdjacentElement('beforeend', el));
   }
   function btnShowLessChangeDisplay(style) {
     showLessButtonEl.style.display = style;
@@ -84,8 +87,8 @@ export function starClientsComments() {
   //button showLess
   function onButtonShowLess(event) {
     deleteMarkup(reviewsChatList);
-    renderNewMarkup(starClients_reviewsChat);
     btnShowLessChangeDisplay('none');
     event.target.removeEventListener('click', onButtonShowLess);
+    factor = 1;
   }
 }

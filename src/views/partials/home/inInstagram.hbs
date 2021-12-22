@@ -4,7 +4,7 @@
 
     <div class='in-instagram__wrapper'>
       <div class='in-instagram__slider'>
-        {{#each pageInInstagramSliderData}}
+        {{#each this}}
           <div class='slider__item'>
             <a
               class='in-instagram__link'
@@ -18,14 +18,16 @@
     {{image-mobile-1x}} 1x,
     {{image-mobile-2x}} 2x'
                   media='(max-width: 1377px)'
-                   width="300" height="478"
+                  width='300'
+                  height='478'
                 />
                 <source
                   srcset='
   {{image-desktop-1x}} 1x,
   {{image-desktop-2x}} 2x'
                   media='(min-width: 1378px)'
-                  width="260" height="438"
+                  width='260'
+                  height='438'
                 />
                 <img
                   class='in-instagram__title-image'
