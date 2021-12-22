@@ -57,7 +57,7 @@ export class Forms {
         formData.forEach(function (value, key) {
           object[key] = value;
         });
-        object.data = new Date().toLocaleDateString();
+        object.date = new Date().toLocaleDateString();
         if (this.option === 'reviews') {
           postUserData(userId, `userReviews`, object, 'database/components/');
           return;
