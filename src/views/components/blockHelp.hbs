@@ -24,10 +24,10 @@
       <label class='client-number__label' for='tel'>
         <input class='client-number__input' type='tel' id='tel' name='user-phone-number'
           placeholder='* * * - * * * - * * - * *' required pattern='[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}'
-          title='067-000-00-00' />
+          title='067-000-00-00' / aria-label="enter your phone">
       </label>
 
-      <button class='help__form-button client-number__button' type='submit' aria-label=""
+      <button class='help__form-button client-number__button' type='submit' aria-label="send my phone number"
         aria-label="submit phone number">Отправить</button>
     </form>
   </div>
@@ -40,8 +40,8 @@
     </div>
     <form name='client-message' class='client-messadge__form'>
       <label for='' class='client-message__label'>
-        <textarea name='client-message-text' id='' class='client-message__textarea' placeholder='Ваш текст...'
-          required></textarea>
+        <textarea name='client-message-text' id='' class='client-message__textarea' placeholder='Ваш текст...' required
+          aria-label="enter your message"></textarea>
       </label>
       <button type='submit' class='help__form-button client-message__button'
         aria-label="send message">Отправить</button>

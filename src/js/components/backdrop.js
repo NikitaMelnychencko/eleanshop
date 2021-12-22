@@ -29,7 +29,6 @@ class Backdrop {
 
   onClickBackdrop(event) {
     if (event.target.className === 'wrapper') {
-      console.log(`~ event`, event);
       this.closeModalForm();
     }
   }
