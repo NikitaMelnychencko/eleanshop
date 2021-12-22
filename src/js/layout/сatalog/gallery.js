@@ -1,5 +1,4 @@
 import gallery from '../../../views/partials/сatalog/gallery.hbs';
-import catalogz from '../../json/all.json';
 let catalog = null;
 import filterLib from '../../json/filterLib.json';
 import { productRender } from '../../call-list.js';
