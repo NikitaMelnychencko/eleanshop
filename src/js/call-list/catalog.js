@@ -14,15 +14,15 @@ export function catalogRender() {
     secondParam: 'products',
   });
   const catalogData = initFetchSection._state;
-  catalogData.then(el => {
-    const filterListMakeup = filter(el[0]);
-    const galleryData = el[1];
+  catalogData.then(data => {
+    const filterListMakeup = filter(data[0]);
+    const galleryData = data[1];
     sessionStorage.setItem('galleryData', JSON.stringify(galleryData));
     const initFooter = new classBody();
     const catalogListMarkup = catalogListMarkupF();
     const filterGalleryCatalogMarkup = catalogMarkUp({ filterListMakeup, catalogListMarkup });
     refs.mainEL.innerHTML = filterGalleryCatalogMarkup;
-    openFilter(el[0]);
+    openFilter(data[0]);
     openCategory();
     blockHelpRender();
   });

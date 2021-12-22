@@ -31,15 +31,15 @@ export function homeRender() {
   });
   const homeData = initFetchSection._state;
 
-  homeData.then(el => {
-    const pageHeroSliderMarkup = pageHeroMarkupTemplate(el[0].hero);
-    const pageShowroomSliderMarkup = pageShowroomMarkupTemplate(el[1].ourShowroom);
-    const cardsMarkup = model(el[0].content);
-    const pageInInstagramSliderMarkup = pageInInstagramMarkupTemplate(el[1].inInstagram);
+  homeData.then(data => {
+    const pageHeroSliderMarkup = pageHeroMarkupTemplate(data[0].hero);
+    const pageShowroomSliderMarkup = pageShowroomMarkupTemplate(data[1].ourShowroom);
+    const cardsMarkup = model(data[0].content);
+    const pageInInstagramSliderMarkup = pageInInstagramMarkupTemplate(data[1].inInstagram);
     const cardChatReviewsMarkup = starClients_cardChatReviewsTempl(
-      getArr(el[1].userReviews).slice(0, 4),
+      getArr(data[1].userReviews).slice(0, 4),
     );
-    const pageStarClientsSliderData = el[1].starClients;
+    const pageStarClientsSliderData = data[1].starClients;
     const pageStarClientsSliderMarkup = pageStarClientsMarkupTemplate({
       pageStarClientsSliderData,
       cardChatReviewsMarkup,

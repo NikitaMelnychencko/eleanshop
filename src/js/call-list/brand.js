@@ -17,8 +17,8 @@ export function brandRender() {
     firstParam: 'aboutBrand',
   });
   const brandData = initFetchSection._state;
-  brandData.then(el => {
-    const cardBrandOurAdvantages = card_brand_our_advantages(el);
+  brandData.then(data => {
+    const cardBrandOurAdvantages = card_brand_our_advantages(data);
     const brandOurAdvantages = brand_our_advantages({ formBrand, cardBrandOurAdvantages });
     const videoBrand = video_brand();
     const initFooter = new classBody('footer-switch');

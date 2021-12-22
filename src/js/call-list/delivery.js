@@ -19,9 +19,8 @@ export function deliveryRender() {
   const initFetchSection = new FetchSection({
     firstParam: 'delivery',
   });
-  const homeData = initFetchSection._state;
-  homeData.then(data => {
-    console.log(data);
+  const deliveryData = initFetchSection._state;
+  deliveryData.then(data => {
     const buttonsDelivery = deliveryButton();
     const mainImageDelivery = delivery();
     const descriptionDelivery = deliveryfilter();

@@ -17,8 +17,8 @@ export function showroomRender() {
     firstParam: 'components',
   });
   const showroomData = initFetchSection._state;
-  showroomData.then(el => {
-    const pageShowroomSliderMarkup = pageShowroomMarkupTemplate(el.ourShowroom);
+  showroomData.then(data => {
+    const pageShowroomSliderMarkup = pageShowroomMarkupTemplate(data.ourShowroom);
     const initFooter = new classBody();
     const showroomPageMarkUp = showroom_page({ formBrand, pageShowroomSliderMarkup });
     refs.mainEL.innerHTML = showroomPageMarkUp;
