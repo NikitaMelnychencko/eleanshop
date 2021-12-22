@@ -13,6 +13,41 @@ export class Forms {
     this.classInit();
     this.listenerSubmit();
   }
+  animate() {
+    if (this.option !== 'fittingPage') {
+      document.querySelector('.form').animate(
+        [
+          {
+            backgroundColor: '#ffffff',
+          },
+          {
+            backgroundColor: '#000000',
+            offset: 0.1,
+          },
+          {
+            backgroundColor: '#ffffff',
+          },
+        ],
+        1000,
+      );
+      document.querySelector('.form__title').animate(
+        [
+          {
+            color: '#000000',
+          },
+          {
+            color: '#ffffff',
+            offset: 0.1,
+          },
+          {
+            color: '#000000',
+          },
+        ],
+        1000,
+      );
+      return;
+    }
+  }
 
   insertForm() {
     if (this.option === 'reviews') {
@@ -62,6 +97,7 @@ export class Forms {
         } else {
           postUserData(userId, `${this.nameData}`, object, 'formData/');
         }
+        this.animate();
       };
     }
   }
