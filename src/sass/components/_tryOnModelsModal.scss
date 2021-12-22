@@ -1,40 +1,4 @@
-// Try on Modal ("ХОТИТЕ ПРИМЕРИТЬ ДАННУЮ МОДЕЛЬ ПЕРЕД ПОКУПКОЙ? ЛЕГКО!")
-// .visually-hidden {
-//   @extend %hide;
-// }
-
-.try-on__backdrop {
-  position: fixed;
-  z-index: 1500;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: $backdrop-color;
-  overflow-y: auto;
-
-  visibility: hidden;
-  opacity: 0;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  &.is-visible {
-    opacity: 1;
-    visibility: visible;
-  }
-}
-
 .try-on {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100%;
-
-  @media screen and (min-width: $mobile-general) {
-    width: 395px;
-    top: 10%;
-  } 
-  background-color: $primary-background-color;
   padding: 70px 20px;
 
   @media screen and (min-width: $desktop-up) {
@@ -42,52 +6,12 @@
     padding: 70px 120px;
   }
 }
-.try-on__close-button {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 40px;
-  height: 40px;
-  border: none;
-  background-color: $button-hover-background-color;
-  background-image: url(../images/crossTryOnModal.svg);
-  background-repeat: no-repeat;
-  background-size: 20px 20px;
-  background-position: center;
-  cursor: pointer;
-  @media screen and (min-width: $desktop-up) {
-    transform: translateY(-100%);
-    width: 120px;
-    height: 25px;
-    background-position: 95px 3px;
-    padding: 7px 10px;
-  }
-}
-.try-on__close-button-text {
-  display: none;
-  @media screen and (min-width: $desktop-up) {
-    display: flex;
-    align-items: center;
-    color: $selection-text-color;
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-  }
-  &:after {
-    content: '';
-    width: 23px;
-    height: 1px;
-    background-color: $primary-background-color;
-    margin-left: 5px;
-  }
-}
 
 .try-on__title {
   margin-bottom: 32px;
 
   text-transform: uppercase;
-  font-family: $third-font-family,sans-serif;
+  font-family: $third-font-family, sans-serif;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.15;
@@ -104,7 +28,7 @@
 .try-on__text {
   margin-bottom: 22px;
 
-  font-family: $third-font-family,sans-serif;
+  font-family: $third-font-family, sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.25;
@@ -113,10 +37,6 @@
 .try-on__list {
   margin-bottom: 40px;
   @media screen and (min-width: $desktop-up) {
-    // display: flex;
-    // flex-wrap: wrap;
-    // flex-flow: column wrap;
-    // height: 300px;
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto auto;
@@ -134,7 +54,7 @@
 .try-on__list-item {
   display: flex;
   align-items: center;
-  font-family: $selection-font-family,sans-serif;
+  font-family: $selection-font-family, sans-serif;
   font-size: 18px;
   line-height: 1.06;
   letter-spacing: 0.03em;

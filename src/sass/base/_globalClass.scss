@@ -14,12 +14,9 @@ body {
   font-size: 15px;
   line-height: 1.46;
   @media screen and (min-width: $desktop-up) {
+    min-height: calc(100vh - 230px + 80px);
     margin: 128px 0 0 0;
   }
-}
-
-body.modal-open {
-  overflow: hidden;
 }
 
 .container {

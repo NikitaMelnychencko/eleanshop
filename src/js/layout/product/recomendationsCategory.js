@@ -229,10 +229,12 @@ export default class RecomendationsCategory {
       this.cardsListEl = document.querySelector(
         '.recomendation-category .recomendation-category__list',
       );
-    } else {
-      const strCard = selector + ' .recomendation-category__list';
-      this.cardsListEl = document.querySelector(strCard);
     }
+    // else {
+    //   const strCard = selector + ' .recomendation-category__list';
+    //   this.cardsListEl = document.querySelector(strCard);
+    //   console.log(strCard);
+    // }
     this.cardsListEl.addEventListener('click', this._onClickCards);
     this.cardsListEl.addEventListener('touch', this._onClickCards);
   };

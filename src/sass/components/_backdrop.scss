@@ -22,19 +22,13 @@
   }
 }
 
-.form__wrapper {
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: inline-block; 
+// .form__wrapper {
+//   @media screen and (min-width: $desktop-up) {
+//     transform: translate(-50%, -50%) scale(1);
 
-  @media screen and (min-width: $desktop-up) {
-    transform: translate(-50%, -50%) scale(1);
-
-    transition: opacity $time-cubic, transform $time-cubic;
-  }
-}
+//     transition: opacity $time-cubic, transform $time-cubic;
+//   }
+// }
 
 .form__button-сlose {
   @extend %form__btn;
@@ -60,10 +54,10 @@
   &:hover,
   &:focus {
     background-color: $selection-text-color;
-    color: $secondary-text-color;
+    color: $primary-text-color;
   }
 
-  @media screen and (min-width: $mobile-general) {
+  @media screen and (min-width: $tablet-general) {
     top: 0;
     bottom: 100%;
     transform: translateY(-100%);
@@ -77,9 +71,9 @@
   }
 
   &-text {
-    @media screen and (max-width: $desktop-up - 1px) {
-      display: none;
-    }
+    // @media screen and (max-width: $desktop-up - 1px) {
+    //   display: none;
+    // }
     @media screen and (min-width: $desktop-up) {
       display: block;
       position: absolute;
