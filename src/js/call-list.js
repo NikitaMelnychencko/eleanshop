@@ -37,7 +37,6 @@
 //     pageStarClientsSliderMarkup,
 //     pageInInstagramSliderMarkup,
 //     aboutTheBrand_parsing,
-//     browserCheck,
 //   });
 //   refs.mainEL.innerHTML = homeMarkup;
 //   heroSlider();
