@@ -52,12 +52,7 @@ export function homeRender() {
 homeRender(); //========================================================call
 //=====brand========//
 import brand_page from '../views/layouts/brand.hbs';
-import {
-  infoAboutBrand,
-  brandOurAdvantages,
-  videoBrand,
-  brandPlayer,
-} from './layout/brand/infoAboutBrand.js';
+import { brandOurAdvantages, videoBrand, brandPlayer } from './layout/brand/infoAboutBrand.js';
 
 export function brandRender() {
   const initFooter = new classBody('footer-switch');
@@ -68,7 +63,6 @@ export function brandRender() {
     videoBrand,
   });
   refs.mainEL.innerHTML = contactPageMarkUp;
-  infoAboutBrand();
   brandPlayer();
   blockHelpRender();
   formsForm.init();
@@ -86,7 +80,7 @@ export function checkoutRender() {
   const savedData = localStorage.getItem('orderingData');
   const parsedData = JSON.parse(savedData);
   const ordering = ordering_ordering(parsedData);
- 
+
   const createCheckout = payment_checkout({ createPayment, ordering, backdropMarkup });
   refs.mainEL.innerHTML = createCheckout;
   //refs.mainEL.insertAdjacentHTML('beforeend', createCheckout);

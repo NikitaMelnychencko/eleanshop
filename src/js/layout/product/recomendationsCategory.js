@@ -2,6 +2,7 @@ const $ = require('jquery');
 require('../../slider/slick.min.js');
 
 import cardsMarkup from '../../../views/partials/product/recomendationsCategory.hbs';
+import animateHeader from '../../components/animateHeader';
 import listCards from '../../../views/partials/product/productListFromCatalog.hbs';
 import allJSON from '../../json/all.json';
 const cards = allJSON.products;
@@ -126,7 +127,6 @@ export default class RecomendationsCategory {
       ls = { fav: [] };
     }
     if (newEl) {
-      console.log(this.data[dataId]);
       const elem = {
         id: this.data[dataId].id,
         name: this.data[dataId].productName,
@@ -182,6 +182,7 @@ export default class RecomendationsCategory {
       this._insertIntoLSFavorite(id, dataId);
     }
     elemLike.classList.toggle('active');
+    animateHeader('js-text-fav');
   };
 
   _cardToProduct = e => {

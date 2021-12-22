@@ -1,4 +1,5 @@
 import markupTempl from '../../../views/layouts/favorites.hbs';
+import animateHeader from '../../components/animateHeader';
 import { favoritesRender } from '../../call-list.js';
 import catalogz from '../../json/all.json';
 import { productRender } from '../../call-list.js';
@@ -6,7 +7,7 @@ import { scrollTo } from '../../components/scrollTo';
 import refs from '../../refs/refs.js';
 let catalog = catalogz.products;
 let debounce = require('lodash.debounce');
-
+import updateBin from '../../updateBin';
 class Favorites {
   constructor() {
     this.markcup = '';
@@ -69,7 +70,6 @@ class Favorites {
         }
 
         if (data !== null) {
-          console.dir(data);
           let dataBin = localStorage.getItem('orderingData');
           if (dataBin !== null) {
             dataBin = JSON.parse(dataBin);
@@ -103,11 +103,13 @@ class Favorites {
           elem.label.colorSelected = data['fav'][i].color;
           elem.label.circleSelected = '';
           elem.label.description = '';
+          elem.label.sizeAvailable = data['fav'][i].sizeAvailable;
+          elem.label.productAviable = data['fav'][i].productAviable;
           elem.label.count = 1;
-
           dataBin = [...dataBin, elem];
           localStorage.setItem('orderingData', JSON.stringify(dataBin));
         }
+        updateBin();
       }
     } else if (
       event.target.classList[0] === 'favorites__button-delete' ||
@@ -130,6 +132,7 @@ class Favorites {
           }
         }
         data['fav'] = done;
+        animateHeader('js-text-fav');
       }
       localStorage.setItem('favorites', JSON.stringify(data));
       refs.favQuantityEl.innerHTML = data.fav.length;

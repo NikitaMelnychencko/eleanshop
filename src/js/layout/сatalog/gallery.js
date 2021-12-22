@@ -1,4 +1,5 @@
 import gallery from '../../../views/partials/сatalog/gallery.hbs';
+import animateHeader from '../../components/animateHeader';
 import catalogz from '../../json/all.json';
 import filterLib from '../../json/filterLib.json';
 import { productRender } from '../../call-list.js';
@@ -106,6 +107,7 @@ export function openCategory() {
             data.fav.push(elem);
             localStorage.setItem('favorites', JSON.stringify(data));
             favQuantityEl.innerHTML = data.fav.length;
+            animateHeader('js-text-fav');
           } else {
             removeFromFavorite(itemData.id);
           }
@@ -162,4 +164,5 @@ function removeFromFavorite(id) {
   ls.fav.splice(lsid, 1);
   localStorage.setItem('favorites', JSON.stringify(ls));
   refs.favQuantityEl.innerHTML = ls.fav.length;
+  animateHeader('js-text-fav');
 }

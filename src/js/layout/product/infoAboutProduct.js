@@ -1,6 +1,7 @@
 import { limitToFirst } from 'firebase/database';
+import animateHeader from '../../components/animateHeader';
 import productTemplate from '../../../views/partials/product/infoAboutProduct.hbs';
-
+import updateBin from '../../updateBin';
 import sizeChose from '../../components/sizeChose';
 const { createBtn, onSizeElClick } = sizeChose;
 import { onBtnClick } from '../../components/sizeTable';
@@ -53,10 +54,10 @@ export function insertIntoLSFavorite(id) {
     const isSizeChose = localStorage.getItem('productSize');
 
     function sizes() {
-      productInfoData.productAviable.find(el => {
-        console.log(isColorChose);
-        if (productInfoData.colorSelected === isColorChose) return el.aviableSize;
+      const sizesArray = productInfoData.productAviable.find(el => {
+        if (isColorChose === el.colorName) return el.aviableSize;
       });
+      return sizesArray;
     }
     const elem = {
       id: productInfoData.id,
@@ -77,11 +78,12 @@ export function insertIntoLSFavorite(id) {
     ls.fav.push({ ...elem, ...{ sizeAvailable: sizes() } });
     localStorage.setItem('favorites', JSON.stringify(ls));
     refs().favQuantityEl.innerHTML = ls.fav.length;
+    animateHeader('js-text-fav');
   }
 }
 function removeFromFavorite(id) {
   let ls = JSON.parse(localStorage.getItem('favorites'));
-  console.log(ls);
+
   const lsid = ls.fav.findIndex(el => el.id === id);
   ls.fav.splice(lsid, 1);
   localStorage.setItem('favorites', JSON.stringify(ls));
@@ -207,12 +209,12 @@ function setProductDataToOrdering() {
     orderingDataobj.label.description = '';
     orderingDataobj.label.count = 1;
     orderingDataobj.label.sizeAvailable = productInfoData.productAviable.find(el => {
-      console.log(el.aviableSize);
       if (orderingDataobj.label.colorSelected === el.colorName) return el.aviableSize;
     });
     orderingDataobj.label.productAviable = productInfoData.productAviable;
     orderingDataParsed.push(orderingDataobj);
     localStorage.setItem('orderingData', JSON.stringify(orderingDataParsed));
+    updateBin();
   }
 }
 

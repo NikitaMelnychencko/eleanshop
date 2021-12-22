@@ -1,9 +1,9 @@
 import markupBin from '../../../views/partials/product/productBin.hbs';
 import { checkoutRender } from '../../call-list.js';
 import { scrollTo } from '../../components/scrollTo';
-
+import updateBin from '../../updateBin';
 export default class ProductBin {
-  constructor({ root, typeInsert, data}) {
+  constructor({ root, typeInsert, data }) {
     this.data = data;
     this._getData();
     if (root) {
@@ -23,9 +23,9 @@ export default class ProductBin {
     } else {
       this.data = [];
     }
-    if(this.data.length === 0) {
-      localStorage.setItem('orderingData', JSON.stringify(this.data))
-      return
+    if (this.data.length === 0) {
+      localStorage.setItem('orderingData', JSON.stringify(this.data));
+      return;
     }
     this.data.forEach(el => {
       const arr = String(el.label.price).split('');
@@ -95,6 +95,7 @@ export default class ProductBin {
     document.querySelector('[data-id = "' + id + '"]').remove();
     this._updateLS();
     this._onTotal();
+    updateBin();
   };
 
   _onTotal = () => {
