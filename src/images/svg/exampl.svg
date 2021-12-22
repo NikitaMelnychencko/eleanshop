@@ -238,7 +238,7 @@
 <symbol id="icon-player-play" viewBox="0 0 32 32">
 <path fill="none" style="stroke: var(--color1, #fff)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.5238" d="M31.238 16c0 8.416-6.822 15.238-15.238 15.238s-15.238-6.822-15.238-15.238c0-8.416 6.822-15.238 15.238-15.238s15.238 6.822 15.238 15.238z"></path>
 <path fill="none" style="stroke: var(--color1, #fff)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.5238" d="M24.755 15.698l-13.887-8.453v16.906l13.887-8.453z"></path>
-</symbol>
+</symbol>    
         <symbol id="icon-call" viewBox="0 0 32 32">
 <path
         style="fill: var(--color1, #c0a78f)"
