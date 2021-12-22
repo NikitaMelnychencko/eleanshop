@@ -13,8 +13,8 @@ export function catalogRender() {
     firstParam: 'category',
     secondParam: 'products',
   });
-  const homeData = initFetchSection._state;
-  homeData.then(el => {
+  const catalogData = initFetchSection._state;
+  catalogData.then(el => {
     const filterListMakeup = filter(el[0]);
     const galleryData = el[1];
     sessionStorage.setItem('galleryData', JSON.stringify(galleryData));

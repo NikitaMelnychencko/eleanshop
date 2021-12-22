@@ -2,7 +2,6 @@ import refs from '../../refs/refs.js';
 import { scrollTo } from '../../components/scrollTo';
 import {
   fittingRender,
-  brandRender,
   productRender,
   contactRender,
   reviewsRender,
@@ -11,6 +10,7 @@ import {
   showroomRender,
   checkoutRender,
 } from '../../call-list';
+import { brandRender } from '../../call-list/brand.js';
 import { catalogRender } from '../../call-list/catalog.js';
 import { id } from 'postcss-selector-parser';
 import { indexOf } from 'lodash';

@@ -15,22 +15,22 @@ import { VideoSetPlayer } from './components/videoSetPlayer.js';
 const videoSetPlayer = new VideoSetPlayer();
 
 //=====brand========//
-import brand_page from '../views/layouts/brand.hbs';
-import { brandOurAdvantages, videoBrand, brandPlayer } from './layout/brand/infoAboutBrand.js';
+// import brand_page from '../views/layouts/brand.hbs';
+// import { brandOurAdvantages, videoBrand, brandPlayer } from './layout/brand/infoAboutBrand.js';
 
-export function brandRender() {
-  const initFooter = new classBody('footer-switch');
-  const contactPageMarkUp = brand_page({
-    formBrand,
-    brandOurAdvantages,
-    contactsContact,
-    videoBrand,
-  });
-  refs.mainEL.innerHTML = contactPageMarkUp;
-  brandPlayer();
-  blockHelpRender();
-  formsForm.init();
-}
+// export function brandRender() {
+//   const initFooter = new classBody('footer-switch');
+//   const contactPageMarkUp = brand_page({
+//     formBrand,
+//     brandOurAdvantages,
+//     contactsContact,
+//     videoBrand,
+//   });
+//   refs.mainEL.innerHTML = contactPageMarkUp;
+//   brandPlayer();
+//   blockHelpRender();
+//   formsForm.init();
+// }
 
 //=====checkout========//
 import { ModalData, createPayment } from './layout/checkout/payment.js';

@@ -3,12 +3,12 @@ import {
   favoritesRender,
   showroomRender,
   contactRender,
-  brandRender,
   deliveryRender,
   fittingRender,
   reviewsRender,
 } from '../../call-list.js';
 import { catalogRender } from '../../call-list/catalog.js';
+import { brandRender } from '../../call-list/brand.js';
 
 // class Header {
 //   constructor(
