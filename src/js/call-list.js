@@ -93,16 +93,16 @@ if (!data == null) {
 }
 //=====contact========//
 
-import contact_page from '../views/layouts/contact.hbs';
-import { contactsMap, contactsContact } from './layout/contact/contact.js';
+// import contact_page from '../views/layouts/contact.hbs';
+// import { contactsMap, contactsContact } from './layout/contact/contact.js';
 
-export function contactRender() {
-  const initFooter = new classBody();
-  const contactPageMarkUp = contact_page({ formBrand, contactsMap, contactsContact });
-  refs.mainEL.innerHTML = contactPageMarkUp;
-  blockHelpRender();
-  formsPage.init();
-}
+// export function contactRender() {
+//   const initFooter = new classBody();
+//   const contactPageMarkUp = contact_page({ formBrand, contactsMap, contactsContact });
+//   refs.mainEL.innerHTML = contactPageMarkUp;
+//   blockHelpRender();
+//   formsPage.init();
+// }
 
 //=====delivery========//
 

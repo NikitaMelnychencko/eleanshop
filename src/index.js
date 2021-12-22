@@ -46,17 +46,13 @@ import './js/test/test_productModalAddCArt.js';
 import './js/test/test_productHandSewn.js';
 import './js/layout/product/preorderModal';
 import './js/layout/product/tryOnModelsModal';
-
 //delivery
 import './js/layout/delivery/filter.js';
 import './js/layout/delivery/deliveryTypes.js';
 //reviews
 import './js/layout/reviews/videoSet.js';
-
 //showroom
 import './js/layout/showroom/showroom.js';
-//contact
-import './js/layout/contact/contact.js';
 //fitting
 import './js/layout/fitting/videoSlider.js';
 //! ?????????
@@ -64,7 +60,6 @@ import './js/components/sizeTable.js';
 import './js/components/sizeChose.js';
 //brand
 import './js/layout/brand/infoAboutBrand.js';
-
 //checkout
 import './js/layout/checkout/ordering.js';
 import './js/layout/checkout/payment.js';
@@ -74,13 +69,11 @@ import './js/layout/favorites/favorites.js';
 import './js/layout/favorites/sabmitEmail.js';
 // backfrop
 import './js/components/backdrop.js';
-
 //test
 import './js/test/test_productHandSewn.js';
 import './js/test/backdropTest.js';
 import './js/test/testSizeChose';
 import './js/test/test_infoAboutProduct.js';
-
 //blockHelp
 import './js/components/blockHelp/blockHelp';
 //static
