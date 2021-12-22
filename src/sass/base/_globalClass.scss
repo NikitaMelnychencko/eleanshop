@@ -5,7 +5,7 @@
 // Futura-Book,Futura Md BT = Jost (400)
 
 //$tablet-general for modal window implementation
-body{
+body {
   position: relative;
   margin: 58px 0 0 0;
   background-color: $primary-background-color;
@@ -14,13 +14,9 @@ body{
   font-size: 15px;
   line-height: 1.46;
   @media screen and (min-width: $desktop-up) {
+    min-height: calc(100vh - 230px + 80px);
     margin: 128px 0 0 0;
   }
-}
-
-
-body.modal-open {
-  overflow: hidden;
 }
 
 .container {
@@ -42,7 +38,7 @@ body.modal-open {
     width: $desktop-up;
   }
 }
-.container-hero{
+.container-hero {
   margin-left: auto;
   margin-right: auto;
 

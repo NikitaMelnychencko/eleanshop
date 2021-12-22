@@ -1,10 +1,10 @@
 import payment_payment from '../../../views/partials/checkout/payment.hbs';
 import method from '../../json/method.json';
-import {onBtnClick} from './thanksForOrdering'
+import { onBtnClick } from './thanksForOrdering';
 require('geteventlisteners');
 export const createPayment = payment_payment({ method });
-
-
+import renderModal from '../../components/modal/modal';
+import { modalFormMarkup, onResize } from './thanksForOrdering';
 export class ModalData {
   constructor({ idInputDay, idListDay, idInputTime, idListTime }) {
     this._refs = this._getRefs(idInputDay, idListDay, idInputTime, idListTime);
@@ -66,25 +66,27 @@ export class ModalData {
   }
   _addEventDelivery() {
     this._updateValueDelivery();
-    
+
     this._refs.delivery.addEventListener('click', event => {
       if (event.target.nodeName !== 'INPUT') {
         return;
       }
-        
-      if (event.target.value === 'Showroom' || event.target.value === 'By_courier_in_Kiev' && event.target.checked === true) {
+
+      if (
+        event.target.value === 'Showroom' ||
+        (event.target.value === 'By_courier_in_Kiev' && event.target.checked === true)
+      ) {
         this._refs.formDay.classList.add('showroom-method--hide');
-        this._toggleInput(false, true)
+        this._toggleInput(false, true);
       } else {
         this._refs.formDay.classList.remove('showroom-method--hide');
-        this._toggleInput(true, false)
+        this._toggleInput(true, false);
       }
       if (event.target.checked === true) {
         this._addLocalStorage(event.target.name, event.target.value);
       }
-      this._disableButton(event.target.value)
+      this._disableButton(event.target.value);
     });
-  
   }
   _toggleInput(valueFirst, valueSecond) {
     this._refs.inputDay.disabled = valueFirst;
@@ -117,14 +119,13 @@ export class ModalData {
   _addEventFormSubmit() {
     this._refs.orderingForm.addEventListener('submit', e => {
       e.preventDefault();
-      onBtnClick()
-      this._refs.arrInputInf.forEach(el => {
-        el.value = '',
-          el.checked = false
-      })
-      this._refs.textareaInfo.value = ''
-    });
+      renderModal(modalFormMarkup, onResize);
 
+      this._refs.arrInputInf.forEach(el => {
+        (el.value = ''), (el.checked = false);
+      });
+      this._refs.textareaInfo.value = '';
+    });
   }
   _addLocalStorage(name, value) {
     localStorage.setItem(`${name}`, `${value}`);
@@ -133,15 +134,14 @@ export class ModalData {
     if (value === 'Showroom' || value === 'By_courier_abroad') {
       this._refs.arrInputPayment.forEach((el, indx) => {
         if (indx === 1 || indx === 2) {
-          el.disabled = true
-          el.checked = false
-          
+          el.disabled = true;
+          el.checked = false;
         }
-      })
+      });
     } else {
       this._refs.arrInputPayment.forEach((el, indx) => {
-        el.disabled = false
-      })
+        el.disabled = false;
+      });
     }
   }
   _updateValueDelivery() {
@@ -149,15 +149,14 @@ export class ModalData {
     this._refs.arrInputDelivery.forEach(el => {
       if (el.value === delivery) {
         el.checked = true;
-        if (el.value === 'Showroom'||el.value === 'By_courier_in_Kiev') {
+        if (el.value === 'Showroom' || el.value === 'By_courier_in_Kiev') {
           this._refs.formDay.classList.add('showroom-method--hide');
-          
         } else {
           localStorage.removeItem(`${this._refs.inputDay.name}`);
           localStorage.removeItem(`${this._refs.inputTime.name}`);
         }
       }
-     console.dir(this._refs.inputDay);
+      console.dir(this._refs.inputDay);
     });
   }
   _updateValueBasicInformation() {
@@ -186,5 +185,4 @@ export class ModalData {
   _updateValueInLocal(name) {
     return localStorage.getItem(`${name}`);
   }
-
 }

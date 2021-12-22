@@ -1,3 +1,5 @@
+import { bodyUnfixPosition } from './scroll/scroll';
+
 class Backdrop {
   constructor() {
     this.backdropRef = document.querySelector('[data-modal]');
@@ -7,7 +9,7 @@ class Backdrop {
     this.closeModalBtnRef.addEventListener('click', this.onClickButton.bind(this));
     window.addEventListener('keyup', this.onKeyPress.bind(this));
 
-    document.body.classList.add('modal-open');
+    // document.body.classList.add('modal-open');
     this.backdropRef.classList.remove('is-hidden');
   }
 
@@ -16,12 +18,13 @@ class Backdrop {
     this.closeModalBtnRef.removeEventListener('click', this.onClickButton.bind(this));
     window.removeEventListener('keyup', this.onKeyPress.bind(this));
 
-    document.body.classList.remove('modal-open');
+    // document.body.classList.remove('modal-open');
     this.backdropRef.classList.add('is-hidden');
   }
 
   onClickButton() {
     this.closeModalForm();
+    bodyUnfixPosition();
   }
 
   onClickBackdrop(event) {

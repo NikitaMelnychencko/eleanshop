@@ -75,7 +75,7 @@
 }
 
 .modal__box {
-  display: none; 
+  display: none;
   @media screen and (min-width: $desktop-up) {
     display: block;
     padding: 20px;
@@ -84,6 +84,7 @@
   & .recomendation-category__list {
     padding: 0;
     display: flex;
+    justify-content: space-between;
   }
   & .recomendation-category__item {
     width: 200px;
@@ -91,6 +92,5 @@
     &:not(:last-child) {
       margin-right: 15px;
     }
-    
   }
 }

@@ -5,18 +5,15 @@ import RecomendationsCategory from './recomendationsCategory.js';
 import modalAddToCartMark from '../../../views/partials/product/productModalAddToCart.hbs';
 import { checkoutRender } from '../../call-list.js';
 import { scrollTo } from '../../components/scrollTo';
-
+import renderModal from '../../components/modal/modal';
+import { bodyUnfixPosition } from '../../components/scroll/scroll';
 export default class ProductModalAddToCart {
-  constructor({ root, typeInsert = 'beforeEnd', productName, objectClose }) {
+  constructor({ typeInsert = 'beforeEnd', productName, objectClose }) {
     this.typeInsert = typeInsert;
     this.productName = productName;
     this.objCatalog = new RecomendationsCategory({ countsCard: 3, buttonPagination: false });
     this.objectClose = objectClose;
-    if (root) {
-      this.root = document.querySelector(root);
-      this._addMarkup();
-      this.self = document.querySelector('.product-modal-add-cart');
-    }
+    this._addMarkup();
   }
 
   _createMarkup = () => {
@@ -27,44 +24,20 @@ export default class ProductModalAddToCart {
   };
 
   _addMarkup = () => {
-    if (this.root) {
-      this.root.insertAdjacentHTML(this.typeInsert, this._createMarkup());
-      this.setEvent();
-    }
-  };
-
-  getMarkup = () => {
-    return this._createMarkup();
+    renderModal(this._createMarkup(), '');
+    this.setEvent();
   };
 
   _onCloseModal = () => {
-    if (this.self) {
-      this.self.classList.add('hidden');
-    }
-    if (this.objectClose) {
-      this.objectClose.forEach(el => {
-        if (el.name) {
-          document.querySelector(el.name).classList.add(el.className);
-        }
-      });
-    }
-    if (this.buttonClose) {
-      this.buttonClose.forEach(el => {
-        el.removeEventListener('click', this._onCloseModal);
-      });
-    }
-    if (this.buttonNext) {
-      this.buttonNext.removeEventListener('click', this._onClickNext);
-    }
+    // document.body.classList.remove('modal-open');
+    this.backdropRef = document.querySelector(`${this.objectClose.name}`);
+    this.backdropRef.classList.add('is-hidden');
+    bodyUnfixPosition();
   };
 
   _setCloseEvent = () => {
-    this.buttonClose = document.querySelectorAll('.js-close-modal');
-    if (this.buttonClose) {
-      this.buttonClose.forEach(el => {
-        el.addEventListener('click', this._onCloseModal);
-      });
-    }
+    this.buttonClose = document.querySelector('.js-close-product-modal');
+    this.buttonClose.addEventListener('click', this._onCloseModal);
   };
 
   _onClickNext = () => {
@@ -84,24 +57,5 @@ export default class ProductModalAddToCart {
   setEvent = () => {
     this._setCloseEvent();
     this._setNextBtnEvent();
-    this.objCatalog.setEvent('.product-modal-add-cart');
-  };
-
-  show = name => {
-    if (!this.self) {
-      this.self = document.querySelector('.product-modal-add-cart');
-    }
-    document.querySelector('.js-productName').textContent = name;
-    this.self.classList.remove('hidden');
-    if (this.objectClose) {
-      this.objectClose.forEach(el => {
-        if (el.name) {
-          document.querySelector(el.name).classList.remove(el.className);
-        }
-      });
-    }
-    document.querySelector('.form__button-сlose').style.display = 'none';
-    document.querySelector('.ordering__form').style.display = 'none';
-    this.setEvent();
   };
 }
