@@ -1,12 +1,15 @@
 import gallery from '../../../views/partials/сatalog/gallery.hbs';
 import animateHeader from '../../components/animateHeader';
-import catalogz from '../../json/all.json';
 import filterLib from '../../json/filterLib.json';
-import { productRender } from '../../call-list.js';
+import { productRender } from '../../call-list/product';
 import { scrollTo } from '../../components/scrollTo';
-import refs from '../../refs/refs.js';
-const { favQuantityEl } = refs;
-let catalog = catalogz.products;
+let catalog = null;
+
+function refs() {
+  return {
+    favQuantityEl: document.getElementById('js-text-fav'),
+  };
+}
 
 export function activateFavorites() {
   const favArray = [];
@@ -49,14 +52,18 @@ function filterCatalog() {
   if (ls) {
     const fcatalog = [];
     catalog.forEach(el => {
+      if (!el.collection) el.collection = [];
       if (el.category.indexOf(ls) >= 0 || el.collection.indexOf(ls) >= 0) fcatalog.push(el);
     });
+
     if (fcatalog.length > 0) return fcatalog;
   }
   return catalog;
 }
 
 export function catalogListMarkupF() {
+  const value = sessionStorage.getItem('galleryData');
+  catalog = JSON.parse(value);
   return gallery(filterCatalog());
 }
 export function openCategory() {
@@ -106,7 +113,7 @@ export function openCategory() {
             };
             data.fav.push(elem);
             localStorage.setItem('favorites', JSON.stringify(data));
-            favQuantityEl.innerHTML = data.fav.length;
+            refs().favQuantityEl.innerHTML = data.fav.length;
             animateHeader('js-text-fav');
           } else {
             removeFromFavorite(itemData.id);
@@ -163,6 +170,6 @@ function removeFromFavorite(id) {
   const lsid = ls.fav.findIndex(el => el.id === id);
   ls.fav.splice(lsid, 1);
   localStorage.setItem('favorites', JSON.stringify(ls));
-  refs.favQuantityEl.innerHTML = ls.fav.length;
+  refs().favQuantityEl.innerHTML = ls.fav.length;
   animateHeader('js-text-fav');
 }

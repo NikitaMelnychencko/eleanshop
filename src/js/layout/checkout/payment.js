@@ -1,8 +1,4 @@
-import payment_payment from '../../../views/partials/checkout/payment.hbs';
-import method from '../../json/method.json';
-import { onBtnClick } from './thanksForOrdering';
 require('geteventlisteners');
-export const createPayment = payment_payment({ method });
 import renderModal from '../../components/modal/modal';
 import { modalFormMarkup, onResize } from './thanksForOrdering';
 export class ModalData {

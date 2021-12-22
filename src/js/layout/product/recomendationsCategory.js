@@ -6,9 +6,14 @@ import animateHeader from '../../components/animateHeader';
 import listCards from '../../../views/partials/product/productListFromCatalog.hbs';
 import allJSON from '../../json/all.json';
 const cards = allJSON.products;
-import { productRender } from '../../call-list.js';
+import { productRender } from '../../call-list/product';
 import { scrollTo } from '../../components/scrollTo';
-import refs from '../../refs/refs.js';
+
+function refs() {
+  return {
+    favQuantityEl: document.getElementById('js-text-fav'),
+  };
+}
 
 export default class RecomendationsCategory {
   constructor({ root, typeInsert, data = cards, countsCard = 4, buttonPagination = true }) {
@@ -17,6 +22,7 @@ export default class RecomendationsCategory {
     this.buttonPagination = buttonPagination;
     this.data = this._getData(data);
     this._getDataFavorite();
+    this.cardsListEl = null;
     if (root) {
       this.root = document.querySelector(root);
       this._addMarkup();
@@ -143,7 +149,9 @@ export default class RecomendationsCategory {
       };
       ls.fav.push(elem);
       localStorage.setItem('favorites', JSON.stringify(ls));
-      refs.favQuantityEl.innerHTML = ls.fav.length;
+      if (refs().favQuantityEl) {
+        refs().favQuantityEl.innerHTML = ls.fav.length;
+      }
     }
   };
 
@@ -152,13 +160,14 @@ export default class RecomendationsCategory {
     const lsid = ls.fav.findIndex(el => el.id === id);
     ls.fav.splice(lsid, 1);
     localStorage.setItem('favorites', JSON.stringify(ls));
-    refs.favQuantityEl.innerHTML = ls.fav.length;
+    if (refs().favQuantityEl) {
+      refs().favQuantityEl.innerHTML = ls.fav.length;
+    }
   };
 
   _onClickLike = e => {
     let id = '';
     let elemLike = null;
-    console.dir(e.target);
     if (!e.target.dataset.id) {
       let el = e.target.parentElement;
       while (!id) {
@@ -220,22 +229,19 @@ export default class RecomendationsCategory {
   };
 
   removeEvent = () => {
-    this.cardsListEl.removeEventListener('click', this._onClickCards);
-    this.cardsListEl.removeEventListener('touch', this._onClickCards);
+    this.cardsListEl.forEach(el => {
+      el.removeEventListener('click', this._onClickCards);
+      el.removeEventListener('touch', this._onClickCards);
+    });
   };
 
   setEvent = selector => {
     if (!selector) {
-      this.cardsListEl = document.querySelector(
-        '.recomendation-category .recomendation-category__list',
-      );
+      this.cardsListEl = document.querySelectorAll('.recomendation-category__list');
     }
-    // else {
-    //   const strCard = selector + ' .recomendation-category__list';
-    //   this.cardsListEl = document.querySelector(strCard);
-    //   console.log(strCard);
-    // }
-    this.cardsListEl.addEventListener('click', this._onClickCards);
-    this.cardsListEl.addEventListener('touch', this._onClickCards);
+    this.cardsListEl.forEach(el => {
+      el.addEventListener('click', this._onClickCards);
+      el.addEventListener('touch', this._onClickCards);
+    });
   };
 }

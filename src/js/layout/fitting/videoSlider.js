@@ -1,11 +1,3 @@
-import videoSlider from '../../../views/partials/fitting/videoSlider.hbs';
-// import videoSlider_markupVideo from '../../../views/layouts/fitting.hbs';
-import set from '../../../../src/js/json/videoSet.json';
-
-// const menuEl = document.querySelector('main');
-export const videoSlider_videoSliderCreate = videoSlider(set);
-// export default videoSlider_videoSliderCreate;
-
 export function openVideoSlider() {
   //SLIDER SETTINGS
   $(document).ready(function () {

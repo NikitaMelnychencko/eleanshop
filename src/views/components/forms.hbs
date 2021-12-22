@@ -8,7 +8,7 @@
       <label class='form__input-box {{classname}}__input-box'>
         <span class='form__input-wrapper {{classname}}__input-wrapper star-{{classname}}'>
           <input type='text' name={{nameInputFirst}} class='form__input {{classname}}__input {{type}}' minlength='2'
-            required placeholder='{{inputFirst}}' />
+            required placeholder='{{inputFirst}}' aria-label="enter your {{nameInputFirst}}" />
         </span>
       </label>
       <label class='form__input-box {{classname}}__input-box'>
@@ -17,20 +17,20 @@
               {{classname}}__input
               {{classname}}__input-center
               {{type}}' required {{#if telPattern}} pattern='[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}' {{/if}}
-            placeholder='{{inputSecond}}' />
+            placeholder='{{inputSecond}}' aria-label="enter your {{nameInputSecond}}" />
         </span>
       </label>
       <label class='form__input-box {{classname}}__input-box'>
         <span class='form__input-wrapper {{classname}}__input-wrapper star-{{classname}}'>
           <input type='text' name={{nameInputThird}} class='form__input {{classname}}__input {{type}}' required
-            placeholder='{{inputThird}}' />
+            placeholder='{{inputThird}}' aria-label="enter your {{nameInputThird}}" />
         </span>
       </label>
     </div>
     <div class='form__horiz-block {{classname}}__horiz-block {{type}}'>
       <label class='form__comment-box {{classname}}__comment-box {{type}}'>
         <textarea type='text' name={{nameTextArea}} class='form__comment {{classname}}__comment {{type}}' minlength='2'
-          required placeholder='{{textArea}}'></textarea>
+          required placeholder='{{textArea}}' aria-label="enter your {{nameTestArea}}"></textarea>
       </label>
       <div class='form__button {{classname}}__button {{type}}'>
         <button class='form__send-btn-text {{classname}}__send-btn-text' type='submit' aria-label="submit form">

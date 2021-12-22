@@ -1,17 +1,13 @@
 import refs from '../../refs/refs.js';
 import { scrollTo } from '../../components/scrollTo';
-import {
-  catalogRender,
-  fittingRender,
-  brandRender,
-  productRender,
-  contactRender,
-  reviewsRender,
-  deliveryRender,
-  favoritesRender,
-  showroomRender,
-  checkoutRender,
-} from '../../call-list';
+//import { productRender,  favoritesRender, checkoutRender } from '../../call-list';
+import { deliveryRender } from '../../call-list/delivery.js';
+import { contactRender } from '../../call-list/contact.js';
+import { fittingRender } from '../../call-list/fitting.js';
+import { brandRender } from '../../call-list/brand.js';
+import { showroomRender } from '../../call-list/showroom.js';
+import { catalogRender } from '../../call-list/catalog.js';
+import { reviewsRender } from '../../call-list/reviews.js';
 import { id } from 'postcss-selector-parser';
 import { indexOf } from 'lodash';
 
@@ -252,7 +248,7 @@ export class classBody {
   }
   handValue() {
     const BodyClass = 'footer-switch';
-    if (BodyClass === this.value) {
+    if ('footer-switch' === this.value) {
       document.body.classList.add(this.value);
     } else {
       document.body.classList.remove(BodyClass);

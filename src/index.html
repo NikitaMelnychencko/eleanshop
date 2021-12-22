@@ -220,199 +220,158 @@
       </div>
       <!--//! SOCIAL NETWORKS_MOBILE-END -->
 
-      <!-- //! BASKET -->
-      <div class="product-bin hidden">
-        <button class="product-close-modal product-close-modal_small js-close-modal" aria-label="open-bin">
-          <svg class="product-close-modal__close-icon">
-            <use href="./images/product-icon-close.svg#icon-close-modal"></use>
-          </svg>
-        </button>
-        <div class="product-bin__block-title">
-          <h2 class="product-bin__title">КОРЗИНА</h2>
-          <div class="product-bin__title-line"></div>
+      <h2 class="footer__mobile-title-subscribe border">ПОДПИСАТЬСЯ НА НОВОСТИ</h2>
+      <form action="footer__mobileform" id="footer-form-desktop" method="GET" class="footer__mobile-form">
+        <label for="user_subscribe" class="footer__mobile-form-subscribe"> </label>
+        <div class="footer__mobile-form-container">
+          <input type="email" name="email" id="user_subscribe" class="footer__mobile-form-input"
+            placeholder="Введите адрес электронной почты" aria-label="enter your email" />
+          <button type="submit" class="footer__mobile-subscribe-button">
+            <svg class="footer__mobile-icon-subscribe" aria-label="subscribe">
+              <use href="./images/exampl.svg#icon-arrow-pc"></use>
+            </svg>
+          </button>
         </div>
-        <ul class="product-bin__list"></ul>
-        <div class="product-bin__block-total">
-          <span class="product-bin__total-text"> ИТОГО: </span>
-          <span class="product-bin__total-price js-counter"> 57 200 ₽ </span>
-        </div>
-        <button type="button" class="product-button-modal product-bin__ordered js-next-bin" aria-label="checkout">
-          ОФОРМИТЬ ЗАКАЗ
-        </button>
-      </div>
-      <!-- //! BASKET - END -->
-    </div>
-  </header>
-  <main></main>
-  <footer class="absolute" id="footer_all">
-    <div class="mobile">
-      <div class="container absolute">
-        <h3 class="hiden">Навигация для мобильных</h3>
-        <div class="footer__mobile">
-          <ul class="footer__mobile-list">
-            <li class="footer__mobile-list-item border">
-              <a href="#" class="footer__mobile-list-item-plus block-after">КОЛЛЕКЦИЯ</a>
-              <ul class="footer__mobile-list-dropdown">
-                <li class="dropdown-content">
-                  <a href="#" class="footer__mobile-submenu" id="footer-collection-autumn-winte"
-                    data-atribute="autumn-winter">Осень-зима 20-21</a>
-                </li>
-                <li class="dropdown-content">
-                  <a href="#" class="footer__mobile-submenu" id="footer-mobile-collection-evening-sets"
-                    data-atribute="evening-sets">Вечерние комплекты</a>
-                </li>
-                <li class="dropdown-content">
-                  <a href="#" class="footer__mobile-submenu" id="footer-mobile-collection-wedding-and-graduation"
-                    data-atribute="wedding-and-graduation">Свадьба и выпускной</a>
-                </li>
-                <li class="dropdown-content">
-                  <a href="#" class="footer__mobile-submenu" id="footer-mobile-collection-the-tuxedo"
-                    data-atribute="tux">Смокинг</a>
-                </li>
-                <li class="dropdown-content">
-                  <a href="#" class="footer__mobile-submenu" id="footer-mobile-collection-costumes"
-                    data-atribute="costumes">Костюмы</a>
-                </li>
-                <li class="dropdown-content">
-                  <a href="#" class="footer__mobile-submenu" id="footer-mobile-collection-pants"
-                    data-atribute="pants">Брюки</a>
-                </li>
-                <li class="dropdown-content">
-                  <a href="#" class="footer__mobile-submenu" id="footer-mobile-collection-blouses"
-                    data-atribute="blouses">Блузы</a>
-                </li>
-              </ul>
+      </form>
+      <div class="footer__mobile-social border" id="footer-mobile-icon">
+        <ul class="footer__mobile-social-list">
+          <li class="footer__mobile-social-list-icon">
+            <a href="https://www.instagram.com/" target="_blank" rel="noreferrer noopener" class="footer__icon-link">
+              <svg class="footer__mobile-icon">
+                <use href="./images/exampl.svg#icon-instagram" class="footer__mobile-icon-svg"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__mobile-social-list-icon">
+            <a href="https://www.facebook.com/" target="_blank" rel="noreferrer noopener"
+              class="footer__mobile-icon-link"><svg class="footer__mobile-icon">
+                <use href="./images/header.svg#header-whatsapp"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__mobile-social-list-icon">
+            <a href="https://www.facebook.com/" target="_blank" rel="noreferrer noopener"
+              class="footer__mobile-icon-link"><svg class="footer__mobile-icon">
+                <use href="./images/header.svg#header-telegram"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        </li>
+        <li class="footer__mobile-list-item border">
+          <a href="#" id="reviews" class="footer__mobile-list-item-plus block-after" id="footer-mobile-reviews"
+            data-atribute="reviews">ОТЗЫВЫ
+          </a>
+        </li>
+        <li class="footer__mobile-list-item border">
+          <a href="#" class="footer__mobile-list-item-plus block-after" id="footer-contact"
+            data-atribute="contact">КОНТАКТЫ
+          </a>
+          <ul class="footer__mobile-list-dropdown">
+            <li class="footer__mobile-list-item contacts"></li>
+            <li class="footer__mobile-list-contacts">
+              <a href="tel:+380990000000" class="footer__mobile-list-contacts-telephon">ТЕЛ.:+38099-000-00-00</a>
             </li>
-            <li class="footer__mobile-list-item border">
-              <a href="#" class="footer__mobile-list-item-plus block-after" id="footer-mobile-showroom"
-                data-atribute="showroom">ШОУРУМ
-              </a>
+            <li class="footer__mobile-list-contacts">
+              <a href="viber://chat?number=%2B380953542491" class="footer__mobile-list-contacts-chat">VIBER:
+                +38099-11-11-11</a>
             </li>
-            <li class="footer__mobile-list-item border">
-              <a href="#" class="footer__mobile-list-item-plus block-after" id="footer-mobile-buyers"
-                data-atribute="buyers">ПОКУПАТЕЛЯМ
-              </a>
-              <ul class="footer__mobile-list-dropdown">
-                <li class="dropdown-content">
-                  <a href="#" class="footer__mobile-submenu" id="footer-mobile-delivery"
-                    data-atribute="delivery">Доставка</a>
-                </li>
-                <li class="dropdown-content">
-                  <a href="#" class="footer__mobile-submenu" id="footer-mobile-fitting"
-                    data-atribute="fitting">Примерка</a>
-                </li>
-                <li class="dropdown-content">
-                  <a href="#" class="footer__mobile-submenu" id="footer-mobile-payment"
-                    data-atribute="payment">Оплата</a>
-                </li>
-                <li class="dropdown-content">
-                  <a href="#" class="footer__mobile-submenu" id="footer-mobile-return"
-                    data-atribute="return">Возврат</a>
-                </li>
-              </ul>
+            <li>
+              <a href="mailto:info@eleanboutique.ua" class="footer__mobile-list-contacts-email">EMAIL:
+                info@eleanboutique.ua</a>
             </li>
-            <li class="footer__mobile-list-item border">
-              <a href="#" class="footer__mobile-list-item-plus block-after" id="footer-mobile-company"
-                data-atribute="company">КОМПАНИЯ
-              </a>
-              <ul class="footer__mobile-list-dropdown">
-                <li class="dropdown-content">
-                  <a href="#" class="footer__mobile-submenu" id="footer-mobile-about-the-brand"
-                    data-atribute="about-the-brand">О бренде</a>
-                </li>
-                <li class="dropdown-content">
-                  <a href="#" class="footer__mobile-submenu" id="footer-about-founders"
-                    data-atribute="about-founders">Об основателях</a>
-                </li>
-                <li class="dropdown-content">
-                  <a href="#" class="footer__mobile-submenu" id="footer-mobile-blog" data-atribute="blog">Блог</a>
-                </li>
-              </ul>
-            </li>
-            <li class="footer__mobile-list-item border">
-              <a href="#" id="reviews" class="footer__mobile-list-item-plus block-after" id="footer-mobile-reviews"
-                data-atribute="reviews">ОТЗЫВЫ
-              </a>
-            </li>
-            <li class="footer__mobile-list-item border">
-              <a href="#" class="footer__mobile-list-item-plus block-after" id="footer-contact"
-                data-atribute="contact">КОНТАКТЫ
-              </a>
-              <ul class="footer__mobile-list-dropdown">
-                <li class="footer__mobile-list-item contacts"></li>
-                <li class="footer__mobile-list-contacts">
-                  <a href="tel:+380990000000" class="footer__mobile-list-contacts-telephon">ТЕЛ.:+38099-000-00-00</a>
-                </li>
-                <li class="footer__mobile-list-contacts">
-                  <a href="viber://chat?number=%2B380953542491" class="footer__mobile-list-contacts-chat">VIBER:
-                    +38099-11-11-11</a>
-                </li>
-                <li>
-                  <a href="mailto:info@eleanboutique.ua" class="footer__mobile-list-contacts-email">EMAIL:
-                    info@eleanboutique.ua</a>
-                </li>
-                <li>
-                  <address>
-                    <a href="#" id="map" class="footer__address">г. Киев, Контрактовая площадь 8</a>
-                  </address>
-                </li>
-              </ul>
+            <li>
+              <address>
+                <a href="#" id="map" class="footer__address">г. Киев, Контрактовая площадь 8</a>
+              </address>
             </li>
           </ul>
+        </li>
+        </ul>
 
-          <h2 class="footer__mobile-title-subscribe border">ПОДПИСАТЬСЯ НА НОВОСТИ</h2>
-          <form action="footer__mobileform" id="footer-form-desktop" method="GET" class="footer__mobile-form">
-            <label for="user_subscribe" class="footer__mobile-form-subscribe"> </label>
-            <div class="footer__mobile-form-container">
-              <input type="email" name="email" id="user_subscribe" class="footer__mobile-form-input"
-                placeholder="Введите адрес электронной почты" />
-              <button type="submit" class="footer__mobile-subscribe-button">
-                <svg class="footer__mobile-icon-subscribe" aria-label="subscribe">
-                  <use href="./images/exampl.svg#icon-arrow-pc"></use>
-                </svg>
-              </button>
-            </div>
-          </form>
-          <div class="footer__mobile-social border" id="footer-mobile-icon">
-            <ul class="footer__mobile-social-list">
-              <li class="footer__mobile-social-list-icon">
-                <a href="https://www.instagram.com/" target="_blank" rel="noreferrer noopener"
-                  class="footer__icon-link">
-                  <svg class="footer__mobile-icon">
-                    <use href="./images/exampl.svg#icon-instagram" class="footer__mobile-icon-svg"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="footer__mobile-social-list-icon">
-                <a href="https://www.facebook.com/" target="_blank" rel="noreferrer noopener"
-                  class="footer__mobile-icon-link"><svg class="footer__mobile-icon">
-                    <use href="./images/header.svg#header-whatsapp"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="footer__mobile-social-list-icon">
-                <a href="https://www.facebook.com/" target="_blank" rel="noreferrer noopener"
-                  class="footer__mobile-icon-link"><svg class="footer__mobile-icon">
-                    <use href="./images/header.svg#header-telegram"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-            <ul class="footer__mobile-logo-list">
-              <li>
-                <a href="index.html" class="footer__logo-container">
-                  <svg class="footer__mobile-icon-logo">
-                    <use href="./images/exampl.svg#icon-logo"></use>
-                  </svg>
-                  <div>
-                    <span class="footer__mobile-logo-text">ЖЕНСКИЙ<br />СМОКИНГ</span>
-                  </div>
-                </a>
-              </li>
-            </ul>
+        <h2 class="footer__mobile-title-subscribe border">ПОДПИСАТЬСЯ НА НОВОСТИ</h2>
+        <form action="footer__mobileform" id="footer-form-desktop" method="GET" class="footer__mobile-form">
+          <label for="user_subscribe" class="footer__mobile-form-subscribe"> </label>
+          <div class="footer__mobile-form-container">
+            <input type="email" name="email" id="user_subscribe" class="footer__mobile-form-input"
+              placeholder="Введите адрес электронной почты" />
+            <button type="submit" class="footer__mobile-subscribe-button">
+              <svg class="footer__mobile-icon-subscribe" aria-label="subscribe">
+                <use href="./images/exampl.svg#icon-arrow-pc"></use>
+              </svg>
+            </button>
           </div>
+        </form>
+        <div class="footer__mobile-social border" id="footer-mobile-icon">
+          <ul class="footer__mobile-social-list">
+            <li class="footer__mobile-social-list-icon">
+              <a href="https://www.instagram.com/" target="_blank" rel="noreferrer noopener" class="footer__icon-link">
+                <svg class="footer__mobile-icon">
+                  <use href="./images/exampl.svg#icon-instagram" class="footer__mobile-icon-svg"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__mobile-social-list-icon">
+              <a href="https://www.facebook.com/" target="_blank" rel="noreferrer noopener"
+                class="footer__mobile-icon-link"><svg class="footer__mobile-icon">
+                  <use href="./images/header.svg#header-whatsapp"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__mobile-social-list-icon">
+              <a href="https://www.facebook.com/" target="_blank" rel="noreferrer noopener"
+                class="footer__mobile-icon-link"><svg class="footer__mobile-icon">
+                  <use href="./images/header.svg#header-telegram"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <ul class="footer__mobile-logo-list">
+            <li>
+              <a href="index.html" class="footer__logo-container">
+                <svg class="footer__mobile-icon-logo">
+                  <use href="./images/exampl.svg#icon-logo"></use>
+                </svg>
+                <div>
+                  <span class="footer__mobile-logo-text">ЖЕНСКИЙ<br />СМОКИНГ</span>
+                </div>
+              </a>
+            </li>
+          </ul>
         </div>
+        <form name="signup_form" method="GET" autocomplete="off" class="footer__desktop-form">
+          <label for="name" class="form__user"></label>
+          <input type="text" name="footer_user-name" id="name" placeholder="ИМЯ"
+            class="footer__desktop-form-input js-footer-input" required aria-label="enter your name" />
+          <label for="email" class="form__user"></label>
+          <input type="email" name="footer_user_email" id="email" placeholder="E-MAIL"
+            class="footer__desktop-form-input js-footer-input" required aria-label="enter your email" />
+          <div class="footer__desktop-license">
+            <label for="checkbox" class="footer__desktop-checkbox-container">
+              <input type="checkbox" name="footer_checkbox_license" id="checkbox" class="footer__desktop-checkbox"
+                aria-label="checked license" />
+              <span class="footer__desktop-license-icon-checkbox">
+                <svg class="agree">
+                  <use href="./images/exampl.svg#icon-agree-checket "></use>
+                </svg>
+              </span>
+            </label>
+            <p class="footer__desktop-license-checkbox-text">
+              <a href=""><span class="footer__license__checkbox-text-doc">Я согласен</span></a>
+              с политикой конфиденциальности
+            </p>
+          </div>
+          <div class="footer__desktop-form-container">
+            <button type="submit" class="footer__desktop-subscribe-button" aria-label="subscribe">
+              <span class="footer__input-text">ПОДПИСАТЬСЯ</span>
+              <svg class="footer__desktop-icon-subscribe">
+                <use href="./images/exampl.svg#icon-arrow-pc"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
       </div>
+    </div>
     </div>
     <div class="container">
       <div class="footer__desktop">
@@ -558,7 +517,7 @@
         <span class="loading__text-words">G</span>
       </div>
     </div>
-  </footer>
+    </footer>
 </body>
 
 </html>

@@ -61,13 +61,13 @@
           </ul>
         </div>
         <div class='ordering__counter'>
-          <button class='ordering__btn--minus ordering__btn' type='button'>-</button>
+          <button class='ordering__btn--minus ordering__btn' type='button' aria-label="reduce the amount of">-</button>
           <span class='ordering__btn ordering__value'>{{label.count}}</span>
-          <button class='ordering__btn--plus ordering__btn' type='button'>+</button>
+          <button class='ordering__btn--plus ordering__btn' type='button' aria-label="increase the number">+</button>
         </div>
         <span class='ordering__price'>{{label.price}}</span>
       </div>
-      <button class='ordering__button--close ordering__close' type='button'>
+      <button class='ordering__button--close ordering__close' type='button' aria-label="delete from ordering">
         <svg class='ordering__icon--close ordering__close' aria-label='close' width='16' height='16'>
           <use class='ordering__icon-cross ordering__close' href='./images/exampl.svg#icon-menu_burger_close'>
           </use>
@@ -84,7 +84,7 @@
 <div class='ordering__promocodebox'>
   <div class='ordering__promocodethumb'>
     <input class='ordering__input--promocode' type='text' placeholder='введите промо код (если имеется)' />
-    <button class='ordering__btn--promocode' type='submit'>Применить</button>
+    <button class='ordering__btn--promocode' type='submit' aria-label="apply promocode">Применить</button>
   </div>
   <span class='ordering__discount'>Скидка <span class='ordering__discount--value'>0</span>%</span>
   <div class='ordering__totalbox'>

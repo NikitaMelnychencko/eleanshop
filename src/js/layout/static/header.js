@@ -1,14 +1,12 @@
 import refs from '../../refs/refs.js';
-import {
-  favoritesRender,
-  showroomRender,
-  contactRender,
-  catalogRender,
-  brandRender,
-  deliveryRender,
-  fittingRender,
-  reviewsRender,
-} from '../../call-list.js';
+import { favoritesRender } from '../../call-list/favorites.js';
+import { contactRender } from '../../call-list/contact.js';
+import { showroomRender } from '../../call-list/showroom.js';
+import { catalogRender } from '../../call-list/catalog.js';
+import { brandRender } from '../../call-list/brand.js';
+import { reviewsRender } from '../../call-list/reviews.js';
+import { fittingRender } from '../../call-list/fitting.js';
+import { deliveryRender } from '../../call-list/delivery.js';
 
 // class Header {
 //   constructor(

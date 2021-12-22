@@ -192,12 +192,8 @@
       "productName": "Жакет-смокинг с лацканами",
       "productPrice": "63500",
       "productAbout": "Подчеркнёт линию талии",
-      "category": [
-        "Смокинги"
-      ],
-      "collection": [
-        "Осень-зима 20-21"
-      ],
+      "category": ["Смокинги"],
+      "collection": ["Осень-зима 20-21"],
       "image": [
         {
           "imageProduct": "./images/card-1-desktop.jpg",
@@ -266,12 +262,7 @@
       "productAviable": [
         {
           "colorId": "bl1",
-          "aviableSize": [
-            "40",
-            "42",
-            "44",
-            "50"
-          ],
+          "aviableSize": ["40", "42", "44", "50"],
           "colorName": "black",
           "colorHex": "#000000"
         },
@@ -283,20 +274,13 @@
         },
         {
           "colorId": "g1",
-          "aviableSize": [
-            "46",
-            "48"
-          ],
+          "aviableSize": ["46", "48"],
           "colorName": "white",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
-          "aviableSize": [
-            "40",
-            "42",
-            "50"
-          ],
+          "aviableSize": ["40", "42", "50"],
           "colorName": "blue",
           "colorHex": "#38548A"
         }
@@ -309,10 +293,7 @@
       "productName": "Классический комплект со смокингом и желетом",
       "productPrice": "41400",
       "productAbout": "Мировая классика",
-      "category": [
-        "Смокинги",
-        "Новинки"
-      ],
+      "category": ["Смокинги", "Новинки"],
       "collection": [],
       "image": [
         {
@@ -382,36 +363,25 @@
       "productAviable": [
         {
           "colorId": "bl1",
-          "aviableSize": [
-            "48",
-            "50"
-          ],
+          "aviableSize": ["48", "50"],
           "colorName": "black",
           "colorHex": "#000000"
         },
         {
           "colorId": "r1",
-          "aviableSize": [
-            "42",
-            "44"
-          ],
+          "aviableSize": ["42", "44"],
           "colorName": "red",
           "colorHex": "#F2404A"
         },
         {
           "colorId": "g1",
-          "aviableSize": [
-            "48"
-          ],
+          "aviableSize": ["48"],
           "colorName": "white",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
-          "aviableSize": [
-            "48",
-            "50"
-          ],
+          "aviableSize": ["48", "50"],
           "colorName": "blue",
           "colorHex": "#38548A"
         }
@@ -424,12 +394,8 @@
       "productName": "Белый жакет смокинг",
       "productPrice": "25000",
       "productAbout": "Подчеркнёт линию талии",
-      "category": [
-        "Смокинги"
-      ],
-      "collection": [
-        "Осень-зима 20-21"
-      ],
+      "category": ["Смокинги"],
+      "collection": ["Осень-зима 20-21"],
       "image": [
         {
           "imageProduct": "./images/card-3-desktop.jpg",
@@ -498,42 +464,25 @@
       "productAviable": [
         {
           "colorId": "bl1",
-          "aviableSize": [
-            "40",
-            "44",
-            "46",
-            "50"
-          ],
+          "aviableSize": ["40", "44", "46", "50"],
           "colorName": "black",
           "colorHex": "#000000"
         },
         {
           "colorId": "r1",
-          "aviableSize": [
-            "40",
-            "42"
-          ],
+          "aviableSize": ["40", "42"],
           "colorName": "red",
           "colorHex": "#F2404A"
         },
         {
           "colorId": "g1",
-          "aviableSize": [
-            "40",
-            "46",
-            "48",
-            "50"
-          ],
+          "aviableSize": ["40", "46", "48", "50"],
           "colorName": "white",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
-          "aviableSize": [
-            "46",
-            "48",
-            "50"
-          ],
+          "aviableSize": ["46", "48", "50"],
           "colorName": "blue",
           "colorHex": "#38548A"
         }
@@ -546,12 +495,8 @@
       "productName": "Жакет-смокинг бархатный",
       "productPrice": "64700",
       "productAbout": "Подчеркнёт линию талии",
-      "category": [
-        "Смокинги"
-      ],
-      "collection": [
-        "Осень-зима 20-21"
-      ],
+      "category": ["Смокинги"],
+      "collection": ["Осень-зима 20-21"],
       "image": [
         {
           "imageProduct": "./images/card-4-desktop.jpg",
@@ -620,19 +565,13 @@
       "productAviable": [
         {
           "colorId": "bl1",
-          "aviableSize": [
-            "46",
-            "48",
-            "50"
-          ],
+          "aviableSize": ["46", "48", "50"],
           "colorName": "black",
           "colorHex": "#000000"
         },
         {
           "colorId": "r1",
-          "aviableSize": [
-            "48"
-          ],
+          "aviableSize": ["48"],
           "colorName": "red",
           "colorHex": "#F2404A"
         },
@@ -644,10 +583,7 @@
         },
         {
           "colorId": "b1",
-          "aviableSize": [
-            "40",
-            "42"
-          ],
+          "aviableSize": ["40", "42"],
           "colorName": "blue",
           "colorHex": "#38548A"
         }
@@ -660,13 +596,8 @@
       "productName": "Жакет-смокинг прямой",
       "productPrice": "60000",
       "productAbout": "Подчеркнёт линию талии",
-      "category": [
-        "Смокинги",
-        "Новинки"
-      ],
-      "collection": [
-        "Осень-зима 20-21"
-      ],
+      "category": ["Смокинги", "Новинки"],
+      "collection": ["Осень-зима 20-21"],
       "image": [
         {
           "imageProduct": "./images/card-5-desktop.jpg",
@@ -735,44 +666,25 @@
       "productAviable": [
         {
           "colorId": "bl1",
-          "aviableSize": [
-            "48",
-            "50"
-          ],
+          "aviableSize": ["48", "50"],
           "colorName": "black",
           "colorHex": "#000000"
         },
         {
           "colorId": "r1",
-          "aviableSize": [
-            "40",
-            "42",
-            "46",
-            "48",
-            "50"
-          ],
+          "aviableSize": ["40", "42", "46", "48", "50"],
           "colorName": "red",
           "colorHex": "#F2404A"
         },
         {
           "colorId": "g1",
-          "aviableSize": [
-            "40",
-            "42",
-            "44",
-            "46",
-            "48",
-            "50"
-          ],
+          "aviableSize": ["40", "42", "44", "46", "48", "50"],
           "colorName": "white",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
-          "aviableSize": [
-            "40",
-            "48"
-          ],
+          "aviableSize": ["40", "48"],
           "colorName": "blue",
           "colorHex": "#38548A"
         }
@@ -785,10 +697,7 @@
       "productName": "Белый смокинг с брюками-клёш",
       "productPrice": "30450",
       "productAbout": "Мировая классика",
-      "category": [
-        "Смокинги",
-        "Новинки"
-      ],
+      "category": ["Смокинги", "Новинки"],
       "collection": [],
       "image": [
         {
@@ -858,41 +767,25 @@
       "productAviable": [
         {
           "colorId": "bl1",
-          "aviableSize": [
-            "40",
-            "42",
-            "44",
-            "48",
-            "50"
-          ],
+          "aviableSize": ["40", "42", "44", "48", "50"],
           "colorName": "black",
           "colorHex": "#000000"
         },
         {
           "colorId": "r1",
-          "aviableSize": [
-            "40",
-            "42"
-          ],
+          "aviableSize": ["40", "42"],
           "colorName": "red",
           "colorHex": "#F2404A"
         },
         {
           "colorId": "g1",
-          "aviableSize": [
-            "46",
-            "48",
-            "50"
-          ],
+          "aviableSize": ["46", "48", "50"],
           "colorName": "white",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
-          "aviableSize": [
-            "40",
-            "50"
-          ],
+          "aviableSize": ["40", "50"],
           "colorName": "blue",
           "colorHex": "#38548A"
         }
@@ -905,13 +798,8 @@
       "productName": "Жакет - смокинг приталенный синий",
       "productPrice": "21000",
       "productAbout": "Подчеркнёт линию талии",
-      "category": [
-        "Смокинги",
-        "Новинки"
-      ],
-      "collection": [
-        "Свадьба и выпускной"
-      ],
+      "category": ["Смокинги", "Новинки"],
+      "collection": ["Свадьба и выпускной"],
       "image": [
         {
           "imageProduct": "./images/card-7-desktop.jpg",
@@ -980,26 +868,19 @@
       "productAviable": [
         {
           "colorId": "bl1",
-          "aviableSize": [
-            "40"
-          ],
+          "aviableSize": ["40"],
           "colorName": "black",
           "colorHex": "#000000"
         },
         {
           "colorId": "r1",
-          "aviableSize": [
-            "48",
-            "50"
-          ],
+          "aviableSize": ["48", "50"],
           "colorName": "red",
           "colorHex": "#F2404A"
         },
         {
           "colorId": "g1",
-          "aviableSize": [
-            "40"
-          ],
+          "aviableSize": ["40"],
           "colorName": "white",
           "colorHex": "#E2DFDF"
         },
@@ -1018,9 +899,7 @@
       "productName": "Платье-смокинг длинное",
       "productPrice": "105000",
       "productAbout": "Подчеркнёт линию талии",
-      "category": [
-        "Смокинги"
-      ],
+      "category": ["Смокинги"],
       "collection": [],
       "image": [
         {
@@ -1090,42 +969,25 @@
       "productAviable": [
         {
           "colorId": "bl1",
-          "aviableSize": [
-            "40"
-          ],
+          "aviableSize": ["40"],
           "colorName": "black",
           "colorHex": "#000000"
         },
         {
           "colorId": "r1",
-          "aviableSize": [
-            "40",
-            "42",
-            "48",
-            "50"
-          ],
+          "aviableSize": ["40", "42", "48", "50"],
           "colorName": "red",
           "colorHex": "#F2404A"
         },
         {
           "colorId": "g1",
-          "aviableSize": [
-            "48",
-            "50"
-          ],
+          "aviableSize": ["48", "50"],
           "colorName": "white",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
-          "aviableSize": [
-            "40",
-            "42",
-            "44",
-            "46",
-            "48",
-            "50"
-          ],
+          "aviableSize": ["40", "42", "44", "46", "48", "50"],
           "colorName": "blue",
           "colorHex": "#38548A"
         }
@@ -1138,11 +1000,7 @@
       "productName": "Белый смокинг и брюки с лампасами",
       "productPrice": "64400",
       "productAbout": "Мировая классика",
-      "category": [
-        "Смокинги",
-        "Новинки",
-        "Осень-зима 20-21"
-      ],
+      "category": ["Смокинги", "Новинки", "Осень-зима 20-21"],
       "collection": [],
       "image": [
         {
@@ -1212,49 +1070,25 @@
       "productAviable": [
         {
           "colorId": "bl1",
-          "aviableSize": [
-            "48",
-            "50"
-          ],
+          "aviableSize": ["48", "50"],
           "colorName": "black",
           "colorHex": "#000000"
         },
         {
           "colorId": "r1",
-          "aviableSize": [
-            "40",
-            "42",
-            "44",
-            "46",
-            "48",
-            "50"
-          ],
+          "aviableSize": ["40", "42", "44", "46", "48", "50"],
           "colorName": "red",
           "colorHex": "#F2404A"
         },
         {
           "colorId": "g1",
-          "aviableSize": [
-            "40",
-            "42",
-            "44",
-            "46",
-            "48",
-            "50"
-          ],
+          "aviableSize": ["40", "42", "44", "46", "48", "50"],
           "colorName": "white",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
-          "aviableSize": [
-            "40",
-            "42",
-            "44",
-            "46",
-            "48",
-            "50"
-          ],
+          "aviableSize": ["40", "42", "44", "46", "48", "50"],
           "colorName": "blue",
           "colorHex": "#38548A"
         }
@@ -1267,9 +1101,7 @@
       "productName": "Классический комплект с бабочкой",
       "productPrice": "30500",
       "productAbout": "Подчеркнёт линию талии",
-      "category": [
-        "Смокинги"
-      ],
+      "category": ["Смокинги"],
       "collection": [],
       "image": [
         {
@@ -1339,42 +1171,25 @@
       "productAviable": [
         {
           "colorId": "bl1",
-          "aviableSize": [
-            "48",
-            "50"
-          ],
+          "aviableSize": ["48", "50"],
           "colorName": "black",
           "colorHex": "#000000"
         },
         {
           "colorId": "r1",
-          "aviableSize": [
-            "46",
-            "48",
-            "50"
-          ],
+          "aviableSize": ["46", "48", "50"],
           "colorName": "red",
           "colorHex": "#F2404A"
         },
         {
           "colorId": "g1",
-          "aviableSize": [
-            "40",
-            "42"
-          ],
+          "aviableSize": ["40", "42"],
           "colorName": "white",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
-          "aviableSize": [
-            "40",
-            "42",
-            "44",
-            "46",
-            "48",
-            "50"
-          ],
+          "aviableSize": ["40", "42", "44", "46", "48", "50"],
           "colorName": "blue",
           "colorHex": "#38548A"
         }
@@ -1387,15 +1202,8 @@
       "productName": "Жакет-смокинг",
       "productPrice": "41000",
       "productAbout": "Подчеркнёт линию талии",
-      "category": [
-        "Смокинги",
-        "Новинки",
-        "Платья"
-      ],
-      "collection": [
-        "Свадьба и выпускной",
-        "Вечерние комплекты"
-      ],
+      "category": ["Смокинги", "Новинки", "Платья"],
+      "collection": ["Свадьба и выпускной", "Вечерние комплекты"],
       "image": [
         {
           "imageProduct": "./images/card-11-desktop.jpg",
@@ -1464,41 +1272,25 @@
       "productAviable": [
         {
           "colorId": "bl1",
-          "aviableSize": [
-            "40",
-            "48",
-            "50"
-          ],
+          "aviableSize": ["40", "48", "50"],
           "colorName": "black",
           "colorHex": "#000000"
         },
         {
           "colorId": "r1",
-          "aviableSize": [
-            "40",
-            "44",
-            "46",
-            "50"
-          ],
+          "aviableSize": ["40", "44", "46", "50"],
           "colorName": "red",
           "colorHex": "#F2404A"
         },
         {
           "colorId": "g1",
-          "aviableSize": [
-            "40",
-            "42",
-            "44"
-          ],
+          "aviableSize": ["40", "42", "44"],
           "colorName": "white",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
-          "aviableSize": [
-            "48",
-            "50"
-          ],
+          "aviableSize": ["48", "50"],
           "colorName": "blue",
           "colorHex": "#38548A"
         }
@@ -1511,10 +1303,7 @@
       "productName": "Платье-смокинг молочное",
       "productPrice": "12400",
       "productAbout": "Подчеркнёт линию талии",
-      "category": [
-        "Новинки",
-        "Топы и жилеты"
-      ],
+      "category": ["Новинки", "Топы и жилеты"],
       "collection": [],
       "image": [
         {
@@ -1584,40 +1373,25 @@
       "productAviable": [
         {
           "colorId": "bl1",
-          "aviableSize": [
-            "42",
-            "46",
-            "48"
-          ],
+          "aviableSize": ["42", "46", "48"],
           "colorName": "black",
           "colorHex": "#000000"
         },
         {
           "colorId": "r1",
-          "aviableSize": [
-            "42",
-            "44",
-            "50"
-          ],
+          "aviableSize": ["42", "44", "50"],
           "colorName": "red",
           "colorHex": "#F2404A"
         },
         {
           "colorId": "g1",
-          "aviableSize": [
-            "44",
-            "46"
-          ],
+          "aviableSize": ["44", "46"],
           "colorName": "white",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
-          "aviableSize": [
-            "40",
-            "48",
-            "50"
-          ],
+          "aviableSize": ["40", "48", "50"],
           "colorName": "blue",
           "colorHex": "#38548A"
         }
@@ -1630,10 +1404,7 @@
       "productName": "Топ с кружевом черный",
       "productPrice": "34000",
       "productAbout": "Подчеркнёт линию талии",
-      "category": [
-        "Новинки",
-        "Топы и жилеты"
-      ],
+      "category": ["Новинки", "Топы и жилеты"],
       "collection": [],
       "image": [
         {
@@ -1703,41 +1474,25 @@
       "productAviable": [
         {
           "colorId": "bl1",
-          "aviableSize": [
-            "42",
-            "44"
-          ],
+          "aviableSize": ["42", "44"],
           "colorName": "black",
           "colorHex": "#000000"
         },
         {
           "colorId": "r1",
-          "aviableSize": [
-            "40",
-            "42",
-            "50"
-          ],
+          "aviableSize": ["40", "42", "50"],
           "colorName": "red",
           "colorHex": "#F2404A"
         },
         {
           "colorId": "g1",
-          "aviableSize": [
-            "40",
-            "46",
-            "48",
-            "50"
-          ],
+          "aviableSize": ["40", "46", "48", "50"],
           "colorName": "white",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
-          "aviableSize": [
-            "46",
-            "48",
-            "50"
-          ],
+          "aviableSize": ["46", "48", "50"],
           "colorName": "blue",
           "colorHex": "#38548A"
         }
@@ -1750,13 +1505,8 @@
       "productName": "Юбка - карандаш",
       "productPrice": "42400",
       "productAbout": "Мировая классика",
-      "category": [
-        "Новинки",
-        "Юбки"
-      ],
-      "collection": [
-        "Вечерние комплекты"
-      ],
+      "category": ["Новинки", "Юбки"],
+      "collection": ["Вечерние комплекты"],
       "image": [
         {
           "imageProduct": "./images/card-14-desktop.jpg",
@@ -1825,34 +1575,19 @@
       "productAviable": [
         {
           "colorId": "bl1",
-          "aviableSize": [
-            "40",
-            "42",
-            "44",
-            "50"
-          ],
+          "aviableSize": ["40", "42", "44", "50"],
           "colorName": "black",
           "colorHex": "#000000"
         },
         {
           "colorId": "r1",
-          "aviableSize": [
-            "46",
-            "48",
-            "50"
-          ],
+          "aviableSize": ["46", "48", "50"],
           "colorName": "red",
           "colorHex": "#F2404A"
         },
         {
           "colorId": "g1",
-          "aviableSize": [
-            "40",
-            "42",
-            "44",
-            "48",
-            "50"
-          ],
+          "aviableSize": ["40", "42", "44", "48", "50"],
           "colorName": "white",
           "colorHex": "#E2DFDF"
         },
@@ -1871,13 +1606,8 @@
       "productName": "Блуза с баской",
       "productPrice": "15000",
       "productAbout": "Подчеркнёт линию талии",
-      "category": [
-        "Блузы",
-        "Свадьба и выпускной"
-      ],
-      "collection": [
-        "Свадьба и выпускной"
-      ],
+      "category": ["Блузы", "Свадьба и выпускной"],
+      "collection": ["Свадьба и выпускной"],
       "image": [
         {
           "imageProduct": "./images/card-15-desktop.jpg",
@@ -1946,39 +1676,25 @@
       "productAviable": [
         {
           "colorId": "bl1",
-          "aviableSize": [
-            "40",
-            "42",
-            "44"
-          ],
+          "aviableSize": ["40", "42", "44"],
           "colorName": "black",
           "colorHex": "#000000"
         },
         {
           "colorId": "r1",
-          "aviableSize": [
-            "40",
-            "50"
-          ],
+          "aviableSize": ["40", "50"],
           "colorName": "red",
           "colorHex": "#F2404A"
         },
         {
           "colorId": "g1",
-          "aviableSize": [
-            "46",
-            "48"
-          ],
+          "aviableSize": ["46", "48"],
           "colorName": "white",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
-          "aviableSize": [
-            "40",
-            "48",
-            "50"
-          ],
+          "aviableSize": ["40", "48", "50"],
           "colorName": "blue",
           "colorHex": "#38548A"
         }
@@ -1991,9 +1707,7 @@
       "productName": "Брюки зауженные",
       "productPrice": "67500",
       "productAbout": "Подчеркнёт линию талии",
-      "category": [
-        "Брюки"
-      ],
+      "category": ["Брюки"],
       "collection": [],
       "image": [
         {
@@ -2063,9 +1777,7 @@
       "productAviable": [
         {
           "colorId": "bl1",
-          "aviableSize": [
-            "40"
-          ],
+          "aviableSize": ["40"],
           "colorName": "black",
           "colorHex": "#000000"
         },
@@ -2083,9 +1795,7 @@
         },
         {
           "colorId": "b1",
-          "aviableSize": [
-            "50"
-          ],
+          "aviableSize": ["50"],
           "colorName": "blue",
           "colorHex": "#38548A"
         }
@@ -2098,10 +1808,7 @@
       "productName": "Жакет-смокинг с лацканами",
       "productPrice": "17700",
       "productAbout": "Мировая классика",
-      "category": [
-        "Брюки",
-        "Новинки"
-      ],
+      "category": ["Брюки", "Новинки"],
       "collection": [],
       "image": [
         {
@@ -2171,50 +1878,25 @@
       "productAviable": [
         {
           "colorId": "bl1",
-          "aviableSize": [
-            "40",
-            "42",
-            "44",
-            "48",
-            "50"
-          ],
+          "aviableSize": ["40", "42", "44", "48", "50"],
           "colorName": "black",
           "colorHex": "#000000"
         },
         {
           "colorId": "r1",
-          "aviableSize": [
-            "40",
-            "42",
-            "44",
-            "46",
-            "48",
-            "50"
-          ],
+          "aviableSize": ["40", "42", "44", "46", "48", "50"],
           "colorName": "red",
           "colorHex": "#F2404A"
         },
         {
           "colorId": "g1",
-          "aviableSize": [
-            "40",
-            "42",
-            "44",
-            "46",
-            "50"
-          ],
+          "aviableSize": ["40", "42", "44", "46", "50"],
           "colorName": "white",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
-          "aviableSize": [
-            "40",
-            "44",
-            "46",
-            "48",
-            "50"
-          ],
+          "aviableSize": ["40", "44", "46", "48", "50"],
           "colorName": "blue",
           "colorHex": "#38548A"
         }
@@ -2227,10 +1909,7 @@
       "productName": "Красный приталенный смокинг",
       "productPrice": "18000",
       "productAbout": "Подчеркнёт линию талии",
-      "category": [
-        "Смокинг",
-        "Новинки"
-      ],
+      "category": ["Смокинг", "Новинки"],
       "collection": [],
       "image": [
         {
@@ -2300,43 +1979,25 @@
       "productAviable": [
         {
           "colorId": "bl1",
-          "aviableSize": [
-            "40",
-            "48",
-            "50"
-          ],
+          "aviableSize": ["40", "48", "50"],
           "colorName": "black",
           "colorHex": "#000000"
         },
         {
           "colorId": "r1",
-          "aviableSize": [
-            "40",
-            "42",
-            "48",
-            "50"
-          ],
+          "aviableSize": ["40", "42", "48", "50"],
           "colorName": "red",
           "colorHex": "#F2404A"
         },
         {
           "colorId": "g1",
-          "aviableSize": [
-            "40",
-            "42",
-            "48",
-            "50"
-          ],
+          "aviableSize": ["40", "42", "48", "50"],
           "colorName": "white",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
-          "aviableSize": [
-            "46",
-            "48",
-            "50"
-          ],
+          "aviableSize": ["46", "48", "50"],
           "colorName": "blue",
           "colorHex": "#38548A"
         }
@@ -2349,12 +2010,8 @@
       "productName": " Костюм бархатный",
       "productPrice": "141100",
       "productAbout": "Подчеркнёт линию талии",
-      "category": [
-        "Костюмы"
-      ],
-      "collection": [
-        "Осень-зима 20-21"
-      ],
+      "category": ["Костюмы"],
+      "collection": ["Осень-зима 20-21"],
       "image": [
         {
           "imageProduct": "./images/card-19-desktop.jpg",
@@ -2423,36 +2080,25 @@
       "productAviable": [
         {
           "colorId": "bl1",
-          "aviableSize": [
-            "40",
-            "42",
-            "50"
-          ],
+          "aviableSize": ["40", "42", "50"],
           "colorName": "black",
           "colorHex": "#000000"
         },
         {
           "colorId": "r1",
-          "aviableSize": [
-            "50"
-          ],
+          "aviableSize": ["50"],
           "colorName": "red",
           "colorHex": "#F2404A"
         },
         {
           "colorId": "g1",
-          "aviableSize": [
-            "40",
-            "42"
-          ],
+          "aviableSize": ["40", "42"],
           "colorName": "white",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
-          "aviableSize": [
-            "40"
-          ],
+          "aviableSize": ["40"],
           "colorName": "blue",
           "colorHex": "#38548A"
         }
@@ -2465,10 +2111,7 @@
       "productName": "Брюки клёш",
       "productPrice": "8000",
       "productAbout": "Подчеркнёт линию талии",
-      "category": [
-        "Смокинги",
-        "Новинки"
-      ],
+      "category": ["Смокинги", "Новинки"],
       "collection": [],
       "image": [
         {
@@ -2538,36 +2181,25 @@
       "productAviable": [
         {
           "colorId": "bl1",
-          "aviableSize": [
-            "50"
-          ],
+          "aviableSize": ["50"],
           "colorName": "black",
           "colorHex": "#000000"
         },
         {
           "colorId": "r1",
-          "aviableSize": [
-            "50"
-          ],
+          "aviableSize": ["50"],
           "colorName": "red",
           "colorHex": "#F2404A"
         },
         {
           "colorId": "g1",
-          "aviableSize": [
-            "40",
-            "48",
-            "50"
-          ],
+          "aviableSize": ["40", "48", "50"],
           "colorName": "white",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
-          "aviableSize": [
-            "48",
-            "50"
-          ],
+          "aviableSize": ["48", "50"],
           "colorName": "blue",
           "colorHex": "#38548A"
         }
@@ -2580,12 +2212,8 @@
       "productName": "Жакет-смокинг с лацканами",
       "productPrice": "14100",
       "productAbout": "Мировая классика",
-      "category": [
-        "Смокинги"
-      ],
-      "collection": [
-        "Осень-зима 20-21"
-      ],
+      "category": ["Смокинги"],
+      "collection": ["Осень-зима 20-21"],
       "image": [
         {
           "imageProduct": "./images/card-2-desktop.jpg",
@@ -2654,43 +2282,25 @@
       "productAviable": [
         {
           "colorId": "bl1",
-          "aviableSize": [
-            "46",
-            "48",
-            "50"
-          ],
+          "aviableSize": ["46", "48", "50"],
           "colorName": "black",
           "colorHex": "#000000"
         },
         {
           "colorId": "r1",
-          "aviableSize": [
-            "40",
-            "42",
-            "44"
-          ],
+          "aviableSize": ["40", "42", "44"],
           "colorName": "red",
           "colorHex": "#F2404A"
         },
         {
           "colorId": "g1",
-          "aviableSize": [
-            "48",
-            "50"
-          ],
+          "aviableSize": ["48", "50"],
           "colorName": "white",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
-          "aviableSize": [
-            "40",
-            "42",
-            "44",
-            "46",
-            "48",
-            "50"
-          ],
+          "aviableSize": ["40", "42", "44", "46", "48", "50"],
           "colorName": "blue",
           "colorHex": "#38548A"
         }
@@ -2703,10 +2313,7 @@
       "productName": "Жакет-смокинг с лацканами",
       "productPrice": "22200",
       "productAbout": "Подчеркнёт линию талии",
-      "category": [
-        "Смокинги",
-        "Новинки"
-      ],
+      "category": ["Смокинги", "Новинки"],
       "collection": [],
       "image": [
         {
@@ -2776,47 +2383,25 @@
       "productAviable": [
         {
           "colorId": "bl1",
-          "aviableSize": [
-            "40",
-            "42",
-            "44"
-          ],
+          "aviableSize": ["40", "42", "44"],
           "colorName": "black",
           "colorHex": "#000000"
         },
         {
           "colorId": "r1",
-          "aviableSize": [
-            "40",
-            "48",
-            "50"
-          ],
+          "aviableSize": ["40", "48", "50"],
           "colorName": "red",
           "colorHex": "#F2404A"
         },
         {
           "colorId": "g1",
-          "aviableSize": [
-            "40",
-            "42",
-            "44",
-            "46",
-            "48",
-            "50"
-          ],
+          "aviableSize": ["40", "42", "44", "46", "48", "50"],
           "colorName": "white",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
-          "aviableSize": [
-            "40",
-            "42",
-            "44",
-            "46",
-            "48",
-            "50"
-          ],
+          "aviableSize": ["40", "42", "44", "46", "48", "50"],
           "colorName": "blue",
           "colorHex": "#38548A"
         }
@@ -2829,12 +2414,8 @@
       "productName": "Классический комплект со смокингом и желетом",
       "productPrice": "47200",
       "productAbout": "Подчеркнёт линию талии",
-      "category": [
-        "Смокинги"
-      ],
-      "collection": [
-        "Осень-зима 20-21"
-      ],
+      "category": ["Смокинги"],
+      "collection": ["Осень-зима 20-21"],
       "image": [
         {
           "imageProduct": "./images/card-4-desktop.jpg",
@@ -2903,38 +2484,25 @@
       "productAviable": [
         {
           "colorId": "bl1",
-          "aviableSize": [
-            "40",
-            "50"
-          ],
+          "aviableSize": ["40", "50"],
           "colorName": "black",
           "colorHex": "#000000"
         },
         {
           "colorId": "r1",
-          "aviableSize": [
-            "40"
-          ],
+          "aviableSize": ["40"],
           "colorName": "red",
           "colorHex": "#F2404A"
         },
         {
           "colorId": "g1",
-          "aviableSize": [
-            "44",
-            "46",
-            "48",
-            "50"
-          ],
+          "aviableSize": ["44", "46", "48", "50"],
           "colorName": "white",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
-          "aviableSize": [
-            "48",
-            "50"
-          ],
+          "aviableSize": ["48", "50"],
           "colorName": "blue",
           "colorHex": "#38548A"
         }
@@ -2947,9 +2515,7 @@
       "productName": "Белый жакет смокинг",
       "productPrice": "74400",
       "productAbout": "Мировая классика",
-      "category": [
-        "Смокинги"
-      ],
+      "category": ["Смокинги"],
       "collection": [],
       "image": [
         {
@@ -3019,39 +2585,25 @@
       "productAviable": [
         {
           "colorId": "bl1",
-          "aviableSize": [
-            "42",
-            "48",
-            "50"
-          ],
+          "aviableSize": ["42", "48", "50"],
           "colorName": "black",
           "colorHex": "#000000"
         },
         {
           "colorId": "r1",
-          "aviableSize": [
-            "40"
-          ],
+          "aviableSize": ["40"],
           "colorName": "red",
           "colorHex": "#F2404A"
         },
         {
           "colorId": "g1",
-          "aviableSize": [
-            "44",
-            "46",
-            "50"
-          ],
+          "aviableSize": ["44", "46", "50"],
           "colorName": "white",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
-          "aviableSize": [
-            "40",
-            "48",
-            "50"
-          ],
+          "aviableSize": ["40", "48", "50"],
           "colorName": "blue",
           "colorHex": "#38548A"
         }
@@ -3064,13 +2616,8 @@
       "productName": "Жакет-смокинг бархатный",
       "productPrice": "62555",
       "productAbout": "Подчеркнёт линию талии",
-      "category": [
-        "Смокинги",
-        "Новинки"
-      ],
-      "collection": [
-        "Осень-зима 20-21"
-      ],
+      "category": ["Смокинги", "Новинки"],
+      "collection": ["Осень-зима 20-21"],
       "image": [
         {
           "imageProduct": "./images/card-6-desktop.jpg",
@@ -3139,40 +2686,25 @@
       "productAviable": [
         {
           "colorId": "bl1",
-          "aviableSize": [
-            "40",
-            "42",
-            "50"
-          ],
+          "aviableSize": ["40", "42", "50"],
           "colorName": "black",
           "colorHex": "#000000"
         },
         {
           "colorId": "r1",
-          "aviableSize": [
-            "40",
-            "48",
-            "50"
-          ],
+          "aviableSize": ["40", "48", "50"],
           "colorName": "red",
           "colorHex": "#F2404A"
         },
         {
           "colorId": "g1",
-          "aviableSize": [
-            "40",
-            "46",
-            "48"
-          ],
+          "aviableSize": ["40", "46", "48"],
           "colorName": "white",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
-          "aviableSize": [
-            "48",
-            "50"
-          ],
+          "aviableSize": ["48", "50"],
           "colorName": "blue",
           "colorHex": "#38548A"
         }
@@ -3185,10 +2717,7 @@
       "productName": "Жакет-смокинг прямой",
       "productPrice": "69990",
       "productAbout": "Подчеркнёт линию талии",
-      "category": [
-        "Смокинги",
-        "Новинки"
-      ],
+      "category": ["Смокинги", "Новинки"],
       "collection": [],
       "image": [
         {
@@ -3289,13 +2818,8 @@
       "productName": "Белый смокинг с брюками-клёш",
       "productPrice": "65400",
       "productAbout": "Подчеркнёт линию талии",
-      "category": [
-        "Смокинги",
-        "Новинки"
-      ],
-      "collection": [
-        "Свадьба и выпускной"
-      ],
+      "category": ["Смокинги", "Новинки"],
+      "collection": ["Свадьба и выпускной"],
       "image": [
         {
           "imageProduct": "./images/card-8-desktop.jpg",
@@ -3364,37 +2888,25 @@
       "productAviable": [
         {
           "colorId": "bl1",
-          "aviableSize": [
-            "40",
-            "50"
-          ],
+          "aviableSize": ["40", "50"],
           "colorName": "black",
           "colorHex": "#000000"
         },
         {
           "colorId": "r1",
-          "aviableSize": [
-            "50"
-          ],
+          "aviableSize": ["50"],
           "colorName": "red",
           "colorHex": "#F2404A"
         },
         {
           "colorId": "g1",
-          "aviableSize": [
-            "42",
-            "44"
-          ],
+          "aviableSize": ["42", "44"],
           "colorName": "white",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
-          "aviableSize": [
-            "40",
-            "46",
-            "50"
-          ],
+          "aviableSize": ["40", "46", "50"],
           "colorName": "blue",
           "colorHex": "#38548A"
         }
@@ -3407,9 +2919,7 @@
       "productName": "Жакет - смокинг приталенный синий",
       "productPrice": "77770",
       "productAbout": "Подчеркнёт линию талии",
-      "category": [
-        "Смокинги"
-      ],
+      "category": ["Смокинги"],
       "collection": [],
       "image": [
         {
@@ -3479,48 +2989,25 @@
       "productAviable": [
         {
           "colorId": "bl1",
-          "aviableSize": [
-            "46",
-            "48",
-            "50"
-          ],
+          "aviableSize": ["46", "48", "50"],
           "colorName": "black",
           "colorHex": "#000000"
         },
         {
           "colorId": "r1",
-          "aviableSize": [
-            "40",
-            "42",
-            "46",
-            "48"
-          ],
+          "aviableSize": ["40", "42", "46", "48"],
           "colorName": "red",
           "colorHex": "#F2404A"
         },
         {
           "colorId": "g1",
-          "aviableSize": [
-            "40",
-            "42",
-            "44",
-            "46",
-            "48",
-            "50"
-          ],
+          "aviableSize": ["40", "42", "44", "46", "48", "50"],
           "colorName": "white",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
-          "aviableSize": [
-            "40",
-            "42",
-            "44",
-            "46",
-            "48",
-            "50"
-          ],
+          "aviableSize": ["40", "42", "44", "46", "48", "50"],
           "colorName": "blue",
           "colorHex": "#38548A"
         }
@@ -3533,13 +3020,8 @@
       "productName": "Платье-смокинг длинное",
       "productPrice": "29500",
       "productAbout": "Подчеркнёт линию талии",
-      "category": [
-        "Смокинги",
-        "Новинки"
-      ],
-      "collection": [
-        "Осень-зима 20-21"
-      ],
+      "category": ["Смокинги", "Новинки"],
+      "collection": ["Осень-зима 20-21"],
       "image": [
         {
           "imageProduct": "./images/card-10-desktop.jpg",
@@ -3608,20 +3090,13 @@
       "productAviable": [
         {
           "colorId": "bl1",
-          "aviableSize": [
-            "40",
-            "48",
-            "50"
-          ],
+          "aviableSize": ["40", "48", "50"],
           "colorName": "black",
           "colorHex": "#000000"
         },
         {
           "colorId": "r1",
-          "aviableSize": [
-            "40",
-            "50"
-          ],
+          "aviableSize": ["40", "50"],
           "colorName": "red",
           "colorHex": "#F2404A"
         },
@@ -3633,10 +3108,7 @@
         },
         {
           "colorId": "b1",
-          "aviableSize": [
-            "40",
-            "50"
-          ],
+          "aviableSize": ["40", "50"],
           "colorName": "blue",
           "colorHex": "#38548A"
         }
@@ -3649,9 +3121,7 @@
       "productName": "Классический комплект со смокингом и желетом",
       "productPrice": "12400",
       "productAbout": "Мировая классика",
-      "category": [
-        "Смокинги"
-      ],
+      "category": ["Смокинги"],
       "collection": [],
       "image": [
         {
@@ -3721,38 +3191,25 @@
       "productAviable": [
         {
           "colorId": "bl1",
-          "aviableSize": [
-            "46",
-            "48",
-            "50"
-          ],
+          "aviableSize": ["46", "48", "50"],
           "colorName": "black",
           "colorHex": "#000000"
         },
         {
           "colorId": "r1",
-          "aviableSize": [
-            "50"
-          ],
+          "aviableSize": ["50"],
           "colorName": "red",
           "colorHex": "#F2404A"
         },
         {
           "colorId": "g1",
-          "aviableSize": [
-            "40",
-            "42",
-            "44"
-          ],
+          "aviableSize": ["40", "42", "44"],
           "colorName": "white",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
-          "aviableSize": [
-            "40",
-            "50"
-          ],
+          "aviableSize": ["40", "50"],
           "colorName": "blue",
           "colorHex": "#38548A"
         }
@@ -3765,15 +3222,8 @@
       "productName": "Классический комплект с бабочкой",
       "productPrice": "64470",
       "productAbout": "Подчеркнёт линию талии",
-      "category": [
-        "Смокинги",
-        "Новинки",
-        "Платья"
-      ],
-      "collection": [
-        "Свадьба и выпускной",
-        "Вечерние комплекты"
-      ],
+      "category": ["Смокинги", "Новинки", "Платья"],
+      "collection": ["Свадьба и выпускной", "Вечерние комплекты"],
       "image": [
         {
           "imageProduct": "./images/card-12-desktop.jpg",
@@ -3842,38 +3292,25 @@
       "productAviable": [
         {
           "colorId": "bl1",
-          "aviableSize": [
-            "48",
-            "50"
-          ],
+          "aviableSize": ["48", "50"],
           "colorName": "black",
           "colorHex": "#000000"
         },
         {
           "colorId": "r1",
-          "aviableSize": [
-            "40",
-            "42",
-            "50"
-          ],
+          "aviableSize": ["40", "42", "50"],
           "colorName": "red",
           "colorHex": "#F2404A"
         },
         {
           "colorId": "g1",
-          "aviableSize": [
-            "50"
-          ],
+          "aviableSize": ["50"],
           "colorName": "white",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
-          "aviableSize": [
-            "40",
-            "46",
-            "48"
-          ],
+          "aviableSize": ["40", "46", "48"],
           "colorName": "blue",
           "colorHex": "#38548A"
         }
@@ -3886,10 +3323,7 @@
       "productName": "Жакет-смокинг",
       "productPrice": "64540",
       "productAbout": "Подчеркнёт линию талии",
-      "category": [
-        "Новинки",
-        "Топы и жилеты"
-      ],
+      "category": ["Новинки", "Топы и жилеты"],
       "collection": [],
       "image": [
         {
@@ -3965,9 +3399,7 @@
         },
         {
           "colorId": "r1",
-          "aviableSize": [
-            "46"
-          ],
+          "aviableSize": ["46"],
           "colorName": "red",
           "colorHex": "#F2404A"
         },
@@ -3992,13 +3424,8 @@
       "productName": "Классический комплект со смокингом и желетом",
       "productPrice": "68200",
       "productAbout": "Подчеркнёт линию талии",
-      "category": [
-        "Новинки",
-        "Юбки"
-      ],
-      "collection": [
-        "Вечерние комплекты"
-      ],
+      "category": ["Новинки", "Юбки"],
+      "collection": ["Вечерние комплекты"],
       "image": [
         {
           "imageProduct": "./images/card-14-desktop.jpg",
@@ -4067,18 +3494,13 @@
       "productAviable": [
         {
           "colorId": "bl1",
-          "aviableSize": [
-            "40"
-          ],
+          "aviableSize": ["40"],
           "colorName": "black",
           "colorHex": "#000000"
         },
         {
           "colorId": "r1",
-          "aviableSize": [
-            "40",
-            "50"
-          ],
+          "aviableSize": ["40", "50"],
           "colorName": "red",
           "colorHex": "#F2404A"
         },
@@ -4090,10 +3512,7 @@
         },
         {
           "colorId": "b1",
-          "aviableSize": [
-            "48",
-            "50"
-          ],
+          "aviableSize": ["48", "50"],
           "colorName": "blue",
           "colorHex": "#38548A"
         }
@@ -4106,13 +3525,8 @@
       "productName": "К Блуза с баской",
       "productPrice": "24540",
       "productAbout": "Подчеркнёт линию талии",
-      "category": [
-        "Блузы",
-        "Свадьба и выпускной"
-      ],
-      "collection": [
-        "Свадьба и выпускной"
-      ],
+      "category": ["Блузы", "Свадьба и выпускной"],
+      "collection": ["Свадьба и выпускной"],
       "image": [
         {
           "imageProduct": "./images/card-15-desktop.jpg",
@@ -4187,33 +3601,19 @@
         },
         {
           "colorId": "r1",
-          "aviableSize": [
-            "40",
-            "42",
-            "50"
-          ],
+          "aviableSize": ["40", "42", "50"],
           "colorName": "red",
           "colorHex": "#F2404A"
         },
         {
           "colorId": "g1",
-          "aviableSize": [
-            "40",
-            "48",
-            "50"
-          ],
+          "aviableSize": ["40", "48", "50"],
           "colorName": "white",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
-          "aviableSize": [
-            "40",
-            "42",
-            "44",
-            "46",
-            "50"
-          ],
+          "aviableSize": ["40", "42", "44", "46", "50"],
           "colorName": "blue",
           "colorHex": "#38548A"
         }
@@ -4226,9 +3626,7 @@
       "productName": "Топ с кружевом черный",
       "productPrice": "42444",
       "productAbout": "Подчеркнёт линию талии",
-      "category": [
-        "Брюки"
-      ],
+      "category": ["Брюки"],
       "collection": [],
       "image": [
         {
@@ -4298,37 +3696,25 @@
       "productAviable": [
         {
           "colorId": "bl1",
-          "aviableSize": [
-            "44",
-            "46"
-          ],
+          "aviableSize": ["44", "46"],
           "colorName": "black",
           "colorHex": "#000000"
         },
         {
           "colorId": "r1",
-          "aviableSize": [
-            "46",
-            "48"
-          ],
+          "aviableSize": ["46", "48"],
           "colorName": "red",
           "colorHex": "#F2404A"
         },
         {
           "colorId": "g1",
-          "aviableSize": [
-            "46"
-          ],
+          "aviableSize": ["46"],
           "colorName": "white",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
-          "aviableSize": [
-            "44",
-            "46",
-            "48"
-          ],
+          "aviableSize": ["44", "46", "48"],
           "colorName": "blue",
           "colorHex": "#38548A"
         }
@@ -4341,10 +3727,7 @@
       "productName": "Юбка - карандаш",
       "productPrice": "63700",
       "productAbout": "Мировая классика",
-      "category": [
-        "Брюки",
-        "Новинки"
-      ],
+      "category": ["Брюки", "Новинки"],
       "collection": [],
       "image": [
         {
@@ -4426,25 +3809,13 @@
         },
         {
           "colorId": "g1",
-          "aviableSize": [
-            "40",
-            "42",
-            "44",
-            "46",
-            "48",
-            "50"
-          ],
+          "aviableSize": ["40", "42", "44", "46", "48", "50"],
           "colorName": "white",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
-          "aviableSize": [
-            "44",
-            "46",
-            "48",
-            "50"
-          ],
+          "aviableSize": ["44", "46", "48", "50"],
           "colorName": "blue",
           "colorHex": "#38548A"
         }
@@ -4457,10 +3828,7 @@
       "productName": "Жакет-смокинг с лацканами",
       "productPrice": "44700",
       "productAbout": "Подчеркнёт линию талии",
-      "category": [
-        "Смокинг",
-        "Новинки"
-      ],
+      "category": ["Смокинг", "Новинки"],
       "collection": [],
       "image": [
         {
@@ -4530,39 +3898,25 @@
       "productAviable": [
         {
           "colorId": "bl1",
-          "aviableSize": [
-            "40",
-            "42",
-            "44"
-          ],
+          "aviableSize": ["40", "42", "44"],
           "colorName": "black",
           "colorHex": "#000000"
         },
         {
           "colorId": "r1",
-          "aviableSize": [
-            "48",
-            "50"
-          ],
+          "aviableSize": ["48", "50"],
           "colorName": "red",
           "colorHex": "#F2404A"
         },
         {
           "colorId": "g1",
-          "aviableSize": [
-            "40",
-            "42",
-            "44"
-          ],
+          "aviableSize": ["40", "42", "44"],
           "colorName": "white",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
-          "aviableSize": [
-            "40",
-            "50"
-          ],
+          "aviableSize": ["40", "50"],
           "colorName": "blue",
           "colorHex": "#38548A"
         }
@@ -4575,12 +3929,8 @@
       "productName": "Платье-смокинг молочное",
       "productPrice": "13900",
       "productAbout": "Подчеркнёт линию талии",
-      "category": [
-        "Костюмы"
-      ],
-      "collection": [
-        "Осень-зима 20-21"
-      ],
+      "category": ["Костюмы"],
+      "collection": ["Осень-зима 20-21"],
       "image": [
         {
           "imageProduct": "./images/card-19-desktop.jpg",
@@ -4649,33 +3999,25 @@
       "productAviable": [
         {
           "colorId": "bl1",
-          "aviableSize": [
-            "50"
-          ],
+          "aviableSize": ["50"],
           "colorName": "black",
           "colorHex": "#000000"
         },
         {
           "colorId": "r1",
-          "aviableSize": [
-            "40"
-          ],
+          "aviableSize": ["40"],
           "colorName": "red",
           "colorHex": "#F2404A"
         },
         {
           "colorId": "g1",
-          "aviableSize": [
-            "44"
-          ],
+          "aviableSize": ["44"],
           "colorName": "white",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
-          "aviableSize": [
-            "48"
-          ],
+          "aviableSize": ["48"],
           "colorName": "blue",
           "colorHex": "#38548A"
         }
@@ -4688,12 +4030,8 @@
       "productName": "Брюки клёш",
       "productPrice": "40000",
       "productAbout": "Подчеркнёт линию талии",
-      "category": [
-        "Костюмы"
-      ],
-      "collection": [
-        "Предзаказ"
-      ],
+      "category": ["Костюмы"],
+      "collection": ["Предзаказ"],
       "image": [
         {
           "imageProduct": "./images/card-1-desktop.jpg",
@@ -4762,32 +4100,19 @@
       "productAviable": [
         {
           "colorId": "bl1",
-          "aviableSize": [
-            "40",
-            "42",
-            "48",
-            "50"
-          ],
+          "aviableSize": ["40", "42", "48", "50"],
           "colorName": "black",
           "colorHex": "#000000"
         },
         {
           "colorId": "r1",
-          "aviableSize": [
-            "50"
-          ],
+          "aviableSize": ["50"],
           "colorName": "red",
           "colorHex": "#F2404A"
         },
         {
           "colorId": "g1",
-          "aviableSize": [
-            "40",
-            "42",
-            "46",
-            "48",
-            "50"
-          ],
+          "aviableSize": ["40", "42", "46", "48", "50"],
           "colorName": "white",
           "colorHex": "#E2DFDF"
         },
@@ -4806,13 +4131,8 @@
       "productName": "Платье-смокинг молочное",
       "productPrice": "41100",
       "productAbout": "Подчеркнёт линию талии",
-      "category": [
-        "Смокинги",
-        "Новинки"
-      ],
-      "collection": [
-        "Свадьба и выпускной"
-      ],
+      "category": ["Смокинги", "Новинки"],
+      "collection": ["Свадьба и выпускной"],
       "image": [
         {
           "imageProduct": "./images/card-2-desktop.jpg",
@@ -4881,39 +4201,25 @@
       "productAviable": [
         {
           "colorId": "bl1",
-          "aviableSize": [
-            "40",
-            "42"
-          ],
+          "aviableSize": ["40", "42"],
           "colorName": "black",
           "colorHex": "#000000"
         },
         {
           "colorId": "r1",
-          "aviableSize": [
-            "40",
-            "48",
-            "50"
-          ],
+          "aviableSize": ["40", "48", "50"],
           "colorName": "red",
           "colorHex": "#F2404A"
         },
         {
           "colorId": "g1",
-          "aviableSize": [
-            "40",
-            "42",
-            "44"
-          ],
+          "aviableSize": ["40", "42", "44"],
           "colorName": "white",
           "colorHex": "#E2DFDF"
         },
         {
           "colorId": "b1",
-          "aviableSize": [
-            "48",
-            "50"
-          ],
+          "aviableSize": ["48", "50"],
           "colorName": "blue",
           "colorHex": "#38548A"
         }
@@ -5258,16 +4564,6 @@
         "imgMobile2": "./images/handSewn-mobile-2@2x.jpg",
         "button": true
       }
-    ]
-  },
-  "formData": {
-    "formFittingInShowroom": [
-      {
-        "userName": "Гриша",
-        "tel": "099-999-99-99",
-        "selectTime": "завтра вечером, в диапазоне 17.00...20.00 или в субботу в любое время",
-        "comment": "подготовьте оба последних заказа, чтобы не оформлять дважды)"
-      }
     ],
     "userReviews": [
       {
@@ -5399,52 +4695,136 @@
           "city": "г.Киев",
           "date": "26 Марта 2017"
         }
-      }
-    ],
-    "userAsks": [
+      },
       {
-        "userName": "Гриша",
-        "tel": "099-999-99-99",
-        "selectTime": "Примерка",
-        "comment": "Почему на коте всё сидит идеально, а я корова такая?"
-      }
-    ],
-    "orderings": [
-      {
-        "orderId": "101010",
-        "timeOfOrder": "1633463427",
-        "productOrders": [
-          {
-            "id": "000000",
-            "size": "40",
-            "colorId": "bl1",
-            "currentPrice": "63500",
-            "number": "1"
+        "data": {
+          "image": {
+            "src": "./images/chatImage@1x.png",
+            "srcset": "./images/chatImage@1x.png 1x, ./images/chatImage@2x.png 2x",
+            "description": "client's photo"
           },
-          {
-            "id": "000010",
-            "size": "46",
-            "colorId": "r1",
-            "currentPrice": "41400",
-            "number": "1"
-          }
-        ],
-        "promocode": "55555",
-        "discount": "5",
-        "deliveryId": "delivery-method--Showroom",
-        "paymentId": "XWaREcv22",
-        "day-data": {
-          "day": "Суббота",
-          "data": "2 апреля"
-        },
-        "time": {
-          "time": "С 12 до 15 часов"
-        },
-        "name": "Гагарина Ю.С.",
-        "tel": "099-999-99-99",
-        "e-mail": "tatarin14@gmail.com",
-        "comment": "Готовьте больше вазелина. Натру кожанные туфельки заодно",
-        "totalPrice": "145000"
+          "client-name": "Екатерина",
+          "review-text": "Да, доставка заграницу осуществляется курьерской службой до двери. Доставка заграницу оплачивается при оформлении заказа, фиксированная стоимость 1 200 ",
+          "city": "г.Киев",
+          "date": "26 Марта 2017"
+        }
+      },
+      {
+        "data": {
+          "image": {
+            "src": "./images/chatImage@1x.png",
+            "srcset": "./images/chatImage@1x.png 1x, ./images/chatImage@2x.png 2x",
+            "description": "client's photo"
+          },
+          "client-name": "Екатерина",
+          "review-text": "Да, доставка заграницу осуществляется курьерской службой до двери. Доставка заграницу оплачивается при оформлении заказа, фиксированная стоимость 1 200 ",
+          "city": "г.Киев",
+          "date": "26 Марта 2017"
+        }
+      },
+      {
+        "data": {
+          "image": {
+            "src": "",
+            "srcset": "",
+            "description": ""
+          },
+          "client-name": "Екатерина",
+          "review-text": "Да, доставка заграницу осуществляется курьерской службой до двери. Доставка заграницу оплачивается при оформлении заказа, фиксированная стоимость 1 200 ",
+          "city": "г.Киев",
+          "date": "26 Марта 2017"
+        }
+      },
+      {
+        "data": {
+          "image": {
+            "src": "./images/chatImage@1x.png",
+            "srcset": "./images/chatImage@1x.png 1x, ./images/chatImage@2x.png 2x",
+            "description": "client's photo"
+          },
+          "client-name": "Екатерина",
+          "review-text": "Да, доставка заграницу осуществляется курьерской службой до двери. Доставка заграницу оплачивается при оформлении заказа, фиксированная стоимость 1 200 ",
+          "city": "г.Киев",
+          "date": "26 Марта 2017"
+        }
+      },
+      {
+        "data": {
+          "image": {
+            "src": "./images/chatImage@1x.png",
+            "srcset": "./images/chatImage@1x.png 1x, ./images/chatImage@2x.png 2x",
+            "description": "client's photo"
+          },
+          "client-name": "Екатерина",
+          "review-text": "Да, доставка заграницу осуществляется курьерской службой до двери. Доставка заграницу оплачивается при оформлении заказа, фиксированная стоимость 1 200 ",
+          "city": "г.Киев",
+          "date": "26 Марта 2017"
+        }
+      },
+      {
+        "data": {
+          "image": {
+            "src": "./images/chatImage@1x.png",
+            "srcset": "./images/chatImage@1x.png 1x, ./images/chatImage@2x.png 2x",
+            "description": "client's photo"
+          },
+          "client-name": "Екатерина",
+          "review-text": "Да, доставка заграницу осуществляется курьерской службой до двери. Доставка заграницу оплачивается при оформлении заказа, фиксированная стоимость 1 200 ",
+          "city": "г.Киев",
+          "date": "26 Марта 2017"
+        }
+      },
+      {
+        "data": {
+          "image": {
+            "src": "./images/chatImage@1x.png",
+            "srcset": "./images/chatImage@1x.png 1x, ./images/chatImage@2x.png 2x",
+            "description": "client's photo"
+          },
+          "client-name": "Екатерина",
+          "review-text": "Да, доставка заграницу осуществляется курьерской службой до двери. Доставка заграницу оплачивается при оформлении заказа, фиксированная стоимость 1 200 ",
+          "city": "г.Киев",
+          "date": "26 Марта 2017"
+        }
+      },
+      {
+        "data": {
+          "image": {
+            "src": "./images/chatImage@1x.png",
+            "srcset": "./images/chatImage@1x.png 1x, ./images/chatImage@2x.png 2x",
+            "description": "client's photo"
+          },
+          "client-name": "Екатерина",
+          "review-text": "Да, доставка заграницу осуществляется курьерской службой до двери. Доставка заграницу оплачивается при оформлении заказа, фиксированная стоимость 1 200 ",
+          "city": "г.Киев",
+          "date": "26 Марта 2017"
+        }
+      },
+      {
+        "data": {
+          "image": {
+            "src": "./images/chatImage@1x.png",
+            "srcset": "./images/chatImage@1x.png 1x, ./images/chatImage@2x.png 2x",
+            "description": "client's photo"
+          },
+          "client-name": "Екатерина",
+          "review-text": "Да, доставка заграницу осуществляется курьерской службой до двери. Доставка заграницу оплачивается при оформлении заказа, фиксированная стоимость 1 200 ",
+          "city": "г.Киев",
+          "date": "26 Марта 2017"
+        }
+      },
+      {
+        "data": {
+          "image": {
+            "src": "./images/chatImage@1x.png",
+            "srcset": "./images/chatImage@1x.png 1x, ./images/chatImage@2x.png 2x",
+            "description": "client's photo"
+          },
+          "client-name": "Екатерина",
+          "review-text": "Да, доставка заграницу осуществляется курьерской службой до двери. Доставка заграницу оплачивается при оформлении заказа, фиксированная стоимость 1 200 ",
+          "city": "г.Киев",
+          "date": "26 Марта 2017"
+        }
       }
     ]
   },
