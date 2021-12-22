@@ -1,11 +1,11 @@
 import sizeChose from '../components/sizeChose.js';
 
-const {createMarkup, sizeListener, createBtn} = sizeChose;
+const { createMarkup, sizeListener, createBtn } = sizeChose;
 
- const body = document.querySelector('body');
+const body = document.querySelector('body');
 //body.insertAdjacentHTML('beforebegin', '<button data-modal-open>!!!!!!!BUTTON ON MODAL Size Chose !!!!!!</button>');
- 
- const btnRef = document.querySelector('[data-modal-open]');
+
+//  const btnRef = document.querySelector('[data-modal-open]');
 //btnRef.addEventListener('click', onBtnClick);
 
 import getRefs from '../refs/refs.js';

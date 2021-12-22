@@ -13,7 +13,6 @@ const formBrand = {
 };
 import { VideoSetPlayer } from './components/videoSetPlayer.js';
 const videoSetPlayer = new VideoSetPlayer();
-
 //=====brand========//
 // import brand_page from '../views/layouts/brand.hbs';
 // import { brandOurAdvantages, videoBrand, brandPlayer } from './layout/brand/infoAboutBrand.js';
@@ -44,10 +43,9 @@ const videoSetPlayer = new VideoSetPlayer();
 //   const savedData = localStorage.getItem('orderingData');
 //   const parsedData = JSON.parse(savedData);
 //   const ordering = ordering_ordering(parsedData);
-
-//   const createCheckout = payment_checkout({ createPayment, ordering, backdropMarkup });
+//   const createCheckout = payment_checkout({ createPayment, ordering, mainModal }); //!поправить
 //   refs.mainEL.innerHTML = createCheckout;
-//   //refs.mainEL.insertAdjacentHTML('beforeend', createCheckout);
+//refs.mainEL.insertAdjacentHTML('beforeend', createCheckout);
 
 //   const orderingPrice = new OrderingPrice({
 //     parsedData: parsedData,
@@ -127,6 +125,7 @@ export function deliveryRender() {
     descriptionDelivery,
     questionDelivery,
     formDeliveryMarkUp,
+    mainModal,
   });
   refs.mainEL.innerHTML = deliveryPageMarkUp;
   deliveryThreeModal();
@@ -163,56 +162,48 @@ import allJSON from './json/all.json';
 const cards = allJSON.products;
 import productMarkup from '../views/layouts/product.hbs';
 import HandSewn from './layout/product/productHandSewn.js';
-import backdropMarkupTempl from '../views/components/backdrop.hbs';
-import modalFormMarkupTempl from '../views/components/thanksForOrdering.hbs';
-import { preorderMark, setEventPreorder } from './layout/product/preorderModal.js';
-import { tryOnModels, setEventTryOnModels } from './layout/product/tryOnModelsModal.js';
-
+// import backdropMarkupTempl from '../views/components/backdrop.hbs';
+// import modalFormMarkupTempl from '../views/components/thanksForOrdering.hbs';
+// import { preorderMark } from './layout/product/preorderModal.js';
+// import { setEventTryOnModels } from './layout/product/tryOnModelsModal.js';
+import { mainModal } from './components/modal/modal';
 export function productRender() {
   const initFooter = new classBody();
   const objRecomendationsCategory = new RecomendationsCategory({
     data: cards,
   });
   const objHandSewn = new HandSewn({
-    object: [
-      {
-        name: '.try-on__backdrop', // a modal selector that is called when the button is clicked
-        className: 'is-visible', // the class that hides the modal
-      },
-    ],
+    // object: [
+    //   {
+    //     name: 'form__wrapper', // a modal selector that is called when the button is clicked
+    //     className: 'is-visible', // the class that hides the modal
+    //   },
+    // ],
   });
-  const objProductModalAddToCart = new ProductModalAddToCart({
-    productName: 'ЖАКЕТ-СМОКИНГ С ЛАЦКАНМИ',
-    objectClose: [
-      {
-        name: '[data-modal]', // a backdrop selector that is called when the button is clicked
-        className: 'is-hidden', // the class that hides the backdrop
-      },
-    ],
-  });
-  const modalFormMarkupOrder = modalFormMarkupTempl();
-  const modalFormMarkup = modalFormMarkupOrder + objProductModalAddToCart.getMarkup();
-  const backdropMarkup = backdropMarkupTempl(modalFormMarkup);
+  // const objProductModalAddToCart = new ProductModalAddToCart({
+  //   productName: 'ЖАКЕТ-СМОКИНГ С ЛАЦКАНМИ',
+  //   objectClose: [
+  //     {
+  //       name: '[data-modal]', // a backdrop selector that is called when the button is clicked
+  //       className: 'is-hidden', // the class that hides the backdrop
+  //     },
+  //   ],
+  // });
+  // const modalFormMarkupOrder = modalFormMarkupTempl();
+  // const modalFormMarkup = modalFormMarkupOrder + objProductModalAddToCart.getMarkup();
+  // const backdropMarkup = backdropMarkupTempl(modalFormMarkup);
   const obj = {
     infoAboutProduct: createFullMarkup(),
     recomendationCategory: objRecomendationsCategory.getMarkup(),
     handSewn: objHandSewn.getMarkup(),
-    backdrop: backdropMarkup,
-    modalPreorder: preorderMark,
-    tryOnModels: tryOnModels,
+    mainModal: mainModal,
   };
-  // refs.mainEL.insertAdjacentHTML('beforeend', productMarkup(obj));
   refs.mainEL.innerHTML = productMarkup(obj);
   setProductSlider();
-  callProductPageFunctional(objProductModalAddToCart.show);
-  document.querySelector('.form__button-сlose').style.display = 'none';
-  document.querySelector('.ordering__form').style.display = 'none';
+  callProductPageFunctional();
   objRecomendationsCategory.setSlider();
   objRecomendationsCategory.setEvent();
   objHandSewn.setEvent();
-  objProductModalAddToCart.setEvent();
-  setEventPreorder();
-  setEventTryOnModels();
   blockHelpRender();
 }
 

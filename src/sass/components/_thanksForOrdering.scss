@@ -1,10 +1,13 @@
 .ordering {
   &__form {
-    margin: 0 auto;
-    padding: 100px 120px 63px 120px;
-    width: 780px;
-    height: 516px;
+    // margin: 0 auto;
+    // width: 780px;
+    padding: 50px 5px 50px 5px;
     background-color: $primary-background-color;
+
+    @media screen and (min-width: $tablet-general) {
+      padding: 100px 120px 63px 120px;
+    }
   }
 
   &__image {

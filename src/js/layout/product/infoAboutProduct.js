@@ -1,10 +1,15 @@
-import { limitToFirst } from 'firebase/database';
 import animateHeader from '../../components/animateHeader';
 import productTemplate from '../../../views/partials/product/infoAboutProduct.hbs';
+import renderModal from '../../components/modal/modal';
 import updateBin from '../../updateBin';
 import sizeChose from '../../components/sizeChose';
+import { preorderMark } from '../../layout/product/preorderModal';
+import { tryOnModels } from '../../layout/product/tryOnModelsModal';
+import sizeTable from '../../../views/components/sizeTable.hbs';
+import newProductModalAddToCart from './productModalAddToCart';
+import { setEventTryOnModels } from './tryOnModelsModal';
+
 const { createBtn, onSizeElClick } = sizeChose;
-import { onBtnClick } from '../../components/sizeTable';
 
 function refs() {
   return {
@@ -243,17 +248,15 @@ function onCharListClick(event) {
 }
 //!----------------------------------------------------Determine Size
 function onNotYourSizeBtnClick() {
-  const preorderBackdropEl = document.querySelector('.preoder__backdrop');
-  preorderBackdropEl.classList.add('is-visible');
+  renderModal(preorderMark, '');
 }
 //!----------------------------------------------------Is size in a stock?
 function onDefineSizeBtnClick() {
-  onBtnClick();
+  renderModal(sizeTable(), '');
 }
 //!----------------------------------------------------Fitting
 function onFittingBtnClick() {
-  const tryOnBackdropEl = document.querySelector('.try-on__backdrop');
-  tryOnBackdropEl.classList.add('is-visible');
+  renderModal(tryOnModels, setEventTryOnModels);
 }
 //!----------------------------------------------------Fixate local storage data
 function fixateDataFromLocalStorage() {
@@ -264,10 +267,20 @@ function fixateDataFromLocalStorage() {
   checkIsProductInFavorites();
 }
 //!----------------------------------------------------FORM
+// renderModal(productModalAddToCart(), '');
+
 const onFormSubmit = buy => event => {
   event.preventDefault();
   setProductDataToOrdering();
-  buy(productInfoData.productName);
+  // buy(productInfoData.productName);
+
+  const objProductModalAddToCart = new newProductModalAddToCart({
+    productName: 'ЖАКЕТ-СМОКИНГ С ЛАЦКАНМИ',
+    objectClose: {
+      name: '[data-modal]', // a backdrop selector that is called when the button is clicked
+      className: 'is-hidden', // the class that hides the backdrop
+    },
+  });
 };
 
 //!----------------------------------------------------LISTENERS

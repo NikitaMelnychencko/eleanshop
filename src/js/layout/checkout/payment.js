@@ -1,6 +1,6 @@
-import { onBtnClick } from './thanksForOrdering';
 require('geteventlisteners');
-
+import renderModal from '../../components/modal/modal';
+import { modalFormMarkup, onResize } from './thanksForOrdering';
 export class ModalData {
   constructor({ idInputDay, idListDay, idInputTime, idListTime }) {
     this._refs = this._getRefs(idInputDay, idListDay, idInputTime, idListTime);
@@ -115,7 +115,8 @@ export class ModalData {
   _addEventFormSubmit() {
     this._refs.orderingForm.addEventListener('submit', e => {
       e.preventDefault();
-      onBtnClick();
+      renderModal(modalFormMarkup, onResize);
+
       this._refs.arrInputInf.forEach(el => {
         (el.value = ''), (el.checked = false);
       });

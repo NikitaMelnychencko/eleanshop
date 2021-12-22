@@ -5,7 +5,6 @@ function getBrowserId() {
   for (nIdx; nIdx > -1 && sUsrAg.indexOf(aKeys[nIdx]) === -1; nIdx--);
   return nIdx;
 }
-console.log(getBrowserId());
 
 export function restoreScroll() {
   const styleArray = style().split(';');
