@@ -7,7 +7,8 @@
   background-color: $modal-background-color;
   z-index: 2000;
   @media screen and (min-width: $tablet-only) {
-    top: 10%;
+    // transform: translate(-50%, -50%);
+    top: 20%;
   }
 }
 
@@ -18,12 +19,21 @@
   @media screen and (min-width: $tablet-general) {
     display: flex;
     align-items: center;
-    // color: $selection-text-color;
+    color: $selection-text-color;
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.06em;
     text-transform: uppercase;
   }
+  // @media screen and (min-width: $tablet-general) {
+  //   display: flex;
+  //   align-items: center;
+  //   color: $selection-text-color;
+  //   font-size: 12px;
+  //   line-height: 1.17;
+  //   letter-spacing: 0.06em;
+  //   text-transform: uppercase;
+  // }
 }
 .modal__container {
   min-width: 320px;
