@@ -16,8 +16,8 @@ export default class HandSewn {
     }
   }
 
-  _createMarkup = () => {
-    this.markup = markup(productDataHandSewn);
+  _createMarkup = data => {
+    this.markup = markup(data);
   };
 
   _addMarkup = () => {
@@ -43,12 +43,12 @@ export default class HandSewn {
     //     }
     //   });
     // }
-    console.log('object');
     renderModal(tryOnModels, setEventTryOnModels);
   };
 
-  getMarkup = () => {
-    this._createMarkup();
+  getMarkup = data => {
+    console.log(data);
+    this._createMarkup(data);
     return this.markup;
   };
 

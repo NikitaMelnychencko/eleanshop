@@ -2,7 +2,7 @@ import markupTempl from '../../../views/layouts/favorites.hbs';
 import animateHeader from '../../components/animateHeader';
 import { favoritesRender } from '../../call-list.js';
 import catalogz from '../../json/all.json';
-import { productRender } from '../../call-list.js';
+import { productRender } from '../../call-list/product';
 import { scrollTo } from '../../components/scrollTo';
 import refs from '../../refs/refs.js';
 let catalog = catalogz.products;

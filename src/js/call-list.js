@@ -154,58 +154,58 @@ if (!data == null) {
 // }
 
 //=====product========//
-import { callProductPageFunctional, createFullMarkup } from './layout/product/infoAboutProduct.js';
-import { setProductSlider } from './layout/product/productSlider';
-import ProductModalAddToCart from './layout/product/productModalAddToCart.js';
-import RecomendationsCategory from './layout/product/recomendationsCategory.js';
-import allJSON from './json/all.json';
-const cards = allJSON.products;
-import productMarkup from '../views/layouts/product.hbs';
-import HandSewn from './layout/product/productHandSewn.js';
+// import { callProductPageFunctional, createFullMarkup } from './layout/product/infoAboutProduct.js';
+// import { setProductSlider } from './layout/product/productSlider';
+// import ProductModalAddToCart from './layout/product/productModalAddToCart.js';
+// import RecomendationsCategory from './layout/product/recomendationsCategory.js';
+// import allJSON from './json/all.json';
+// const cards = allJSON.products;
+// import productMarkup from '../views/layouts/product.hbs';
+// import HandSewn from './layout/product/productHandSewn.js';
 // import backdropMarkupTempl from '../views/components/backdrop.hbs';
 // import modalFormMarkupTempl from '../views/components/thanksForOrdering.hbs';
 // import { preorderMark } from './layout/product/preorderModal.js';
 // import { setEventTryOnModels } from './layout/product/tryOnModelsModal.js';
-import { mainModal } from './components/modal/modal';
-export function productRender() {
-  const initFooter = new classBody();
-  const objRecomendationsCategory = new RecomendationsCategory({
-    data: cards,
-  });
-  const objHandSewn = new HandSewn({
-    // object: [
-    //   {
-    //     name: 'form__wrapper', // a modal selector that is called when the button is clicked
-    //     className: 'is-visible', // the class that hides the modal
-    //   },
-    // ],
-  });
-  // const objProductModalAddToCart = new ProductModalAddToCart({
-  //   productName: 'ЖАКЕТ-СМОКИНГ С ЛАЦКАНМИ',
-  //   objectClose: [
-  //     {
-  //       name: '[data-modal]', // a backdrop selector that is called when the button is clicked
-  //       className: 'is-hidden', // the class that hides the backdrop
-  //     },
-  //   ],
-  // });
-  // const modalFormMarkupOrder = modalFormMarkupTempl();
-  // const modalFormMarkup = modalFormMarkupOrder + objProductModalAddToCart.getMarkup();
-  // const backdropMarkup = backdropMarkupTempl(modalFormMarkup);
-  const obj = {
-    infoAboutProduct: createFullMarkup(),
-    recomendationCategory: objRecomendationsCategory.getMarkup(),
-    handSewn: objHandSewn.getMarkup(),
-    mainModal: mainModal,
-  };
-  refs.mainEL.innerHTML = productMarkup(obj);
-  setProductSlider();
-  callProductPageFunctional();
-  objRecomendationsCategory.setSlider();
-  objRecomendationsCategory.setEvent();
-  objHandSewn.setEvent();
-  blockHelpRender();
-}
+// import { mainModal } from './components/modal/modal';
+// export function productRender() {
+//   const initFooter = new classBody();
+//   const objRecomendationsCategory = new RecomendationsCategory({
+//     data: cards,
+//   });
+//   const objHandSewn = new HandSewn({
+// object: [
+//   {
+//     name: 'form__wrapper', // a modal selector that is called when the button is clicked
+//     className: 'is-visible', // the class that hides the modal
+//   },
+// ],
+// });
+// const objProductModalAddToCart = new ProductModalAddToCart({
+//   productName: 'ЖАКЕТ-СМОКИНГ С ЛАЦКАНМИ',
+//   objectClose: [
+//     {
+//       name: '[data-modal]', // a backdrop selector that is called when the button is clicked
+//       className: 'is-hidden', // the class that hides the backdrop
+//     },
+//   ],
+// });
+// const modalFormMarkupOrder = modalFormMarkupTempl();
+// const modalFormMarkup = modalFormMarkupOrder + objProductModalAddToCart.getMarkup();
+// const backdropMarkup = backdropMarkupTempl(modalFormMarkup);
+//   const obj = {
+//     infoAboutProduct: createFullMarkup(),
+//     recomendationCategory: objRecomendationsCategory.getMarkup(),
+//     handSewn: objHandSewn.getMarkup(),
+//     mainModal: mainModal,
+//   };
+//   refs.mainEL.innerHTML = productMarkup(obj);
+//   setProductSlider();
+//   callProductPageFunctional();
+//   objRecomendationsCategory.setSlider();
+//   objRecomendationsCategory.setEvent();
+//   objHandSewn.setEvent();
+//   blockHelpRender();
+// }
 
 //=====reviews========//
 // const formReviews = new Forms('reviews');
