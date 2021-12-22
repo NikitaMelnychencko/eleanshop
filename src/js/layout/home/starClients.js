@@ -89,5 +89,6 @@ export function starClientsComments() {
     deleteMarkup(reviewsChatList);
     btnShowLessChangeDisplay('none');
     event.target.removeEventListener('click', onButtonShowLess);
+    factor = 1;
   }
 }
