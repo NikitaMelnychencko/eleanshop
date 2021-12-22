@@ -1,0 +1,41 @@
+.mainModal {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transition: all $time-cubic;
+  transform: translate(-50%, 0) scale(0.9);
+  background-color: $modal-background-color;
+  z-index: 2000;
+  @media screen and (min-width: $tablet-only) {
+    // transform: translate(-50%, -50%);
+    top: 20%;
+  }
+}
+
+.close-button-text {
+  @media screen and (max-width: $tablet-general) {
+    display: none;
+  }
+  @media screen and (min-width: $tablet-general) {
+    display: flex;
+    align-items: center;
+    color: $selection-text-color;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+  // @media screen and (min-width: $tablet-general) {
+  //   display: flex;
+  //   align-items: center;
+  //   color: $selection-text-color;
+  //   font-size: 12px;
+  //   line-height: 1.17;
+  //   letter-spacing: 0.06em;
+  //   text-transform: uppercase;
+  // }
+}
+.modal__container {
+  min-width: 320px;
+  min-height: 150px;
+}
