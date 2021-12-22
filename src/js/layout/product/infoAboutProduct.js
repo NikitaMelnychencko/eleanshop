@@ -164,8 +164,9 @@ function showAvailableSizes(sizes) {
   const buyBtn = document.querySelector('.button__purchase--buy');
   const inputs = [...sizeBtnInput];
   const labels = [...sizeBtnLabel];
-
+  console.log(sizeBtnLabel);
   labels.map(value => {
+    console.log(labels);
     if (!sizes[0].includes(value.textContent)) {
       value.classList.add('size-chose__label--disabled');
     } else {
