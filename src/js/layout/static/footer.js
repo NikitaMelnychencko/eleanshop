@@ -7,10 +7,10 @@ import {
   reviewsRender,
   deliveryRender,
   favoritesRender,
-  showroomRender,
   checkoutRender,
 } from '../../call-list';
 import { brandRender } from '../../call-list/brand.js';
+import { showroomRender } from '../../call-list/showroom.js';
 import { catalogRender } from '../../call-list/catalog.js';
 import { id } from 'postcss-selector-parser';
 import { indexOf } from 'lodash';

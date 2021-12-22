@@ -1,12 +1,12 @@
 import refs from '../../refs/refs.js';
 import {
   favoritesRender,
-  showroomRender,
   contactRender,
   deliveryRender,
   fittingRender,
   reviewsRender,
 } from '../../call-list.js';
+import { showroomRender } from '../../call-list/showroom.js';
 import { catalogRender } from '../../call-list/catalog.js';
 import { brandRender } from '../../call-list/brand.js';
 

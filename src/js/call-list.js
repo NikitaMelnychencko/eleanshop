@@ -235,15 +235,15 @@ export function reviewsRender() {
 }
 
 //=====showroom========//
-import showroom_page from '../views/layouts/showroom.hbs';
-export function showroomRender() {
-  const initFooter = new classBody();
-  const showroomPageMarkUp = showroom_page({ formBrand, pageShowroomSliderMarkup });
-  refs.mainEL.innerHTML = showroomPageMarkUp;
-  showroomSlider();
-  blockHelpRender();
-  formsForm.init();
-}
+// import showroom_page from '../views/layouts/showroom.hbs';
+// export function showroomRender() {
+//   const initFooter = new classBody();
+//   const showroomPageMarkUp = showroom_page({ formBrand, pageShowroomSliderMarkup });
+//   refs.mainEL.innerHTML = showroomPageMarkUp;
+//   showroomSlider();
+//   blockHelpRender();
+//   formsForm.init();
+// }
 
 //======catalog=========//
 // import catalogMarkUp from '../views/layouts/catalog.hbs';
