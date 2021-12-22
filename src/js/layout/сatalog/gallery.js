@@ -3,8 +3,6 @@ import animateHeader from '../../components/animateHeader';
 import filterLib from '../../json/filterLib.json';
 import { productRender } from '../../call-list/product';
 import { scrollTo } from '../../components/scrollTo';
-import refs from '../../refs/refs.js';
-const { favQuantityEl } = refs;
 let catalog = null;
 
 function refs() {
