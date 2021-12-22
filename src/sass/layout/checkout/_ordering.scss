@@ -13,7 +13,6 @@
 
 .ordering__title {
   border-bottom: 1px solid $border-color;
-
   font-family: $selection-font-family;
   font-size: 21px;
   line-height: 0.95;
@@ -172,7 +171,6 @@
   scrollbar-color: $primary-border-color $primary-background-color ;
   scrollbar-width:  thin ; 
   overflow-x: hidden;
-
   box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.15);
 }
 .ordering-list::-webkit-scrollbar {
