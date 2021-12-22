@@ -37,7 +37,7 @@ export function homeRender() {
     const pageShowroomSliderMarkup = pageShowroomMarkupTemplate(el[1].ourShowroom);
     const cardsMarkup = model(el[0].content);
     const pageInInstagramSliderMarkup = pageInInstagramMarkupTemplate(el[1].inInstagram);
-    const cardChatReviewsMarkup = starClients_cardChatReviewsTempl(el[1].userReviews);
+    const cardChatReviewsMarkup = starClients_cardChatReviewsTempl(el[1].userReviews.slice(0, 4));
     const pageStarClientsSliderData = el[1].starClients;
     const pageStarClientsSliderMarkup = pageStarClientsMarkupTemplate({
       pageStarClientsSliderData,

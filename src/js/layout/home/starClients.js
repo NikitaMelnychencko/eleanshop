@@ -1,7 +1,7 @@
 import starClients_cardChatReviewsTempl from '../../../views/components/cardChatReviews.hbs';
 import starClients_reviewsChat from '../../json/homeRewiesChat/homeReviewsChat.json';
 import starClients_reviewsChatOthers from '../../json/homeRewiesChat/homeReviewsChatOthers.json';
-
+import { getSection } from '../../data/firebase_Servise';
 export function starClientsSlider() {
   window.jQuery = window.$ = require('jquery');
   require('../../slider/slick.min.js');
@@ -53,9 +53,18 @@ export function starClientsComments() {
 
   //button show more
   showMoreButtonEl.addEventListener('click', onButtonShowMoreClick);
-
+  let factor = 1;
   function onButtonShowMoreClick(event) {
-    renderNewMarkup(starClients_reviewsChatOthers);
+    getSection('components/userReviews').then(vel => {
+      const value = vel.slice(4 + factor, 14 + factor);
+      if (value.length > 0) {
+        renderNewMarkup(value);
+      } else {
+        renderNewMarkup(vel.slice(4 + factor, vel.length));
+      }
+      factor = factor + 10;
+    });
+
     btnShowLessChangeDisplay('block');
     showLessButtonEl.addEventListener('click', onButtonShowLess);
   }
@@ -64,7 +73,12 @@ export function starClientsComments() {
     reviewsChatList.insertAdjacentHTML('beforeend', chatReviewsNewListMarkup);
   }
   function deleteMarkup(parentElement) {
+    const arr = [];
+    for (let index = 0; index < 4; index++) {
+      arr.push(parentElement.children[index]);
+    }
     parentElement.innerHTML = '';
+    arr.forEach(el => reviewsChatList.insertAdjacentElement('beforeend', el));
   }
   function btnShowLessChangeDisplay(style) {
     showLessButtonEl.style.display = style;
@@ -73,7 +87,6 @@ export function starClientsComments() {
   //button showLess
   function onButtonShowLess(event) {
     deleteMarkup(reviewsChatList);
-    renderNewMarkup(starClients_reviewsChat);
     btnShowLessChangeDisplay('none');
     event.target.removeEventListener('click', onButtonShowLess);
   }
