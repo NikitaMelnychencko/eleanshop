@@ -208,7 +208,13 @@ export class OrderingSizeAndColor {
   }
   _makeListMarkup(list, sizesArr) {
     list.innerHTML = '';
-    const listItemsMarkup = sizesArr.map(size => this._makeListItemMarkup(size)).join('');
+    let listItemsMarkup = '';
+    if (sizesArr) {
+      listItemsMarkup = sizesArr.map(size => this._makeListItemMarkup(size)).join('');
+    } else {
+      sizesArr = [];
+    }
+
     if (sizesArr.length === 0) {
       list.innerHTML = this._makeListItemMarkup('Нет в наличии');
     } else {

@@ -60,15 +60,21 @@
   }
 
   &__block-image {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
     margin-right: 16px;
     @media screen and (min-width: $desktop-up) {
+      width: 200px;
+      height: 220px;
       margin-right: 18px;
     }
   }
 
   &__image {
-    min-width: 148px;
-    min-height: 220px;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
   }
 
   &__block-character {
@@ -112,10 +118,19 @@
       margin-bottom: 12px;
     }
   }
-
+  &__product-form {
+    margin-bottom: 18px;
+    justify-content: flex-start;
+    flex-direction: column;
+    @media screen and (min-width: $desktop-up) {
+      flex-direction: row;
+      display: flex;
+      margin-bottom: 0;
+      justify-content: space-between;
+    }
+  }
   &__block-counter {
     display: flex;
-    margin-bottom: 18px;
   }
 
   &__button-del {
@@ -124,12 +139,14 @@
     border: transparent;
     background-color: transparent;
     text-decoration-line: underline;
+    margin-right: auto;
 
     @media screen and (min-width: $desktop-up) {
       border: 1px solid $primery-border-color;
       background-color: $selection-text-color;
       text-decoration-line: none;
       color: $button-counter-color;
+      margin-right: 0;
       &:hover,
       &:focus {
         color: $selection-text-color;

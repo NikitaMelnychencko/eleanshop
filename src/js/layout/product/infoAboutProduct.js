@@ -14,6 +14,8 @@ const { createBtn, onSizeElClick } = sizeChose;
 function refs() {
   return {
     favQuantityEl: document.getElementById('js-text-fav'),
+    sizeBtnLabel: document.querySelectorAll('[data-action="size-chose-label"]'),
+    sizeBtnInput: document.querySelectorAll('[data-action="size-chose-input"]'),
   };
 }
 
@@ -24,7 +26,6 @@ export function createFullMarkup() {
   productInfoData = JSON.parse(localStorage.getItem('productInfoData'));
 
   const btn = createBtn();
-
   // * ЗДЕСЬ ВМЕСТО productTEST нужно заливать правильный JSON***********
   return productTemplate({ productInfoData, btn });
 }
@@ -143,14 +144,15 @@ function onColorListClick(event) {
   if (!isColorpickerButton) {
     return;
   }
-
   const inputColor = event.target.previousElementSibling.dataset.value;
-  productInfoData.productAviable.find(size => {
-    if (size.colorId === event.target.previousElementSibling.value) {
+  productInfoData.productAviable.forEach(size => {
+    if (size.colorId === event.target.previousElementSibling.value && size !== undefined) {
       availableSizes.push(size.aviableSize);
     }
   });
-
+  if (availableSizes[0] === undefined) {
+    availableSizes = [''];
+  }
   removeCurrentClass();
   addCurrentClass(colorpickerButton);
   showAvailableSizes(availableSizes);
@@ -159,14 +161,10 @@ function onColorListClick(event) {
 }
 
 function showAvailableSizes(sizes) {
-  const sizeBtnLabel = document.querySelectorAll('.size-chose__label');
-  const sizeBtnInput = document.querySelectorAll('.size-chose__input');
   const buyBtn = document.querySelector('.button__purchase--buy');
-  const inputs = [...sizeBtnInput];
-  const labels = [...sizeBtnLabel];
-  console.log(sizeBtnLabel);
+  const inputs = [...refs().sizeBtnInput];
+  const labels = [...refs().sizeBtnLabel];
   labels.map(value => {
-    console.log(labels);
     if (!sizes[0].includes(value.textContent)) {
       value.classList.add('size-chose__label--disabled');
     } else {
@@ -268,7 +266,6 @@ function fixateDataFromLocalStorage() {
   checkIsProductInFavorites();
 }
 //!----------------------------------------------------FORM
-// renderModal(productModalAddToCart(), '');
 
 const onFormSubmit = buy => event => {
   event.preventDefault();

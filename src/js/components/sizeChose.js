@@ -15,8 +15,8 @@ function createBtn() {
     .sort((a, b) => Number(a) - Number(b))
     .map(value => {
       newArray.push(
-        `<input class="size-chose__input" type="radio" id="sizeChoice${value}" name="sizeChoice" value=${value} required>
-          <label class="size-chose__label" for="sizeChoice${value}" aria-label="${value}">${value}</label>`,
+        `<input class="size-chose__input" type="radio" id="sizeChoice${value}" name="sizeChoice" value=${value} required data-action="size-chose-input">
+          <label class="size-chose__label" for="sizeChoice${value}" aria-label="${value}" data-action="size-chose-label">${value}</label>`,
       );
     });
   return newArray;
