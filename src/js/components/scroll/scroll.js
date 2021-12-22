@@ -41,4 +41,5 @@ export function browserCheck() {
   if (getBrowserId() === 2) {
     document.documentElement.classList.remove('scrollRem');
   }
+  console.log(getBrowserId());
 }

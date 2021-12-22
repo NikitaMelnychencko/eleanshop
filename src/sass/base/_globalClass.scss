@@ -5,10 +5,9 @@
 // Futura-Book,Futura Md BT = Jost (400)
 
 //$tablet-general for modal window implementation
-html {
-  scrollbar-color: $primary-border-color; /* «цвет ползунка» «цвет полосы скроллбара» */
-  scrollbar-width: thin; /* толщина */
-  overflow-y:visible;
+html, body {
+    scrollbar-color: $primary-border-color $primary-background-color ;     /* «цвет ползунка» «цвет полосы скроллбара» */
+    scrollbar-width:  thin ;  /* толщина */
 }
 
 body {
@@ -17,6 +16,7 @@ body {
   background-color: $primary-background-color;
   color: $primary-text-color;
   font-family: $primary-font-family, sans-serif;
+ overflow-x: hidden;
   font-size: 15px;
   line-height: 1.46;
   @media screen and (min-width: $desktop-up) {
