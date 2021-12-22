@@ -6,8 +6,8 @@
   transform: translate(-50%, 0) scale(0.9);
   background-color: $modal-background-color;
   z-index: 2000;
-    scrollbar-color: $primary-border-color $primary-background-color ;     /* «цвет ползунка» «цвет полосы скроллбара» */
-    scrollbar-width:  thin ;  /* толщина */
+    scrollbar-color: $primary-border-color $primary-background-color ;
+    scrollbar-width:  thin ;
   @media screen and (min-width: $tablet-only) {
     top: 10%;
   }
