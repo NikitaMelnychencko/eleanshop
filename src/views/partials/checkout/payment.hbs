@@ -3,7 +3,7 @@
     <div class="delivery" role='group'>
       <h3 class="delivery__title">ВЫБЕРИТЕ СПОСОБ ДОСТАВКИ</h3>
       <div class="delivery-method ">
-        {{#each method.delivery}}
+        {{#each this.delivery}}
         <label class="delivery-method__item">
           <input class="delivery-method__form-radio" id={{id}} type='radio' name='delivery-method' value={{value}}
             {{checked}} aria-label="delivery to me" />
@@ -16,7 +16,7 @@
           <input class="showroom-method__form" name="day" id="js-day" placeholder="ВЫБЕРИТЕ ДАТУ" minlength='5'
             aria-label="delivery to showroom" />
           <ul class="showroom-list showroom-list--hide js-day" id='day-list'>
-            {{#each method.day-data}}
+            {{#each this.day-data}}
             <li class="showroom-list__item"><svg class="showroom-list__icon-murkup">
                 <use href="./images/murkup.svg#icon-murkup"></use>
               </svg><span>{{day}},</span>{{data}}</li>
@@ -26,7 +26,7 @@
         <div class="showroom-method__item">
           <input class="showroom-method__form" name="time" id="js-time" placeholder="ВЫБЕРИТЕ ВРЕМЯ" minlength='5' />
           <ul class="showroom-list showroom-list--hide js-time" id='time-list'>
-            {{#each method.time}}
+            {{#each this.time}}
             <li class="showroom-list__item"><svg class="showroom-list__icon-murkup">
                 <use href="./images/murkup.svg#icon-murkup"></use>
               </svg>{{time}}</li>
@@ -61,7 +61,7 @@
     <div class='payment' role='group'>
       <h3 class="payment-method__title">ВЫБЕРИТЕ СПОСОБ ОПЛАТЫ</h3>
       <div class='payment-method'>
-        {{#each method.payment}}
+        {{#each this.payment}}
         <label class='payment-method__item'>
           <input class="payment-method__form-radio" type='radio' name='payment-method' value={{value}} {{checked}}
             aria-label="payment method" />

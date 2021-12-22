@@ -6,7 +6,7 @@ import animateHeader from '../../components/animateHeader';
 import listCards from '../../../views/partials/product/productListFromCatalog.hbs';
 import allJSON from '../../json/all.json';
 const cards = allJSON.products;
-import { productRender } from '../../call-list.js';
+import { productRender } from '../../call-list/product';
 import { scrollTo } from '../../components/scrollTo';
 
 function refs() {

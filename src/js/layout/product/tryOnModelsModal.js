@@ -1,4 +1,4 @@
-// Try on Modal ("ХОТИТЕ ПРИМЕРИТЬ ДАННУЮ МОДЕЛЬ ПЕРЕД ПОКУПКОЙ? ЛЕГКО!")
+// Try on Modal
 import Backdrop from '../../components/backdrop';
 import tryOnModelsModal from '../../../views/components/tryOnModelsModal.hbs';
 import orderForm from '../../../views/components/orderForm.hbs';
@@ -16,28 +16,14 @@ export const tryOnModels = tryOnModelsModal({ orderForm });
 
 //open modal
 export function setEventTryOnModels() {
-  // const tryOnBackdrop = document.querySelector('.try-on__backdrop');
   const tryOnModalEl = document.querySelector('.try-on');
   const orderFormEl = tryOnModalEl.querySelector('.order-form');
   const submitButton = tryOnModalEl.querySelector('.order-form');
   const sizeList = tryOnModalEl.querySelector('.sizes__list');
-  // buttonCloseModal.addEventListener('click', onButtonCloseModalClick);
   sizeList.addEventListener('click', onSizeListItemClick);
   submitButton.addEventListener('submit', onButtonSubmitClick);
   console.log(orderFormEl);
 }
-
-//close modal
-// function onButtonCloseModalClick(event) {
-//   // const tryOnBackdrop = document.querySelector('.try-on__backdrop');
-//   // tryOnBackdrop.classList.remove('is-visible');
-//   /* buttonCloseModal.removeEventListener('click', onButtonCloseModalClick); */
-//   /* sizeList.removeEventListener('click', onSizeListItemClick); */
-//   /* submitButton.removeEventListener('click', onButtonSubmitClick); */
-//   console.log('object');
-
-//   bodyUnfixPosition();
-// }
 
 //on size-list label click, radio-input is checked
 function onSizeListItemClick(event) {
@@ -77,17 +63,6 @@ function onButtonSubmitClick(event) {
         localStorage.setItem(input.name, input.value);
       }
     });
-    // onButtonCloseModalClick();
-
-    // let backdropRef = document.querySelector('[data-modal]');
-    // backdropRef.classList.remove('is-hidden');
-    // const modalForm = document.querySelector('.ordering__form');
-    // modalForm.style.display = 'block';
-    // const right = (backdropRef.offsetWidth - modalForm.offsetWidth) / 2;
-    // const btnCloseRef = document.querySelector('.form__button-сlose');
-    // btnCloseRef.style.display = 'block';
-    // btnCloseRef.style.right = `${right}px`;
     renderModal(modalFormMarkup, onResize);
-    // const backdrop = new Backdrop();
   }
 }

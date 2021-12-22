@@ -3,7 +3,7 @@ require('../../slider/slick.min.js');
 
 import RecomendationsCategory from './recomendationsCategory.js';
 import modalAddToCartMark from '../../../views/partials/product/productModalAddToCart.hbs';
-import { checkoutRender } from '../../call-list.js';
+import { checkoutRender } from '../../call-list/checkout.js';
 import { scrollTo } from '../../components/scrollTo';
 import renderModal from '../../components/modal/modal';
 import { bodyUnfixPosition } from '../../components/scroll/scroll';

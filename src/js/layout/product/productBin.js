@@ -1,5 +1,5 @@
 import markupBin from '../../../views/partials/product/productBin.hbs';
-import { checkoutRender } from '../../call-list.js';
+import { checkoutRender } from '../../call-list/checkout';
 import { scrollTo } from '../../components/scrollTo';
 import updateBin from '../../updateBin';
 export default class ProductBin {

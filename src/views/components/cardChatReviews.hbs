@@ -5,17 +5,17 @@
         <div class='reviews-article__image-thumb'>
           <img
             class='reviews-article__image'
-            srcset='{{image.srcset}}'
-            src='{{image.src}}'
-            alt='{{image.description}}'
+            srcset='{{data.image.srcset}}'
+            src='{{data.image.src}}'
+            alt='{{data.image.description}}'
           />
         </div>
 
         <div class='reviews-article__client-info'>
-          <h3 class='reviews-article__title'>{{client-name}}</h3>
+          <h3 class='reviews-article__title'>{{data.client-name}}</h3>
           <div class='reviews-article__contacts-thumb'>
-            <p class='reviews-article__address reviews-article__contacts-text'>{{city}}</p>
-            <p class='reviews-article__date reviews-article__contacts-text'>{{date}}</p>
+            <p class='reviews-article__address reviews-article__contacts-text'>{{data.city}}</p>
+            <p class='reviews-article__date reviews-article__contacts-text'>{{data.date}}</p>
           </div>
         </div>
       </div>

@@ -1,11 +1,11 @@
 import gallery from '../../../views/partials/сatalog/gallery.hbs';
 import animateHeader from '../../components/animateHeader';
-import catalogz from '../../json/all.json';
 import filterLib from '../../json/filterLib.json';
-import { productRender } from '../../call-list.js';
+import { productRender } from '../../call-list/product';
 import { scrollTo } from '../../components/scrollTo';
-
-let catalog = catalogz.products;
+import refs from '../../refs/refs.js';
+const { favQuantityEl } = refs;
+let catalog = null;
 
 function refs() {
   return {
@@ -54,14 +54,18 @@ function filterCatalog() {
   if (ls) {
     const fcatalog = [];
     catalog.forEach(el => {
+      if (!el.collection) el.collection = [];
       if (el.category.indexOf(ls) >= 0 || el.collection.indexOf(ls) >= 0) fcatalog.push(el);
     });
+
     if (fcatalog.length > 0) return fcatalog;
   }
   return catalog;
 }
 
 export function catalogListMarkupF() {
+  const value = sessionStorage.getItem('galleryData');
+  catalog = JSON.parse(value);
   return gallery(filterCatalog());
 }
 export function openCategory() {
