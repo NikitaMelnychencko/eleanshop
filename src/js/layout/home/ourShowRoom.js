@@ -1,9 +1,4 @@
 import 'animate.css';
-import pageShowroomSliderData from '../../json/ourShowroom.json';
-import pageShowroomMarkupTemplate from '../../../views/partials/home/ourShowRoom.hbs';
-
-// Create markup and render in html
-export const pageShowroomSliderMarkup = pageShowroomMarkupTemplate({ pageShowroomSliderData });
 
 export function showroomSlider() {
   window.jQuery = window.$ = require('jquery');
@@ -33,7 +28,7 @@ export function showroomSlider() {
       mobileFirst: true,
       variableWidth: true,
       responsive: [
-                {
+        {
           breakpoint: 720,
           settings: {
             dots: false,

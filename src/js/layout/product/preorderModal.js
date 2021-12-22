@@ -5,8 +5,9 @@ import orderForm from '../../../views/components/orderForm.hbs';
 import refs from '../../refs/refs';
 import { bodyUnfixPosition } from '../../components/scroll/scroll';
 const { mainEL } = refs;
-// create content for Pre-order Modal which placed at Body (for example)
+
 export const preorderMark = preorderModal({ orderForm });
+
 //const
 
 //open modal

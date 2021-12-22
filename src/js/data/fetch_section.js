@@ -1,22 +1,20 @@
 import { getSection } from './firebase_Servise.js';
-class FetchSection {
+export class FetchSection {
   constructor({ firstParam, secondParam }) {
-    this._state = {};
+    this._state = null;
     this._getSection(firstParam, secondParam);
   }
   _getSection(firstParam, secondParam) {
     if (firstParam && secondParam) {
       const firstPromis = getSection(firstParam);
       const secondPromis = getSection(secondParam);
-      Promise.all([firstPromis, secondPromis]).then(values => {
-        this._state.value = values;
+      this._state = Promise.all([firstPromis, secondPromis]).then(values => {
+        return values;
       });
-      return this._state;
     } else {
-      getSection(firstParam).then(values => {
-        this._state.value = values;
+      this._state = getSection(firstParam).then(values => {
+        return values;
       });
-      return this._state;
     }
   }
 }
