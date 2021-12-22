@@ -1,11 +1,31 @@
 import gallery from '../../../views/partials/сatalog/gallery.hbs';
-let catalog = null;
+import animateHeader from '../../components/animateHeader';
 import filterLib from '../../json/filterLib.json';
 import { productRender } from '../../call-list.js';
 import { scrollTo } from '../../components/scrollTo';
-
 import refs from '../../refs/refs.js';
 const { favQuantityEl } = refs;
+let catalog = null;
+let catalog = catalogz.products;
+
+export function activateFavorites() {
+  const favArray = [];
+  let favorites = JSON.parse(localStorage.getItem('favorites'));
+  if (favorites) {
+    favorites.fav.forEach(num => {
+      favArray.push(num.id);
+    });
+    let allHeart = document.querySelectorAll('.catalog-product-card__heart');
+
+    allHeart.forEach(el => {
+      if (favArray.includes(el.dataset.id)) {
+        el.classList.add('heart-click');
+        el.classList.add('active');
+      }
+      return;
+    });
+  }
+}
 
 function selectLS() {
   let ls = localStorage.getItem('content');
@@ -45,7 +65,7 @@ export function catalogListMarkupF() {
 }
 export function openCategory() {
   const catalogItems = document.querySelector('.js-catalog');
-  const cardHeartIcon = catalogItems.querySelectorAll('.icon-gallery-card-heart');
+  const cardHeartIcon = catalogItems.querySelectorAll('.catalog-product-card__heart');
   const cardHeartIconArray = Array.from(cardHeartIcon);
 
   for (const cardHeartItem of cardHeartIconArray) {
@@ -73,22 +93,25 @@ export function openCategory() {
         if (itemData) {
           if (cardHeartItem.classList.contains('active')) {
             let elem = {
-              label: {
-                id: itemData.id,
-                name: itemData.productName,
-                img: itemData.image[0].imageProduct,
-                img2: itemData.image[3].imageProduct,
-                price: itemData.productPrice,
-                sizeSelected: '',
-                colorSelected: '',
-                circleSelected: '',
-                description: itemData.description,
-                count: 1,
+              id: itemData.id,
+              name: itemData.productName,
+              image: {
+                srcset: `${itemData.image[0].imageProduct} 1x, ${itemData.image[0].imageProductHigherResolution} 2x`,
+                'srcset-mobile': `${itemData.image[0].imageProduct} 1x, ${itemData.image[0].imageProductHigherResolution} 2x`,
+                src: itemData.image[0].imageProduct,
+                alt: itemData.image[0].imageDescriprion,
               },
+              price: itemData.productPrice,
+              size: '',
+              color: '',
+              circleSelected: '',
+              description: itemData.description,
+              count: 1,
             };
             data.fav.push(elem);
             localStorage.setItem('favorites', JSON.stringify(data));
             favQuantityEl.innerHTML = data.fav.length;
+            animateHeader('js-text-fav');
           } else {
             removeFromFavorite(itemData.id);
           }
@@ -97,11 +120,11 @@ export function openCategory() {
     }
   }
 
-  const catalogSeeMoreIcon = document.querySelector('.catalog-icon-raws-round');
+  const catalogSeeMoreIcon = document.querySelector('.catalog__gallery-raws-icon');
   catalogSeeMoreIcon.addEventListener('click', seeMoreCards);
   function seeMoreCards(elem) {}
 
-  const cardsList = document.querySelector('.catalog-list');
+  const cardsList = document.querySelector('.catalog__gallery-list');
   cardsList.addEventListener('click', cardToProduct);
   cardsList.addEventListener('touchend', cardToProduct);
 }
@@ -134,8 +157,9 @@ export function filteredCatalog(filterName) {
     el => el.category.indexOf(filterName) >= 0 || el.collection.indexOf(filterName) >= 0,
   );
   if (fcatalog.length > 0) {
-    document.querySelector('.catalog-list').innerHTML = gallery(fcatalog);
+    document.querySelector('.catalog__gallery-list').innerHTML = gallery(fcatalog);
     openCategory();
+    activateFavorites();
   }
 }
 function removeFromFavorite(id) {
@@ -144,4 +168,5 @@ function removeFromFavorite(id) {
   ls.fav.splice(lsid, 1);
   localStorage.setItem('favorites', JSON.stringify(ls));
   refs.favQuantityEl.innerHTML = ls.fav.length;
+  animateHeader('js-text-fav');
 }

@@ -1,20 +1,28 @@
-<section class='catalog-section section'>
+<section class='catalog section'>
   <div class='container'>
-    <h3 class='catalog-category-name'>
-    </h3>
-    <div class='catalog-category-filter-gallery'>
-      <div id='filter' class='catalog-category-filter'>
-        <ul class='filter-list'>
+    <h2 class='catalog__title'></h2>
+    <div class='catalog__box'>
+      <div id='filter' class='catalog-filter'>
+        <ul class='catalog-filter__list'>
           {{{filterListMakeup}}}
         </ul>
       </div>
-      <div class='catalog-gallery'>
-        <div class='catalog-list js-catalog'>
+      <div class='catalog__gallery'>
+        <ul class='catalog__gallery-list js-catalog'>
           {{{catalogListMarkup}}}
+        </ul>
+        <div class="catalog__gallery-raws-icon">
+          {{!-- <svg class='button-add-likes__icon'>
+            <use href='./images/icon-product-delivery.svg#icon-heart'></use>
+          </svg> --}}
+          <button class='button-add-likes {{#if likes}} active{{/if}} js-btn-like' data-id="{{ihd}}">
+            <svg class='button-add-likes__icon'>
+              <use href='./images/icon-product-delivery.svg#icon-heart'></use>
+            </svg>
+          </button>
+
+
         </div>
-        <svg class='catalog-icon-raws-round'>
-          <use href='./images/catalog.svg#icon-round-raws'></use>
-        </svg>
       </div>
     </div>
   </div>

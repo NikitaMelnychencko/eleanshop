@@ -1,5 +1,6 @@
 import './sass/main.scss';
 import './js/importImages/importImages.js';
+import './js/components/animateHeader.js';
 import './js/updateBin.js';
 //=========Service===============
 //firebase

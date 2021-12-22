@@ -48,14 +48,20 @@
   &__product {
     display: flex;
 
-    &--image {
-      display: block;
-      width: auto;
-      height: 100%;
-      max-width: 110px;
-      max-height: 130px;
-
+    &--image-box {
+      overflow: hidden;
+      max-width: 100px;
+      max-height: 140px;
       margin-right: 16px;
+      @media screen and (min-width: $desktop-up) {
+        max-width: 110px;
+        max-height: 130px;
+      }
+    }
+
+    &--image {
+      object-fit: cover;
+      width: 100%;
     }
 
     &--info {

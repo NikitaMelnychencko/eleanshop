@@ -3,11 +3,11 @@ import { filteredCatalog } from './gallery.js';
 export function openFilter(value) {
   const filterLib = value;
   const filterList = document.querySelector('#filter');
-  const catalogColHeader = document.querySelector('.catalog-collection-header');
-  const catalogCatHeader = document.querySelector('.catalog-category-header');
+  const catalogColHeader = document.querySelector('.catalog-collection__title');
+  const catalogCatHeader = document.querySelector('.catalog-category__title');
 
-  const filterCollectionList = document.querySelector('.filter-collection-list');
-  const filterCatalogList = document.querySelector('.filter-category-list');
+  const filterCollectionList = document.querySelector('.catalog-collection__list');
+  const filterCatalogList = document.querySelector('.catalog-category__list');
 
   const collectionItems = filterCollectionList.getElementsByTagName('li');
   const collectionArr = Array.from(collectionItems);
@@ -27,7 +27,7 @@ export function openFilter(value) {
     });
   }
 
-  const categoryName = document.querySelector('.catalog-category-name');
+  const categoryName = document.querySelector('.catalog__title');
   let ls = localStorage.getItem('content');
   if (ls) {
     let index = filterLib.filter_category.findIndex(el => el.id === ls);

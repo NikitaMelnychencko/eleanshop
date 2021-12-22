@@ -16,12 +16,7 @@ const videoSetPlayer = new VideoSetPlayer();
 
 //=====brand========//
 import brand_page from '../views/layouts/brand.hbs';
-import {
-  infoAboutBrand,
-  brandOurAdvantages,
-  videoBrand,
-  brandPlayer,
-} from './layout/brand/infoAboutBrand.js';
+import { brandOurAdvantages, videoBrand, brandPlayer } from './layout/brand/infoAboutBrand.js';
 
 export function brandRender() {
   const initFooter = new classBody('footer-switch');
@@ -32,7 +27,6 @@ export function brandRender() {
     videoBrand,
   });
   refs.mainEL.innerHTML = contactPageMarkUp;
-  infoAboutBrand();
   brandPlayer();
   blockHelpRender();
   formsForm.init();
@@ -50,7 +44,7 @@ export function checkoutRender() {
   const savedData = localStorage.getItem('orderingData');
   const parsedData = JSON.parse(savedData);
   const ordering = ordering_ordering(parsedData);
- 
+
   const createCheckout = payment_checkout({ createPayment, ordering, backdropMarkup });
   refs.mainEL.innerHTML = createCheckout;
   //refs.mainEL.insertAdjacentHTML('beforeend', createCheckout);
@@ -254,7 +248,7 @@ export function showroomRender() {
 //======catalog=========//
 // import catalogMarkUp from '../views/layouts/catalog.hbs';
 // import { filterListMakeup, openFilter } from './layout/сatalog/filter.js';
-// import { catalogListMarkupF, openCategory } from './layout/сatalog/gallery.js';
+// import { catalogListMarkupF, openCategory, activateFavorites } from './layout/сatalog/gallery.js';
 
 // export function catalogRender() {
 //   const initFooter = new classBody();
@@ -264,5 +258,6 @@ export function showroomRender() {
 //   openFilter();
 //   openCategory();
 //   blockHelpRender();
+//   activateFavorites();
 //   // console.log(filterGalleryCatalogMarkup);
 // }
