@@ -8,10 +8,9 @@ import ordering_ordering from '../../views/partials/checkout/ordering.hbs';
 import payment_checkout from '../../views/layouts/checkout.hbs';
 import payment_payment from '../../views/partials/checkout/payment.hbs';
 //=js=
-import { backdropMarkup } from '../layout/checkout/thanksForOrdering.js';
-import { ModalData, createPayment } from '../layout/checkout/payment.js';
+import { ModalData } from '../layout/checkout/payment.js';
 import { OrderingPrice, OrderingSizeAndColor } from '../layout/checkout/ordering.js';
-
+import { mainModal } from '../components/modal/modal';
 export function checkoutRender() {
   const initFetchSection = new FetchSection({
     firstParam: 'ordering',
@@ -26,7 +25,7 @@ export function checkoutRender() {
     const parsedData = JSON.parse(savedData);
     const ordering = ordering_ordering(parsedData);
 
-    const createCheckout = payment_checkout({ createPayment, ordering, backdropMarkup });
+    const createCheckout = payment_checkout({ createPayment, ordering, mainModal });
     refs.mainEL.innerHTML = createCheckout;
     const orderingPrice = new OrderingPrice({
       parsedData: parsedData,
