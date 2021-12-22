@@ -1,7 +1,6 @@
 // import refs from './refs/refs.js';
 // import updateBin from './updateBin.js';
 // import { classBody } from './layout/static/footer.js';
-// import { blockHelpRender } from './call-list/help.js';
 // updateBin();
 
 // import { Forms } from './components/forms';
@@ -13,6 +12,44 @@
 // };
 // import { VideoSetPlayer } from './components/videoSetPlayer.js';
 // const videoSetPlayer = new VideoSetPlayer();
+// //======home======//
+// import home from '../views/layouts/home.hbs';
+// import { pageHeroSliderMarkup, heroSlider } from './layout/home/hero.js';
+// import { pageShowroomSliderMarkup, showroomSlider } from './layout/home/ourShowRoom.js';
+// import { browserCheck } from './components/scroll/scroll.js';
+
+// import {
+//   pageStarClientsSliderMarkup,
+//   starClientsSlider,
+//   starClientsComments,
+// } from './layout/home/starClients.js';
+// import { pageInInstagramSliderMarkup, instagramSlider } from './layout/home/inInstagram.js';
+// import { cardsMarkup, openContent } from './layout/home/content.js';
+// import { aboutTheBrand_parsing, openAboutTheBrand } from './layout/home/aboutTheBrand.js';
+// export function homeRender() {
+//   updateBin();
+//   const initFooter = new classBody();
+//   const homeMarkup = home({
+//     pageHeroSliderMarkup,
+//     cardsMarkup,
+//     pageShowroomSliderMarkup,
+//     formBrand,
+//     pageStarClientsSliderMarkup,
+//     pageInInstagramSliderMarkup,
+//     aboutTheBrand_parsing,
+//   });
+//   refs.mainEL.innerHTML = homeMarkup;
+//   heroSlider();
+//   openContent();
+//   showroomSlider();
+//   starClientsSlider();
+//   starClientsComments();
+//   instagramSlider();
+//   blockHelpRender();
+//   openAboutTheBrand();
+//   formsForm.init();
+// }
+// homeRender(); //========================================================call
 //=====brand========//
 // import brand_page from '../views/layouts/brand.hbs';
 // import { brandOurAdvantages, videoBrand, brandPlayer } from './layout/brand/infoAboutBrand.js';

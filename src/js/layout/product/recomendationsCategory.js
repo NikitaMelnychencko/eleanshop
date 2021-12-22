@@ -8,6 +8,7 @@ import allJSON from '../../json/all.json';
 const cards = allJSON.products;
 import { productRender } from '../../call-list/product';
 import { scrollTo } from '../../components/scrollTo';
+import { bodyUnfixPosition } from '../../components/scroll/scroll';
 
 function refs() {
   return {
@@ -215,6 +216,7 @@ export default class RecomendationsCategory {
         }
       });
       this.removeEvent();
+      bodyUnfixPosition();
       productRender();
       scrollTo(0, 700);
     }

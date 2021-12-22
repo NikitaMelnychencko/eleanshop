@@ -7,7 +7,7 @@
 </symbol>
 <symbol id="icon-close" viewBox="0 0 32 32">
 <path d="M23.733 10.304l-1.504-1.504-5.963 5.963-5.963-5.963-1.504 1.504 5.963 5.963-5.963 5.963 1.504 1.504 5.963-5.963 5.963 5.963 1.504-1.504-5.963-5.963 5.963-5.963z"></path>
-
+</symbol>
 <symbol id="icon-clients-arrow-left" viewBox="0 0 20 32">
 <path fill="none" stroke="#c0a78f" style="stroke: var(--color1, #c0a78f)" stroke-linejoin="round" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="3.6923" d="M16 2.462l-13.538 13.538 13.538 13.538"></path>
 </symbol>
