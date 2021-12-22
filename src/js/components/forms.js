@@ -13,6 +13,7 @@ export class Forms {
     this.classInit();
     this.listenerSubmit();
   }
+
   animate() {
     if (this.option !== 'fittingPage') {
       document.querySelector('.form').animate(
@@ -45,7 +46,6 @@ export class Forms {
         ],
         1000,
       );
-      return;
     }
   }
 
@@ -93,11 +93,12 @@ export class Forms {
         });
         if (this.option === 'reviews') {
           postUserData(userId, `userReviews`, object, 'database/components/');
+          this.animate();
           return;
         } else {
           postUserData(userId, `${this.nameData}`, object, 'formData/');
+          this.animate();
         }
-        this.animate();
       };
     }
   }
