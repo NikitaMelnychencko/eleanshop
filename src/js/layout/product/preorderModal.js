@@ -18,8 +18,6 @@ export function setEventPreorder() {
   // const buttonCloseModal = document.querySelector('.preoder__close-button');
   const preoderModal = document.querySelector('.preorder');
   const submitButton = preoderModal.querySelector('.order-form__button');
-
-  console.log(buttonCloseModal);
   const sizeList = preoderModal.querySelector('.sizes__list');
   // buttonCloseModal.addEventListener('click', onButtonCloseModalClick);
   sizeList.addEventListener('click', onSizeListItemClick);
@@ -85,15 +83,15 @@ function onButtonSubmitClick(event) {
     });
     onButtonCloseModalClick();
   }
-  onButtonCloseModalClick();
+  // onButtonCloseModalClick();
 
-  let backdropRef = document.querySelector('[data-modal]');
-  backdropRef.classList.remove('is-hidden');
-  const modalForm = document.querySelector('.ordering__form');
-  modalForm.style.display = 'block';
-  const right = (backdropRef.offsetWidth - modalForm.offsetWidth) / 2;
-  const btnCloseRef = document.querySelector('.form__button-сlose');
-  btnCloseRef.style.display = 'block';
-  btnCloseRef.style.right = `${right}px`;
+  // let backdropRef = document.querySelector('[data-modal]');
+  // backdropRef.classList.remove('is-hidden');
+  // const modalForm = document.querySelector('.ordering__form');
+  // modalForm.style.display = 'block';
+  // const right = (backdropRef.offsetWidth - modalForm.offsetWidth) / 2;
+  // const btnCloseRef = document.querySelector('.form__button-сlose');
+  // btnCloseRef.style.display = 'block';
+  // btnCloseRef.style.right = `${right}px`;
   const backdrop = new Backdrop();
 }

@@ -29,7 +29,7 @@ export default class ProductModalAddToCart {
   };
 
   _onCloseModal = () => {
-    document.body.classList.remove('modal-open');
+    // document.body.classList.remove('modal-open');
     this.backdropRef = document.querySelector(`${this.objectClose.name}`);
     this.backdropRef.classList.add('is-hidden');
     bodyUnfixPosition();

@@ -1,6 +1,10 @@
 import markup from '../../../views/partials/product/productHandSewn.hbs';
 import productDataHandSewn from '../../json/productHandSewn.json';
 import renderModal from '../../components/modal/modal';
+import { tryOnModels } from '../../layout/product/tryOnModelsModal';
+import { setEventTryOnModels } from '../../layout/product/tryOnModelsModal';
+import { bodyUnfixPosition } from '../../components/scroll/scroll';
+
 export default class HandSewn {
   constructor({ root, typeInsert = 'beforeEnd', object }) {
     this.root = document.querySelector(root);
@@ -31,14 +35,16 @@ export default class HandSewn {
 
   _onNextBtnClick = () => {
     // if (this.object) {
-    console.log(this.object);
-    renderModal('sdsds');
-    // this.object.forEach(el => {
-    //   if (el.name) {
-    //     document.querySelector(el.name).classList.add(el.className);
-    //   }
-    // });
+    //   console.log(this.object);
+    //   this.object.forEach(el => {
+    //     console.log(el.name);
+    //     if (el.name) {
+    //       document.querySelector(el.name).classList.add(el.className);
+    //     }
+    //   });
     // }
+    renderModal(tryOnModels, '');
+    setEventTryOnModels();
   };
 
   getMarkup = () => {

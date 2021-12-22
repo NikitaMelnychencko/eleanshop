@@ -3,7 +3,7 @@ import { bodyFixPosition } from '../../components/scroll/scroll';
 import renderModal from '../../components/modal/modal';
 import sizeChose from '../../components/sizeChose';
 import { preorderMark, setEventPreorder } from '../../layout/product/preorderModal';
-import tryOnModelsModal from '../../../views/components/tryOnModelsModal.hbs';
+import { tryOnModels } from '../../layout/product/tryOnModelsModal';
 import sizeTable from '../../../views/components/sizeTable.hbs';
 import productModalAddToCart from '../../../views/partials/product/productModalAddToCart.hbs';
 import newProductModalAddToCart from './productModalAddToCart';
@@ -228,18 +228,14 @@ function onCharListClick(event) {
 //!----------------------------------------------------Determine Size
 function onNotYourSizeBtnClick() {
   renderModal(preorderMark, '');
-  bodyFixPosition();
 }
 //!----------------------------------------------------Is size in a stock?
 function onDefineSizeBtnClick() {
   renderModal(sizeTable(), '');
-  bodyFixPosition();
 }
 //!----------------------------------------------------Fitting
 function onFittingBtnClick() {
-  renderModal(tryOnModelsModal(), '');
-
-  bodyFixPosition();
+  renderModal(tryOnModels, '');
 }
 //!----------------------------------------------------Fixate local storage data
 function fixateDataFromLocalStorage() {

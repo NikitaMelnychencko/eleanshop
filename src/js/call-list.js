@@ -204,10 +204,10 @@ import allJSON from './json/all.json';
 const cards = allJSON.products;
 import productMarkup from '../views/layouts/product.hbs';
 import HandSewn from './layout/product/productHandSewn.js';
-import backdropMarkupTempl from '../views/components/backdrop.hbs';
-import modalFormMarkupTempl from '../views/components/thanksForOrdering.hbs';
-import { preorderMark } from './layout/product/preorderModal.js';
-import { setEventTryOnModels } from './layout/product/tryOnModelsModal.js';
+// import backdropMarkupTempl from '../views/components/backdrop.hbs';
+// import modalFormMarkupTempl from '../views/components/thanksForOrdering.hbs';
+// import { preorderMark } from './layout/product/preorderModal.js';
+// import { setEventTryOnModels } from './layout/product/tryOnModelsModal.js';
 import { mainModal } from './components/modal/modal';
 export function productRender() {
   const initFooter = new classBody();
@@ -215,12 +215,12 @@ export function productRender() {
     data: cards,
   });
   const objHandSewn = new HandSewn({
-    object: [
-      {
-        name: '.try-on__backdrop', // a modal selector that is called when the button is clicked
-        className: 'is-visible', // the class that hides the modal
-      },
-    ],
+    // object: [
+    //   {
+    //     name: 'form__wrapper', // a modal selector that is called when the button is clicked
+    //     className: 'is-visible', // the class that hides the modal
+    //   },
+    // ],
   });
   // const objProductModalAddToCart = new ProductModalAddToCart({
   //   productName: 'ЖАКЕТ-СМОКИНГ С ЛАЦКАНМИ',

@@ -57,7 +57,7 @@
     color: $primary-text-color;
   }
 
-  @media screen and (min-width: $mobile-general) {
+  @media screen and (min-width: $tablet-general) {
     top: 0;
     bottom: 100%;
     transform: translateY(-100%);

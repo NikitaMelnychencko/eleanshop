@@ -119,7 +119,6 @@ export class ModalData {
   _addEventFormSubmit() {
     this._refs.orderingForm.addEventListener('submit', e => {
       e.preventDefault();
-      // onBtnClick();
       renderModal(modalFormMarkup, onResize);
 
       this._refs.arrInputInf.forEach(el => {
