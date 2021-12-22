@@ -1,6 +1,7 @@
 import refs from '../../refs/refs.js';
 import { scrollTo } from '../../components/scrollTo';
-import { productRender, deliveryRender, favoritesRender, checkoutRender } from '../../call-list';
+//import { productRender,  favoritesRender, checkoutRender } from '../../call-list';
+import { deliveryRender } from '../../call-list/delivery.js';
 import { contactRender } from '../../call-list/contact.js';
 import { fittingRender } from '../../call-list/fitting.js';
 import { brandRender } from '../../call-list/brand.js';

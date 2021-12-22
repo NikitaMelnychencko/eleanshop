@@ -47,7 +47,6 @@ import './js/test/test_productHandSewn.js';
 import './js/layout/product/preorderModal';
 import './js/layout/product/tryOnModelsModal';
 //delivery
-import './js/layout/delivery/filter.js';
 import './js/layout/delivery/deliveryTypes.js';
 //reviews
 import './js/layout/reviews/videoSet.js';

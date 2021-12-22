@@ -106,32 +106,32 @@ if (!data == null) {
 
 //=====delivery========//
 
-const formDelivery = new Forms('delivery');
-const formDeliveryMarkUp = formDelivery.insertForm();
-import deliveryMarkUp from '../views/layouts/delivery.hbs';
-import { deliveryThreeModal } from './layout/delivery/deliveryTypes.js';
-import {
-  buttonsDelivery,
-  mainImageDelivery,
-  descriptionDelivery,
-  questionDelivery,
-} from './layout/delivery/deliveryTypes.js';
+// const formDelivery = new Forms('delivery');
+// const formDeliveryMarkUp = formDelivery.insertForm();
+// import deliveryMarkUp from '../views/layouts/delivery.hbs';
+// import { deliveryThreeModal } from './layout/delivery/deliveryTypes.js';
+// import {
+//   buttonsDelivery,
+//   mainImageDelivery,
+//   descriptionDelivery,
+//   questionDelivery,
+// } from './layout/delivery/deliveryTypes.js';
 
-export function deliveryRender() {
-  const initFooter = new classBody();
-  const deliveryPageMarkUp = deliveryMarkUp({
-    buttonsDelivery,
-    mainImageDelivery,
-    descriptionDelivery,
-    questionDelivery,
-    formDeliveryMarkUp,
-    mainModal,
-  });
-  refs.mainEL.innerHTML = deliveryPageMarkUp;
-  deliveryThreeModal();
-  blockHelpRender();
-  formDelivery.init();
-}
+// export function deliveryRender() {
+//   const initFooter = new classBody();
+//   const deliveryPageMarkUp = deliveryMarkUp({
+//     buttonsDelivery,
+//     mainImageDelivery,
+//     descriptionDelivery,
+//     questionDelivery,
+//     formDeliveryMarkUp,
+//     mainModal,
+//   });
+//   refs.mainEL.innerHTML = deliveryPageMarkUp;
+//   deliveryThreeModal();
+//   blockHelpRender();
+//   formDelivery.init();
+// }
 
 //=====fitting========//
 // import sizeTable_markup from '../views/layouts/fitting.hbs';
