@@ -12,7 +12,7 @@ import pageStarClientsMarkupTemplate from '../../views/partials/home/starClients
 //==js==
 import { VideoSetPlayer } from '../components/videoSetPlayer.js';
 import { starClientsSlider, starClientsComments } from '../layout/home/starClients.js';
-import { setVideoHbs, clientStar, videosetSlickSettings } from '../layout/reviews/videoSet.js';
+import { videosetSlickSettings } from '../layout/reviews/videoSet.js';
 
 export function reviewsRender() {
   const formReviews = new Forms('reviews');

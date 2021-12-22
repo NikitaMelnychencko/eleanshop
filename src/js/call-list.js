@@ -135,24 +135,24 @@ export function deliveryRender() {
 }
 
 //=====fitting========//
-import sizeTable_markup from '../views/layouts/fitting.hbs';
-import { sizeTable_tableCreate } from './layout/fitting/sizeTable.js';
-import { informationAboutFitting_informationCreate } from './layout/fitting/informationAboutFitting.js';
-import { openVideoSlider, videoSlider_videoSliderCreate } from './layout/fitting/videoSlider.js';
-export function fittingRender() {
-  const initFooter = new classBody('footer-switch');
-  const fittingMarkUp = sizeTable_markup({
-    sizeTable_tableCreate,
-    videoSlider_videoSliderCreate,
-    informationAboutFitting_informationCreate,
-    formBrand,
-  });
-  refs.mainEL.innerHTML = fittingMarkUp;
-  openVideoSlider();
-  videoSetPlayer.clickListener();
-  blockHelpRender();
-  formsPage.init();
-}
+// import sizeTable_markup from '../views/layouts/fitting.hbs';
+// import { sizeTable_tableCreate } from './layout/fitting/sizeTable.js';
+// import { informationAboutFitting_informationCreate } from './layout/fitting/informationAboutFitting.js';
+// import { openVideoSlider, videoSlider_videoSliderCreate } from './layout/fitting/videoSlider.js';
+// export function fittingRender() {
+//   const initFooter = new classBody('footer-switch');
+//   const fittingMarkUp = sizeTable_markup({
+//     sizeTable_tableCreate,
+//     videoSlider_videoSliderCreate,
+//     informationAboutFitting_informationCreate,
+//     formBrand,
+//   });
+//   refs.mainEL.innerHTML = fittingMarkUp;
+//   openVideoSlider();
+//   videoSetPlayer.clickListener();
+//   blockHelpRender();
+//   formsPage.init();
+// }
 
 //=====product========//
 import { callProductPageFunctional, createFullMarkup } from './layout/product/infoAboutProduct.js';
