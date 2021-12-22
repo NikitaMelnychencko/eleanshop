@@ -1,9 +1,16 @@
 import { limitToFirst } from 'firebase/database';
+import animateHeader from '../../components/animateHeader';
 import productTemplate from '../../../views/partials/product/infoAboutProduct.hbs';
-
+import updateBin from '../../updateBin';
 import sizeChose from '../../components/sizeChose';
 const { createBtn, onSizeElClick } = sizeChose;
 import { onBtnClick } from '../../components/sizeTable';
+
+function refs() {
+  return {
+    favQuantityEl: document.getElementById('js-text-fav'),
+  };
+}
 
 let productInfoData;
 //! ---------------------------------------------------RENDERING A SECTION
@@ -30,7 +37,7 @@ function checkIsProductInFavorites() {
     });
   }
 }
-function insertIntoLSFavorite(id) {
+export function insertIntoLSFavorite(id) {
   let ls = JSON.parse(localStorage.getItem('favorites'));
   let newEl = true;
   if (ls) {
@@ -46,9 +53,15 @@ function insertIntoLSFavorite(id) {
     const isColorChose = localStorage.getItem('productColor');
     const isSizeChose = localStorage.getItem('productSize');
 
+    function sizes() {
+      const sizesArray = productInfoData.productAviable.find(el => {
+        if (isColorChose === el.colorName) return el.aviableSize;
+      });
+      return sizesArray;
+    }
     const elem = {
       id: productInfoData.id,
-      name: productInfoData.name,
+      name: productInfoData.productName,
       image: {
         srcset: `${productInfoData.image[0].imageProduct} 1x, ${productInfoData.image[0].imageProductHigherResolution} 2x`,
         'srcset-mobile': `${productInfoData.image[0].imageProduct} 1x, ${productInfoData.image[0].imageProductHigherResolution} 2x`,
@@ -59,21 +72,24 @@ function insertIntoLSFavorite(id) {
       size: isSizeChose ? isSizeChose : '',
       description: '',
       color: isColorChose ? isColorChose : '',
+      productAviable: productInfoData.productAviable,
     };
 
-    ls.fav.push(elem);
+    ls.fav.push({ ...elem, ...{ sizeAvailable: sizes() } });
     localStorage.setItem('favorites', JSON.stringify(ls));
-    refs.favQuantityEl.innerHTML = ls.fav.length;
+    refs().favQuantityEl.innerHTML = ls.fav.length;
+    animateHeader('js-text-fav');
   }
 }
 function removeFromFavorite(id) {
   let ls = JSON.parse(localStorage.getItem('favorites'));
+
   const lsid = ls.fav.findIndex(el => el.id === id);
   ls.fav.splice(lsid, 1);
   localStorage.setItem('favorites', JSON.stringify(ls));
-  refs.favQuantityEl.innerHTML = ls.fav.length;
+  refs().favQuantityEl.innerHTML = ls.fav.length;
 }
-function onAddToFavoritesClick(event) {
+export function onAddToFavoritesClick(event) {
   const id = productInfoData.id;
   if (event.currentTarget.classList.contains('active')) {
     removeFromFavorite(id);
@@ -124,7 +140,6 @@ function onColorListClick(event) {
   }
 
   const inputColor = event.target.previousElementSibling.dataset.value;
-
   productInfoData.productAviable.find(size => {
     if (size.colorId === event.target.previousElementSibling.value) {
       availableSizes.push(size.aviableSize);
@@ -134,6 +149,7 @@ function onColorListClick(event) {
   removeCurrentClass();
   addCurrentClass(colorpickerButton);
   showAvailableSizes(availableSizes);
+
   setProductColor(inputColor);
 }
 
@@ -193,12 +209,12 @@ function setProductDataToOrdering() {
     orderingDataobj.label.description = '';
     orderingDataobj.label.count = 1;
     orderingDataobj.label.sizeAvailable = productInfoData.productAviable.find(el => {
-      console.log(el.aviableSize);
       if (orderingDataobj.label.colorSelected === el.colorName) return el.aviableSize;
     });
     orderingDataobj.label.productAviable = productInfoData.productAviable;
     orderingDataParsed.push(orderingDataobj);
     localStorage.setItem('orderingData', JSON.stringify(orderingDataParsed));
+    updateBin();
   }
 }
 

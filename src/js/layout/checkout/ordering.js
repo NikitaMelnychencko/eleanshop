@@ -1,4 +1,5 @@
 import promocodes from '../../json/promocode.json';
+import updateBin from '../../updateBin';
 
 export class OrderingPrice {
   constructor({ parsedData }) {
@@ -103,6 +104,7 @@ export class OrderingPrice {
     this._renewTotalPriceWithDiscount();
 
     localStorage.setItem('orderingData', JSON.stringify(this.parsedData));
+    updateBin();
   }
   _countTotalPrice(e) {
     let orderingPricesArray = document.querySelectorAll('.ordering__price');
@@ -173,12 +175,11 @@ export class OrderingSizeAndColor {
     colorInput.innerHTML = colorItemValue;
     const articleId = colorInput.closest('.ordering__card').getAttribute('id');
     const article = this.parsedData.find(obj => obj.label.id === articleId);
-    
+
     if (e.target.classList.contains('js-size')) {
-      
       article.label.sizeSelected = colorItemValue;
     } else if (e.target.classList.contains('js-color')) {
-      this._chooseSizeDueToColor(e, article)
+      this._chooseSizeDueToColor(e, article);
       let circleLink = colorInput.querySelector('.ordering__circle--color').getAttribute('href');
       article.label.colorSelected = e.currentTarget.querySelector('span').innerText;
       article.label.circleSelected = circleLink;
@@ -192,28 +193,29 @@ export class OrderingSizeAndColor {
     const sizesList = parentEl.querySelector('.ordering-sizelist-js');
     const sizeInput = parentEl.querySelector('.ordering__size');
 
-    article.label.productAviable.map(product => { 
-    if (event.currentTarget.querySelector('span').innerText === product.colorName) {
-      article.label.sizeAvailable = product.aviableSize;
-        }
-        })
-    
-    this. _makeListMarkup(sizesList, article.label.sizeAvailable)
+    article.label.productAviable.map(product => {
+      if (event.currentTarget.querySelector('span').innerText === product.colorName) {
+        article.label.sizeAvailable = product.aviableSize;
+      }
+    });
+
+    this._makeListMarkup(sizesList, article.label.sizeAvailable);
     sizeInput.innerHTML = sizesList.firstElementChild.innerHTML;
-    article.label.sizeSelected = sizeInput.innerHTML
+    article.label.sizeSelected = sizeInput.innerHTML;
   }
-  _makeListMarkup(list, sizesArr) { 
-    list.innerHTML = '';    
+  _makeListMarkup(list, sizesArr) {
+    list.innerHTML = '';
     const listItemsMarkup = sizesArr.map(size => this._makeListItemMarkup(size)).join('');
     if (sizesArr.length === 0) {
-      list.innerHTML = this._makeListItemMarkup('Нет в наличии')
-      
-     }else{list.innerHTML = listItemsMarkup}
+      list.innerHTML = this._makeListItemMarkup('Нет в наличии');
+    } else {
+      list.innerHTML = listItemsMarkup;
+    }
   }
-  _makeListItemMarkup(size) { 
+  _makeListItemMarkup(size) {
     return `
         <li class='ordering-list__item ordering-item-js js-size'>${size}
                     </li>
         `;
-      }
+  }
 }

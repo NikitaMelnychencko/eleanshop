@@ -5,14 +5,20 @@
             {{#each this}}
             <li class="favorites__data-item" id="{{id}}">
                 <div class="favorites__product">
-                    <picture>
-                        <source srcset='{{image.srcset}}' media='(min-width: 1920px)' />
-                        <source srcset='{{image.srcset-mobile}}' media='(max-width: 414px)' />
-                        <img class='favorites__product--image' src='{{image.src}}' alt='{{image.alt}}' />
-                    </picture>
+
+                    <div class="favorites__product--image-box">
+                        <picture>
+                            <source srcset='{{image.srcset}}' media='(min-width: 1920px)' />
+                            <source srcset='{{image.srcset-mobile}}' media='(max-width: 414px)' />
+                            <img class='favorites__product--image' src='{{image.src}}' alt='{{image.alt}}' />
+                        </picture>
+                    </div>
+
                     <div class="favorites__product--info">
                         <p class="favorites__product--info-text">{{name}}</p>
+                        {{#if size}}
                         <p class="favorites__product--info-text">Размер {{size}}</p>
+                        {{/if}}
                         <p>{{price}} &#8372;</p>
                     </div>
                 </div>
