@@ -1,7 +1,3 @@
-// ============= PRE-ORDER MODAL ======================
-// .visually-hidden {
-//   @extend %hide;
-// }
 .preoder__backdrop {
   position: fixed;
   z-index: 1500;
@@ -24,13 +20,9 @@
 }
 
 .preorder {
-  @media screen and (min-width: $mobile-general) {
-    // width: 394px;
-  }
   padding: 70px 20px;
-  // background-color: $primary-background-color;
   @media screen and (min-width: $desktop-up) {
-    // width: 1017px;
+    width: 1017px;
     padding: 70px 120px;
   }
 }
@@ -137,10 +129,6 @@
   margin-top: 27px;
   margin-bottom: 27px;
 }
-
-// .contacts .contacts__item {
-//   margin-bottom: 10px;
-// }
 
 .contacts__link {
   text-transform: uppercase;

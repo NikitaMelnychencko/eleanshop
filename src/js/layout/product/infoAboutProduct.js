@@ -2,11 +2,13 @@ import productTemplate from '../../../views/partials/product/infoAboutProduct.hb
 import { bodyFixPosition } from '../../components/scroll/scroll';
 import renderModal from '../../components/modal/modal';
 import sizeChose from '../../components/sizeChose';
-import { preorderMark, setEventPreorder } from '../../layout/product/preorderModal';
+import { preorderMark } from '../../layout/product/preorderModal';
 import { tryOnModels } from '../../layout/product/tryOnModelsModal';
 import sizeTable from '../../../views/components/sizeTable.hbs';
 import productModalAddToCart from '../../../views/partials/product/productModalAddToCart.hbs';
 import newProductModalAddToCart from './productModalAddToCart';
+import { setEventTryOnModels } from './tryOnModelsModal';
+
 const { createBtn, onSizeElClick } = sizeChose;
 
 let productInfoData;
@@ -235,7 +237,7 @@ function onDefineSizeBtnClick() {
 }
 //!----------------------------------------------------Fitting
 function onFittingBtnClick() {
-  renderModal(tryOnModels, '');
+  renderModal(tryOnModels, setEventTryOnModels);
 }
 //!----------------------------------------------------Fixate local storage data
 function fixateDataFromLocalStorage() {

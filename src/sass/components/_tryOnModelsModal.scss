@@ -1,13 +1,8 @@
-// Try on Modal ("ХОТИТЕ ПРИМЕРИТЬ ДАННУЮ МОДЕЛЬ ПЕРЕД ПОКУПКОЙ? ЛЕГКО!")
-// .visually-hidden {
-//   @extend %hide;
-// }
-
 .try-on {
   padding: 70px 20px;
 
   @media screen and (min-width: $desktop-up) {
-    // width: 1017px;
+    width: 1017px;
     padding: 70px 120px;
   }
 }
@@ -42,10 +37,6 @@
 .try-on__list {
   margin-bottom: 40px;
   @media screen and (min-width: $desktop-up) {
-    // display: flex;
-    // flex-wrap: wrap;
-    // flex-flow: column wrap;
-    // height: 300px;
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto auto;

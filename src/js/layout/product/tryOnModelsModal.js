@@ -19,11 +19,12 @@ export function setEventTryOnModels() {
   // const tryOnBackdrop = document.querySelector('.try-on__backdrop');
   const tryOnModalEl = document.querySelector('.try-on');
   const orderFormEl = tryOnModalEl.querySelector('.order-form');
-  const submitButton = tryOnModalEl.querySelector('.order-form__button');
+  const submitButton = tryOnModalEl.querySelector('.order-form');
   const sizeList = tryOnModalEl.querySelector('.sizes__list');
   // buttonCloseModal.addEventListener('click', onButtonCloseModalClick);
   sizeList.addEventListener('click', onSizeListItemClick);
-  submitButton.addEventListener('click', onButtonSubmitClick);
+  submitButton.addEventListener('submit', onButtonSubmitClick);
+  console.log(orderFormEl);
 }
 
 //close modal
@@ -49,6 +50,7 @@ function onSizeListItemClick(event) {
 
 //on submit button click, set info into local storage
 function onButtonSubmitClick(event) {
+  event.preventDefault();
   const tryOnModalEl = document.querySelector('.try-on');
   const clientNameInput = tryOnModalEl.querySelector('#client-name');
   const clientPhoneInput = tryOnModalEl.querySelector('#client-tel');
@@ -58,7 +60,6 @@ function onButtonSubmitClick(event) {
   const sizeList = tryOnModalEl.querySelector('.sizes__list');
   const checkedSizeInputs = sizeList.querySelectorAll('.sizes__input');
   const checkedSizeInput = sizeList.querySelector('.sizes__input');
-
   if (
     clientNameInput.validity.valid &&
     clientPhoneInput.validity.valid &&
@@ -66,7 +67,6 @@ function onButtonSubmitClick(event) {
     orderChekbox.validity.valid &&
     checkedSizeInput.validity.valid
   ) {
-    event.preventDefault();
     localStorage.setItem(clientNameInput.name, clientNameInput.value);
     localStorage.setItem(clientPhoneInput.name, clientPhoneInput.value);
     localStorage.setItem(clientMailInput.name, clientMailInput.value);

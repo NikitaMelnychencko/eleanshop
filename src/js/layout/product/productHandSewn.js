@@ -43,8 +43,8 @@ export default class HandSewn {
     //     }
     //   });
     // }
-    renderModal(tryOnModels, '');
-    setEventTryOnModels();
+    console.log('object');
+    renderModal(tryOnModels, setEventTryOnModels);
   };
 
   getMarkup = () => {
