@@ -22,7 +22,6 @@ export function setEventTryOnModels() {
   const sizeList = tryOnModalEl.querySelector('.sizes__list');
   sizeList.addEventListener('click', onSizeListItemClick);
   submitButton.addEventListener('submit', onButtonSubmitClick);
-  console.log(orderFormEl);
 }
 
 //on size-list label click, radio-input is checked
