@@ -7,7 +7,7 @@
   background-color: $backdrop-color;
   width: 100vw;
   height: 100vh;
-  overflow-y: scroll;
+  // overflow-y: scroll;
 
   transition: opacity $time-cubic, visibility $time-cubic;
 
@@ -78,7 +78,6 @@
       white-space: nowrap;
       clip-path: inset(100%);
       clip: rect(0 0 0 0);
-      overflow: hidden;
       width: 1px;
       height: 1px;
       margin: -1px;

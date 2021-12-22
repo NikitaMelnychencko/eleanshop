@@ -2,6 +2,7 @@ import markupBin from '../../../views/partials/product/productBin.hbs';
 import { checkoutRender } from '../../call-list/checkout';
 import { scrollTo } from '../../components/scrollTo';
 import updateBin from '../../updateBin';
+import { bodyUnfixPosition, bodyFixPosition } from '../../components/scroll/scroll';
 export default class ProductBin {
   constructor({ root, typeInsert, data }) {
     this.data = data;
@@ -111,8 +112,9 @@ export default class ProductBin {
 
   _onCloseModal = () => {
     this.self.classList.add('hidden');
-    document.body.style.overflow = 'auto';
     this._deleteEvent();
+    bodyUnfixPosition()
+
   };
 
   _onClickNext = () => {
@@ -182,8 +184,8 @@ export default class ProductBin {
     }
     this._addMarkup(this.root);
     this.self.classList.remove('hidden');
-    document.body.style.overflow = 'hidden';
-  };
+    bodyFixPosition()
+  }
 
   initialBin = () => {
     this.counterBtnDec = [...document.querySelectorAll('.product-bin__button-dec')];

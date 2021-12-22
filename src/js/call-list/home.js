@@ -4,6 +4,7 @@ import { classBody } from '../layout/static/footer.js';
 import { FetchSection } from '../data/fetch_section';
 import { Forms } from '../components/forms';
 import { blockHelpRender } from './help';
+import { browserCheck } from '../components/scroll/scroll.js';
 //=hbs=
 import home from '../../views/layouts/home.hbs';
 import pageHeroMarkupTemplate from '../../views/partials/home/hero.hbs';
@@ -65,6 +66,7 @@ export function homeRender() {
     openAboutTheBrand();
     formsForm.init();
     blockHelpRender();
+    browserCheck();
   });
 }
 homeRender(); //========================================================call

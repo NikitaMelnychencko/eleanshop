@@ -9,7 +9,8 @@
   max-height: calc(100vh - 50px);
   padding: 46px 20px 50px;
   background-color: $selection-text-color;
-  overflow: scroll;
+  overflow-x: hidden;
+  scrollbar-width:  thin ;
   transition: $time-cubic;
   opacity: 1;
 
