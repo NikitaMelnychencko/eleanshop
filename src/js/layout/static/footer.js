@@ -4,7 +4,6 @@ import {
   fittingRender,
   productRender,
   contactRender,
-  reviewsRender,
   deliveryRender,
   favoritesRender,
   checkoutRender,
@@ -12,6 +11,7 @@ import {
 import { brandRender } from '../../call-list/brand.js';
 import { showroomRender } from '../../call-list/showroom.js';
 import { catalogRender } from '../../call-list/catalog.js';
+import { reviewsRender } from '../../call-list/reviews.js';
 import { id } from 'postcss-selector-parser';
 import { indexOf } from 'lodash';
 

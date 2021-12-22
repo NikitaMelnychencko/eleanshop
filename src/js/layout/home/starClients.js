@@ -1,4 +1,5 @@
 import starClients_cardChatReviewsTempl from '../../../views/components/cardChatReviews.hbs';
+import { getArr } from '../../call-list/home';
 import { getSection } from '../../data/firebase_Servise';
 export function starClientsSlider() {
   window.jQuery = window.$ = require('jquery');
@@ -54,11 +55,12 @@ export function starClientsComments() {
   let factor = 1;
   function onButtonShowMoreClick(event) {
     getSection('components/userReviews').then(vel => {
-      const value = vel.slice(4 + factor, 14 + factor);
+      const arr = getArr(vel);
+      const value = arr.slice(4 + factor, 14 + factor);
       if (value.length > 0) {
         renderNewMarkup(value);
       } else {
-        renderNewMarkup(vel.slice(4 + factor, vel.length));
+        renderNewMarkup(arr.slice(4 + factor, arr.length));
       }
       factor = factor + 10;
     });

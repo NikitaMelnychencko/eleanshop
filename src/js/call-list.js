@@ -217,22 +217,22 @@ export function productRender() {
 }
 
 //=====reviews========//
-const formReviews = new Forms('reviews');
-const formReviewsMarkUp = formReviews.insertForm();
-import reviews_page from '../views/layouts/reviews.hbs';
-import { setVideoHbs, clientStar, videosetSlickSettings } from './layout/reviews/videoSet.js';
+// const formReviews = new Forms('reviews');
+// const formReviewsMarkUp = formReviews.insertForm();
+// import reviews_page from '../views/layouts/reviews.hbs';
+// import { setVideoHbs, clientStar, videosetSlickSettings } from './layout/reviews/videoSet.js';
 
-export function reviewsRender() {
-  const initFooter = new classBody();
-  const reviewsMarkUp = reviews_page({ setVideoHbs, clientStar, formReviewsMarkUp });
-  refs.mainEL.innerHTML = reviewsMarkUp;
-  videosetSlickSettings();
-  starClientsSlider();
-  starClientsComments();
-  videoSetPlayer.clickListener();
-  blockHelpRender();
-  formReviews.init();
-}
+// export function reviewsRender() {
+//   const initFooter = new classBody();
+//   const reviewsMarkUp = reviews_page({ setVideoHbs, clientStar, formReviewsMarkUp });
+//   refs.mainEL.innerHTML = reviewsMarkUp;
+//   videosetSlickSettings();
+//   starClientsSlider();
+//   starClientsComments();
+//   videoSetPlayer.clickListener();
+//   blockHelpRender();
+//   formReviews.init();
+// }
 
 //=====showroom========//
 // import showroom_page from '../views/layouts/showroom.hbs';

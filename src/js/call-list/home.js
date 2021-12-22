@@ -36,7 +36,9 @@ export function homeRender() {
     const pageShowroomSliderMarkup = pageShowroomMarkupTemplate(el[1].ourShowroom);
     const cardsMarkup = model(el[0].content);
     const pageInInstagramSliderMarkup = pageInInstagramMarkupTemplate(el[1].inInstagram);
-    const cardChatReviewsMarkup = starClients_cardChatReviewsTempl(el[1].userReviews.slice(0, 4));
+    const cardChatReviewsMarkup = starClients_cardChatReviewsTempl(
+      getArr(el[1].userReviews).slice(0, 4),
+    );
     const pageStarClientsSliderData = el[1].starClients;
     const pageStarClientsSliderMarkup = pageStarClientsMarkupTemplate({
       pageStarClientsSliderData,
@@ -69,3 +71,11 @@ export function homeRender() {
 }
 homeRender(); //========================================================call
 updateBin();
+
+export function getArr(data) {
+  let arr = [];
+  for (const key in data) {
+    arr.push(data[key]);
+  }
+  return arr;
+}

@@ -52,7 +52,7 @@ import './js/layout/delivery/filter.js';
 import './js/layout/delivery/deliveryTypes.js';
 //reviews
 import './js/layout/reviews/videoSet.js';
-import './js/layout/reviews/starsClients.js';
+
 //showroom
 import './js/layout/showroom/showroom.js';
 //contact
