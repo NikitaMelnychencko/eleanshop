@@ -25,8 +25,8 @@
                 <textarea class='favorites__description' name="{{id}}" cols="30" rows="10" maxlength="400"
                     placeholder="ДОБАВИТЬ КОММЕНТАРИЙ">{{description}}</textarea>
                 <div class="favorites__button-group">
-                    <button class='favorites__button-buy'>КУПИТЬ</button>
-                    <button class='favorites__button-delete'>
+                    <button class='favorites__button-buy' aria-label="buy">КУПИТЬ</button>
+                    <button class='favorites__button-delete' aria-label="delefe from favorites">
                         <span class='favorites__button-delete--text'>Удалить</span>
                         <svg class='favorites__button-delete--icon'>
                             <use href='./images/product-icon-close.svg#icon-close-modal'></use>
@@ -40,7 +40,7 @@
         <div>
             <p class="favorites__sand-on-email--title">ДЕЙСТВИЯ НАД ЛИСТОМ ПОЖЕЛАНИЙ</p__sand-on-email>
             <div class="favorites__sand-on-email">
-                <button class="favorites__sand-on-email--button">ОТПРАВИТЬ НА ПОЧТУ</button>
+                <button class="favorites__sand-on-email--button" aria-label="send to email">ОТПРАВИТЬ НА ПОЧТУ</button>
                 <p class="favorites__sand-on-email--text">Список товаров находящихся в “избронном”, будет отправлен на
                     ваш электронный адрес, и вы в любой момент сможете получить
                     к нему доступ.</p>

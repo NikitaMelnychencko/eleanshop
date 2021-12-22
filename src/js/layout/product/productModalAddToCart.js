@@ -26,6 +26,7 @@ export default class ProductModalAddToCart {
   _addMarkup = () => {
     renderModal(this._createMarkup(), '');
     this.setEvent();
+    this.objCatalog.setEvent();
   };
 
   _onCloseModal = () => {
