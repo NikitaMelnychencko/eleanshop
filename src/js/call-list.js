@@ -16,6 +16,7 @@ const videoSetPlayer = new VideoSetPlayer();
 import home from '../views/layouts/home.hbs';
 import { pageHeroSliderMarkup, heroSlider } from './layout/home/hero.js';
 import { pageShowroomSliderMarkup, showroomSlider } from './layout/home/ourShowRoom.js';
+import { browserCheck } from './components/scroll/scroll.js';
 
 import {
   pageStarClientsSliderMarkup,
@@ -36,6 +37,7 @@ export function homeRender() {
     pageStarClientsSliderMarkup,
     pageInInstagramSliderMarkup,
     aboutTheBrand_parsing,
+    browserCheck,
   });
   refs.mainEL.innerHTML = homeMarkup;
   heroSlider();

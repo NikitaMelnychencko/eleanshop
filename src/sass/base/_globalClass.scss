@@ -8,6 +8,7 @@
 html {
   scrollbar-color: $primary-border-color; /* «цвет ползунка» «цвет полосы скроллбара» */
   scrollbar-width: thin; /* толщина */
+  overflow-y:visible;
 }
 
 body {
