@@ -33,36 +33,36 @@ const videoSetPlayer = new VideoSetPlayer();
 // }
 
 //=====checkout========//
-import { ModalData, createPayment } from './layout/checkout/payment.js';
-import { OrderingPrice, OrderingSizeAndColor } from './layout/checkout/ordering.js';
-import ordering_ordering from '../views/partials/checkout/ordering.hbs';
-import { backdropMarkup } from './layout/checkout/thanksForOrdering.js';
-import payment_checkout from '../views/layouts/checkout.hbs';
-export function checkoutRender() {
-  updateBin();
-  const initFooter = new classBody();
-  const savedData = localStorage.getItem('orderingData');
-  const parsedData = JSON.parse(savedData);
-  const ordering = ordering_ordering(parsedData);
+// import { ModalData, createPayment } from './layout/checkout/payment.js';
+// import { OrderingPrice, OrderingSizeAndColor } from './layout/checkout/ordering.js';
+// import ordering_ordering from '../views/partials/checkout/ordering.hbs';
+// import { backdropMarkup } from './layout/checkout/thanksForOrdering.js';
+// import payment_checkout from '../views/layouts/checkout.hbs';
+// export function checkoutRender() {
+//   updateBin();
+//   const initFooter = new classBody();
+//   const savedData = localStorage.getItem('orderingData');
+//   const parsedData = JSON.parse(savedData);
+//   const ordering = ordering_ordering(parsedData);
 
-  const createCheckout = payment_checkout({ createPayment, ordering, backdropMarkup });
-  refs.mainEL.innerHTML = createCheckout;
-  //refs.mainEL.insertAdjacentHTML('beforeend', createCheckout);
+//   const createCheckout = payment_checkout({ createPayment, ordering, backdropMarkup });
+//   refs.mainEL.innerHTML = createCheckout;
+//   //refs.mainEL.insertAdjacentHTML('beforeend', createCheckout);
 
-  const orderingPrice = new OrderingPrice({
-    parsedData: parsedData,
-  });
-  const orderingSizeColor = new OrderingSizeAndColor({
-    parsedData: parsedData,
-  });
-  const modalOpen = new ModalData({
-    idInputDay: 'js-day',
-    idListDay: 'day-list',
-    idInputTime: 'js-time',
-    idListTime: 'time-list',
-  });
-  blockHelpRender();
-}
+//   const orderingPrice = new OrderingPrice({
+//     parsedData: parsedData,
+//   });
+//   const orderingSizeColor = new OrderingSizeAndColor({
+//     parsedData: parsedData,
+//   });
+//   const modalOpen = new ModalData({
+//     idInputDay: 'js-day',
+//     idListDay: 'day-list',
+//     idInputTime: 'js-time',
+//     idListTime: 'time-list',
+//   });
+//   blockHelpRender();
+// }
 
 //=====favorites========//
 import Favorites from './layout/favorites/favorites.js';

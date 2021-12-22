@@ -1,12 +1,13 @@
-import promocodes from '../../json/promocode.json';
+//import promocodes from '../../json/promocode.json';
 import updateBin from '../../updateBin';
 
 export class OrderingPrice {
-  constructor({ parsedData }) {
+  constructor({ parsedData, promocodes }) {
     this._refs = this._getRefs();
     this._bindEvents();
     this._windowOnload();
     this.parsedData = parsedData;
+    this.promocodes = promocodes;
   }
   _getRefs() {
     const refs = {
@@ -137,7 +138,9 @@ export class OrderingPrice {
   }
   _getDiscount() {
     let promocodeValue = this._refs.orderingPromocodeInput.value;
-    const gettingPromocodeObject = promocodes.find(promocode => promocode.value == promocodeValue);
+    const gettingPromocodeObject = this.promocodes.find(
+      promocode => promocode.value == promocodeValue,
+    );
     return gettingPromocodeObject.discount;
   }
 }
