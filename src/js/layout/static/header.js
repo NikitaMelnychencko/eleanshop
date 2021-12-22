@@ -126,8 +126,9 @@ function fnRender(event) {
 
   if (event.target.textContent === 'НОВИНКИ' || event.target.textContent === 'Акции')
     catalogRender();
+  // console.log(catalogRender());
 
-  if (event.target.className === 'navigation-sublist__link') {
+  if (event.target.className === 'header__nav-sublink') {
     if (
       event.target.parentNode.parentNode.previousElementSibling.textContent === 'КАТЕГОРИИ' ||
       event.target.parentNode.parentNode.previousElementSibling.textContent === 'НАШИ КОЛЛЕКЦИИ'

@@ -51,12 +51,7 @@ export function homeRender() {
 homeRender(); //========================================================call
 //=====brand========//
 import brand_page from '../views/layouts/brand.hbs';
-import {
-  infoAboutBrand,
-  brandOurAdvantages,
-  videoBrand,
-  brandPlayer,
-} from './layout/brand/infoAboutBrand.js';
+import { brandOurAdvantages, videoBrand, brandPlayer } from './layout/brand/infoAboutBrand.js';
 
 export function brandRender() {
   const initFooter = new classBody('footer-switch');
@@ -67,7 +62,6 @@ export function brandRender() {
     videoBrand,
   });
   refs.mainEL.innerHTML = contactPageMarkUp;
-  infoAboutBrand();
   brandPlayer();
   blockHelpRender();
   formsForm.init();
@@ -289,7 +283,7 @@ function blockHelpRender() {
 //======catalog=========//
 import catalogMarkUp from '../views/layouts/catalog.hbs';
 import { filterListMakeup, openFilter } from './layout/сatalog/filter.js';
-import { catalogListMarkupF, openCategory } from './layout/сatalog/gallery.js';
+import { catalogListMarkupF, openCategory, activateFavorites } from './layout/сatalog/gallery.js';
 
 export function catalogRender() {
   const initFooter = new classBody();
@@ -299,5 +293,6 @@ export function catalogRender() {
   openFilter();
   openCategory();
   blockHelpRender();
+  activateFavorites();
   // console.log(filterGalleryCatalogMarkup);
 }
