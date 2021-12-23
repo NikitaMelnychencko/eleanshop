@@ -33,7 +33,6 @@ import './js/layout/сatalog/filter.js';
 import './js/layout/сatalog/gallery.js';
 //product
 import './js/layout/product/infoAboutProduct.js';
-// import './js/layout/product/productCreateInfo.js';
 import './js/layout/product/productSlider.js';
 import './js/layout/product/productBin.js';
 import './js/layout/product/recomendationsCategory.js';
@@ -49,8 +48,6 @@ import './js/layout/product/tryOnModelsModal';
 import './js/layout/delivery/deliveryTypes.js';
 //reviews
 import './js/layout/reviews/videoSet.js';
-//showroom
-import './js/layout/showroom/showroom.js';
 //fitting
 import './js/layout/fitting/videoSlider.js';
 //! ?????????

@@ -2,7 +2,7 @@ import { initializeApp } from 'firebase/app';
 import { getAuth, signInWithEmailAndPassword, onAuthStateChanged } from 'firebase/auth';
 import { getDatabase, ref, set, get, child, push } from 'firebase/database';
 import { preloaderIsHided, preloaderDisable } from '../layout/static/preloader/preloader_bar.js';
-import all from '../json/all.json';
+
 const firebaseConfig = {
   apiKey: 'AIzaSyC1qUSZYYp9JGXkqmhapdC3qhIxtQY25m0',
   authDomain: 'eleanshop-e03b5.firebaseapp.com',

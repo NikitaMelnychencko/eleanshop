@@ -1,6 +1,7 @@
 import refs from '../refs/refs.js';
 import { blockHelpRender } from './help';
 import Favorites from '../layout/favorites/favorites.js';
+import { FetchSection } from '../data/fetch_section';
 // import favorit from './json/favorites.json';
 
 refs.numRef.innerHTML = 0;
@@ -14,14 +15,21 @@ export function favoritesRender() {
   // let data = {};
   // data['fav'] = [...favorit];
   // localStorage.setItem('favorites', JSON.stringify(data));
+  const initFetchSection = new FetchSection({
+    firstParam: 'products',
+  });
+  const favoritesData = initFetchSection._state;
+  favoritesData.then(data => {
+    const favorites = new Favorites({
+      valueData: data,
+    });
 
-  const favorites = new Favorites();
-
-  if (favorites.markcup.length > 0) {
-    refs.mainEL.innerHTML = favorites.markcup;
-  }
-  favorites.init();
-  blockHelpRender();
+    if (favorites.markcup.length > 0) {
+      refs.mainEL.innerHTML = favorites.markcup;
+    }
+    favorites.init();
+    blockHelpRender();
+  });
 }
 let data = localStorage.getItem('favorites');
 if (!data == null) {

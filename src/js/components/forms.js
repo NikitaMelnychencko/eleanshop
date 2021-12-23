@@ -1,7 +1,6 @@
 import formsMarkUp from '../../views/components/forms.hbs';
-import forms from '../json/forms.json';
+import forms from '../data/json/forms.json';
 import { postUserData, userId } from '../data/firebase_Servise';
-import { serverTimestamp } from 'firebase/database';
 
 export class Forms {
   constructor(option) {

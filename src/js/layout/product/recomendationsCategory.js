@@ -4,8 +4,6 @@ require('../../slider/slick.min.js');
 import cardsMarkup from '../../../views/partials/product/recomendationsCategory.hbs';
 import animateHeader from '../../components/animateHeader';
 import listCards from '../../../views/partials/product/productListFromCatalog.hbs';
-import allJSON from '../../json/all.json';
-const cards = allJSON.products;
 import { productRender } from '../../call-list/product';
 import { scrollTo } from '../../components/scrollTo';
 import { bodyUnfixPosition } from '../../components/scroll/scroll';
@@ -17,7 +15,7 @@ function refs() {
 }
 
 export default class RecomendationsCategory {
-  constructor({ root, typeInsert, data = cards, countsCard = 4, buttonPagination = true }) {
+  constructor({ root, typeInsert, data, countsCard = 4, buttonPagination = true }) {
     this.typeInsert = typeInsert;
     this.countsCard = countsCard;
     this.buttonPagination = buttonPagination;
@@ -210,7 +208,7 @@ export default class RecomendationsCategory {
       } else {
         id = e.currentTarget.getAttribute('product-id');
       }
-      cards.forEach(el => {
+      this.data.forEach(el => {
         if (el.id === id) {
           localStorage.setItem('productInfoData', JSON.stringify(el));
         }
