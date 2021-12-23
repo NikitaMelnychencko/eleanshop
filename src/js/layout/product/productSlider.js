@@ -9,7 +9,7 @@ export function setProductSlider() {
       speed: 0,
       vertical: true,
       verticalSwiping: true,
-      slidesToShow: 4,
+      slidesToShow: 5,
       slidesToScroll: 1,
       lazyLoad: 'progressive',
       asNavFor: '.product-slider',
