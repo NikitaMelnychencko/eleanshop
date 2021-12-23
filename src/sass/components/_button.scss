@@ -187,11 +187,12 @@
   border: 1px solid $accent-favorite-btn-color;
   background-color: $primary-background-color;
   cursor: pointer;
-
+  margin-top: 15px;
   @media screen and (min-width: $desktop-up) {
     width: 310px;
     margin-right: auto;
     margin-left: auto;
+    margin-top: 0;
   }
 
   &::before {
@@ -279,7 +280,7 @@
     border-radius: 3px;
   }
   &:hover,
-  &:focus{
+  &:focus {
     background-color: $button-checkout-color;
     color: $selection-text-color;
   }
