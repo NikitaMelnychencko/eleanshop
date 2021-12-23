@@ -310,11 +310,17 @@
 }
 
 .form-fitting-showroom__icon.in-page {
-  position: absolute;
-  top: 27px;
-  right: 0px;
+  display: none;
+
   @media screen and (min-width: $tablet-general) and (max-width: $tablet-only) {
+    display: block;
     right: 30px;
+  }
+  @media screen and (min-width: $desktop-up) {
+    display: block;
+    position: absolute;
+    top: 27px;
+    right: 0px;
   }
 }
 

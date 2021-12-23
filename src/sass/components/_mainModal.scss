@@ -27,4 +27,6 @@
 .modal__container {
   min-width: 320px;
   min-height: 150px;
+  overflow-y: scroll;
+  max-height: calc(100vh - 30px);
 }

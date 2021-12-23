@@ -5,6 +5,10 @@
 
 .showroom__container {
   position: relative;
+  margin-bottom: 30px;
+  @media screen and (min-width: $desktop-up) {
+    margin-bottom: 0;
+  }
 }
 
 .showroom__title-wrapper {
