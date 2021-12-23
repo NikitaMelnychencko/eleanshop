@@ -1,10 +1,9 @@
 import gallery from '../../../views/partials/сatalog/gallery.hbs';
 import animateHeader from '../../components/animateHeader';
-import filterLib from '../../json/filterLib.json';
 import { productRender } from '../../call-list/product';
 import { scrollTo } from '../../components/scrollTo';
 let catalog = null;
-
+let filterLib = null;
 function refs() {
   return {
     favQuantityEl: document.getElementById('js-text-fav'),
@@ -61,7 +60,8 @@ function filterCatalog() {
   return catalog;
 }
 
-export function catalogListMarkupF() {
+export function catalogListMarkupF(data) {
+  filterLib = data;
   const value = sessionStorage.getItem('galleryData');
   catalog = JSON.parse(value);
   return gallery(filterCatalog());

@@ -1,10 +1,8 @@
 import markupTempl from '../../../views/layouts/favorites.hbs';
 import animateHeader from '../../components/animateHeader';
 import { favoritesRender } from '../../call-list/favorites';
-import catalogz from '../../json/all.json';
 import { productRender } from '../../call-list/product';
 import { scrollTo } from '../../components/scrollTo';
-let catalog = catalogz.products;
 let debounce = require('lodash.debounce');
 import updateBin from '../../updateBin';
 
@@ -16,7 +14,8 @@ function refs() {
 }
 
 class Favorites {
-  constructor() {
+  constructor({ valueData }) {
+    this.catalog = valueData;
     this.markcup = '';
     refs().numRef.innerHTML = 0;
     this.data = localStorage.getItem('favorites');
@@ -30,7 +29,7 @@ class Favorites {
   init() {
     let dataRef = document.querySelector('.favorites__data');
     if (dataRef !== null) {
-      dataRef.addEventListener('click', this.onButtonsClick);
+      dataRef.addEventListener('click', this.onButtonsClick.bind(this));
       dataRef.addEventListener('input', debounce(this.onDescriptionChange, 500));
     }
     let sendEMailRef = document.querySelector('.favorites__sand-on-email--button');
@@ -59,7 +58,7 @@ class Favorites {
       }
 
       if (dataIncludesColorSize(id) === false) {
-        catalog.forEach(el => {
+        this.catalog.forEach(el => {
           if (el.id === id) localStorage.setItem('productInfoData', JSON.stringify(el));
         });
         productRender();
