@@ -1,5 +1,5 @@
 import formsMarkUp from '../../views/components/forms.hbs';
-import forms from '../json/forms.json';
+import forms from '../data/json/forms.json';
 import { postUserData, userId } from '../data/firebase_Servise';
 
 export class Forms {
@@ -91,6 +91,7 @@ export class Forms {
         formData.forEach(function (value, key) {
           object[key] = value;
         });
+        object.date = new Date().toLocaleDateString();
         if (this.option === 'reviews') {
           postUserData(userId, `userReviews`, object, 'database/components/');
           this.animate();

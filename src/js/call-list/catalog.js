@@ -19,7 +19,7 @@ export function catalogRender() {
     const galleryData = data[1];
     sessionStorage.setItem('galleryData', JSON.stringify(galleryData));
     const initFooter = new classBody();
-    const catalogListMarkup = catalogListMarkupF();
+    const catalogListMarkup = catalogListMarkupF(data[0]);
     const filterGalleryCatalogMarkup = catalogMarkUp({ filterListMakeup, catalogListMarkup });
     refs.mainEL.innerHTML = filterGalleryCatalogMarkup;
     openFilter(data[0]);

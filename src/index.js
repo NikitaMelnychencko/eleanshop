@@ -7,7 +7,6 @@ import './js/updateBin.js';
 import './js/data/firebase_Servise';
 import './js/data/fetch_section';
 //====call-list====
-import './js/call-list.js';
 import './js/call-list/home.js';
 import './js/call-list/product.js';
 import './js/call-list/reviews.js';
@@ -34,7 +33,6 @@ import './js/layout/сatalog/filter.js';
 import './js/layout/сatalog/gallery.js';
 //product
 import './js/layout/product/infoAboutProduct.js';
-// import './js/layout/product/productCreateInfo.js';
 import './js/layout/product/productSlider.js';
 import './js/layout/product/productBin.js';
 import './js/layout/product/recomendationsCategory.js';
@@ -50,8 +48,6 @@ import './js/layout/product/tryOnModelsModal';
 import './js/layout/delivery/deliveryTypes.js';
 //reviews
 import './js/layout/reviews/videoSet.js';
-//showroom
-import './js/layout/showroom/showroom.js';
 //fitting
 import './js/layout/fitting/videoSlider.js';
 //! ?????????
