@@ -40,8 +40,8 @@ export function signInUser(email, password) {
 signInUser(email, password);
 
 // State User
-export async function AuthState(user) {
-  return await onAuthStateChanged(auth, user => {
+export function AuthState(user) {
+  return onAuthStateChanged(auth, user => {
     if (user) {
       userId = user.uid;
       return sessionStorage.setItem('userId', `${userId}`);
@@ -58,8 +58,8 @@ window.onload = function () {
 };
 
 //getSection
-export async function getSection(nextFolder) {
-  return await get(child(dbRef, 'database/' + nextFolder))
+export function getSection(nextFolder) {
+  return get(child(dbRef, 'database/' + nextFolder))
     .then(snapshot => {
       if (snapshot.exists()) {
         return snapshot.val();
@@ -73,13 +73,13 @@ export async function getSection(nextFolder) {
 }
 
 //Post;
-export async function postUserData(userId, folder, data, baseFolder) {
+export function postUserData(userId, folder, data, baseFolder) {
   if (userId === null) {
     return;
   }
   const postListRef = ref(db, baseFolder + folder);
   const newPostRef = push(postListRef);
-  return await set(newPostRef, {
+  return set(newPostRef, {
     data,
   });
 }
