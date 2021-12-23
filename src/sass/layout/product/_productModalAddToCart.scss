@@ -1,7 +1,6 @@
 .product-container {
   @media screen and (min-width: $desktop-up) {
     width: 1017px;
-    // padding: 70px 120px;
   }
 }
 
@@ -15,7 +14,6 @@
   width: 100vw;
   height: auto;
   z-index: 9999;
-  // padding: 20px;
 
   transform: translate(-50%, -50%);
   opacity: 1;
@@ -72,7 +70,6 @@
       font-size: 30px;
       line-height: 1.1;
       letter-spacing: 0.03em;
-      // text-align: left;
       &_second {
         margin-bottom: 20px;
         font-size: 18px;
@@ -94,11 +91,4 @@
     display: flex;
     justify-content: center;
   }
-  // & .recomendation-category__item {
-  //   // width: 200px;
-
-  //   // &:not(:last-child) {
-  //   //   margin-right: 15px;
-  //   // }
-  // }
 }

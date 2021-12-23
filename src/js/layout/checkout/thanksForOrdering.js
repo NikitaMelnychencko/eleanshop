@@ -1,6 +1,3 @@
-import getRefs from '../../refs/refs.js';
-// import Backdrop from '../../components/backdrop.js';
-// import backdropMarkupTempl from '../../../views/components/backdrop.hbs';
 import modalFormMarkupTempl from '../../../views/components/thanksForOrdering.hbs';
 import { homeRender } from '../../call-list/home.js';
 import { scrollTo } from '../../components/scrollTo';

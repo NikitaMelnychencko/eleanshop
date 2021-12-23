@@ -1,54 +1,47 @@
-{{!-- <div class='preoder__backdrop'> --}}
-  <div class='preorder'>
-    {{!-- <button class='preoder__close-button' type='button'>
-      <span class='preoder__close-button-text'>
-        Закрыть
-      </span>
-    </button> --}}
-    <h2 class='preorder__title'>
-      оформить предзаказ
-    </h2>
-    <p class='preorder__post-title'>
-      ЕСЛИ ВАШЕГО РАЗМЕРА НЕТ В НАЛИЧИИ, ВЫ МОЖЕТЕ ОФОРМИТЬ ПРЕДЗАКАЗ.
-    </p>
+<div class='preorder'>
+  <h2 class='preorder__title'>
+    оформить предзаказ
+  </h2>
+  <p class='preorder__post-title'>
+    ЕСЛИ ВАШЕГО РАЗМЕРА НЕТ В НАЛИЧИИ, ВЫ МОЖЕТЕ ОФОРМИТЬ ПРЕДЗАКАЗ.
+  </p>
 
-    <div class='preorder__text-wrapper'>
-      <div class='preorder__text-column'>
-        <p class='preorder__text'>
-          Срок доставки от 1 до 3-ех недель.
-        </p>
-        <p class='preorder__text'>
-          Для оформления заказа необходимо внести предоплату
-          <b>
-            в размере 50%.
-          </b>
-        </p>
-      </div>
-      <div class='preorder__text-column'>
-        <p class='preorder__text'>
-          Для получения подробной информации оставьте заявку или позвоните нам по телефону
-        </p>
-        <ul class='contacts'>
-          <li class='contacts__item'>
-            <a class='contacts__link' href='tel:+380990000000'>
-              ТЕЛ.: +38-099-000-00-00
-            </a>
-          </li>
-          <li class='contacts__item'>
-            <a class='contacts__link' href='https://wa.me/79777282738'>
-              WHATSAPP: +38-099-000-00-00
-            </a>
-          </li>
-        </ul>
-      </div>
+  <div class='preorder__text-wrapper'>
+    <div class='preorder__text-column'>
+      <p class='preorder__text'>
+        Срок доставки от 1 до 3-ех недель.
+      </p>
+      <p class='preorder__text'>
+        Для оформления заказа необходимо внести предоплату
+        <b>
+          в размере 50%.
+        </b>
+      </p>
     </div>
-
-    <p class='preorder__amount'>
-      Предзаказов в этом месяце:
-      <span id='preorder-number'>
-        26
-      </span>
-    </p>
-    {{{orderForm}}}
+    <div class='preorder__text-column'>
+      <p class='preorder__text'>
+        Для получения подробной информации оставьте заявку или позвоните нам по телефону
+      </p>
+      <ul class='contacts'>
+        <li class='contacts__item'>
+          <a class='contacts__link' href='tel:+380990000000'>
+            ТЕЛ.: +38-099-000-00-00
+          </a>
+        </li>
+        <li class='contacts__item'>
+          <a class='contacts__link' href='https://wa.me/79777282738'>
+            WHATSAPP: +38-099-000-00-00
+          </a>
+        </li>
+      </ul>
+    </div>
   </div>
-{{!-- </div> --}}
+
+  <p class='preorder__amount'>
+    Предзаказов в этом месяце:
+    <span id='preorder-number'>
+      26
+    </span>
+  </p>
+  {{{orderForm}}}
+</div>

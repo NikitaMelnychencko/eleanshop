@@ -39,7 +39,6 @@ export function openFilter(value) {
         categoryName.textContent = filterLib.filter_collection[index].collection;
       }
     }
-    // localStorage.removeItem('content');
   }
   ls = localStorage.getItem('catalogFilter');
   if (ls) {
@@ -52,12 +51,7 @@ export function openFilter(value) {
         categoryName.textContent = filterLib.filter_category[index].category;
       }
     }
-    // localStorage.removeItem('catalogFilter');
   }
-  // filterList.addEventListener('click', categoryNameChosing);
-  // function categoryNameChosing(e) {
-  //   categoryName.textContent = e.target.textContent;
-  // }
 
   catalogArr.forEach(el => {
     el.addEventListener('click', e => {

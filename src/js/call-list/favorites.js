@@ -2,7 +2,6 @@ import refs from '../refs/refs.js';
 import { blockHelpRender } from './help';
 import Favorites from '../layout/favorites/favorites.js';
 import { FetchSection } from '../data/fetch_section';
-// import favorit from './json/favorites.json';
 
 refs.numRef.innerHTML = 0;
 let favoritesData = localStorage.getItem('favorites');
@@ -12,9 +11,6 @@ if (favoritesData !== null) {
 }
 
 export function favoritesRender() {
-  // let data = {};
-  // data['fav'] = [...favorit];
-  // localStorage.setItem('favorites', JSON.stringify(data));
   const initFetchSection = new FetchSection({
     firstParam: 'products',
   });

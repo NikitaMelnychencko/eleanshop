@@ -1,13 +1,7 @@
-//in project used:
-// 'Lato',
-// Futura-Medium = "Red Hat Text" (400/500 )
-// HelveticaNeueCyr = Open Sans (400 )
-// Futura-Book,Futura Md BT = Jost (400)
 
-//$tablet-general for modal window implementation
 html{
-    scrollbar-color: $primary-border-color $primary-background-color ;     /* «цвет ползунка» «цвет полосы скроллбара» */
-    scrollbar-width:  thin ;  /* толщина */
+    scrollbar-color: $primary-border-color $primary-background-color ;    
+    scrollbar-width:  thin ; 
 }
 
 body {

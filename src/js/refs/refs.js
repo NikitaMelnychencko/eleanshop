@@ -1,5 +1,4 @@
 export default {
-  // mainfoto: document.querySelector('.js-mainfoto'),
   descriptiontitle: document.querySelector('.js-description'),
   questanswer: document.querySelector('.question-body'),
   form: document.querySelector('.js-question-form'),
@@ -45,11 +44,6 @@ export default {
   favoritesEl: document.querySelector('#header-favorites'),
   favQuantityEl: document.getElementById('js-text-fav'),
   binQuantityEl: document.getElementById('js-text-bin'),
-  // ----- header-end ------
-  // videobox: document.querySelector('.js-videobox'),
-  // overlay: document.querySelector('.videobox__overlay'),
-  // videoEl: document.querySelector('.video-set__video'),
-  // BtnEl: document.querySelector('[data-action="close-videobox"]')
   // ----- preloader ------
   preloader: document.querySelector('.loading'),
 };

@@ -11,5 +11,4 @@ export default function updateBin() {
   }
   document.querySelector('.js-bin .header__product-text').textContent = count;
   animateHeader('js-text-bin');
-  // updateBin();
 }

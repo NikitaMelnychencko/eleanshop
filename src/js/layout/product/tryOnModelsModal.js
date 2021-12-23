@@ -1,12 +1,8 @@
 // Try on Modal
-import Backdrop from '../../components/backdrop';
 import tryOnModelsModal from '../../../views/components/tryOnModelsModal.hbs';
 import orderForm from '../../../views/components/orderForm.hbs';
-import refs from '../../refs/refs';
-import { bodyUnfixPosition } from '../../components/scroll/scroll';
 import renderModal from '../../components/modal/modal';
 import { modalFormMarkup, onResize } from '../../layout/checkout/thanksForOrdering';
-const { mainEL } = refs;
 
 // create content for Try-One Modal which placed at Body (for example)
 
@@ -17,7 +13,6 @@ export const tryOnModels = tryOnModelsModal({ orderForm });
 //open modal
 export function setEventTryOnModels() {
   const tryOnModalEl = document.querySelector('.try-on');
-  const orderFormEl = tryOnModalEl.querySelector('.order-form');
   const submitButton = tryOnModalEl.querySelector('.order-form');
   const sizeList = tryOnModalEl.querySelector('.sizes__list');
   sizeList.addEventListener('click', onSizeListItemClick);

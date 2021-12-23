@@ -8,28 +8,6 @@ import { reviewsRender } from '../../call-list/reviews.js';
 import { fittingRender } from '../../call-list/fitting.js';
 import { deliveryRender } from '../../call-list/delivery.js';
 
-// class Header {
-//   constructor(
-//     favoritesRender,
-//     showroomRender,
-//     contactRender,
-//     catalogRender,
-//     brandRender,
-//     deliveryRender,
-//     fittingRender,
-//     reviewsRender,
-//   ) {
-//     this.favoritesRender = favoritesRender;
-//     this.showroomRender = showroomRender;
-//     this.contactRender = contactRender;
-//     this.catalogRender = catalogRender;
-//     this.brandRender = brandRender;
-//     this.deliveryRender = deliveryRender;
-//     this.fittingRender = fittingRender;
-//     this.reviewsRender = reviewsRender;
-//   }
-// }
-
 const {
   headerEl,
   buttonMobEl,
@@ -53,8 +31,6 @@ const {
 
 //! ---------- MODAL OF THE MOBILE VERSION -----------
 buttonMobEl.addEventListener('click', fnMobileMenu);
-
-// const addClass = classList.toggle;
 
 function fnMobileMenu() {
   headerEl.classList.toggle('mod-background-color');
@@ -102,7 +78,6 @@ function fnMobileList(event) {
 
 //! ----------RECORD IN LOCAL STORAGE -----------
 function fnSavelocalStorage(event) {
-  // const atribute = event.target.dataset.atribute;
   if (event.target.dataset.atribute) localStorage.setItem('content', event.target.dataset.atribute);
 }
 
@@ -118,7 +93,6 @@ function fnChangeColor(element) {
 navigationEl.addEventListener('click', fnRender);
 function fnRender(event) {
   fnSavelocalStorage(event);
-  // const textContent = event.target.textContent;
 
   if (event.target.textContent === 'НОВИНКИ' || event.target.textContent === 'Акции')
     catalogRender();

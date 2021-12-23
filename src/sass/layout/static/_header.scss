@@ -210,14 +210,6 @@
 .header__product-item {
   position: relative;
 
-  // @media screen and (max-width: $tablet-only) {
-  //   &:first-child {
-  //     position: absolute;
-  //     left: 38px;
-  //     top: 0;
-  //   }
-  // }
-
   @media screen and (min-width: $desktop-up) {
     &:not(:last-child) {
       margin-right: 10px;
