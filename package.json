@@ -1,7 +1,7 @@
 {
   "name": "eleanshop",
   "version": "1.0.0",
-  "description": "Hackathon 24_09-04_10",
+  "description": "Hackayhon 24_09-04_10",
   "main": "index.js",
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack --config config/webpack.dev.js",
@@ -12,11 +12,12 @@
     "type": "git",
     "url": "git+https://github.com/NikitaMelnychencko/eleanshop.git"
   },
+  "author": "NikitaMelnychencko",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/NikitaMelnychencko/eleanshop/issues"
   },
-  "homepage": "https://github.com/Viktor-Kostiuchenko/eleanshop#readme",
+  "homepage": "https://github.com/NikitaMelnychencko/eleanshop#readme",
   "devDependencies": {
     "@babel/core": "^7.15.5",
     "@babel/preset-env": "^7.15.6",
