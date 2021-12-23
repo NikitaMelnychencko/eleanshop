@@ -1,4 +1,3 @@
-//import promocodes from '../../json/promocode.json';
 import updateBin from '../../updateBin';
 
 export class OrderingPrice {

@@ -1,4 +1,3 @@
-import Backdrop from '../../components/backdrop';
 import preorderModal from '../../../views/components/preorderModal.hbs';
 import orderForm from '../../../views/components/orderForm.hbs';
 import refs from '../../refs/refs';
@@ -6,38 +5,13 @@ import { bodyUnfixPosition } from '../../components/scroll/scroll';
 const { mainEL } = refs;
 
 export const preorderMark = preorderModal({ orderForm });
-
-//const
-
-//open modal
-/* const buttonOpenModal = document.querySelector() */
-/* buttonOpenModal.addEventListener('click', onButtonOpenModalClick) */
-
 export function setEventPreorder() {
-  // const buttonCloseModal = document.querySelector('.preoder__close-button');
   const preoderModal = document.querySelector('.preorder');
   const submitButton = preoderModal.querySelector('.order-form__button');
   const sizeList = preoderModal.querySelector('.sizes__list');
-  // buttonCloseModal.addEventListener('click', onButtonCloseModalClick);
+
   sizeList.addEventListener('click', onSizeListItemClick);
   submitButton.addEventListener('click', onButtonSubmitClick);
-}
-/* function onButtonOpenModalClick(event){
-    preoderBackdrop.classList.add('is-visible');
-   buttonCloseModal.addEventListener('click', onButtonCloseModalClick);
-sizeList.addEventListener('click', onSizeListItemClick);
-submitButton.addEventListener('click', onButtonSubmitClick);
-
-} */
-//close modal
-
-function onButtonCloseModalClick(event) {
-  // const preoderBackdrop = document.querySelector('.preoder__backdrop');
-  // preoderBackdrop.classList.remove('is-visible');
-  /* buttonCloseModal.removeEventListener('click', onButtonCloseModalClick); */
-  /* sizeList.removeEventListener('click', onSizeListItemClick); */
-  /* submitButton.removeEventListener('click', onButtonSubmitClick); */
-  // bodyUnfixPosition();
 }
 
 //on size-list label click, radio-input is checked
@@ -81,18 +55,5 @@ function onButtonSubmitClick(event) {
       }
     });
     bodyUnfixPosition();
-
-    // onButtonCloseModalClick();
   }
-  // onButtonCloseModalClick();
-
-  // let backdropRef = document.querySelector('[data-modal]');
-  // backdropRef.classList.remove('is-hidden');
-  // const modalForm = document.querySelector('.ordering__form');
-  // modalForm.style.display = 'block';
-  // const right = (backdropRef.offsetWidth - modalForm.offsetWidth) / 2;
-  // const btnCloseRef = document.querySelector('.form__button-сlose');
-  // btnCloseRef.style.display = 'block';
-  // btnCloseRef.style.right = `${right}px`;
-  // const backdrop = new Backdrop();
 }

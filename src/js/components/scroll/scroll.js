@@ -41,9 +41,4 @@ export function browserCheck() {
   if (getBrowserId() === 2) {
     document.documentElement.classList.remove('scrollRem');
   }
-  // if (getBrowserId() === 1) {
-  //   document.documentElement.style.scrollbarScolor = 676767
-  //   document.documentElement.style.scrollbarWidth = 'thin';
-  //   // firefox
-  // }
 }

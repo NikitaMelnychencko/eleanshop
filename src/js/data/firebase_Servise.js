@@ -83,7 +83,3 @@ export async function postUserData(userId, folder, data, baseFolder) {
     data,
   });
 }
-// export async function post(data) {
-//   return await set(ref(db, 'database'), data);
-// }
-// post(all);

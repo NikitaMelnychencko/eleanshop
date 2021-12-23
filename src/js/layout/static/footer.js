@@ -1,6 +1,5 @@
 import refs from '../../refs/refs.js';
 import { scrollTo } from '../../components/scrollTo';
-//import { productRender,  favoritesRender, checkoutRender } from '../../call-list';
 import { deliveryRender } from '../../call-list/delivery.js';
 import { contactRender } from '../../call-list/contact.js';
 import { fittingRender } from '../../call-list/fitting.js';
@@ -8,8 +7,7 @@ import { brandRender } from '../../call-list/brand.js';
 import { showroomRender } from '../../call-list/showroom.js';
 import { catalogRender } from '../../call-list/catalog.js';
 import { reviewsRender } from '../../call-list/reviews.js';
-import { id } from 'postcss-selector-parser';
-import { indexOf } from 'lodash';
+
 
 const {
   closeOpenPlus,

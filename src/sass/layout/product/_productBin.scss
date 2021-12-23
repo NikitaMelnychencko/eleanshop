@@ -15,7 +15,6 @@
   opacity: 1;
 
   &.hidden {
-    // @extend %hide;
     transform: translateY(-100%);
     opacity: 0;
   }

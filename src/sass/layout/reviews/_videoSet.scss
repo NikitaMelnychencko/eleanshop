@@ -19,7 +19,6 @@
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  // width: 100% !important;
   @media screen and (min-width: $desktop-up) {
     justify-content: space-between;
     width: 100% !important;
@@ -29,11 +28,11 @@
 .video-set__item {
   position: relative;
   list-style: none;
-  // @media screen and (min-width: $desktop-up) {
+
   & + .video-set__item {
     margin-left: 14px;
   }
-  // }
+
 }
 
 .video-set__image {
@@ -92,7 +91,7 @@
   line-height: 1.27;
   letter-spacing: 0.05em;
   text-align: left;
-  // padding: 19px 0;
+
 
   @media screen and (min-width: $desktop-up) {
     color: $primary-title-text-color;
@@ -103,7 +102,7 @@
   }
 }
 .video-subtitle {
-  // min-height: 60px;
+
   flex-grow: 1;
 }
 
@@ -111,7 +110,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  //   margin-bottom: 46px;
+
 }
 
 .videoset .slick-dots li {
@@ -168,7 +167,6 @@
 .video-set-fullscreen {
   display: none;
   fill: $hero-slider-dots;
-  // fill: red;
   position: absolute;
   z-index: 2;
   bottom: 30px;

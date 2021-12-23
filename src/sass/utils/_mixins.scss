@@ -1,11 +1,3 @@
-//example
-// @mixin grid-list($gapX, $gapY) {
-//   display: flex;
-//   flex-wrap: wrap;
-//   margin-top: -$gapY;
-//   margin-left: -$gapX;
-// }
-
 @mixin flex($type: flex, $cross: center, $main: center) {
   display: $type;
   align-items: $cross;
