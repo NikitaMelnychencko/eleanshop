@@ -129,7 +129,6 @@ export function openCategory() {
 
   const cardsList = document.querySelector('.catalog__gallery-list');
   cardsList.addEventListener('click', cardToProduct);
-  cardsList.addEventListener('touchend', cardToProduct);
 }
 
 function cardToProduct(e) {
