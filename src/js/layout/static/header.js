@@ -27,8 +27,6 @@ import { deliveryRender } from '../../call-list/delivery.js';
 //     this.deliveryRender = deliveryRender;
 //     this.fittingRender = fittingRender;
 //     this.reviewsRender = reviewsRender;
-
-//     console.log(favoritesRender);
 //   }
 // }
 
@@ -124,7 +122,6 @@ function fnRender(event) {
 
   if (event.target.textContent === 'НОВИНКИ' || event.target.textContent === 'Акции')
     catalogRender();
-  // console.log(catalogRender());
 
   if (event.target.className === 'header__nav-sublink') {
     if (

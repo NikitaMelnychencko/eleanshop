@@ -2,7 +2,7 @@ import refs from '../refs/refs.js';
 import { classBody } from '../layout/static/footer.js';
 import { FetchSection } from '../data/fetch_section';
 import { blockHelpRender } from './help';
-
+import { activateFavorites } from '../layout/сatalog/gallery.js';
 import catalogMarkUp from '../../views/layouts/catalog.hbs';
 import filter from '../../views/partials/сatalog/filter.hbs';
 import { openFilter } from '../layout/сatalog/filter.js';
@@ -25,5 +25,6 @@ export function catalogRender() {
     openFilter(data[0]);
     openCategory();
     blockHelpRender();
+    activateFavorites();
   });
 }

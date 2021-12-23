@@ -14,6 +14,41 @@ export class Forms {
     this.listenerSubmit();
   }
 
+  animate() {
+    if (this.option !== 'fittingPage') {
+      document.querySelector('.form').animate(
+        [
+          {
+            backgroundColor: '#ffffff',
+          },
+          {
+            backgroundColor: '#000000',
+            offset: 0.1,
+          },
+          {
+            backgroundColor: '#ffffff',
+          },
+        ],
+        1000,
+      );
+      document.querySelector('.form__title').animate(
+        [
+          {
+            color: '#000000',
+          },
+          {
+            color: '#ffffff',
+            offset: 0.1,
+          },
+          {
+            color: '#000000',
+          },
+        ],
+        1000,
+      );
+    }
+  }
+
   insertForm() {
     if (this.option === 'reviews') {
       return formsMarkUp(forms.reviews);
@@ -59,9 +94,11 @@ export class Forms {
         object.date = new Date().toLocaleDateString();
         if (this.option === 'reviews') {
           postUserData(userId, `userReviews`, object, 'database/components/');
+          this.animate();
           return;
         } else {
           postUserData(userId, `${this.nameData}`, object, 'formData/');
+          this.animate();
         }
       };
     }

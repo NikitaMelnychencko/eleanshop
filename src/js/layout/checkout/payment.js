@@ -152,7 +152,6 @@ export class ModalData {
           localStorage.removeItem(`${this._refs.inputTime.name}`);
         }
       }
-      console.dir(this._refs.inputDay);
     });
   }
   _updateValueBasicInformation() {

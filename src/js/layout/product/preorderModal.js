@@ -1,4 +1,3 @@
-// console.log('Hello world');
 import Backdrop from '../../components/backdrop';
 import preorderModal from '../../../views/components/preorderModal.hbs';
 import orderForm from '../../../views/components/orderForm.hbs';

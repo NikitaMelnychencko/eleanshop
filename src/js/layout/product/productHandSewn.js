@@ -20,7 +20,6 @@ export default class HandSewn {
   };
 
   getMarkup = data => {
-    console.log(data);
     this._createMarkup(data);
     return this.markup;
   };

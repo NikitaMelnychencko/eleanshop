@@ -7,6 +7,7 @@ import listCards from '../../../views/partials/product/productListFromCatalog.hb
 import { productRender } from '../../call-list/product';
 import { scrollTo } from '../../components/scrollTo';
 import { bodyUnfixPosition } from '../../components/scroll/scroll';
+let newData;
 
 function refs() {
   return {
@@ -19,7 +20,8 @@ export default class RecomendationsCategory {
     this.typeInsert = typeInsert;
     this.countsCard = countsCard;
     this.buttonPagination = buttonPagination;
-    this.data = this._getData(data);
+    if (data) newData = data;
+    this.data = this._getData(newData);
     this._getDataFavorite();
     this.cardsListEl = null;
     if (root) {
@@ -46,7 +48,7 @@ export default class RecomendationsCategory {
     }
   };
 
-  _getData = data => {
+  _getData(data) {
     const arr = [];
     let num = -1;
     for (let i = 0; i < this.countsCard; i++) {
@@ -62,7 +64,7 @@ export default class RecomendationsCategory {
     }
 
     return arr.map(el => data[el]);
-  };
+  }
 
   _createMarkup = () => {
     if (this.data) {
