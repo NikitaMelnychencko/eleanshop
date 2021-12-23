@@ -74,7 +74,7 @@ export function starClientsComments() {
   }
   function deleteMarkup(parentElement) {
     const arr = [];
-    for (let index = 0; index < 4; index++) {
+    for (let index = 0; index < 5; index++) {
       arr.push(parentElement.children[index]);
     }
     parentElement.innerHTML = '';
