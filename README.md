@@ -1,7 +1,19 @@
 # ELEANSHOP
 Hackathon 24_09-04_10
 
-Project participants:
+Project refactoring team:
+  Nikita Melnichenko;
+  Vladislav Vinichenko;
+  Valentin Bondarchuk;
+  Oksana Soroka;
+  Viktor Kostiuchenko;
+  Egor Osipov;
+  LarysaTimoshenko;
+  Saftar Alie;
+  Volodymyr Tishchenko;
+  
+  
+Participants of the hackathon project:
   Nikita Melnichenko;
   Vladislav Vinichenko;
   Volodymyr Tishchenko;
