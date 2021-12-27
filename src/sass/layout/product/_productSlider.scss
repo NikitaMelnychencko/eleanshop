@@ -73,6 +73,7 @@
   @media screen and (min-width: $desktop-up) {
     width: 700px;
     margin-right: 88px;
+    margin-bottom: unset
   }
 }
 .product-slider .slick-list {
@@ -123,5 +124,15 @@
   background-color: $predownload-background;
   margin-left: auto;
   margin-right: auto;
+  
+  @media screen and (max-width: $tablet-only) {
+    width: 414px;
+    height: 720px;
+  }
+
+  @media screen and (min-width: $desktop-up) {
+    width: 701px;
+  }
+
 }
 // !--------------------------------------------- END OF MAIN SLIDER//
