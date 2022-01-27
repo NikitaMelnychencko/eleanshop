@@ -10,13 +10,13 @@ Project refactoring team:
   Egor Osipov;
   LarysaTimoshenko;
   Saftar Alie;
-  Volodymyr Tishchenko;
+  Volodymyr Tyshchenko;
   
   
 Participants of the hackathon project:
   Nikita Melnichenko;
   Vladislav Vinichenko;
-  Volodymyr Tishchenko;
+  Volodymyr Tyshchenko;
   IrinaShushkevych;
   Oksana Soroka;
   Valentin Bondarchuk;
